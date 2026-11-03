@@ -1,0 +1,16 @@
+{
+  "validation": "AST/static checks only; no training, forward, backward, preview or export run",
+  "architecture_identical": true,
+  "shadow_rendering_source_identical": true,
+  "gold_rules_identical": true,
+  "BN_recalibration": false,
+  "ink_detector": "local contrast adaptive thresholds, fine/coarse coherence, weak edge linking, preserves original strong edges",
+  "camera_augmentation": true,
+  "optional_camera_training_images": true,
+  "evaluation_metrics": [
+    "black_recall",
+    "black_precision",
+    "target_black_fraction",
+    "predicted_black_fraction"
+  ]
+}

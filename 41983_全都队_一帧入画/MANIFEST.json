@@ -2,6 +2,7 @@
   "team": "全都队",
   "team_id": "41983",
   "project": "一帧入画——智能视频绘画系统",
+  "revision": "complete-source-reaudit",
   "files": [
     {
       "path": ".gitattributes",
@@ -10,8 +11,13 @@
     },
     {
       "path": ".gitignore",
-      "bytes": 411,
-      "sha256": "7cde4b215bf3c604137569cd92276df1af4da344acb152a489c69512724d4525"
+      "bytes": 731,
+      "sha256": "28011002107b26b0d93d288d25357ab9b3b41503b89d27cf25146503760b2a97"
+    },
+    {
+      "path": "01_FPGA/Panel_1080p_reg.mem",
+      "bytes": 4051,
+      "sha256": "1b192b20b57bda019d39b24126789c582ae5da0b9df5395152854a8c2c4576b7"
     },
     {
       "path": "01_FPGA/a4_coeff.mem",
@@ -77,6 +83,16 @@
       "path": "01_FPGA/build_support/map_command.json",
       "bytes": 551,
       "sha256": "c23971c90afe9dc66fa0341d41d4a192b0780563a452e1db0ddd80d08012585e"
+    },
+    {
+      "path": "01_FPGA/build_support/original_flow/build_simple_osd.py",
+      "bytes": 3362,
+      "sha256": "98f07791cb660ebc4b5495359d24093d33759cf9b6e3f067d1edf899e7bb2801"
+    },
+    {
+      "path": "01_FPGA/build_support/original_flow/map_simple_osd_fanout.py",
+      "bytes": 1683,
+      "sha256": "981033e7e167b1a97d11dca1207091701531c4b8d8de9716c7ea82eda5540c55"
     },
     {
       "path": "01_FPGA/build_support/pnr_command.json",
@@ -414,6 +430,11 @@
       "sha256": "4832f996d7f94d8a43960bb524281192f7f405418ae651ea4b8969db4446566e"
     },
     {
+      "path": "01_FPGA/embedded_sw/soc/bsp/efinix/EfxSapphireSoc/app/lwip/include/lwip/apps/FILES",
+      "bytes": 141,
+      "sha256": "44f2aae35c494db094654524395cdda5131fea3eb746ca1f0543b73f16c5b59e"
+    },
+    {
       "path": "01_FPGA/embedded_sw/soc/bsp/efinix/EfxSapphireSoc/app/lwip/include/lwip/apps/altcp_proxyconnect.h",
       "bytes": 2843,
       "sha256": "952a0862cdb42b559708de54020fbaeead92c1223a4fa40c525132a1b8b67447"
@@ -422,11 +443,6 @@
       "path": "01_FPGA/embedded_sw/soc/bsp/efinix/EfxSapphireSoc/app/lwip/include/lwip/apps/altcp_tls_mbedtls_opts.h",
       "bytes": 4008,
       "sha256": "b8946160d0b59c86acff343f42c6209f3666ccf5c1ec5c8de6302cc0512647d4"
-    },
-    {
-      "path": "01_FPGA/embedded_sw/soc/bsp/efinix/EfxSapphireSoc/app/lwip/include/lwip/apps/FILES",
-      "bytes": 141,
-      "sha256": "44f2aae35c494db094654524395cdda5131fea3eb746ca1f0543b73f16c5b59e"
     },
     {
       "path": "01_FPGA/embedded_sw/soc/bsp/efinix/EfxSapphireSoc/app/lwip/include/lwip/apps/fs.h",
@@ -1169,6 +1185,11 @@
       "sha256": "11f53b93c6e1c499038e6ee93fbcd81f5af032828c68eab3858e22d3e72c6fa1"
     },
     {
+      "path": "01_FPGA/embedded_sw/soc/bsp/efinix/EfxSapphireSoc/app/lwip/netif/FILES",
+      "bytes": 858,
+      "sha256": "1d9274e9c067021648b8c847dcfda0f561b87e04dabffd067d68e35c271a5c3b"
+    },
+    {
       "path": "01_FPGA/embedded_sw/soc/bsp/efinix/EfxSapphireSoc/app/lwip/netif/bridgeif.c",
       "bytes": 19916,
       "sha256": "df902581fa50324d2fad7d52849e0f7ceae8ddc7ce2d44197b0a86fc823fc1b1"
@@ -1184,11 +1205,6 @@
       "sha256": "a395e765806125f58731329b0b5da475d31517a976757338ff4db72376427744"
     },
     {
-      "path": "01_FPGA/embedded_sw/soc/bsp/efinix/EfxSapphireSoc/app/lwip/netif/FILES",
-      "bytes": 858,
-      "sha256": "1d9274e9c067021648b8c847dcfda0f561b87e04dabffd067d68e35c271a5c3b"
-    },
-    {
       "path": "01_FPGA/embedded_sw/soc/bsp/efinix/EfxSapphireSoc/app/lwip/netif/lowpan6.c",
       "bytes": 30100,
       "sha256": "4383936c8871874349fe60e404ce95923ed8e57b78f3e11f2e8b16d67d372dfc"
@@ -1202,6 +1218,11 @@
       "path": "01_FPGA/embedded_sw/soc/bsp/efinix/EfxSapphireSoc/app/lwip/netif/lowpan6_common.c",
       "bytes": 34694,
       "sha256": "c2f35c389246fef5f02bb8aed4ac8b93404e952fd91eeaec19dda321743928b0"
+    },
+    {
+      "path": "01_FPGA/embedded_sw/soc/bsp/efinix/EfxSapphireSoc/app/lwip/netif/ppp/PPPD_FOLLOWUP",
+      "bytes": 13230,
+      "sha256": "3f03a85f5627a9d918970d7ad33ee96cecfbc7066f59e60f2ed925af06dd24c4"
     },
     {
       "path": "01_FPGA/embedded_sw/soc/bsp/efinix/EfxSapphireSoc/app/lwip/netif/ppp/auth.c",
@@ -1284,6 +1305,11 @@
       "sha256": "43ad9ec9809cc2adc2c2500ef0b7eb8231c97f9f02d06aa2943aeb7f27afd3d8"
     },
     {
+      "path": "01_FPGA/embedded_sw/soc/bsp/efinix/EfxSapphireSoc/app/lwip/netif/ppp/polarssl/README",
+      "bytes": 825,
+      "sha256": "83641d9f3a8fdd4f12502c3359ef5996dfb2551df45394f838eb71b6d49f478f"
+    },
+    {
       "path": "01_FPGA/embedded_sw/soc/bsp/efinix/EfxSapphireSoc/app/lwip/netif/ppp/polarssl/arc4.c",
       "bytes": 3169,
       "sha256": "5c44af9dedba0d2b710841bf19d39074d9a2c80c3dab3e771107eb37559a1c2f"
@@ -1304,11 +1330,6 @@
       "sha256": "0186e89d32c5e9a98db5322b884055991414b766c9e83a5a0fa33a19e8213d4d"
     },
     {
-      "path": "01_FPGA/embedded_sw/soc/bsp/efinix/EfxSapphireSoc/app/lwip/netif/ppp/polarssl/README",
-      "bytes": 825,
-      "sha256": "83641d9f3a8fdd4f12502c3359ef5996dfb2551df45394f838eb71b6d49f478f"
-    },
-    {
       "path": "01_FPGA/embedded_sw/soc/bsp/efinix/EfxSapphireSoc/app/lwip/netif/ppp/polarssl/sha1.c",
       "bytes": 9889,
       "sha256": "70f66c0770bb141317e1bf7aa4e90660a32afe368c1a677215f05ceef2eb01cd"
@@ -1327,11 +1348,6 @@
       "path": "01_FPGA/embedded_sw/soc/bsp/efinix/EfxSapphireSoc/app/lwip/netif/ppp/pppcrypt.c",
       "bytes": 2379,
       "sha256": "e572da7dd70c6070cc2811e0422d0de3fcfad399e34884cc7bd0ac3e35dbfd3d"
-    },
-    {
-      "path": "01_FPGA/embedded_sw/soc/bsp/efinix/EfxSapphireSoc/app/lwip/netif/ppp/PPPD_FOLLOWUP",
-      "bytes": 13230,
-      "sha256": "3f03a85f5627a9d918970d7ad33ee96cecfbc7066f59e60f2ed925af06dd24c4"
     },
     {
       "path": "01_FPGA/embedded_sw/soc/bsp/efinix/EfxSapphireSoc/app/lwip/netif/ppp/pppoe.c",
@@ -1394,6 +1410,11 @@
       "sha256": "4c894046c03cdf2f1d89f28eb2a329e2ba171a8728698072f1497d3858da1be5"
     },
     {
+      "path": "01_FPGA/embedded_sw/soc/bsp/efinix/EfxSapphireSoc/include/LICENSE.MD",
+      "bytes": 4079,
+      "sha256": "fcad259554a1118f297273bc2ae8805b07b066d297e1c3b9a6ac82d815add8dd"
+    },
+    {
       "path": "01_FPGA/embedded_sw/soc/bsp/efinix/EfxSapphireSoc/include/bsp.h",
       "bytes": 5242,
       "sha256": "4a8637319ae9918f771fcb394491109d80a59d0b4de3fe5ab7f44570e7cecb57"
@@ -1407,11 +1428,6 @@
       "path": "01_FPGA/embedded_sw/soc/bsp/efinix/EfxSapphireSoc/include/freertosHalConfig.h",
       "bytes": 879,
       "sha256": "1a193b788b55e906041b9298f2f0fee1e7b77739351d0e0675eccecbe01b6315"
-    },
-    {
-      "path": "01_FPGA/embedded_sw/soc/bsp/efinix/EfxSapphireSoc/include/LICENSE.MD",
-      "bytes": 4079,
-      "sha256": "fcad259554a1118f297273bc2ae8805b07b066d297e1c3b9a6ac82d815add8dd"
     },
     {
       "path": "01_FPGA/embedded_sw/soc/bsp/efinix/EfxSapphireSoc/include/print.h",
@@ -1669,6 +1685,11 @@
       "sha256": "e15ea1dcf5433e619ef4cf7b6e783913e057ebbedc64551db45e0240bf749987"
     },
     {
+      "path": "01_FPGA/embedded_sw/soc/software/standalone/application/coremark/src/LICENSE.md",
+      "bytes": 18682,
+      "sha256": "0d92a0727423e27165852685d45d9f111a071dcba594454d7edbac48c28e4490"
+    },
+    {
       "path": "01_FPGA/embedded_sw/soc/software/standalone/application/coremark/src/core_list_join.c",
       "bytes": 18824,
       "sha256": "acf7ccf05a52fdb69013e228406b3d8f22c323932aaf25ab9783b104c6a5fba9"
@@ -1717,11 +1738,6 @@
       "path": "01_FPGA/embedded_sw/soc/software/standalone/application/coremark/src/ee_printf.c",
       "bytes": 16792,
       "sha256": "affdd874ce50df3df97a83d7c46552e21f9a9b9d2751f7e641663208e9a56d24"
-    },
-    {
-      "path": "01_FPGA/embedded_sw/soc/software/standalone/application/coremark/src/LICENSE.md",
-      "bytes": 18682,
-      "sha256": "0d92a0727423e27165852685d45d9f111a071dcba594454d7edbac48c28e4490"
     },
     {
       "path": "01_FPGA/embedded_sw/soc/software/standalone/application/dhrystone/makefile",
@@ -1849,6 +1865,11 @@
       "sha256": "ba9959c42ccbdf50f6fb4605a3091ce73b08e4facfd2aafbcfa8712e026e9b10"
     },
     {
+      "path": "01_FPGA/embedded_sw/soc/software/standalone/driver/DDRCali_i2c.h",
+      "bytes": 26917,
+      "sha256": "e9a3fa5a38830d0b108e98e931d05ed08753ccfda6f34b2a566868f3a33ce5f4"
+    },
+    {
       "path": "01_FPGA/embedded_sw/soc/software/standalone/driver/apb3_cl.h",
       "bytes": 4628,
       "sha256": "7356a83e65134b4cafc27092381a29f0ea4beeb51b614a976558b6504a249e1b"
@@ -1857,11 +1878,6 @@
       "path": "01_FPGA/embedded_sw/soc/software/standalone/driver/clint.h",
       "bytes": 6069,
       "sha256": "43bca7f578c070dfde36cd82b27701cf3a468925e23f4d1af3a5612cc1623a68"
-    },
-    {
-      "path": "01_FPGA/embedded_sw/soc/software/standalone/driver/DDRCali_i2c.h",
-      "bytes": 26917,
-      "sha256": "e9a3fa5a38830d0b108e98e931d05ed08753ccfda6f34b2a566868f3a33ce5f4"
     },
     {
       "path": "01_FPGA/embedded_sw/soc/software/standalone/driver/device/emc1413.h",
@@ -1984,9 +2000,34 @@
       "sha256": "76038f1791f61ba4794e63bfe8c3d74b6d4d49bb0d4b82f1ed680000ca2881cc"
     },
     {
+      "path": "01_FPGA/embedded_sw/soc/software/standalone/gpio/gpioDemo/.cproject",
+      "bytes": 9731,
+      "sha256": "11e39c54fa3421e8bf428c21a0e7595ff6d919a252acef4f066114319b217c19"
+    },
+    {
+      "path": "01_FPGA/embedded_sw/soc/software/standalone/gpio/gpioDemo/.project",
+      "bytes": 836,
+      "sha256": "6b6b80e28cc8017bfc2ccef17ee287cf8b6ca28038d3df40f72339ec0d3be3a2"
+    },
+    {
       "path": "01_FPGA/embedded_sw/soc/software/standalone/gpio/gpioDemo/.settings/org.eclipse.core.resources.prefs",
       "bytes": 57,
       "sha256": "1a5b17d8a429f89e30d0d5fc6e12e81d37ea8f6f3f4a206383f4af8564292ac0"
+    },
+    {
+      "path": "01_FPGA/embedded_sw/soc/software/standalone/gpio/gpioDemo/gpioDemo_ti.launch",
+      "bytes": 6676,
+      "sha256": "bdf9dbb217ecd542512536edb8c33ed559f46142cade0cc0e801b87a2dfa6d19"
+    },
+    {
+      "path": "01_FPGA/embedded_sw/soc/software/standalone/gpio/gpioDemo/gpioDemo_trion.launch",
+      "bytes": 6442,
+      "sha256": "b4ad5366ec4c0ea43c536532a4e822d87859105da0897077d52a44b449886677"
+    },
+    {
+      "path": "01_FPGA/embedded_sw/soc/software/standalone/gpio/gpioDemo/gpioDemo_tz.launch",
+      "bytes": 6448,
+      "sha256": "1ca064baefa9d98ef86dde1d0fd4007008ae41cb142655a68312f171a47f6bf8"
     },
     {
       "path": "01_FPGA/embedded_sw/soc/software/standalone/gpio/gpioDemo/makefile",
@@ -2194,6 +2235,16 @@
       "sha256": "28811f4af48a2ddecb71556ea6be68e8b00f11933cc23d74d8531cdba4e294e2"
     },
     {
+      "path": "01_FPGA/embedded_sw/soc/software/standalone/uart/apbProbeDemo/.cproject",
+      "bytes": 24903,
+      "sha256": "30baa590b62b2de30475f9e234f23980fed5ba9ab6afb058032911c42b83ca9e"
+    },
+    {
+      "path": "01_FPGA/embedded_sw/soc/software/standalone/uart/apbProbeDemo/.project",
+      "bytes": 792,
+      "sha256": "5c5765cbd791332882e368ede204a3d4d9ba464585d73076f344abbe16ea7b10"
+    },
+    {
       "path": "01_FPGA/embedded_sw/soc/software/standalone/uart/apbProbeDemo/.settings/language.settings.xml",
       "bytes": 1265,
       "sha256": "7b275c513ea837958241da2c25556b7ebc67d9cf8d71e6e9d3b88d6f30083298"
@@ -2219,9 +2270,24 @@
       "sha256": "0c0aa3d5a4a86639391e5b21005b3ce260b63b44e18ca466bdc7c7acfae5cc16"
     },
     {
+      "path": "01_FPGA/embedded_sw/soc/software/standalone/uart/nnObserverDemo/.cproject",
+      "bytes": 24907,
+      "sha256": "92363a725f044a9aca1a422808e12f14d6f14495db8804c8073e0fffb1bf4817"
+    },
+    {
+      "path": "01_FPGA/embedded_sw/soc/software/standalone/uart/nnObserverDemo/.project",
+      "bytes": 793,
+      "sha256": "691fad45f17c4f0bd2517c91f455ba42098bc8703685db4d0903acb66991b163"
+    },
+    {
       "path": "01_FPGA/embedded_sw/soc/software/standalone/uart/nnObserverDemo/.settings/language.settings.xml",
       "bytes": 1265,
       "sha256": "7b275c513ea837958241da2c25556b7ebc67d9cf8d71e6e9d3b88d6f30083298"
+    },
+    {
+      "path": "01_FPGA/embedded_sw/soc/software/standalone/uart/nnObserverDemo/C_nnControlDemo_Debug.launch",
+      "bytes": 6639,
+      "sha256": "95cd1c12f2efac221f4d19f0cbd28f27f36fbe2375469fca7b35926001f2ea19"
     },
     {
       "path": "01_FPGA/embedded_sw/soc/software/standalone/uart/nnObserverDemo/build/nnObserverDemo.bin",
@@ -2434,6 +2500,11 @@
       "sha256": "7681f196c04fa1eb255db7d07ba5f04df258eaa3bb27b650bdc3353b77fc7106"
     },
     {
+      "path": "01_FPGA/embedded_sw/soc/tool/README-binGen.txt",
+      "bytes": 1690,
+      "sha256": "829539fe81572d87bcbae6108f4e3471403ddc160cc8a5794a49f3ec089ae925"
+    },
+    {
       "path": "01_FPGA/embedded_sw/soc/tool/binGen.py",
       "bytes": 4701,
       "sha256": "8f83614e7295a5092b4df476e1db57cea9b6207542847d5b5ad5e87c1c855913"
@@ -2442,11 +2513,6 @@
       "path": "01_FPGA/embedded_sw/soc/tool/bootloader/bootloader_124K.bin",
       "bytes": 690,
       "sha256": "27a26ffbcae4d9a5e177aac9985fa92913f8e6e839b2001d1641cf62fe44d6f7"
-    },
-    {
-      "path": "01_FPGA/embedded_sw/soc/tool/README-binGen.txt",
-      "bytes": 1690,
-      "sha256": "829539fe81572d87bcbae6108f4e3471403ddc160cc8a5794a49f3ec089ae925"
     },
     {
       "path": "01_FPGA/firmware/nnObserverDemo.hex",
@@ -2477,6 +2543,46 @@
       "path": "01_FPGA/hdmi_vga_edid.hex",
       "bytes": 512,
       "sha256": "1182e3c535041dae8eb6f74af10ed115a67d75ac6c8b9ae64e94491b53bbcabc"
+    },
+    {
+      "path": "01_FPGA/host/a_image_batch.py",
+      "bytes": 7053,
+      "sha256": "7c7f0f9f884757feb77ba37a580042038787fc8f505db0efc92c644931ee4e60"
+    },
+    {
+      "path": "01_FPGA/host/a_image_transfer.py",
+      "bytes": 15299,
+      "sha256": "88d9169c40a92cb047ee99790696e67efce9de1a65b1d5116977c34a5f3a6948"
+    },
+    {
+      "path": "01_FPGA/host/a_net_analyze.py",
+      "bytes": 6773,
+      "sha256": "549ff0522cf022da3a42fe356a34fa342d05bb757814fd302a2538ba8b162862"
+    },
+    {
+      "path": "01_FPGA/host/a_net_stress.py",
+      "bytes": 4551,
+      "sha256": "444a929b9442073025a6699947e6ca6b6514c8ca1d2bd41df82f5ecd5b2fe1b3"
+    },
+    {
+      "path": "01_FPGA/host/a_net_wire.py",
+      "bytes": 3446,
+      "sha256": "206a95c93aa1cfdb109df722f38f8d62bbe95e6f6868efc4d688ce959527fa23"
+    },
+    {
+      "path": "01_FPGA/host/a_video_preview.py",
+      "bytes": 2605,
+      "sha256": "2fed261c2a9bee9b366503c51aa21497c2e75cf3902a7fc596664ea9062aec0f"
+    },
+    {
+      "path": "01_FPGA/host/a_video_transfer.py",
+      "bytes": 9722,
+      "sha256": "2609174acfd10c1cd37063bc25a3dd0c07f71c58d24f88e70d17130e697c6c5f"
+    },
+    {
+      "path": "01_FPGA/host/board_net_acceptance.py",
+      "bytes": 4655,
+      "sha256": "3a6b8d539cada6f211e647c2f7d80ab7d2671d5ae40504fef6306812e7365367"
     },
     {
       "path": "01_FPGA/implementation_reference/ti60f225_oob.lbf",
@@ -2909,6 +3015,11 @@
       "sha256": "924df1ac7966049d4f409d788b539a8419c8db74d0820d929ac3d6c43e225b39"
     },
     {
+      "path": "01_FPGA/outflow/ti60f225_oob.place",
+      "bytes": 520831,
+      "sha256": "f575198cabd84d8112e62b4b2527ca400a1f76aa81735167723b2e011df9c561"
+    },
+    {
       "path": "01_FPGA/outflow/ti60f225_oob.raminfo.pb",
       "bytes": 149552,
       "sha256": "06f144fab8aa8f0cc479253a9ecefeac212c2f8bf9ff3930851c8a7c3a0a314c"
@@ -2919,9 +3030,14 @@
       "sha256": "311e01308a8beda7f29eaef9fd435a36ce9889ee9a3b76234e0da86f053b913b"
     },
     {
-      "path": "01_FPGA/Panel_1080p_reg.mem",
-      "bytes": 4051,
-      "sha256": "1b192b20b57bda019d39b24126789c582ae5da0b9df5395152854a8c2c4576b7"
+      "path": "01_FPGA/outflow/ti60f225_oob.troutingtraces",
+      "bytes": 8862862,
+      "sha256": "de6c1422f0cb39a5fa3ad2071658dc95861cc2b57b478c0e87691bc5ec722c03"
+    },
+    {
+      "path": "01_FPGA/outflow/ti60f225_oob.vdb",
+      "bytes": 1700094,
+      "sha256": "8a784beee0217e64ec383a030e0808aa87d546c8789b22d39145c5aa66238ee1"
     },
     {
       "path": "01_FPGA/pc_fixed_in64.mem",
@@ -3014,6 +3130,11 @@
       "sha256": "53496295e0ce4fbe5d4722dfba93807e9ea57232b20d5dfacf4c8bff0bde33c8"
     },
     {
+      "path": "01_FPGA/rtl/cam_i2c_ctrl/I2C_Master.docx",
+      "bytes": 669362,
+      "sha256": "d994b6fd94f005bfbc26ed383f973a14b7b4f6530c2c71bd9e37920eb9aa369b"
+    },
+    {
       "path": "01_FPGA/rtl/cam_i2c_ctrl/i2c/i2c_16addr_8data.v",
       "bytes": 9560,
       "sha256": "12210c511b52dcfdaca2f4cffc0fafb390ac87ed3b3c97dfa2c6008a339c4bb7"
@@ -3067,11 +3188,6 @@
       "path": "01_FPGA/rtl/cam_i2c_ctrl/i2c_master/timescale.v",
       "bytes": 813,
       "sha256": "d98dd66323e809ee4bc88896063327802ca13241b5742a5e25db17db17a40a4c"
-    },
-    {
-      "path": "01_FPGA/rtl/cam_i2c_ctrl/I2C_Master.docx",
-      "bytes": 669362,
-      "sha256": "d994b6fd94f005bfbc26ed383f973a14b7b4f6530c2c71bd9e37920eb9aa369b"
     },
     {
       "path": "01_FPGA/rtl/camera/camera_light_stats_compact.v",
@@ -3239,6 +3355,16 @@
       "sha256": "2d6f56dedb23fb47e10d412e97e987f338a30fc39c86b1ada4d356fb2f3893dd"
     },
     {
+      "path": "01_FPGA/rtl/dvi_tx/DC_FIFO.v",
+      "bytes": 28259,
+      "sha256": "60120a28d8c12599cb7d2cb6d7e3e1f44479f3366156fa4055c3260e46cc05ff"
+    },
+    {
+      "path": "01_FPGA/rtl/dvi_tx/Sc_Fifo_Slr8.v",
+      "bytes": 8775,
+      "sha256": "6dc746e307436d3b6f0881e24b654a349fceeda4ca76025fdc4c310c1d47c9e6"
+    },
+    {
       "path": "01_FPGA/rtl/dvi_tx/audio_clock_regeneration_packet.sv",
       "bytes": 1100,
       "sha256": "a00a00548fd646d3cbc4e706410cdc8360f3a48700d3ca5b5c4dce5761c19cc3"
@@ -3257,11 +3383,6 @@
       "path": "01_FPGA/rtl/dvi_tx/auxiliary_video_information_info_frame.sv",
       "bytes": 5365,
       "sha256": "994994405fa384f531e1b2de55f52cd344b3b37b8539a3f7cd30adafcce3e161"
-    },
-    {
-      "path": "01_FPGA/rtl/dvi_tx/DC_FIFO.v",
-      "bytes": 28259,
-      "sha256": "60120a28d8c12599cb7d2cb6d7e3e1f44479f3366156fa4055c3260e46cc05ff"
     },
     {
       "path": "01_FPGA/rtl/dvi_tx/dvi_encoder.v_encrypted.v",
@@ -3294,9 +3415,9 @@
       "sha256": "76287f0e960fa1abdd650ca01d8f66d22dd9afae7248a5f5c86b4862c44a3514"
     },
     {
-      "path": "01_FPGA/rtl/dvi_tx/Sc_Fifo_Slr8.v",
-      "bytes": 8775,
-      "sha256": "6dc746e307436d3b6f0881e24b654a349fceeda4ca76025fdc4c310c1d47c9e6"
+      "path": "01_FPGA/rtl/dvi_tx/simple_dual_port_ram.v",
+      "bytes": 1294,
+      "sha256": "0e0c7acf31e66724073dc59f379880b6b8115c3e6d1fb179ede1624ed01d4434"
     },
     {
       "path": "01_FPGA/rtl/dvi_tx/simple_dual_port_ram/ram_init_file.mem",
@@ -3312,11 +3433,6 @@
       "path": "01_FPGA/rtl/dvi_tx/simple_dual_port_ram/simple_dual_port_ram_tb.v",
       "bytes": 3167,
       "sha256": "b1dad008b9929a40abe35493a4bfa1a6c601b30ec051e8e1cdafa52a7c9b4acf"
-    },
-    {
-      "path": "01_FPGA/rtl/dvi_tx/simple_dual_port_ram.v",
-      "bytes": 1294,
-      "sha256": "0e0c7acf31e66724073dc59f379880b6b8115c3e6d1fb179ede1624ed01d4434"
     },
     {
       "path": "01_FPGA/rtl/dvi_tx/tx_aux.v_encrypted.v",
@@ -3389,6 +3505,11 @@
       "sha256": "dc1f63cc7fb5ac960872b8abe4b696039fc18615e4775b9996cb92af6a8e9336"
     },
     {
+      "path": "01_FPGA/rtl/frame_buffer_V3/DC_FIFO.v",
+      "bytes": 28259,
+      "sha256": "60120a28d8c12599cb7d2cb6d7e3e1f44479f3366156fa4055c3260e46cc05ff"
+    },
+    {
       "path": "01_FPGA/rtl/frame_buffer_V3/axi_ram.v",
       "bytes": 13016,
       "sha256": "a262c60912b260defb5338356395a4499ae725d90c442481c5d705b1befec4a9"
@@ -3407,11 +3528,6 @@
       "path": "01_FPGA/rtl/frame_buffer_V3/data_tx.v",
       "bytes": 11049,
       "sha256": "5dc2cf6ba15ea207b79cb31d49b51a78ee0c2c8446811e714ac8f6916e2a1ad8"
-    },
-    {
-      "path": "01_FPGA/rtl/frame_buffer_V3/DC_FIFO.v",
-      "bytes": 28259,
-      "sha256": "60120a28d8c12599cb7d2cb6d7e3e1f44479f3366156fa4055c3260e46cc05ff"
     },
     {
       "path": "01_FPGA/rtl/frame_buffer_V3/ddr_buffer.v",
@@ -3667,6 +3783,11 @@
       "path": "01_FPGA/rtl/net_image_service.v",
       "bytes": 5994,
       "sha256": "d4e52835eafa1e8a9f45a059f34013817bc78f861a29e270bbf731ebd6bac1be"
+    },
+    {
+      "path": "01_FPGA/rtl/nn/rtl/README.md",
+      "bytes": 44527,
+      "sha256": "c509e08b02a035e82e38d0993523f96b876593d153d890000a55b9153ba16997"
     },
     {
       "path": "01_FPGA/rtl/nn/rtl/a4_deep_row.v",
@@ -3984,11 +4105,6 @@
       "sha256": "66933ea8f6c32c4cbfb09a231a169492076757f1717d68ba38c24ae8608f4feb"
     },
     {
-      "path": "01_FPGA/rtl/nn/rtl/README.md",
-      "bytes": 44527,
-      "sha256": "c509e08b02a035e82e38d0993523f96b876593d153d890000a55b9153ba16997"
-    },
-    {
       "path": "01_FPGA/rtl/nn/rtl/residual_add.v",
       "bytes": 5716,
       "sha256": "21344c0d9919f76b9f577a25cd32568f418891678382a4d51fbf3901c62b37a3"
@@ -4179,6 +4295,361 @@
       "sha256": "cdd2142cd47a516f1425652299e7ae5341ac22de969cbb605b465cdd02c4781a"
     },
     {
+      "path": "01_FPGA/software/a_image_session.c",
+      "bytes": 9630,
+      "sha256": "7f8f92276c9580b685981fe3dfed1fb6763eed00a62d46339d484d3353f8d761"
+    },
+    {
+      "path": "01_FPGA/software/a_image_session.h",
+      "bytes": 3308,
+      "sha256": "e54c7c637e736f354ce4b11c2752df6e87c79cff2d0cd5b1a3a186235c744868"
+    },
+    {
+      "path": "01_FPGA/software/a_net_service.c",
+      "bytes": 6661,
+      "sha256": "d86d822be37e3a9fb6c123d0af06fa7531ad05ad36640752621044f3961a55c2"
+    },
+    {
+      "path": "01_FPGA/software/c_image_backend.c",
+      "bytes": 7802,
+      "sha256": "4518eb7c1aca0929e911ec264804585a554bf1bb85dacf461114d0ce6c0225ab"
+    },
+    {
+      "path": "01_FPGA/tests/check_foundation_evidence.py",
+      "bytes": 1957,
+      "sha256": "82dfe96390a39768fd333c542dca73deec8e5d9e6fdec4ca5d16124a086ce580"
+    },
+    {
+      "path": "01_FPGA/tests/check_image_branch_evidence.py",
+      "bytes": 2614,
+      "sha256": "676cb8f8038317d53dc6f950f6fa881a08cd11a849bf7e52a24fbbb0df3b2fe6"
+    },
+    {
+      "path": "01_FPGA/tests/data/stress20_reference.json",
+      "bytes": 44521,
+      "sha256": "f629430391c58e44c459910f205ad430dddb7fb22ba5e593670fecd23341740b"
+    },
+    {
+      "path": "01_FPGA/tests/image_backend_fixture.h",
+      "bytes": 2342,
+      "sha256": "d144292a38412b8d8ad72d087273249505b456bdbc40644d5643d084e7777c6c"
+    },
+    {
+      "path": "01_FPGA/tests/image_rtl_cosim.c",
+      "bytes": 3691,
+      "sha256": "019f603c0d9495ae5a2e3f1993ed5fdb099303b46410072565a1ac8a4d4c339b"
+    },
+    {
+      "path": "01_FPGA/tests/image_session_cli.c",
+      "bytes": 1152,
+      "sha256": "44f940f1df30d12405076817c7b1ae2fad35f83b219c8b8d2f31d8286f41e7d0"
+    },
+    {
+      "path": "01_FPGA/tests/network_reference/host/a_image_transfer.py",
+      "bytes": 9671,
+      "sha256": "4ade59b33857a23b29e765cd6bb8d918342993d73cd7e186e5cb4d747c35249d"
+    },
+    {
+      "path": "01_FPGA/tests/network_reference/host/a_net_probe.py",
+      "bytes": 988,
+      "sha256": "b8559a492ee3de7c6e3e187b775c6d52139343a16fa454d844d03194ec166d3e"
+    },
+    {
+      "path": "01_FPGA/tests/network_reference/host/a_net_wire.py",
+      "bytes": 3444,
+      "sha256": "494595175b33264cdbd0f88fc318fed24e8ff45e43c9586934f517808bc6e8db"
+    },
+    {
+      "path": "01_FPGA/tests/network_reference/tests/run_service_endpoint/arp.mem",
+      "bytes": 288,
+      "sha256": "132e964f0945f3be7c15b440de0a9b36ba89669255a78a0f23ee24a15f5a9943"
+    },
+    {
+      "path": "01_FPGA/tests/network_reference/tests/run_service_endpoint/bad_app.mem",
+      "bytes": 364,
+      "sha256": "c1eb6cf8d3d6c916e6c7feacc52f2850624bd6e805c73e4d15bf63dc28bb2c7f"
+    },
+    {
+      "path": "01_FPGA/tests/network_reference/tests/run_service_endpoint/bad_fcs.mem",
+      "bytes": 364,
+      "sha256": "c7d8054892d259f89b22a1905461f89ca39be07332ad9263622d3906cd036259"
+    },
+    {
+      "path": "01_FPGA/tests/network_reference/tests/run_service_endpoint/bad_hello.mem",
+      "bytes": 364,
+      "sha256": "5ca3fe2d0e79e8b8469e600c206c5eba4cc2c6c6186cd7ce27e99663f60edcd0"
+    },
+    {
+      "path": "01_FPGA/tests/network_reference/tests/run_service_endpoint/hello0.mem",
+      "bytes": 344,
+      "sha256": "26cdd08274d37d73246bfa973390af8bd5809c9bef87e472c8e619bbb926d8dc"
+    },
+    {
+      "path": "01_FPGA/tests/network_reference/tests/run_service_endpoint/hello1368.mem",
+      "bytes": 5816,
+      "sha256": "3fd84fbcba5b04c5ea5f0a207685a43c806452b2eb86b5089283aefa6595b834"
+    },
+    {
+      "path": "01_FPGA/tests/network_reference/tests/run_service_endpoint/hello5.mem",
+      "bytes": 364,
+      "sha256": "cf5605f95faa0d6f68307bc7a1dc1c1cbcda983b4095564d84c2802b2ee153e5"
+    },
+    {
+      "path": "01_FPGA/tests/network_reference/tests/run_service_endpoint/reply0.mem",
+      "bytes": 80,
+      "sha256": "3789807793c0032daf2d98b9b520db1fd774e3f404803098859890db152f65ed"
+    },
+    {
+      "path": "01_FPGA/tests/network_reference/tests/run_service_endpoint/reply1368.mem",
+      "bytes": 3500,
+      "sha256": "85bc2955039c3a9c62e5387c819021b713616ca72cb6fc8eb634445177b51eef"
+    },
+    {
+      "path": "01_FPGA/tests/network_reference/tests/run_service_endpoint/reply5.mem",
+      "bytes": 100,
+      "sha256": "464e580d03f11be8dc9fe8aa891748a57a23d2d0b91db4d9043c26c89c1a4ef7"
+    },
+    {
+      "path": "01_FPGA/tests/network_reference/tests/run_service_endpoint/req0.mem",
+      "bytes": 344,
+      "sha256": "00a3ab207b0836f38d3cfa6567be772468b3ffa09ffa4d8dcaebeaf1876a62ca"
+    },
+    {
+      "path": "01_FPGA/tests/network_reference/tests/run_service_endpoint/req1368.mem",
+      "bytes": 5816,
+      "sha256": "21ca9eb7d106dcc0f6263463d77e700f22469659ba2287dfa7d593b4149a02c5"
+    },
+    {
+      "path": "01_FPGA/tests/network_reference/tests/run_service_endpoint/req5.mem",
+      "bytes": 364,
+      "sha256": "7f1f99944e31f138ef73ff69c47a1ccb926147fead667c5f127503a40632fe62"
+    },
+    {
+      "path": "01_FPGA/tests/network_reference/tests/tb_service_endpoint.sv",
+      "bytes": 7195,
+      "sha256": "2700bb6abb87b279da6ab6a630bb320101f4200c8e9f64f92a869e2999f07a35"
+    },
+    {
+      "path": "01_FPGA/tests/network_reference/tools/ethernet_vectors.py",
+      "bytes": 1260,
+      "sha256": "e6b6fdb718733c099614fccf74aa0b9a90821b0e3a94968fa25dbbbe8ad35b3b"
+    },
+    {
+      "path": "01_FPGA/tests/network_reference/tools/run_service_endpoint_test.py",
+      "bytes": 3722,
+      "sha256": "4d61cc0f6020ea370ccb59b18ebbf26029129429046d355a8014bb4fc412ab84"
+    },
+    {
+      "path": "01_FPGA/tests/prepare_board_integration.py",
+      "bytes": 4214,
+      "sha256": "d66340919f519c57d3dfc0a6f8a8917ea576bb46c102342d46c7cd23e6240934"
+    },
+    {
+      "path": "01_FPGA/tests/prepare_control_timing_experiment.py",
+      "bytes": 4197,
+      "sha256": "b6f501542110389912ad5eaebc430a11a8c988c9a740b128f326809e138ae7df"
+    },
+    {
+      "path": "01_FPGA/tests/run_720p_transport.py",
+      "bytes": 2556,
+      "sha256": "d4b9c733dc660e82539a35b8852f939899d7d2db02c5f6e5f021e3f45d2da721"
+    },
+    {
+      "path": "01_FPGA/tests/run_capture_hold.py",
+      "bytes": 1661,
+      "sha256": "05c49189b76e9a29f6eeed0a469e5f774bf0fb069bfbf3647d25ea8c979254cb"
+    },
+    {
+      "path": "01_FPGA/tests/run_dispatch.py",
+      "bytes": 1616,
+      "sha256": "52cacf318dcb63a77bde9ab7ca575cfcc7d31d2e722dc0aa886cb86402402f98"
+    },
+    {
+      "path": "01_FPGA/tests/run_hwcrc.py",
+      "bytes": 965,
+      "sha256": "3b1293fe517e09d2a02df1e22b65d12338865c721eaca04e8e44274f7dbd50bf"
+    },
+    {
+      "path": "01_FPGA/tests/run_image_cold_admission.py",
+      "bytes": 3245,
+      "sha256": "9468243b72ac306fc5b2611d3be82c95a7383d5b76d529d0c61f9ca44a0e4449"
+    },
+    {
+      "path": "01_FPGA/tests/run_image_rtl_cosim.py",
+      "bytes": 9451,
+      "sha256": "d2b0b3090825c74c6d7b2e026098afc13c234175a168bbf147888286b87a0bc9"
+    },
+    {
+      "path": "01_FPGA/tests/run_image_session_tests.py",
+      "bytes": 1144,
+      "sha256": "1aa4ad419852da5b0f0c3c904e879311c9165d82062efff0ddf2e073991859b3"
+    },
+    {
+      "path": "01_FPGA/tests/run_image_transfer_tests.py",
+      "bytes": 1133,
+      "sha256": "57de272d4d0d5aa972ca1ac31eaacc47ae34eb4a9959eb458e0d96540a47765c"
+    },
+    {
+      "path": "01_FPGA/tests/run_image_video_hold.py",
+      "bytes": 5798,
+      "sha256": "df22c4881e64ab587a961fa4e8b48a6d93e601fe5895d9fdac3a7fe5a9c1ec20"
+    },
+    {
+      "path": "01_FPGA/tests/run_lease.py",
+      "bytes": 1572,
+      "sha256": "35cb4f5e56e82a645849852a94678b0265d3ec6b7a293a089a4874ab3179768a"
+    },
+    {
+      "path": "01_FPGA/tests/run_lease_counter_equivalence.py",
+      "bytes": 3627,
+      "sha256": "ab3a97dd3916e0c638221a25c1e9b791c91ca45679676bff5d243345f61096cf"
+    },
+    {
+      "path": "01_FPGA/tests/run_line_dma.py",
+      "bytes": 1566,
+      "sha256": "9d22557b0845296edac8c10080519b6d0379b85c34ed2dc16e776a2cbc9a22aa"
+    },
+    {
+      "path": "01_FPGA/tests/run_mailbox.py",
+      "bytes": 1618,
+      "sha256": "361a1646fe6f1449ecbf697ddda7a910fff04e2ca83d5d27e5d170e329b7d2ab"
+    },
+    {
+      "path": "01_FPGA/tests/run_nn_launcher.py",
+      "bytes": 1585,
+      "sha256": "700f00f1279cb0a20b9972f78fe754bed7c5447840567965d937036b3383559c"
+    },
+    {
+      "path": "01_FPGA/tests/run_private_nn.py",
+      "bytes": 5769,
+      "sha256": "a4d074f07bb33851a5fc9ad973ecbc4035319a9d852c0c1c8a979137b9e9374c"
+    },
+    {
+      "path": "01_FPGA/tests/run_real_backend.py",
+      "bytes": 1893,
+      "sha256": "3cad312dcb9cd2b70a2c09f2a360408719a3c900ed08276a6f2f6ec4b20f6ac8"
+    },
+    {
+      "path": "01_FPGA/tests/run_service.py",
+      "bytes": 1698,
+      "sha256": "3881dd9ee3d0500f67959eadd6ef69f28c9632ba6f1b02915e16e775c1ebc1d8"
+    },
+    {
+      "path": "01_FPGA/tests/run_service_area_equivalence.py",
+      "bytes": 3835,
+      "sha256": "dce10eec198487909d6c42973c27211c6814484e18466c688b7d8a7aa0db07f1"
+    },
+    {
+      "path": "01_FPGA/tests/run_top_control.py",
+      "bytes": 2707,
+      "sha256": "1203831ea172cf4470829d1f3cbbcdeee0005649805865ab95edf92a24982a94"
+    },
+    {
+      "path": "01_FPGA/tests/tb_capture_hold.sv",
+      "bytes": 3804,
+      "sha256": "260216e4a12f213b2de88c643e9f076a95e338db516545dc12985b69d150e5ca"
+    },
+    {
+      "path": "01_FPGA/tests/tb_image_hwcrc.sv",
+      "bytes": 4491,
+      "sha256": "871c571679d11195022814894a49bb15d542491a126c7edc5d485b4cf346db4d"
+    },
+    {
+      "path": "01_FPGA/tests/tb_net_image_dispatch.sv",
+      "bytes": 5701,
+      "sha256": "95d81c63b8548057002a063c4b4b0a29da8f5dfebc1a670d40a21efe19955dcb"
+    },
+    {
+      "path": "01_FPGA/tests/tb_net_image_lease.sv",
+      "bytes": 5041,
+      "sha256": "8a3173941d8df784d3d43b2831619de2c2c1d2a0598995621646f434f5a85f68"
+    },
+    {
+      "path": "01_FPGA/tests/tb_net_image_line_dma.sv",
+      "bytes": 6427,
+      "sha256": "9fa80d13e7ad9d00cd94120fe700630cfbd3776f6010df490f230c233bbf9ee1"
+    },
+    {
+      "path": "01_FPGA/tests/tb_net_image_mailbox.sv",
+      "bytes": 4501,
+      "sha256": "4f1093593488c7fcf630550c57f34fca80b7d369620a06325d6488f6ad079807"
+    },
+    {
+      "path": "01_FPGA/tests/tb_net_image_service.sv",
+      "bytes": 9708,
+      "sha256": "5baa3a6bc10d59fbb69f0c9ba1f01680ab05b83924eaf42fd315fa7e2e9bc296"
+    },
+    {
+      "path": "01_FPGA/tests/tb_nn_launcher.sv",
+      "bytes": 2575,
+      "sha256": "4a9b203625f4373841c45f2beec238b684aee9c206c4bbe74c0db0f626c40d5b"
+    },
+    {
+      "path": "01_FPGA/tests/test_batch_faults.py",
+      "bytes": 2877,
+      "sha256": "031bbdbfe9ffdd2b09fabf9f8e129fcaffab10630780dd81c4465dead6bcd063"
+    },
+    {
+      "path": "01_FPGA/tests/test_executor_mmio_rv32.py",
+      "bytes": 2494,
+      "sha256": "8d6db94a13b5aa9a6d215b713ab24ddbad7eb27ad000f26e50f5ba8a978b2589"
+    },
+    {
+      "path": "01_FPGA/tests/test_image_control_wait.py",
+      "bytes": 4065,
+      "sha256": "8890423ca1269c8fb2809a35e8d783defde61d38bf7412a126a3c7cd57e26de2"
+    },
+    {
+      "path": "01_FPGA/tests/test_image_session.c",
+      "bytes": 6319,
+      "sha256": "add0d59d2f9085f6f3d9789bc5d69da3bdf678eaeb786a3afdf339c4a19049fd"
+    },
+    {
+      "path": "01_FPGA/tests/test_image_transfer.py",
+      "bytes": 5563,
+      "sha256": "3e836b54407c453d524edd9efd5c8d292cf30524a7eb2ef44c12dc84d2a38f0e"
+    },
+    {
+      "path": "01_FPGA/tests/test_packed_transport.py",
+      "bytes": 1641,
+      "sha256": "8eae590dd1626f48abbc39f42bbb0a30ae0e5a7fdf1e942fa27d4615d4c6fcb4"
+    },
+    {
+      "path": "01_FPGA/tests/test_r4_client.py",
+      "bytes": 5718,
+      "sha256": "1b685b3939420b57f5dd85a651afc13dacfc933e173cf51dd160b616238fad6d"
+    },
+    {
+      "path": "01_FPGA/tests/test_real_image_backend.c",
+      "bytes": 8372,
+      "sha256": "71eec570da1faa1671c9a94a6cae29434b0c5ca1f43ed48d6f61dddbe1199f95"
+    },
+    {
+      "path": "01_FPGA/tests/test_stress_audit.py",
+      "bytes": 1794,
+      "sha256": "763313ad771ca013e4718e4440d37da4a192e07991dff66f9f6378fb2c4f3a83"
+    },
+    {
+      "path": "01_FPGA/tests/test_video_preview.py",
+      "bytes": 1440,
+      "sha256": "a6b217009b23e001c49a6a94960aa66f8651504dba74bc684f8f8c5a4a28c31c"
+    },
+    {
+      "path": "01_FPGA/tests/test_video_transfer.py",
+      "bytes": 2801,
+      "sha256": "c234920b197dfdd3508ce0170aa38f1e28d4618d80d56dbd5a578cd2d5f5fa46"
+    },
+    {
+      "path": "01_FPGA/tests/test_wordfast_tx.c",
+      "bytes": 1520,
+      "sha256": "01c110f72a8a433095fb017d08519dd70a0608b0addd0611dbc629919ecb8c1b"
+    },
+    {
+      "path": "01_FPGA/tests/top_control_body.sv",
+      "bytes": 9461,
+      "sha256": "6cb45abd76468c30e25de044aed6cb701954c1e2320d93120b9b382634df1483"
+    },
+    {
       "path": "01_FPGA/ti60f225_oob.peri.xml",
       "bytes": 88507,
       "sha256": "475383a17c28671f1bb5899134099158f71cc6b0cf9b85938ac99f8bc8992295"
@@ -4200,23 +4671,28 @@
     },
     {
       "path": "01_FPGA/tools/build_light_merge_firmware.py",
-      "bytes": 3569,
-      "sha256": "e90894fa91b5aa84b47cb6cd1441691cc78b87e95f5940488d0ac13df478bc6d"
+      "bytes": 3582,
+      "sha256": "4b3fd87e8a29c8f68c77fd601952295a55902efa2d7042cab620af2f27ea941f"
     },
     {
       "path": "01_FPGA/tools/check_hdmi_lbf.py",
-      "bytes": 2139,
-      "sha256": "af6b23c05c3f7aa2303eb15059e5739060bb0a18059e76ee440b3fac0cc8db72"
+      "bytes": 2152,
+      "sha256": "a0d775864bb020229ce80c128ba6176bf3b8999cae26a2010a3311b5bba804c1"
     },
     {
       "path": "01_FPGA/tools/rebuild.py",
-      "bytes": 2719,
-      "sha256": "c3002c4f5b43f2b504005731143ac3e0dfc8f0483d3317761e949a22c2e5f778"
+      "bytes": 3398,
+      "sha256": "fcdf74f3e5f29c693c97751c87a7a0a80841da9140e8fc3c5de892cb7bba3473"
     },
     {
       "path": "01_FPGA/tools/run_efinity.py",
       "bytes": 1062,
       "sha256": "762b6ba642f4591c3a46c272a872c05845570247605992ace4c11ab43868cb2c"
+    },
+    {
+      "path": "01_FPGA/tools/verify_rtl.py",
+      "bytes": 2610,
+      "sha256": "0143da5917b0e9178b57c2fa80b5d109918e0bebe00b04fd96048b4231c9178c"
     },
     {
       "path": "01_FPGA/ukiyo_curl_bank0.mem",
@@ -4249,6 +4725,16 @@
       "sha256": "e769d1af5ecfead710f7a2be08100deffd95224337bd8e7568858dfed1e4a974"
     },
     {
+      "path": "01_FPGA/verification/five_style_slots/test.sv",
+      "bytes": 4435,
+      "sha256": "ad2187aaa614efb8a2f39f74c852d56567fef890d0d646b6740491346bc2c9a4"
+    },
+    {
+      "path": "01_FPGA/verification/simple_metrics_osd/test.sv",
+      "bytes": 3070,
+      "sha256": "a1c189714ace669b6ddfab23c5a37dfc4fc005a416b48616543fa8d48162a90f"
+    },
+    {
       "path": "02_网页应用/adapters.py",
       "bytes": 13636,
       "sha256": "a297460e33c6202d51d6073e2ce5c795587ebed9e67e96d8d88ec202db182472"
@@ -4259,6 +4745,11 @@
       "sha256": "c781bcf00590976174f77fadf6e0d8090a44d62af8b60fe8b715e96a003807cf"
     },
     {
+      "path": "02_网页应用/protocol/PROVENANCE.json",
+      "bytes": 667,
+      "sha256": "4438fcb2a722fa26c24c720da36c28f8aecf6d4f4a38af04e21a029592018bf0"
+    },
+    {
       "path": "02_网页应用/protocol/a_image_transfer.py",
       "bytes": 15536,
       "sha256": "d7ec93d4fe38a871bf481dac6e9d0904ef415999f11fa2b451fef56c55f43c29"
@@ -4267,11 +4758,6 @@
       "path": "02_网页应用/protocol/a_net_wire.py",
       "bytes": 3446,
       "sha256": "206a95c93aa1cfdb109df722f38f8d62bbe95e6f6868efc4d688ce959527fa23"
-    },
-    {
-      "path": "02_网页应用/protocol/PROVENANCE.json",
-      "bytes": 667,
-      "sha256": "4438fcb2a722fa26c24c720da36c28f8aecf6d4f4a38af04e21a029592018bf0"
     },
     {
       "path": "02_网页应用/requirements.txt",
@@ -4304,11 +4790,6 @@
       "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508"
     },
     {
-      "path": "02_网页应用/vendor/licenses/pillow-12.3.0.dist-info/licenses/LICENSE",
-      "bytes": 78016,
-      "sha256": "4f7866a74802c6326f81faff59a56546b6aec2b10b91973e0e9308de95e79857"
-    },
-    {
       "path": "02_网页应用/vendor/licenses/pillow-12.3.0.dist-info/METADATA",
       "bytes": 9273,
       "sha256": "2c4378001803cfac65809a50722d46e0da4ce8061e717f103e5d52734bab30f5"
@@ -4324,6 +4805,16 @@
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
+      "path": "02_网页应用/vendor/licenses/pillow-12.3.0.dist-info/WHEEL",
+      "bytes": 101,
+      "sha256": "88f8d90abc6ed5c13e637bb28e33da5e0fa336ebd35d3f587d07c8c1fb9c1c5e"
+    },
+    {
+      "path": "02_网页应用/vendor/licenses/pillow-12.3.0.dist-info/licenses/LICENSE",
+      "bytes": 78016,
+      "sha256": "4f7866a74802c6326f81faff59a56546b6aec2b10b91973e0e9308de95e79857"
+    },
+    {
       "path": "02_网页应用/vendor/licenses/pillow-12.3.0.dist-info/sboms/pillow-12.3.0.cdx.json",
       "bytes": 22279,
       "sha256": "40fa909b0f23405a7b97a6d91671a639a40acea7671b04387da22ba3e9fca50a"
@@ -4332,11 +4823,6 @@
       "path": "02_网页应用/vendor/licenses/pillow-12.3.0.dist-info/top_level.txt",
       "bytes": 4,
       "sha256": "ae266aae4fa1c99aa1e5fd59d19c228b774a7f112c07286ef5c53d20e0c5f8d6"
-    },
-    {
-      "path": "02_网页应用/vendor/licenses/pillow-12.3.0.dist-info/WHEEL",
-      "bytes": 101,
-      "sha256": "88f8d90abc6ed5c13e637bb28e33da5e0fa336ebd35d3f587d07c8c1fb9c1c5e"
     },
     {
       "path": "02_网页应用/vendor/licenses/pillow-12.3.0.dist-info/zip-safe",
@@ -4349,16 +4835,6 @@
       "sha256": "ad75c8505780b1f5ead984bb0c6933b469977b3f86ee00306f07412fcb7d28c1"
     },
     {
-      "path": "02_网页应用/vendor/licenses/pyserial-3.5.dist-info/direct_url.json",
-      "bytes": 289,
-      "sha256": "71e21d2734ad16ce48d2a9371b480f3429d0db781f296d3f2d4fde1cb6f72ee4"
-    },
-    {
-      "path": "02_网页应用/vendor/licenses/pyserial-3.5.dist-info/entry_points.txt",
-      "bytes": 112,
-      "sha256": "f80437a159889fbaed5b90e1d0eba9f741ead2a90894c8fbf6a1a674321793d5"
-    },
-    {
       "path": "02_网页应用/vendor/licenses/pyserial-3.5.dist-info/INSTALLER",
       "bytes": 4,
       "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508"
@@ -4367,11 +4843,6 @@
       "path": "02_网页应用/vendor/licenses/pyserial-3.5.dist-info/METADATA",
       "bytes": 1650,
       "sha256": "42a8ab7e94ef0b7baa7e94cdac65d6b9254c608476f630120c990007bf472943"
-    },
-    {
-      "path": "02_网页应用/vendor/licenses/pyserial-3.5.dist-info/metadata.json",
-      "bytes": 1647,
-      "sha256": "b39ac55f140a2fd4173b750c5d1998a0c5c6450b7696897aeeb7ffeb84b5bf5d"
     },
     {
       "path": "02_网页应用/vendor/licenses/pyserial-3.5.dist-info/RECORD",
@@ -4384,14 +4855,29 @@
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
-      "path": "02_网页应用/vendor/licenses/pyserial-3.5.dist-info/top_level.txt",
-      "bytes": 7,
-      "sha256": "1528df5875b0f958cf884a8e86db5b88ff85f0e1e7fa58a2c6ad7028bd9f58e0"
-    },
-    {
       "path": "02_网页应用/vendor/licenses/pyserial-3.5.dist-info/WHEEL",
       "bytes": 110,
       "sha256": "91db0dfb93890192221cdfa23b846197cd8ac92d1b0d67f8b81c0c6e435a7ebf"
+    },
+    {
+      "path": "02_网页应用/vendor/licenses/pyserial-3.5.dist-info/direct_url.json",
+      "bytes": 289,
+      "sha256": "71e21d2734ad16ce48d2a9371b480f3429d0db781f296d3f2d4fde1cb6f72ee4"
+    },
+    {
+      "path": "02_网页应用/vendor/licenses/pyserial-3.5.dist-info/entry_points.txt",
+      "bytes": 112,
+      "sha256": "f80437a159889fbaed5b90e1d0eba9f741ead2a90894c8fbf6a1a674321793d5"
+    },
+    {
+      "path": "02_网页应用/vendor/licenses/pyserial-3.5.dist-info/metadata.json",
+      "bytes": 1647,
+      "sha256": "b39ac55f140a2fd4173b750c5d1998a0c5c6450b7696897aeeb7ffeb84b5bf5d"
+    },
+    {
+      "path": "02_网页应用/vendor/licenses/pyserial-3.5.dist-info/top_level.txt",
+      "bytes": 7,
+      "sha256": "1528df5875b0f958cf884a8e86db5b88ff85f0e1e7fa58a2c6ad7028bd9f58e0"
     },
     {
       "path": "02_网页应用/vendor/pure/serial/__init__.py",
@@ -4534,126 +5020,6 @@
       "sha256": "964eaba1df661e4ab381c8666aa077ca08939260164cd434d0827df39663bd32"
     },
     {
-      "path": "02_网页应用/vendor/win_py310/PIL/__init__.py",
-      "bytes": 2122,
-      "sha256": "3fffff8502f4b59ca61d39cce713d55ffef046954262fce1abac3e97f3803734"
-    },
-    {
-      "path": "02_网页应用/vendor/win_py310/PIL/__main__.py",
-      "bytes": 140,
-      "sha256": "5fc788a469661df9e9ef36b3a7999d6afdb6f08b5c7f696488c3f4b4b53a5fd7"
-    },
-    {
-      "path": "02_网页应用/vendor/win_py310/PIL/_avif.cp310-win_amd64.pyd",
-      "bytes": 7893504,
-      "sha256": "df0c617422668f1b1b5eece35a0689183942402a16632689d60c3d6488679bc8"
-    },
-    {
-      "path": "02_网页应用/vendor/win_py310/PIL/_avif.pyi",
-      "bytes": 66,
-      "sha256": "cc3f2f0283c2f1a1085637dc90bb45b24456e6c6a255e977fac254036a476867"
-    },
-    {
-      "path": "02_网页应用/vendor/win_py310/PIL/_binary.py",
-      "bytes": 2664,
-      "sha256": "ba6dc47fa221e747297ee81afcbdaef2ea9be664c7a4b51f5382563132e0b20b"
-    },
-    {
-      "path": "02_网页应用/vendor/win_py310/PIL/_deprecate.py",
-      "bytes": 2106,
-      "sha256": "522ac3970b3279feaeeac2ffae51379a72ad45fd666af9a7864b7fd4f03b43c0"
-    },
-    {
-      "path": "02_网页应用/vendor/win_py310/PIL/_imaging.cp310-win_amd64.pyd",
-      "bytes": 2632192,
-      "sha256": "16a7c881fd3624c8428078ce24460861e91fc5cc43de1b3614dc2531fe327e2e"
-    },
-    {
-      "path": "02_网页应用/vendor/win_py310/PIL/_imaging.pyi",
-      "bytes": 924,
-      "sha256": "8d2446dead5dc2204ca8ec0884bb5305edcb30ac2c8b76244dc0dfb0a577d84d"
-    },
-    {
-      "path": "02_网页应用/vendor/win_py310/PIL/_imagingcms.cp310-win_amd64.pyd",
-      "bytes": 273408,
-      "sha256": "c92c55b43a774b8787a040afdd70c1c086daad5780c73efb35b029c219a03d5f"
-    },
-    {
-      "path": "02_网页应用/vendor/win_py310/PIL/_imagingcms.pyi",
-      "bytes": 4576,
-      "sha256": "e7f48329eecac13f5a6f911e1bec27e85e6cbff7ecd28db5db1a0f066dc7f88a"
-    },
-    {
-      "path": "02_网页应用/vendor/win_py310/PIL/_imagingft.cp310-win_amd64.pyd",
-      "bytes": 2173952,
-      "sha256": "2c5951d8d3d6f2640545afcdd059f21f65e8571e24789f76790c18d501bf505c"
-    },
-    {
-      "path": "02_网页应用/vendor/win_py310/PIL/_imagingft.pyi",
-      "bytes": 1903,
-      "sha256": "535ae9c2a417d6150bbd3028f1f634fc8ad79e0f953ee09755a581523da9d73d"
-    },
-    {
-      "path": "02_网页应用/vendor/win_py310/PIL/_imagingmath.cp310-win_amd64.pyd",
-      "bytes": 21504,
-      "sha256": "91dbb83922daaa0a601b8a8282be60ebf7633a5b743565c3b579fcafda9b9094"
-    },
-    {
-      "path": "02_网页应用/vendor/win_py310/PIL/_imagingmath.pyi",
-      "bytes": 66,
-      "sha256": "cc3f2f0283c2f1a1085637dc90bb45b24456e6c6a255e977fac254036a476867"
-    },
-    {
-      "path": "02_网页应用/vendor/win_py310/PIL/_imagingmorph.cp310-win_amd64.pyd",
-      "bytes": 12288,
-      "sha256": "25f7f3524b992079f9167861e0f41298cb93f4a028095c02bf1e48d6e49bca16"
-    },
-    {
-      "path": "02_网页应用/vendor/win_py310/PIL/_imagingmorph.pyi",
-      "bytes": 66,
-      "sha256": "cc3f2f0283c2f1a1085637dc90bb45b24456e6c6a255e977fac254036a476867"
-    },
-    {
-      "path": "02_网页应用/vendor/win_py310/PIL/_imagingtk.cp310-win_amd64.pyd",
-      "bytes": 14848,
-      "sha256": "832f6a7f22092fdc7962842170ebadd6ab844dc1f7b4d5582cdf547217ab00be"
-    },
-    {
-      "path": "02_网页应用/vendor/win_py310/PIL/_imagingtk.pyi",
-      "bytes": 66,
-      "sha256": "cc3f2f0283c2f1a1085637dc90bb45b24456e6c6a255e977fac254036a476867"
-    },
-    {
-      "path": "02_网页应用/vendor/win_py310/PIL/_tkinter_finder.py",
-      "bytes": 558,
-      "sha256": "1f5530ddd57b8161c88ffa2c527245c56875691b10d8c74aa4d3f7bd0c10716d"
-    },
-    {
-      "path": "02_网页应用/vendor/win_py310/PIL/_typing.py",
-      "bytes": 964,
-      "sha256": "b7e3154b97ffa5174bf8cd3bd9866a957141fc3f33d4a3a5f0470ab13fddf6ce"
-    },
-    {
-      "path": "02_网页应用/vendor/win_py310/PIL/_util.py",
-      "bytes": 713,
-      "sha256": "78ff087e658999b13f3ea6d425be2a4ea18d2e2e334f44d369daebaa6ca483b6"
-    },
-    {
-      "path": "02_网页应用/vendor/win_py310/PIL/_version.py",
-      "bytes": 91,
-      "sha256": "8367607a728dc206da64e3de6b24f826f3030d7f3c053f25c3b3a1fde94fb9d7"
-    },
-    {
-      "path": "02_网页应用/vendor/win_py310/PIL/_webp.cp310-win_amd64.pyd",
-      "bytes": 416256,
-      "sha256": "b2b263bd00abe0c1c120efca36f8050c161ce6dbbdb20bf940cc874cae01bac2"
-    },
-    {
-      "path": "02_网页应用/vendor/win_py310/PIL/_webp.pyi",
-      "bytes": 66,
-      "sha256": "cc3f2f0283c2f1a1085637dc90bb45b24456e6c6a255e977fac254036a476867"
-    },
-    {
       "path": "02_网页应用/vendor/win_py310/PIL/AvifImagePlugin.py",
       "bytes": 9596,
       "sha256": "80733b71d411630ea63c782333de241a12bd83f0f1cafcd8ccde4516bed4b5a1"
@@ -4707,11 +5073,6 @@
       "path": "02_网页应用/vendor/win_py310/PIL/ExifTags.py",
       "bytes": 10339,
       "sha256": "362cafb665044fbf41322a248a3313a7fabc75e596ce9c9db5371305f272f0a1"
-    },
-    {
-      "path": "02_网页应用/vendor/win_py310/PIL/features.py",
-      "bytes": 11118,
-      "sha256": "cbf7a5342ce007a46030ff4031fdc274e3f78dda0de21a38bf1a122b383a7967"
     },
     {
       "path": "02_网页应用/vendor/win_py310/PIL/FitsImagePlugin.py",
@@ -4782,6 +5143,11 @@
       "path": "02_网页应用/vendor/win_py310/PIL/IcoImagePlugin.py",
       "bytes": 13499,
       "sha256": "0d9a018f6ccabfbe9293de8f2aaf1e97d69900cd89df050b56a3dea27a3fd33d"
+    },
+    {
+      "path": "02_网页应用/vendor/win_py310/PIL/ImImagePlugin.py",
+      "bytes": 11992,
+      "sha256": "5fd881490e31eeb6aec5b3889fbda3eefe9301481995da580f970073a67530d0"
     },
     {
       "path": "02_网页应用/vendor/win_py310/PIL/Image.py",
@@ -4909,11 +5275,6 @@
       "sha256": "7d018c99917dc076f4f6d33c7697ccb8de5ac75bfe1c3d38389a645ce6b1ddc7"
     },
     {
-      "path": "02_网页应用/vendor/win_py310/PIL/ImImagePlugin.py",
-      "bytes": 11992,
-      "sha256": "5fd881490e31eeb6aec5b3889fbda3eefe9301481995da580f970073a67530d0"
-    },
-    {
       "path": "02_网页应用/vendor/win_py310/PIL/ImtImagePlugin.py",
       "bytes": 2768,
       "sha256": "afe643cf75e38ba10117c7949caea2b8211912d965a74c4b452210d3f875e141"
@@ -4962,6 +5323,11 @@
       "path": "02_网页应用/vendor/win_py310/PIL/MspImagePlugin.py",
       "bytes": 6072,
       "sha256": "bb75dc1140d81926046847543a19e3867a64650264a537520781251e9c4e3e58"
+    },
+    {
+      "path": "02_网页应用/vendor/win_py310/PIL/PSDraw.py",
+      "bytes": 7230,
+      "sha256": "eec05f0067c19aa9d958c4e445f2e6e28057b519415c0b984fffcd3f71ad1f0d"
     },
     {
       "path": "02_网页应用/vendor/win_py310/PIL/PaletteFile.py",
@@ -5019,24 +5385,9 @@
       "sha256": "b3ce408b7129bc190d12ce0db3ad408e114a048b134669021878a7e72afb372d"
     },
     {
-      "path": "02_网页应用/vendor/win_py310/PIL/PSDraw.py",
-      "bytes": 7230,
-      "sha256": "eec05f0067c19aa9d958c4e445f2e6e28057b519415c0b984fffcd3f71ad1f0d"
-    },
-    {
-      "path": "02_网页应用/vendor/win_py310/PIL/py.typed",
-      "bytes": 0,
-      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-    },
-    {
       "path": "02_网页应用/vendor/win_py310/PIL/QoiImagePlugin.py",
       "bytes": 8831,
       "sha256": "c25feb0cc7e1c9c5aae865c1157f31ce8235d5728c6567afd9629288ce2df372"
-    },
-    {
-      "path": "02_网页应用/vendor/win_py310/PIL/report.py",
-      "bytes": 105,
-      "sha256": "ea6ecd3afd5adb8e7bed9889a315fcf62a7925e3a07f63b517de5febed4ae5a3"
     },
     {
       "path": "02_网页应用/vendor/win_py310/PIL/SgiImagePlugin.py",
@@ -5089,6 +5440,11 @@
       "sha256": "136d180c964920aad44327ed3a6ac9ac0b97ba60c6662c231f237620a282c9b8"
     },
     {
+      "path": "02_网页应用/vendor/win_py310/PIL/XVThumbImagePlugin.py",
+      "bytes": 2209,
+      "sha256": "384b448508022cb82fc7c275888f75d533338c9e624e538ea90a4b431d5bcd0e"
+    },
+    {
       "path": "02_网页应用/vendor/win_py310/PIL/XbmImagePlugin.py",
       "bytes": 2767,
       "sha256": "c1cd0da5f4f3952871f589a2d33c28d1a5598c36b8fc1ecd1221b64e008eeb94"
@@ -5099,9 +5455,139 @@
       "sha256": "232f0ac0e8e7546541c5f4f6c6d0f737050a52dcec0f678753b3aeb48461a9d9"
     },
     {
-      "path": "02_网页应用/vendor/win_py310/PIL/XVThumbImagePlugin.py",
-      "bytes": 2209,
-      "sha256": "384b448508022cb82fc7c275888f75d533338c9e624e538ea90a4b431d5bcd0e"
+      "path": "02_网页应用/vendor/win_py310/PIL/__init__.py",
+      "bytes": 2122,
+      "sha256": "3fffff8502f4b59ca61d39cce713d55ffef046954262fce1abac3e97f3803734"
+    },
+    {
+      "path": "02_网页应用/vendor/win_py310/PIL/__main__.py",
+      "bytes": 140,
+      "sha256": "5fc788a469661df9e9ef36b3a7999d6afdb6f08b5c7f696488c3f4b4b53a5fd7"
+    },
+    {
+      "path": "02_网页应用/vendor/win_py310/PIL/_avif.cp310-win_amd64.pyd",
+      "bytes": 7893504,
+      "sha256": "df0c617422668f1b1b5eece35a0689183942402a16632689d60c3d6488679bc8"
+    },
+    {
+      "path": "02_网页应用/vendor/win_py310/PIL/_avif.pyi",
+      "bytes": 66,
+      "sha256": "cc3f2f0283c2f1a1085637dc90bb45b24456e6c6a255e977fac254036a476867"
+    },
+    {
+      "path": "02_网页应用/vendor/win_py310/PIL/_binary.py",
+      "bytes": 2664,
+      "sha256": "ba6dc47fa221e747297ee81afcbdaef2ea9be664c7a4b51f5382563132e0b20b"
+    },
+    {
+      "path": "02_网页应用/vendor/win_py310/PIL/_deprecate.py",
+      "bytes": 2106,
+      "sha256": "522ac3970b3279feaeeac2ffae51379a72ad45fd666af9a7864b7fd4f03b43c0"
+    },
+    {
+      "path": "02_网页应用/vendor/win_py310/PIL/_imaging.cp310-win_amd64.pyd",
+      "bytes": 2632192,
+      "sha256": "16a7c881fd3624c8428078ce24460861e91fc5cc43de1b3614dc2531fe327e2e"
+    },
+    {
+      "path": "02_网页应用/vendor/win_py310/PIL/_imaging.pyi",
+      "bytes": 924,
+      "sha256": "8d2446dead5dc2204ca8ec0884bb5305edcb30ac2c8b76244dc0dfb0a577d84d"
+    },
+    {
+      "path": "02_网页应用/vendor/win_py310/PIL/_imagingcms.cp310-win_amd64.pyd",
+      "bytes": 273408,
+      "sha256": "c92c55b43a774b8787a040afdd70c1c086daad5780c73efb35b029c219a03d5f"
+    },
+    {
+      "path": "02_网页应用/vendor/win_py310/PIL/_imagingcms.pyi",
+      "bytes": 4576,
+      "sha256": "e7f48329eecac13f5a6f911e1bec27e85e6cbff7ecd28db5db1a0f066dc7f88a"
+    },
+    {
+      "path": "02_网页应用/vendor/win_py310/PIL/_imagingft.cp310-win_amd64.pyd",
+      "bytes": 2173952,
+      "sha256": "2c5951d8d3d6f2640545afcdd059f21f65e8571e24789f76790c18d501bf505c"
+    },
+    {
+      "path": "02_网页应用/vendor/win_py310/PIL/_imagingft.pyi",
+      "bytes": 1903,
+      "sha256": "535ae9c2a417d6150bbd3028f1f634fc8ad79e0f953ee09755a581523da9d73d"
+    },
+    {
+      "path": "02_网页应用/vendor/win_py310/PIL/_imagingmath.cp310-win_amd64.pyd",
+      "bytes": 21504,
+      "sha256": "91dbb83922daaa0a601b8a8282be60ebf7633a5b743565c3b579fcafda9b9094"
+    },
+    {
+      "path": "02_网页应用/vendor/win_py310/PIL/_imagingmath.pyi",
+      "bytes": 66,
+      "sha256": "cc3f2f0283c2f1a1085637dc90bb45b24456e6c6a255e977fac254036a476867"
+    },
+    {
+      "path": "02_网页应用/vendor/win_py310/PIL/_imagingmorph.cp310-win_amd64.pyd",
+      "bytes": 12288,
+      "sha256": "25f7f3524b992079f9167861e0f41298cb93f4a028095c02bf1e48d6e49bca16"
+    },
+    {
+      "path": "02_网页应用/vendor/win_py310/PIL/_imagingmorph.pyi",
+      "bytes": 66,
+      "sha256": "cc3f2f0283c2f1a1085637dc90bb45b24456e6c6a255e977fac254036a476867"
+    },
+    {
+      "path": "02_网页应用/vendor/win_py310/PIL/_imagingtk.cp310-win_amd64.pyd",
+      "bytes": 14848,
+      "sha256": "832f6a7f22092fdc7962842170ebadd6ab844dc1f7b4d5582cdf547217ab00be"
+    },
+    {
+      "path": "02_网页应用/vendor/win_py310/PIL/_imagingtk.pyi",
+      "bytes": 66,
+      "sha256": "cc3f2f0283c2f1a1085637dc90bb45b24456e6c6a255e977fac254036a476867"
+    },
+    {
+      "path": "02_网页应用/vendor/win_py310/PIL/_tkinter_finder.py",
+      "bytes": 558,
+      "sha256": "1f5530ddd57b8161c88ffa2c527245c56875691b10d8c74aa4d3f7bd0c10716d"
+    },
+    {
+      "path": "02_网页应用/vendor/win_py310/PIL/_typing.py",
+      "bytes": 964,
+      "sha256": "b7e3154b97ffa5174bf8cd3bd9866a957141fc3f33d4a3a5f0470ab13fddf6ce"
+    },
+    {
+      "path": "02_网页应用/vendor/win_py310/PIL/_util.py",
+      "bytes": 713,
+      "sha256": "78ff087e658999b13f3ea6d425be2a4ea18d2e2e334f44d369daebaa6ca483b6"
+    },
+    {
+      "path": "02_网页应用/vendor/win_py310/PIL/_version.py",
+      "bytes": 91,
+      "sha256": "8367607a728dc206da64e3de6b24f826f3030d7f3c053f25c3b3a1fde94fb9d7"
+    },
+    {
+      "path": "02_网页应用/vendor/win_py310/PIL/_webp.cp310-win_amd64.pyd",
+      "bytes": 416256,
+      "sha256": "b2b263bd00abe0c1c120efca36f8050c161ce6dbbdb20bf940cc874cae01bac2"
+    },
+    {
+      "path": "02_网页应用/vendor/win_py310/PIL/_webp.pyi",
+      "bytes": 66,
+      "sha256": "cc3f2f0283c2f1a1085637dc90bb45b24456e6c6a255e977fac254036a476867"
+    },
+    {
+      "path": "02_网页应用/vendor/win_py310/PIL/features.py",
+      "bytes": 11118,
+      "sha256": "cbf7a5342ce007a46030ff4031fdc274e3f78dda0de21a38bf1a122b383a7967"
+    },
+    {
+      "path": "02_网页应用/vendor/win_py310/PIL/py.typed",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "02_网页应用/vendor/win_py310/PIL/report.py",
+      "bytes": 105,
+      "sha256": "ea6ecd3afd5adb8e7bed9889a315fcf62a7925e3a07f63b517de5febed4ae5a3"
     },
     {
       "path": "02_网页应用/web/app.js",
@@ -5229,6 +5715,16 @@
       "sha256": "68adbf260275db9a0fbd444fd6b92a480bef76f7f93a416d32de07bd0f4318e2"
     },
     {
+      "path": "05_技术资料/ti60f225_oob.hier_util.rpt",
+      "bytes": 119420,
+      "sha256": "1f083bfca0bee55ac1ced6b4c0af299c35e81ab71a168c11af1c6f098c76309f"
+    },
+    {
+      "path": "05_技术资料/ti60f225_oob.map.rpt",
+      "bytes": 734988,
+      "sha256": "505117ff315a9404b36648dbec603a9cdc82939cf37b5875e75a9c4270c3edbc"
+    },
+    {
       "path": "05_技术资料/ti60f225_oob.place.rpt",
       "bytes": 2038,
       "sha256": "f2c5e646dae52eb4577e29b1452e51a50abc467cac4882393c5055fd318d4780"
@@ -5239,19 +5735,1494 @@
       "sha256": "c3ecb3151a756b1af6ca663b5f4500e0999cc1f461c2ff4275bf539915df36b6"
     },
     {
+      "path": "05_技术资料/ti60f225_oob.timing.rpt",
+      "bytes": 3233070,
+      "sha256": "31a0c13b0d2844490b4e618d28fc89ae3509cecd50fa37c263c142bf02d2c009"
+    },
+    {
       "path": "05_技术资料/实现指标.json",
       "bytes": 296,
       "sha256": "710e6497f0a17e15a324e04a3d3b42c775838712826949dd089b3c0e7590d3b4"
     },
     {
+      "path": "05_技术资料/赛题与代码对应.md",
+      "bytes": 4083,
+      "sha256": "b700eef3217f04574b75fc05daefb1abc28d5c3bf60b7a987fae7c6bb6cb400a"
+    },
+    {
+      "path": "06_模型训练与分析/FINAL_WEIGHTS_REBUILD_CHECK.json",
+      "bytes": 1413,
+      "sha256": "48abdb998b5deb3907c303b034cb2015cc1a86518541ae9ffe5fe713d88de38a"
+    },
+    {
+      "path": "06_模型训练与分析/README.md",
+      "bytes": 4467,
+      "sha256": "9de93652fc7c8e17bd6192e86dac36d392e3eb1d3007e4616b5fc1ab1dea2091"
+    },
+    {
+      "path": "06_模型训练与分析/SOURCE_INDEX.json",
+      "bytes": 100834,
+      "sha256": "3c910212804ff326d8bdd7699da13782a8e8e9a5ed123efb92c4f7bfb8bd4910"
+    },
+    {
+      "path": "06_模型训练与分析/network.svg",
+      "bytes": 3206,
+      "sha256": "1e533362ab9de0c1a97997c09ab6135d7cc15bd352277684880c2e4ece5abf81"
+    },
+    {
+      "path": "06_模型训练与分析/network_layers.csv",
+      "bytes": 698,
+      "sha256": "33c95a30d9716c55788a1d9fcb7f4a2c3448bcae9f9995f41c81e72ba9484a41"
+    },
+    {
+      "path": "06_模型训练与分析/parameter_recipes/build_glitch.py",
+      "bytes": 2479,
+      "sha256": "a1609d3f7faee300fc6e99c53d753f56d21cb7717ba7bcaad3e966959e47610c"
+    },
+    {
+      "path": "06_模型训练与分析/parameter_recipes/build_illustration4.py",
+      "bytes": 6673,
+      "sha256": "44906114a890a7c554dffcc5afa4f8ca42b6057e1217c65122ab8cb6312f745e"
+    },
+    {
+      "path": "06_模型训练与分析/parameter_recipes/build_pixel_mosaic.py",
+      "bytes": 3856,
+      "sha256": "2cf546a16ac8e4dfce5c5738b59b24668aed0d9c02918b794da968329b835dcd"
+    },
+    {
+      "path": "06_模型训练与分析/parameter_recipes/build_reference4.py",
+      "bytes": 7258,
+      "sha256": "2c330fc4fa4f932208e065ef8642bc6b90cb11532a5ba92b21c333eae514a128"
+    },
+    {
+      "path": "06_模型训练与分析/parameter_recipes/neon_board_core.py",
+      "bytes": 10882,
+      "sha256": "685481346a128d94ea5ec252d273a9462709f2568b0010873016d77d89232d04"
+    },
+    {
+      "path": "06_模型训练与分析/parameter_recipes/nn5_regenerator_original.py",
+      "bytes": 4669,
+      "sha256": "7b780670f1e775065c86c74775dd2e22f0ea970fdf66ce8dbbce340947b72ba5"
+    },
+    {
+      "path": "06_模型训练与分析/parameter_recipes/retro_REFERENCE_STATS.json",
+      "bytes": 5740,
+      "sha256": "200a4c8d546ea2ddb201019f749932797da2772ff7a397cd2d9a9ab294321547"
+    },
+    {
+      "path": "06_模型训练与分析/parameter_recipes/train_sunny.py",
+      "bytes": 8708,
+      "sha256": "db4b5e847fee398a020dc201d5fd242e6f9d1b0fdc920c72f7f3ba14d0d24f58"
+    },
+    {
+      "path": "06_模型训练与分析/requirements.txt",
+      "bytes": 19,
+      "sha256": "c1c3574848e3d87d84a5764d702de2c5d064644e70e06b79f7eb749a0f51cb7f"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/MantisShrimp/20261009_A4_Paired_Pseudocolor/runs/a4/model_final.pth",
+      "bytes": 26037,
+      "sha256": "c85e43764b8e935c82521ff6b65088b9eb53328f40e95a281df196ae91fb9f75"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/Nobel/20261017_A4_AdaptiveInk_Balanced/runs/a4/model_final.pth",
+      "bytes": 26037,
+      "sha256": "b66e9dd1eb4a04b8fbae06b2e4f21a087ae99cfec6bad2b063135098d220acbb"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/Nobel/20261017_A4_AdaptiveInk_SameGold/runs/a4/model_final.pth",
+      "bytes": 26037,
+      "sha256": "d55a6d7b2a4dfdd9ab7d82947d936074ac869583a452adc16235ab355525b057"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/Nobel/20261017_A4_BoldInk_SameGold/runs/a4/model_final.pth",
+      "bytes": 26037,
+      "sha256": "674ec9a167d40a950865abf0f146ac5ee9776d21fcc4e434c518927c26ecd635"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/Nobel/20261017_A4_Independent_InkGold/runs/a4/model_final.pth",
+      "bytes": 26037,
+      "sha256": "131e0521a32922673627b706ea7acc07410d8de33867f4aacfde0b56db82ae94"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/Ukiyo-e/20261006_A4_BN_Pruning_A8_NoResidual_Distillation/a4_deployment_review_3000/model_final.pth",
+      "bytes": 25269,
+      "sha256": "f4f5930251913811bc228f9f15a4f3555dd0c1d34f5fd32c107d16ba6b738d88"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/Ukiyo-e/20261006_A4_BN_Pruning_A8_NoResidual_Distillation/frozen_a8/identity.json",
+      "bytes": 309,
+      "sha256": "79764a46816cec9e628316e8dcdbf88ee55ac37f66dcf8ba96e3558ccd056aec"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/Ukiyo-e/20261006_A4_BN_Pruning_A8_NoResidual_Distillation/frozen_a8/model_final.pth",
+      "bytes": 30453,
+      "sha256": "c476d9837b70955889dfc443a5a622bb98fdaafa8eb2611a1acd6888d2838600"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/Ukiyo-e/20261006_A4_BN_Pruning_A8_NoResidual_Distillation/pruning_report.json",
+      "bytes": 2678,
+      "sha256": "a53b76751609c6e9e776bcc78e2bd459c4b77a7f6756b06aa6dba41d9abd52c6"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/Ukiyo-e/20261006_A4_BN_Pruning_A8_NoResidual_Distillation/runs/_verification_a4/model_final.pth",
+      "bytes": 25269,
+      "sha256": "a2023a73fb4e98223b7735e880b96282314feeeff458d6990243a8fe4c768901"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/Ukiyo-e/20261006_A4_BN_Pruning_A8_NoResidual_Distillation/runs/_verification_nores/model_final.pth",
+      "bytes": 21351,
+      "sha256": "2254b65543092a14b933fe387a766ca101371026b0e932efe1e6aa1671e18eca"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/Ukiyo-e/20261006_A4_BN_Pruning_A8_NoResidual_Distillation/runs/a4_pilot/model_final.pth",
+      "bytes": 25269,
+      "sha256": "f4f5930251913811bc228f9f15a4f3555dd0c1d34f5fd32c107d16ba6b738d88"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/Ukiyo-e/20261006_A4_BN_Pruning_A8_NoResidual_Distillation/runs/a8_nores_pilot/model_final.pth",
+      "bytes": 21351,
+      "sha256": "36cab161d63c659e09b9b19451741082ece00861c0f18d517ddcc220802be9ed"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/Ukiyo-e/20261006_A8_BN_Structured_Pruning_Distillation/a8_deployment_review_3000/model_final.pth",
+      "bytes": 30453,
+      "sha256": "c476d9837b70955889dfc443a5a622bb98fdaafa8eb2611a1acd6888d2838600"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/Ukiyo-e/20261006_A8_BN_Structured_Pruning_Distillation/frozen_b12/identity.json",
+      "bytes": 311,
+      "sha256": "df1238fabedec50ff934b1c753c0c1ead7cb997ef263ebaa1b11493296218981"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/Ukiyo-e/20261006_A8_BN_Structured_Pruning_Distillation/frozen_b12/model_final.pth",
+      "bytes": 37941,
+      "sha256": "5816d4498c65e063a138f029c06accbd12ca378fd4671c565562ce49023823d3"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/Ukiyo-e/20261006_A8_BN_Structured_Pruning_Distillation/pruning_report.json",
+      "bytes": 2175,
+      "sha256": "58ef858a562d34456b4910d38d358cc5c185707519d9c5c9bea5a8fcc13667ee"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/Ukiyo-e/20261006_A8_BN_Structured_Pruning_Distillation/runs/_verification_a8/model_final.pth",
+      "bytes": 30453,
+      "sha256": "5dd82b004b65f7a1cd050af2e7289179db87158d1f09345fa53dc6ff829defce"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/Ukiyo-e/20261006_A8_BN_Structured_Pruning_Distillation/runs/a8_pilot/model_final.pth",
+      "bytes": 30453,
+      "sha256": "c476d9837b70955889dfc443a5a622bb98fdaafa8eb2611a1acd6888d2838600"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/Ukiyo-e/20261006_B12_BN_Structured_Pruning_Distillation/b12_deployment_review_3000/model_final.pth",
+      "bytes": 37941,
+      "sha256": "5816d4498c65e063a138f029c06accbd12ca378fd4671c565562ce49023823d3"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/Ukiyo-e/20261006_B12_BN_Structured_Pruning_Distillation/frozen_b16/identity.json",
+      "bytes": 302,
+      "sha256": "4d9e63e425070be0d3f66803695b494340ba454ea3941d3ea531b38570761636"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/Ukiyo-e/20261006_B12_BN_Structured_Pruning_Distillation/frozen_b16/model_final.pth",
+      "bytes": 48693,
+      "sha256": "c49c187f407ffae42b76a018b8d5a3d2a8db84326567f3395a8ca563a0fc6fa8"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/Ukiyo-e/20261006_B12_BN_Structured_Pruning_Distillation/pruning_report.json",
+      "bytes": 2446,
+      "sha256": "8cdb2dfae5c9f574caedf74599398ff39df2a086103a62c13af776e20bc4a865"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/Ukiyo-e/20261006_B12_BN_Structured_Pruning_Distillation/runs/_verification_b12/model_final.pth",
+      "bytes": 37941,
+      "sha256": "04d99ed7926fe71323a66a4f42e7484457d4c5083b519cd7458f67010f1873c0"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/Ukiyo-e/20261006_B12_BN_Structured_Pruning_Distillation/runs/b12_pilot/model_final.pth",
+      "bytes": 37941,
+      "sha256": "5816d4498c65e063a138f029c06accbd12ca378fd4671c565562ce49023823d3"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/Ukiyo-e/20261006_B16_IN_BN_Teacher_Distillation/b_deployment_review_12000/model_final.pth",
+      "bytes": 48693,
+      "sha256": "c49c187f407ffae42b76a018b8d5a3d2a8db84326567f3395a8ca563a0fc6fa8"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/Ukiyo-e/20261006_B16_IN_BN_Teacher_Distillation/frozen_teacher/identity.json",
+      "bytes": 313,
+      "sha256": "79e17ac9273e52f2886138ca4cdf176efbfbfaa91ad0e6adbcb263a543dfca9b"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/Ukiyo-e/20261006_B16_IN_BN_Teacher_Distillation/frozen_teacher/model_final.pth",
+      "bytes": 296497,
+      "sha256": "2173cbe907511378ec06876c70df02bbe0129a8ea768ad96959555fd77aa874e"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/Ukiyo-e/20261006_B16_IN_BN_Teacher_Distillation/runs/_verification_bn/model_final.pth",
+      "bytes": 48693,
+      "sha256": "8e89f2acdc1336ab7beb08f6989635c952da3dc3c638f72989fc534126528c43"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/Ukiyo-e/20261006_B16_IN_BN_Teacher_Distillation/runs/b_bn_r2/model_final.pth",
+      "bytes": 48693,
+      "sha256": "c49c187f407ffae42b76a018b8d5a3d2a8db84326567f3395a8ca563a0fc6fa8"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/Ukiyo-e/20261006_B16_IN_BN_Teacher_Distillation/runs/b_in_r2/model_final.pth",
+      "bytes": 41181,
+      "sha256": "7858d67f28f300108f1b04371b84c22b2ef2aaf1085a4ce22da3331cd7a3dd7e"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/Ukiyo-e/20261006_Teacher_Retraining_Initial_Student_Trials/runs/ukiyo_a_bn_pilot/model_final.pth",
+      "bytes": 31221,
+      "sha256": "6461217dfa2ee420d0ccb111aff0e25aa2e70525185d6f91259b6a1a810bc343"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/Ukiyo-e/20261006_Teacher_Retraining_Initial_Student_Trials/runs/ukiyo_a_in_pilot/model_final.pth",
+      "bytes": 23837,
+      "sha256": "9b81a22a5cc19951f2d67d6f3756501e1fd70ff030d51126921d1adef991f177"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/Ukiyo-e/20261006_Teacher_Retraining_Initial_Student_Trials/runs/ukiyo_b_bn_pilot/model_final.pth",
+      "bytes": 49461,
+      "sha256": "5ed99bf43088f2658012a639b111b23c40453d37d000f467a6a7086ec51dd31a"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/Ukiyo-e/20261006_Teacher_Retraining_Initial_Student_Trials/runs/ukiyo_teacher_pilot/model_final.pth",
+      "bytes": 296497,
+      "sha256": "2173cbe907511378ec06876c70df02bbe0129a8ea768ad96959555fd77aa874e"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/Ukiyo-e/20261008_S8_IN_1res_S4_IN_3res_Distillation/frozen_teacher/identity.json",
+      "bytes": 272,
+      "sha256": "499fa9076e24050ba34cfd3ad2ee2e8fce5f58e01588891fd5637ef3989e0de8"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/Ukiyo-e/20261008_S8_IN_1res_S4_IN_3res_Distillation/runs/s4/model_final.pth",
+      "bytes": 19681,
+      "sha256": "f84a5c4dc729033c921f54bac76a31261f3ec45deb9ed86b9ce6206891c047b9"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/Ukiyo-e/20261008_S8_IN_1res_S4_IN_3res_Distillation/runs/s8/model_final.pth",
+      "bytes": 16145,
+      "sha256": "3cb14254445c0ae4923d171d4971161baaae7f74f3a7ea8a0a058b3ba090e7ec"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/Ukiyo-e/Teacher_IN_C8_Res3_20260918_034405_Ukiyo-e/model_final.pth",
+      "bytes": 296497,
+      "sha256": "5d3e421821670a30c1eb2dc95784782c2734a33ca5ab5de1d2d4f6f462411ca5"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/VanGogh_SelfPortrait/20261007_B16_BN_to_A4_Distillation/a4_from_b16/frozen_b16/identity.json",
+      "bytes": 512,
+      "sha256": "b9705c1bae15693cba899ebfe77d3a58e7b0c78dbe84d81d15688c36d7be66cb"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/VanGogh_SelfPortrait/20261007_B16_BN_to_A4_Distillation/a4_from_b16/frozen_b16/model_final.pth",
+      "bytes": 48693,
+      "sha256": "867870a74ba4b70ec09b87b8b6e6c12aa8a3c63abf94e39f97e45bc8b08ebe9b"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/VanGogh_SelfPortrait/20261007_B16_BN_to_A4_Distillation/a4_from_b16/pruning_report.json",
+      "bytes": 1936,
+      "sha256": "a6c1eb46495f4fe7d42b02c7a2ecb5eaa918e6d61f017a1db66ae7fd79a696c6"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/VanGogh_SelfPortrait/20261007_B16_BN_to_A4_Distillation/a4_from_b16/runs/portrait_a4_pilot/model_final.pth",
+      "bytes": 25269,
+      "sha256": "86a2a03a172d083117cf55c8f9e11c7fabc3f7d999fe1a48653bfd1d900431b0"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/VanGogh_SelfPortrait/20261007_B16_BN_to_A4_Distillation/frozen_teacher/identity.json",
+      "bytes": 587,
+      "sha256": "a9b669c9bd372bacfe5fabb169c8950fb05654dbae49f19d10587363cdda61ab"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/VanGogh_SelfPortrait/20261007_B16_BN_to_A4_Distillation/frozen_teacher/model_final.pth",
+      "bytes": 296497,
+      "sha256": "a2c7ef8852833a14793edc7d60aab5ec730fa8a2c8f60857a1fb746d738649ed"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/VanGogh_SelfPortrait/20261007_B16_BN_to_A4_Distillation/runs/portrait_b16_bn/model_final.pth",
+      "bytes": 48693,
+      "sha256": "867870a74ba4b70ec09b87b8b6e6c12aa8a3c63abf94e39f97e45bc8b08ebe9b"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/VanGogh_SelfPortrait/20261008_A4_BN_Color_Coverage_Regional_Repair/frozen_teacher/identity.json",
+      "bytes": 299,
+      "sha256": "653ab7e2126fb467825c9e326805575fe39db4605f8798644019e32a75dbae71"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/VanGogh_SelfPortrait/20261008_A4_BN_Color_Coverage_Regional_Repair/runs/a4/model_final.pth",
+      "bytes": 26037,
+      "sha256": "185ac99576db105be6bf803498ebf5dc3a2569863a9670fc06777a0b8d25c08a"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/VanGogh_SelfPortrait/20261008_A4_BN_Direct_IN_Teacher_Color_Texture/frozen_teacher/identity.json",
+      "bytes": 299,
+      "sha256": "653ab7e2126fb467825c9e326805575fe39db4605f8798644019e32a75dbae71"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/VanGogh_SelfPortrait/20261008_A4_BN_Direct_IN_Teacher_Color_Texture/runs/a4/model_final.pth",
+      "bytes": 26037,
+      "sha256": "041c12700d1086fb4f7cbfad744f158f53fc176211468fa7890cdaeae3f22b25"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/VanGogh_SelfPortrait/20261008_A4_BN_FromScratch_Vivid_Teacher_ColorPriority/frozen_teacher/identity.json",
+      "bytes": 299,
+      "sha256": "653ab7e2126fb467825c9e326805575fe39db4605f8798644019e32a75dbae71"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/VanGogh_SelfPortrait/20261008_A4_BN_FromScratch_Vivid_Teacher_ColorPriority/runs/a4/model_final.pth",
+      "bytes": 26037,
+      "sha256": "047197b94c96653da394947c6da43031c23e34627e7ed69fc183844ad8ce9f4d"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/VanGogh_SelfPortrait/20261009_A4_BN_Teacher_Palette8_MinArea5/frozen_teacher/identity.json",
+      "bytes": 299,
+      "sha256": "653ab7e2126fb467825c9e326805575fe39db4605f8798644019e32a75dbae71"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/VanGogh_SelfPortrait/20261009_A4_BN_Teacher_Palette8_MinArea5/runs/a4/model_final.pth",
+      "bytes": 26037,
+      "sha256": "36c9736abbd378d99626943c8a477735559257801afa0df95604c8e60fe83913"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/VanGogh_SelfPortrait/20261009_C6_Res3_BN_HalfParameters_IN_Distillation/frozen_teacher/identity.json",
+      "bytes": 299,
+      "sha256": "653ab7e2126fb467825c9e326805575fe39db4605f8798644019e32a75dbae71"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/VanGogh_SelfPortrait/20261009_C6_Res3_BN_HalfParameters_IN_Distillation/runs/c6_bn/model_final.pth",
+      "bytes": 188312,
+      "sha256": "75230ec0d768177cb71367c93b65ad69c55fd1f3520e2b67e95202c3cd1c12cd"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/VanGogh_SelfPortrait/20261009_Core1_LumaTexture/identity.json",
+      "bytes": 503,
+      "sha256": "b3d1bdf5d0d6887dee719cbbb49703ea099b37ed02ede4298a897bc27bc37302"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/VanGogh_SelfPortrait/20261009_Core1_LumaTexture/original_in_teacher/identity.json",
+      "bytes": 299,
+      "sha256": "653ab7e2126fb467825c9e326805575fe39db4605f8798644019e32a75dbae71"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/VanGogh_SelfPortrait/20261009_Core1_LumaTexture/runs/luma_v1/model_final.pth",
+      "bytes": 104161,
+      "sha256": "058cd046300be862373b370b44574ba0615d853b29495a3508e34f2e75ddf5c9"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/VanGogh_SelfPortrait/20261009_StyleContextDetail_ColorCompression/frozen_teacher/identity.json",
+      "bytes": 361,
+      "sha256": "1c6f7e026465113ffc3bde181ede79a278fd0b2f9ed72f686d58a6eeed5e4dd2"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/VanGogh_SelfPortrait/20261009_StyleContextDetail_ColorCompression/original_in_teacher/identity.json",
+      "bytes": 299,
+      "sha256": "653ab7e2126fb467825c9e326805575fe39db4605f8798644019e32a75dbae71"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/VanGogh_SelfPortrait/20261009_StyleContextDetail_ColorCompression/runs/phase_fold/model_final.pth",
+      "bytes": 223081,
+      "sha256": "25ee5898c9676fbfcde5bb6d463bc0ec6d7f1ca6c8604df822ad0c61cdebf2fd"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/VanGogh_SelfPortrait/20261009_StyleContextDetail_CorePruning/frozen_teacher/identity.json",
+      "bytes": 423,
+      "sha256": "f92b881ab091e7357d9259b47f8f6de9e275b20516013a1727aa5d1919114f03"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/VanGogh_SelfPortrait/20261009_StyleContextDetail_CorePruning/original_in_teacher/identity.json",
+      "bytes": 299,
+      "sha256": "653ab7e2126fb467825c9e326805575fe39db4605f8798644019e32a75dbae71"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/VanGogh_SelfPortrait/20261009_StyleContextDetail_CorePruning/runs/core1/model_final.pth",
+      "bytes": 101661,
+      "sha256": "85a36743568c0ca872f09b6e207b29a9e0a41ee8a9189592b6779eba21d1c5e3"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/VanGogh_SelfPortrait/20261009_StyleContextDetail_CorePruning/runs/core2/model_final.pth",
+      "bytes": 142113,
+      "sha256": "6ec5b6a6cc29ee605414c249ec763932e534d1e692f02e271607fd22e82c6dda"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/VanGogh_SelfPortrait/20261009_StyleContextDetail_CorePruning/runs/core3/model_final.pth",
+      "bytes": 182629,
+      "sha256": "f9fd1f8175f0943431c151b647042fecaddadfcbd0f7bef3e1054d2fee23af7f"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/VanGogh_SelfPortrait/20261009_StyleContextDetail_IN_Distillation/frozen_teacher/identity.json",
+      "bytes": 299,
+      "sha256": "653ab7e2126fb467825c9e326805575fe39db4605f8798644019e32a75dbae71"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/VanGogh_SelfPortrait/20261009_StyleContextDetail_IN_Distillation/runs/scd_v1/model_final.pth",
+      "bytes": 224745,
+      "sha256": "62d944de4b8c62173a86687d2e253b3e0ee608455546597f62e81fd8d82ef421"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/VanGogh_SelfPortrait/20261009_StyleContextDetail_TextureHead_Refinement/frozen_teacher/identity.json",
+      "bytes": 299,
+      "sha256": "653ab7e2126fb467825c9e326805575fe39db4605f8798644019e32a75dbae71"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/VanGogh_SelfPortrait/20261009_StyleContextDetail_TextureHead_Refinement/runs/texture_v1/model_final.pth",
+      "bytes": 224745,
+      "sha256": "c0a7874da98e9d1ac17aa9ede597a6936968b69b8c5e23f599b2c1523dc6d76c"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/VanGogh_SelfPortrait/20261009_StyleContextDetail_TextureTrunk_Refinement/frozen_teacher/identity.json",
+      "bytes": 299,
+      "sha256": "653ab7e2126fb467825c9e326805575fe39db4605f8798644019e32a75dbae71"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/VanGogh_SelfPortrait/20261009_StyleContextDetail_TextureTrunk_Refinement/runs/texture_trunk_v1/model_final.pth",
+      "bytes": 224745,
+      "sha256": "256862107b46c0135a7b9e99d244bbe63e92e070b2d2eb224b2ba1c65532d99a"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/VanGogh_SelfPortrait/Legacy_Teacher_BN_runs3_bat/20260916_221746/model_final.pth",
+      "bytes": 310616,
+      "sha256": "e8b6eb8d2fc428426b19791a4b2eb30f0499d2fbb6b1f7c9e94f349be35fee65"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/VanGogh_SelfPortrait/Legacy_Teacher_IN_runs3_ins/model_final.pth",
+      "bytes": 296497,
+      "sha256": "a2c7ef8852833a14793edc7d60aab5ec730fa8a2c8f60857a1fb746d738649ed"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/bright_aaa/20261007_Teacher_Palette_Texture_B16_to_A4_Distillation/distill_b16_a4/a4_from_b16/frozen_b16/identity.json",
+      "bytes": 582,
+      "sha256": "bd088dcb490d7c61dce1adaca26f6cf2a56c49d9148720e65b70d1bce3df512d"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/bright_aaa/20261007_Teacher_Palette_Texture_B16_to_A4_Distillation/distill_b16_a4/a4_from_b16/frozen_b16/model_final.pth",
+      "bytes": 49717,
+      "sha256": "5a33be1e23e8446990f2d575ce1f76921369c530dbb0126f6ecb8ee329f26b8f"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/bright_aaa/20261007_Teacher_Palette_Texture_B16_to_A4_Distillation/distill_b16_a4/a4_from_b16/pruning_report.json",
+      "bytes": 1937,
+      "sha256": "f3c00fd591ef45fef947233ed2e246c6e73159d050be74dd2988be89ffafecf2"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/bright_aaa/20261007_Teacher_Palette_Texture_B16_to_A4_Distillation/distill_b16_a4/a4_from_b16/runs/bright_a4/model_final.pth",
+      "bytes": 25269,
+      "sha256": "04a5b74b542053f35a48275cdf94f21e9b8cee7e8a483c73f1f5d72e627bce8b"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/bright_aaa/20261007_Teacher_Palette_Texture_B16_to_A4_Distillation/distill_b16_a4/frozen_teacher/identity.json",
+      "bytes": 388,
+      "sha256": "5758598646b62229bc4aab0e6792bb31edaec47deffb982e64ecb1b92e2b7698"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/bright_aaa/20261007_Teacher_Palette_Texture_B16_to_A4_Distillation/distill_b16_a4/frozen_teacher/model_final.pth",
+      "bytes": 296497,
+      "sha256": "2c59d275c701ea60199e2a321cc86756503b20a7665d8416543ab699670f85bb"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/bright_aaa/20261007_Teacher_Palette_Texture_B16_to_A4_Distillation/distill_b16_a4/runs/bright_b16_bn/model_final.pth",
+      "bytes": 48693,
+      "sha256": "969622b9c4edfb0dad6f2578b957617fc660981e499b79dade5923dc70506f1c"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/bright_aaa/20261007_Teacher_Palette_Texture_B16_to_A4_Distillation/teacher_color_v1/model_final.pth",
+      "bytes": 296497,
+      "sha256": "64969334a1134cfa421659db41b9a2e81072b0ddedfe7e59f9f5debf8dda1cc0"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/bright_aaa/20261007_Teacher_Palette_Texture_B16_to_A4_Distillation/teacher_palette_v1/model_final.pth",
+      "bytes": 296497,
+      "sha256": "b10ff55eeaf4453ae12a6fcb12cd1f2041e0e412c647ebd94835fdf92da3335f"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/bright_aaa/20261007_Teacher_Palette_Texture_B16_to_A4_Distillation/teacher_texture_v1/model_final.pth",
+      "bytes": 296497,
+      "sha256": "2c59d275c701ea60199e2a321cc86756503b20a7665d8416543ab699670f85bb"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/ink/Legacy_Teacher_IN_runs2_ins/20260917_165149/model_final.pth",
+      "bytes": 296497,
+      "sha256": "fd9afb2b53280317ba4b7ac2ece9fbf38edc3a8be539058ce3d8782c66572822"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/jojo/Legacy_Teacher_IN_runs1_ins/20260917_185716/model_final.pth",
+      "bytes": 296497,
+      "sha256": "9b4cc7f5c2f9cf324dc8f5fa560888883fdcf150d0e191295abf07d3b9b37c90"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/mc/Teacher_IN_C8_Res3_20260917_230349_mc/model_final.pth",
+      "bytes": 296497,
+      "sha256": "165dcb42dce3a28e3f72466466b51e667c4a8923c4a40ca5ffdf107bea4fe6d2"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/standard2/Teacher_IN_C8_Res3_20260918_003748_standard2/model_final.pth",
+      "bytes": 296497,
+      "sha256": "9e3e10acacf832950adbf54f3904c38fa8b3fed2cd2765d60cadd57be7a4f212"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/output/terarria/Teacher_IN_C8_Res3_20260918_021051_terarria/model_final.pth",
+      "bytes": 296497,
+      "sha256": "419995d682bedda4182d74cbd6b9a8ca74586bd89ae0592f785781b628eb69d7"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training/README.md",
+      "bytes": 4729,
+      "sha256": "64c07a3d547d3b8b3d65ce29098be7f2a0f89804f64b14126c8e0429c139151c"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training/model.py",
+      "bytes": 5286,
+      "sha256": "b49ad86092e290f7df11a6f5b53bc7db091760d1d631cd526bb9cd0f3b2e092a"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training/stylize.py",
+      "bytes": 9694,
+      "sha256": "835dadcf20a45a867d3eb6e3b8f8d6a019ee34f638b3f19c5ed7e408799babb1"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training/train.py",
+      "bytes": 9328,
+      "sha256": "34dec8cbcdcfa5c7c78c5570fb0fb9101905bcdc1d0fc850bbc12ab049e2b1b5"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_bn/README.md",
+      "bytes": 10874,
+      "sha256": "b973b2362e86dfe6658999187d1c5c8c0c8216807f29567c177eb04da89c09e3"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_bn/evaluate.py",
+      "bytes": 9874,
+      "sha256": "402f2c095c9f407e3516d55794edb0a35be160b37fa4cc572fb1076725817e98"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_bn/model.py",
+      "bytes": 5286,
+      "sha256": "b49ad86092e290f7df11a6f5b53bc7db091760d1d631cd526bb9cd0f3b2e092a"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_bn/run_compare.py",
+      "bytes": 15776,
+      "sha256": "6b376b6979fcd962349fb7490d875b8446059081b91f5b05b83f4bd036498b33"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_bn/selfcheck.py",
+      "bytes": 4545,
+      "sha256": "0e9c8c4e2f08811fcc821144eb1d313e1fc7b0e05d3c1281c5a1807869dfccf0"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_bn/stylize.py",
+      "bytes": 10136,
+      "sha256": "9a9a59f0655739a48deedace328a4f78e4271c3515e457c1e196fabdf3c46482"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_bn/test_mem.py",
+      "bytes": 2077,
+      "sha256": "32eb1723d5f0e1f08c795f41c76e7305f10756ed7d91b99404328b45468bda0e"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_bn/test_resize.py",
+      "bytes": 3219,
+      "sha256": "dbb20629e20e20a90df25b9f21e1a8b5099e0e4276f7d39c0c1baeebe6effd2d"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_bn/train.py",
+      "bytes": 18105,
+      "sha256": "d29fc07b28892b473db59f0f57bf4467b92274d6f9f4bc337031a2668e1757a3"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/MantisShrimp/20261009_A4_Paired_Pseudocolor/README.md",
+      "bytes": 3685,
+      "sha256": "095ba3f78d91c6c8121e24523befe6d62d6fb7e15ec19895d8c801165e91c820"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/MantisShrimp/20261009_A4_Paired_Pseudocolor/models.py",
+      "bytes": 1470,
+      "sha256": "05037aef1eda5b55681371a4f4bbdaec283e072178a9b07b565c547ae9fb3f04"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/MantisShrimp/20261009_A4_Paired_Pseudocolor/preview_targets.py",
+      "bytes": 3423,
+      "sha256": "b7430bb4f40a2936407c259ff8c74f1c8ca697984e679a9ca76fb161b3fc9384"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/MantisShrimp/20261009_A4_Paired_Pseudocolor/rules.json",
+      "bytes": 655,
+      "sha256": "849443d643250ebc077330dc929700ea464ad38fe2159f21c7fe4d6685ce2571"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/MantisShrimp/20261009_A4_Paired_Pseudocolor/start_training.ps1",
+      "bytes": 421,
+      "sha256": "b3dc6e9dc25c363e1b632014ba574e1b83a0f35ebfc67a5fad04bb313e439d91"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/MantisShrimp/20261009_A4_Paired_Pseudocolor/target.py",
+      "bytes": 3071,
+      "sha256": "9a57d16c4bb54faf1f2ffed433833822273e79a05d20f16792737f8bce7a3696"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/MantisShrimp/20261009_A4_Paired_Pseudocolor/train_a4.py",
+      "bytes": 15460,
+      "sha256": "38e85fc418df4db21ce53903bde87ed5bbbc759433d63cd5408704f75d4dc63b"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/MantisShrimp/20261009_A4_Paired_Pseudocolor/verify.py",
+      "bytes": 2161,
+      "sha256": "37781ef82cff171ee86092042fa7f3fba131f82027db71c050ee7c35d886065f"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/Nobel/20261017_A4_AdaptiveInk_Balanced/README.md",
+      "bytes": 1264,
+      "sha256": "02c6b264bd49a6f8a6a3b6d24b33d59f328e554dffb8019569bebf7e99e3a142"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/Nobel/20261017_A4_AdaptiveInk_Balanced/models.py",
+      "bytes": 1470,
+      "sha256": "05037aef1eda5b55681371a4f4bbdaec283e072178a9b07b565c547ae9fb3f04"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/Nobel/20261017_A4_AdaptiveInk_Balanced/rules.json",
+      "bytes": 753,
+      "sha256": "b98188e20e7228bf06d1c2f78081a1b7af1945549b8bcba853ddf86e7f514aef"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/Nobel/20261017_A4_AdaptiveInk_Balanced/start_training.ps1",
+      "bytes": 404,
+      "sha256": "7c4751e9a14d9ef84aa1ae7b766265f29d6177de4a107ac108b107d90d9509e1"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/Nobel/20261017_A4_AdaptiveInk_Balanced/target.py",
+      "bytes": 3778,
+      "sha256": "dd19caf7c51f0b7c00fee7084323c3d85846af120e54b97a2e686c2ac6529afe"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/Nobel/20261017_A4_AdaptiveInk_Balanced/train_a4.py",
+      "bytes": 17218,
+      "sha256": "2eef9ec05f7003b28bca7a15ebf6debd20c96a415fc1113eedcaa8f6ca67c9e4"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/Nobel/20261017_A4_AdaptiveInk_SameGold/README.md",
+      "bytes": 1663,
+      "sha256": "809374f2e95b9e53542c3fe9255a9035afc80303c8ab3eded9d22765c3597c07"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/Nobel/20261017_A4_AdaptiveInk_SameGold/models.py",
+      "bytes": 1470,
+      "sha256": "05037aef1eda5b55681371a4f4bbdaec283e072178a9b07b565c547ae9fb3f04"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/Nobel/20261017_A4_AdaptiveInk_SameGold/rules.json",
+      "bytes": 731,
+      "sha256": "07e012e98fa00427018f5b954cb5dfdb50a7c6c8709e385c9f8dc360e921d3fb"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/Nobel/20261017_A4_AdaptiveInk_SameGold/script_validation.json",
+      "bytes": 593,
+      "sha256": "bbbf4e11aa7c96f0d4b7315c6503a804a723e3ebfd72ddbd435c46ed6a3732ef"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/Nobel/20261017_A4_AdaptiveInk_SameGold/start_training.ps1",
+      "bytes": 404,
+      "sha256": "7c4751e9a14d9ef84aa1ae7b766265f29d6177de4a107ac108b107d90d9509e1"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/Nobel/20261017_A4_AdaptiveInk_SameGold/target.py",
+      "bytes": 3381,
+      "sha256": "f60aa7b9e6252ef61e1188ecb2bc4e33b67e8ae049b7f50f99e7eb378471e1e8"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/Nobel/20261017_A4_AdaptiveInk_SameGold/train_a4.py",
+      "bytes": 16741,
+      "sha256": "a34862b3304b97f83eb8ee330d0b4a9f61b0bcaf66c176788deef33b29351b96"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/Nobel/20261017_A4_BoldInk_SameGold/README.md",
+      "bytes": 1367,
+      "sha256": "19421db806d8c3944e306102cf5846d619eb3387401088c5a538f2e9953849c8"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/Nobel/20261017_A4_BoldInk_SameGold/models.py",
+      "bytes": 1470,
+      "sha256": "05037aef1eda5b55681371a4f4bbdaec283e072178a9b07b565c547ae9fb3f04"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/Nobel/20261017_A4_BoldInk_SameGold/rules.json",
+      "bytes": 560,
+      "sha256": "b94e2d309bbe1264f151010d2c9fa45d408c64e485ef4352eb33b2a846b98507"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/Nobel/20261017_A4_BoldInk_SameGold/script_validation.json",
+      "bytes": 299,
+      "sha256": "eb373db4d3270df1874b5238d455019ccc6c789c78f424c9b2dbe9eb836506f8"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/Nobel/20261017_A4_BoldInk_SameGold/start_training.ps1",
+      "bytes": 404,
+      "sha256": "7c4751e9a14d9ef84aa1ae7b766265f29d6177de4a107ac108b107d90d9509e1"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/Nobel/20261017_A4_BoldInk_SameGold/target.py",
+      "bytes": 2179,
+      "sha256": "0139470f961ca9b5e5fae25a60c42e401fdc915add2314639fb69702bbf86d76"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/Nobel/20261017_A4_BoldInk_SameGold/train_a4.py",
+      "bytes": 14863,
+      "sha256": "73cbef85974ea737e02eeeeea0b993769832b1adcfad41affee42df3958793b6"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/Nobel/20261017_A4_Independent_InkGold/README.md",
+      "bytes": 2328,
+      "sha256": "ac51f79ff5bff606e1d1b2ce10db4665313b9da97890dbee77cac2ec2ec08a5a"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/Nobel/20261017_A4_Independent_InkGold/models.py",
+      "bytes": 1470,
+      "sha256": "05037aef1eda5b55681371a4f4bbdaec283e072178a9b07b565c547ae9fb3f04"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/Nobel/20261017_A4_Independent_InkGold/preview_targets.py",
+      "bytes": 2560,
+      "sha256": "da45a24c71c262cfcafd283f7ec3d7542b9ed0a18d07fd13f34036eff1a1e677"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/Nobel/20261017_A4_Independent_InkGold/rules.json",
+      "bytes": 558,
+      "sha256": "6c55b69c11de2bdc0a29617865a050f1d50ff1866499c08e057844e6133ccb7c"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/Nobel/20261017_A4_Independent_InkGold/start_training.ps1",
+      "bytes": 404,
+      "sha256": "7c4751e9a14d9ef84aa1ae7b766265f29d6177de4a107ac108b107d90d9509e1"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/Nobel/20261017_A4_Independent_InkGold/target.py",
+      "bytes": 2179,
+      "sha256": "0139470f961ca9b5e5fae25a60c42e401fdc915add2314639fb69702bbf86d76"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/Nobel/20261017_A4_Independent_InkGold/train_a4.py",
+      "bytes": 14616,
+      "sha256": "21e91c56d10e382c01ffe799a51697ce1622755bbfe3022efaf46b85eb97c5b0"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/Ukiyo-e/20261006_A4_BN_Pruning_A8_NoResidual_Distillation/README_PATHS.md",
+      "bytes": 320,
+      "sha256": "83e5a9a019dc98f365b35b5b4e13c17d52158dad8e6b648e2d8e1e752611c39a"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/Ukiyo-e/20261006_A4_BN_Pruning_A8_NoResidual_Distillation/export_a4_rtl.py",
+      "bytes": 6712,
+      "sha256": "7c84b01c4852af972edb2d5afb468d15484957012a55161ebf80cf8308792a9b"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/Ukiyo-e/20261006_A4_BN_Pruning_A8_NoResidual_Distillation/quant_screen_a4.py",
+      "bytes": 10691,
+      "sha256": "7d75695152c31db1cd2733c024fff0a50402951586f2a13bd22945eb9169dd6a"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/Ukiyo-e/20261006_A4_BN_Pruning_A8_NoResidual_Distillation/structure.py",
+      "bytes": 4992,
+      "sha256": "42f547c8e2567065fad0407e17d8d9a2759fe7690e96f0983467265a06b8fee1"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/Ukiyo-e/20261006_A4_BN_Pruning_A8_NoResidual_Distillation/support.py",
+      "bytes": 11979,
+      "sha256": "1569a7db45f1a0b133a4b258cff744674660459205217d8ebe3db00ecf3de7b9"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/Ukiyo-e/20261006_A4_BN_Pruning_A8_NoResidual_Distillation/train_variants.py",
+      "bytes": 13865,
+      "sha256": "2f01c0dc2614a0ab870c0b316b51c1fc622b91ae7d80fdc6bfecd208b7fcffd3"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/Ukiyo-e/20261006_A8_BN_Structured_Pruning_Distillation/README_PATHS.md",
+      "bytes": 314,
+      "sha256": "a9e08677bd3b2217b5b5b696bd0d7187527db6cd5aca6e7d89979eaea8aa05f9"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/Ukiyo-e/20261006_A8_BN_Structured_Pruning_Distillation/pruning.py",
+      "bytes": 4873,
+      "sha256": "5376f5869cee3861d3fd46919ff16e84393c23a38db2ae4490b5f13fd5540fc7"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/Ukiyo-e/20261006_A8_BN_Structured_Pruning_Distillation/quant_screen_a8.py",
+      "bytes": 10689,
+      "sha256": "f4d9b4a17857d74d1076eb093d3c2877b10fa323e6b45ec492adeea7d8faaf7b"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/Ukiyo-e/20261006_A8_BN_Structured_Pruning_Distillation/support.py",
+      "bytes": 11976,
+      "sha256": "001f9f00d66980a99ec396b43b5ff76c1b965d981ec08f8a714bf892460c6239"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/Ukiyo-e/20261006_A8_BN_Structured_Pruning_Distillation/train_a8.py",
+      "bytes": 13434,
+      "sha256": "6f9f54123e9a5b5440845832b08a283473bd70b449bc8189412134e1de030ade"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/Ukiyo-e/20261006_B12_BN_Structured_Pruning_Distillation/README_PATHS.md",
+      "bytes": 316,
+      "sha256": "59515f5ab285850e8c0808e38f235825b67a16daf05588ddd123c7a5f76b2f04"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/Ukiyo-e/20261006_B12_BN_Structured_Pruning_Distillation/pruning.py",
+      "bytes": 4811,
+      "sha256": "b05e91195306c8b6f33b7c54b5da654bd7c299ce07db36189cd0d1e5ea6b9cee"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/Ukiyo-e/20261006_B12_BN_Structured_Pruning_Distillation/quant_screen_b12.py",
+      "bytes": 10696,
+      "sha256": "13752df04a446227294dc6fc7971181c94ec070e89ae512aaabb974626ad046b"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/Ukiyo-e/20261006_B12_BN_Structured_Pruning_Distillation/support.py",
+      "bytes": 11977,
+      "sha256": "18f0ec029bdc641ad94d1eea3b14a8085c7efc5545a8c9918038e8707518a880"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/Ukiyo-e/20261006_B12_BN_Structured_Pruning_Distillation/train_b12.py",
+      "bytes": 13455,
+      "sha256": "f3083b6850feb418372aa391520e93e73c1fe4a741b5e0a4c27a0aa7c43b85bc"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/Ukiyo-e/20261006_B12_BN_Structured_Pruning_Distillation/train_round2.py",
+      "bytes": 13095,
+      "sha256": "6ae36773b89c9e3b0c17124fe2ed28d354bad0503060f716db11b7e3812fa905"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/Ukiyo-e/20261006_B16_IN_BN_Teacher_Distillation/README_PATHS.md",
+      "bytes": 300,
+      "sha256": "6264d96f0a1218d75497f8a45b23d41200fde50e5cc0f9be79d162fa6e0fca5d"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/Ukiyo-e/20261006_B16_IN_BN_Teacher_Distillation/compare.py",
+      "bytes": 1231,
+      "sha256": "4f62cf9a9a70ff70c2b338aff620ff661bbff2807099e28ba04ef9e974b3f5d1"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/Ukiyo-e/20261006_B16_IN_BN_Teacher_Distillation/compare_round2.py",
+      "bytes": 2500,
+      "sha256": "f384f0bae581f467208345c1f2dfa7d9126014a5c2b6087ca3b548962e059531"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/Ukiyo-e/20261006_B16_IN_BN_Teacher_Distillation/quant_screen_b16.py",
+      "bytes": 10696,
+      "sha256": "26eed2b4605825108f7b8a9188fd88e7555c65dda2401416bec5fd1530ed52cb"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/Ukiyo-e/20261006_B16_IN_BN_Teacher_Distillation/support.py",
+      "bytes": 11969,
+      "sha256": "1642cd028da9411bfbcf7ea7ff924e4b103af081bf2430affc90c24d94f15534"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/Ukiyo-e/20261006_B16_IN_BN_Teacher_Distillation/train_round2.py",
+      "bytes": 13087,
+      "sha256": "f00c66a4148bc397f089a86d197dbbc027cabe6d467a0b876d1f1e6e433df91e"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/Ukiyo-e/20261006_Teacher_Retraining_Initial_Student_Trials/README_PATHS.md",
+      "bytes": 322,
+      "sha256": "c414c30c62ee4aae5821e5e2421bef607a14ac10ebefdbfbb312ab6e21d64c01"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/Ukiyo-e/20261006_Teacher_Retraining_Initial_Student_Trials/compare.py",
+      "bytes": 1231,
+      "sha256": "4f62cf9a9a70ff70c2b338aff620ff661bbff2807099e28ba04ef9e974b3f5d1"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/Ukiyo-e/20261006_Teacher_Retraining_Initial_Student_Trials/experiment.py",
+      "bytes": 11980,
+      "sha256": "9f0d6f27ee26a470ff8243589946b1528dbf35dac924f1a620e850adf77835bb"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/Ukiyo-e/20261006_Teacher_Retraining_Initial_Student_Trials/run_students.ps1",
+      "bytes": 611,
+      "sha256": "bf632612a862bae0c908d978a46d23f57122c8581deeae985aedcd3c36e67329"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/Ukiyo-e/20261008_S8_IN_1res_S4_IN_3res_Distillation/README_PATHS.md",
+      "bytes": 308,
+      "sha256": "e49ee2a11b7ff74bdf337bdfe3e73aac732c7a9087024538946fb26718c5ea23"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/Ukiyo-e/20261008_S8_IN_1res_S4_IN_3res_Distillation/models.py",
+      "bytes": 1634,
+      "sha256": "62e4e578b04302685c21bdc70c19f8597b72ce253629d71044965163794f06d7"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/Ukiyo-e/20261008_S8_IN_1res_S4_IN_3res_Distillation/run_all.py",
+      "bytes": 3460,
+      "sha256": "36b57ff7e8a106ecbc6869000f42b279a4600db261cf94a97bc589ad9fe505d8"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/Ukiyo-e/20261008_S8_IN_1res_S4_IN_3res_Distillation/train_candidates.py",
+      "bytes": 11971,
+      "sha256": "db8a92cdbc72c011ce69e66a29bd4400331f6b82a4b58467c59e85851df7d2d7"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261007_B16_BN_to_A4_Distillation/README_PATHS.md",
+      "bytes": 316,
+      "sha256": "9da35d10dda444daa0b4e2bbbadd0ec90c2e85b56c13fa9decbf217ba25acdba"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261007_B16_BN_to_A4_Distillation/a4_from_b16/prepare_a4.py",
+      "bytes": 2707,
+      "sha256": "0de18f4e5b72ea6501df752e5b4514c15a4f836837123251b3619f086da2d610"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261007_B16_BN_to_A4_Distillation/a4_from_b16/structure.py",
+      "bytes": 5157,
+      "sha256": "a35a2a90b9e38e3ec812c47eb0ec5459c95b3d423beca9bf9d596f66722b08ce"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261007_B16_BN_to_A4_Distillation/a4_from_b16/support.py",
+      "bytes": 2903,
+      "sha256": "1f614511e5a157c2a15bc74503d9c8f89abf57ab88fc6fe72470dca3611e5b33"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261007_B16_BN_to_A4_Distillation/a4_from_b16/train_a4.py",
+      "bytes": 13617,
+      "sha256": "dfb0d247cc632f945c4c2b03c9c9b64aab0ba33de1bd5c19c2e8482788fb72b7"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261007_B16_BN_to_A4_Distillation/compare_round2.py",
+      "bytes": 2500,
+      "sha256": "f384f0bae581f467208345c1f2dfa7d9126014a5c2b6087ca3b548962e059531"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261007_B16_BN_to_A4_Distillation/run_b16.ps1",
+      "bytes": 400,
+      "sha256": "3dfdfd889e1ac063bf1aa413ae85a91dcddbff0d2a3aa3a6fb245e123c5822a1"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261007_B16_BN_to_A4_Distillation/support.py",
+      "bytes": 2891,
+      "sha256": "fac6a4e14f3e0fd9223b0c9a839d891ef8d780b4d3221f9deeba615833d83560"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261007_B16_BN_to_A4_Distillation/train_round2.py",
+      "bytes": 13095,
+      "sha256": "10b5a140f4b55459baa36f5b51443ba34d6946909e48a6ec8094d54982c42d0e"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261008_A4_BN_Color_Coverage_Regional_Repair/README.md",
+      "bytes": 1441,
+      "sha256": "58b77d77153d59b47d265de21701a38de27f299061aecab35c73ea76c6d1709e"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261008_A4_BN_Color_Coverage_Regional_Repair/models.py",
+      "bytes": 1324,
+      "sha256": "8e7f4ce4ab9a4002b2adf142535c7b31049fec63cdbac678cf21a1e6385618bf"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261008_A4_BN_Color_Coverage_Regional_Repair/train_a4_repair.py",
+      "bytes": 20046,
+      "sha256": "a2aed108c27f48e05d8108036d2b6471f6f619c9169621f30b62d7ec6b9f9411"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261008_A4_BN_Direct_IN_Teacher_Color_Texture/README.md",
+      "bytes": 1349,
+      "sha256": "fa7aa44288f20ac3e153da85d546904bbb9ec747af741f861ff99709248244b7"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261008_A4_BN_Direct_IN_Teacher_Color_Texture/models.py",
+      "bytes": 1325,
+      "sha256": "e4f25d3b73a4f1fbd882084d8ce0cc669467ee155756dad8377222dd88c6e7b7"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261008_A4_BN_Direct_IN_Teacher_Color_Texture/train_a4.py",
+      "bytes": 15769,
+      "sha256": "aa677a52440b6c2f374a658f2e9cce1eae5617aa9c530346ee794f9bb9d1720c"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261008_A4_BN_FromScratch_Vivid_Teacher_ColorPriority/README.md",
+      "bytes": 1709,
+      "sha256": "c139ebb56823cb456c05167ef0deb05cdc620c7d3111993f49936d7653e21611"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261008_A4_BN_FromScratch_Vivid_Teacher_ColorPriority/models.py",
+      "bytes": 1333,
+      "sha256": "01c8ebb367b90a387256f05ccb20fee29587283e226effe54070cda98f1b2e66"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261008_A4_BN_FromScratch_Vivid_Teacher_ColorPriority/train_a4_vivid.py",
+      "bytes": 21258,
+      "sha256": "ae64c3a6f2e3104ca67ff3fadcbcb77baf2a1b2acdb80cac1923d4aee4dbeec5"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_A4_BN_Teacher_Palette8_MinArea5/README.md",
+      "bytes": 1860,
+      "sha256": "6d7beb9eb0712213d9c51271f40e1b68cece0c27a46d75a5249c3cbd16ed2f14"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_A4_BN_Teacher_Palette8_MinArea5/models.py",
+      "bytes": 1319,
+      "sha256": "418ccb36266e1ad8569998c7fa57d9aba7b015e38fe8bcdda9777e91fa2e550c"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_A4_BN_Teacher_Palette8_MinArea5/train_a4_palette.py",
+      "bytes": 23734,
+      "sha256": "abb09e7d8fdddd4ebf2f406bfc0e929c237f787546af6004f4971abad03bae9f"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_C6_Res3_BN_HalfParameters_IN_Distillation/README.md",
+      "bytes": 1502,
+      "sha256": "48adc182b88c4de029ed8ff2cc166b467206c51ac2c608682ec5c25d7de62aa0"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_C6_Res3_BN_HalfParameters_IN_Distillation/models.py",
+      "bytes": 1103,
+      "sha256": "fdf1529b6b220b33c0e01dbcc80cdda1f680a13876cbe536d25b0ec056202c23"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_C6_Res3_BN_HalfParameters_IN_Distillation/train_c6_bn.py",
+      "bytes": 22363,
+      "sha256": "a97f2e107674ba82168c56920a74c38428f24376717bd76881cf1a8fe3370602"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_Core1_LumaTexture/README.md",
+      "bytes": 2561,
+      "sha256": "03aff853277e83f08984b0c4bd032255c406ada7954e412ac2f883946b639737"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_Core1_LumaTexture/compact_model.py",
+      "bytes": 7181,
+      "sha256": "288985c148b4685b93035e4b63605afe1ffc833e1752b177a6ac841606e5bed2"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_Core1_LumaTexture/luma_texture_model.py",
+      "bytes": 1727,
+      "sha256": "126185b0a0da7e3bf9b99863139d93839f00dbaa10f946102c80a6ee4ac40b1a"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_Core1_LumaTexture/palette_report.py",
+      "bytes": 2777,
+      "sha256": "549f3af2fd1fd2f2ab29ac45752c4d50523ca9d202369e19217cd643c216f560"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_Core1_LumaTexture/student_model.py",
+      "bytes": 7417,
+      "sha256": "ec7a50a2c4bfcee510d4da161acd0d1218f02f01f1af1e00cef0f52ad3e31a60"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_Core1_LumaTexture/train_compact.py",
+      "bytes": 16141,
+      "sha256": "d3d4ae2d0169f8e7d96c9e3937d32d29e0f5687f30589786c74fba2182262061"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_Core1_LumaTexture/train_texture.py",
+      "bytes": 9292,
+      "sha256": "06e61af54433b61cc8e0a963c31ffac2292068e8c08ce92c400154a38e969808"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_StyleContextDetail_ColorCompression/README.md",
+      "bytes": 2400,
+      "sha256": "b5e12d0a3628438bff20f2b33b816973f8b0ca24811dfe60ee5eb7e210ea9964"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_StyleContextDetail_ColorCompression/compact_model.py",
+      "bytes": 6542,
+      "sha256": "e34dbdbfad24078db4a64bc3f6c18917adf0eafde3360367a6b8406a9d0c30e9"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_StyleContextDetail_ColorCompression/palette_report.py",
+      "bytes": 2777,
+      "sha256": "549f3af2fd1fd2f2ab29ac45752c4d50523ca9d202369e19217cd643c216f560"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_StyleContextDetail_ColorCompression/student_model.py",
+      "bytes": 7417,
+      "sha256": "ec7a50a2c4bfcee510d4da161acd0d1218f02f01f1af1e00cef0f52ad3e31a60"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_StyleContextDetail_ColorCompression/train_compact.py",
+      "bytes": 16085,
+      "sha256": "81f2190e2ee255f1c1911ec0897518f5c4f1a4b958eb77531a7d8b6800feef47"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_StyleContextDetail_CorePruning/README.md",
+      "bytes": 2576,
+      "sha256": "e3cbab3aa8468b06de78213b832a8c2ca3ea463eab88cc00c31028dc53962b3d"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_StyleContextDetail_CorePruning/compact_model.py",
+      "bytes": 7181,
+      "sha256": "288985c148b4685b93035e4b63605afe1ffc833e1752b177a6ac841606e5bed2"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_StyleContextDetail_CorePruning/palette_report.py",
+      "bytes": 2777,
+      "sha256": "549f3af2fd1fd2f2ab29ac45752c4d50523ca9d202369e19217cd643c216f560"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_StyleContextDetail_CorePruning/student_model.py",
+      "bytes": 7417,
+      "sha256": "ec7a50a2c4bfcee510d4da161acd0d1218f02f01f1af1e00cef0f52ad3e31a60"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_StyleContextDetail_CorePruning/train_all.ps1",
+      "bytes": 345,
+      "sha256": "0a98a2983416649c0a87de1734625ffa04a73a98cbab582a6562b65792f06e5f"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_StyleContextDetail_CorePruning/train_compact.py",
+      "bytes": 16141,
+      "sha256": "d3d4ae2d0169f8e7d96c9e3937d32d29e0f5687f30589786c74fba2182262061"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_StyleContextDetail_IN_Distillation/README.md",
+      "bytes": 2308,
+      "sha256": "5b17a4722bc7f638047c69872e69f82c77c9b19725b1391474f435c2efadcbd9"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_StyleContextDetail_IN_Distillation/palette_report.py",
+      "bytes": 2777,
+      "sha256": "549f3af2fd1fd2f2ab29ac45752c4d50523ca9d202369e19217cd643c216f560"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_StyleContextDetail_IN_Distillation/student_model.py",
+      "bytes": 7417,
+      "sha256": "ec7a50a2c4bfcee510d4da161acd0d1218f02f01f1af1e00cef0f52ad3e31a60"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_StyleContextDetail_IN_Distillation/train_student.py",
+      "bytes": 14919,
+      "sha256": "e9e444a31000d2ce6ff7327e22d42b72f17c10f008f82a692a030b16ede80ca2"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_StyleContextDetail_TextureHead_Refinement/README.md",
+      "bytes": 1985,
+      "sha256": "efd261894defc461eea46e8dd0684f94afb661fba6a89af2f478f4c1671ed8a6"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_StyleContextDetail_TextureHead_Refinement/palette_report.py",
+      "bytes": 2777,
+      "sha256": "549f3af2fd1fd2f2ab29ac45752c4d50523ca9d202369e19217cd643c216f560"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_StyleContextDetail_TextureHead_Refinement/student_model.py",
+      "bytes": 7417,
+      "sha256": "ec7a50a2c4bfcee510d4da161acd0d1218f02f01f1af1e00cef0f52ad3e31a60"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_StyleContextDetail_TextureHead_Refinement/train_texture.py",
+      "bytes": 18423,
+      "sha256": "020f7f2a8a13581d067e19a2e5faad2c46a9a872da1a2dd2b8c0e268592d5453"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_StyleContextDetail_TextureTrunk_Refinement/README.md",
+      "bytes": 2183,
+      "sha256": "92ab392ca02bf6a8b1b7a0f251fc4f0897fa792b74c7caeae868ce74ac80fcbd"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_StyleContextDetail_TextureTrunk_Refinement/palette_report.py",
+      "bytes": 2777,
+      "sha256": "549f3af2fd1fd2f2ab29ac45752c4d50523ca9d202369e19217cd643c216f560"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_StyleContextDetail_TextureTrunk_Refinement/student_model.py",
+      "bytes": 7417,
+      "sha256": "ec7a50a2c4bfcee510d4da161acd0d1218f02f01f1af1e00cef0f52ad3e31a60"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_StyleContextDetail_TextureTrunk_Refinement/train_texture_trunk.py",
+      "bytes": 18677,
+      "sha256": "fbcbfed3747ac8f2e97c3af22d0f47e4a7a79dfa858359b8d78019b13524a1f9"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/bright_aaa/20261007_Teacher_Palette_Texture_B16_to_A4_Distillation/README_PATHS.md",
+      "bytes": 338,
+      "sha256": "18a42a5a205495ea8f4d9b787a54a4bb7fd1d1c521cdd33e04cfb421162fc010"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/bright_aaa/20261007_Teacher_Palette_Texture_B16_to_A4_Distillation/distill_b16_a4/a4_from_b16/prepare_a4.py",
+      "bytes": 2954,
+      "sha256": "37c2065d7d173031c1d3fb48fa0da4737241ce0b40829cccdb7ec824ec23342f"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/bright_aaa/20261007_Teacher_Palette_Texture_B16_to_A4_Distillation/distill_b16_a4/a4_from_b16/structure.py",
+      "bytes": 5181,
+      "sha256": "ed1fc695d252ba37d7203cf1d249d4b524056ebea5d0d3468e747deb1d3ae380"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/bright_aaa/20261007_Teacher_Palette_Texture_B16_to_A4_Distillation/distill_b16_a4/a4_from_b16/support.py",
+      "bytes": 2909,
+      "sha256": "ff567453b99d7510454969de899e9b3f81e0139d027111b5821e1ba261ea1f6a"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/bright_aaa/20261007_Teacher_Palette_Texture_B16_to_A4_Distillation/distill_b16_a4/a4_from_b16/train_a4.py",
+      "bytes": 13960,
+      "sha256": "e62fb2ec797a56493f9ab13eddf8427e17a689bc8a8f496aec46fde083a74fa6"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/bright_aaa/20261007_Teacher_Palette_Texture_B16_to_A4_Distillation/distill_b16_a4/export_board.py",
+      "bytes": 5453,
+      "sha256": "add573d0920442c3f11dec7af0e94159a8886bb94911152fcdf3c2bc23f42fe3"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/bright_aaa/20261007_Teacher_Palette_Texture_B16_to_A4_Distillation/distill_b16_a4/run_all.py",
+      "bytes": 3397,
+      "sha256": "bddec26c81134f905b0b1e8296314b29ae328f36017ad9618a949c7004c975b7"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/bright_aaa/20261007_Teacher_Palette_Texture_B16_to_A4_Distillation/distill_b16_a4/support.py",
+      "bytes": 2897,
+      "sha256": "88a2a40f9b7e4729b391139847658726e9e3cbab0b01172d231ac884e4174403"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/bright_aaa/20261007_Teacher_Palette_Texture_B16_to_A4_Distillation/distill_b16_a4/train_b16.py",
+      "bytes": 13082,
+      "sha256": "272d2bd76c8245b2744264e4957ff6badd7e7e7ed60a2bb17e2ba6a30d11dd33"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/bright_aaa/20261007_Teacher_Palette_Texture_B16_to_A4_Distillation/finetune_teacher_texture.py",
+      "bytes": 15549,
+      "sha256": "1d109ac840e78afb9df1731c126873cc90059c4d4daf6cdae58ca9d63754cc64"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/bright_aaa/20261007_Teacher_Palette_Texture_B16_to_A4_Distillation/train_teacher.py",
+      "bytes": 13850,
+      "sha256": "da794af240aaf79ce95d01c2f980563b84143683d123e4b222811f8e1fef83c7"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_experiments/bright_aaa/20261007_Teacher_Palette_Texture_B16_to_A4_Distillation/train_teacher_palette.py",
+      "bytes": 14487,
+      "sha256": "ad7999a613cb3d5811353c7022604dc80bab8785380df3cd5b76a2e01044a5aa"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_plus/README.md",
+      "bytes": 6590,
+      "sha256": "00a7ff1c8d259cff213611aeea3e8bd0931499df41f13918377e29562314dece"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_plus/model.py",
+      "bytes": 5286,
+      "sha256": "b49ad86092e290f7df11a6f5b53bc7db091760d1d631cd526bb9cd0f3b2e092a"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_plus/plot_log.py",
+      "bytes": 5813,
+      "sha256": "8846822d9a29cfc4366c0dbe335bbc653f985f7e950c876f769b14aa784e4c77"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_plus/selfcheck.py",
+      "bytes": 7445,
+      "sha256": "e3e77f26eeff624657a3c8e295249eeb984230360836d95ac0d9e4b76e176056"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_plus/stylize.py",
+      "bytes": 9694,
+      "sha256": "835dadcf20a45a867d3eb6e3b8f8d6a019ee34f638b3f19c5ed7e408799babb1"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_plus/train.py",
+      "bytes": 19914,
+      "sha256": "a54edf94428a94524d0a0f280a831a86b409e249db7b98cbcac1cbb37e85c003"
+    },
+    {
+      "path": "06_模型训练与分析/research/aidrawer/training_plus/train_multi.py",
+      "bytes": 16480,
+      "sha256": "f41ac2c738e53b19af4fe01085b77337ad8487085a71eb73dcedae26af91d152"
+    },
+    {
+      "path": "06_模型训练与分析/research/requirements_original.txt",
+      "bytes": 221,
+      "sha256": "3ed960e23860f3fa8e58c16b9d433de789f9c56fee0f1871a6eaaaee128a0668"
+    },
+    {
+      "path": "06_模型训练与分析/runs/blueprint/CONVERGENCE.json",
+      "bytes": 496,
+      "sha256": "42651e2b29125368575858630f397864e771d5ddc9bf302cac75c5d2e856bfbb"
+    },
+    {
+      "path": "06_模型训练与分析/runs/blueprint/TRAINING_MANIFEST.json",
+      "bytes": 3089,
+      "sha256": "b83a5591061cd93f1c69529e90a9ed1d35e302db3d0f4f3ee88916691ac145b9"
+    },
+    {
+      "path": "06_模型训练与分析/runs/blueprint/a4_coeff.mem",
+      "bytes": 1152,
+      "sha256": "83e569e33c13f2f035bce7a81dbe901bbb32e1f60b635725253d2adad3b9d0f4"
+    },
+    {
+      "path": "06_模型训练与分析/runs/blueprint/a4_tanh.mem",
+      "bytes": 1024,
+      "sha256": "b547d175666e21fc963c3a1318983a08d923762aaeb6eda64d617affd9afa296"
+    },
+    {
+      "path": "06_模型训练与分析/runs/blueprint/a4_weights_pci4.mem",
+      "bytes": 3630,
+      "sha256": "36bf829cb0ef0af59a811be595f9acae4a2cec288038b888f6b368e076963117"
+    },
+    {
+      "path": "06_模型训练与分析/runs/blueprint/model_best.pth",
+      "bytes": 13429,
+      "sha256": "a3e10e391af4ce68d5c5e28fb79a68c07aed1900f3b707ea7d12d739ed30e345"
+    },
+    {
+      "path": "06_模型训练与分析/runs/blueprint/slot.bin",
+      "bytes": 4096,
+      "sha256": "b4f047b6614f72eca7882cad3e39b4f760490da52f9c61d8e2d158ec12bbd21c"
+    },
+    {
+      "path": "06_模型训练与分析/runs/blueprint/training_log.json",
+      "bytes": 6640,
+      "sha256": "b9fd0f7ca2f322f982100a90473af179f927ea81ea9abbd67af5dc283df3130d"
+    },
+    {
+      "path": "06_模型训练与分析/runs/emboss/TRAINING_MANIFEST.json",
+      "bytes": 42531,
+      "sha256": "5d94191d83be95a8b924d95d93abb0d2982020ad46cff1f04ac6e4e42d363446"
+    },
+    {
+      "path": "06_模型训练与分析/runs/emboss/a4_coeff.mem",
+      "bytes": 1152,
+      "sha256": "29c4547f717da3784199c93cb706e1ef98acb822bd4f23069f74217a52ce0a28"
+    },
+    {
+      "path": "06_模型训练与分析/runs/emboss/a4_tanh.mem",
+      "bytes": 1024,
+      "sha256": "b547d175666e21fc963c3a1318983a08d923762aaeb6eda64d617affd9afa296"
+    },
+    {
+      "path": "06_模型训练与分析/runs/emboss/a4_weights_pci4.mem",
+      "bytes": 3630,
+      "sha256": "2632173d7bd386e28b46a318d57ad8df949c22800b7cb340c0e9308dfbdc15f0"
+    },
+    {
+      "path": "06_模型训练与分析/runs/emboss/model_best.pth",
+      "bytes": 13365,
+      "sha256": "749b3ed866735d905718fa7a5d890704e7142fcede7667075018e8b75af0ba1a"
+    },
+    {
+      "path": "06_模型训练与分析/runs/emboss/slot.bin",
+      "bytes": 4096,
+      "sha256": "27a3e1a7cd3670f270824c05f61147d51439c438a00a383b342b20595317ef7b"
+    },
+    {
+      "path": "06_模型训练与分析/runs/emboss/training_log.json",
+      "bytes": 1713,
+      "sha256": "511a3ed79d09576840575b7fc403365db2a1aad363b7e9f026061ca44f16670d"
+    },
+    {
+      "path": "06_模型训练与分析/tools/evaluate.py",
+      "bytes": 3960,
+      "sha256": "ff064c00957b9b379b8e5476e0822b2600f20b441038ed3cfff51c9dbe21660c"
+    },
+    {
+      "path": "06_模型训练与分析/tools/prepare_training.py",
+      "bytes": 2809,
+      "sha256": "99b9a13c6faa5d3c21995a4ceb30cc513ff4c86a098681881540af0d8328596b"
+    },
+    {
+      "path": "06_模型训练与分析/tools/rebuild_weights.py",
+      "bytes": 3821,
+      "sha256": "bed3a265d8ec505ad4e8cf47f9ed1ad2d118ead57ba04cc36f123e066cb95299"
+    },
+    {
+      "path": "06_模型训练与分析/training/art_models.py",
+      "bytes": 323,
+      "sha256": "cd590bee4cf1bd35f955e02a97c676bfd0465b54d00a09683231188a3ce2c86c"
+    },
+    {
+      "path": "06_模型训练与分析/training/batch10_styles.py",
+      "bytes": 1851,
+      "sha256": "e1466ab532d21f7cd20f389e66481e752375777f8dc9d9bba77e8289f9c795b8"
+    },
+    {
+      "path": "06_模型训练与分析/training/board_reference/rtl/nn/rtl/camera_tone_mapper.v",
+      "bytes": 8371,
+      "sha256": "ab3822f07e00fbefbce233ed9e0708039b256f07344b680c8a4f164019925adc"
+    },
+    {
+      "path": "06_模型训练与分析/training/board_reference/tools/board_exact_infer.py",
+      "bytes": 17012,
+      "sha256": "598c17ecc2a33ef55e9ba434dd972c04e1d2d3fc6b86d57ab22d201ae4a48273"
+    },
+    {
+      "path": "06_模型训练与分析/training/teacher/LICENSE.pytorch-examples",
+      "bytes": 1520,
+      "sha256": "7e5dc9b5cf276166c4a0678d33e53b14e3d7ef47eee9356ab786c4ba45414efd"
+    },
+    {
+      "path": "06_模型训练与分析/training/teacher/README.upstream.md",
+      "bytes": 3903,
+      "sha256": "79b9290dde6950dbaf3b656758c3b3f44d79e14322fc5e5e14f2e6b87f04fcea"
+    },
+    {
+      "path": "06_模型训练与分析/training/teacher/glass.pth",
+      "bytes": 6740749,
+      "sha256": "1bb4278da61e4515f851da4049b7756bf718ecac47c8903ef0d74b150454cd16"
+    },
+    {
+      "path": "06_模型训练与分析/training/teacher/transformer_net.py",
+      "bytes": 3782,
+      "sha256": "cd280fd7b34895819a8d89ca4867b806c52d46b7311cf8c01cf865b3d77cf052"
+    },
+    {
+      "path": "06_模型训练与分析/training/train_batch10_styles.py",
+      "bytes": 11149,
+      "sha256": "e1474417f696fdd4bbf0559f2c0544d97357e7b28055159f9f4aa41fba8539bc"
+    },
+    {
+      "path": "06_模型训练与分析/training/train_hdmi_distinct_styles.py",
+      "bytes": 7605,
+      "sha256": "f12f0ca936e7ef2c7e72d96d7e3d466cd6239e5314f8488f1e09eba12d6429d6"
+    },
+    {
+      "path": "06_模型训练与分析/training/train_portable_candidates.py",
+      "bytes": 5115,
+      "sha256": "6c83d74cd6938263febc09fc8480496d4040002f04822aafec1a82fbec428859"
+    },
+    {
+      "path": "06_模型训练与分析/training/train_students.py",
+      "bytes": 4964,
+      "sha256": "3280f2e83fd509ecd899b7f5a177be7d21b91dd4d0df14f8e67158a63fa03fc0"
+    },
+    {
+      "path": "06_模型训练与分析/weights/style0_retro.bin",
+      "bytes": 4096,
+      "sha256": "62f692d840abfd1323e89208e58cdb26d0d6be94dfa04ab5e2f6dc47e2e8383d"
+    },
+    {
+      "path": "06_模型训练与分析/weights/style1_blueprint.bin",
+      "bytes": 4096,
+      "sha256": "b4f047b6614f72eca7882cad3e39b4f760490da52f9c61d8e2d158ec12bbd21c"
+    },
+    {
+      "path": "06_模型训练与分析/weights/style2_emboss.bin",
+      "bytes": 4096,
+      "sha256": "27a3e1a7cd3670f270824c05f61147d51439c438a00a383b342b20595317ef7b"
+    },
+    {
+      "path": "06_模型训练与分析/weights/style3_fine_pixel_first.bin",
+      "bytes": 4096,
+      "sha256": "6efa8c5422cca85ab6249af776127c8b7d95c680b673692dddbe63215183d28d"
+    },
+    {
+      "path": "06_模型训练与分析/weights/style4_glitch.bin",
+      "bytes": 4096,
+      "sha256": "694e0af00ec0bfcc1a8099fd782c43e996239cc87bdc4aaac64435e9f71c30d8"
+    },
+    {
+      "path": "06_模型训练与分析/网络与参数统计.md",
+      "bytes": 1444,
+      "sha256": "e3068e6123ce150295edd303f45ed8b87c769131d64f9d30487f87fe53843f78"
+    },
+    {
       "path": "README.md",
-      "bytes": 3622,
-      "sha256": "e21e9f32944f5a57bec98c7e8fecc176e31cfe032d01ca5995fdfcc044b6e560"
+      "bytes": 5138,
+      "sha256": "2f66277ef000827315c2da9d1f78ea4c97a08dc9de8d3051d39e99f0690a65d3"
     },
     {
       "path": "verify_submission.py",
-      "bytes": 1595,
-      "sha256": "ac4897cb2ba33bd037be0765a71cc9039538264bc9b7b6b1628bfe10d3169b92"
+      "bytes": 2873,
+      "sha256": "087c0b57278f453e34e1567548c11b3bf04c53256ac83929c6a8a20560a81777"
     },
     {
       "path": "启动一帧入画.cmd",

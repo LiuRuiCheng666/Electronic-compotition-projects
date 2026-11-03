@@ -30,7 +30,7 @@ run([prefix+'gcc.exe',*flags,'-o',elf,*objects,'-nostartfiles','-ffreestanding',
 for form,suffix in [('binary','bin'),('ihex','hex')]:run([prefix+'objcopy.exe','-O',form,elf,O/('nnObserverDemo.'+suffix)])
 nm=subprocess.check_output([prefix+'nm.exe','-n',str(elf)],text=True)
 symbols={v[2]:int(v[0],16) for line in nm.splitlines() if len(v:=line.split())==3}
-symbol_dir=P/'integration_tests/c_system_software';symbol_dir.mkdir(exist_ok=True)
+symbol_dir=P/'integration_tests/c_system_software';symbol_dir.mkdir(parents=True,exist_ok=True)
 (symbol_dir/'symbols.json').write_text(json.dumps(symbols,indent=2))
 data=(O/'nnObserverDemo.bin').read_bytes()
 if len(data)>30720:raise SystemExit('ROM leaves less than 2KiB stack space')

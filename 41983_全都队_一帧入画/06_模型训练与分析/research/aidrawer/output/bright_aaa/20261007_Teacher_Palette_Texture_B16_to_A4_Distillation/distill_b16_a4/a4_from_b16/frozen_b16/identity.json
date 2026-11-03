@@ -1,0 +1,8 @@
+{
+  "source": "D:\\aidrawer\\output\\bright_aaa\\20261007_Teacher_Palette_Texture_B16_to_A4_Distillation\\distill_b16_a4\\runs\\bright_b16_bn\\eval_step003500\\inference_model.pth",
+  "sha256": "5a33be1e23e8446990f2d575ce1f76921369c530dbb0126f6ecb8ee329f26b8f",
+  "style_sha256": "5ff87890760c60d3baf5a5ce50b57cc0923791e92e1202cd1205dd14a9645cb4",
+  "step": 3500,
+  "evaluation": "D:\\aidrawer\\output\\bright_aaa\\20261007_Teacher_Palette_Texture_B16_to_A4_Distillation\\distill_b16_a4\\runs\\bright_b16_bn\\eval_step003500",
+  "architecture": "B16 BN, one residual block"
+}

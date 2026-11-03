@@ -1,0 +1,13 @@
+{
+  "source": "D:\\aidrawer\\output\\VanGogh_SelfPortrait\\Legacy_Teacher_IN_runs3_ins\\model_final.pth",
+  "sha256": "a2c7ef8852833a14793edc7d60aab5ec730fa8a2c8f60857a1fb746d738649ed",
+  "style_sha256": "0020b03148f02410426ee2f4c6eeeee8798bb5a06a3fc73d5880de5af0215035",
+  "style_source": "D:\\aidrawer\\stylepicture\\VanGogh_SelfPortrait\\standard3.jpg",
+  "style_provenance": "Checkpoint config style_image=standard3.jpg; recovered local training reference",
+  "architecture": {
+    "channels": 8,
+    "n_res": 3,
+    "norm": "instance"
+  },
+  "checkpoint_step": 12500
+}

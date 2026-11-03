@@ -1,0 +1,6 @@
+{
+  "source": "D:\\aidrawer\\output\\Ukiyo-e\\Teacher_IN_C8_Res3_20260918_034405_Ukiyo-e\\model_step012000.pth",
+  "sha256": "d142038b8e56cf51db680b91ae0164724902738b774e574f1234dbd90e5f2937",
+  "architecture": "C8, 3 residual blocks, InstanceNorm",
+  "step": 12000
+}

@@ -1,0 +1,73 @@
+{
+  "source_sha256": "5816d4498c65e063a138f029c06accbd12ca378fd4671c565562ce49023823d3",
+  "main_indices": [
+    0,
+    2,
+    3,
+    4,
+    5,
+    7,
+    9,
+    10
+  ],
+  "residual_hidden_indices": [
+    0,
+    2,
+    3,
+    4,
+    6,
+    7,
+    9,
+    11
+  ],
+  "main_scores": [
+    4.389739990234375,
+    3.63539719581604,
+    3.963062047958374,
+    4.024956226348877,
+    3.9445083141326904,
+    3.869490385055542,
+    3.6728804111480713,
+    3.877079725265503,
+    3.7195777893066406,
+    5.040815830230713,
+    4.008895397186279,
+    3.853597640991211
+  ],
+  "hidden_scores": [
+    1.934777021408081,
+    1.6926456689834595,
+    2.1656367778778076,
+    1.906005620956421,
+    2.105703830718994,
+    1.8084030151367188,
+    2.5313353538513184,
+    2.1002471446990967,
+    1.7444283962249756,
+    2.121941328048706,
+    1.7468972206115723,
+    2.1419787406921387
+  ],
+  "selection": "normalized BN-folded weight mean-absolute row/column scores; heuristic, not measured saliency optimum",
+  "dependency_rule": "main indices shared by enc3 outputs, res1 inputs, res2 outputs, residual skip and decoder inputs; hidden indices shared by res1 outputs and res2 inputs",
+  "migrated": "convolution weights/biases, BN affine and running statistics; no random initialization of retained weights",
+  "masked_B12_vs_A8_max_abs": 2.384185791015625e-07,
+  "init_sha256": "a4085b099af2e1fd4ffe065937f009353151c5caea6463ed97e25411928f61fb",
+  "B12_vga_cost": {
+    "logical_mac": 276480000,
+    "issued_mac": 298598400,
+    "mac_only_ms_100MHz": 41.472,
+    "kernel_weights": 4680,
+    "group_packed_kernel_bytes": 6336,
+    "assumptions": "single pass with folded BN, PCI2 PCO4; excludes traffic/postprocess; not measured FPS"
+  },
+  "A8_vga_cost": {
+    "logical_mac": 232243200,
+    "issued_mac": 254361600,
+    "mac_only_ms_100MHz": 35.328,
+    "kernel_weights": 2808,
+    "group_packed_kernel_bytes": 3840,
+    "assumptions": "single pass with folded BN, PCI2 PCO4; excludes traffic/postprocess; not measured FPS"
+  },
+  "quality_status": "untrained pruned initialization; no quality or int8 acceptance yet"
+}

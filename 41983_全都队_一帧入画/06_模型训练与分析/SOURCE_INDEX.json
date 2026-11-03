@@ -1,0 +1,1704 @@
+{
+  "nn5_zip_sha256": "6808e76bfffee91ca0bec2c83ef69bb582bf139c95f6feef2d80abe204a02860",
+  "selection": "All supplied training source; selected historical final checkpoints only; exact final blueprint/emboss local artifacts; five final parameter recipes. Repeated intermediate checkpoints and full datasets excluded.",
+  "files": [
+    {
+      "path": "parameter_recipes/train_sunny.py",
+      "source": "NN5/src/legacy_board/tools/train_sunny.py",
+      "bytes": 8708,
+      "sha256": "db4b5e847fee398a020dc201d5fd242e6f9d1b0fdc920c72f7f3ba14d0d24f58"
+    },
+    {
+      "path": "parameter_recipes/build_reference4.py",
+      "source": "NN5/src/legacy_board/tools/build_reference4.py",
+      "bytes": 7258,
+      "sha256": "2c330fc4fa4f932208e065ef8642bc6b90cb11532a5ba92b21c333eae514a128"
+    },
+    {
+      "path": "parameter_recipes/build_illustration4.py",
+      "source": "NN5/src/legacy_board/tools/build_illustration4.py",
+      "bytes": 6673,
+      "sha256": "44906114a890a7c554dffcc5afa4f8ca42b6057e1217c65122ab8cb6312f745e"
+    },
+    {
+      "path": "parameter_recipes/build_pixel_mosaic.py",
+      "source": "NN5/src/legacy_board/tools/build_pixel_mosaic.py",
+      "bytes": 3856,
+      "sha256": "2cf546a16ac8e4dfce5c5738b59b24668aed0d9c02918b794da968329b835dcd"
+    },
+    {
+      "path": "parameter_recipes/build_glitch.py",
+      "source": "NN5/src/legacy_board/tools/build_glitch.py",
+      "bytes": 2479,
+      "sha256": "a1609d3f7faee300fc6e99c53d753f56d21cb7717ba7bcaad3e966959e47610c"
+    },
+    {
+      "path": "parameter_recipes/neon_board_core.py",
+      "source": "NN5/src/legacy_board/tools/neon_board_core.py",
+      "bytes": 10882,
+      "sha256": "685481346a128d94ea5ec252d273a9462709f2568b0010873016d77d89232d04"
+    },
+    {
+      "path": "parameter_recipes/retro_REFERENCE_STATS.json",
+      "source": "NN5/provenance/retro_REFERENCE_STATS.json",
+      "bytes": 5740,
+      "sha256": "200a4c8d546ea2ddb201019f749932797da2772ff7a397cd2d9a9ab294321547"
+    },
+    {
+      "path": "parameter_recipes/nn5_regenerator_original.py",
+      "source": "NN5/tools/rebuild_final_weights.py",
+      "bytes": 4669,
+      "sha256": "7b780670f1e775065c86c74775dd2e22f0ea970fdf66ce8dbbce340947b72ba5"
+    },
+    {
+      "path": "research/requirements_original.txt",
+      "source": "NN5/env/requirements_training_base.txt",
+      "bytes": 221,
+      "sha256": "3ed960e23860f3fa8e58c16b9d433de789f9c56fee0f1871a6eaaaee128a0668"
+    },
+    {
+      "path": "research/aidrawer/output/bright_aaa/20261007_Teacher_Palette_Texture_B16_to_A4_Distillation/distill_b16_a4/a4_from_b16/frozen_b16/identity.json",
+      "source": "NN5/src/aidrawer/output/bright_aaa/20261007_Teacher_Palette_Texture_B16_to_A4_Distillation/distill_b16_a4/a4_from_b16/frozen_b16/identity.json",
+      "bytes": 582,
+      "sha256": "bd088dcb490d7c61dce1adaca26f6cf2a56c49d9148720e65b70d1bce3df512d"
+    },
+    {
+      "path": "research/aidrawer/output/bright_aaa/20261007_Teacher_Palette_Texture_B16_to_A4_Distillation/distill_b16_a4/a4_from_b16/frozen_b16/model_final.pth",
+      "source": "NN5/src/aidrawer/output/bright_aaa/20261007_Teacher_Palette_Texture_B16_to_A4_Distillation/distill_b16_a4/a4_from_b16/frozen_b16/model_final.pth",
+      "bytes": 49717,
+      "sha256": "5a33be1e23e8446990f2d575ce1f76921369c530dbb0126f6ecb8ee329f26b8f"
+    },
+    {
+      "path": "research/aidrawer/output/bright_aaa/20261007_Teacher_Palette_Texture_B16_to_A4_Distillation/distill_b16_a4/a4_from_b16/pruning_report.json",
+      "source": "NN5/src/aidrawer/output/bright_aaa/20261007_Teacher_Palette_Texture_B16_to_A4_Distillation/distill_b16_a4/a4_from_b16/pruning_report.json",
+      "bytes": 1937,
+      "sha256": "f3c00fd591ef45fef947233ed2e246c6e73159d050be74dd2988be89ffafecf2"
+    },
+    {
+      "path": "research/aidrawer/output/bright_aaa/20261007_Teacher_Palette_Texture_B16_to_A4_Distillation/distill_b16_a4/a4_from_b16/runs/bright_a4/model_final.pth",
+      "source": "NN5/src/aidrawer/output/bright_aaa/20261007_Teacher_Palette_Texture_B16_to_A4_Distillation/distill_b16_a4/a4_from_b16/runs/bright_a4/model_final.pth",
+      "bytes": 25269,
+      "sha256": "04a5b74b542053f35a48275cdf94f21e9b8cee7e8a483c73f1f5d72e627bce8b"
+    },
+    {
+      "path": "research/aidrawer/output/bright_aaa/20261007_Teacher_Palette_Texture_B16_to_A4_Distillation/distill_b16_a4/frozen_teacher/identity.json",
+      "source": "NN5/src/aidrawer/output/bright_aaa/20261007_Teacher_Palette_Texture_B16_to_A4_Distillation/distill_b16_a4/frozen_teacher/identity.json",
+      "bytes": 388,
+      "sha256": "5758598646b62229bc4aab0e6792bb31edaec47deffb982e64ecb1b92e2b7698"
+    },
+    {
+      "path": "research/aidrawer/output/bright_aaa/20261007_Teacher_Palette_Texture_B16_to_A4_Distillation/distill_b16_a4/frozen_teacher/model_final.pth",
+      "source": "NN5/src/aidrawer/output/bright_aaa/20261007_Teacher_Palette_Texture_B16_to_A4_Distillation/distill_b16_a4/frozen_teacher/model_final.pth",
+      "bytes": 296497,
+      "sha256": "2c59d275c701ea60199e2a321cc86756503b20a7665d8416543ab699670f85bb"
+    },
+    {
+      "path": "research/aidrawer/output/bright_aaa/20261007_Teacher_Palette_Texture_B16_to_A4_Distillation/distill_b16_a4/runs/bright_b16_bn/model_final.pth",
+      "source": "NN5/src/aidrawer/output/bright_aaa/20261007_Teacher_Palette_Texture_B16_to_A4_Distillation/distill_b16_a4/runs/bright_b16_bn/model_final.pth",
+      "bytes": 48693,
+      "sha256": "969622b9c4edfb0dad6f2578b957617fc660981e499b79dade5923dc70506f1c"
+    },
+    {
+      "path": "research/aidrawer/output/bright_aaa/20261007_Teacher_Palette_Texture_B16_to_A4_Distillation/teacher_color_v1/model_final.pth",
+      "source": "NN5/src/aidrawer/output/bright_aaa/20261007_Teacher_Palette_Texture_B16_to_A4_Distillation/teacher_color_v1/model_final.pth",
+      "bytes": 296497,
+      "sha256": "64969334a1134cfa421659db41b9a2e81072b0ddedfe7e59f9f5debf8dda1cc0"
+    },
+    {
+      "path": "research/aidrawer/output/bright_aaa/20261007_Teacher_Palette_Texture_B16_to_A4_Distillation/teacher_palette_v1/model_final.pth",
+      "source": "NN5/src/aidrawer/output/bright_aaa/20261007_Teacher_Palette_Texture_B16_to_A4_Distillation/teacher_palette_v1/model_final.pth",
+      "bytes": 296497,
+      "sha256": "b10ff55eeaf4453ae12a6fcb12cd1f2041e0e412c647ebd94835fdf92da3335f"
+    },
+    {
+      "path": "research/aidrawer/output/bright_aaa/20261007_Teacher_Palette_Texture_B16_to_A4_Distillation/teacher_texture_v1/model_final.pth",
+      "source": "NN5/src/aidrawer/output/bright_aaa/20261007_Teacher_Palette_Texture_B16_to_A4_Distillation/teacher_texture_v1/model_final.pth",
+      "bytes": 296497,
+      "sha256": "2c59d275c701ea60199e2a321cc86756503b20a7665d8416543ab699670f85bb"
+    },
+    {
+      "path": "research/aidrawer/output/ink/Legacy_Teacher_IN_runs2_ins/20260917_165149/model_final.pth",
+      "source": "NN5/src/aidrawer/output/ink/Legacy_Teacher_IN_runs2_ins/20260917_165149/model_final.pth",
+      "bytes": 296497,
+      "sha256": "fd9afb2b53280317ba4b7ac2ece9fbf38edc3a8be539058ce3d8782c66572822"
+    },
+    {
+      "path": "research/aidrawer/output/jojo/Legacy_Teacher_IN_runs1_ins/20260917_185716/model_final.pth",
+      "source": "NN5/src/aidrawer/output/jojo/Legacy_Teacher_IN_runs1_ins/20260917_185716/model_final.pth",
+      "bytes": 296497,
+      "sha256": "9b4cc7f5c2f9cf324dc8f5fa560888883fdcf150d0e191295abf07d3b9b37c90"
+    },
+    {
+      "path": "research/aidrawer/output/MantisShrimp/20261009_A4_Paired_Pseudocolor/runs/a4/model_final.pth",
+      "source": "NN5/src/aidrawer/output/MantisShrimp/20261009_A4_Paired_Pseudocolor/runs/a4/model_final.pth",
+      "bytes": 26037,
+      "sha256": "c85e43764b8e935c82521ff6b65088b9eb53328f40e95a281df196ae91fb9f75"
+    },
+    {
+      "path": "research/aidrawer/output/mc/Teacher_IN_C8_Res3_20260917_230349_mc/model_final.pth",
+      "source": "NN5/src/aidrawer/output/mc/Teacher_IN_C8_Res3_20260917_230349_mc/model_final.pth",
+      "bytes": 296497,
+      "sha256": "165dcb42dce3a28e3f72466466b51e667c4a8923c4a40ca5ffdf107bea4fe6d2"
+    },
+    {
+      "path": "research/aidrawer/output/Nobel/20261017_A4_AdaptiveInk_Balanced/runs/a4/model_final.pth",
+      "source": "NN5/src/aidrawer/output/Nobel/20261017_A4_AdaptiveInk_Balanced/runs/a4/model_final.pth",
+      "bytes": 26037,
+      "sha256": "b66e9dd1eb4a04b8fbae06b2e4f21a087ae99cfec6bad2b063135098d220acbb"
+    },
+    {
+      "path": "research/aidrawer/output/Nobel/20261017_A4_AdaptiveInk_SameGold/runs/a4/model_final.pth",
+      "source": "NN5/src/aidrawer/output/Nobel/20261017_A4_AdaptiveInk_SameGold/runs/a4/model_final.pth",
+      "bytes": 26037,
+      "sha256": "d55a6d7b2a4dfdd9ab7d82947d936074ac869583a452adc16235ab355525b057"
+    },
+    {
+      "path": "research/aidrawer/output/Nobel/20261017_A4_BoldInk_SameGold/runs/a4/model_final.pth",
+      "source": "NN5/src/aidrawer/output/Nobel/20261017_A4_BoldInk_SameGold/runs/a4/model_final.pth",
+      "bytes": 26037,
+      "sha256": "674ec9a167d40a950865abf0f146ac5ee9776d21fcc4e434c518927c26ecd635"
+    },
+    {
+      "path": "research/aidrawer/output/Nobel/20261017_A4_Independent_InkGold/runs/a4/model_final.pth",
+      "source": "NN5/src/aidrawer/output/Nobel/20261017_A4_Independent_InkGold/runs/a4/model_final.pth",
+      "bytes": 26037,
+      "sha256": "131e0521a32922673627b706ea7acc07410d8de33867f4aacfde0b56db82ae94"
+    },
+    {
+      "path": "research/aidrawer/output/standard2/Teacher_IN_C8_Res3_20260918_003748_standard2/model_final.pth",
+      "source": "NN5/src/aidrawer/output/standard2/Teacher_IN_C8_Res3_20260918_003748_standard2/model_final.pth",
+      "bytes": 296497,
+      "sha256": "9e3e10acacf832950adbf54f3904c38fa8b3fed2cd2765d60cadd57be7a4f212"
+    },
+    {
+      "path": "research/aidrawer/output/terarria/Teacher_IN_C8_Res3_20260918_021051_terarria/model_final.pth",
+      "source": "NN5/src/aidrawer/output/terarria/Teacher_IN_C8_Res3_20260918_021051_terarria/model_final.pth",
+      "bytes": 296497,
+      "sha256": "419995d682bedda4182d74cbd6b9a8ca74586bd89ae0592f785781b628eb69d7"
+    },
+    {
+      "path": "research/aidrawer/output/Ukiyo-e/20261006_A4_BN_Pruning_A8_NoResidual_Distillation/a4_deployment_review_3000/model_final.pth",
+      "source": "NN5/src/aidrawer/output/Ukiyo-e/20261006_A4_BN_Pruning_A8_NoResidual_Distillation/a4_deployment_review_3000/model_final.pth",
+      "bytes": 25269,
+      "sha256": "f4f5930251913811bc228f9f15a4f3555dd0c1d34f5fd32c107d16ba6b738d88"
+    },
+    {
+      "path": "research/aidrawer/output/Ukiyo-e/20261006_A4_BN_Pruning_A8_NoResidual_Distillation/frozen_a8/identity.json",
+      "source": "NN5/src/aidrawer/output/Ukiyo-e/20261006_A4_BN_Pruning_A8_NoResidual_Distillation/frozen_a8/identity.json",
+      "bytes": 309,
+      "sha256": "79764a46816cec9e628316e8dcdbf88ee55ac37f66dcf8ba96e3558ccd056aec"
+    },
+    {
+      "path": "research/aidrawer/output/Ukiyo-e/20261006_A4_BN_Pruning_A8_NoResidual_Distillation/frozen_a8/model_final.pth",
+      "source": "NN5/src/aidrawer/output/Ukiyo-e/20261006_A4_BN_Pruning_A8_NoResidual_Distillation/frozen_a8/model_final.pth",
+      "bytes": 30453,
+      "sha256": "c476d9837b70955889dfc443a5a622bb98fdaafa8eb2611a1acd6888d2838600"
+    },
+    {
+      "path": "research/aidrawer/output/Ukiyo-e/20261006_A4_BN_Pruning_A8_NoResidual_Distillation/pruning_report.json",
+      "source": "NN5/src/aidrawer/output/Ukiyo-e/20261006_A4_BN_Pruning_A8_NoResidual_Distillation/pruning_report.json",
+      "bytes": 2678,
+      "sha256": "a53b76751609c6e9e776bcc78e2bd459c4b77a7f6756b06aa6dba41d9abd52c6"
+    },
+    {
+      "path": "research/aidrawer/output/Ukiyo-e/20261006_A4_BN_Pruning_A8_NoResidual_Distillation/runs/_verification_a4/model_final.pth",
+      "source": "NN5/src/aidrawer/output/Ukiyo-e/20261006_A4_BN_Pruning_A8_NoResidual_Distillation/runs/_verification_a4/model_final.pth",
+      "bytes": 25269,
+      "sha256": "a2023a73fb4e98223b7735e880b96282314feeeff458d6990243a8fe4c768901"
+    },
+    {
+      "path": "research/aidrawer/output/Ukiyo-e/20261006_A4_BN_Pruning_A8_NoResidual_Distillation/runs/_verification_nores/model_final.pth",
+      "source": "NN5/src/aidrawer/output/Ukiyo-e/20261006_A4_BN_Pruning_A8_NoResidual_Distillation/runs/_verification_nores/model_final.pth",
+      "bytes": 21351,
+      "sha256": "2254b65543092a14b933fe387a766ca101371026b0e932efe1e6aa1671e18eca"
+    },
+    {
+      "path": "research/aidrawer/output/Ukiyo-e/20261006_A4_BN_Pruning_A8_NoResidual_Distillation/runs/a4_pilot/model_final.pth",
+      "source": "NN5/src/aidrawer/output/Ukiyo-e/20261006_A4_BN_Pruning_A8_NoResidual_Distillation/runs/a4_pilot/model_final.pth",
+      "bytes": 25269,
+      "sha256": "f4f5930251913811bc228f9f15a4f3555dd0c1d34f5fd32c107d16ba6b738d88"
+    },
+    {
+      "path": "research/aidrawer/output/Ukiyo-e/20261006_A4_BN_Pruning_A8_NoResidual_Distillation/runs/a8_nores_pilot/model_final.pth",
+      "source": "NN5/src/aidrawer/output/Ukiyo-e/20261006_A4_BN_Pruning_A8_NoResidual_Distillation/runs/a8_nores_pilot/model_final.pth",
+      "bytes": 21351,
+      "sha256": "36cab161d63c659e09b9b19451741082ece00861c0f18d517ddcc220802be9ed"
+    },
+    {
+      "path": "research/aidrawer/output/Ukiyo-e/20261006_A8_BN_Structured_Pruning_Distillation/a8_deployment_review_3000/model_final.pth",
+      "source": "NN5/src/aidrawer/output/Ukiyo-e/20261006_A8_BN_Structured_Pruning_Distillation/a8_deployment_review_3000/model_final.pth",
+      "bytes": 30453,
+      "sha256": "c476d9837b70955889dfc443a5a622bb98fdaafa8eb2611a1acd6888d2838600"
+    },
+    {
+      "path": "research/aidrawer/output/Ukiyo-e/20261006_A8_BN_Structured_Pruning_Distillation/frozen_b12/identity.json",
+      "source": "NN5/src/aidrawer/output/Ukiyo-e/20261006_A8_BN_Structured_Pruning_Distillation/frozen_b12/identity.json",
+      "bytes": 311,
+      "sha256": "df1238fabedec50ff934b1c753c0c1ead7cb997ef263ebaa1b11493296218981"
+    },
+    {
+      "path": "research/aidrawer/output/Ukiyo-e/20261006_A8_BN_Structured_Pruning_Distillation/frozen_b12/model_final.pth",
+      "source": "NN5/src/aidrawer/output/Ukiyo-e/20261006_A8_BN_Structured_Pruning_Distillation/frozen_b12/model_final.pth",
+      "bytes": 37941,
+      "sha256": "5816d4498c65e063a138f029c06accbd12ca378fd4671c565562ce49023823d3"
+    },
+    {
+      "path": "research/aidrawer/output/Ukiyo-e/20261006_A8_BN_Structured_Pruning_Distillation/pruning_report.json",
+      "source": "NN5/src/aidrawer/output/Ukiyo-e/20261006_A8_BN_Structured_Pruning_Distillation/pruning_report.json",
+      "bytes": 2175,
+      "sha256": "58ef858a562d34456b4910d38d358cc5c185707519d9c5c9bea5a8fcc13667ee"
+    },
+    {
+      "path": "research/aidrawer/output/Ukiyo-e/20261006_A8_BN_Structured_Pruning_Distillation/runs/_verification_a8/model_final.pth",
+      "source": "NN5/src/aidrawer/output/Ukiyo-e/20261006_A8_BN_Structured_Pruning_Distillation/runs/_verification_a8/model_final.pth",
+      "bytes": 30453,
+      "sha256": "5dd82b004b65f7a1cd050af2e7289179db87158d1f09345fa53dc6ff829defce"
+    },
+    {
+      "path": "research/aidrawer/output/Ukiyo-e/20261006_A8_BN_Structured_Pruning_Distillation/runs/a8_pilot/model_final.pth",
+      "source": "NN5/src/aidrawer/output/Ukiyo-e/20261006_A8_BN_Structured_Pruning_Distillation/runs/a8_pilot/model_final.pth",
+      "bytes": 30453,
+      "sha256": "c476d9837b70955889dfc443a5a622bb98fdaafa8eb2611a1acd6888d2838600"
+    },
+    {
+      "path": "research/aidrawer/output/Ukiyo-e/20261006_B12_BN_Structured_Pruning_Distillation/b12_deployment_review_3000/model_final.pth",
+      "source": "NN5/src/aidrawer/output/Ukiyo-e/20261006_B12_BN_Structured_Pruning_Distillation/b12_deployment_review_3000/model_final.pth",
+      "bytes": 37941,
+      "sha256": "5816d4498c65e063a138f029c06accbd12ca378fd4671c565562ce49023823d3"
+    },
+    {
+      "path": "research/aidrawer/output/Ukiyo-e/20261006_B12_BN_Structured_Pruning_Distillation/frozen_b16/identity.json",
+      "source": "NN5/src/aidrawer/output/Ukiyo-e/20261006_B12_BN_Structured_Pruning_Distillation/frozen_b16/identity.json",
+      "bytes": 302,
+      "sha256": "4d9e63e425070be0d3f66803695b494340ba454ea3941d3ea531b38570761636"
+    },
+    {
+      "path": "research/aidrawer/output/Ukiyo-e/20261006_B12_BN_Structured_Pruning_Distillation/frozen_b16/model_final.pth",
+      "source": "NN5/src/aidrawer/output/Ukiyo-e/20261006_B12_BN_Structured_Pruning_Distillation/frozen_b16/model_final.pth",
+      "bytes": 48693,
+      "sha256": "c49c187f407ffae42b76a018b8d5a3d2a8db84326567f3395a8ca563a0fc6fa8"
+    },
+    {
+      "path": "research/aidrawer/output/Ukiyo-e/20261006_B12_BN_Structured_Pruning_Distillation/pruning_report.json",
+      "source": "NN5/src/aidrawer/output/Ukiyo-e/20261006_B12_BN_Structured_Pruning_Distillation/pruning_report.json",
+      "bytes": 2446,
+      "sha256": "8cdb2dfae5c9f574caedf74599398ff39df2a086103a62c13af776e20bc4a865"
+    },
+    {
+      "path": "research/aidrawer/output/Ukiyo-e/20261006_B12_BN_Structured_Pruning_Distillation/runs/_verification_b12/model_final.pth",
+      "source": "NN5/src/aidrawer/output/Ukiyo-e/20261006_B12_BN_Structured_Pruning_Distillation/runs/_verification_b12/model_final.pth",
+      "bytes": 37941,
+      "sha256": "04d99ed7926fe71323a66a4f42e7484457d4c5083b519cd7458f67010f1873c0"
+    },
+    {
+      "path": "research/aidrawer/output/Ukiyo-e/20261006_B12_BN_Structured_Pruning_Distillation/runs/b12_pilot/model_final.pth",
+      "source": "NN5/src/aidrawer/output/Ukiyo-e/20261006_B12_BN_Structured_Pruning_Distillation/runs/b12_pilot/model_final.pth",
+      "bytes": 37941,
+      "sha256": "5816d4498c65e063a138f029c06accbd12ca378fd4671c565562ce49023823d3"
+    },
+    {
+      "path": "research/aidrawer/output/Ukiyo-e/20261006_B16_IN_BN_Teacher_Distillation/b_deployment_review_12000/model_final.pth",
+      "source": "NN5/src/aidrawer/output/Ukiyo-e/20261006_B16_IN_BN_Teacher_Distillation/b_deployment_review_12000/model_final.pth",
+      "bytes": 48693,
+      "sha256": "c49c187f407ffae42b76a018b8d5a3d2a8db84326567f3395a8ca563a0fc6fa8"
+    },
+    {
+      "path": "research/aidrawer/output/Ukiyo-e/20261006_B16_IN_BN_Teacher_Distillation/frozen_teacher/identity.json",
+      "source": "NN5/src/aidrawer/output/Ukiyo-e/20261006_B16_IN_BN_Teacher_Distillation/frozen_teacher/identity.json",
+      "bytes": 313,
+      "sha256": "79e17ac9273e52f2886138ca4cdf176efbfbfaa91ad0e6adbcb263a543dfca9b"
+    },
+    {
+      "path": "research/aidrawer/output/Ukiyo-e/20261006_B16_IN_BN_Teacher_Distillation/frozen_teacher/model_final.pth",
+      "source": "NN5/src/aidrawer/output/Ukiyo-e/20261006_B16_IN_BN_Teacher_Distillation/frozen_teacher/model_final.pth",
+      "bytes": 296497,
+      "sha256": "2173cbe907511378ec06876c70df02bbe0129a8ea768ad96959555fd77aa874e"
+    },
+    {
+      "path": "research/aidrawer/output/Ukiyo-e/20261006_B16_IN_BN_Teacher_Distillation/runs/_verification_bn/model_final.pth",
+      "source": "NN5/src/aidrawer/output/Ukiyo-e/20261006_B16_IN_BN_Teacher_Distillation/runs/_verification_bn/model_final.pth",
+      "bytes": 48693,
+      "sha256": "8e89f2acdc1336ab7beb08f6989635c952da3dc3c638f72989fc534126528c43"
+    },
+    {
+      "path": "research/aidrawer/output/Ukiyo-e/20261006_B16_IN_BN_Teacher_Distillation/runs/b_bn_r2/model_final.pth",
+      "source": "NN5/src/aidrawer/output/Ukiyo-e/20261006_B16_IN_BN_Teacher_Distillation/runs/b_bn_r2/model_final.pth",
+      "bytes": 48693,
+      "sha256": "c49c187f407ffae42b76a018b8d5a3d2a8db84326567f3395a8ca563a0fc6fa8"
+    },
+    {
+      "path": "research/aidrawer/output/Ukiyo-e/20261006_B16_IN_BN_Teacher_Distillation/runs/b_in_r2/model_final.pth",
+      "source": "NN5/src/aidrawer/output/Ukiyo-e/20261006_B16_IN_BN_Teacher_Distillation/runs/b_in_r2/model_final.pth",
+      "bytes": 41181,
+      "sha256": "7858d67f28f300108f1b04371b84c22b2ef2aaf1085a4ce22da3331cd7a3dd7e"
+    },
+    {
+      "path": "research/aidrawer/output/Ukiyo-e/20261006_Teacher_Retraining_Initial_Student_Trials/runs/ukiyo_a_bn_pilot/model_final.pth",
+      "source": "NN5/src/aidrawer/output/Ukiyo-e/20261006_Teacher_Retraining_Initial_Student_Trials/runs/ukiyo_a_bn_pilot/model_final.pth",
+      "bytes": 31221,
+      "sha256": "6461217dfa2ee420d0ccb111aff0e25aa2e70525185d6f91259b6a1a810bc343"
+    },
+    {
+      "path": "research/aidrawer/output/Ukiyo-e/20261006_Teacher_Retraining_Initial_Student_Trials/runs/ukiyo_a_in_pilot/model_final.pth",
+      "source": "NN5/src/aidrawer/output/Ukiyo-e/20261006_Teacher_Retraining_Initial_Student_Trials/runs/ukiyo_a_in_pilot/model_final.pth",
+      "bytes": 23837,
+      "sha256": "9b81a22a5cc19951f2d67d6f3756501e1fd70ff030d51126921d1adef991f177"
+    },
+    {
+      "path": "research/aidrawer/output/Ukiyo-e/20261006_Teacher_Retraining_Initial_Student_Trials/runs/ukiyo_b_bn_pilot/model_final.pth",
+      "source": "NN5/src/aidrawer/output/Ukiyo-e/20261006_Teacher_Retraining_Initial_Student_Trials/runs/ukiyo_b_bn_pilot/model_final.pth",
+      "bytes": 49461,
+      "sha256": "5ed99bf43088f2658012a639b111b23c40453d37d000f467a6a7086ec51dd31a"
+    },
+    {
+      "path": "research/aidrawer/output/Ukiyo-e/20261006_Teacher_Retraining_Initial_Student_Trials/runs/ukiyo_teacher_pilot/model_final.pth",
+      "source": "NN5/src/aidrawer/output/Ukiyo-e/20261006_Teacher_Retraining_Initial_Student_Trials/runs/ukiyo_teacher_pilot/model_final.pth",
+      "bytes": 296497,
+      "sha256": "2173cbe907511378ec06876c70df02bbe0129a8ea768ad96959555fd77aa874e"
+    },
+    {
+      "path": "research/aidrawer/output/Ukiyo-e/20261008_S8_IN_1res_S4_IN_3res_Distillation/frozen_teacher/identity.json",
+      "source": "NN5/src/aidrawer/output/Ukiyo-e/20261008_S8_IN_1res_S4_IN_3res_Distillation/frozen_teacher/identity.json",
+      "bytes": 272,
+      "sha256": "499fa9076e24050ba34cfd3ad2ee2e8fce5f58e01588891fd5637ef3989e0de8"
+    },
+    {
+      "path": "research/aidrawer/output/Ukiyo-e/20261008_S8_IN_1res_S4_IN_3res_Distillation/runs/s4/model_final.pth",
+      "source": "NN5/src/aidrawer/output/Ukiyo-e/20261008_S8_IN_1res_S4_IN_3res_Distillation/runs/s4/model_final.pth",
+      "bytes": 19681,
+      "sha256": "f84a5c4dc729033c921f54bac76a31261f3ec45deb9ed86b9ce6206891c047b9"
+    },
+    {
+      "path": "research/aidrawer/output/Ukiyo-e/20261008_S8_IN_1res_S4_IN_3res_Distillation/runs/s8/model_final.pth",
+      "source": "NN5/src/aidrawer/output/Ukiyo-e/20261008_S8_IN_1res_S4_IN_3res_Distillation/runs/s8/model_final.pth",
+      "bytes": 16145,
+      "sha256": "3cb14254445c0ae4923d171d4971161baaae7f74f3a7ea8a0a058b3ba090e7ec"
+    },
+    {
+      "path": "research/aidrawer/output/Ukiyo-e/Teacher_IN_C8_Res3_20260918_034405_Ukiyo-e/model_final.pth",
+      "source": "NN5/src/aidrawer/output/Ukiyo-e/Teacher_IN_C8_Res3_20260918_034405_Ukiyo-e/model_final.pth",
+      "bytes": 296497,
+      "sha256": "5d3e421821670a30c1eb2dc95784782c2734a33ca5ab5de1d2d4f6f462411ca5"
+    },
+    {
+      "path": "research/aidrawer/output/VanGogh_SelfPortrait/20261007_B16_BN_to_A4_Distillation/a4_from_b16/frozen_b16/identity.json",
+      "source": "NN5/src/aidrawer/output/VanGogh_SelfPortrait/20261007_B16_BN_to_A4_Distillation/a4_from_b16/frozen_b16/identity.json",
+      "bytes": 512,
+      "sha256": "b9705c1bae15693cba899ebfe77d3a58e7b0c78dbe84d81d15688c36d7be66cb"
+    },
+    {
+      "path": "research/aidrawer/output/VanGogh_SelfPortrait/20261007_B16_BN_to_A4_Distillation/a4_from_b16/frozen_b16/model_final.pth",
+      "source": "NN5/src/aidrawer/output/VanGogh_SelfPortrait/20261007_B16_BN_to_A4_Distillation/a4_from_b16/frozen_b16/model_final.pth",
+      "bytes": 48693,
+      "sha256": "867870a74ba4b70ec09b87b8b6e6c12aa8a3c63abf94e39f97e45bc8b08ebe9b"
+    },
+    {
+      "path": "research/aidrawer/output/VanGogh_SelfPortrait/20261007_B16_BN_to_A4_Distillation/a4_from_b16/pruning_report.json",
+      "source": "NN5/src/aidrawer/output/VanGogh_SelfPortrait/20261007_B16_BN_to_A4_Distillation/a4_from_b16/pruning_report.json",
+      "bytes": 1936,
+      "sha256": "a6c1eb46495f4fe7d42b02c7a2ecb5eaa918e6d61f017a1db66ae7fd79a696c6"
+    },
+    {
+      "path": "research/aidrawer/output/VanGogh_SelfPortrait/20261007_B16_BN_to_A4_Distillation/a4_from_b16/runs/portrait_a4_pilot/model_final.pth",
+      "source": "NN5/src/aidrawer/output/VanGogh_SelfPortrait/20261007_B16_BN_to_A4_Distillation/a4_from_b16/runs/portrait_a4_pilot/model_final.pth",
+      "bytes": 25269,
+      "sha256": "86a2a03a172d083117cf55c8f9e11c7fabc3f7d999fe1a48653bfd1d900431b0"
+    },
+    {
+      "path": "research/aidrawer/output/VanGogh_SelfPortrait/20261007_B16_BN_to_A4_Distillation/frozen_teacher/identity.json",
+      "source": "NN5/src/aidrawer/output/VanGogh_SelfPortrait/20261007_B16_BN_to_A4_Distillation/frozen_teacher/identity.json",
+      "bytes": 587,
+      "sha256": "a9b669c9bd372bacfe5fabb169c8950fb05654dbae49f19d10587363cdda61ab"
+    },
+    {
+      "path": "research/aidrawer/output/VanGogh_SelfPortrait/20261007_B16_BN_to_A4_Distillation/frozen_teacher/model_final.pth",
+      "source": "NN5/src/aidrawer/output/VanGogh_SelfPortrait/20261007_B16_BN_to_A4_Distillation/frozen_teacher/model_final.pth",
+      "bytes": 296497,
+      "sha256": "a2c7ef8852833a14793edc7d60aab5ec730fa8a2c8f60857a1fb746d738649ed"
+    },
+    {
+      "path": "research/aidrawer/output/VanGogh_SelfPortrait/20261007_B16_BN_to_A4_Distillation/runs/portrait_b16_bn/model_final.pth",
+      "source": "NN5/src/aidrawer/output/VanGogh_SelfPortrait/20261007_B16_BN_to_A4_Distillation/runs/portrait_b16_bn/model_final.pth",
+      "bytes": 48693,
+      "sha256": "867870a74ba4b70ec09b87b8b6e6c12aa8a3c63abf94e39f97e45bc8b08ebe9b"
+    },
+    {
+      "path": "research/aidrawer/output/VanGogh_SelfPortrait/20261008_A4_BN_Color_Coverage_Regional_Repair/frozen_teacher/identity.json",
+      "source": "NN5/src/aidrawer/output/VanGogh_SelfPortrait/20261008_A4_BN_Color_Coverage_Regional_Repair/frozen_teacher/identity.json",
+      "bytes": 299,
+      "sha256": "653ab7e2126fb467825c9e326805575fe39db4605f8798644019e32a75dbae71"
+    },
+    {
+      "path": "research/aidrawer/output/VanGogh_SelfPortrait/20261008_A4_BN_Color_Coverage_Regional_Repair/runs/a4/model_final.pth",
+      "source": "NN5/src/aidrawer/output/VanGogh_SelfPortrait/20261008_A4_BN_Color_Coverage_Regional_Repair/runs/a4/model_final.pth",
+      "bytes": 26037,
+      "sha256": "185ac99576db105be6bf803498ebf5dc3a2569863a9670fc06777a0b8d25c08a"
+    },
+    {
+      "path": "research/aidrawer/output/VanGogh_SelfPortrait/20261008_A4_BN_Direct_IN_Teacher_Color_Texture/frozen_teacher/identity.json",
+      "source": "NN5/src/aidrawer/output/VanGogh_SelfPortrait/20261008_A4_BN_Direct_IN_Teacher_Color_Texture/frozen_teacher/identity.json",
+      "bytes": 299,
+      "sha256": "653ab7e2126fb467825c9e326805575fe39db4605f8798644019e32a75dbae71"
+    },
+    {
+      "path": "research/aidrawer/output/VanGogh_SelfPortrait/20261008_A4_BN_Direct_IN_Teacher_Color_Texture/runs/a4/model_final.pth",
+      "source": "NN5/src/aidrawer/output/VanGogh_SelfPortrait/20261008_A4_BN_Direct_IN_Teacher_Color_Texture/runs/a4/model_final.pth",
+      "bytes": 26037,
+      "sha256": "041c12700d1086fb4f7cbfad744f158f53fc176211468fa7890cdaeae3f22b25"
+    },
+    {
+      "path": "research/aidrawer/output/VanGogh_SelfPortrait/20261008_A4_BN_FromScratch_Vivid_Teacher_ColorPriority/frozen_teacher/identity.json",
+      "source": "NN5/src/aidrawer/output/VanGogh_SelfPortrait/20261008_A4_BN_FromScratch_Vivid_Teacher_ColorPriority/frozen_teacher/identity.json",
+      "bytes": 299,
+      "sha256": "653ab7e2126fb467825c9e326805575fe39db4605f8798644019e32a75dbae71"
+    },
+    {
+      "path": "research/aidrawer/output/VanGogh_SelfPortrait/20261008_A4_BN_FromScratch_Vivid_Teacher_ColorPriority/runs/a4/model_final.pth",
+      "source": "NN5/src/aidrawer/output/VanGogh_SelfPortrait/20261008_A4_BN_FromScratch_Vivid_Teacher_ColorPriority/runs/a4/model_final.pth",
+      "bytes": 26037,
+      "sha256": "047197b94c96653da394947c6da43031c23e34627e7ed69fc183844ad8ce9f4d"
+    },
+    {
+      "path": "research/aidrawer/output/VanGogh_SelfPortrait/20261009_A4_BN_Teacher_Palette8_MinArea5/frozen_teacher/identity.json",
+      "source": "NN5/src/aidrawer/output/VanGogh_SelfPortrait/20261009_A4_BN_Teacher_Palette8_MinArea5/frozen_teacher/identity.json",
+      "bytes": 299,
+      "sha256": "653ab7e2126fb467825c9e326805575fe39db4605f8798644019e32a75dbae71"
+    },
+    {
+      "path": "research/aidrawer/output/VanGogh_SelfPortrait/20261009_A4_BN_Teacher_Palette8_MinArea5/runs/a4/model_final.pth",
+      "source": "NN5/src/aidrawer/output/VanGogh_SelfPortrait/20261009_A4_BN_Teacher_Palette8_MinArea5/runs/a4/model_final.pth",
+      "bytes": 26037,
+      "sha256": "36c9736abbd378d99626943c8a477735559257801afa0df95604c8e60fe83913"
+    },
+    {
+      "path": "research/aidrawer/output/VanGogh_SelfPortrait/20261009_C6_Res3_BN_HalfParameters_IN_Distillation/frozen_teacher/identity.json",
+      "source": "NN5/src/aidrawer/output/VanGogh_SelfPortrait/20261009_C6_Res3_BN_HalfParameters_IN_Distillation/frozen_teacher/identity.json",
+      "bytes": 299,
+      "sha256": "653ab7e2126fb467825c9e326805575fe39db4605f8798644019e32a75dbae71"
+    },
+    {
+      "path": "research/aidrawer/output/VanGogh_SelfPortrait/20261009_C6_Res3_BN_HalfParameters_IN_Distillation/runs/c6_bn/model_final.pth",
+      "source": "NN5/src/aidrawer/output/VanGogh_SelfPortrait/20261009_C6_Res3_BN_HalfParameters_IN_Distillation/runs/c6_bn/model_final.pth",
+      "bytes": 188312,
+      "sha256": "75230ec0d768177cb71367c93b65ad69c55fd1f3520e2b67e95202c3cd1c12cd"
+    },
+    {
+      "path": "research/aidrawer/output/VanGogh_SelfPortrait/20261009_Core1_LumaTexture/identity.json",
+      "source": "NN5/src/aidrawer/output/VanGogh_SelfPortrait/20261009_Core1_LumaTexture/identity.json",
+      "bytes": 503,
+      "sha256": "b3d1bdf5d0d6887dee719cbbb49703ea099b37ed02ede4298a897bc27bc37302"
+    },
+    {
+      "path": "research/aidrawer/output/VanGogh_SelfPortrait/20261009_Core1_LumaTexture/original_in_teacher/identity.json",
+      "source": "NN5/src/aidrawer/output/VanGogh_SelfPortrait/20261009_Core1_LumaTexture/original_in_teacher/identity.json",
+      "bytes": 299,
+      "sha256": "653ab7e2126fb467825c9e326805575fe39db4605f8798644019e32a75dbae71"
+    },
+    {
+      "path": "research/aidrawer/output/VanGogh_SelfPortrait/20261009_Core1_LumaTexture/runs/luma_v1/model_final.pth",
+      "source": "NN5/src/aidrawer/output/VanGogh_SelfPortrait/20261009_Core1_LumaTexture/runs/luma_v1/model_final.pth",
+      "bytes": 104161,
+      "sha256": "058cd046300be862373b370b44574ba0615d853b29495a3508e34f2e75ddf5c9"
+    },
+    {
+      "path": "research/aidrawer/output/VanGogh_SelfPortrait/20261009_StyleContextDetail_ColorCompression/frozen_teacher/identity.json",
+      "source": "NN5/src/aidrawer/output/VanGogh_SelfPortrait/20261009_StyleContextDetail_ColorCompression/frozen_teacher/identity.json",
+      "bytes": 361,
+      "sha256": "1c6f7e026465113ffc3bde181ede79a278fd0b2f9ed72f686d58a6eeed5e4dd2"
+    },
+    {
+      "path": "research/aidrawer/output/VanGogh_SelfPortrait/20261009_StyleContextDetail_ColorCompression/original_in_teacher/identity.json",
+      "source": "NN5/src/aidrawer/output/VanGogh_SelfPortrait/20261009_StyleContextDetail_ColorCompression/original_in_teacher/identity.json",
+      "bytes": 299,
+      "sha256": "653ab7e2126fb467825c9e326805575fe39db4605f8798644019e32a75dbae71"
+    },
+    {
+      "path": "research/aidrawer/output/VanGogh_SelfPortrait/20261009_StyleContextDetail_ColorCompression/runs/phase_fold/model_final.pth",
+      "source": "NN5/src/aidrawer/output/VanGogh_SelfPortrait/20261009_StyleContextDetail_ColorCompression/runs/phase_fold/model_final.pth",
+      "bytes": 223081,
+      "sha256": "25ee5898c9676fbfcde5bb6d463bc0ec6d7f1ca6c8604df822ad0c61cdebf2fd"
+    },
+    {
+      "path": "research/aidrawer/output/VanGogh_SelfPortrait/20261009_StyleContextDetail_CorePruning/frozen_teacher/identity.json",
+      "source": "NN5/src/aidrawer/output/VanGogh_SelfPortrait/20261009_StyleContextDetail_CorePruning/frozen_teacher/identity.json",
+      "bytes": 423,
+      "sha256": "f92b881ab091e7357d9259b47f8f6de9e275b20516013a1727aa5d1919114f03"
+    },
+    {
+      "path": "research/aidrawer/output/VanGogh_SelfPortrait/20261009_StyleContextDetail_CorePruning/original_in_teacher/identity.json",
+      "source": "NN5/src/aidrawer/output/VanGogh_SelfPortrait/20261009_StyleContextDetail_CorePruning/original_in_teacher/identity.json",
+      "bytes": 299,
+      "sha256": "653ab7e2126fb467825c9e326805575fe39db4605f8798644019e32a75dbae71"
+    },
+    {
+      "path": "research/aidrawer/output/VanGogh_SelfPortrait/20261009_StyleContextDetail_CorePruning/runs/core1/model_final.pth",
+      "source": "NN5/src/aidrawer/output/VanGogh_SelfPortrait/20261009_StyleContextDetail_CorePruning/runs/core1/model_final.pth",
+      "bytes": 101661,
+      "sha256": "85a36743568c0ca872f09b6e207b29a9e0a41ee8a9189592b6779eba21d1c5e3"
+    },
+    {
+      "path": "research/aidrawer/output/VanGogh_SelfPortrait/20261009_StyleContextDetail_CorePruning/runs/core2/model_final.pth",
+      "source": "NN5/src/aidrawer/output/VanGogh_SelfPortrait/20261009_StyleContextDetail_CorePruning/runs/core2/model_final.pth",
+      "bytes": 142113,
+      "sha256": "6ec5b6a6cc29ee605414c249ec763932e534d1e692f02e271607fd22e82c6dda"
+    },
+    {
+      "path": "research/aidrawer/output/VanGogh_SelfPortrait/20261009_StyleContextDetail_CorePruning/runs/core3/model_final.pth",
+      "source": "NN5/src/aidrawer/output/VanGogh_SelfPortrait/20261009_StyleContextDetail_CorePruning/runs/core3/model_final.pth",
+      "bytes": 182629,
+      "sha256": "f9fd1f8175f0943431c151b647042fecaddadfcbd0f7bef3e1054d2fee23af7f"
+    },
+    {
+      "path": "research/aidrawer/output/VanGogh_SelfPortrait/20261009_StyleContextDetail_IN_Distillation/frozen_teacher/identity.json",
+      "source": "NN5/src/aidrawer/output/VanGogh_SelfPortrait/20261009_StyleContextDetail_IN_Distillation/frozen_teacher/identity.json",
+      "bytes": 299,
+      "sha256": "653ab7e2126fb467825c9e326805575fe39db4605f8798644019e32a75dbae71"
+    },
+    {
+      "path": "research/aidrawer/output/VanGogh_SelfPortrait/20261009_StyleContextDetail_IN_Distillation/runs/scd_v1/model_final.pth",
+      "source": "NN5/src/aidrawer/output/VanGogh_SelfPortrait/20261009_StyleContextDetail_IN_Distillation/runs/scd_v1/model_final.pth",
+      "bytes": 224745,
+      "sha256": "62d944de4b8c62173a86687d2e253b3e0ee608455546597f62e81fd8d82ef421"
+    },
+    {
+      "path": "research/aidrawer/output/VanGogh_SelfPortrait/20261009_StyleContextDetail_TextureHead_Refinement/frozen_teacher/identity.json",
+      "source": "NN5/src/aidrawer/output/VanGogh_SelfPortrait/20261009_StyleContextDetail_TextureHead_Refinement/frozen_teacher/identity.json",
+      "bytes": 299,
+      "sha256": "653ab7e2126fb467825c9e326805575fe39db4605f8798644019e32a75dbae71"
+    },
+    {
+      "path": "research/aidrawer/output/VanGogh_SelfPortrait/20261009_StyleContextDetail_TextureHead_Refinement/runs/texture_v1/model_final.pth",
+      "source": "NN5/src/aidrawer/output/VanGogh_SelfPortrait/20261009_StyleContextDetail_TextureHead_Refinement/runs/texture_v1/model_final.pth",
+      "bytes": 224745,
+      "sha256": "c0a7874da98e9d1ac17aa9ede597a6936968b69b8c5e23f599b2c1523dc6d76c"
+    },
+    {
+      "path": "research/aidrawer/output/VanGogh_SelfPortrait/20261009_StyleContextDetail_TextureTrunk_Refinement/frozen_teacher/identity.json",
+      "source": "NN5/src/aidrawer/output/VanGogh_SelfPortrait/20261009_StyleContextDetail_TextureTrunk_Refinement/frozen_teacher/identity.json",
+      "bytes": 299,
+      "sha256": "653ab7e2126fb467825c9e326805575fe39db4605f8798644019e32a75dbae71"
+    },
+    {
+      "path": "research/aidrawer/output/VanGogh_SelfPortrait/20261009_StyleContextDetail_TextureTrunk_Refinement/runs/texture_trunk_v1/model_final.pth",
+      "source": "NN5/src/aidrawer/output/VanGogh_SelfPortrait/20261009_StyleContextDetail_TextureTrunk_Refinement/runs/texture_trunk_v1/model_final.pth",
+      "bytes": 224745,
+      "sha256": "256862107b46c0135a7b9e99d244bbe63e92e070b2d2eb224b2ba1c65532d99a"
+    },
+    {
+      "path": "research/aidrawer/output/VanGogh_SelfPortrait/Legacy_Teacher_BN_runs3_bat/20260916_221746/model_final.pth",
+      "source": "NN5/src/aidrawer/output/VanGogh_SelfPortrait/Legacy_Teacher_BN_runs3_bat/20260916_221746/model_final.pth",
+      "bytes": 310616,
+      "sha256": "e8b6eb8d2fc428426b19791a4b2eb30f0499d2fbb6b1f7c9e94f349be35fee65"
+    },
+    {
+      "path": "research/aidrawer/output/VanGogh_SelfPortrait/Legacy_Teacher_IN_runs3_ins/model_final.pth",
+      "source": "NN5/src/aidrawer/output/VanGogh_SelfPortrait/Legacy_Teacher_IN_runs3_ins/model_final.pth",
+      "bytes": 296497,
+      "sha256": "a2c7ef8852833a14793edc7d60aab5ec730fa8a2c8f60857a1fb746d738649ed"
+    },
+    {
+      "path": "research/aidrawer/training/model.py",
+      "source": "NN5/src/aidrawer/training/model.py",
+      "bytes": 5286,
+      "sha256": "b49ad86092e290f7df11a6f5b53bc7db091760d1d631cd526bb9cd0f3b2e092a"
+    },
+    {
+      "path": "research/aidrawer/training/README.md",
+      "source": "NN5/src/aidrawer/training/README.md",
+      "bytes": 4729,
+      "sha256": "64c07a3d547d3b8b3d65ce29098be7f2a0f89804f64b14126c8e0429c139151c"
+    },
+    {
+      "path": "research/aidrawer/training/stylize.py",
+      "source": "NN5/src/aidrawer/training/stylize.py",
+      "bytes": 9694,
+      "sha256": "835dadcf20a45a867d3eb6e3b8f8d6a019ee34f638b3f19c5ed7e408799babb1"
+    },
+    {
+      "path": "research/aidrawer/training/train.py",
+      "source": "NN5/src/aidrawer/training/train.py",
+      "bytes": 9328,
+      "sha256": "34dec8cbcdcfa5c7c78c5570fb0fb9101905bcdc1d0fc850bbc12ab049e2b1b5"
+    },
+    {
+      "path": "research/aidrawer/training_bn/evaluate.py",
+      "source": "NN5/src/aidrawer/training_bn/evaluate.py",
+      "bytes": 9874,
+      "sha256": "402f2c095c9f407e3516d55794edb0a35be160b37fa4cc572fb1076725817e98"
+    },
+    {
+      "path": "research/aidrawer/training_bn/model.py",
+      "source": "NN5/src/aidrawer/training_bn/model.py",
+      "bytes": 5286,
+      "sha256": "b49ad86092e290f7df11a6f5b53bc7db091760d1d631cd526bb9cd0f3b2e092a"
+    },
+    {
+      "path": "research/aidrawer/training_bn/README.md",
+      "source": "NN5/src/aidrawer/training_bn/README.md",
+      "bytes": 10874,
+      "sha256": "b973b2362e86dfe6658999187d1c5c8c0c8216807f29567c177eb04da89c09e3"
+    },
+    {
+      "path": "research/aidrawer/training_bn/run_compare.py",
+      "source": "NN5/src/aidrawer/training_bn/run_compare.py",
+      "bytes": 15776,
+      "sha256": "6b376b6979fcd962349fb7490d875b8446059081b91f5b05b83f4bd036498b33"
+    },
+    {
+      "path": "research/aidrawer/training_bn/selfcheck.py",
+      "source": "NN5/src/aidrawer/training_bn/selfcheck.py",
+      "bytes": 4545,
+      "sha256": "0e9c8c4e2f08811fcc821144eb1d313e1fc7b0e05d3c1281c5a1807869dfccf0"
+    },
+    {
+      "path": "research/aidrawer/training_bn/stylize.py",
+      "source": "NN5/src/aidrawer/training_bn/stylize.py",
+      "bytes": 10136,
+      "sha256": "9a9a59f0655739a48deedace328a4f78e4271c3515e457c1e196fabdf3c46482"
+    },
+    {
+      "path": "research/aidrawer/training_bn/test_mem.py",
+      "source": "NN5/src/aidrawer/training_bn/test_mem.py",
+      "bytes": 2077,
+      "sha256": "32eb1723d5f0e1f08c795f41c76e7305f10756ed7d91b99404328b45468bda0e"
+    },
+    {
+      "path": "research/aidrawer/training_bn/test_resize.py",
+      "source": "NN5/src/aidrawer/training_bn/test_resize.py",
+      "bytes": 3219,
+      "sha256": "dbb20629e20e20a90df25b9f21e1a8b5099e0e4276f7d39c0c1baeebe6effd2d"
+    },
+    {
+      "path": "research/aidrawer/training_bn/train.py",
+      "source": "NN5/src/aidrawer/training_bn/train.py",
+      "bytes": 18105,
+      "sha256": "d29fc07b28892b473db59f0f57bf4467b92274d6f9f4bc337031a2668e1757a3"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/bright_aaa/20261007_Teacher_Palette_Texture_B16_to_A4_Distillation/distill_b16_a4/a4_from_b16/prepare_a4.py",
+      "source": "NN5/src/aidrawer/training_experiments/bright_aaa/20261007_Teacher_Palette_Texture_B16_to_A4_Distillation/distill_b16_a4/a4_from_b16/prepare_a4.py",
+      "bytes": 2954,
+      "sha256": "37c2065d7d173031c1d3fb48fa0da4737241ce0b40829cccdb7ec824ec23342f"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/bright_aaa/20261007_Teacher_Palette_Texture_B16_to_A4_Distillation/distill_b16_a4/a4_from_b16/structure.py",
+      "source": "NN5/src/aidrawer/training_experiments/bright_aaa/20261007_Teacher_Palette_Texture_B16_to_A4_Distillation/distill_b16_a4/a4_from_b16/structure.py",
+      "bytes": 5181,
+      "sha256": "ed1fc695d252ba37d7203cf1d249d4b524056ebea5d0d3468e747deb1d3ae380"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/bright_aaa/20261007_Teacher_Palette_Texture_B16_to_A4_Distillation/distill_b16_a4/a4_from_b16/support.py",
+      "source": "NN5/src/aidrawer/training_experiments/bright_aaa/20261007_Teacher_Palette_Texture_B16_to_A4_Distillation/distill_b16_a4/a4_from_b16/support.py",
+      "bytes": 2909,
+      "sha256": "ff567453b99d7510454969de899e9b3f81e0139d027111b5821e1ba261ea1f6a"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/bright_aaa/20261007_Teacher_Palette_Texture_B16_to_A4_Distillation/distill_b16_a4/a4_from_b16/train_a4.py",
+      "source": "NN5/src/aidrawer/training_experiments/bright_aaa/20261007_Teacher_Palette_Texture_B16_to_A4_Distillation/distill_b16_a4/a4_from_b16/train_a4.py",
+      "bytes": 13960,
+      "sha256": "e62fb2ec797a56493f9ab13eddf8427e17a689bc8a8f496aec46fde083a74fa6"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/bright_aaa/20261007_Teacher_Palette_Texture_B16_to_A4_Distillation/distill_b16_a4/export_board.py",
+      "source": "NN5/src/aidrawer/training_experiments/bright_aaa/20261007_Teacher_Palette_Texture_B16_to_A4_Distillation/distill_b16_a4/export_board.py",
+      "bytes": 5453,
+      "sha256": "add573d0920442c3f11dec7af0e94159a8886bb94911152fcdf3c2bc23f42fe3"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/bright_aaa/20261007_Teacher_Palette_Texture_B16_to_A4_Distillation/distill_b16_a4/run_all.py",
+      "source": "NN5/src/aidrawer/training_experiments/bright_aaa/20261007_Teacher_Palette_Texture_B16_to_A4_Distillation/distill_b16_a4/run_all.py",
+      "bytes": 3397,
+      "sha256": "bddec26c81134f905b0b1e8296314b29ae328f36017ad9618a949c7004c975b7"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/bright_aaa/20261007_Teacher_Palette_Texture_B16_to_A4_Distillation/distill_b16_a4/support.py",
+      "source": "NN5/src/aidrawer/training_experiments/bright_aaa/20261007_Teacher_Palette_Texture_B16_to_A4_Distillation/distill_b16_a4/support.py",
+      "bytes": 2897,
+      "sha256": "88a2a40f9b7e4729b391139847658726e9e3cbab0b01172d231ac884e4174403"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/bright_aaa/20261007_Teacher_Palette_Texture_B16_to_A4_Distillation/distill_b16_a4/train_b16.py",
+      "source": "NN5/src/aidrawer/training_experiments/bright_aaa/20261007_Teacher_Palette_Texture_B16_to_A4_Distillation/distill_b16_a4/train_b16.py",
+      "bytes": 13082,
+      "sha256": "272d2bd76c8245b2744264e4957ff6badd7e7e7ed60a2bb17e2ba6a30d11dd33"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/bright_aaa/20261007_Teacher_Palette_Texture_B16_to_A4_Distillation/finetune_teacher_texture.py",
+      "source": "NN5/src/aidrawer/training_experiments/bright_aaa/20261007_Teacher_Palette_Texture_B16_to_A4_Distillation/finetune_teacher_texture.py",
+      "bytes": 15549,
+      "sha256": "1d109ac840e78afb9df1731c126873cc90059c4d4daf6cdae58ca9d63754cc64"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/bright_aaa/20261007_Teacher_Palette_Texture_B16_to_A4_Distillation/README_PATHS.md",
+      "source": "NN5/src/aidrawer/training_experiments/bright_aaa/20261007_Teacher_Palette_Texture_B16_to_A4_Distillation/README_PATHS.md",
+      "bytes": 338,
+      "sha256": "18a42a5a205495ea8f4d9b787a54a4bb7fd1d1c521cdd33e04cfb421162fc010"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/bright_aaa/20261007_Teacher_Palette_Texture_B16_to_A4_Distillation/train_teacher.py",
+      "source": "NN5/src/aidrawer/training_experiments/bright_aaa/20261007_Teacher_Palette_Texture_B16_to_A4_Distillation/train_teacher.py",
+      "bytes": 13850,
+      "sha256": "da794af240aaf79ce95d01c2f980563b84143683d123e4b222811f8e1fef83c7"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/bright_aaa/20261007_Teacher_Palette_Texture_B16_to_A4_Distillation/train_teacher_palette.py",
+      "source": "NN5/src/aidrawer/training_experiments/bright_aaa/20261007_Teacher_Palette_Texture_B16_to_A4_Distillation/train_teacher_palette.py",
+      "bytes": 14487,
+      "sha256": "ad7999a613cb3d5811353c7022604dc80bab8785380df3cd5b76a2e01044a5aa"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/MantisShrimp/20261009_A4_Paired_Pseudocolor/models.py",
+      "source": "NN5/src/aidrawer/training_experiments/MantisShrimp/20261009_A4_Paired_Pseudocolor/models.py",
+      "bytes": 1470,
+      "sha256": "05037aef1eda5b55681371a4f4bbdaec283e072178a9b07b565c547ae9fb3f04"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/MantisShrimp/20261009_A4_Paired_Pseudocolor/preview_targets.py",
+      "source": "NN5/src/aidrawer/training_experiments/MantisShrimp/20261009_A4_Paired_Pseudocolor/preview_targets.py",
+      "bytes": 3423,
+      "sha256": "b7430bb4f40a2936407c259ff8c74f1c8ca697984e679a9ca76fb161b3fc9384"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/MantisShrimp/20261009_A4_Paired_Pseudocolor/README.md",
+      "source": "NN5/src/aidrawer/training_experiments/MantisShrimp/20261009_A4_Paired_Pseudocolor/README.md",
+      "bytes": 3685,
+      "sha256": "095ba3f78d91c6c8121e24523befe6d62d6fb7e15ec19895d8c801165e91c820"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/MantisShrimp/20261009_A4_Paired_Pseudocolor/rules.json",
+      "source": "NN5/src/aidrawer/training_experiments/MantisShrimp/20261009_A4_Paired_Pseudocolor/rules.json",
+      "bytes": 655,
+      "sha256": "849443d643250ebc077330dc929700ea464ad38fe2159f21c7fe4d6685ce2571"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/MantisShrimp/20261009_A4_Paired_Pseudocolor/start_training.ps1",
+      "source": "NN5/src/aidrawer/training_experiments/MantisShrimp/20261009_A4_Paired_Pseudocolor/start_training.ps1",
+      "bytes": 421,
+      "sha256": "b3dc6e9dc25c363e1b632014ba574e1b83a0f35ebfc67a5fad04bb313e439d91"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/MantisShrimp/20261009_A4_Paired_Pseudocolor/target.py",
+      "source": "NN5/src/aidrawer/training_experiments/MantisShrimp/20261009_A4_Paired_Pseudocolor/target.py",
+      "bytes": 3071,
+      "sha256": "9a57d16c4bb54faf1f2ffed433833822273e79a05d20f16792737f8bce7a3696"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/MantisShrimp/20261009_A4_Paired_Pseudocolor/train_a4.py",
+      "source": "NN5/src/aidrawer/training_experiments/MantisShrimp/20261009_A4_Paired_Pseudocolor/train_a4.py",
+      "bytes": 15460,
+      "sha256": "38e85fc418df4db21ce53903bde87ed5bbbc759433d63cd5408704f75d4dc63b"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/MantisShrimp/20261009_A4_Paired_Pseudocolor/verify.py",
+      "source": "NN5/src/aidrawer/training_experiments/MantisShrimp/20261009_A4_Paired_Pseudocolor/verify.py",
+      "bytes": 2161,
+      "sha256": "37781ef82cff171ee86092042fa7f3fba131f82027db71c050ee7c35d886065f"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/Nobel/20261017_A4_AdaptiveInk_Balanced/models.py",
+      "source": "NN5/src/aidrawer/training_experiments/Nobel/20261017_A4_AdaptiveInk_Balanced/models.py",
+      "bytes": 1470,
+      "sha256": "05037aef1eda5b55681371a4f4bbdaec283e072178a9b07b565c547ae9fb3f04"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/Nobel/20261017_A4_AdaptiveInk_Balanced/README.md",
+      "source": "NN5/src/aidrawer/training_experiments/Nobel/20261017_A4_AdaptiveInk_Balanced/README.md",
+      "bytes": 1264,
+      "sha256": "02c6b264bd49a6f8a6a3b6d24b33d59f328e554dffb8019569bebf7e99e3a142"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/Nobel/20261017_A4_AdaptiveInk_Balanced/rules.json",
+      "source": "NN5/src/aidrawer/training_experiments/Nobel/20261017_A4_AdaptiveInk_Balanced/rules.json",
+      "bytes": 753,
+      "sha256": "b98188e20e7228bf06d1c2f78081a1b7af1945549b8bcba853ddf86e7f514aef"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/Nobel/20261017_A4_AdaptiveInk_Balanced/start_training.ps1",
+      "source": "NN5/src/aidrawer/training_experiments/Nobel/20261017_A4_AdaptiveInk_Balanced/start_training.ps1",
+      "bytes": 404,
+      "sha256": "7c4751e9a14d9ef84aa1ae7b766265f29d6177de4a107ac108b107d90d9509e1"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/Nobel/20261017_A4_AdaptiveInk_Balanced/target.py",
+      "source": "NN5/src/aidrawer/training_experiments/Nobel/20261017_A4_AdaptiveInk_Balanced/target.py",
+      "bytes": 3778,
+      "sha256": "dd19caf7c51f0b7c00fee7084323c3d85846af120e54b97a2e686c2ac6529afe"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/Nobel/20261017_A4_AdaptiveInk_Balanced/train_a4.py",
+      "source": "NN5/src/aidrawer/training_experiments/Nobel/20261017_A4_AdaptiveInk_Balanced/train_a4.py",
+      "bytes": 17218,
+      "sha256": "2eef9ec05f7003b28bca7a15ebf6debd20c96a415fc1113eedcaa8f6ca67c9e4"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/Nobel/20261017_A4_AdaptiveInk_SameGold/models.py",
+      "source": "NN5/src/aidrawer/training_experiments/Nobel/20261017_A4_AdaptiveInk_SameGold/models.py",
+      "bytes": 1470,
+      "sha256": "05037aef1eda5b55681371a4f4bbdaec283e072178a9b07b565c547ae9fb3f04"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/Nobel/20261017_A4_AdaptiveInk_SameGold/README.md",
+      "source": "NN5/src/aidrawer/training_experiments/Nobel/20261017_A4_AdaptiveInk_SameGold/README.md",
+      "bytes": 1663,
+      "sha256": "809374f2e95b9e53542c3fe9255a9035afc80303c8ab3eded9d22765c3597c07"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/Nobel/20261017_A4_AdaptiveInk_SameGold/rules.json",
+      "source": "NN5/src/aidrawer/training_experiments/Nobel/20261017_A4_AdaptiveInk_SameGold/rules.json",
+      "bytes": 731,
+      "sha256": "07e012e98fa00427018f5b954cb5dfdb50a7c6c8709e385c9f8dc360e921d3fb"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/Nobel/20261017_A4_AdaptiveInk_SameGold/script_validation.json",
+      "source": "NN5/src/aidrawer/training_experiments/Nobel/20261017_A4_AdaptiveInk_SameGold/script_validation.json",
+      "bytes": 593,
+      "sha256": "bbbf4e11aa7c96f0d4b7315c6503a804a723e3ebfd72ddbd435c46ed6a3732ef"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/Nobel/20261017_A4_AdaptiveInk_SameGold/start_training.ps1",
+      "source": "NN5/src/aidrawer/training_experiments/Nobel/20261017_A4_AdaptiveInk_SameGold/start_training.ps1",
+      "bytes": 404,
+      "sha256": "7c4751e9a14d9ef84aa1ae7b766265f29d6177de4a107ac108b107d90d9509e1"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/Nobel/20261017_A4_AdaptiveInk_SameGold/target.py",
+      "source": "NN5/src/aidrawer/training_experiments/Nobel/20261017_A4_AdaptiveInk_SameGold/target.py",
+      "bytes": 3381,
+      "sha256": "f60aa7b9e6252ef61e1188ecb2bc4e33b67e8ae049b7f50f99e7eb378471e1e8"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/Nobel/20261017_A4_AdaptiveInk_SameGold/train_a4.py",
+      "source": "NN5/src/aidrawer/training_experiments/Nobel/20261017_A4_AdaptiveInk_SameGold/train_a4.py",
+      "bytes": 16741,
+      "sha256": "a34862b3304b97f83eb8ee330d0b4a9f61b0bcaf66c176788deef33b29351b96"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/Nobel/20261017_A4_BoldInk_SameGold/models.py",
+      "source": "NN5/src/aidrawer/training_experiments/Nobel/20261017_A4_BoldInk_SameGold/models.py",
+      "bytes": 1470,
+      "sha256": "05037aef1eda5b55681371a4f4bbdaec283e072178a9b07b565c547ae9fb3f04"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/Nobel/20261017_A4_BoldInk_SameGold/README.md",
+      "source": "NN5/src/aidrawer/training_experiments/Nobel/20261017_A4_BoldInk_SameGold/README.md",
+      "bytes": 1367,
+      "sha256": "19421db806d8c3944e306102cf5846d619eb3387401088c5a538f2e9953849c8"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/Nobel/20261017_A4_BoldInk_SameGold/rules.json",
+      "source": "NN5/src/aidrawer/training_experiments/Nobel/20261017_A4_BoldInk_SameGold/rules.json",
+      "bytes": 560,
+      "sha256": "b94e2d309bbe1264f151010d2c9fa45d408c64e485ef4352eb33b2a846b98507"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/Nobel/20261017_A4_BoldInk_SameGold/script_validation.json",
+      "source": "NN5/src/aidrawer/training_experiments/Nobel/20261017_A4_BoldInk_SameGold/script_validation.json",
+      "bytes": 299,
+      "sha256": "eb373db4d3270df1874b5238d455019ccc6c789c78f424c9b2dbe9eb836506f8"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/Nobel/20261017_A4_BoldInk_SameGold/start_training.ps1",
+      "source": "NN5/src/aidrawer/training_experiments/Nobel/20261017_A4_BoldInk_SameGold/start_training.ps1",
+      "bytes": 404,
+      "sha256": "7c4751e9a14d9ef84aa1ae7b766265f29d6177de4a107ac108b107d90d9509e1"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/Nobel/20261017_A4_BoldInk_SameGold/target.py",
+      "source": "NN5/src/aidrawer/training_experiments/Nobel/20261017_A4_BoldInk_SameGold/target.py",
+      "bytes": 2179,
+      "sha256": "0139470f961ca9b5e5fae25a60c42e401fdc915add2314639fb69702bbf86d76"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/Nobel/20261017_A4_BoldInk_SameGold/train_a4.py",
+      "source": "NN5/src/aidrawer/training_experiments/Nobel/20261017_A4_BoldInk_SameGold/train_a4.py",
+      "bytes": 14863,
+      "sha256": "73cbef85974ea737e02eeeeea0b993769832b1adcfad41affee42df3958793b6"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/Nobel/20261017_A4_Independent_InkGold/models.py",
+      "source": "NN5/src/aidrawer/training_experiments/Nobel/20261017_A4_Independent_InkGold/models.py",
+      "bytes": 1470,
+      "sha256": "05037aef1eda5b55681371a4f4bbdaec283e072178a9b07b565c547ae9fb3f04"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/Nobel/20261017_A4_Independent_InkGold/preview_targets.py",
+      "source": "NN5/src/aidrawer/training_experiments/Nobel/20261017_A4_Independent_InkGold/preview_targets.py",
+      "bytes": 2560,
+      "sha256": "da45a24c71c262cfcafd283f7ec3d7542b9ed0a18d07fd13f34036eff1a1e677"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/Nobel/20261017_A4_Independent_InkGold/README.md",
+      "source": "NN5/src/aidrawer/training_experiments/Nobel/20261017_A4_Independent_InkGold/README.md",
+      "bytes": 2328,
+      "sha256": "ac51f79ff5bff606e1d1b2ce10db4665313b9da97890dbee77cac2ec2ec08a5a"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/Nobel/20261017_A4_Independent_InkGold/rules.json",
+      "source": "NN5/src/aidrawer/training_experiments/Nobel/20261017_A4_Independent_InkGold/rules.json",
+      "bytes": 558,
+      "sha256": "6c55b69c11de2bdc0a29617865a050f1d50ff1866499c08e057844e6133ccb7c"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/Nobel/20261017_A4_Independent_InkGold/start_training.ps1",
+      "source": "NN5/src/aidrawer/training_experiments/Nobel/20261017_A4_Independent_InkGold/start_training.ps1",
+      "bytes": 404,
+      "sha256": "7c4751e9a14d9ef84aa1ae7b766265f29d6177de4a107ac108b107d90d9509e1"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/Nobel/20261017_A4_Independent_InkGold/target.py",
+      "source": "NN5/src/aidrawer/training_experiments/Nobel/20261017_A4_Independent_InkGold/target.py",
+      "bytes": 2179,
+      "sha256": "0139470f961ca9b5e5fae25a60c42e401fdc915add2314639fb69702bbf86d76"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/Nobel/20261017_A4_Independent_InkGold/train_a4.py",
+      "source": "NN5/src/aidrawer/training_experiments/Nobel/20261017_A4_Independent_InkGold/train_a4.py",
+      "bytes": 14616,
+      "sha256": "21e91c56d10e382c01ffe799a51697ce1622755bbfe3022efaf46b85eb97c5b0"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/Ukiyo-e/20261006_A4_BN_Pruning_A8_NoResidual_Distillation/export_a4_rtl.py",
+      "source": "NN5/src/aidrawer/training_experiments/Ukiyo-e/20261006_A4_BN_Pruning_A8_NoResidual_Distillation/export_a4_rtl.py",
+      "bytes": 6712,
+      "sha256": "7c84b01c4852af972edb2d5afb468d15484957012a55161ebf80cf8308792a9b"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/Ukiyo-e/20261006_A4_BN_Pruning_A8_NoResidual_Distillation/quant_screen_a4.py",
+      "source": "NN5/src/aidrawer/training_experiments/Ukiyo-e/20261006_A4_BN_Pruning_A8_NoResidual_Distillation/quant_screen_a4.py",
+      "bytes": 10691,
+      "sha256": "7d75695152c31db1cd2733c024fff0a50402951586f2a13bd22945eb9169dd6a"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/Ukiyo-e/20261006_A4_BN_Pruning_A8_NoResidual_Distillation/README_PATHS.md",
+      "source": "NN5/src/aidrawer/training_experiments/Ukiyo-e/20261006_A4_BN_Pruning_A8_NoResidual_Distillation/README_PATHS.md",
+      "bytes": 320,
+      "sha256": "83e5a9a019dc98f365b35b5b4e13c17d52158dad8e6b648e2d8e1e752611c39a"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/Ukiyo-e/20261006_A4_BN_Pruning_A8_NoResidual_Distillation/structure.py",
+      "source": "NN5/src/aidrawer/training_experiments/Ukiyo-e/20261006_A4_BN_Pruning_A8_NoResidual_Distillation/structure.py",
+      "bytes": 4992,
+      "sha256": "42f547c8e2567065fad0407e17d8d9a2759fe7690e96f0983467265a06b8fee1"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/Ukiyo-e/20261006_A4_BN_Pruning_A8_NoResidual_Distillation/support.py",
+      "source": "NN5/src/aidrawer/training_experiments/Ukiyo-e/20261006_A4_BN_Pruning_A8_NoResidual_Distillation/support.py",
+      "bytes": 11979,
+      "sha256": "1569a7db45f1a0b133a4b258cff744674660459205217d8ebe3db00ecf3de7b9"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/Ukiyo-e/20261006_A4_BN_Pruning_A8_NoResidual_Distillation/train_variants.py",
+      "source": "NN5/src/aidrawer/training_experiments/Ukiyo-e/20261006_A4_BN_Pruning_A8_NoResidual_Distillation/train_variants.py",
+      "bytes": 13865,
+      "sha256": "2f01c0dc2614a0ab870c0b316b51c1fc622b91ae7d80fdc6bfecd208b7fcffd3"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/Ukiyo-e/20261006_A8_BN_Structured_Pruning_Distillation/pruning.py",
+      "source": "NN5/src/aidrawer/training_experiments/Ukiyo-e/20261006_A8_BN_Structured_Pruning_Distillation/pruning.py",
+      "bytes": 4873,
+      "sha256": "5376f5869cee3861d3fd46919ff16e84393c23a38db2ae4490b5f13fd5540fc7"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/Ukiyo-e/20261006_A8_BN_Structured_Pruning_Distillation/quant_screen_a8.py",
+      "source": "NN5/src/aidrawer/training_experiments/Ukiyo-e/20261006_A8_BN_Structured_Pruning_Distillation/quant_screen_a8.py",
+      "bytes": 10689,
+      "sha256": "f4d9b4a17857d74d1076eb093d3c2877b10fa323e6b45ec492adeea7d8faaf7b"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/Ukiyo-e/20261006_A8_BN_Structured_Pruning_Distillation/README_PATHS.md",
+      "source": "NN5/src/aidrawer/training_experiments/Ukiyo-e/20261006_A8_BN_Structured_Pruning_Distillation/README_PATHS.md",
+      "bytes": 314,
+      "sha256": "a9e08677bd3b2217b5b5b696bd0d7187527db6cd5aca6e7d89979eaea8aa05f9"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/Ukiyo-e/20261006_A8_BN_Structured_Pruning_Distillation/support.py",
+      "source": "NN5/src/aidrawer/training_experiments/Ukiyo-e/20261006_A8_BN_Structured_Pruning_Distillation/support.py",
+      "bytes": 11976,
+      "sha256": "001f9f00d66980a99ec396b43b5ff76c1b965d981ec08f8a714bf892460c6239"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/Ukiyo-e/20261006_A8_BN_Structured_Pruning_Distillation/train_a8.py",
+      "source": "NN5/src/aidrawer/training_experiments/Ukiyo-e/20261006_A8_BN_Structured_Pruning_Distillation/train_a8.py",
+      "bytes": 13434,
+      "sha256": "6f9f54123e9a5b5440845832b08a283473bd70b449bc8189412134e1de030ade"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/Ukiyo-e/20261006_B12_BN_Structured_Pruning_Distillation/pruning.py",
+      "source": "NN5/src/aidrawer/training_experiments/Ukiyo-e/20261006_B12_BN_Structured_Pruning_Distillation/pruning.py",
+      "bytes": 4811,
+      "sha256": "b05e91195306c8b6f33b7c54b5da654bd7c299ce07db36189cd0d1e5ea6b9cee"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/Ukiyo-e/20261006_B12_BN_Structured_Pruning_Distillation/quant_screen_b12.py",
+      "source": "NN5/src/aidrawer/training_experiments/Ukiyo-e/20261006_B12_BN_Structured_Pruning_Distillation/quant_screen_b12.py",
+      "bytes": 10696,
+      "sha256": "13752df04a446227294dc6fc7971181c94ec070e89ae512aaabb974626ad046b"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/Ukiyo-e/20261006_B12_BN_Structured_Pruning_Distillation/README_PATHS.md",
+      "source": "NN5/src/aidrawer/training_experiments/Ukiyo-e/20261006_B12_BN_Structured_Pruning_Distillation/README_PATHS.md",
+      "bytes": 316,
+      "sha256": "59515f5ab285850e8c0808e38f235825b67a16daf05588ddd123c7a5f76b2f04"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/Ukiyo-e/20261006_B12_BN_Structured_Pruning_Distillation/support.py",
+      "source": "NN5/src/aidrawer/training_experiments/Ukiyo-e/20261006_B12_BN_Structured_Pruning_Distillation/support.py",
+      "bytes": 11977,
+      "sha256": "18f0ec029bdc641ad94d1eea3b14a8085c7efc5545a8c9918038e8707518a880"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/Ukiyo-e/20261006_B12_BN_Structured_Pruning_Distillation/train_b12.py",
+      "source": "NN5/src/aidrawer/training_experiments/Ukiyo-e/20261006_B12_BN_Structured_Pruning_Distillation/train_b12.py",
+      "bytes": 13455,
+      "sha256": "f3083b6850feb418372aa391520e93e73c1fe4a741b5e0a4c27a0aa7c43b85bc"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/Ukiyo-e/20261006_B12_BN_Structured_Pruning_Distillation/train_round2.py",
+      "source": "NN5/src/aidrawer/training_experiments/Ukiyo-e/20261006_B12_BN_Structured_Pruning_Distillation/train_round2.py",
+      "bytes": 13095,
+      "sha256": "6ae36773b89c9e3b0c17124fe2ed28d354bad0503060f716db11b7e3812fa905"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/Ukiyo-e/20261006_B16_IN_BN_Teacher_Distillation/compare.py",
+      "source": "NN5/src/aidrawer/training_experiments/Ukiyo-e/20261006_B16_IN_BN_Teacher_Distillation/compare.py",
+      "bytes": 1231,
+      "sha256": "4f62cf9a9a70ff70c2b338aff620ff661bbff2807099e28ba04ef9e974b3f5d1"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/Ukiyo-e/20261006_B16_IN_BN_Teacher_Distillation/compare_round2.py",
+      "source": "NN5/src/aidrawer/training_experiments/Ukiyo-e/20261006_B16_IN_BN_Teacher_Distillation/compare_round2.py",
+      "bytes": 2500,
+      "sha256": "f384f0bae581f467208345c1f2dfa7d9126014a5c2b6087ca3b548962e059531"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/Ukiyo-e/20261006_B16_IN_BN_Teacher_Distillation/quant_screen_b16.py",
+      "source": "NN5/src/aidrawer/training_experiments/Ukiyo-e/20261006_B16_IN_BN_Teacher_Distillation/quant_screen_b16.py",
+      "bytes": 10696,
+      "sha256": "26eed2b4605825108f7b8a9188fd88e7555c65dda2401416bec5fd1530ed52cb"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/Ukiyo-e/20261006_B16_IN_BN_Teacher_Distillation/README_PATHS.md",
+      "source": "NN5/src/aidrawer/training_experiments/Ukiyo-e/20261006_B16_IN_BN_Teacher_Distillation/README_PATHS.md",
+      "bytes": 300,
+      "sha256": "6264d96f0a1218d75497f8a45b23d41200fde50e5cc0f9be79d162fa6e0fca5d"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/Ukiyo-e/20261006_B16_IN_BN_Teacher_Distillation/support.py",
+      "source": "NN5/src/aidrawer/training_experiments/Ukiyo-e/20261006_B16_IN_BN_Teacher_Distillation/support.py",
+      "bytes": 11969,
+      "sha256": "1642cd028da9411bfbcf7ea7ff924e4b103af081bf2430affc90c24d94f15534"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/Ukiyo-e/20261006_B16_IN_BN_Teacher_Distillation/train_round2.py",
+      "source": "NN5/src/aidrawer/training_experiments/Ukiyo-e/20261006_B16_IN_BN_Teacher_Distillation/train_round2.py",
+      "bytes": 13087,
+      "sha256": "f00c66a4148bc397f089a86d197dbbc027cabe6d467a0b876d1f1e6e433df91e"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/Ukiyo-e/20261006_Teacher_Retraining_Initial_Student_Trials/compare.py",
+      "source": "NN5/src/aidrawer/training_experiments/Ukiyo-e/20261006_Teacher_Retraining_Initial_Student_Trials/compare.py",
+      "bytes": 1231,
+      "sha256": "4f62cf9a9a70ff70c2b338aff620ff661bbff2807099e28ba04ef9e974b3f5d1"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/Ukiyo-e/20261006_Teacher_Retraining_Initial_Student_Trials/experiment.py",
+      "source": "NN5/src/aidrawer/training_experiments/Ukiyo-e/20261006_Teacher_Retraining_Initial_Student_Trials/experiment.py",
+      "bytes": 11980,
+      "sha256": "9f0d6f27ee26a470ff8243589946b1528dbf35dac924f1a620e850adf77835bb"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/Ukiyo-e/20261006_Teacher_Retraining_Initial_Student_Trials/README_PATHS.md",
+      "source": "NN5/src/aidrawer/training_experiments/Ukiyo-e/20261006_Teacher_Retraining_Initial_Student_Trials/README_PATHS.md",
+      "bytes": 322,
+      "sha256": "c414c30c62ee4aae5821e5e2421bef607a14ac10ebefdbfbb312ab6e21d64c01"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/Ukiyo-e/20261006_Teacher_Retraining_Initial_Student_Trials/run_students.ps1",
+      "source": "NN5/src/aidrawer/training_experiments/Ukiyo-e/20261006_Teacher_Retraining_Initial_Student_Trials/run_students.ps1",
+      "bytes": 611,
+      "sha256": "bf632612a862bae0c908d978a46d23f57122c8581deeae985aedcd3c36e67329"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/Ukiyo-e/20261008_S8_IN_1res_S4_IN_3res_Distillation/models.py",
+      "source": "NN5/src/aidrawer/training_experiments/Ukiyo-e/20261008_S8_IN_1res_S4_IN_3res_Distillation/models.py",
+      "bytes": 1634,
+      "sha256": "62e4e578b04302685c21bdc70c19f8597b72ce253629d71044965163794f06d7"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/Ukiyo-e/20261008_S8_IN_1res_S4_IN_3res_Distillation/README_PATHS.md",
+      "source": "NN5/src/aidrawer/training_experiments/Ukiyo-e/20261008_S8_IN_1res_S4_IN_3res_Distillation/README_PATHS.md",
+      "bytes": 308,
+      "sha256": "e49ee2a11b7ff74bdf337bdfe3e73aac732c7a9087024538946fb26718c5ea23"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/Ukiyo-e/20261008_S8_IN_1res_S4_IN_3res_Distillation/run_all.py",
+      "source": "NN5/src/aidrawer/training_experiments/Ukiyo-e/20261008_S8_IN_1res_S4_IN_3res_Distillation/run_all.py",
+      "bytes": 3460,
+      "sha256": "36b57ff7e8a106ecbc6869000f42b279a4600db261cf94a97bc589ad9fe505d8"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/Ukiyo-e/20261008_S8_IN_1res_S4_IN_3res_Distillation/train_candidates.py",
+      "source": "NN5/src/aidrawer/training_experiments/Ukiyo-e/20261008_S8_IN_1res_S4_IN_3res_Distillation/train_candidates.py",
+      "bytes": 11971,
+      "sha256": "db8a92cdbc72c011ce69e66a29bd4400331f6b82a4b58467c59e85851df7d2d7"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261007_B16_BN_to_A4_Distillation/a4_from_b16/prepare_a4.py",
+      "source": "NN5/src/aidrawer/training_experiments/VanGogh_SelfPortrait/20261007_B16_BN_to_A4_Distillation/a4_from_b16/prepare_a4.py",
+      "bytes": 2707,
+      "sha256": "0de18f4e5b72ea6501df752e5b4514c15a4f836837123251b3619f086da2d610"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261007_B16_BN_to_A4_Distillation/a4_from_b16/structure.py",
+      "source": "NN5/src/aidrawer/training_experiments/VanGogh_SelfPortrait/20261007_B16_BN_to_A4_Distillation/a4_from_b16/structure.py",
+      "bytes": 5157,
+      "sha256": "a35a2a90b9e38e3ec812c47eb0ec5459c95b3d423beca9bf9d596f66722b08ce"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261007_B16_BN_to_A4_Distillation/a4_from_b16/support.py",
+      "source": "NN5/src/aidrawer/training_experiments/VanGogh_SelfPortrait/20261007_B16_BN_to_A4_Distillation/a4_from_b16/support.py",
+      "bytes": 2903,
+      "sha256": "1f614511e5a157c2a15bc74503d9c8f89abf57ab88fc6fe72470dca3611e5b33"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261007_B16_BN_to_A4_Distillation/a4_from_b16/train_a4.py",
+      "source": "NN5/src/aidrawer/training_experiments/VanGogh_SelfPortrait/20261007_B16_BN_to_A4_Distillation/a4_from_b16/train_a4.py",
+      "bytes": 13617,
+      "sha256": "dfb0d247cc632f945c4c2b03c9c9b64aab0ba33de1bd5c19c2e8482788fb72b7"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261007_B16_BN_to_A4_Distillation/compare_round2.py",
+      "source": "NN5/src/aidrawer/training_experiments/VanGogh_SelfPortrait/20261007_B16_BN_to_A4_Distillation/compare_round2.py",
+      "bytes": 2500,
+      "sha256": "f384f0bae581f467208345c1f2dfa7d9126014a5c2b6087ca3b548962e059531"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261007_B16_BN_to_A4_Distillation/README_PATHS.md",
+      "source": "NN5/src/aidrawer/training_experiments/VanGogh_SelfPortrait/20261007_B16_BN_to_A4_Distillation/README_PATHS.md",
+      "bytes": 316,
+      "sha256": "9da35d10dda444daa0b4e2bbbadd0ec90c2e85b56c13fa9decbf217ba25acdba"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261007_B16_BN_to_A4_Distillation/run_b16.ps1",
+      "source": "NN5/src/aidrawer/training_experiments/VanGogh_SelfPortrait/20261007_B16_BN_to_A4_Distillation/run_b16.ps1",
+      "bytes": 400,
+      "sha256": "3dfdfd889e1ac063bf1aa413ae85a91dcddbff0d2a3aa3a6fb245e123c5822a1"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261007_B16_BN_to_A4_Distillation/support.py",
+      "source": "NN5/src/aidrawer/training_experiments/VanGogh_SelfPortrait/20261007_B16_BN_to_A4_Distillation/support.py",
+      "bytes": 2891,
+      "sha256": "fac6a4e14f3e0fd9223b0c9a839d891ef8d780b4d3221f9deeba615833d83560"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261007_B16_BN_to_A4_Distillation/train_round2.py",
+      "source": "NN5/src/aidrawer/training_experiments/VanGogh_SelfPortrait/20261007_B16_BN_to_A4_Distillation/train_round2.py",
+      "bytes": 13095,
+      "sha256": "10b5a140f4b55459baa36f5b51443ba34d6946909e48a6ec8094d54982c42d0e"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261008_A4_BN_Color_Coverage_Regional_Repair/models.py",
+      "source": "NN5/src/aidrawer/training_experiments/VanGogh_SelfPortrait/20261008_A4_BN_Color_Coverage_Regional_Repair/models.py",
+      "bytes": 1324,
+      "sha256": "8e7f4ce4ab9a4002b2adf142535c7b31049fec63cdbac678cf21a1e6385618bf"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261008_A4_BN_Color_Coverage_Regional_Repair/README.md",
+      "source": "NN5/src/aidrawer/training_experiments/VanGogh_SelfPortrait/20261008_A4_BN_Color_Coverage_Regional_Repair/README.md",
+      "bytes": 1441,
+      "sha256": "58b77d77153d59b47d265de21701a38de27f299061aecab35c73ea76c6d1709e"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261008_A4_BN_Color_Coverage_Regional_Repair/train_a4_repair.py",
+      "source": "NN5/src/aidrawer/training_experiments/VanGogh_SelfPortrait/20261008_A4_BN_Color_Coverage_Regional_Repair/train_a4_repair.py",
+      "bytes": 20046,
+      "sha256": "a2aed108c27f48e05d8108036d2b6471f6f619c9169621f30b62d7ec6b9f9411"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261008_A4_BN_Direct_IN_Teacher_Color_Texture/models.py",
+      "source": "NN5/src/aidrawer/training_experiments/VanGogh_SelfPortrait/20261008_A4_BN_Direct_IN_Teacher_Color_Texture/models.py",
+      "bytes": 1325,
+      "sha256": "e4f25d3b73a4f1fbd882084d8ce0cc669467ee155756dad8377222dd88c6e7b7"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261008_A4_BN_Direct_IN_Teacher_Color_Texture/README.md",
+      "source": "NN5/src/aidrawer/training_experiments/VanGogh_SelfPortrait/20261008_A4_BN_Direct_IN_Teacher_Color_Texture/README.md",
+      "bytes": 1349,
+      "sha256": "fa7aa44288f20ac3e153da85d546904bbb9ec747af741f861ff99709248244b7"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261008_A4_BN_Direct_IN_Teacher_Color_Texture/train_a4.py",
+      "source": "NN5/src/aidrawer/training_experiments/VanGogh_SelfPortrait/20261008_A4_BN_Direct_IN_Teacher_Color_Texture/train_a4.py",
+      "bytes": 15769,
+      "sha256": "aa677a52440b6c2f374a658f2e9cce1eae5617aa9c530346ee794f9bb9d1720c"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261008_A4_BN_FromScratch_Vivid_Teacher_ColorPriority/models.py",
+      "source": "NN5/src/aidrawer/training_experiments/VanGogh_SelfPortrait/20261008_A4_BN_FromScratch_Vivid_Teacher_ColorPriority/models.py",
+      "bytes": 1333,
+      "sha256": "01c8ebb367b90a387256f05ccb20fee29587283e226effe54070cda98f1b2e66"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261008_A4_BN_FromScratch_Vivid_Teacher_ColorPriority/README.md",
+      "source": "NN5/src/aidrawer/training_experiments/VanGogh_SelfPortrait/20261008_A4_BN_FromScratch_Vivid_Teacher_ColorPriority/README.md",
+      "bytes": 1709,
+      "sha256": "c139ebb56823cb456c05167ef0deb05cdc620c7d3111993f49936d7653e21611"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261008_A4_BN_FromScratch_Vivid_Teacher_ColorPriority/train_a4_vivid.py",
+      "source": "NN5/src/aidrawer/training_experiments/VanGogh_SelfPortrait/20261008_A4_BN_FromScratch_Vivid_Teacher_ColorPriority/train_a4_vivid.py",
+      "bytes": 21258,
+      "sha256": "ae64c3a6f2e3104ca67ff3fadcbcb77baf2a1b2acdb80cac1923d4aee4dbeec5"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_A4_BN_Teacher_Palette8_MinArea5/models.py",
+      "source": "NN5/src/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_A4_BN_Teacher_Palette8_MinArea5/models.py",
+      "bytes": 1319,
+      "sha256": "418ccb36266e1ad8569998c7fa57d9aba7b015e38fe8bcdda9777e91fa2e550c"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_A4_BN_Teacher_Palette8_MinArea5/README.md",
+      "source": "NN5/src/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_A4_BN_Teacher_Palette8_MinArea5/README.md",
+      "bytes": 1860,
+      "sha256": "6d7beb9eb0712213d9c51271f40e1b68cece0c27a46d75a5249c3cbd16ed2f14"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_A4_BN_Teacher_Palette8_MinArea5/train_a4_palette.py",
+      "source": "NN5/src/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_A4_BN_Teacher_Palette8_MinArea5/train_a4_palette.py",
+      "bytes": 23734,
+      "sha256": "abb09e7d8fdddd4ebf2f406bfc0e929c237f787546af6004f4971abad03bae9f"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_C6_Res3_BN_HalfParameters_IN_Distillation/models.py",
+      "source": "NN5/src/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_C6_Res3_BN_HalfParameters_IN_Distillation/models.py",
+      "bytes": 1103,
+      "sha256": "fdf1529b6b220b33c0e01dbcc80cdda1f680a13876cbe536d25b0ec056202c23"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_C6_Res3_BN_HalfParameters_IN_Distillation/README.md",
+      "source": "NN5/src/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_C6_Res3_BN_HalfParameters_IN_Distillation/README.md",
+      "bytes": 1502,
+      "sha256": "48adc182b88c4de029ed8ff2cc166b467206c51ac2c608682ec5c25d7de62aa0"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_C6_Res3_BN_HalfParameters_IN_Distillation/train_c6_bn.py",
+      "source": "NN5/src/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_C6_Res3_BN_HalfParameters_IN_Distillation/train_c6_bn.py",
+      "bytes": 22363,
+      "sha256": "a97f2e107674ba82168c56920a74c38428f24376717bd76881cf1a8fe3370602"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_Core1_LumaTexture/compact_model.py",
+      "source": "NN5/src/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_Core1_LumaTexture/compact_model.py",
+      "bytes": 7181,
+      "sha256": "288985c148b4685b93035e4b63605afe1ffc833e1752b177a6ac841606e5bed2"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_Core1_LumaTexture/luma_texture_model.py",
+      "source": "NN5/src/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_Core1_LumaTexture/luma_texture_model.py",
+      "bytes": 1727,
+      "sha256": "126185b0a0da7e3bf9b99863139d93839f00dbaa10f946102c80a6ee4ac40b1a"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_Core1_LumaTexture/palette_report.py",
+      "source": "NN5/src/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_Core1_LumaTexture/palette_report.py",
+      "bytes": 2777,
+      "sha256": "549f3af2fd1fd2f2ab29ac45752c4d50523ca9d202369e19217cd643c216f560"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_Core1_LumaTexture/README.md",
+      "source": "NN5/src/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_Core1_LumaTexture/README.md",
+      "bytes": 2561,
+      "sha256": "03aff853277e83f08984b0c4bd032255c406ada7954e412ac2f883946b639737"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_Core1_LumaTexture/student_model.py",
+      "source": "NN5/src/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_Core1_LumaTexture/student_model.py",
+      "bytes": 7417,
+      "sha256": "ec7a50a2c4bfcee510d4da161acd0d1218f02f01f1af1e00cef0f52ad3e31a60"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_Core1_LumaTexture/train_compact.py",
+      "source": "NN5/src/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_Core1_LumaTexture/train_compact.py",
+      "bytes": 16141,
+      "sha256": "d3d4ae2d0169f8e7d96c9e3937d32d29e0f5687f30589786c74fba2182262061"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_Core1_LumaTexture/train_texture.py",
+      "source": "NN5/src/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_Core1_LumaTexture/train_texture.py",
+      "bytes": 9292,
+      "sha256": "06e61af54433b61cc8e0a963c31ffac2292068e8c08ce92c400154a38e969808"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_StyleContextDetail_ColorCompression/compact_model.py",
+      "source": "NN5/src/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_StyleContextDetail_ColorCompression/compact_model.py",
+      "bytes": 6542,
+      "sha256": "e34dbdbfad24078db4a64bc3f6c18917adf0eafde3360367a6b8406a9d0c30e9"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_StyleContextDetail_ColorCompression/palette_report.py",
+      "source": "NN5/src/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_StyleContextDetail_ColorCompression/palette_report.py",
+      "bytes": 2777,
+      "sha256": "549f3af2fd1fd2f2ab29ac45752c4d50523ca9d202369e19217cd643c216f560"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_StyleContextDetail_ColorCompression/README.md",
+      "source": "NN5/src/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_StyleContextDetail_ColorCompression/README.md",
+      "bytes": 2400,
+      "sha256": "b5e12d0a3628438bff20f2b33b816973f8b0ca24811dfe60ee5eb7e210ea9964"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_StyleContextDetail_ColorCompression/student_model.py",
+      "source": "NN5/src/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_StyleContextDetail_ColorCompression/student_model.py",
+      "bytes": 7417,
+      "sha256": "ec7a50a2c4bfcee510d4da161acd0d1218f02f01f1af1e00cef0f52ad3e31a60"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_StyleContextDetail_ColorCompression/train_compact.py",
+      "source": "NN5/src/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_StyleContextDetail_ColorCompression/train_compact.py",
+      "bytes": 16085,
+      "sha256": "81f2190e2ee255f1c1911ec0897518f5c4f1a4b958eb77531a7d8b6800feef47"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_StyleContextDetail_CorePruning/compact_model.py",
+      "source": "NN5/src/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_StyleContextDetail_CorePruning/compact_model.py",
+      "bytes": 7181,
+      "sha256": "288985c148b4685b93035e4b63605afe1ffc833e1752b177a6ac841606e5bed2"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_StyleContextDetail_CorePruning/palette_report.py",
+      "source": "NN5/src/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_StyleContextDetail_CorePruning/palette_report.py",
+      "bytes": 2777,
+      "sha256": "549f3af2fd1fd2f2ab29ac45752c4d50523ca9d202369e19217cd643c216f560"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_StyleContextDetail_CorePruning/README.md",
+      "source": "NN5/src/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_StyleContextDetail_CorePruning/README.md",
+      "bytes": 2576,
+      "sha256": "e3cbab3aa8468b06de78213b832a8c2ca3ea463eab88cc00c31028dc53962b3d"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_StyleContextDetail_CorePruning/student_model.py",
+      "source": "NN5/src/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_StyleContextDetail_CorePruning/student_model.py",
+      "bytes": 7417,
+      "sha256": "ec7a50a2c4bfcee510d4da161acd0d1218f02f01f1af1e00cef0f52ad3e31a60"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_StyleContextDetail_CorePruning/train_all.ps1",
+      "source": "NN5/src/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_StyleContextDetail_CorePruning/train_all.ps1",
+      "bytes": 345,
+      "sha256": "0a98a2983416649c0a87de1734625ffa04a73a98cbab582a6562b65792f06e5f"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_StyleContextDetail_CorePruning/train_compact.py",
+      "source": "NN5/src/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_StyleContextDetail_CorePruning/train_compact.py",
+      "bytes": 16141,
+      "sha256": "d3d4ae2d0169f8e7d96c9e3937d32d29e0f5687f30589786c74fba2182262061"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_StyleContextDetail_IN_Distillation/palette_report.py",
+      "source": "NN5/src/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_StyleContextDetail_IN_Distillation/palette_report.py",
+      "bytes": 2777,
+      "sha256": "549f3af2fd1fd2f2ab29ac45752c4d50523ca9d202369e19217cd643c216f560"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_StyleContextDetail_IN_Distillation/README.md",
+      "source": "NN5/src/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_StyleContextDetail_IN_Distillation/README.md",
+      "bytes": 2308,
+      "sha256": "5b17a4722bc7f638047c69872e69f82c77c9b19725b1391474f435c2efadcbd9"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_StyleContextDetail_IN_Distillation/student_model.py",
+      "source": "NN5/src/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_StyleContextDetail_IN_Distillation/student_model.py",
+      "bytes": 7417,
+      "sha256": "ec7a50a2c4bfcee510d4da161acd0d1218f02f01f1af1e00cef0f52ad3e31a60"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_StyleContextDetail_IN_Distillation/train_student.py",
+      "source": "NN5/src/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_StyleContextDetail_IN_Distillation/train_student.py",
+      "bytes": 14919,
+      "sha256": "e9e444a31000d2ce6ff7327e22d42b72f17c10f008f82a692a030b16ede80ca2"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_StyleContextDetail_TextureHead_Refinement/palette_report.py",
+      "source": "NN5/src/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_StyleContextDetail_TextureHead_Refinement/palette_report.py",
+      "bytes": 2777,
+      "sha256": "549f3af2fd1fd2f2ab29ac45752c4d50523ca9d202369e19217cd643c216f560"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_StyleContextDetail_TextureHead_Refinement/README.md",
+      "source": "NN5/src/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_StyleContextDetail_TextureHead_Refinement/README.md",
+      "bytes": 1985,
+      "sha256": "efd261894defc461eea46e8dd0684f94afb661fba6a89af2f478f4c1671ed8a6"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_StyleContextDetail_TextureHead_Refinement/student_model.py",
+      "source": "NN5/src/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_StyleContextDetail_TextureHead_Refinement/student_model.py",
+      "bytes": 7417,
+      "sha256": "ec7a50a2c4bfcee510d4da161acd0d1218f02f01f1af1e00cef0f52ad3e31a60"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_StyleContextDetail_TextureHead_Refinement/train_texture.py",
+      "source": "NN5/src/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_StyleContextDetail_TextureHead_Refinement/train_texture.py",
+      "bytes": 18423,
+      "sha256": "020f7f2a8a13581d067e19a2e5faad2c46a9a872da1a2dd2b8c0e268592d5453"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_StyleContextDetail_TextureTrunk_Refinement/palette_report.py",
+      "source": "NN5/src/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_StyleContextDetail_TextureTrunk_Refinement/palette_report.py",
+      "bytes": 2777,
+      "sha256": "549f3af2fd1fd2f2ab29ac45752c4d50523ca9d202369e19217cd643c216f560"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_StyleContextDetail_TextureTrunk_Refinement/README.md",
+      "source": "NN5/src/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_StyleContextDetail_TextureTrunk_Refinement/README.md",
+      "bytes": 2183,
+      "sha256": "92ab392ca02bf6a8b1b7a0f251fc4f0897fa792b74c7caeae868ce74ac80fcbd"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_StyleContextDetail_TextureTrunk_Refinement/student_model.py",
+      "source": "NN5/src/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_StyleContextDetail_TextureTrunk_Refinement/student_model.py",
+      "bytes": 7417,
+      "sha256": "ec7a50a2c4bfcee510d4da161acd0d1218f02f01f1af1e00cef0f52ad3e31a60"
+    },
+    {
+      "path": "research/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_StyleContextDetail_TextureTrunk_Refinement/train_texture_trunk.py",
+      "source": "NN5/src/aidrawer/training_experiments/VanGogh_SelfPortrait/20261009_StyleContextDetail_TextureTrunk_Refinement/train_texture_trunk.py",
+      "bytes": 18677,
+      "sha256": "fbcbfed3747ac8f2e97c3af22d0f47e4a7a79dfa858359b8d78019b13524a1f9"
+    },
+    {
+      "path": "research/aidrawer/training_plus/model.py",
+      "source": "NN5/src/aidrawer/training_plus/model.py",
+      "bytes": 5286,
+      "sha256": "b49ad86092e290f7df11a6f5b53bc7db091760d1d631cd526bb9cd0f3b2e092a"
+    },
+    {
+      "path": "research/aidrawer/training_plus/plot_log.py",
+      "source": "NN5/src/aidrawer/training_plus/plot_log.py",
+      "bytes": 5813,
+      "sha256": "8846822d9a29cfc4366c0dbe335bbc653f985f7e950c876f769b14aa784e4c77"
+    },
+    {
+      "path": "research/aidrawer/training_plus/README.md",
+      "source": "NN5/src/aidrawer/training_plus/README.md",
+      "bytes": 6590,
+      "sha256": "00a7ff1c8d259cff213611aeea3e8bd0931499df41f13918377e29562314dece"
+    },
+    {
+      "path": "research/aidrawer/training_plus/selfcheck.py",
+      "source": "NN5/src/aidrawer/training_plus/selfcheck.py",
+      "bytes": 7445,
+      "sha256": "e3e77f26eeff624657a3c8e295249eeb984230360836d95ac0d9e4b76e176056"
+    },
+    {
+      "path": "research/aidrawer/training_plus/stylize.py",
+      "source": "NN5/src/aidrawer/training_plus/stylize.py",
+      "bytes": 9694,
+      "sha256": "835dadcf20a45a867d3eb6e3b8f8d6a019ee34f638b3f19c5ed7e408799babb1"
+    },
+    {
+      "path": "research/aidrawer/training_plus/train.py",
+      "source": "NN5/src/aidrawer/training_plus/train.py",
+      "bytes": 19914,
+      "sha256": "a54edf94428a94524d0a0f280a831a86b409e249db7b98cbcac1cbb37e85c003"
+    },
+    {
+      "path": "research/aidrawer/training_plus/train_multi.py",
+      "source": "NN5/src/aidrawer/training_plus/train_multi.py",
+      "bytes": 16480,
+      "sha256": "f41ac2c738e53b19af4fe01085b77337ad8487085a71eb73dcedae26af91d152"
+    },
+    {
+      "path": "training/train_students.py",
+      "source": "D:\\FPGA_C\\ABC_SELECTED4_COMPLETE_SOURCE_20261027\\quality_assets\\train_students.py",
+      "bytes": 4964,
+      "sha256": "3280f2e83fd509ecd899b7f5a177be7d21b91dd4d0df14f8e67158a63fa03fc0"
+    },
+    {
+      "path": "training/train_batch10_styles.py",
+      "source": "D:\\FPGA_C\\ABC_style_training_20261022\\train_batch10_styles.py",
+      "bytes": 11149,
+      "sha256": "e1474417f696fdd4bbf0559f2c0544d97357e7b28055159f9f4aa41fba8539bc"
+    },
+    {
+      "path": "training/batch10_styles.py",
+      "source": "D:\\FPGA_C\\ABC_style_training_20261022\\batch10_styles.py",
+      "bytes": 1851,
+      "sha256": "e1466ab532d21f7cd20f389e66481e752375777f8dc9d9bba77e8289f9c795b8"
+    },
+    {
+      "path": "training/train_portable_candidates.py",
+      "source": "D:\\FPGA_C\\ABC_style_training_20261022\\train_portable_candidates.py",
+      "bytes": 5115,
+      "sha256": "6c83d74cd6938263febc09fc8480496d4040002f04822aafec1a82fbec428859"
+    },
+    {
+      "path": "training/art_models.py",
+      "source": "D:\\FPGA_C\\ABC_style_training_20261022\\art_models.py",
+      "bytes": 323,
+      "sha256": "cd590bee4cf1bd35f955e02a97c676bfd0465b54d00a09683231188a3ce2c86c"
+    },
+    {
+      "path": "training/train_hdmi_distinct_styles.py",
+      "source": "D:\\FPGA_C\\ABC_style_training_20261022\\train_hdmi_distinct_styles.py",
+      "bytes": 7605,
+      "sha256": "f12f0ca936e7ef2c7e72d96d7e3d466cd6239e5314f8488f1e09eba12d6429d6"
+    },
+    {
+      "path": "training/teacher/transformer_net.py",
+      "source": "D:\\FPGA_C\\ABC_SELECTED4_COMPLETE_SOURCE_20261027\\quality_assets\\teacher\\transformer_net.py",
+      "bytes": 3782,
+      "sha256": "cd280fd7b34895819a8d89ca4867b806c52d46b7311cf8c01cf865b3d77cf052"
+    },
+    {
+      "path": "training/teacher/LICENSE.pytorch-examples",
+      "source": "D:\\FPGA_C\\ABC_SELECTED4_COMPLETE_SOURCE_20261027\\quality_assets\\teacher\\LICENSE.pytorch-examples",
+      "bytes": 1520,
+      "sha256": "7e5dc9b5cf276166c4a0678d33e53b14e3d7ef47eee9356ab786c4ba45414efd"
+    },
+    {
+      "path": "training/teacher/README.upstream.md",
+      "source": "D:\\FPGA_C\\ABC_SELECTED4_COMPLETE_SOURCE_20261027\\quality_assets\\teacher\\README.upstream.md",
+      "bytes": 3903,
+      "sha256": "79b9290dde6950dbaf3b656758c3b3f44d79e14322fc5e5e14f2e6b87f04fcea"
+    },
+    {
+      "path": "training/teacher/glass.pth",
+      "source": "D:\\FPGA_C\\ABC_SELECTED4_COMPLETE_SOURCE_20261027\\quality_assets\\teacher\\glass.pth",
+      "bytes": 6740749,
+      "sha256": "1bb4278da61e4515f851da4049b7756bf718ecac47c8903ef0d74b150454cd16"
+    },
+    {
+      "path": "training/board_reference/tools/board_exact_infer.py",
+      "source": "D:\\FPGA_C\\FOUR_STYLES_COLORFIX_20261023\\tools\\board_exact_infer.py",
+      "bytes": 17012,
+      "sha256": "598c17ecc2a33ef55e9ba434dd972c04e1d2d3fc6b86d57ab22d201ae4a48273"
+    },
+    {
+      "path": "training/board_reference/rtl/nn/rtl/camera_tone_mapper.v",
+      "source": "D:\\FPGA_C\\FOUR_STYLES_COLORFIX_20261023\\rtl\\nn\\rtl\\camera_tone_mapper.v",
+      "bytes": 8371,
+      "sha256": "ab3822f07e00fbefbce233ed9e0708039b256f07344b680c8a4f164019925adc"
+    },
+    {
+      "path": "runs/blueprint/model_best.pth",
+      "source": "D:\\FPGA_C\\ABC_style_training_20261022\\runs\\camera_distinct_batch10_20261024\\midnight_blueprint\\model_best.pth",
+      "bytes": 13429,
+      "sha256": "a3e10e391af4ce68d5c5e28fb79a68c07aed1900f3b707ea7d12d739ed30e345"
+    },
+    {
+      "path": "runs/blueprint/slot.bin",
+      "source": "D:\\FPGA_C\\ABC_style_training_20261022\\runs\\camera_distinct_batch10_20261024\\midnight_blueprint\\slot.bin",
+      "bytes": 4096,
+      "sha256": "b4f047b6614f72eca7882cad3e39b4f760490da52f9c61d8e2d158ec12bbd21c"
+    },
+    {
+      "path": "runs/blueprint/TRAINING_MANIFEST.json",
+      "source": "D:\\FPGA_C\\ABC_style_training_20261022\\runs\\camera_distinct_batch10_20261024\\midnight_blueprint\\TRAINING_MANIFEST.json",
+      "bytes": 3089,
+      "sha256": "b83a5591061cd93f1c69529e90a9ed1d35e302db3d0f4f3ee88916691ac145b9"
+    },
+    {
+      "path": "runs/blueprint/training_log.json",
+      "source": "D:\\FPGA_C\\ABC_style_training_20261022\\runs\\camera_distinct_batch10_20261024\\midnight_blueprint\\training_log.json",
+      "bytes": 6640,
+      "sha256": "b9fd0f7ca2f322f982100a90473af179f927ea81ea9abbd67af5dc283df3130d"
+    },
+    {
+      "path": "runs/blueprint/a4_weights_pci4.mem",
+      "source": "D:\\FPGA_C\\ABC_style_training_20261022\\runs\\camera_distinct_batch10_20261024\\midnight_blueprint\\a4_weights_pci4.mem",
+      "bytes": 3630,
+      "sha256": "36bf829cb0ef0af59a811be595f9acae4a2cec288038b888f6b368e076963117"
+    },
+    {
+      "path": "runs/blueprint/a4_coeff.mem",
+      "source": "D:\\FPGA_C\\ABC_style_training_20261022\\runs\\camera_distinct_batch10_20261024\\midnight_blueprint\\a4_coeff.mem",
+      "bytes": 1152,
+      "sha256": "83e569e33c13f2f035bce7a81dbe901bbb32e1f60b635725253d2adad3b9d0f4"
+    },
+    {
+      "path": "runs/blueprint/a4_tanh.mem",
+      "source": "D:\\FPGA_C\\ABC_style_training_20261022\\runs\\camera_distinct_batch10_20261024\\midnight_blueprint\\a4_tanh.mem",
+      "bytes": 1024,
+      "sha256": "b547d175666e21fc963c3a1318983a08d923762aaeb6eda64d617affd9afa296"
+    },
+    {
+      "path": "runs/blueprint/CONVERGENCE.json",
+      "source": "D:\\FPGA_C\\ABC_style_training_20261022\\runs\\camera_distinct_batch10_20261024\\midnight_blueprint\\CONVERGENCE.json",
+      "bytes": 496,
+      "sha256": "42651e2b29125368575858630f397864e771d5ddc9bf302cac75c5d2e856bfbb"
+    },
+    {
+      "path": "runs/emboss/model_best.pth",
+      "source": "D:\\FPGA_C\\ABC_style_training_20261022\\runs\\portable_20261023\\glass\\model_best.pth",
+      "bytes": 13365,
+      "sha256": "749b3ed866735d905718fa7a5d890704e7142fcede7667075018e8b75af0ba1a"
+    },
+    {
+      "path": "runs/emboss/slot.bin",
+      "source": "D:\\FPGA_C\\ABC_style_training_20261022\\runs\\portable_20261023\\glass\\slot.bin",
+      "bytes": 4096,
+      "sha256": "27a3e1a7cd3670f270824c05f61147d51439c438a00a383b342b20595317ef7b"
+    },
+    {
+      "path": "runs/emboss/TRAINING_MANIFEST.json",
+      "source": "D:\\FPGA_C\\ABC_style_training_20261022\\runs\\portable_20261023\\glass\\TRAINING_MANIFEST.json",
+      "bytes": 42531,
+      "sha256": "5d94191d83be95a8b924d95d93abb0d2982020ad46cff1f04ac6e4e42d363446"
+    },
+    {
+      "path": "runs/emboss/training_log.json",
+      "source": "D:\\FPGA_C\\ABC_style_training_20261022\\runs\\portable_20261023\\glass\\training_log.json",
+      "bytes": 1713,
+      "sha256": "511a3ed79d09576840575b7fc403365db2a1aad363b7e9f026061ca44f16670d"
+    },
+    {
+      "path": "runs/emboss/a4_weights_pci4.mem",
+      "source": "D:\\FPGA_C\\ABC_style_training_20261022\\runs\\portable_20261023\\glass\\a4_weights_pci4.mem",
+      "bytes": 3630,
+      "sha256": "2632173d7bd386e28b46a318d57ad8df949c22800b7cb340c0e9308dfbdc15f0"
+    },
+    {
+      "path": "runs/emboss/a4_coeff.mem",
+      "source": "D:\\FPGA_C\\ABC_style_training_20261022\\runs\\portable_20261023\\glass\\a4_coeff.mem",
+      "bytes": 1152,
+      "sha256": "29c4547f717da3784199c93cb706e1ef98acb822bd4f23069f74217a52ce0a28"
+    },
+    {
+      "path": "runs/emboss/a4_tanh.mem",
+      "source": "D:\\FPGA_C\\ABC_style_training_20261022\\runs\\portable_20261023\\glass\\a4_tanh.mem",
+      "bytes": 1024,
+      "sha256": "b547d175666e21fc963c3a1318983a08d923762aaeb6eda64d617affd9afa296"
+    },
+    {
+      "path": "weights/style0_retro.bin",
+      "source": "Current final FPGA NNW1 slot 0",
+      "bytes": 4096,
+      "sha256": "62f692d840abfd1323e89208e58cdb26d0d6be94dfa04ab5e2f6dc47e2e8383d"
+    },
+    {
+      "path": "weights/style1_blueprint.bin",
+      "source": "Current final FPGA NNW1 slot 1",
+      "bytes": 4096,
+      "sha256": "b4f047b6614f72eca7882cad3e39b4f760490da52f9c61d8e2d158ec12bbd21c"
+    },
+    {
+      "path": "weights/style2_emboss.bin",
+      "source": "Current final FPGA NNW1 slot 2",
+      "bytes": 4096,
+      "sha256": "27a3e1a7cd3670f270824c05f61147d51439c438a00a383b342b20595317ef7b"
+    },
+    {
+      "path": "weights/style3_fine_pixel_first.bin",
+      "source": "Current final FPGA NNW1 slot 3",
+      "bytes": 4096,
+      "sha256": "6efa8c5422cca85ab6249af776127c8b7d95c680b673692dddbe63215183d28d"
+    },
+    {
+      "path": "weights/style4_glitch.bin",
+      "source": "Current final FPGA NNW1 slot 4",
+      "bytes": 4096,
+      "sha256": "694e0af00ec0bfcc1a8099fd782c43e996239cc87bdc4aaac64435e9f71c30d8"
+    }
+  ]
+}

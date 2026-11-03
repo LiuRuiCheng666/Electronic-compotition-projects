@@ -1,0 +1,16 @@
+{
+  "version": "mantis_pseudocolor_v1",
+  "description": "Artistic RGB pseudocolor inspired by the supplied right-hand reference; not biological reconstruction.",
+  "luma_knots": [0.0, 0.12, 0.26, 0.40, 0.55, 0.72, 1.0],
+  "palette": [[0.04, 0.02, 0.32], [0.05, 0.04, 0.96], [0.43, 0.03, 0.86], [0.95, 0.03, 0.22], [0.15, 0.95, 0.08], [0.02, 0.91, 0.95], [0.98, 0.95, 0.20]],
+  "blue_rgb": [0.0, 0.89, 0.95],
+  "yellow_rgb": [0.03, 0.64, 1.0],
+  "red_rgb": [1.0, 0.04, 0.48],
+  "green_rgb": [0.08, 1.0, 0.30],
+  "chroma_start": 0.04,
+  "chroma_full": 0.35,
+  "chroma_mix": 0.82,
+  "detail_gain": 0.55,
+  "detail_limit": 0.06,
+  "brightness_floor": 0.76
+}

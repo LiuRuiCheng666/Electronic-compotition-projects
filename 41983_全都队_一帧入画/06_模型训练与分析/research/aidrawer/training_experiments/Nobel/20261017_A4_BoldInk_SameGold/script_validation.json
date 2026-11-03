@@ -1,0 +1,9 @@
+{
+  "syntax": "AST PASS; training not run",
+  "architecture_identical": true,
+  "bn_recalibration": false,
+  "gold_rules_unchanged": true,
+  "new_ink_dilation_kernel": 5,
+  "previous_ink_dilation_kernel": 3,
+  "output_directory": "D:\\aidrawer\\output\\Nobel\\20261017_A4_BoldInk_SameGold"
+}

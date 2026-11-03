@@ -1,0 +1,266 @@
+[
+  {
+    "domain": "camera",
+    "style": "midnight_blueprint",
+    "step": 400,
+    "qat": false,
+    "validation_display_objective": 0.21489273384213448,
+    "seconds": 10.754473209381104
+  },
+  {
+    "domain": "camera",
+    "style": "midnight_blueprint",
+    "step": 800,
+    "qat": false,
+    "validation_display_objective": 0.20205817247430483,
+    "seconds": 23.337212085723877
+  },
+  {
+    "domain": "camera",
+    "style": "midnight_blueprint",
+    "step": 1200,
+    "qat": false,
+    "validation_display_objective": 0.1853905829290549,
+    "seconds": 35.48039674758911
+  },
+  {
+    "domain": "camera",
+    "style": "midnight_blueprint",
+    "step": 1600,
+    "qat": true,
+    "validation_display_objective": 0.1750605572015047,
+    "seconds": 53.46687126159668
+  },
+  {
+    "domain": "camera",
+    "style": "midnight_blueprint",
+    "step": 2000,
+    "qat": true,
+    "validation_display_objective": 0.17160704918205738,
+    "seconds": 70.91831493377686
+  },
+  {
+    "domain": "camera",
+    "style": "midnight_blueprint",
+    "step": 2400,
+    "qat": true,
+    "validation_display_objective": 0.16878627054393291,
+    "seconds": 88.96170020103455
+  },
+  {
+    "domain": "camera",
+    "style": "midnight_blueprint",
+    "step": 2800,
+    "qat": true,
+    "validation_display_objective": 0.16623695629338422,
+    "seconds": 107.80705952644348
+  },
+  {
+    "domain": "camera",
+    "style": "midnight_blueprint",
+    "step": 3200,
+    "qat": true,
+    "validation_display_objective": 0.16398892551660538,
+    "seconds": 127.13798522949219
+  },
+  {
+    "domain": "camera",
+    "style": "midnight_blueprint",
+    "step": 3600,
+    "qat": true,
+    "validation_display_objective": 0.16236069922645888,
+    "seconds": 147.51570081710815
+  },
+  {
+    "domain": "camera",
+    "style": "midnight_blueprint",
+    "step": 4000,
+    "qat": true,
+    "validation_display_objective": 0.1603633432338635,
+    "seconds": 166.3893654346466
+  },
+  {
+    "domain": "camera",
+    "style": "midnight_blueprint",
+    "step": 4400,
+    "qat": true,
+    "validation_display_objective": 0.1578135211020708,
+    "seconds": 183.92169713974
+  },
+  {
+    "domain": "camera",
+    "style": "midnight_blueprint",
+    "step": 4800,
+    "qat": true,
+    "validation_display_objective": 0.1562369161595901,
+    "seconds": 203.01383662223816
+  },
+  {
+    "domain": "camera",
+    "style": "midnight_blueprint",
+    "step": 5200,
+    "qat": true,
+    "validation_display_objective": 0.15597188783188662,
+    "seconds": 217.201318025589
+  },
+  {
+    "domain": "camera",
+    "style": "midnight_blueprint",
+    "step": 5600,
+    "qat": true,
+    "validation_display_objective": 0.15382145655651888,
+    "seconds": 232.04768133163452
+  },
+  {
+    "domain": "camera",
+    "style": "midnight_blueprint",
+    "step": 6000,
+    "qat": true,
+    "validation_display_objective": 0.15334461132685342,
+    "seconds": 245.7963809967041
+  },
+  {
+    "domain": "camera",
+    "style": "midnight_blueprint",
+    "step": 6400,
+    "qat": true,
+    "validation_display_objective": 0.15315524054070315,
+    "seconds": 259.4643268585205
+  },
+  {
+    "domain": "camera",
+    "style": "midnight_blueprint",
+    "step": 6800,
+    "qat": true,
+    "validation_display_objective": 0.15225289948284626,
+    "seconds": 274.704288482666
+  },
+  {
+    "domain": "camera",
+    "style": "midnight_blueprint",
+    "step": 7200,
+    "qat": true,
+    "validation_display_objective": 0.15123921570678553,
+    "seconds": 291.2638313770294
+  },
+  {
+    "domain": "camera",
+    "style": "midnight_blueprint",
+    "step": 7600,
+    "qat": true,
+    "validation_display_objective": 0.15112655237317085,
+    "seconds": 306.1157810688019
+  },
+  {
+    "domain": "camera",
+    "style": "midnight_blueprint",
+    "step": 8000,
+    "qat": true,
+    "validation_display_objective": 0.1513082291930914,
+    "seconds": 322.18777561187744
+  },
+  {
+    "domain": "camera",
+    "style": "midnight_blueprint",
+    "step": 8400,
+    "qat": true,
+    "validation_display_objective": 0.1500840913504362,
+    "seconds": 335.2922558784485
+  },
+  {
+    "domain": "camera",
+    "style": "midnight_blueprint",
+    "step": 8800,
+    "qat": true,
+    "validation_display_objective": 0.1498668547719717,
+    "seconds": 351.3298604488373
+  },
+  {
+    "domain": "camera",
+    "style": "midnight_blueprint",
+    "step": 9200,
+    "qat": true,
+    "validation_display_objective": 0.14871455108126005,
+    "seconds": 365.7924449443817
+  },
+  {
+    "domain": "camera",
+    "style": "midnight_blueprint",
+    "step": 9600,
+    "qat": true,
+    "validation_display_objective": 0.14751256567736468,
+    "seconds": 382.0678291320801
+  },
+  {
+    "domain": "camera",
+    "style": "midnight_blueprint",
+    "step": 10000,
+    "qat": true,
+    "validation_display_objective": 0.14744818769395351,
+    "seconds": 399.10418128967285
+  },
+  {
+    "domain": "camera",
+    "style": "midnight_blueprint",
+    "step": 10400,
+    "qat": true,
+    "validation_display_objective": 0.1475432359923919,
+    "seconds": 414.2348129749298
+  },
+  {
+    "domain": "camera",
+    "style": "midnight_blueprint",
+    "step": 10800,
+    "qat": true,
+    "validation_display_objective": 0.14650391166408858,
+    "seconds": 428.6837911605835
+  },
+  {
+    "domain": "camera",
+    "style": "midnight_blueprint",
+    "step": 11200,
+    "qat": true,
+    "validation_display_objective": 0.14631634267667928,
+    "seconds": 444.7274868488312
+  },
+  {
+    "domain": "camera",
+    "style": "midnight_blueprint",
+    "step": 11600,
+    "qat": true,
+    "validation_display_objective": 0.14616676854590574,
+    "seconds": 459.34712433815
+  },
+  {
+    "domain": "camera",
+    "style": "midnight_blueprint",
+    "step": 12000,
+    "qat": true,
+    "validation_display_objective": 0.14572903451820216,
+    "seconds": 474.190842628479
+  },
+  {
+    "domain": "camera",
+    "style": "midnight_blueprint",
+    "step": 12400,
+    "qat": true,
+    "validation_display_objective": 0.14598548350234827,
+    "seconds": 490.0083317756653
+  },
+  {
+    "domain": "camera",
+    "style": "midnight_blueprint",
+    "step": 12800,
+    "qat": true,
+    "validation_display_objective": 0.14585105267663798,
+    "seconds": 507.47968077659607
+  },
+  {
+    "domain": "camera",
+    "style": "midnight_blueprint",
+    "step": 13200,
+    "qat": true,
+    "validation_display_objective": 0.14572414010763168,
+    "seconds": 523.2296378612518
+  }
+]

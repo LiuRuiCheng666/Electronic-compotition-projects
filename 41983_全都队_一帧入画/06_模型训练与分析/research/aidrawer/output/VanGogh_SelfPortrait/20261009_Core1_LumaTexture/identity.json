@@ -1,0 +1,11 @@
+{
+  "core1_source": "D:\\aidrawer\\output\\VanGogh_SelfPortrait\\20261009_StyleContextDetail_CorePruning\\runs\\core1\\model_final.pth",
+  "core1_sha256": "85a36743568c0ca872f09b6e207b29a9e0a41ee8a9189592b6779eba21d1c5e3",
+  "core1_step": 1000,
+  "keep_blocks": [
+    0
+  ],
+  "detail_mode": "phase_nearest",
+  "in_sha256": "4ef3c912051c6704ab66753843f92b8d3c2bb2c29b7df3f933f3eb0432abd531",
+  "teacher": "original IN teacher supplies luminance texture; accepted core1 is frozen color trunk"
+}

@@ -1,0 +1,30 @@
+{
+  "version": "nobel_independent_inkgold_v4_fine_sparse_gold",
+  "paper_rgb": [
+    246,
+    243,
+    232
+  ],
+  "ink_rgb": [
+    0,
+    0,
+    0
+  ],
+  "gold_rgb": [
+    194,
+    151,
+    57
+  ],
+  "deep_gold_rgb": [
+    164,
+    119,
+    34
+  ],
+  "edge_threshold": 0.3,
+  "local_shadow_margin": 0.012,
+  "local_shadow_range": 0.075,
+  "shadow_threshold": 0.6,
+  "description": "Original RGB -> black contours, gold shadow AREAS, ivory paper. No legacy style model.",
+  "ink_dilation_kernel": 3,
+  "shadow_erosion_kernel": 3
+}

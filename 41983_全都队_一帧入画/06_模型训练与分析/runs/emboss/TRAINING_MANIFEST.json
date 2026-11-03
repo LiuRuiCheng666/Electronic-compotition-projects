@@ -1,0 +1,1007 @@
+{
+  "style": "glass",
+  "teacher": "C:\\Users\\ASUS\\Documents\\ChatGPT\\FPGA\u5d4c\u8d5b\\C_NN_INTEGRATION\\other_styles_vangogh_glass_20261023\\models\\glass.pth",
+  "teacher_sha256": "1bb4278da61e4515f851da4049b7756bf718ecac47c8903ef0d74b150454cd16",
+  "teacher_fraction": 1,
+  "input_blend": 0,
+  "display_aware": true,
+  "teacher_generation": [
+    640,
+    480
+  ],
+  "training_crop": [
+    128,
+    128
+  ],
+  "warm_steps": 800,
+  "qat_steps": 1600,
+  "seed": 20261023,
+  "best_display_teacher_mae": 0.1080719381570816,
+  "slot_sha256": "27a3e1a7cd3670f270824c05f61147d51439c438a00a383b342b20595317ef7b",
+  "checkpoint_sha256": "749b3ed866735d905718fa7a5d890704e7142fcede7667075018e8b75af0ba1a",
+  "layers": [
+    {
+      "layer": "enc.0",
+      "shift": 8,
+      "A": 65536,
+      "input_scale": 0.0078125,
+      "output_scale": 0.0625,
+      "weight_scale": 0.03125,
+      "bias_codes": [
+        6156,
+        3624,
+        8881,
+        -8426
+      ]
+    },
+    {
+      "layer": "enc.1",
+      "shift": 7,
+      "A": 131072,
+      "input_scale": 0.0625,
+      "output_scale": 0.0625,
+      "weight_scale": 0.0078125,
+      "bias_codes": [
+        -831,
+        -228,
+        541,
+        1269
+      ]
+    },
+    {
+      "layer": "enc.2",
+      "shift": 7,
+      "A": 131072,
+      "input_scale": 0.0625,
+      "output_scale": 0.0625,
+      "weight_scale": 0.0078125,
+      "bias_codes": [
+        115,
+        450,
+        1388,
+        -105,
+        2987,
+        -70,
+        557,
+        -441
+      ]
+    },
+    {
+      "layer": "enc.3",
+      "shift": 8,
+      "A": 65536,
+      "input_scale": 0.0625,
+      "output_scale": 0.0625,
+      "weight_scale": 0.00390625,
+      "bias_codes": [
+        -2092,
+        -1599,
+        3484,
+        -1711
+      ]
+    },
+    {
+      "layer": "res.c1",
+      "shift": 8,
+      "A": 65536,
+      "input_scale": 0.0625,
+      "output_scale": 0.0625,
+      "weight_scale": 0.00390625,
+      "bias_codes": [
+        -360,
+        506,
+        5897,
+        -1687
+      ]
+    },
+    {
+      "layer": "res.c2",
+      "shift": 8,
+      "A": 65536,
+      "input_scale": 0.0625,
+      "output_scale": 0.0625,
+      "weight_scale": 0.00390625,
+      "bias_codes": [
+        3924,
+        -2477,
+        -3841,
+        -320
+      ]
+    },
+    {
+      "layer": "dec.1",
+      "shift": 9,
+      "A": 32768,
+      "input_scale": 0.0625,
+      "output_scale": 0.0625,
+      "weight_scale": 0.001953125,
+      "bias_codes": [
+        -8592,
+        5363,
+        -5630,
+        -1341
+      ]
+    },
+    {
+      "layer": "dec.3",
+      "shift": 8,
+      "A": 65536,
+      "input_scale": 0.0625,
+      "output_scale": 0.0625,
+      "weight_scale": 0.00390625,
+      "bias_codes": [
+        1138,
+        615,
+        688,
+        -447
+      ]
+    },
+    {
+      "layer": "out.1",
+      "shift": 8,
+      "A": 65536,
+      "input_scale": 0.0625,
+      "output_scale": 0.03125,
+      "weight_scale": 0.001953125,
+      "bias_codes": [
+        472,
+        41,
+        -730
+      ]
+    }
+  ],
+  "training_files": [
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\100075.jpg",
+      "sha256": "b4b2461595dc3f70270574715acf287dc70027ec9d419a9917ed242036d1b0e5"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\100080.jpg",
+      "sha256": "d52ff44bf19e17f49389eca134bcf57a90d27b15671952fabbd2f2334f75aa8e"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\100098.jpg",
+      "sha256": "156fd9710dccd7bf3a821977f8d8155da0eccca553086f73771073e17a418aa6"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\103041.jpg",
+      "sha256": "1e7ad4076e21f5558e487fddbd20f9553cc4e84629814a79c711f20c38e08461"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\104022.jpg",
+      "sha256": "0300ff07de52aaa0b5d77b4497df1eb5aee2347b9d40f10a6a756aae51c133c5"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\105019.jpg",
+      "sha256": "57e66c0eecb325b507a022c45fb7f44868dc56aef2d4c36db4abe45d56e443ee"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\105053.jpg",
+      "sha256": "5d801fa5c75ffb4e7d3af8042a7db1b00b9e5599bcf4801e4b81e95b0cdb19ad"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\106020.jpg",
+      "sha256": "9cd3230d2afde28af85b40cc591e54979f69bf615b68654daaf5e2ac9a88dbe5"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\106025.jpg",
+      "sha256": "68c0e1afd93d8c4782d97bacea36453e59e2921d261e6f8622dc0832b2196f65"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\108041.jpg",
+      "sha256": "4d6b84cff81706d1fb2e10e8225d24c28bf3b3d39d68c572ff2b4fe3adbfe1b9"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\108073.jpg",
+      "sha256": "97d56ee9ea1481464b0e4a486315737771e65542d9fdfe6580cb8f30dcbadf66"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\109034.jpg",
+      "sha256": "1ea4e38e1357dea48bb0698d3d69fea800e8346bac40b0646121e8ac985e28e9"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\112082.jpg",
+      "sha256": "ba0aee5213b2433aae60bc69e933f26dd547ba797319bc807f63d4c5391e60ad"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\113009.jpg",
+      "sha256": "6b53775a7a66783fec86a5d6cd69a48ec6907825882f799af2241b31f3bec7db"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\113016.jpg",
+      "sha256": "f53e7355d1cb0ef5286ed4083ea6c264c5df296d9b79e47768b741eca9ed40ad"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\113044.jpg",
+      "sha256": "896df50d4bab6e05655db1b84485ab7463dab7b44b52a87134ca9061e7bd94e6"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\117054.jpg",
+      "sha256": "15ef2e322dcaa34da30625c98e42e1eb0428911ee45104c483e464571ac4b7c6"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\118020.jpg",
+      "sha256": "da00f706075bda5d4a4fb9482ac7454980ceb56aa177578b8edd58af045bd676"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\118035.jpg",
+      "sha256": "e15e989aa1f50a0870b5da340a0e939c721fa02b9d2dbb0229f92188fd634907"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\12003.jpg",
+      "sha256": "82209028e619fa21b087ea9e3863c05febbf1d05d9d4f078e6cd2fb233d67e2b"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\12074.jpg",
+      "sha256": "2da4340200aea1bce9a52f3824d50eca50a3dd4a7a923ae3f6de494ae1152ba6"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\122048.jpg",
+      "sha256": "82ce6619f12d5c0625436aabf6f281ad9111753d1429c61274cec358ddee08fe"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\124084.jpg",
+      "sha256": "db2fd9ed255d3d9125637b15ffe60779bb01e135cbb6ccd56bcb54be74653d61"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\126039.jpg",
+      "sha256": "f8327a5e7cc0c8ce726b52043eb28b9ee8009f49d60f8822f77472a2512dd071"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\130034.jpg",
+      "sha256": "f7ec41ecf32e2473fa4bf4cddfdd75991028666fb70c093078ede877491991f6"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\134008.jpg",
+      "sha256": "27cafae75673a3dddeb065651a4007fc22ab5ad542df556287a051613caf3865"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\134052.jpg",
+      "sha256": "f0d44fc6f469a2161a8156d3b8d8a5773e027f014b380a1e341c2ed613f07e9b"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\135037.jpg",
+      "sha256": "2e9a39a111dc6af1a1af3bc7a88c85b4a206aa42cef01adbbcb9f67ea3bb4216"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\135069.jpg",
+      "sha256": "667aafa575f92a0f46d2e35021e056a0f5dd781b42787e3146e8d85799af1812"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\138032.jpg",
+      "sha256": "2f4f4beae33576d2d16defaed093939e3d9dfda74c2385385d017d0706647c92"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\138078.jpg",
+      "sha256": "156743043490583baa9af1ab4d1ae1811359bc5fa94d5c5de3e5b522f4099eb4"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\140055.jpg",
+      "sha256": "bb7a083e833fde82c57b1df0ba95c0d0577f50ae3bb687cb71a066d414d117aa"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\140075.jpg",
+      "sha256": "701e224e47e3de85a84ef3fe0f203412db9aa870eb50d1c1f792a763a0e7b3a3"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\144067.jpg",
+      "sha256": "00053961cb5ab696951a0684c5707bf3b67fb4ba3c3fdc0c4bc75e4f87480e2e"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\145014.jpg",
+      "sha256": "22d67130d0cd1f49e43b3968f30ace97d99ff5910fce67929208683c334e2672"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\145053.jpg",
+      "sha256": "08385cc993040101a9274df03fe69eb1be0911fee6370675eb9fde79c5c7bd96"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\147021.jpg",
+      "sha256": "34d7ac9fa5e9e2fd50c3b7cd107315620b7dab16ff8832cf642e8fc6d3334b34"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\147062.jpg",
+      "sha256": "2f61cc55df5fbf5f41df3964a1cc7538503c2ee747004bb77c096ce5bee2e868"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\15004.jpg",
+      "sha256": "2ed06661ad2089a06ad998a10206d7b4d4ea5340ad9418037d9585185981e0b9"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\15088.jpg",
+      "sha256": "d66df9d54fd05a288493ab11a1383d60166f7fc3c48e4e883f0ec83d8586496b"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\151087.jpg",
+      "sha256": "0ad59de11bcbdf8687e3f706834f5eee3e2ae7040b492e65c4e4e9673edc80b0"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\153077.jpg",
+      "sha256": "110645113f9d5c2eb024358a62c87931a6478b102c5c4e9d3ecd1ebb13dc232d"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\153093.jpg",
+      "sha256": "690cdb2ccfcc5a6d7d8a97ca87be3d5270876a044bb6fdb541ae51b2608623c8"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\155060.jpg",
+      "sha256": "5254d4eb0edc12f02b981e58b57a91c51c8f886507e44a2d52ef5a1447cbbd9f"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\156079.jpg",
+      "sha256": "f00f7cd383ca7952b12071aa7d3ac23faf2903f187679374d0473c840fa20447"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\157036.jpg",
+      "sha256": "b51b5f204153a5a7b405fd9ff5121183cd4c8e64ea8d4c660933c4980b558b1e"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\159029.jpg",
+      "sha256": "bb2dfcfcf6889b4791b3e7990a36669ad1b6b8d5299500879046328edf6b40b7"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\159045.jpg",
+      "sha256": "505d42ffdc0a397baa7b2f2d47026613fd56dbfac2aac79f616838f11374687e"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\159091.jpg",
+      "sha256": "b38575cd4fb844fb60eb2ed78fb384c6bd96557018e01bfa4e102593106cd839"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\16052.jpg",
+      "sha256": "be60accfd2bfa991b779640994308a61cc7bea0c672a45fa2d5649e004a7f15e"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\161062.jpg",
+      "sha256": "54593ca91901025a58ee5c3d0018ba1becc240cc5f5773935cf477455d9b10bf"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\163014.jpg",
+      "sha256": "d3e56ee4417eba2b38feabf86f8707913d8703cab38691650376eda3db9c41fd"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\163062.jpg",
+      "sha256": "b66eaa74e2a2a3130284a3cd92b08fab0f679137f25edf3870462f8e8e31d862"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\164074.jpg",
+      "sha256": "a6a0a2f76bc102579ba47c6a076f1be1564640976fccc524a9e6420061c3a288"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\166081.jpg",
+      "sha256": "34216b6ce9050572b99502f7d67397caf712487864a0a85c94b921211e73b4d0"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\169012.jpg",
+      "sha256": "a1580a729655fc9a63ca0d644130e770512e492f2a95d1c0121f4183e42ded50"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\170054.jpg",
+      "sha256": "2f3cfc625e2361f264a2de6f15d9dbadb85e7d45bfa905fc630bb316f3b32a67"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\172032.jpg",
+      "sha256": "497d9795ad4eac1c754e2175c26d2ae1a19fa1016c6dd1fe626c870d1e9b0b25"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\173036.jpg",
+      "sha256": "ce4dd846ad9a8742c401fff0811762b29d1d5942e61bb67ddecd44f49d6a85e4"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\176019.jpg",
+      "sha256": "ba9443d741bba1dc79d9946902a7f85b9808c65fe42986745ff9b872a10bd7fe"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\176035.jpg",
+      "sha256": "f26789b6d421e8909898b3b0d4b67b91fab32e529e963f398793f015f286f866"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\176039.jpg",
+      "sha256": "0799daf823e07de1910179b720779230f8aa076bbbac51ecc954d47aa1dc53bc"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\178054.jpg",
+      "sha256": "8b76b03f5af5720cab1165a19e2d138c767abd95b807d108b29c0db5c0bdeaa2"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\181018.jpg",
+      "sha256": "dbb26238f5097adc06ae16d8eca151072c7c1f62c2207d8c6635b97d880794bc"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\181079.jpg",
+      "sha256": "d5c7b9a1dd70eb66c6faa1426f5abe24c3e878d7636c65cd70b450a1d9cf1a30"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\181091.jpg",
+      "sha256": "8f9e26f3489b528b200a40de6dbfadec16a7505875998d6cd1fa80157e7bcd2a"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\183055.jpg",
+      "sha256": "bd0c5c4df40bb1b449b71b5e0efde7781599a7724a12a20c0d6902d03e6011be"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\183087.jpg",
+      "sha256": "8161ad4c000dc28bc80cf741a8c367e54327a1b7625ce52498bd56ab6f82da7d"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\187003.jpg",
+      "sha256": "740ef38713b6a0e2efa0cfa67333cf960b904e88587d75e89215fa83c0c4556a"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\187029.jpg",
+      "sha256": "e65e91083c8ee708181253fc41c8c6d14ddf45ab3f293c72faa98312632e759a"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\187039.jpg",
+      "sha256": "f707dedd9d4477e9a140f07779afed480ad660233a4a69fb26564ecae8727863"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\187071.jpg",
+      "sha256": "480d5e90c77fd119c0124de3b03d50217fc508bfcbc6b9415ebf56728120aeab"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\187083.jpg",
+      "sha256": "3a208757b2191f68cc8643f015dd88075160f0920866e2ec8c078e6f8db42158"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\188005.jpg",
+      "sha256": "373ef08b1963766234931ce4ebca06840b42dbc6a5a37c1b42a75654618c82ab"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\188063.jpg",
+      "sha256": "a63954d1f0fc671278dd3f71f1a0d821f78eb04d51c01abd6706a7e03567a388"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\188091.jpg",
+      "sha256": "c5f55fc1a53d803704fbf2c9d22f5bf4a352816a36936ed3e92192e313c9f183"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\189003.jpg",
+      "sha256": "1c54dd3ef1530b2ebd9bdede0c6aa6700fbf65c25ea36a3fa0aa48668e6f5b11"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\189011.jpg",
+      "sha256": "33f96f0bfcb6d4bbb09555789ee73194c7c30f62f2af824b603f8c04ad684452"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\196015.jpg",
+      "sha256": "40595bda6fb918d106541af67cc8e0426a04c6e5863c407ef2a73374c12e76a9"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\198004.jpg",
+      "sha256": "a3f266b543e084eb9486bae66a09304bb9b90711819e1e4614f72a1a9eb5fc6b"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\198023.jpg",
+      "sha256": "70b5b6cdea34366b9007972603ebd3b2e794e69305393f1b6430af93933e0cb4"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\198054.jpg",
+      "sha256": "99d4493b459f08f64fe5f84e25434409c7611f818b840eb47b1307d0d46f06ee"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\20008.jpg",
+      "sha256": "a051d50a0ad0680cd89fdd3e7aeed911ee53de62dce312f9e76334bf7389f8db"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\202012.jpg",
+      "sha256": "3ccc19af8ce606272d83533ed97e29743ef07c8087f95798ab01ec9706631357"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\207056.jpg",
+      "sha256": "7658f456c08f06af0c435fceac05d154278239ca3f6841ea2c633c6a2c8c4d62"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\209070.jpg",
+      "sha256": "c56032950e50ccebca38ebe3a1545b7c9a374d069d03083fa35cbd490d4e9aa2"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\2092.jpg",
+      "sha256": "274503ed987a029f7e128487ea1f657f563ee68e1bd3fb1f691e218a9aea054d"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\216041.jpg",
+      "sha256": "7e55b55f1db1dab5c1f3aaf34d7ea6c88fa16da189d58dacf4fb41bab093f262"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\216053.jpg",
+      "sha256": "f77bad9b7ab42da16c49fb478ae3ac533d6b22b283d4ae389a448e3858915e47"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\216066.jpg",
+      "sha256": "504ca6b60e5f2159b01b47c769953e4540a6eedcf9412760a591b7366e339d04"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\22013.jpg",
+      "sha256": "1630638a74906aafc9aa3d7e21492b8c1ccf8f8faa29dbe349f3200f706ec547"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\22090.jpg",
+      "sha256": "0d2571b84f29236b5baaa75c917f151876c3d77746796225ec2d6b92d699abe7"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\22093.jpg",
+      "sha256": "924d70d1149bfd889b21baf09c7eca6c85068b70b86128f02ea5912028e9b796"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\225017.jpg",
+      "sha256": "976e768d57a080a70fb8f5b9294614cb20f9fb87d62e627f79e90e7b4f0cb8f2"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\227040.jpg",
+      "sha256": "076c53879666e97155d5ecb7538aaaf196c944f798ac91cb92e563b97dda1b5a"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\227046.jpg",
+      "sha256": "5dbeff235cce6d52f08a68f74e9362be8e008f01e3d4b87d75ba5526d1496873"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\23025.jpg",
+      "sha256": "5603852f1c983746485bdf459c83961a9b208d540b838697a863056a9d3446d5"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\23080.jpg",
+      "sha256": "e167d0c757e60b9d7832e893a84f04c3afd34627d5d3c3a68b5605161e44d6e7"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\23084.jpg",
+      "sha256": "17f5011826155d9a424a66b0a7c176e4f3cbec01a70b1b3bb9c3a21ac13cf99a"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\231015.jpg",
+      "sha256": "52f766c478c17ca494ae55677b1d77b448d31119c9935b8a2523e04083b9a08e"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\232038.jpg",
+      "sha256": "cd8761daf9f64337f01119777b26ffb975ec113da6d0e1b22608700f675e2445"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\236017.jpg",
+      "sha256": "2122231b75ce09ef22471aefe8a94ff595ca6cd048dadb3174fb6535c8241a38"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\238011.jpg",
+      "sha256": "5434d6bd1f0077fefdd629f87eb58384f8c03f92e5fdce648db7dbdc216dd599"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\239007.jpg",
+      "sha256": "d30c8fe68aa274ec3a0c0a98c0c62419013033faa4f0ba46b4bdab8fb3c2e2a9"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\239096.jpg",
+      "sha256": "d8cc6eba60e3ad80bcd1932a7506b524813c1217a678bfd5b5a275b21cf62e66"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\24004.jpg",
+      "sha256": "2d4ccde85f753a82f67c9261204c6b6333ab8484504cf433d4383382c87ebb87"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\24063.jpg",
+      "sha256": "545d3a0f4cbe1fb6b7897ef3cae6a9fcaa681e39616ad73f4e4e99ba95d1a6fb"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\242078.jpg",
+      "sha256": "433f30806efec69645d37561043e88b46a8500d5a6e508acaf08d3df28c8ed0a"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\245051.jpg",
+      "sha256": "cfa804a708b2b742a3edfdf5bffc5038ad8882b999a2eb25275e142cf805f842"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\246016.jpg",
+      "sha256": "f0d4c02752e0883e838911cef69b2a579a5e47776a373d32a135089a999f7480"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\246053.jpg",
+      "sha256": "111118f64a172e9c67d14da0a5a7a41878ea29d804db0b14a12c03f344b0c678"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\247085.jpg",
+      "sha256": "0bab7ce141b0b2094685f0a10fa671796f7e18f36c28022fe701f019735aa200"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\249061.jpg",
+      "sha256": "4e7e2815c209ff5a736590464a99bd3ad2cb1ffe6ee75c855973e67e276e0f1e"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\249087.jpg",
+      "sha256": "3da8ba0bac946efde6840c5d7bf787cafa4bd198eefb408105270114616e878f"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\25098.jpg",
+      "sha256": "4cf953fb3cc6bbb9089483a8bcdc3fb956b3ea9aeb444673f5ab4703fe25705a"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\253036.jpg",
+      "sha256": "7a54cba62c89a3e4042c000d9f9333f940e5f7c88e18a11e88a6ea5cf771796a"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\254033.jpg",
+      "sha256": "62dba2a03d58e1fee456829ae170019c4dddf57c4ab0b855453d0fd127f64033"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\254054.jpg",
+      "sha256": "d92db03f3a55c6d7e13decc2977ad970935691a19b843ab9e0564d749aea2109"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\260081.jpg",
+      "sha256": "7118955b0c6d988e86907d5334385963af3c48440c7ad1bb6185a2359f6598c0"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\26031.jpg",
+      "sha256": "fba6d84e560eb3eed75ad615db4fdc3046d7c7f19d8f8c3bf027fca204abb9e3"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\268002.jpg",
+      "sha256": "9ad84bc002d93644d2e6304a50abcf4997ed84136d17d8e074e33e1488a88f21"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\27059.jpg",
+      "sha256": "b2ad41923ca24fbe04b6b291dc8d1ed99eb79ad9060f93d99b4c715ac4684b91"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\271008.jpg",
+      "sha256": "51810e553db1d021984d797753285f6dded11db5919a55a131a196d988228450"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\271031.jpg",
+      "sha256": "49a045a1d2711c4dcd9ffe6f83a56b8c11d7308ab88fedceaf735e4d290457bd"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\274007.jpg",
+      "sha256": "c71cd2933b7f209292d204ab1da52e9d707f9115789f08a553b0a62712ba29f9"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\277095.jpg",
+      "sha256": "f6fe046b7f597c565443429dbc3d51d8239023038438b2fde68010316ed40ed0"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\28075.jpg",
+      "sha256": "ffd87260a8e593287b3c35151b39d8861ba2a80d3b69ef5a0f6f9d089be5ab0d"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\28096.jpg",
+      "sha256": "6bdb764890d0fc3d59ddd6419ee93188c0a5397cf14b94ca825ce25fc5299f7e"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\285036.jpg",
+      "sha256": "bad41816602b3d7aba1497f746bd3a851911ca1275814b8d13d9376b5c4810cb"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\286092.jpg",
+      "sha256": "232614953c26018ca9f1038acf1c58912672be9960f433f35aff53111537ca1b"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\292066.jpg",
+      "sha256": "8c810fe5667d2323067808678e7d1315e3e6d3ed6d6259516c55d4458a0a1373"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\293029.jpg",
+      "sha256": "463c7966c89174d26afb6a19bb6a78a206b96dc622ace8837b6bb3abfa0eaf8a"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\299091.jpg",
+      "sha256": "97c5eddecfc1fd3678300f73c094ce4292d66fb659957e960f9afb79b8e0db9e"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\301007.jpg",
+      "sha256": "adfe1661c7be8537f7c29cbb5832603fc685442146d161fb7a69b0836a339acf"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\302003.jpg",
+      "sha256": "a80e9a11541b6b93e21ef1d9b21e2434d3d2b729307a5ac86b1a02e066bc52b4"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\309004.jpg",
+      "sha256": "6f12849beaa81204d9e2d9af32f78d6d95d09ca5036c61cd9216675dd8d48f14"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\310007.jpg",
+      "sha256": "17e8a7650be55c9ca9393a613b95d13ab329ae80571b1a096bb7e72a24e46b88"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\311068.jpg",
+      "sha256": "3146e0e94f979e2c0cd7bd50b694134734f54380bac9325ae24cfbfefd8d928f"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\311081.jpg",
+      "sha256": "c0e14ae2bd9800fe2ea8470eb45a6001aacf85ca884eda65371e6ee21d8ec608"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\314016.jpg",
+      "sha256": "d6c0b2e35420643aa21a16a3a7b480a525d8b7bc7f0ba1f13ba4f10f5d3c280e"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\317080.jpg",
+      "sha256": "5ff96228e4bb947da0901f617c4492d6ecadef81729fee603e8c0fbda142f716"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\323016.jpg",
+      "sha256": "5ab43672021c622a34fa85931a6f63d10e2c93b297e5c0dd894d3ea25148a42d"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\326038.jpg",
+      "sha256": "b63ecef521773f1c7b773b562422acf66aaf3f5fb14d38b6a320746bbd40d054"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\33066.jpg",
+      "sha256": "3518a4a6a931578a21fa41603a5f22d39004136a0b6c3a66c951285a6b10ad63"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\35008.jpg",
+      "sha256": "c96d0152195351dee60a3bbb1f7e719eb5d977f5d760a778ee7decda2a7f79dd"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\35010.jpg",
+      "sha256": "1aec271e4b952acee3f5414899633f7d377ac054c7da57bcaa455ae30e40276f"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\35058.jpg",
+      "sha256": "2cc200475b427bad74a7f58a7f031e320ab14a86affc7a3873301aa78402534a"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\35070.jpg",
+      "sha256": "2451a585fc1817d732c81bd73b14a7614e2a1da7f647e288126a9a76b61df5e6"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\35091.jpg",
+      "sha256": "391d904c55e8d1161d6096edb6b0507f9621801fc630ff186259be846d939d52"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\353013.jpg",
+      "sha256": "8b7696a58f1228ac42e8eb5b9ac0af9f100ea4b7eadb0cf66602d878002814f4"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\361084.jpg",
+      "sha256": "f080e7868d5ea74b31076e2a9a268c056fd73f6830ec1f4c4eb8814e4070fad7"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\365025.jpg",
+      "sha256": "2e1c5061a9565ded28b65ab0b80b382baa5a0fb586ed0b23809b475e672938f6"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\365073.jpg",
+      "sha256": "139268398b47476ae6e645527e9837d57cefe69f000ad23def31ddef1542d9dd"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\368016.jpg",
+      "sha256": "f3a61a291a3f47a3dd3e495f334ba0a4f5876d9b355dcaf3c35564d2c158ead4"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\368078.jpg",
+      "sha256": "8b38267196f7b7f608c2eb1db535075d6e5d3b8df9e6180db6ad8bcbd30a8561"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\370036.jpg",
+      "sha256": "aefde573f8a7e4396ad40682697200e9083ec586e6ab166f46d62920d638dd6e"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\372047.jpg",
+      "sha256": "eb4314d3803bba3cd57cdd2be72c7dbe521045579f09fc25a5913752c88753f9"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\374020.jpg",
+      "sha256": "c4bf625ad708d23f951b3efb0550612098b89ed485d5e076a6ecb441327a5790"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\374067.jpg",
+      "sha256": "1c4ef7ec171169ecabbd23ce3ba06bcd6978efe69e98bd6ec361b6bbff3d8bb3"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\376001.jpg",
+      "sha256": "c91f6ed09df383dd0ac8471d63d93fab4cd6a1a58a8dd6c2dbe0a2bb8b55d14a"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\376020.jpg",
+      "sha256": "51746eda824648e30e297aa60f8cfedc416a0c12b75fdabe09f76c710bd40864"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\385028.jpg",
+      "sha256": "f77f509acec929bbedf9f641febc8cc57ba5db26677606357af94837a5218b86"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\388016.jpg",
+      "sha256": "0cd67065b3ece3c4b88cd4abbd1c49b8b9aa4cd94d848b54533310d15142b680"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\41004.jpg",
+      "sha256": "18ab4ca2c20426fad316757ea6ab3b260fa6ea37ccff518cd4a7cc329091991b"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\41025.jpg",
+      "sha256": "f251407ef9a59235329e84c4d37cdf730fcd1dd431eeafe60585d9af4e8ba789"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\42044.jpg",
+      "sha256": "a8ef1539007cfeda438d7c20cd4e009c5ca5e31fbdbd73dd40683897361222b8"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\42078.jpg",
+      "sha256": "8581db9f492bf49c7c4ccd3afa51d5af4bd9f2584f1478aaba76072a8cb2cd9f"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\43070.jpg",
+      "sha256": "b1530a4865876dc03e202d63e8c7f53e6005e951858d1971f222d3fce4ad2574"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\43083.jpg",
+      "sha256": "f84b16dc078d7ec78712be49223bbde0378a85d7546980e00849bf717721c7bd"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\45077.jpg",
+      "sha256": "be1cc8eccd4d479e7c7af652b445813caba0078fa53214ef8b29daef2040fbe2"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\46076.jpg",
+      "sha256": "0dd7dd057a991aba7b44e809a3d03aaf75c8ab889f8b56c5cd1eb1493246f0f8"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\48055.jpg",
+      "sha256": "2dbf3f3f6203be60b47f17f33553bb855de73b065cc309b718d7a4289320dc61"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\54005.jpg",
+      "sha256": "dd779e6b4a42380908dfc22423edd559ed0fd063420991a6d6b45986d6827d18"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\55067.jpg",
+      "sha256": "18b06e3e62c990d7a3ff385e7caee567b008c5c92c7073d0d5bae16bcaf963bf"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\55075.jpg",
+      "sha256": "42a554b3cc0eed83ee5ba8b4a1470cf7318e75dd27fc6ca621411e3ca13d7292"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\56028.jpg",
+      "sha256": "766ba9a6405c78d0f7114f8b502de63a78c2d1cf5b0fcd437fdd20bb7165e80b"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\59078.jpg",
+      "sha256": "0c17430f9e2250cf5a60e10cb65079cf8df3dad8881a2e7bb5a23e24bf0803e4"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\60079.jpg",
+      "sha256": "112c3f4f07287535a093ba931e49ee972fef1ceccb02df25bd1390b4a47113cc"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\61060.jpg",
+      "sha256": "25c41d4456ad719d6fe6397e65bcfffa9a75d21e50a7866169e7ffdcff245ae4"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\61086.jpg",
+      "sha256": "e35da38a9202415a56cb5eeb4ce33cd83f39035a4098193881072f85968cf7e6"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\65010.jpg",
+      "sha256": "a9fd6ca16e5240c9db1cd435ed42cdabddaa3fb7a7e229a71a3fef8efa75b378"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\65019.jpg",
+      "sha256": "f5c2174b99323b9471090ae16efddb50937430d122225502bdebee0db29bcaa6"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\65074.jpg",
+      "sha256": "30b3d41657fe2f12937a21b55ef12f4353b790081d974462b809177332331b64"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\65132.jpg",
+      "sha256": "f2f34b87c0425d5392ebbd6aba9761cb76b5c2e16609a7a57977519b3184fa28"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\66039.jpg",
+      "sha256": "6077f1d3c4c03aac7be0851276558ef68b8a73ea94274db74dfdcecdfc7a482f"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\66075.jpg",
+      "sha256": "cc01e01f2610d83a999569acd34cccc61698fef2ec06b0ee839282c52e57fb37"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\67079.jpg",
+      "sha256": "37f4f4ae413fd239e5b4c504b62fc970450d47527b7048b2ea88720391f97d8d"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\68077.jpg",
+      "sha256": "bc19d03ee0abaf862c05c386fe94a6d72946661a2613932c6b959f50b0d079bc"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\71046.jpg",
+      "sha256": "046813509539dbe475f389c8afc86e78ab1b661736a2e0ce5ac8f2becb3d305f"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\76002.jpg",
+      "sha256": "3b6097fcf9468966497876ef6a6717b4fe0f56767053936b718161a8dca75f04"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\78019.jpg",
+      "sha256": "1436d47bdef4749c71ebdbba473508cfa23e0eee6a01c7eb62c80118a488692c"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\80099.jpg",
+      "sha256": "e56ed8b4ecb8246ed8096360bcebc13a4489872520d665c39be34915cf51db88"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\8049.jpg",
+      "sha256": "418ea26f53efd8707399bea46c9a295c7c7e96b05b5b4792af7214649aba249b"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\8143.jpg",
+      "sha256": "76e88b97c7640c2203a0f61d6739d8590f0c7e89d064d045cb68c65ead634fd9"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\87065.jpg",
+      "sha256": "0e09f38f2f09e2eee85b9b3ed447a29e6e7b3506f5ac936a2948f4b2e9ce33bb"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\90076.jpg",
+      "sha256": "bd9f9463f273b26cbd0a39e653e13a48f3884c41db03ce7fadd75313e6479230"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\92059.jpg",
+      "sha256": "71cf42a1550c534cefb59fe712635ab25682b2239300bb53983f16cb81e0ed3b"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\94079.jpg",
+      "sha256": "37c4fe1f79704719bb93b8c1c1f95ea5d3feea8b39779ad9f2ac4fca1ad8a145"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\95006.jpg",
+      "sha256": "78201312e9625758f755002e2f62bb45fede72a0623d4511baaf69dd80952b65"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\train\\97017.jpg",
+      "sha256": "14af2c9a1e7711930840fc502b89b3c46416c894c48a0e1bb271a23d35b7d160"
+    }
+  ],
+  "validation_files": [
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\val\\101085.jpg",
+      "sha256": "dbefbd4ae3749913ee9fffcdb663bea87ab6634dc8b989422f741243bdbedc8a"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\val\\101087.jpg",
+      "sha256": "d755a74144410290cff5e214bb7cbf352a8cb920d45fac3d992b9772ad92a017"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\val\\102061.jpg",
+      "sha256": "35ce0a9baaebae00c19f6abccd1d7b3ecd8f1c62003e178610b2179c082f0a8e"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\val\\103070.jpg",
+      "sha256": "6d1d9e564b5459e969f65470ff03aa3104af779e93c93ca434ad546477e27261"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\val\\105025.jpg",
+      "sha256": "6678e84e923e5c1b085afe43ae2fc3735f7f424e02eaefe50a64405f76b9b51b"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\val\\106024.jpg",
+      "sha256": "ea31189313c34be7b7a48b7cd776c17f3afb5585de37a6e740a638320fa9847d"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\val\\108005.jpg",
+      "sha256": "e0210b50350e928e35f048fe4b8ea54e58200c58ae3bb5ff619b2074b38fac01"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\val\\108070.jpg",
+      "sha256": "6a5d0dd5e9e0a14f680b1c8225b151268c40a41935add1c91483575fd5db51cb"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\val\\108082.jpg",
+      "sha256": "389d781d17c9809aeec1f609a324725aa694aea668036bc17f79176a729f7071"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\val\\109053.jpg",
+      "sha256": "91819e7ece60560b5f37398dacd12fc1ac41d095f3454bee965645781599a968"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\val\\119082.jpg",
+      "sha256": "8cf5ce02395627b797b3da7a3845bcb0da14d66942d422a1c898372b67536d4c"
+    },
+    {
+      "path": "D:\\FPGA_C\\ABC_style_training_20261022\\dataset\\val\\12084.jpg",
+      "sha256": "937a95df6a3ded078400451ac163cac6ec20f0ca912c741ae7427d6fca84175d"
+    }
+  ],
+  "board_tested": false,
+  "quality_scope": "Severely capacity-limited distillation candidate; not equivalent to the large teacher; needs human visual acceptance"
+}

@@ -1,0 +1,6 @@
+{
+  "source": "D:\\aidrawer\\output\\VanGogh_SelfPortrait\\20261009_StyleContextDetail_TextureTrunk_Refinement\\runs\\texture_trunk_v1\\model_final.pth",
+  "sha256": "256862107b46c0135a7b9e99d244bbe63e92e070b2d2eb224b2ba1c65532d99a",
+  "step": 1000,
+  "role": "latest larger SCD is the color-preserving COMPRESSION reference; NOT the original IN teacher"
+}

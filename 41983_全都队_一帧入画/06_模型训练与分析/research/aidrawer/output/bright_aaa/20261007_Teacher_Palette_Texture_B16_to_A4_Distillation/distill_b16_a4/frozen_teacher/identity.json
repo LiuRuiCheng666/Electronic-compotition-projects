@@ -1,0 +1,7 @@
+{
+  "source": "D:\\aidrawer\\output\\bright_aaa\\20261007_Teacher_Palette_Texture_B16_to_A4_Distillation\\teacher_texture_v1\\model_final.pth",
+  "sha256": "2c59d275c701ea60199e2a321cc86756503b20a7665d8416543ab699670f85bb",
+  "style_sha256": "5ff87890760c60d3baf5a5ce50b57cc0923791e92e1202cd1205dd14a9645cb4",
+  "step": 1500,
+  "architecture": "C8 3 residual InstanceNorm teacher"
+}

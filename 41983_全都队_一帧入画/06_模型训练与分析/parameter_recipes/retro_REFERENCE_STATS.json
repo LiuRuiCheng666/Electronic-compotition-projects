@@ -1,0 +1,242 @@
+{
+  "flat": {
+    "images": [
+      {
+        "path": "C:\\Users\\letus\\AppData\\Local\\Temp\\codex-clipboard-1a1a1d41-eff8-4f0e-bb1d-cbc5fc62a005.jpg",
+        "sha256": "0612294e9927bf13e39412498e227a0cace753fa589eac1dcf57d0190692fab6",
+        "size": [
+          1080,
+          2400
+        ],
+        "sample_rectangles": [
+          [
+            0.58,
+            0.304,
+            0.921,
+            0.506
+          ]
+        ]
+      }
+    ],
+    "pooled_image_count": 1,
+    "palette": {
+      "cream": [
+        0.9607843137254902,
+        0.8588235294117647,
+        0.30980392156862746
+      ],
+      "navy": [
+        0.01568627450980392,
+        0.10588235294117647,
+        0.13725490196078433
+      ],
+      "jade": [
+        0.33725490196078434,
+        0.615686274509804,
+        0.7372549019607844
+      ],
+      "cyan": [
+        0.2823529411764706,
+        0.611764705882353,
+        0.9529411764705882
+      ],
+      "ochre": [
+        0.8392156862745098,
+        0.6941176470588235,
+        0.403921568627451
+      ]
+    },
+    "sample_counts": {
+      "cream": 26447,
+      "navy": 3116,
+      "jade": 28161,
+      "cyan": 15562,
+      "ochre": 10299
+    },
+    "uploaded": false,
+    "use": "Local numerical artwork palette sampling only; screenshot UI, instructions and source-photo panels excluded"
+  },
+  "gongbi": {
+    "images": [
+      {
+        "path": "C:\\Users\\letus\\AppData\\Local\\Temp\\codex-clipboard-0e34c1bd-6eca-4f81-b700-e93badcf17bc.jpg",
+        "sha256": "1f765580539e2ec981c7642abb16e520fd2e041ed7183d16fa0b4de4f74c34e2",
+        "size": [
+          1080,
+          2400
+        ],
+        "sample_rectangles": [
+          [
+            0.06,
+            0.485,
+            0.455,
+            0.77
+          ],
+          [
+            0.52,
+            0.485,
+            0.94,
+            0.77
+          ]
+        ]
+      }
+    ],
+    "pooled_image_count": 1,
+    "palette": {
+      "cream": [
+        0.9254901960784314,
+        0.9137254901960784,
+        0.8
+      ],
+      "navy": [
+        0.14901960784313725,
+        0.19215686274509805,
+        0.2
+      ],
+      "jade": [
+        0.3843137254901961,
+        0.6431372549019608,
+        0.6784313725490196
+      ],
+      "cyan": [
+        0.4470588235294118,
+        0.6901960784313725,
+        0.7098039215686275
+      ],
+      "ochre": [
+        0.7019607843137254,
+        0.6509803921568628,
+        0.5019607843137255
+      ]
+    },
+    "sample_counts": {
+      "cream": 76811,
+      "navy": 35753,
+      "jade": 283140,
+      "cyan": 207747,
+      "ochre": 26720
+    },
+    "uploaded": false,
+    "use": "Local numerical artwork palette sampling only; screenshot UI, instructions and source-photo panels excluded"
+  },
+  "retro": {
+    "images": [
+      {
+        "path": "C:\\Users\\letus\\AppData\\Local\\Temp\\codex-clipboard-ee6e0b61-a197-425b-aaa3-bd886c7133c5.jpg",
+        "sha256": "3731327489663599974023bc30e6b877aeea3067451e6dc5168c076ca937bb29",
+        "size": [
+          1080,
+          2400
+        ],
+        "sample_rectangles": [
+          [
+            0.59,
+            0.33,
+            0.93,
+            0.51
+          ]
+        ]
+      }
+    ],
+    "pooled_image_count": 1,
+    "palette": {
+      "cream": [
+        0.9490196078431372,
+        0.9372549019607843,
+        0.8784313725490196
+      ],
+      "navy": [
+        0.13725490196078433,
+        0.20784313725490197,
+        0.2901960784313726
+      ],
+      "jade": [
+        0.5098039215686274,
+        0.5764705882352941,
+        0.6392156862745098
+      ],
+      "cyan": [
+        0.5686274509803921,
+        0.6549019607843137,
+        0.7294117647058823
+      ],
+      "ochre": [
+        0.8941176470588236,
+        0.7803921568627451,
+        0.5058823529411764
+      ]
+    },
+    "sample_counts": {
+      "cream": 98389,
+      "navy": 19944,
+      "jade": 24655,
+      "cyan": 2041,
+      "ochre": 26929
+    },
+    "uploaded": false,
+    "use": "Local numerical artwork palette sampling only; screenshot UI, instructions and source-photo panels excluded"
+  },
+  "hologram": {
+    "images": [
+      {
+        "path": "C:\\Users\\letus\\AppData\\Local\\Temp\\codex-clipboard-191f367f-192e-490e-a956-a73f90901c12.jpg",
+        "sha256": "52bd86b4e3103239073b2ef661b18093807e2e40870f344317da17ca0cdf7c42",
+        "size": [
+          1080,
+          2400
+        ],
+        "sample_rectangles": [
+          [
+            0.05,
+            0.465,
+            0.475,
+            0.74
+          ],
+          [
+            0.51,
+            0.465,
+            0.97,
+            0.74
+          ]
+        ]
+      }
+    ],
+    "pooled_image_count": 1,
+    "palette": {
+      "cream": [
+        0.9294117647058824,
+        0.8705882352941177,
+        0.7725490196078432
+      ],
+      "navy": [
+        0.1411764705882353,
+        0.21568627450980393,
+        0.2549019607843137
+      ],
+      "jade": [
+        0.4470588235294118,
+        0.6235294117647059,
+        0.7764705882352941
+      ],
+      "cyan": [
+        0.48627450980392156,
+        0.6549019607843137,
+        0.796078431372549
+      ],
+      "ochre": [
+        0.7568627450980392,
+        0.6725490196078432,
+        0.5647058823529412
+      ]
+    },
+    "sample_counts": {
+      "cream": 2423,
+      "navy": 108935,
+      "jade": 352299,
+      "cyan": 256669,
+      "ochre": 212
+    },
+    "uploaded": false,
+    "use": "Local numerical artwork palette sampling only; screenshot UI, instructions and source-photo panels excluded"
+  }
+}

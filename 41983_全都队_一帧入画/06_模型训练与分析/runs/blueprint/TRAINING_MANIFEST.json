@@ -1,0 +1,149 @@
+{
+  "style": "midnight_blueprint",
+  "domain": "camera",
+  "status": "TRAINED_QAT_EXACT_AND_VISUAL_REVIEW_PENDING",
+  "warm": 1200,
+  "qat": 12000,
+  "actual_total_steps": 13200,
+  "maximum_qat_budget": 24000,
+  "validation_plateau_reached": true,
+  "best_step": 13200,
+  "best_validation_objective": 0.14572414010763168,
+  "slot_bytes": 4096,
+  "slot_sha256": "b4f047b6614f72eca7882cad3e39b4f760490da52f9c61d8e2d158ec12bbd21c",
+  "checkpoint_sha256": "a3e10e391af4ce68d5c5e28fb79a68c07aed1900f3b707ea7d12d739ed30e345",
+  "layers": [
+    {
+      "layer": "enc.0",
+      "shift": 8,
+      "A": 65536,
+      "input_scale": 0.0078125,
+      "output_scale": 0.0625,
+      "weight_scale": 0.03125,
+      "bias_codes": [
+        -8488,
+        -7100,
+        10397,
+        -6029
+      ]
+    },
+    {
+      "layer": "enc.1",
+      "shift": 6,
+      "A": 262144,
+      "input_scale": 0.0625,
+      "output_scale": 0.0625,
+      "weight_scale": 0.015625,
+      "bias_codes": [
+        1278,
+        1213,
+        336,
+        344
+      ]
+    },
+    {
+      "layer": "enc.2",
+      "shift": 7,
+      "A": 131072,
+      "input_scale": 0.0625,
+      "output_scale": 0.0625,
+      "weight_scale": 0.0078125,
+      "bias_codes": [
+        2225,
+        -166,
+        1567,
+        563,
+        58,
+        -1067,
+        3840,
+        -1279
+      ]
+    },
+    {
+      "layer": "enc.3",
+      "shift": 8,
+      "A": 65536,
+      "input_scale": 0.0625,
+      "output_scale": 0.0625,
+      "weight_scale": 0.00390625,
+      "bias_codes": [
+        2462,
+        -609,
+        -2246,
+        -1003
+      ]
+    },
+    {
+      "layer": "res.c1",
+      "shift": 7,
+      "A": 131072,
+      "input_scale": 0.0625,
+      "output_scale": 0.0625,
+      "weight_scale": 0.0078125,
+      "bias_codes": [
+        640,
+        -1348,
+        1100,
+        -1989
+      ]
+    },
+    {
+      "layer": "res.c2",
+      "shift": 8,
+      "A": 65536,
+      "input_scale": 0.0625,
+      "output_scale": 0.0625,
+      "weight_scale": 0.00390625,
+      "bias_codes": [
+        -1455,
+        -2000,
+        -2202,
+        2877
+      ]
+    },
+    {
+      "layer": "dec.1",
+      "shift": 8,
+      "A": 65536,
+      "input_scale": 0.0625,
+      "output_scale": 0.0625,
+      "weight_scale": 0.00390625,
+      "bias_codes": [
+        1059,
+        -1246,
+        2678,
+        -1190
+      ]
+    },
+    {
+      "layer": "dec.3",
+      "shift": 8,
+      "A": 65536,
+      "input_scale": 0.0625,
+      "output_scale": 0.0625,
+      "weight_scale": 0.00390625,
+      "bias_codes": [
+        1818,
+        21,
+        3769,
+        3463
+      ]
+    },
+    {
+      "layer": "out.1",
+      "shift": 7,
+      "A": 131072,
+      "input_scale": 0.0625,
+      "output_scale": 0.03125,
+      "weight_scale": 0.00390625,
+      "bias_codes": [
+        664,
+        1226,
+        1290
+      ]
+    }
+  ],
+  "board_tested": false,
+  "display_tone_applied": true,
+  "real_sensor_frames_used": false
+}

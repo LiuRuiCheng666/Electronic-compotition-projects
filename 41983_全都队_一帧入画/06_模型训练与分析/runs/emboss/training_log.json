@@ -1,0 +1,74 @@
+[
+  {
+    "step": 200,
+    "qat": false,
+    "validation_display_teacher_mae": 0.13178482837975025,
+    "seconds": 4.1558144092559814
+  },
+  {
+    "step": 400,
+    "qat": false,
+    "validation_display_teacher_mae": 0.11798445011178653,
+    "seconds": 7.374994277954102
+  },
+  {
+    "step": 600,
+    "qat": false,
+    "validation_display_teacher_mae": 0.11984605714678764,
+    "seconds": 10.558352947235107
+  },
+  {
+    "step": 800,
+    "qat": false,
+    "validation_display_teacher_mae": 0.1168994593123595,
+    "seconds": 13.728901386260986
+  },
+  {
+    "step": 1000,
+    "qat": true,
+    "validation_display_teacher_mae": 0.11033312914272149,
+    "seconds": 18.04983115196228
+  },
+  {
+    "step": 1200,
+    "qat": true,
+    "validation_display_teacher_mae": 0.11081456889708836,
+    "seconds": 22.322395086288452
+  },
+  {
+    "step": 1400,
+    "qat": true,
+    "validation_display_teacher_mae": 0.11014870864649613,
+    "seconds": 26.62164807319641
+  },
+  {
+    "step": 1600,
+    "qat": true,
+    "validation_display_teacher_mae": 0.11133692786097527,
+    "seconds": 31.085809469223022
+  },
+  {
+    "step": 1800,
+    "qat": true,
+    "validation_display_teacher_mae": 0.11042721631626289,
+    "seconds": 35.42432999610901
+  },
+  {
+    "step": 2000,
+    "qat": true,
+    "validation_display_teacher_mae": 0.11071804600457351,
+    "seconds": 39.722095251083374
+  },
+  {
+    "step": 2200,
+    "qat": true,
+    "validation_display_teacher_mae": 0.10830333456397057,
+    "seconds": 44.034058570861816
+  },
+  {
+    "step": 2400,
+    "qat": true,
+    "validation_display_teacher_mae": 0.1080719381570816,
+    "seconds": 48.492600440979004
+  }
+]

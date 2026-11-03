@@ -24,4 +24,22 @@ slots=json.loads((F/'flash_assets/dual_model_manifest.json').read_text('utf-8'))
 assert len(slots)==5
 for i,s in enumerate(slots):assert hashlib.sha256(weights[32+i*4096:32+(i+1)*4096]).hexdigest()==s['sha256']
 assert len(set(s['sha256'] for s in slots))==5
-print('PASS: all manifest files, Efinity references, full Flash HEX/BIN, five model slots and CRC')
+N=P/'06_模型训练与分析';names=['retro','blueprint','emboss','fine_pixel_first','glitch']
+for i,name in enumerate(names):
+    assert (N/f'weights/style{i}_{name}.bin').read_bytes()==weights[32+i*4096:32+(i+1)*4096],name
+for i,name in [(1,'blueprint'),(2,'emboss')]:
+    assert (N/f'runs/{name}/slot.bin').read_bytes()==weights[32+i*4096:32+(i+1)*4096],name
+    assert (N/f'runs/{name}/model_best.pth').is_file()
+for rel in ['software/a_image_session.c','software/a_image_session.h','software/a_net_service.c','software/c_image_backend.c',
+            'outflow/ti60f225_oob.place','outflow/ti60f225_oob.troutingtraces','outflow/ti60f225_oob.vdb',
+            'implementation_reference/ti60f225_oob.lbf','tools/rebuild.py','tools/verify_rtl.py',
+            'verification/five_style_slots/test.sv','verification/simple_metrics_osd/test.sv']:
+    assert (F/rel).is_file(),rel
+binary=(F/'embedded_sw/soc/software/standalone/uart/nnObserverDemo/build/nnObserverDemo.bin').read_bytes()
+rom=bytearray(32768)
+for i in range(4):
+    tokens=(F/f'ip/soc/EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol{i}.bin').read_text('ascii').split()
+    assert len(tokens)==8192
+    rom[i::4]=bytes(int(v,2) for v in tokens)
+assert bytes(rom)==binary+bytes(32768-len(binary))
+print('PASS: manifest, Efinity dependencies, full Flash, five-slot sources/checkpoints, CRC and 32KiB CPU ROM')

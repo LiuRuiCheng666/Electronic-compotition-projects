@@ -1,0 +1,13 @@
+{
+  "source": "D:\\aidrawer\\output\\VanGogh_SelfPortrait\\20261009_StyleContextDetail_ColorCompression\\runs\\phase_fold\\model_final.pth",
+  "sha256": "25ee5898c9676fbfcde5bb6d463bc0ec6d7f1ca6c8604df822ad0c61cdebf2fd",
+  "step": 1000,
+  "role": "accepted phase_fold COMPRESSION reference; original IN separately evaluated",
+  "keep_blocks": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "detail_mode": "phase_nearest"
+}

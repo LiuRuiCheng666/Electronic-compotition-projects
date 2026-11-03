@@ -1,0 +1,14 @@
+{
+  "status": "VALIDATION_PLATEAU_REACHED",
+  "actual_total_steps": 13200,
+  "actual_qat_steps": 12000,
+  "best_step": 13200,
+  "best_validation": 0.14572414010763168,
+  "window_steps": 2000,
+  "relative_best_improvement": 0.004047412327385827,
+  "threshold": 0.005,
+  "latest_validation": 0.14572414010763168,
+  "learning_rate": 3.75e-05,
+  "scope": "Validation plateau for fixed A4 and procedural target; not global optimum or board/aesthetic acceptance",
+  "recovery_events": []
+}

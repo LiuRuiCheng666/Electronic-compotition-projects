@@ -6,7 +6,7 @@ sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
 parser=argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--lbf',type=Path,default=P/'work_pnr/ti60f225_oob.lbf')
 lbf=parser.parse_args().lbf.resolve()
-D=P/'integration_tests/hdmi_lbf_readback';D.mkdir(exist_ok=True)
+D=P/'integration_tests/hdmi_lbf_readback';D.mkdir(parents=True,exist_ok=True)
 data=bytearray(32768)
 for i in range(4):
  cmd=[str(E/'bin/efx_bram_edit.exe'),'--family','Titanium','--project',str(P/'ti60f225_oob.xml'),'--mem_info',str(P/'outflow/ti60f225_oob.raminfo.pb'),'--place',str(P/'outflow/ti60f225_oob.place'),'--lbf',str(lbf),'--mode','read','--memory',f'u_c_soc/u_EfxSapphireSoc/system_ramA_logic/ram_symbol{i}']

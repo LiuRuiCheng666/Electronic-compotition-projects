@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "current_submission_order": true,
+  "styles": [
+    {
+      "slot": 0,
+      "name": "retro",
+      "bytes": 4096,
+      "sha256": "62f692d840abfd1323e89208e58cdb26d0d6be94dfa04ab5e2f6dc47e2e8383d",
+      "method": "parameter_source_regenerated"
+    },
+    {
+      "slot": 1,
+      "name": "blueprint",
+      "bytes": 4096,
+      "sha256": "b4f047b6614f72eca7882cad3e39b4f760490da52f9c61d8e2d158ec12bbd21c",
+      "method": "learned_checkpoint_exported"
+    },
+    {
+      "slot": 2,
+      "name": "emboss",
+      "bytes": 4096,
+      "sha256": "27a3e1a7cd3670f270824c05f61147d51439c438a00a383b342b20595317ef7b",
+      "method": "learned_checkpoint_exported"
+    },
+    {
+      "slot": 3,
+      "name": "fine_pixel_first",
+      "bytes": 4096,
+      "sha256": "6efa8c5422cca85ab6249af776127c8b7d95c680b673692dddbe63215183d28d",
+      "method": "parameter_source_regenerated"
+    },
+    {
+      "slot": 4,
+      "name": "glitch",
+      "bytes": 4096,
+      "sha256": "694e0af00ec0bfcc1a8099fd782c43e996239cc87bdc4aaac64435e9f71c30d8",
+      "method": "parameter_source_regenerated"
+    }
+  ],
+  "payload_sha256": "38ad8f64cb886ae3009550a58a6e83c8f5532d5171e60fa4c514e26b6955a83f",
+  "weights_sha256": "10ffaf0697ad2fb5894a7b120ac9f21703db814f64ec331b80c05b576fee863f",
+  "bytes": 20512,
+  "training_performed": false,
+  "board_accessed": false
+}

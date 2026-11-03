@@ -1,0 +1,8 @@
+{
+  "source": "D:\\aidrawer\\output\\VanGogh_SelfPortrait\\20261007_B16_BN_to_A4_Distillation\\runs\\portrait_b16_bn\\model_final.pth",
+  "sha256": "867870a74ba4b70ec09b87b8b6e6c12aa8a3c63abf94e39f97e45bc8b08ebe9b",
+  "style_sha256": "0020b03148f02410426ee2f4c6eeeee8798bb5a06a3fc73d5880de5af0215035",
+  "step": 12000,
+  "evaluation": "D:\\aidrawer\\output\\VanGogh_SelfPortrait\\20261007_B16_BN_to_A4_Distillation\\runs\\portrait_b16_bn\\eval_step012000",
+  "architecture": "B16 BN, one residual block"
+}

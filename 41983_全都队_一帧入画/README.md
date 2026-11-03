@@ -13,6 +13,7 @@
 |03_网口工具|命令行图片/视频逐帧传输工具源码和测试；Python依赖通过requirements安装|
 |04_烧录文件|最终五风格完整Flash镜像，以及配置文件|
 |05_技术资料|资源/时序摘要和使用说明|
+|06_模型训练与分析|最终参数生成、训练/蒸馏源码及检查点、精确导出工具、结构图、统计表与评估代码|
 
 ## 烧录与运行
 
@@ -32,6 +33,22 @@
 
 `python 02_网页应用/run_checks.py` 运行本地离线测试。`python verify_submission.py` 检查交付文件哈希和完整Flash模型区。离线测试只验证应用和协议，不替代实板推理。
 
-## 文件整理说明
+## 模型与验证补充
+
+最终槽0、3、4从参数源码重新生成，槽1、2从本地训练检查点导出，五槽均已与当前工程权重逐字节核对。项目根目录运行：
+
+```powershell
+python 06_模型训练与分析/tools/rebuild_weights.py --regenerate --export-trained --output E:/nn5_rebuilt
+```
+
+参数生成依赖NumPy；训练检查点导出另需PyTorch与Pillow。完整训练图片数据集使用外部路径，训练/蒸馏代码、原始记录、最终检查点及部署参数已收录。具体入口见`06_模型训练与分析/README.md`，赛题对应关系见`05_技术资料/赛题与代码对应.md`。
+
+`python 01_FPGA/tools/verify_rtl.py --modelsim-bin <ModelSim可执行目录>`运行当前五风格ABI与屏幕FPS的RTL仿真。网口独立C接口、主机工具和源码测试在`01_FPGA/software/`、`host/`、`tests/`。
+
+只复用归档最终原生实现生成配置，在01_FPGA中运行`python tools/rebuild.py --stage reference-pgm --efinity-home <Efinity安装目录>`。所需LBF、布局、布线及外设文件已保留；新输出位于`01_FPGA/outflow/`，不覆盖`04_烧录文件/`交付镜像。
+
+归档CPU固件原编译器为xPack GNU RISC-V GCC 13.2.0，本次源码亦在兼容的13.4.0工具链下完成编译。不同版本可能生成不同二进制布局，归档烧录文件保持原始版本。
+
+## 精简范围
 
 保留最终工程所需的源码、IP、SDK、模型、ROM初始化与烧录文件；移除了历史候选工程、重复归档、布局布线中间大文件、应用运行数据和无关验收截图。命令行工具的OpenCV/NumPy安装副本不重复打包，源码与依赖清单保留。第三方IP、库与随附许可证保持其原有权利声明，本项目不为第三方代码重新授予许可证。

@@ -1,0 +1,7 @@
+# Install a matching torch/torchvision build for your GPU separately.
+# Observed development builds are recorded in ENVIRONMENT.md, not assumed available on PyPI.
+numpy==2.3.2
+Pillow==11.3.0
+opencv-python
+matplotlib
+tqdm
