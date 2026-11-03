@@ -1,0 +1,37 @@
+{
+  "model_count": 5,
+  "payload_bytes": 20480,
+  "slots": [
+    {
+      "slot": 0,
+      "name": "复古建筑版画（诺贝尔）",
+      "bytes": 4096,
+      "sha256": "62f692d840abfd1323e89208e58cdb26d0d6be94dfa04ab5e2f6dc47e2e8383d"
+    },
+    {
+      "slot": 1,
+      "name": "工程线稿",
+      "bytes": 4096,
+      "sha256": "b4f047b6614f72eca7882cad3e39b4f760490da52f9c61d8e2d158ec12bbd21c"
+    },
+    {
+      "slot": 2,
+      "name": "浮雕",
+      "bytes": 4096,
+      "sha256": "27a3e1a7cd3670f270824c05f61147d51439c438a00a383b342b20595317ef7b"
+    },
+    {
+      "slot": 3,
+      "name": "首版细像素",
+      "bytes": 4096,
+      "sha256": "6efa8c5422cca85ab6249af776127c8b7d95c680b673692dddbe63215183d28d"
+    },
+    {
+      "slot": 4,
+      "name": "故障艺术",
+      "bytes": 4096,
+      "sha256": "694e0af00ec0bfcc1a8099fd782c43e996239cc87bdc4aaac64435e9f71c30d8"
+    }
+  ],
+  "payload_sha256": "96b887ab120079bcc940d441db21c2aad5320c3d36923eff55a96dbf56cb1d4c"
+}

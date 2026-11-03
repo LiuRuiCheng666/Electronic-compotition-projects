@@ -1,0 +1,8993 @@
+route {
+  driver {
+    cell: "CLK_25M"
+    port: "inpad"
+  }
+  sink {
+    cell: "CLK_25M~GPIO"
+    port: "IO_inpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "CLK_25M~GPIO"
+    port: "ALT"
+  }
+  sink {
+    cell: "CLK_25M~GPIO~ALT"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "CLK_27M"
+    port: "inpad"
+  }
+  sink {
+    cell: "CLK_27M~GPIO"
+    port: "IO_inpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "CLK_27M~GPIO"
+    port: "ALT"
+  }
+  sink {
+    cell: "CLK_27M~GPIO~ALT"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "DDR3_PLL_RSTN~PLL~RSTN"
+    port: "inpad"
+  }
+  sink {
+    cell: "DDR3_PLL~PLL"
+    port: "RSTN"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "CLK_25M~CLKOUT~202~1"
+    port: "inpad"
+  }
+  sink {
+    cell: "DDR3_PLL~PLL"
+    port: "CLKIN[3]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "clk_100m~CLKOUT~203~1"
+    port: "inpad"
+  }
+  sink {
+    cell: "DDR3_PLL~PLL"
+    port: "FBK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "FPGA_HDMI_SCL"
+    port: "inpad"
+  }
+  sink {
+    cell: "FPGA_HDMI_SCL~GPIO"
+    port: "IO_inpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "FPGA_HDMI_SCL~GPIO"
+    port: "IO_outpad"
+  }
+  sink {
+    cell: "FPGA_HDMI_SCL"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "FPGA_HDMI_SCL~GPIO"
+    port: "I[0]"
+  }
+  sink {
+    cell: "FPGA_HDMI_SCL_IN~GPIO~I[0]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "FPGA_HDMI_SCL_OE~GPIO~OE"
+    port: "inpad"
+  }
+  sink {
+    cell: "FPGA_HDMI_SCL~GPIO"
+    port: "OE"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "FPGA_HDMI_SCL_OUT~GPIO~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "FPGA_HDMI_SCL~GPIO"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "FPGA_HDMI_SDA"
+    port: "inpad"
+  }
+  sink {
+    cell: "FPGA_HDMI_SDA~GPIO"
+    port: "IO_inpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "FPGA_HDMI_SDA~GPIO"
+    port: "IO_outpad"
+  }
+  sink {
+    cell: "FPGA_HDMI_SDA"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "FPGA_HDMI_SDA~GPIO"
+    port: "I[0]"
+  }
+  sink {
+    cell: "FPGA_HDMI_SDA_IN~GPIO~I[0]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "FPGA_HDMI_SDA_OE~GPIO~OE"
+    port: "inpad"
+  }
+  sink {
+    cell: "FPGA_HDMI_SDA~GPIO"
+    port: "OE"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "FPGA_HDMI_SDA_OUT~GPIO~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "FPGA_HDMI_SDA~GPIO"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "HDMI_5V_N"
+    port: "inpad"
+  }
+  sink {
+    cell: "HDMI_5V_N~GPIO"
+    port: "IO_inpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "HDMI_5V_N~GPIO"
+    port: "I[0]"
+  }
+  sink {
+    cell: "HDMI_5V_N~GPIO~I[0]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "HPD_N~GPIO"
+    port: "IO_outpad"
+  }
+  sink {
+    cell: "HPD_N"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "HPD_N~GPIO~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "HPD_N~GPIO"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "CLK_25M~CLKOUT~22~322"
+    port: "inpad"
+  }
+  sink {
+    cell: "MIPI_TX_PLL~PLL"
+    port: "CLKIN[3]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "mipi_tx_feedback100~CLKOUT~23~322"
+    port: "inpad"
+  }
+  sink {
+    cell: "MIPI_TX_PLL~PLL"
+    port: "FBK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "USER_PLL_RSTN~PLL~RSTN"
+    port: "inpad"
+  }
+  sink {
+    cell: "USER_PLL~PLL"
+    port: "RSTN"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "CLK_27M~CLKOUT~18~1"
+    port: "inpad"
+  }
+  sink {
+    cell: "USER_PLL~PLL"
+    port: "CLKIN[3]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "fb~CLKOUT~19~1"
+    port: "inpad"
+  }
+  sink {
+    cell: "USER_PLL~PLL"
+    port: "FBK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_ck_RXN"
+    port: "inpad"
+  }
+  sink {
+    cell: "cam_ck~MIPI"
+    port: "N_inpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_ck~MIPI"
+    port: "N_outpad"
+  }
+  sink {
+    cell: "cam_ck_RXN"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_ck_RXP"
+    port: "inpad"
+  }
+  sink {
+    cell: "cam_ck~MIPI"
+    port: "P_inpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_ck~MIPI"
+    port: "P_outpad"
+  }
+  sink {
+    cell: "cam_ck_RXP"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_ck~MIPI"
+    port: "FASTCLKOUT"
+  }
+  sink {
+    cell: "cam_d2~MIPI"
+    port: "FASTCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_ck~MIPI"
+    port: "FASTCLKOUT"
+  }
+  sink {
+    cell: "cam_d3~MIPI"
+    port: "FASTCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_ck~MIPI"
+    port: "FASTCLKOUT"
+  }
+  sink {
+    cell: "cam_d0~MIPI"
+    port: "FASTCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_ck~MIPI"
+    port: "FASTCLKOUT"
+  }
+  sink {
+    cell: "cam_d1~MIPI"
+    port: "FASTCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d0~MIPI"
+    port: "FIFO_EMPTY"
+  }
+  sink {
+    cell: "cam_d0_FIFO_EMPTY~MIPI~FIFO_EMPTY"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d0_FIFO_RD~MIPI~FIFO_RD"
+    port: "inpad"
+  }
+  sink {
+    cell: "cam_d0~MIPI"
+    port: "FIFO_RD"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d0_HS_ENA~MIPI~HS_ENA"
+    port: "inpad"
+  }
+  sink {
+    cell: "cam_d0~MIPI"
+    port: "HS_ENA"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d0~MIPI"
+    port: "HS_IN[0]"
+  }
+  sink {
+    cell: "cam_d0_HS_IN[0]~MIPI~HS_IN[0]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d0~MIPI"
+    port: "HS_IN[1]"
+  }
+  sink {
+    cell: "cam_d0_HS_IN[1]~MIPI~HS_IN[1]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d0~MIPI"
+    port: "HS_IN[2]"
+  }
+  sink {
+    cell: "cam_d0_HS_IN[2]~MIPI~HS_IN[2]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d0~MIPI"
+    port: "HS_IN[3]"
+  }
+  sink {
+    cell: "cam_d0_HS_IN[3]~MIPI~HS_IN[3]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d0~MIPI"
+    port: "HS_IN[4]"
+  }
+  sink {
+    cell: "cam_d0_HS_IN[4]~MIPI~HS_IN[4]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d0~MIPI"
+    port: "HS_IN[5]"
+  }
+  sink {
+    cell: "cam_d0_HS_IN[5]~MIPI~HS_IN[5]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d0~MIPI"
+    port: "HS_IN[6]"
+  }
+  sink {
+    cell: "cam_d0_HS_IN[6]~MIPI~HS_IN[6]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d0~MIPI"
+    port: "HS_IN[7]"
+  }
+  sink {
+    cell: "cam_d0_HS_IN[7]~MIPI~HS_IN[7]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d0_HS_TERM~MIPI~HS_TERM"
+    port: "inpad"
+  }
+  sink {
+    cell: "cam_d0~MIPI"
+    port: "HS_TERM"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d0~MIPI"
+    port: "LP_N_IN"
+  }
+  sink {
+    cell: "cam_d0_LP_N_IN~MIPI~LP_N_IN"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d0~MIPI"
+    port: "LP_P_IN"
+  }
+  sink {
+    cell: "cam_d0_LP_P_IN~MIPI~LP_P_IN"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d0_RST~MIPI~RST"
+    port: "inpad"
+  }
+  sink {
+    cell: "cam_d0~MIPI"
+    port: "RST"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d0_RXN"
+    port: "inpad"
+  }
+  sink {
+    cell: "cam_d0~MIPI"
+    port: "N_inpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d0~MIPI"
+    port: "N_outpad"
+  }
+  sink {
+    cell: "cam_d0_RXN"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d0_RXP"
+    port: "inpad"
+  }
+  sink {
+    cell: "cam_d0~MIPI"
+    port: "P_inpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d0~MIPI"
+    port: "P_outpad"
+  }
+  sink {
+    cell: "cam_d0_RXP"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "i_cam_ck_CLKOUT~CLKOUT~82~322"
+    port: "inpad"
+  }
+  sink {
+    cell: "cam_d0~MIPI"
+    port: "FIFOCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d1~MIPI"
+    port: "FIFO_EMPTY"
+  }
+  sink {
+    cell: "cam_d1_FIFO_EMPTY~MIPI~FIFO_EMPTY"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d1_FIFO_RD~MIPI~FIFO_RD"
+    port: "inpad"
+  }
+  sink {
+    cell: "cam_d1~MIPI"
+    port: "FIFO_RD"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d1_HS_ENA~MIPI~HS_ENA"
+    port: "inpad"
+  }
+  sink {
+    cell: "cam_d1~MIPI"
+    port: "HS_ENA"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d1~MIPI"
+    port: "HS_IN[0]"
+  }
+  sink {
+    cell: "cam_d1_HS_IN[0]~MIPI~HS_IN[0]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d1~MIPI"
+    port: "HS_IN[1]"
+  }
+  sink {
+    cell: "cam_d1_HS_IN[1]~MIPI~HS_IN[1]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d1~MIPI"
+    port: "HS_IN[2]"
+  }
+  sink {
+    cell: "cam_d1_HS_IN[2]~MIPI~HS_IN[2]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d1~MIPI"
+    port: "HS_IN[3]"
+  }
+  sink {
+    cell: "cam_d1_HS_IN[3]~MIPI~HS_IN[3]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d1~MIPI"
+    port: "HS_IN[4]"
+  }
+  sink {
+    cell: "cam_d1_HS_IN[4]~MIPI~HS_IN[4]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d1~MIPI"
+    port: "HS_IN[5]"
+  }
+  sink {
+    cell: "cam_d1_HS_IN[5]~MIPI~HS_IN[5]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d1~MIPI"
+    port: "HS_IN[6]"
+  }
+  sink {
+    cell: "cam_d1_HS_IN[6]~MIPI~HS_IN[6]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d1~MIPI"
+    port: "HS_IN[7]"
+  }
+  sink {
+    cell: "cam_d1_HS_IN[7]~MIPI~HS_IN[7]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d1_HS_TERM~MIPI~HS_TERM"
+    port: "inpad"
+  }
+  sink {
+    cell: "cam_d1~MIPI"
+    port: "HS_TERM"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d1~MIPI"
+    port: "LP_N_IN"
+  }
+  sink {
+    cell: "cam_d1_LP_N_IN~MIPI~LP_N_IN"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d1~MIPI"
+    port: "LP_P_IN"
+  }
+  sink {
+    cell: "cam_d1_LP_P_IN~MIPI~LP_P_IN"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d1_RST~MIPI~RST"
+    port: "inpad"
+  }
+  sink {
+    cell: "cam_d1~MIPI"
+    port: "RST"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d1_RXN"
+    port: "inpad"
+  }
+  sink {
+    cell: "cam_d1~MIPI"
+    port: "N_inpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d1~MIPI"
+    port: "N_outpad"
+  }
+  sink {
+    cell: "cam_d1_RXN"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d1_RXP"
+    port: "inpad"
+  }
+  sink {
+    cell: "cam_d1~MIPI"
+    port: "P_inpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d1~MIPI"
+    port: "P_outpad"
+  }
+  sink {
+    cell: "cam_d1_RXP"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "i_cam_ck_CLKOUT~CLKOUT~130~322"
+    port: "inpad"
+  }
+  sink {
+    cell: "cam_d1~MIPI"
+    port: "FIFOCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d2~MIPI"
+    port: "FIFO_EMPTY"
+  }
+  sink {
+    cell: "cam_d2_FIFO_EMPTY~MIPI~FIFO_EMPTY"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d2_FIFO_RD~MIPI~FIFO_RD"
+    port: "inpad"
+  }
+  sink {
+    cell: "cam_d2~MIPI"
+    port: "FIFO_RD"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d2_HS_ENA~MIPI~HS_ENA"
+    port: "inpad"
+  }
+  sink {
+    cell: "cam_d2~MIPI"
+    port: "HS_ENA"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d2~MIPI"
+    port: "HS_IN[0]"
+  }
+  sink {
+    cell: "cam_d2_HS_IN[0]~MIPI~HS_IN[0]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d2~MIPI"
+    port: "HS_IN[1]"
+  }
+  sink {
+    cell: "cam_d2_HS_IN[1]~MIPI~HS_IN[1]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d2~MIPI"
+    port: "HS_IN[2]"
+  }
+  sink {
+    cell: "cam_d2_HS_IN[2]~MIPI~HS_IN[2]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d2~MIPI"
+    port: "HS_IN[3]"
+  }
+  sink {
+    cell: "cam_d2_HS_IN[3]~MIPI~HS_IN[3]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d2~MIPI"
+    port: "HS_IN[4]"
+  }
+  sink {
+    cell: "cam_d2_HS_IN[4]~MIPI~HS_IN[4]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d2~MIPI"
+    port: "HS_IN[5]"
+  }
+  sink {
+    cell: "cam_d2_HS_IN[5]~MIPI~HS_IN[5]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d2~MIPI"
+    port: "HS_IN[6]"
+  }
+  sink {
+    cell: "cam_d2_HS_IN[6]~MIPI~HS_IN[6]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d2~MIPI"
+    port: "HS_IN[7]"
+  }
+  sink {
+    cell: "cam_d2_HS_IN[7]~MIPI~HS_IN[7]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d2_HS_TERM~MIPI~HS_TERM"
+    port: "inpad"
+  }
+  sink {
+    cell: "cam_d2~MIPI"
+    port: "HS_TERM"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d2~MIPI"
+    port: "LP_N_IN"
+  }
+  sink {
+    cell: "cam_d2_LP_N_IN~MIPI~LP_N_IN"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d2~MIPI"
+    port: "LP_P_IN"
+  }
+  sink {
+    cell: "cam_d2_LP_P_IN~MIPI~LP_P_IN"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d2_RST~MIPI~RST"
+    port: "inpad"
+  }
+  sink {
+    cell: "cam_d2~MIPI"
+    port: "RST"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d2_RXN"
+    port: "inpad"
+  }
+  sink {
+    cell: "cam_d2~MIPI"
+    port: "N_inpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d2~MIPI"
+    port: "N_outpad"
+  }
+  sink {
+    cell: "cam_d2_RXN"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d2_RXP"
+    port: "inpad"
+  }
+  sink {
+    cell: "cam_d2~MIPI"
+    port: "P_inpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d2~MIPI"
+    port: "P_outpad"
+  }
+  sink {
+    cell: "cam_d2_RXP"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "i_cam_ck_CLKOUT~CLKOUT~73~322"
+    port: "inpad"
+  }
+  sink {
+    cell: "cam_d2~MIPI"
+    port: "FIFOCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d3~MIPI"
+    port: "FIFO_EMPTY"
+  }
+  sink {
+    cell: "cam_d3_FIFO_EMPTY~MIPI~FIFO_EMPTY"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d3_FIFO_RD~MIPI~FIFO_RD"
+    port: "inpad"
+  }
+  sink {
+    cell: "cam_d3~MIPI"
+    port: "FIFO_RD"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d3_HS_ENA~MIPI~HS_ENA"
+    port: "inpad"
+  }
+  sink {
+    cell: "cam_d3~MIPI"
+    port: "HS_ENA"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d3~MIPI"
+    port: "HS_IN[0]"
+  }
+  sink {
+    cell: "cam_d3_HS_IN[0]~MIPI~HS_IN[0]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d3~MIPI"
+    port: "HS_IN[1]"
+  }
+  sink {
+    cell: "cam_d3_HS_IN[1]~MIPI~HS_IN[1]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d3~MIPI"
+    port: "HS_IN[2]"
+  }
+  sink {
+    cell: "cam_d3_HS_IN[2]~MIPI~HS_IN[2]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d3~MIPI"
+    port: "HS_IN[3]"
+  }
+  sink {
+    cell: "cam_d3_HS_IN[3]~MIPI~HS_IN[3]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d3~MIPI"
+    port: "HS_IN[4]"
+  }
+  sink {
+    cell: "cam_d3_HS_IN[4]~MIPI~HS_IN[4]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d3~MIPI"
+    port: "HS_IN[5]"
+  }
+  sink {
+    cell: "cam_d3_HS_IN[5]~MIPI~HS_IN[5]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d3~MIPI"
+    port: "HS_IN[6]"
+  }
+  sink {
+    cell: "cam_d3_HS_IN[6]~MIPI~HS_IN[6]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d3~MIPI"
+    port: "HS_IN[7]"
+  }
+  sink {
+    cell: "cam_d3_HS_IN[7]~MIPI~HS_IN[7]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d3_HS_TERM~MIPI~HS_TERM"
+    port: "inpad"
+  }
+  sink {
+    cell: "cam_d3~MIPI"
+    port: "HS_TERM"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d3~MIPI"
+    port: "LP_N_IN"
+  }
+  sink {
+    cell: "cam_d3_LP_N_IN~MIPI~LP_N_IN"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d3~MIPI"
+    port: "LP_P_IN"
+  }
+  sink {
+    cell: "cam_d3_LP_P_IN~MIPI~LP_P_IN"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d3_RST~MIPI~RST"
+    port: "inpad"
+  }
+  sink {
+    cell: "cam_d3~MIPI"
+    port: "RST"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d3_RXN"
+    port: "inpad"
+  }
+  sink {
+    cell: "cam_d3~MIPI"
+    port: "N_inpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d3~MIPI"
+    port: "N_outpad"
+  }
+  sink {
+    cell: "cam_d3_RXN"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d3_RXP"
+    port: "inpad"
+  }
+  sink {
+    cell: "cam_d3~MIPI"
+    port: "P_inpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_d3~MIPI"
+    port: "P_outpad"
+  }
+  sink {
+    cell: "cam_d3_RXP"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "i_cam_ck_CLKOUT~CLKOUT~141~322"
+    port: "inpad"
+  }
+  sink {
+    cell: "cam_d3~MIPI"
+    port: "FIFOCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "DDR3_PLL~PLL"
+    port: "CLKOUT4"
+  }
+  sink {
+    cell: "clk_100m~PLL~CLKOUT4"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "MIPI_TX_PLL~PLL"
+    port: "CLKOUT1"
+  }
+  sink {
+    cell: "core_clk~PLL~CLKOUT1"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_addr[0]~GPIO"
+    port: "IO_outpad"
+  }
+  sink {
+    cell: "ddr_addr[0]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "sdram_clk~CLKOUT~218~95"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_addr[0]~GPIO"
+    port: "OUTCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_addr[0]~GPIO~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_addr[0]~GPIO"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_addr[10]~GPIO"
+    port: "IO_outpad"
+  }
+  sink {
+    cell: "ddr_addr[10]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "sdram_clk~CLKOUT~218~138"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_addr[10]~GPIO"
+    port: "OUTCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_addr[10]~GPIO~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_addr[10]~GPIO"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_addr[11]~GPIO"
+    port: "IO_outpad"
+  }
+  sink {
+    cell: "ddr_addr[11]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "sdram_clk~CLKOUT~218~60"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_addr[11]~GPIO"
+    port: "OUTCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_addr[11]~GPIO~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_addr[11]~GPIO"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_addr[12]~GPIO"
+    port: "IO_outpad"
+  }
+  sink {
+    cell: "ddr_addr[12]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "sdram_clk~CLKOUT~218~35"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_addr[12]~GPIO"
+    port: "OUTCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_addr[12]~GPIO~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_addr[12]~GPIO"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_addr[13]~GPIO"
+    port: "IO_outpad"
+  }
+  sink {
+    cell: "ddr_addr[13]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "sdram_clk~CLKOUT~218~71"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_addr[13]~GPIO"
+    port: "OUTCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_addr[13]~GPIO~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_addr[13]~GPIO"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_addr[14]~GPIO"
+    port: "IO_outpad"
+  }
+  sink {
+    cell: "ddr_addr[14]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "sdram_clk~CLKOUT~218~109"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_addr[14]~GPIO"
+    port: "OUTCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_addr[14]~GPIO~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_addr[14]~GPIO"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_addr[15]~GPIO"
+    port: "IO_outpad"
+  }
+  sink {
+    cell: "ddr_addr[15]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "sdram_clk~CLKOUT~143~1"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_addr[15]~GPIO"
+    port: "OUTCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_addr[15]~GPIO~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_addr[15]~GPIO"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_addr[1]~GPIO"
+    port: "IO_outpad"
+  }
+  sink {
+    cell: "ddr_addr[1]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "sdram_clk~CLKOUT~218~36"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_addr[1]~GPIO"
+    port: "OUTCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_addr[1]~GPIO~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_addr[1]~GPIO"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_addr[2]~GPIO"
+    port: "IO_outpad"
+  }
+  sink {
+    cell: "ddr_addr[2]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "sdram_clk~CLKOUT~218~70"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_addr[2]~GPIO"
+    port: "OUTCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_addr[2]~GPIO~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_addr[2]~GPIO"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_addr[3]~GPIO"
+    port: "IO_outpad"
+  }
+  sink {
+    cell: "ddr_addr[3]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "sdram_clk~CLKOUT~50~1"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_addr[3]~GPIO"
+    port: "OUTCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_addr[3]~GPIO~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_addr[3]~GPIO"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_addr[4]~GPIO"
+    port: "IO_outpad"
+  }
+  sink {
+    cell: "ddr_addr[4]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "sdram_clk~CLKOUT~218~25"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_addr[4]~GPIO"
+    port: "OUTCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_addr[4]~GPIO~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_addr[4]~GPIO"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_addr[5]~GPIO"
+    port: "IO_outpad"
+  }
+  sink {
+    cell: "ddr_addr[5]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "sdram_clk~CLKOUT~142~1"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_addr[5]~GPIO"
+    port: "OUTCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_addr[5]~GPIO~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_addr[5]~GPIO"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_addr[6]~GPIO"
+    port: "IO_outpad"
+  }
+  sink {
+    cell: "ddr_addr[6]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "sdram_clk~CLKOUT~218~59"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_addr[6]~GPIO"
+    port: "OUTCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_addr[6]~GPIO~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_addr[6]~GPIO"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_addr[7]~GPIO"
+    port: "IO_outpad"
+  }
+  sink {
+    cell: "ddr_addr[7]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "sdram_clk~CLKOUT~218~110"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_addr[7]~GPIO"
+    port: "OUTCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_addr[7]~GPIO~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_addr[7]~GPIO"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_addr[8]~GPIO"
+    port: "IO_outpad"
+  }
+  sink {
+    cell: "ddr_addr[8]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "sdram_clk~CLKOUT~218~26"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_addr[8]~GPIO"
+    port: "OUTCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_addr[8]~GPIO~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_addr[8]~GPIO"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_addr[9]~GPIO"
+    port: "IO_outpad"
+  }
+  sink {
+    cell: "ddr_addr[9]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "sdram_clk~CLKOUT~218~127"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_addr[9]~GPIO"
+    port: "OUTCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_addr[9]~GPIO~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_addr[9]~GPIO"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_ba[0]~GPIO"
+    port: "IO_outpad"
+  }
+  sink {
+    cell: "ddr_ba[0]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "sdram_clk~CLKOUT~74~1"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_ba[0]~GPIO"
+    port: "OUTCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_ba[0]~GPIO~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_ba[0]~GPIO"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_ba[1]~GPIO"
+    port: "IO_outpad"
+  }
+  sink {
+    cell: "ddr_ba[1]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "sdram_clk~CLKOUT~132~1"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_ba[1]~GPIO"
+    port: "OUTCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_ba[1]~GPIO~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_ba[1]~GPIO"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_ba[2]~GPIO"
+    port: "IO_outpad"
+  }
+  sink {
+    cell: "ddr_ba[2]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "sdram_clk~CLKOUT~218~126"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_ba[2]~GPIO"
+    port: "OUTCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_ba[2]~GPIO~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_ba[2]~GPIO"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_cas_n~GPIO"
+    port: "IO_outpad"
+  }
+  sink {
+    cell: "ddr_cas_n"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "sdram_clk~CLKOUT~218~49"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_cas_n~GPIO"
+    port: "OUTCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_cas_n~GPIO~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_cas_n~GPIO"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_ck_N"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_ck~GPIO"
+    port: "N_inpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_ck~GPIO"
+    port: "N_outpad"
+  }
+  sink {
+    cell: "ddr_ck_N"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_ck_P"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_ck~GPIO"
+    port: "P_inpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_ck~GPIO"
+    port: "P_outpad"
+  }
+  sink {
+    cell: "ddr_ck_P"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_ck_hi~GPIO~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_ck~GPIO"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_ck_lo~GPIO~O[1]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_ck~GPIO"
+    port: "O[1]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_cke[0]~GPIO"
+    port: "IO_outpad"
+  }
+  sink {
+    cell: "ddr_cke[0]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "sdram_clk~CLKOUT~123~1"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_cke[0]~GPIO"
+    port: "OUTCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_cke[0]~GPIO~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_cke[0]~GPIO"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "sdram_clk~CLKOUT~218~150"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_ck~GPIO"
+    port: "OUTCLKN"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "sdram_clk~CLKOUT~218~149"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_ck~GPIO"
+    port: "OUTCLKP"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_cs_n[0]~GPIO"
+    port: "IO_outpad"
+  }
+  sink {
+    cell: "ddr_cs_n[0]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "sdram_clk~CLKOUT~95~1"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_cs_n[0]~GPIO"
+    port: "OUTCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_cs_n[0]~GPIO~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_cs_n[0]~GPIO"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tx_cal_clk_90edge~CLKOUT~131~1"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dm[0]~GPIO"
+    port: "OUTCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tx_cal_clk_90edge~CLKOUT~83~1"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dm[1]~GPIO"
+    port: "OUTCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dm[0]~GPIO"
+    port: "IO_outpad"
+  }
+  sink {
+    cell: "ddr_dm_hi[0]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dm_hi[0]~GPIO~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dm[0]~GPIO"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dm[1]~GPIO"
+    port: "IO_outpad"
+  }
+  sink {
+    cell: "ddr_dm_hi[1]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dm_hi[1]~GPIO~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dm[1]~GPIO"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dm_lo[0]~GPIO~O[1]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dm[0]~GPIO"
+    port: "O[1]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dm_lo[1]~GPIO~O[1]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dm[1]~GPIO"
+    port: "O[1]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[0]~GPIO"
+    port: "IO_inpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq[0]~GPIO"
+    port: "IO_outpad"
+  }
+  sink {
+    cell: "ddr_dq[0]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "rx_cal_clk~CLKOUT~148~1"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[0]~GPIO"
+    port: "INCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tx_cal_clk_90edge~CLKOUT~150~1"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[0]~GPIO"
+    port: "OUTCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq[10]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[10]~GPIO"
+    port: "IO_inpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq[10]~GPIO"
+    port: "IO_outpad"
+  }
+  sink {
+    cell: "ddr_dq[10]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "rx_cal_clk~CLKOUT~22~1"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[10]~GPIO"
+    port: "INCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tx_cal_clk_90edge~CLKOUT~24~1"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[10]~GPIO"
+    port: "OUTCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq[11]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[11]~GPIO"
+    port: "IO_inpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq[11]~GPIO"
+    port: "IO_outpad"
+  }
+  sink {
+    cell: "ddr_dq[11]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "rx_cal_clk~CLKOUT~92~1"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[11]~GPIO"
+    port: "INCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tx_cal_clk_90edge~CLKOUT~94~1"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[11]~GPIO"
+    port: "OUTCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq[12]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[12]~GPIO"
+    port: "IO_inpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq[12]~GPIO"
+    port: "IO_outpad"
+  }
+  sink {
+    cell: "ddr_dq[12]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "rx_cal_clk~CLKOUT~23~1"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[12]~GPIO"
+    port: "INCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tx_cal_clk_90edge~CLKOUT~25~1"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[12]~GPIO"
+    port: "OUTCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq[13]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[13]~GPIO"
+    port: "IO_inpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq[13]~GPIO"
+    port: "IO_outpad"
+  }
+  sink {
+    cell: "ddr_dq[13]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "rx_cal_clk~CLKOUT~38~1"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[13]~GPIO"
+    port: "INCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tx_cal_clk_90edge~CLKOUT~40~1"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[13]~GPIO"
+    port: "OUTCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq[14]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[14]~GPIO"
+    port: "IO_inpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq[14]~GPIO"
+    port: "IO_outpad"
+  }
+  sink {
+    cell: "ddr_dq[14]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "rx_cal_clk~CLKOUT~11~1"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[14]~GPIO"
+    port: "INCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tx_cal_clk_90edge~CLKOUT~13~1"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[14]~GPIO"
+    port: "OUTCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq[15]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[15]~GPIO"
+    port: "IO_inpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq[15]~GPIO"
+    port: "IO_outpad"
+  }
+  sink {
+    cell: "ddr_dq[15]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "rx_cal_clk~CLKOUT~12~1"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[15]~GPIO"
+    port: "INCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tx_cal_clk_90edge~CLKOUT~14~1"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[15]~GPIO"
+    port: "OUTCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq[1]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[1]~GPIO"
+    port: "IO_inpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq[1]~GPIO"
+    port: "IO_outpad"
+  }
+  sink {
+    cell: "ddr_dq[1]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "rx_cal_clk~CLKOUT~157~1"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[1]~GPIO"
+    port: "INCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tx_cal_clk_90edge~CLKOUT~159~1"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[1]~GPIO"
+    port: "OUTCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq[2]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[2]~GPIO"
+    port: "IO_inpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq[2]~GPIO"
+    port: "IO_outpad"
+  }
+  sink {
+    cell: "ddr_dq[2]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "rx_cal_clk~CLKOUT~164~1"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[2]~GPIO"
+    port: "INCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tx_cal_clk_90edge~CLKOUT~166~1"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[2]~GPIO"
+    port: "OUTCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq[3]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[3]~GPIO"
+    port: "IO_inpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq[3]~GPIO"
+    port: "IO_outpad"
+  }
+  sink {
+    cell: "ddr_dq[3]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "rx_cal_clk~CLKOUT~149~1"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[3]~GPIO"
+    port: "INCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tx_cal_clk_90edge~CLKOUT~151~1"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[3]~GPIO"
+    port: "OUTCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq[4]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[4]~GPIO"
+    port: "IO_inpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq[4]~GPIO"
+    port: "IO_outpad"
+  }
+  sink {
+    cell: "ddr_dq[4]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "rx_cal_clk~CLKOUT~189~1"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[4]~GPIO"
+    port: "INCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tx_cal_clk_90edge~CLKOUT~191~1"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[4]~GPIO"
+    port: "OUTCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq[5]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[5]~GPIO"
+    port: "IO_inpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq[5]~GPIO"
+    port: "IO_outpad"
+  }
+  sink {
+    cell: "ddr_dq[5]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "rx_cal_clk~CLKOUT~156~1"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[5]~GPIO"
+    port: "INCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tx_cal_clk_90edge~CLKOUT~158~1"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[5]~GPIO"
+    port: "OUTCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq[6]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[6]~GPIO"
+    port: "IO_inpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq[6]~GPIO"
+    port: "IO_outpad"
+  }
+  sink {
+    cell: "ddr_dq[6]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "rx_cal_clk~CLKOUT~165~1"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[6]~GPIO"
+    port: "INCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tx_cal_clk_90edge~CLKOUT~167~1"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[6]~GPIO"
+    port: "OUTCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq[7]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[7]~GPIO"
+    port: "IO_inpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq[7]~GPIO"
+    port: "IO_outpad"
+  }
+  sink {
+    cell: "ddr_dq[7]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "rx_cal_clk~CLKOUT~188~1"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[7]~GPIO"
+    port: "INCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tx_cal_clk_90edge~CLKOUT~190~1"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[7]~GPIO"
+    port: "OUTCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq[8]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[8]~GPIO"
+    port: "IO_inpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq[8]~GPIO"
+    port: "IO_outpad"
+  }
+  sink {
+    cell: "ddr_dq[8]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "rx_cal_clk~CLKOUT~82~1"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[8]~GPIO"
+    port: "INCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tx_cal_clk_90edge~CLKOUT~84~1"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[8]~GPIO"
+    port: "OUTCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq[9]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[9]~GPIO"
+    port: "IO_inpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq[9]~GPIO"
+    port: "IO_outpad"
+  }
+  sink {
+    cell: "ddr_dq[9]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "rx_cal_clk~CLKOUT~39~1"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[9]~GPIO"
+    port: "INCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tx_cal_clk_90edge~CLKOUT~41~1"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[9]~GPIO"
+    port: "OUTCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq[0]~GPIO"
+    port: "I[0]"
+  }
+  sink {
+    cell: "ddr_dq_in_hi[0]~GPIO~I[0]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq[10]~GPIO"
+    port: "I[0]"
+  }
+  sink {
+    cell: "ddr_dq_in_hi[10]~GPIO~I[0]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq[11]~GPIO"
+    port: "I[0]"
+  }
+  sink {
+    cell: "ddr_dq_in_hi[11]~GPIO~I[0]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq[12]~GPIO"
+    port: "I[0]"
+  }
+  sink {
+    cell: "ddr_dq_in_hi[12]~GPIO~I[0]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq[13]~GPIO"
+    port: "I[0]"
+  }
+  sink {
+    cell: "ddr_dq_in_hi[13]~GPIO~I[0]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq[14]~GPIO"
+    port: "I[0]"
+  }
+  sink {
+    cell: "ddr_dq_in_hi[14]~GPIO~I[0]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq[15]~GPIO"
+    port: "I[0]"
+  }
+  sink {
+    cell: "ddr_dq_in_hi[15]~GPIO~I[0]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq[1]~GPIO"
+    port: "I[0]"
+  }
+  sink {
+    cell: "ddr_dq_in_hi[1]~GPIO~I[0]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq[2]~GPIO"
+    port: "I[0]"
+  }
+  sink {
+    cell: "ddr_dq_in_hi[2]~GPIO~I[0]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq[3]~GPIO"
+    port: "I[0]"
+  }
+  sink {
+    cell: "ddr_dq_in_hi[3]~GPIO~I[0]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq[4]~GPIO"
+    port: "I[0]"
+  }
+  sink {
+    cell: "ddr_dq_in_hi[4]~GPIO~I[0]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq[5]~GPIO"
+    port: "I[0]"
+  }
+  sink {
+    cell: "ddr_dq_in_hi[5]~GPIO~I[0]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq[6]~GPIO"
+    port: "I[0]"
+  }
+  sink {
+    cell: "ddr_dq_in_hi[6]~GPIO~I[0]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq[7]~GPIO"
+    port: "I[0]"
+  }
+  sink {
+    cell: "ddr_dq_in_hi[7]~GPIO~I[0]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq[8]~GPIO"
+    port: "I[0]"
+  }
+  sink {
+    cell: "ddr_dq_in_hi[8]~GPIO~I[0]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq[9]~GPIO"
+    port: "I[0]"
+  }
+  sink {
+    cell: "ddr_dq_in_hi[9]~GPIO~I[0]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq[0]~GPIO"
+    port: "I[1]"
+  }
+  sink {
+    cell: "ddr_dq_in_lo[0]~GPIO~I[1]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq[10]~GPIO"
+    port: "I[1]"
+  }
+  sink {
+    cell: "ddr_dq_in_lo[10]~GPIO~I[1]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq[11]~GPIO"
+    port: "I[1]"
+  }
+  sink {
+    cell: "ddr_dq_in_lo[11]~GPIO~I[1]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq[12]~GPIO"
+    port: "I[1]"
+  }
+  sink {
+    cell: "ddr_dq_in_lo[12]~GPIO~I[1]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq[13]~GPIO"
+    port: "I[1]"
+  }
+  sink {
+    cell: "ddr_dq_in_lo[13]~GPIO~I[1]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq[14]~GPIO"
+    port: "I[1]"
+  }
+  sink {
+    cell: "ddr_dq_in_lo[14]~GPIO~I[1]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq[15]~GPIO"
+    port: "I[1]"
+  }
+  sink {
+    cell: "ddr_dq_in_lo[15]~GPIO~I[1]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq[1]~GPIO"
+    port: "I[1]"
+  }
+  sink {
+    cell: "ddr_dq_in_lo[1]~GPIO~I[1]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq[2]~GPIO"
+    port: "I[1]"
+  }
+  sink {
+    cell: "ddr_dq_in_lo[2]~GPIO~I[1]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq[3]~GPIO"
+    port: "I[1]"
+  }
+  sink {
+    cell: "ddr_dq_in_lo[3]~GPIO~I[1]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq[4]~GPIO"
+    port: "I[1]"
+  }
+  sink {
+    cell: "ddr_dq_in_lo[4]~GPIO~I[1]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq[5]~GPIO"
+    port: "I[1]"
+  }
+  sink {
+    cell: "ddr_dq_in_lo[5]~GPIO~I[1]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq[6]~GPIO"
+    port: "I[1]"
+  }
+  sink {
+    cell: "ddr_dq_in_lo[6]~GPIO~I[1]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq[7]~GPIO"
+    port: "I[1]"
+  }
+  sink {
+    cell: "ddr_dq_in_lo[7]~GPIO~I[1]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq[8]~GPIO"
+    port: "I[1]"
+  }
+  sink {
+    cell: "ddr_dq_in_lo[8]~GPIO~I[1]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq[9]~GPIO"
+    port: "I[1]"
+  }
+  sink {
+    cell: "ddr_dq_in_lo[9]~GPIO~I[1]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq_oe[0]~GPIO~OE"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[0]~GPIO"
+    port: "OE"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq_oe[10]~GPIO~OE"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[10]~GPIO"
+    port: "OE"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq_oe[11]~GPIO~OE"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[11]~GPIO"
+    port: "OE"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq_oe[12]~GPIO~OE"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[12]~GPIO"
+    port: "OE"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq_oe[13]~GPIO~OE"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[13]~GPIO"
+    port: "OE"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq_oe[14]~GPIO~OE"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[14]~GPIO"
+    port: "OE"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq_oe[15]~GPIO~OE"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[15]~GPIO"
+    port: "OE"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq_oe[1]~GPIO~OE"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[1]~GPIO"
+    port: "OE"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq_oe[2]~GPIO~OE"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[2]~GPIO"
+    port: "OE"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq_oe[3]~GPIO~OE"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[3]~GPIO"
+    port: "OE"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq_oe[4]~GPIO~OE"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[4]~GPIO"
+    port: "OE"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq_oe[5]~GPIO~OE"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[5]~GPIO"
+    port: "OE"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq_oe[6]~GPIO~OE"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[6]~GPIO"
+    port: "OE"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq_oe[7]~GPIO~OE"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[7]~GPIO"
+    port: "OE"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq_oe[8]~GPIO~OE"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[8]~GPIO"
+    port: "OE"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq_oe[9]~GPIO~OE"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[9]~GPIO"
+    port: "OE"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq_out_hi[0]~GPIO~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[0]~GPIO"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq_out_hi[10]~GPIO~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[10]~GPIO"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq_out_hi[11]~GPIO~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[11]~GPIO"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq_out_hi[12]~GPIO~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[12]~GPIO"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq_out_hi[13]~GPIO~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[13]~GPIO"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq_out_hi[14]~GPIO~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[14]~GPIO"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq_out_hi[15]~GPIO~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[15]~GPIO"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq_out_hi[1]~GPIO~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[1]~GPIO"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq_out_hi[2]~GPIO~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[2]~GPIO"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq_out_hi[3]~GPIO~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[3]~GPIO"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq_out_hi[4]~GPIO~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[4]~GPIO"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq_out_hi[5]~GPIO~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[5]~GPIO"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq_out_hi[6]~GPIO~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[6]~GPIO"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq_out_hi[7]~GPIO~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[7]~GPIO"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq_out_hi[8]~GPIO~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[8]~GPIO"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq_out_hi[9]~GPIO~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[9]~GPIO"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq_out_lo[0]~GPIO~O[1]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[0]~GPIO"
+    port: "O[1]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq_out_lo[10]~GPIO~O[1]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[10]~GPIO"
+    port: "O[1]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq_out_lo[11]~GPIO~O[1]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[11]~GPIO"
+    port: "O[1]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq_out_lo[12]~GPIO~O[1]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[12]~GPIO"
+    port: "O[1]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq_out_lo[13]~GPIO~O[1]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[13]~GPIO"
+    port: "O[1]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq_out_lo[14]~GPIO~O[1]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[14]~GPIO"
+    port: "O[1]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq_out_lo[15]~GPIO~O[1]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[15]~GPIO"
+    port: "O[1]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq_out_lo[1]~GPIO~O[1]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[1]~GPIO"
+    port: "O[1]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq_out_lo[2]~GPIO~O[1]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[2]~GPIO"
+    port: "O[1]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq_out_lo[3]~GPIO~O[1]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[3]~GPIO"
+    port: "O[1]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq_out_lo[4]~GPIO~O[1]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[4]~GPIO"
+    port: "O[1]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq_out_lo[5]~GPIO~O[1]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[5]~GPIO"
+    port: "O[1]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq_out_lo[6]~GPIO~O[1]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[6]~GPIO"
+    port: "O[1]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq_out_lo[7]~GPIO~O[1]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[7]~GPIO"
+    port: "O[1]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq_out_lo[8]~GPIO~O[1]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[8]~GPIO"
+    port: "O[1]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dq_out_lo[9]~GPIO~O[1]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dq[9]~GPIO"
+    port: "O[1]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dqs[0]_N"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dqs[0]~GPIO"
+    port: "N_inpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dqs[0]~GPIO"
+    port: "N_outpad"
+  }
+  sink {
+    cell: "ddr_dqs[0]_N"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dqs[0]_P"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dqs[0]~GPIO"
+    port: "P_inpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dqs[0]~GPIO"
+    port: "P_outpad"
+  }
+  sink {
+    cell: "ddr_dqs[0]_P"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "rx_cal_clk~CLKOUT~172~1"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dqs[0]~GPIO"
+    port: "INCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tx_cal_clk~CLKOUT~175~1"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dqs[0]~GPIO"
+    port: "OUTCLKN"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tx_cal_clk~CLKOUT~174~1"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dqs[0]~GPIO"
+    port: "OUTCLKP"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dqs[1]_N"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dqs[1]~GPIO"
+    port: "N_inpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dqs[1]~GPIO"
+    port: "N_outpad"
+  }
+  sink {
+    cell: "ddr_dqs[1]_N"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dqs[1]_P"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dqs[1]~GPIO"
+    port: "P_inpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dqs[1]~GPIO"
+    port: "P_outpad"
+  }
+  sink {
+    cell: "ddr_dqs[1]_P"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "rx_cal_clk~CLKOUT~30~1"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dqs[1]~GPIO"
+    port: "INCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tx_cal_clk~CLKOUT~33~1"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dqs[1]~GPIO"
+    port: "OUTCLKN"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tx_cal_clk~CLKOUT~32~1"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dqs[1]~GPIO"
+    port: "OUTCLKP"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dqs[0]~GPIO"
+    port: "I[0]"
+  }
+  sink {
+    cell: "ddr_dqs_in_hi[0]~GPIO~I[0]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dqs[1]~GPIO"
+    port: "I[0]"
+  }
+  sink {
+    cell: "ddr_dqs_in_hi[1]~GPIO~I[0]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dqs[0]~GPIO"
+    port: "I[1]"
+  }
+  sink {
+    cell: "ddr_dqs_in_lo[0]~GPIO~I[1]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dqs[1]~GPIO"
+    port: "I[1]"
+  }
+  sink {
+    cell: "ddr_dqs_in_lo[1]~GPIO~I[1]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dqs_oe[0]~GPIO~OEP"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dqs[0]~GPIO"
+    port: "OEP"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dqs_oe[1]~GPIO~OEP"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dqs[1]~GPIO"
+    port: "OEP"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dqs_oe_n[0]~GPIO~OEN"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dqs[0]~GPIO"
+    port: "OEN"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dqs_oe_n[1]~GPIO~OEN"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dqs[1]~GPIO"
+    port: "OEN"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dqs_out_hi[0]~GPIO~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dqs[0]~GPIO"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dqs_out_hi[1]~GPIO~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dqs[1]~GPIO"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dqs_out_lo[0]~GPIO~O[1]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dqs[0]~GPIO"
+    port: "O[1]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_dqs_out_lo[1]~GPIO~O[1]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_dqs[1]~GPIO"
+    port: "O[1]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_odt[0]~GPIO"
+    port: "IO_outpad"
+  }
+  sink {
+    cell: "ddr_odt[0]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "sdram_clk~CLKOUT~73~1"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_odt[0]~GPIO"
+    port: "OUTCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_odt[0]~GPIO~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_odt[0]~GPIO"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_ras_n~GPIO"
+    port: "IO_outpad"
+  }
+  sink {
+    cell: "ddr_ras_n"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "sdram_clk~CLKOUT~218~48"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_ras_n~GPIO"
+    port: "OUTCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_ras_n~GPIO~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_ras_n~GPIO"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_reset_n~GPIO"
+    port: "IO_outpad"
+  }
+  sink {
+    cell: "ddr_reset_n"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_reset_n~GPIO~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_reset_n~GPIO"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_we_n~GPIO"
+    port: "IO_outpad"
+  }
+  sink {
+    cell: "ddr_we_n"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "sdram_clk~CLKOUT~218~94"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_we_n~GPIO"
+    port: "OUTCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "ddr_we_n~GPIO~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "ddr_we_n~GPIO"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "display_sw1_n"
+    port: "inpad"
+  }
+  sink {
+    cell: "display_sw1_n~GPIO"
+    port: "IO_inpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "display_sw1_n~GPIO"
+    port: "I[0]"
+  }
+  sink {
+    cell: "display_sw1_n~GPIO~I[0]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "USER_PLL~PLL"
+    port: "CLKOUT2"
+  }
+  sink {
+    cell: "fb~PLL~CLKOUT2"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "fisheye_sw3_n"
+    port: "inpad"
+  }
+  sink {
+    cell: "fisheye_sw3_n~GPIO"
+    port: "IO_inpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "fisheye_sw3_n~GPIO"
+    port: "I[0]"
+  }
+  sink {
+    cell: "fisheye_sw3_n~GPIO~I[0]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "hdmi_rx_clk_RXN"
+    port: "inpad"
+  }
+  sink {
+    cell: "hdmi_rx_clk~LVDS"
+    port: "N"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "hdmi_rx_clk_RXP"
+    port: "inpad"
+  }
+  sink {
+    cell: "hdmi_rx_clk~LVDS"
+    port: "P"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "hdmi_rx_clk_RX_DLY_ENA~LVDS~DLY_ENA"
+    port: "inpad"
+  }
+  sink {
+    cell: "hdmi_rx_clk~LVDS"
+    port: "DLY_ENA"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "hdmi_rx_clk_RX_DLY_INC~LVDS~DLY_INC"
+    port: "inpad"
+  }
+  sink {
+    cell: "hdmi_rx_clk~LVDS"
+    port: "DLY_INC"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "hdmi_rx_clk_RX_DLY_RST~LVDS~DLY_RST"
+    port: "inpad"
+  }
+  sink {
+    cell: "hdmi_rx_clk~LVDS"
+    port: "DLY_RST"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "hdmi_rx_clk_RX_ENA~LVDS~ENA"
+    port: "inpad"
+  }
+  sink {
+    cell: "hdmi_rx_clk~LVDS"
+    port: "ENA"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "hdmi_rx_clk~LVDS"
+    port: "ALT"
+  }
+  sink {
+    cell: "hdmi_rx_pll~PLL"
+    port: "CLKIN[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "hdmi_rx_slow_clk~CLKOUT~218~297"
+    port: "inpad"
+  }
+  sink {
+    cell: "hdmi_rx_clk~LVDS"
+    port: "SLOWCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "hdmi_rx_d0_RXN"
+    port: "inpad"
+  }
+  sink {
+    cell: "hdmi_rx_d0~LVDS"
+    port: "N"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "hdmi_rx_d0_RXP"
+    port: "inpad"
+  }
+  sink {
+    cell: "hdmi_rx_d0~LVDS"
+    port: "P"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "hdmi_rx_d0~LVDS"
+    port: "I[0]"
+  }
+  sink {
+    cell: "hdmi_rx_d0_RX_DATA[0]~LVDS~I[0]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "hdmi_rx_d0~LVDS"
+    port: "I[1]"
+  }
+  sink {
+    cell: "hdmi_rx_d0_RX_DATA[1]~LVDS~I[1]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "hdmi_rx_d0~LVDS"
+    port: "I[2]"
+  }
+  sink {
+    cell: "hdmi_rx_d0_RX_DATA[2]~LVDS~I[2]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "hdmi_rx_d0~LVDS"
+    port: "I[3]"
+  }
+  sink {
+    cell: "hdmi_rx_d0_RX_DATA[3]~LVDS~I[3]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "hdmi_rx_d0~LVDS"
+    port: "I[4]"
+  }
+  sink {
+    cell: "hdmi_rx_d0_RX_DATA[4]~LVDS~I[4]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "hdmi_rx_d0~LVDS"
+    port: "I[5]"
+  }
+  sink {
+    cell: "hdmi_rx_d0_RX_DATA[5]~LVDS~I[5]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "hdmi_rx_d0~LVDS"
+    port: "I[6]"
+  }
+  sink {
+    cell: "hdmi_rx_d0_RX_DATA[6]~LVDS~I[6]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "hdmi_rx_d0~LVDS"
+    port: "I[7]"
+  }
+  sink {
+    cell: "hdmi_rx_d0_RX_DATA[7]~LVDS~I[7]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "hdmi_rx_d0~LVDS"
+    port: "I[8]"
+  }
+  sink {
+    cell: "hdmi_rx_d0_RX_DATA[8]~LVDS~I[8]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "hdmi_rx_d0~LVDS"
+    port: "I[9]"
+  }
+  sink {
+    cell: "hdmi_rx_d0_RX_DATA[9]~LVDS~I[9]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "hdmi_rx_d0_RX_ENA~LVDS~ENA"
+    port: "inpad"
+  }
+  sink {
+    cell: "hdmi_rx_d0~LVDS"
+    port: "ENA"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "hdmi_rx_d0_RX_RST~LVDS~RST"
+    port: "inpad"
+  }
+  sink {
+    cell: "hdmi_rx_d0~LVDS"
+    port: "RST"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "hdmi_rx_fast_clk~CLKOUT~218~254"
+    port: "inpad"
+  }
+  sink {
+    cell: "hdmi_rx_d0~LVDS"
+    port: "FASTCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "hdmi_rx_slow_clk~CLKOUT~218~258"
+    port: "inpad"
+  }
+  sink {
+    cell: "hdmi_rx_d0~LVDS"
+    port: "SLOWCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "hdmi_rx_d1_RXN"
+    port: "inpad"
+  }
+  sink {
+    cell: "hdmi_rx_d1~LVDS"
+    port: "N"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "hdmi_rx_d1_RXP"
+    port: "inpad"
+  }
+  sink {
+    cell: "hdmi_rx_d1~LVDS"
+    port: "P"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "hdmi_rx_d1~LVDS"
+    port: "I[0]"
+  }
+  sink {
+    cell: "hdmi_rx_d1_RX_DATA[0]~LVDS~I[0]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "hdmi_rx_d1~LVDS"
+    port: "I[1]"
+  }
+  sink {
+    cell: "hdmi_rx_d1_RX_DATA[1]~LVDS~I[1]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "hdmi_rx_d1~LVDS"
+    port: "I[2]"
+  }
+  sink {
+    cell: "hdmi_rx_d1_RX_DATA[2]~LVDS~I[2]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "hdmi_rx_d1~LVDS"
+    port: "I[3]"
+  }
+  sink {
+    cell: "hdmi_rx_d1_RX_DATA[3]~LVDS~I[3]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "hdmi_rx_d1~LVDS"
+    port: "I[4]"
+  }
+  sink {
+    cell: "hdmi_rx_d1_RX_DATA[4]~LVDS~I[4]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "hdmi_rx_d1~LVDS"
+    port: "I[5]"
+  }
+  sink {
+    cell: "hdmi_rx_d1_RX_DATA[5]~LVDS~I[5]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "hdmi_rx_d1~LVDS"
+    port: "I[6]"
+  }
+  sink {
+    cell: "hdmi_rx_d1_RX_DATA[6]~LVDS~I[6]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "hdmi_rx_d1~LVDS"
+    port: "I[7]"
+  }
+  sink {
+    cell: "hdmi_rx_d1_RX_DATA[7]~LVDS~I[7]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "hdmi_rx_d1~LVDS"
+    port: "I[8]"
+  }
+  sink {
+    cell: "hdmi_rx_d1_RX_DATA[8]~LVDS~I[8]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "hdmi_rx_d1~LVDS"
+    port: "I[9]"
+  }
+  sink {
+    cell: "hdmi_rx_d1_RX_DATA[9]~LVDS~I[9]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "hdmi_rx_d1_RX_ENA~LVDS~ENA"
+    port: "inpad"
+  }
+  sink {
+    cell: "hdmi_rx_d1~LVDS"
+    port: "ENA"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "hdmi_rx_d1_RX_RST~LVDS~RST"
+    port: "inpad"
+  }
+  sink {
+    cell: "hdmi_rx_d1~LVDS"
+    port: "RST"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "hdmi_rx_fast_clk~CLKOUT~218~277"
+    port: "inpad"
+  }
+  sink {
+    cell: "hdmi_rx_d1~LVDS"
+    port: "FASTCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "hdmi_rx_slow_clk~CLKOUT~218~283"
+    port: "inpad"
+  }
+  sink {
+    cell: "hdmi_rx_d1~LVDS"
+    port: "SLOWCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "hdmi_rx_d2_RXN"
+    port: "inpad"
+  }
+  sink {
+    cell: "hdmi_rx_d2~LVDS"
+    port: "N"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "hdmi_rx_d2_RXP"
+    port: "inpad"
+  }
+  sink {
+    cell: "hdmi_rx_d2~LVDS"
+    port: "P"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "hdmi_rx_d2~LVDS"
+    port: "I[0]"
+  }
+  sink {
+    cell: "hdmi_rx_d2_RX_DATA[0]~LVDS~I[0]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "hdmi_rx_d2~LVDS"
+    port: "I[1]"
+  }
+  sink {
+    cell: "hdmi_rx_d2_RX_DATA[1]~LVDS~I[1]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "hdmi_rx_d2~LVDS"
+    port: "I[2]"
+  }
+  sink {
+    cell: "hdmi_rx_d2_RX_DATA[2]~LVDS~I[2]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "hdmi_rx_d2~LVDS"
+    port: "I[3]"
+  }
+  sink {
+    cell: "hdmi_rx_d2_RX_DATA[3]~LVDS~I[3]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "hdmi_rx_d2~LVDS"
+    port: "I[4]"
+  }
+  sink {
+    cell: "hdmi_rx_d2_RX_DATA[4]~LVDS~I[4]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "hdmi_rx_d2~LVDS"
+    port: "I[5]"
+  }
+  sink {
+    cell: "hdmi_rx_d2_RX_DATA[5]~LVDS~I[5]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "hdmi_rx_d2~LVDS"
+    port: "I[6]"
+  }
+  sink {
+    cell: "hdmi_rx_d2_RX_DATA[6]~LVDS~I[6]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "hdmi_rx_d2~LVDS"
+    port: "I[7]"
+  }
+  sink {
+    cell: "hdmi_rx_d2_RX_DATA[7]~LVDS~I[7]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "hdmi_rx_d2~LVDS"
+    port: "I[8]"
+  }
+  sink {
+    cell: "hdmi_rx_d2_RX_DATA[8]~LVDS~I[8]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "hdmi_rx_d2~LVDS"
+    port: "I[9]"
+  }
+  sink {
+    cell: "hdmi_rx_d2_RX_DATA[9]~LVDS~I[9]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "hdmi_rx_d2_RX_ENA~LVDS~ENA"
+    port: "inpad"
+  }
+  sink {
+    cell: "hdmi_rx_d2~LVDS"
+    port: "ENA"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "hdmi_rx_d2_RX_RST~LVDS~RST"
+    port: "inpad"
+  }
+  sink {
+    cell: "hdmi_rx_d2~LVDS"
+    port: "RST"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "hdmi_rx_fast_clk~CLKOUT~218~267"
+    port: "inpad"
+  }
+  sink {
+    cell: "hdmi_rx_d2~LVDS"
+    port: "FASTCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "hdmi_rx_slow_clk~CLKOUT~218~271"
+    port: "inpad"
+  }
+  sink {
+    cell: "hdmi_rx_d2~LVDS"
+    port: "SLOWCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "hdmi_rx_pll~PLL"
+    port: "CLKOUT1"
+  }
+  sink {
+    cell: "hdmi_rx_fast_clk~PLL~CLKOUT1"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "hdmi_rx_pll~PLL"
+    port: "CLKOUT0"
+  }
+  sink {
+    cell: "hdmi_rx_fb~PLL~CLKOUT0"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "hdmi_rx_pll~PLL"
+    port: "LOCKED"
+  }
+  sink {
+    cell: "hdmi_rx_pll_LOCKED~PLL~LOCKED"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "hdmi_rx_pll_RSTN~PLL~RSTN"
+    port: "inpad"
+  }
+  sink {
+    cell: "hdmi_rx_pll~PLL"
+    port: "RSTN"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "hdmi_rx_fb~CLKOUT~218~302"
+    port: "inpad"
+  }
+  sink {
+    cell: "hdmi_rx_pll~PLL"
+    port: "FBK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "hdmi_rx_pll~PLL"
+    port: "CLKOUT3"
+  }
+  sink {
+    cell: "hdmi_rx_slow_clk~PLL~CLKOUT3"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "USER_PLL~PLL"
+    port: "CLKOUT3"
+  }
+  sink {
+    cell: "hdmi_tx_fast_clk~PLL~CLKOUT3"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "USER_PLL~PLL"
+    port: "CLKOUT1"
+  }
+  sink {
+    cell: "hdmi_tx_slow_clk~PLL~CLKOUT1"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "i_arstn"
+    port: "inpad"
+  }
+  sink {
+    cell: "i_arstn~GPIO"
+    port: "IO_inpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "i_arstn~GPIO"
+    port: "I[0]"
+  }
+  sink {
+    cell: "i_arstn~GPIO~I[0]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_ck~MIPI"
+    port: "SLOWCLKOUT"
+  }
+  sink {
+    cell: "i_cam_ck_CLKOUT~MIPI~SLOWCLKOUT"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_ck~MIPI"
+    port: "SLOWCLKOUT"
+  }
+  sink {
+    cell: "cam_d2~MIPI"
+    port: "SLOWCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_ck~MIPI"
+    port: "SLOWCLKOUT"
+  }
+  sink {
+    cell: "cam_d3~MIPI"
+    port: "SLOWCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_ck~MIPI"
+    port: "SLOWCLKOUT"
+  }
+  sink {
+    cell: "cam_d0~MIPI"
+    port: "SLOWCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_ck~MIPI"
+    port: "SLOWCLKOUT"
+  }
+  sink {
+    cell: "cam_d1~MIPI"
+    port: "SLOWCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_ck~MIPI"
+    port: "LP_N_IN"
+  }
+  sink {
+    cell: "i_cam_ck_LP_N_IN~MIPI~LP_N_IN"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "cam_ck~MIPI"
+    port: "LP_P_IN"
+  }
+  sink {
+    cell: "i_cam_ck_LP_P_IN~MIPI~LP_P_IN"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "MIPI_TX_PLL~PLL"
+    port: "CLKOUT2"
+  }
+  sink {
+    cell: "i_mipi_rx_pclk~PLL~CLKOUT2"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "MIPI_TX_PLL~PLL"
+    port: "LOCKED"
+  }
+  sink {
+    cell: "i_pll_locked~PLL~LOCKED"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "io_cam_scl"
+    port: "inpad"
+  }
+  sink {
+    cell: "io_cam_scl~GPIO"
+    port: "IO_inpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "io_cam_scl~GPIO"
+    port: "IO_outpad"
+  }
+  sink {
+    cell: "io_cam_scl"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "io_cam_scl~GPIO"
+    port: "I[0]"
+  }
+  sink {
+    cell: "io_cam_scl_IN~GPIO~I[0]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "io_cam_scl_OE~GPIO~OE"
+    port: "inpad"
+  }
+  sink {
+    cell: "io_cam_scl~GPIO"
+    port: "OE"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "io_cam_scl_OUT~GPIO~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "io_cam_scl~GPIO"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "io_cam_sda"
+    port: "inpad"
+  }
+  sink {
+    cell: "io_cam_sda~GPIO"
+    port: "IO_inpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "io_cam_sda~GPIO"
+    port: "IO_outpad"
+  }
+  sink {
+    cell: "io_cam_sda"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "io_cam_sda~GPIO"
+    port: "I[0]"
+  }
+  sink {
+    cell: "io_cam_sda_IN~GPIO~I[0]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "io_cam_sda_OE~GPIO~OE"
+    port: "inpad"
+  }
+  sink {
+    cell: "io_cam_sda~GPIO"
+    port: "OE"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "io_cam_sda_OUT~GPIO~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "io_cam_sda~GPIO"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "led[0]~GPIO"
+    port: "IO_outpad"
+  }
+  sink {
+    cell: "led[0]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "led[0]~GPIO~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "led[0]~GPIO"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "led[1]~GPIO"
+    port: "IO_outpad"
+  }
+  sink {
+    cell: "led[1]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "led[1]~GPIO~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "led[1]~GPIO"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "led[2]~GPIO"
+    port: "IO_outpad"
+  }
+  sink {
+    cell: "led[2]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "led[2]~GPIO~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "led[2]~GPIO"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "led[3]~GPIO"
+    port: "IO_outpad"
+  }
+  sink {
+    cell: "led[3]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "led[3]~GPIO~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "led[3]~GPIO"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "mdc_o~GPIO"
+    port: "IO_outpad"
+  }
+  sink {
+    cell: "mdc_o"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "mdc_o~GPIO~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "mdc_o~GPIO"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "mdio_io"
+    port: "inpad"
+  }
+  sink {
+    cell: "mdio_io~GPIO"
+    port: "IO_inpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "mdio_io~GPIO"
+    port: "IO_outpad"
+  }
+  sink {
+    cell: "mdio_io"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "mdio_io~GPIO"
+    port: "I[0]"
+  }
+  sink {
+    cell: "mdio_i~GPIO~I[0]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "mdio_oe~GPIO~OE"
+    port: "inpad"
+  }
+  sink {
+    cell: "mdio_io~GPIO"
+    port: "OE"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "mdio_o~GPIO~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "mdio_io~GPIO"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "MIPI_TX_PLL~PLL"
+    port: "CLKOUT0"
+  }
+  sink {
+    cell: "mipi_tx_feedback100~PLL~CLKOUT0"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "o_cam_ck_HS_ENA~MIPI~HS_ENA"
+    port: "inpad"
+  }
+  sink {
+    cell: "cam_ck~MIPI"
+    port: "HS_ENA"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "o_cam_ck_HS_TERM~MIPI~HS_TERM"
+    port: "inpad"
+  }
+  sink {
+    cell: "cam_ck~MIPI"
+    port: "HS_TERM"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "o_cam_rst_p~GPIO"
+    port: "IO_outpad"
+  }
+  sink {
+    cell: "o_cam_rst_p"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "o_cam_rst_p~GPIO~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "o_cam_rst_p~GPIO"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "osc_inst1~OSC"
+    port: "CLKOUT"
+  }
+  sink {
+    cell: "osc_inst1_CLKOUT~OSC~CLKOUT"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "osc_inst1_ENA~OSC~ENA"
+    port: "inpad"
+  }
+  sink {
+    cell: "osc_inst1~OSC"
+    port: "ENA"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "phy_rst_n~GPIO"
+    port: "IO_outpad"
+  }
+  sink {
+    cell: "phy_rst_n"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "phy_rst_n~GPIO~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "phy_rst_n~GPIO"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "pll_inst1_RSTN~PLL~RSTN"
+    port: "inpad"
+  }
+  sink {
+    cell: "MIPI_TX_PLL~PLL"
+    port: "RSTN"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "DDR3_PLL~PLL"
+    port: "LOCKED"
+  }
+  sink {
+    cell: "pll_locked~PLL~LOCKED"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "DDR3_PLL~PLL"
+    port: "CLKOUT2"
+  }
+  sink {
+    cell: "rx_cal_clk~PLL~CLKOUT2"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "rx_dv_HI"
+    port: "inpad"
+  }
+  sink {
+    cell: "rx_dv~GPIO"
+    port: "IO_inpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "rx_dv~GPIO"
+    port: "I[0]"
+  }
+  sink {
+    cell: "rx_dv_HI~GPIO~I[0]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "rx_dv~GPIO"
+    port: "I[1]"
+  }
+  sink {
+    cell: "rx_dv_LO~GPIO~I[1]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "rxc~CLKOUT~1~146"
+    port: "inpad"
+  }
+  sink {
+    cell: "rx_dv~GPIO"
+    port: "INCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "rxc"
+    port: "inpad"
+  }
+  sink {
+    cell: "rxc~GPIO"
+    port: "IO_inpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "rxc~GPIO"
+    port: "ALT"
+  }
+  sink {
+    cell: "rxc~GPIO~ALT"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "rxc~CLKOUT~1~129"
+    port: "inpad"
+  }
+  sink {
+    cell: "rxd[0]~GPIO"
+    port: "INCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "rxc~CLKOUT~1~113"
+    port: "inpad"
+  }
+  sink {
+    cell: "rxd[1]~GPIO"
+    port: "INCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "rxc~CLKOUT~1~12"
+    port: "inpad"
+  }
+  sink {
+    cell: "rxd[2]~GPIO"
+    port: "INCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "rxc~CLKOUT~1~96"
+    port: "inpad"
+  }
+  sink {
+    cell: "rxd[3]~GPIO"
+    port: "INCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "rxd_hi_i[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "rxd[0]~GPIO"
+    port: "IO_inpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "rxd[0]~GPIO"
+    port: "I[0]"
+  }
+  sink {
+    cell: "rxd_hi_i[0]~GPIO~I[0]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "rxd_hi_i[1]"
+    port: "inpad"
+  }
+  sink {
+    cell: "rxd[1]~GPIO"
+    port: "IO_inpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "rxd[1]~GPIO"
+    port: "I[0]"
+  }
+  sink {
+    cell: "rxd_hi_i[1]~GPIO~I[0]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "rxd_hi_i[2]"
+    port: "inpad"
+  }
+  sink {
+    cell: "rxd[2]~GPIO"
+    port: "IO_inpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "rxd[2]~GPIO"
+    port: "I[0]"
+  }
+  sink {
+    cell: "rxd_hi_i[2]~GPIO~I[0]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "rxd_hi_i[3]"
+    port: "inpad"
+  }
+  sink {
+    cell: "rxd[3]~GPIO"
+    port: "IO_inpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "rxd[3]~GPIO"
+    port: "I[0]"
+  }
+  sink {
+    cell: "rxd_hi_i[3]~GPIO~I[0]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "rxd[0]~GPIO"
+    port: "I[1]"
+  }
+  sink {
+    cell: "rxd_lo_i[0]~GPIO~I[1]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "rxd[1]~GPIO"
+    port: "I[1]"
+  }
+  sink {
+    cell: "rxd_lo_i[1]~GPIO~I[1]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "rxd[2]~GPIO"
+    port: "I[1]"
+  }
+  sink {
+    cell: "rxd_lo_i[2]~GPIO~I[1]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "rxd[3]~GPIO"
+    port: "I[1]"
+  }
+  sink {
+    cell: "rxd_lo_i[3]~GPIO~I[1]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "DDR3_PLL~PLL"
+    port: "CLKOUT1"
+  }
+  sink {
+    cell: "sdram_clk~PLL~CLKOUT1"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "spi_flash_CS_N_OUT~GPIO"
+    port: "IO_outpad"
+  }
+  sink {
+    cell: "spi_flash_CS_N_OUT"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "spi_flash_CS_N_OUT~GPIO~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "spi_flash_CS_N_OUT~GPIO"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "spi_flash_MISO_IN"
+    port: "inpad"
+  }
+  sink {
+    cell: "spi_flash_MISO_IN~GPIO"
+    port: "IO_inpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "spi_flash_MISO_IN~GPIO"
+    port: "I[0]"
+  }
+  sink {
+    cell: "spi_flash_MISO_IN~GPIO~I[0]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "spi_flash_MOSI_OUT~GPIO"
+    port: "IO_outpad"
+  }
+  sink {
+    cell: "spi_flash_MOSI_OUT"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "spi_flash_MOSI_OUT~GPIO~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "spi_flash_MOSI_OUT~GPIO"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "spi_flash_SCLK_OUT~GPIO"
+    port: "IO_outpad"
+  }
+  sink {
+    cell: "spi_flash_SCLK_OUT"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "spi_flash_SCLK_OUT~GPIO~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "spi_flash_SCLK_OUT~GPIO"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "style_sw2_n"
+    port: "inpad"
+  }
+  sink {
+    cell: "style_sw2_n~GPIO"
+    port: "IO_inpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "style_sw2_n~GPIO"
+    port: "I[0]"
+  }
+  sink {
+    cell: "style_sw2_n~GPIO~I[0]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "system_uart_0_io_rxd"
+    port: "inpad"
+  }
+  sink {
+    cell: "system_uart_0_io_rxd~GPIO"
+    port: "IO_inpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "system_uart_0_io_rxd~GPIO"
+    port: "I[0]"
+  }
+  sink {
+    cell: "system_uart_0_io_rxd~GPIO~I[0]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "system_uart_0_io_txd~GPIO"
+    port: "IO_outpad"
+  }
+  sink {
+    cell: "system_uart_0_io_txd"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "system_uart_0_io_txd~GPIO~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "system_uart_0_io_txd~GPIO"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tmds_tx_clk~LVDS"
+    port: "N"
+  }
+  sink {
+    cell: "tmds_tx_clk_TXN"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tmds_tx_clk~LVDS"
+    port: "P"
+  }
+  sink {
+    cell: "tmds_tx_clk_TXP"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tmds_tx_clk_TX_DATA[0]~LVDS~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "tmds_tx_clk~LVDS"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tmds_tx_clk_TX_DATA[1]~LVDS~O[1]"
+    port: "inpad"
+  }
+  sink {
+    cell: "tmds_tx_clk~LVDS"
+    port: "O[1]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tmds_tx_clk_TX_DATA[2]~LVDS~O[2]"
+    port: "inpad"
+  }
+  sink {
+    cell: "tmds_tx_clk~LVDS"
+    port: "O[2]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tmds_tx_clk_TX_DATA[3]~LVDS~O[3]"
+    port: "inpad"
+  }
+  sink {
+    cell: "tmds_tx_clk~LVDS"
+    port: "O[3]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tmds_tx_clk_TX_DATA[4]~LVDS~O[4]"
+    port: "inpad"
+  }
+  sink {
+    cell: "tmds_tx_clk~LVDS"
+    port: "O[4]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tmds_tx_clk_TX_DATA[5]~LVDS~O[5]"
+    port: "inpad"
+  }
+  sink {
+    cell: "tmds_tx_clk~LVDS"
+    port: "O[5]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tmds_tx_clk_TX_DATA[6]~LVDS~O[6]"
+    port: "inpad"
+  }
+  sink {
+    cell: "tmds_tx_clk~LVDS"
+    port: "O[6]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tmds_tx_clk_TX_DATA[7]~LVDS~O[7]"
+    port: "inpad"
+  }
+  sink {
+    cell: "tmds_tx_clk~LVDS"
+    port: "O[7]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tmds_tx_clk_TX_DATA[8]~LVDS~O[8]"
+    port: "inpad"
+  }
+  sink {
+    cell: "tmds_tx_clk~LVDS"
+    port: "O[8]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tmds_tx_clk_TX_DATA[9]~LVDS~O[9]"
+    port: "inpad"
+  }
+  sink {
+    cell: "tmds_tx_clk~LVDS"
+    port: "O[9]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tmds_tx_clk_TX_OE~LVDS~OE"
+    port: "inpad"
+  }
+  sink {
+    cell: "tmds_tx_clk~LVDS"
+    port: "OE"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tmds_tx_clk_TX_RST~LVDS~RST"
+    port: "inpad"
+  }
+  sink {
+    cell: "tmds_tx_clk~LVDS"
+    port: "RST"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "hdmi_tx_fast_clk~CLKOUT~218~171"
+    port: "inpad"
+  }
+  sink {
+    cell: "tmds_tx_clk~LVDS"
+    port: "FASTCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "hdmi_tx_slow_clk~CLKOUT~218~175"
+    port: "inpad"
+  }
+  sink {
+    cell: "tmds_tx_clk~LVDS"
+    port: "SLOWCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tmds_tx_data0~LVDS"
+    port: "N"
+  }
+  sink {
+    cell: "tmds_tx_data0_TXN"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tmds_tx_data0~LVDS"
+    port: "P"
+  }
+  sink {
+    cell: "tmds_tx_data0_TXP"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tmds_tx_data0_TX_DATA[0]~LVDS~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "tmds_tx_data0~LVDS"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tmds_tx_data0_TX_DATA[1]~LVDS~O[1]"
+    port: "inpad"
+  }
+  sink {
+    cell: "tmds_tx_data0~LVDS"
+    port: "O[1]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tmds_tx_data0_TX_DATA[2]~LVDS~O[2]"
+    port: "inpad"
+  }
+  sink {
+    cell: "tmds_tx_data0~LVDS"
+    port: "O[2]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tmds_tx_data0_TX_DATA[3]~LVDS~O[3]"
+    port: "inpad"
+  }
+  sink {
+    cell: "tmds_tx_data0~LVDS"
+    port: "O[3]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tmds_tx_data0_TX_DATA[4]~LVDS~O[4]"
+    port: "inpad"
+  }
+  sink {
+    cell: "tmds_tx_data0~LVDS"
+    port: "O[4]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tmds_tx_data0_TX_DATA[5]~LVDS~O[5]"
+    port: "inpad"
+  }
+  sink {
+    cell: "tmds_tx_data0~LVDS"
+    port: "O[5]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tmds_tx_data0_TX_DATA[6]~LVDS~O[6]"
+    port: "inpad"
+  }
+  sink {
+    cell: "tmds_tx_data0~LVDS"
+    port: "O[6]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tmds_tx_data0_TX_DATA[7]~LVDS~O[7]"
+    port: "inpad"
+  }
+  sink {
+    cell: "tmds_tx_data0~LVDS"
+    port: "O[7]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tmds_tx_data0_TX_DATA[8]~LVDS~O[8]"
+    port: "inpad"
+  }
+  sink {
+    cell: "tmds_tx_data0~LVDS"
+    port: "O[8]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tmds_tx_data0_TX_DATA[9]~LVDS~O[9]"
+    port: "inpad"
+  }
+  sink {
+    cell: "tmds_tx_data0~LVDS"
+    port: "O[9]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tmds_tx_data0_TX_OE~LVDS~OE"
+    port: "inpad"
+  }
+  sink {
+    cell: "tmds_tx_data0~LVDS"
+    port: "OE"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tmds_tx_data0_TX_RST~LVDS~RST"
+    port: "inpad"
+  }
+  sink {
+    cell: "tmds_tx_data0~LVDS"
+    port: "RST"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "hdmi_tx_fast_clk~CLKOUT~218~211"
+    port: "inpad"
+  }
+  sink {
+    cell: "tmds_tx_data0~LVDS"
+    port: "FASTCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "hdmi_tx_slow_clk~CLKOUT~218~215"
+    port: "inpad"
+  }
+  sink {
+    cell: "tmds_tx_data0~LVDS"
+    port: "SLOWCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tmds_tx_data1~LVDS"
+    port: "N"
+  }
+  sink {
+    cell: "tmds_tx_data1_TXN"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tmds_tx_data1~LVDS"
+    port: "P"
+  }
+  sink {
+    cell: "tmds_tx_data1_TXP"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tmds_tx_data1_TX_DATA[0]~LVDS~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "tmds_tx_data1~LVDS"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tmds_tx_data1_TX_DATA[1]~LVDS~O[1]"
+    port: "inpad"
+  }
+  sink {
+    cell: "tmds_tx_data1~LVDS"
+    port: "O[1]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tmds_tx_data1_TX_DATA[2]~LVDS~O[2]"
+    port: "inpad"
+  }
+  sink {
+    cell: "tmds_tx_data1~LVDS"
+    port: "O[2]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tmds_tx_data1_TX_DATA[3]~LVDS~O[3]"
+    port: "inpad"
+  }
+  sink {
+    cell: "tmds_tx_data1~LVDS"
+    port: "O[3]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tmds_tx_data1_TX_DATA[4]~LVDS~O[4]"
+    port: "inpad"
+  }
+  sink {
+    cell: "tmds_tx_data1~LVDS"
+    port: "O[4]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tmds_tx_data1_TX_DATA[5]~LVDS~O[5]"
+    port: "inpad"
+  }
+  sink {
+    cell: "tmds_tx_data1~LVDS"
+    port: "O[5]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tmds_tx_data1_TX_DATA[6]~LVDS~O[6]"
+    port: "inpad"
+  }
+  sink {
+    cell: "tmds_tx_data1~LVDS"
+    port: "O[6]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tmds_tx_data1_TX_DATA[7]~LVDS~O[7]"
+    port: "inpad"
+  }
+  sink {
+    cell: "tmds_tx_data1~LVDS"
+    port: "O[7]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tmds_tx_data1_TX_DATA[8]~LVDS~O[8]"
+    port: "inpad"
+  }
+  sink {
+    cell: "tmds_tx_data1~LVDS"
+    port: "O[8]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tmds_tx_data1_TX_DATA[9]~LVDS~O[9]"
+    port: "inpad"
+  }
+  sink {
+    cell: "tmds_tx_data1~LVDS"
+    port: "O[9]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tmds_tx_data1_TX_OE~LVDS~OE"
+    port: "inpad"
+  }
+  sink {
+    cell: "tmds_tx_data1~LVDS"
+    port: "OE"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tmds_tx_data1_TX_RST~LVDS~RST"
+    port: "inpad"
+  }
+  sink {
+    cell: "tmds_tx_data1~LVDS"
+    port: "RST"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "hdmi_tx_fast_clk~CLKOUT~218~183"
+    port: "inpad"
+  }
+  sink {
+    cell: "tmds_tx_data1~LVDS"
+    port: "FASTCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "hdmi_tx_slow_clk~CLKOUT~218~187"
+    port: "inpad"
+  }
+  sink {
+    cell: "tmds_tx_data1~LVDS"
+    port: "SLOWCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tmds_tx_data2~LVDS"
+    port: "N"
+  }
+  sink {
+    cell: "tmds_tx_data2_TXN"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tmds_tx_data2~LVDS"
+    port: "P"
+  }
+  sink {
+    cell: "tmds_tx_data2_TXP"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tmds_tx_data2_TX_DATA[0]~LVDS~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "tmds_tx_data2~LVDS"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tmds_tx_data2_TX_DATA[1]~LVDS~O[1]"
+    port: "inpad"
+  }
+  sink {
+    cell: "tmds_tx_data2~LVDS"
+    port: "O[1]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tmds_tx_data2_TX_DATA[2]~LVDS~O[2]"
+    port: "inpad"
+  }
+  sink {
+    cell: "tmds_tx_data2~LVDS"
+    port: "O[2]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tmds_tx_data2_TX_DATA[3]~LVDS~O[3]"
+    port: "inpad"
+  }
+  sink {
+    cell: "tmds_tx_data2~LVDS"
+    port: "O[3]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tmds_tx_data2_TX_DATA[4]~LVDS~O[4]"
+    port: "inpad"
+  }
+  sink {
+    cell: "tmds_tx_data2~LVDS"
+    port: "O[4]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tmds_tx_data2_TX_DATA[5]~LVDS~O[5]"
+    port: "inpad"
+  }
+  sink {
+    cell: "tmds_tx_data2~LVDS"
+    port: "O[5]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tmds_tx_data2_TX_DATA[6]~LVDS~O[6]"
+    port: "inpad"
+  }
+  sink {
+    cell: "tmds_tx_data2~LVDS"
+    port: "O[6]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tmds_tx_data2_TX_DATA[7]~LVDS~O[7]"
+    port: "inpad"
+  }
+  sink {
+    cell: "tmds_tx_data2~LVDS"
+    port: "O[7]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tmds_tx_data2_TX_DATA[8]~LVDS~O[8]"
+    port: "inpad"
+  }
+  sink {
+    cell: "tmds_tx_data2~LVDS"
+    port: "O[8]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tmds_tx_data2_TX_DATA[9]~LVDS~O[9]"
+    port: "inpad"
+  }
+  sink {
+    cell: "tmds_tx_data2~LVDS"
+    port: "O[9]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tmds_tx_data2_TX_OE~LVDS~OE"
+    port: "inpad"
+  }
+  sink {
+    cell: "tmds_tx_data2~LVDS"
+    port: "OE"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tmds_tx_data2_TX_RST~LVDS~RST"
+    port: "inpad"
+  }
+  sink {
+    cell: "tmds_tx_data2~LVDS"
+    port: "RST"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "hdmi_tx_fast_clk~CLKOUT~218~196"
+    port: "inpad"
+  }
+  sink {
+    cell: "tmds_tx_data2~LVDS"
+    port: "FASTCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "hdmi_tx_slow_clk~CLKOUT~218~200"
+    port: "inpad"
+  }
+  sink {
+    cell: "tmds_tx_data2~LVDS"
+    port: "SLOWCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "DDR3_PLL~PLL"
+    port: "CLKOUT0"
+  }
+  sink {
+    cell: "tx_cal_clk_90edge~PLL~CLKOUT0"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "DDR3_PLL~PLL"
+    port: "CLKOUT3"
+  }
+  sink {
+    cell: "tx_cal_clk~PLL~CLKOUT3"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tx_en_o~GPIO"
+    port: "IO_outpad"
+  }
+  sink {
+    cell: "tx_en_o_HI"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tx_en_o_HI~GPIO~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "tx_en_o~GPIO"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "tx_en_o_LO~GPIO~O[1]"
+    port: "inpad"
+  }
+  sink {
+    cell: "tx_en_o~GPIO"
+    port: "O[1]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "rxc~CLKOUT~1~15"
+    port: "inpad"
+  }
+  sink {
+    cell: "tx_en_o~GPIO"
+    port: "OUTCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "txc~GPIO"
+    port: "IO_outpad"
+  }
+  sink {
+    cell: "txc_hi_o"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "txc_hi_o~GPIO~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "txc~GPIO"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "txc_lo_o~GPIO~O[1]"
+    port: "inpad"
+  }
+  sink {
+    cell: "txc~GPIO"
+    port: "O[1]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "rxc~CLKOUT~1~130"
+    port: "inpad"
+  }
+  sink {
+    cell: "txc~GPIO"
+    port: "OUTCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "rxc~CLKOUT~1~114"
+    port: "inpad"
+  }
+  sink {
+    cell: "txd[0]~GPIO"
+    port: "OUTCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "rxc~CLKOUT~1~97"
+    port: "inpad"
+  }
+  sink {
+    cell: "txd[1]~GPIO"
+    port: "OUTCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "rxc~CLKOUT~1~171"
+    port: "inpad"
+  }
+  sink {
+    cell: "txd[2]~GPIO"
+    port: "OUTCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "rxc~CLKOUT~1~181"
+    port: "inpad"
+  }
+  sink {
+    cell: "txd[3]~GPIO"
+    port: "OUTCLK"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "txd[0]~GPIO"
+    port: "IO_outpad"
+  }
+  sink {
+    cell: "txd_hi_o[0]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "txd_hi_o[0]~GPIO~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "txd[0]~GPIO"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "txd[1]~GPIO"
+    port: "IO_outpad"
+  }
+  sink {
+    cell: "txd_hi_o[1]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "txd_hi_o[1]~GPIO~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "txd[1]~GPIO"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "txd[2]~GPIO"
+    port: "IO_outpad"
+  }
+  sink {
+    cell: "txd_hi_o[2]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "txd_hi_o[2]~GPIO~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "txd[2]~GPIO"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "txd[3]~GPIO"
+    port: "IO_outpad"
+  }
+  sink {
+    cell: "txd_hi_o[3]"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "txd_hi_o[3]~GPIO~O[0]"
+    port: "inpad"
+  }
+  sink {
+    cell: "txd[3]~GPIO"
+    port: "O[0]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "txd_lo_o[0]~GPIO~O[1]"
+    port: "inpad"
+  }
+  sink {
+    cell: "txd[0]~GPIO"
+    port: "O[1]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "txd_lo_o[1]~GPIO~O[1]"
+    port: "inpad"
+  }
+  sink {
+    cell: "txd[1]~GPIO"
+    port: "O[1]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "txd_lo_o[2]~GPIO~O[1]"
+    port: "inpad"
+  }
+  sink {
+    cell: "txd[2]~GPIO"
+    port: "O[1]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "txd_lo_o[3]~GPIO~O[1]"
+    port: "inpad"
+  }
+  sink {
+    cell: "txd[3]~GPIO"
+    port: "O[1]"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "USER_PLL~PLL"
+    port: "LOCKED"
+  }
+  sink {
+    cell: "user_pll_locked~PLL~LOCKED"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "USER_PLL~PLL"
+    port: "CLKOUT0"
+  }
+  sink {
+    cell: "vid_clk_dvi2~PLL~CLKOUT0"
+    port: "outpad"
+  }
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+placed {
+  cell: "CLK_25M"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "CLK_27M"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "FPGA_HDMI_SCL"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "FPGA_HDMI_SDA"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "HDMI_5V_N"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "HPD_N"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "cam_ck_RXN"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "cam_ck_RXP"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "cam_d0_RXN"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "cam_d0_RXP"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "cam_d1_RXN"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "cam_d1_RXP"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "cam_d2_RXN"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "cam_d2_RXP"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "cam_d3_RXN"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "cam_d3_RXP"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "ddr_addr[0]"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "ddr_addr[10]"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "ddr_addr[11]"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "ddr_addr[12]"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "ddr_addr[13]"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "ddr_addr[14]"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "ddr_addr[15]"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "ddr_addr[1]"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "ddr_addr[2]"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "ddr_addr[3]"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "ddr_addr[4]"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "ddr_addr[5]"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "ddr_addr[6]"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "ddr_addr[7]"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "ddr_addr[8]"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "ddr_addr[9]"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "ddr_ba[0]"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "ddr_ba[1]"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "ddr_ba[2]"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "ddr_cas_n"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "ddr_ck_N"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "ddr_ck_P"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "ddr_cke[0]"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "ddr_cs_n[0]"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "ddr_dm_hi[0]"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "ddr_dm_hi[1]"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "ddr_dq[0]"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "ddr_dq[10]"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "ddr_dq[11]"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "ddr_dq[12]"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "ddr_dq[13]"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "ddr_dq[14]"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "ddr_dq[15]"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "ddr_dq[1]"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "ddr_dq[2]"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "ddr_dq[3]"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "ddr_dq[4]"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "ddr_dq[5]"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "ddr_dq[6]"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "ddr_dq[7]"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "ddr_dq[8]"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "ddr_dq[9]"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "ddr_dqs[0]_N"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "ddr_dqs[0]_P"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "ddr_dqs[1]_N"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "ddr_dqs[1]_P"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "ddr_odt[0]"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "ddr_ras_n"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "ddr_reset_n"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "ddr_we_n"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "display_sw1_n"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "fisheye_sw3_n"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "hdmi_rx_clk_RXN"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "hdmi_rx_clk_RXP"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "hdmi_rx_d0_RXN"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "hdmi_rx_d0_RXP"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "hdmi_rx_d1_RXN"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "hdmi_rx_d1_RXP"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "hdmi_rx_d2_RXN"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "hdmi_rx_d2_RXP"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "i_arstn"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "io_cam_scl"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "io_cam_sda"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "led[0]"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "led[1]"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "led[2]"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "led[3]"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "mdc_o"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "mdio_io"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "o_cam_rst_p"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "phy_rst_n"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "rx_dv_HI"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "rxc"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "rxd_hi_i[0]"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "rxd_hi_i[1]"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "rxd_hi_i[2]"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "rxd_hi_i[3]"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "spi_flash_CS_N_OUT"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "spi_flash_MISO_IN"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "spi_flash_MOSI_OUT"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "spi_flash_SCLK_OUT"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "style_sw2_n"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "system_uart_0_io_rxd"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "system_uart_0_io_txd"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "tmds_tx_clk_TXN"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "tmds_tx_clk_TXP"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "tmds_tx_data0_TXN"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "tmds_tx_data0_TXP"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "tmds_tx_data1_TXN"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "tmds_tx_data1_TXP"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "tmds_tx_data2_TXN"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "tmds_tx_data2_TXP"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "tx_en_o_HI"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "txc_hi_o"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "txd_hi_o[0]"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "txd_hi_o[1]"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "txd_hi_o[2]"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "txd_hi_o[3]"
+  custom_site: "PKG_PIN/PKG_PIN_INOUT"
+}
+placed {
+  cell: "CLK_25M~GPIO"
+  custom_site: "HSIO/HSIO_SLOT0"
+}
+placed {
+  cell: "CLK_27M~GPIO"
+  custom_site: "HSIO/HSIO_SLOT0"
+}
+placed {
+  cell: "DDR3_PLL~PLL"
+  custom_site: "PLL/PLL_SLOT0"
+}
+placed {
+  cell: "FPGA_HDMI_SCL~GPIO"
+  custom_site: "HSIO/HSIO_SLOT0"
+}
+placed {
+  cell: "FPGA_HDMI_SDA~GPIO"
+  custom_site: "HSIO/HSIO_SLOT1"
+}
+placed {
+  cell: "HDMI_5V_N~GPIO"
+  custom_site: "HSIO/HSIO_SLOT0"
+}
+placed {
+  cell: "HPD_N~GPIO"
+  custom_site: "HSIO/HSIO_SLOT1"
+}
+placed {
+  cell: "MIPI_TX_PLL~PLL"
+  custom_site: "PLL/PLL_SLOT0"
+}
+placed {
+  cell: "USER_PLL~PLL"
+  custom_site: "PLL/PLL_SLOT0"
+}
+placed {
+  cell: "cam_ck~MIPI"
+  custom_site: "HSIO/HSIO_SLOT0"
+}
+placed {
+  cell: "cam_d0~MIPI"
+  custom_site: "HSIO/HSIO_SLOT0"
+}
+placed {
+  cell: "cam_d1~MIPI"
+  custom_site: "HSIO/HSIO_SLOT0"
+}
+placed {
+  cell: "cam_d2~MIPI"
+  custom_site: "HSIO/HSIO_SLOT0"
+}
+placed {
+  cell: "cam_d3~MIPI"
+  custom_site: "HSIO/HSIO_SLOT0"
+}
+placed {
+  cell: "ddr_addr[0]~GPIO"
+  custom_site: "HSIO/HSIO_SLOT1"
+}
+placed {
+  cell: "ddr_addr[10]~GPIO"
+  custom_site: "HSIO/HSIO_SLOT0"
+}
+placed {
+  cell: "ddr_addr[11]~GPIO"
+  custom_site: "HSIO/HSIO_SLOT1"
+}
+placed {
+  cell: "ddr_addr[12]~GPIO"
+  custom_site: "HSIO/HSIO_SLOT0"
+}
+placed {
+  cell: "ddr_addr[13]~GPIO"
+  custom_site: "HSIO/HSIO_SLOT1"
+}
+placed {
+  cell: "ddr_addr[14]~GPIO"
+  custom_site: "HSIO/HSIO_SLOT0"
+}
+placed {
+  cell: "ddr_addr[15]~GPIO"
+  custom_site: "HSIO/HSIO_SLOT1"
+}
+placed {
+  cell: "ddr_addr[1]~GPIO"
+  custom_site: "HSIO/HSIO_SLOT1"
+}
+placed {
+  cell: "ddr_addr[2]~GPIO"
+  custom_site: "HSIO/HSIO_SLOT0"
+}
+placed {
+  cell: "ddr_addr[3]~GPIO"
+  custom_site: "HSIO/HSIO_SLOT1"
+}
+placed {
+  cell: "ddr_addr[4]~GPIO"
+  custom_site: "HSIO/HSIO_SLOT0"
+}
+placed {
+  cell: "ddr_addr[5]~GPIO"
+  custom_site: "HSIO/HSIO_SLOT0"
+}
+placed {
+  cell: "ddr_addr[6]~GPIO"
+  custom_site: "HSIO/HSIO_SLOT0"
+}
+placed {
+  cell: "ddr_addr[7]~GPIO"
+  custom_site: "HSIO/HSIO_SLOT1"
+}
+placed {
+  cell: "ddr_addr[8]~GPIO"
+  custom_site: "HSIO/HSIO_SLOT1"
+}
+placed {
+  cell: "ddr_addr[9]~GPIO"
+  custom_site: "HSIO/HSIO_SLOT1"
+}
+placed {
+  cell: "ddr_ba[0]~GPIO"
+  custom_site: "HSIO/HSIO_SLOT1"
+}
+placed {
+  cell: "ddr_ba[1]~GPIO"
+  custom_site: "HSIO/HSIO_SLOT1"
+}
+placed {
+  cell: "ddr_ba[2]~GPIO"
+  custom_site: "HSIO/HSIO_SLOT0"
+}
+placed {
+  cell: "ddr_cas_n~GPIO"
+  custom_site: "HSIO/HSIO_SLOT1"
+}
+placed {
+  cell: "ddr_cke[0]~GPIO"
+  custom_site: "HSIO/HSIO_SLOT1"
+}
+placed {
+  cell: "ddr_ck~GPIO"
+  custom_site: "HSIO/HSIO_SLOT0"
+}
+placed {
+  cell: "ddr_cs_n[0]~GPIO"
+  custom_site: "HSIO/HSIO_SLOT1"
+}
+placed {
+  cell: "ddr_dm[0]~GPIO"
+  custom_site: "HSIO/HSIO_SLOT0"
+}
+placed {
+  cell: "ddr_dm[1]~GPIO"
+  custom_site: "HSIO/HSIO_SLOT0"
+}
+placed {
+  cell: "ddr_dq[0]~GPIO"
+  custom_site: "HSIO/HSIO_SLOT0"
+}
+placed {
+  cell: "ddr_dq[10]~GPIO"
+  custom_site: "HSIO/HSIO_SLOT0"
+}
+placed {
+  cell: "ddr_dq[11]~GPIO"
+  custom_site: "HSIO/HSIO_SLOT0"
+}
+placed {
+  cell: "ddr_dq[12]~GPIO"
+  custom_site: "HSIO/HSIO_SLOT1"
+}
+placed {
+  cell: "ddr_dq[13]~GPIO"
+  custom_site: "HSIO/HSIO_SLOT0"
+}
+placed {
+  cell: "ddr_dq[14]~GPIO"
+  custom_site: "HSIO/HSIO_SLOT0"
+}
+placed {
+  cell: "ddr_dq[15]~GPIO"
+  custom_site: "HSIO/HSIO_SLOT1"
+}
+placed {
+  cell: "ddr_dq[1]~GPIO"
+  custom_site: "HSIO/HSIO_SLOT1"
+}
+placed {
+  cell: "ddr_dq[2]~GPIO"
+  custom_site: "HSIO/HSIO_SLOT0"
+}
+placed {
+  cell: "ddr_dq[3]~GPIO"
+  custom_site: "HSIO/HSIO_SLOT1"
+}
+placed {
+  cell: "ddr_dq[4]~GPIO"
+  custom_site: "HSIO/HSIO_SLOT1"
+}
+placed {
+  cell: "ddr_dq[5]~GPIO"
+  custom_site: "HSIO/HSIO_SLOT0"
+}
+placed {
+  cell: "ddr_dq[6]~GPIO"
+  custom_site: "HSIO/HSIO_SLOT1"
+}
+placed {
+  cell: "ddr_dq[7]~GPIO"
+  custom_site: "HSIO/HSIO_SLOT0"
+}
+placed {
+  cell: "ddr_dq[8]~GPIO"
+  custom_site: "HSIO/HSIO_SLOT1"
+}
+placed {
+  cell: "ddr_dq[9]~GPIO"
+  custom_site: "HSIO/HSIO_SLOT1"
+}
+placed {
+  cell: "ddr_dqs[0]~GPIO"
+  custom_site: "HSIO/HSIO_SLOT0"
+}
+placed {
+  cell: "ddr_dqs[1]~GPIO"
+  custom_site: "HSIO/HSIO_SLOT0"
+}
+placed {
+  cell: "ddr_odt[0]~GPIO"
+  custom_site: "HSIO/HSIO_SLOT0"
+}
+placed {
+  cell: "ddr_ras_n~GPIO"
+  custom_site: "HSIO/HSIO_SLOT0"
+}
+placed {
+  cell: "ddr_reset_n~GPIO"
+  custom_site: "HSIO/HSIO_SLOT1"
+}
+placed {
+  cell: "ddr_we_n~GPIO"
+  custom_site: "HSIO/HSIO_SLOT0"
+}
+placed {
+  cell: "display_sw1_n~GPIO"
+  custom_site: "HVIO/HVIO_SLOT0"
+}
+placed {
+  cell: "fisheye_sw3_n~GPIO"
+  custom_site: "HVIO/HVIO_SLOT0"
+}
+placed {
+  cell: "hdmi_rx_clk~LVDS"
+  custom_site: "HSIO/HSIO_SLOT0"
+}
+placed {
+  cell: "hdmi_rx_d0~LVDS"
+  custom_site: "HSIO/HSIO_SLOT0"
+}
+placed {
+  cell: "hdmi_rx_d1~LVDS"
+  custom_site: "HSIO/HSIO_SLOT0"
+}
+placed {
+  cell: "hdmi_rx_d2~LVDS"
+  custom_site: "HSIO/HSIO_SLOT0"
+}
+placed {
+  cell: "hdmi_rx_pll~PLL"
+  custom_site: "PLL/PLL_SLOT0"
+}
+placed {
+  cell: "i_arstn~GPIO"
+  custom_site: "HVIO/HVIO_SLOT0"
+}
+placed {
+  cell: "io_cam_scl~GPIO"
+  custom_site: "HVIO/HVIO_SLOT0"
+}
+placed {
+  cell: "io_cam_sda~GPIO"
+  custom_site: "HVIO/HVIO_SLOT0"
+}
+placed {
+  cell: "led[0]~GPIO"
+  custom_site: "HVIO/HVIO_SLOT0"
+}
+placed {
+  cell: "led[1]~GPIO"
+  custom_site: "HVIO/HVIO_SLOT0"
+}
+placed {
+  cell: "led[2]~GPIO"
+  custom_site: "HSIO/HSIO_SLOT0"
+}
+placed {
+  cell: "led[3]~GPIO"
+  custom_site: "HSIO/HSIO_SLOT0"
+}
+placed {
+  cell: "mdc_o~GPIO"
+  custom_site: "HSIO/HSIO_SLOT1"
+}
+placed {
+  cell: "mdio_io~GPIO"
+  custom_site: "HSIO/HSIO_SLOT0"
+}
+placed {
+  cell: "o_cam_rst_p~GPIO"
+  custom_site: "HVIO/HVIO_SLOT0"
+}
+placed {
+  cell: "osc_inst1~OSC"
+  custom_site: "OSC/OSC_SLOT0"
+}
+placed {
+  cell: "phy_rst_n~GPIO"
+  custom_site: "HVIO/HVIO_SLOT0"
+}
+placed {
+  cell: "rx_dv~GPIO"
+  custom_site: "HSIO/HSIO_SLOT1"
+}
+placed {
+  cell: "rxc~GPIO"
+  custom_site: "HSIO/HSIO_SLOT0"
+}
+placed {
+  cell: "rxd[0]~GPIO"
+  custom_site: "HSIO/HSIO_SLOT1"
+}
+placed {
+  cell: "rxd[1]~GPIO"
+  custom_site: "HSIO/HSIO_SLOT1"
+}
+placed {
+  cell: "rxd[2]~GPIO"
+  custom_site: "HSIO/HSIO_SLOT0"
+}
+placed {
+  cell: "rxd[3]~GPIO"
+  custom_site: "HSIO/HSIO_SLOT1"
+}
+placed {
+  cell: "spi_flash_CS_N_OUT~GPIO"
+  custom_site: "HSIO/HSIO_SLOT0"
+}
+placed {
+  cell: "spi_flash_MISO_IN~GPIO"
+  custom_site: "HSIO/HSIO_SLOT1"
+}
+placed {
+  cell: "spi_flash_MOSI_OUT~GPIO"
+  custom_site: "HSIO/HSIO_SLOT0"
+}
+placed {
+  cell: "spi_flash_SCLK_OUT~GPIO"
+  custom_site: "HSIO/HSIO_SLOT1"
+}
+placed {
+  cell: "style_sw2_n~GPIO"
+  custom_site: "HVIO/HVIO_SLOT0"
+}
+placed {
+  cell: "system_uart_0_io_rxd~GPIO"
+  custom_site: "HVIO/HVIO_SLOT0"
+}
+placed {
+  cell: "system_uart_0_io_txd~GPIO"
+  custom_site: "HVIO/HVIO_SLOT0"
+}
+placed {
+  cell: "tmds_tx_clk~LVDS"
+  custom_site: "HSIO/HSIO_SLOT0"
+}
+placed {
+  cell: "tmds_tx_data0~LVDS"
+  custom_site: "HSIO/HSIO_SLOT0"
+}
+placed {
+  cell: "tmds_tx_data1~LVDS"
+  custom_site: "HSIO/HSIO_SLOT0"
+}
+placed {
+  cell: "tmds_tx_data2~LVDS"
+  custom_site: "HSIO/HSIO_SLOT0"
+}
+placed {
+  cell: "tx_en_o~GPIO"
+  custom_site: "HSIO/HSIO_SLOT1"
+}
+placed {
+  cell: "txc~GPIO"
+  custom_site: "HSIO/HSIO_SLOT0"
+}
+placed {
+  cell: "txd[0]~GPIO"
+  custom_site: "HSIO/HSIO_SLOT0"
+}
+placed {
+  cell: "txd[1]~GPIO"
+  custom_site: "HSIO/HSIO_SLOT0"
+}
+placed {
+  cell: "txd[2]~GPIO"
+  custom_site: "HSIO/HSIO_SLOT1"
+}
+placed {
+  cell: "txd[3]~GPIO"
+  custom_site: "HSIO/HSIO_SLOT1"
+}

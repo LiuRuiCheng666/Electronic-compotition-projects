@@ -1,0 +1,354 @@
+`timescale 1ns/1ps
+`default_nettype none
+
+// AXI4 DDR backend for the neural-network frame store.
+//
+// The network-side addresses have the same meaning as frame_store.v: they are
+// byte addresses within one of four compact feature-map banks.  Every read
+// returns 32 consecutive bytes starting at that exact address, including when
+// the window is not aligned to an AXI beat.  A 128-bit DDR interface therefore
+// needs two beats for aligned reads and three beats for unaligned reads.
+//
+// The client must hold a request until *_ready is high.  Read data and wr_done
+// are one-cycle completion pulses.  Only one AXI transaction is outstanding;
+// arbitration priority is write, read A, then read B.
+module frame_store_ddr_axi #(
+    parameter integer AXI_ADDR_WIDTH   = 32,
+    parameter integer AXI_DATA_WIDTH   = 128,
+    parameter integer AXI_ID_WIDTH     = 4,
+    parameter integer FRAME_ADDR_WIDTH = 15,
+    parameter [AXI_ADDR_WIDTH-1:0] BASE_ADDR = 32'h0100_0000,
+    parameter integer BANK_ADDR_SHIFT  = 20
+)(
+    input  wire clk,
+    input  wire rst_n,
+    input  wire cal_done,
+
+    input  wire rda_req,
+    output wire rda_ready,
+    input  wire [1:0] rda_bank,
+    input  wire [FRAME_ADDR_WIDTH-1:0] rda_addr,
+    output reg  rda_valid,
+    output reg  [255:0] rda_data,
+
+    input  wire rdb_req,
+    output wire rdb_ready,
+    input  wire [1:0] rdb_bank,
+    input  wire [FRAME_ADDR_WIDTH-1:0] rdb_addr,
+    output reg  rdb_valid,
+    output reg  [255:0] rdb_data,
+
+    input  wire wr_req,
+    output wire wr_ready,
+    input  wire [1:0] wr_bank,
+    input  wire [FRAME_ADDR_WIDTH-1:0] wr_addr,
+    input  wire [255:0] wr_data,
+    input  wire [5:0] wr_n,
+    output reg  wr_done,
+
+    output wire busy,
+    output reg  fault,
+
+    output wire [AXI_ID_WIDTH-1:0] m_axi_awid,
+    output wire [AXI_ADDR_WIDTH-1:0] m_axi_awaddr,
+    output wire [7:0] m_axi_awlen,
+    output wire [2:0] m_axi_awsize,
+    output wire [1:0] m_axi_awburst,
+    output wire m_axi_awlock,
+    output wire [3:0] m_axi_awcache,
+    output wire [2:0] m_axi_awprot,
+    output wire [3:0] m_axi_awqos,
+    output wire m_axi_awvalid,
+    input  wire m_axi_awready,
+
+    output wire [AXI_DATA_WIDTH-1:0] m_axi_wdata,
+    output wire [AXI_DATA_WIDTH/8-1:0] m_axi_wstrb,
+    output wire m_axi_wlast,
+    output wire m_axi_wvalid,
+    input  wire m_axi_wready,
+
+    input  wire [AXI_ID_WIDTH-1:0] m_axi_bid,
+    input  wire [1:0] m_axi_bresp,
+    input  wire m_axi_bvalid,
+    output wire m_axi_bready,
+
+    output wire [AXI_ID_WIDTH-1:0] m_axi_arid,
+    output wire [AXI_ADDR_WIDTH-1:0] m_axi_araddr,
+    output wire [7:0] m_axi_arlen,
+    output wire [2:0] m_axi_arsize,
+    output wire [1:0] m_axi_arburst,
+    output wire m_axi_arlock,
+    output wire [3:0] m_axi_arcache,
+    output wire [2:0] m_axi_arprot,
+    output wire [3:0] m_axi_arqos,
+    output wire m_axi_arvalid,
+    input  wire m_axi_arready,
+
+    input  wire [AXI_ID_WIDTH-1:0] m_axi_rid,
+    input  wire [AXI_DATA_WIDTH-1:0] m_axi_rdata,
+    input  wire [1:0] m_axi_rresp,
+    input  wire m_axi_rlast,
+    input  wire m_axi_rvalid,
+    output wire m_axi_rready
+);
+    // This adapter targets the demo controller's 128-bit AXI slave exactly.
+    localparam integer AXI_BYTES = 16;
+    localparam [2:0] AXI_SIZE = 3'd4;
+    localparam [2:0] S_IDLE  = 3'd0, S_RADDR = 3'd1, S_RDATA = 3'd2,
+                     S_WADDR = 3'd3, S_WDATA = 3'd4, S_WRESP = 3'd5;
+
+    reg [2:0] state;
+    reg rd_owner;
+    reg [1:0] rd_beat;
+    reg [1:0] rd_beats;
+    reg [1:0] rd_tx_beat;
+    reg [1:0] rd_tx_beats;
+    reg [3:0] rd_byte_shift;
+    reg [255:0] rd_buf;
+    reg [1:0] wr_beat;
+    reg [1:0] wr_beats;
+    reg [1:0] wr_tx_beat;
+    reg [1:0] wr_tx_beats;
+    reg [AXI_ADDR_WIDTH-1:0] req_addr;
+    reg [383:0] wr_shift_data;
+    reg [47:0] wr_shift_strb;
+
+    function [AXI_ADDR_WIDTH-1:0] absolute_addr;
+        input [1:0] bank;
+        input [FRAME_ADDR_WIDTH-1:0] byte_addr;
+        reg [AXI_ADDR_WIDTH-1:0] bank_ext;
+        reg [AXI_ADDR_WIDTH-1:0] addr_ext;
+        begin
+            bank_ext = {{(AXI_ADDR_WIDTH-2){1'b0}}, bank};
+            addr_ext = {{(AXI_ADDR_WIDTH-FRAME_ADDR_WIDTH){1'b0}}, byte_addr};
+            absolute_addr = BASE_ADDR + (bank_ext << BANK_ADDR_SHIFT) + addr_ext;
+        end
+    endfunction
+
+    function [31:0] byte_mask;
+        input [5:0] n;
+        begin
+            if (n == 0)       byte_mask = 32'd0;
+            else if (n >= 32) byte_mask = 32'hffff_ffff;
+            else              byte_mask = (32'h1 << n) - 1'b1;
+        end
+    endfunction
+
+    // AXI4 bursts may not cross a 4-KiB boundary.  A transfer here is at
+    // most three beats, so only starts at 0xfe0/0xff0 need shortening.
+    function [1:0] first_burst_beats;
+        input [11:0] aligned_low;
+        input [1:0] total_beats;
+        reg [1:0] boundary_limit;
+        begin
+            if (aligned_low == 12'hff0)
+                boundary_limit = 2'd1;
+            else if (aligned_low == 12'hfe0)
+                boundary_limit = 2'd2;
+            else
+                boundary_limit = 2'd3;
+            first_burst_beats = (total_beats < boundary_limit) ?
+                                total_beats : boundary_limit;
+        end
+    endfunction
+
+    wire [AXI_ADDR_WIDTH-1:0] rda_abs = absolute_addr(rda_bank, rda_addr);
+    wire [AXI_ADDR_WIDTH-1:0] rdb_abs = absolute_addr(rdb_bank, rdb_addr);
+    wire [AXI_ADDR_WIDTH-1:0] wr_abs  = absolute_addr(wr_bank, wr_addr);
+    wire [AXI_ADDR_WIDTH-1:0] rda_aligned =
+        {rda_abs[AXI_ADDR_WIDTH-1:4], 4'b0000};
+    wire [AXI_ADDR_WIDTH-1:0] rdb_aligned =
+        {rdb_abs[AXI_ADDR_WIDTH-1:4], 4'b0000};
+    wire [AXI_ADDR_WIDTH-1:0] wr_aligned =
+        {wr_abs[AXI_ADDR_WIDTH-1:4], 4'b0000};
+    wire [1:0] rda_req_beats = (rda_abs[3:0] == 0) ? 2'd2 : 2'd3;
+    wire [1:0] rdb_req_beats = (rdb_abs[3:0] == 0) ? 2'd2 : 2'd3;
+    wire [1:0] wr_req_beats = ({1'b0, wr_abs[3:0]} + wr_n + 15) >> 4;
+    wire idle_ok = (state == S_IDLE) && cal_done;
+    wire [2:0] rd_next_beat = {1'b0, rd_beat} + 3'd1;
+    wire [2:0] wr_next_beat = {1'b0, wr_beat} + 3'd1;
+    wire [2:0] rd_tx_next_beat = {1'b0, rd_tx_beat} + 3'd1;
+    wire [2:0] wr_tx_next_beat = {1'b0, wr_tx_beat} + 3'd1;
+    wire [AXI_ADDR_WIDTH-1:0] rd_tx_bytes =
+        {{(AXI_ADDR_WIDTH-2){1'b0}}, rd_tx_beats} << 4;
+    wire [AXI_ADDR_WIDTH-1:0] wr_tx_bytes =
+        {{(AXI_ADDR_WIDTH-2){1'b0}}, wr_tx_beats} << 4;
+
+    // Assemble before shifting so the current (final) AXI beat participates
+    // without waiting for another cycle.
+    wire [383:0] rd_join_2 =
+        {128'd0, m_axi_rdata[127:0], rd_buf[127:0]} >> (rd_byte_shift * 8);
+    wire [383:0] rd_join_3 =
+        {m_axi_rdata[127:0], rd_buf} >> (rd_byte_shift * 8);
+    wire [255:0] rd_result = (rd_beats == 2) ?
+                             rd_join_2[255:0] : rd_join_3[255:0];
+
+    assign wr_ready  = idle_ok;
+    assign rda_ready = idle_ok && !wr_req;
+    assign rdb_ready = idle_ok && !wr_req && !rda_req;
+    assign busy = (state != S_IDLE);
+
+    assign m_axi_awid    = {AXI_ID_WIDTH{1'b0}};
+    assign m_axi_awaddr  = req_addr;
+    assign m_axi_awlen   = {6'd0, wr_tx_beats - 1'b1};
+    assign m_axi_awsize  = AXI_SIZE;
+    assign m_axi_awburst = 2'b01;
+    assign m_axi_awlock  = 1'b0;
+    assign m_axi_awcache = 4'd3;
+    assign m_axi_awprot  = 3'd2;
+    assign m_axi_awqos   = 4'd0;
+    assign m_axi_awvalid = (state == S_WADDR);
+
+    assign m_axi_wdata = (wr_beat == 0) ? wr_shift_data[127:0] :
+                        (wr_beat == 1) ? wr_shift_data[255:128] :
+                                         wr_shift_data[383:256];
+    assign m_axi_wstrb = (wr_beat == 0) ? wr_shift_strb[15:0] :
+                        (wr_beat == 1) ? wr_shift_strb[31:16] :
+                                         wr_shift_strb[47:32];
+    assign m_axi_wlast  = (wr_tx_next_beat == {1'b0, wr_tx_beats});
+    assign m_axi_wvalid = (state == S_WDATA);
+    assign m_axi_bready = (state == S_WRESP);
+
+    assign m_axi_arid    = {AXI_ID_WIDTH{1'b0}};
+    assign m_axi_araddr  = req_addr;
+    assign m_axi_arlen   = {6'd0, rd_tx_beats - 1'b1};
+    assign m_axi_arsize  = AXI_SIZE;
+    assign m_axi_arburst = 2'b01;
+    assign m_axi_arlock  = 1'b0;
+    assign m_axi_arcache = 4'd3;
+    assign m_axi_arprot  = 3'd2;
+    assign m_axi_arqos   = 4'd0;
+    assign m_axi_arvalid = (state == S_RADDR);
+    assign m_axi_rready  = (state == S_RDATA);
+
+    always @(posedge clk or negedge rst_n) begin
+        if (!rst_n) begin
+            state <= S_IDLE;
+            rd_owner <= 1'b0;
+            rd_beat <= 2'd0;
+            rd_beats <= 2'd2;
+            rd_tx_beat <= 2'd0;
+            rd_tx_beats <= 2'd2;
+            rd_byte_shift <= 4'd0;
+            rd_buf <= 256'd0;
+            wr_beat <= 2'd0;
+            wr_beats <= 2'd1;
+            wr_tx_beat <= 2'd0;
+            wr_tx_beats <= 2'd1;
+            req_addr <= {AXI_ADDR_WIDTH{1'b0}};
+            wr_shift_data <= 384'd0;
+            wr_shift_strb <= 48'd0;
+            rda_valid <= 1'b0;
+            rdb_valid <= 1'b0;
+            wr_done <= 1'b0;
+            rda_data <= 256'd0;
+            rdb_data <= 256'd0;
+            fault <= 1'b0;
+        end else begin
+            rda_valid <= 1'b0;
+            rdb_valid <= 1'b0;
+            wr_done <= 1'b0;
+
+            case (state)
+            S_IDLE: begin
+                if (cal_done && wr_req) begin
+                    if ((wr_n == 0) || (wr_n > 32)) begin
+                        fault <= 1'b1;
+                        wr_done <= 1'b1;
+                    end else begin
+                        req_addr <= wr_aligned;
+                        wr_shift_data <= {128'd0, wr_data} << (wr_abs[3:0] * 8);
+                        wr_shift_strb <= {16'd0, byte_mask(wr_n)} << wr_abs[3:0];
+                        wr_beats <= wr_req_beats;
+                        wr_beat <= 2'd0;
+                        wr_tx_beat <= 2'd0;
+                        wr_tx_beats <= first_burst_beats(wr_aligned[11:0],
+                                                        wr_req_beats);
+                        state <= S_WADDR;
+                    end
+                end else if (cal_done && rda_req) begin
+                    req_addr <= rda_aligned;
+                    rd_byte_shift <= rda_abs[3:0];
+                    rd_beats <= rda_req_beats;
+                    rd_owner <= 1'b0;
+                    rd_beat <= 2'd0;
+                    rd_tx_beat <= 2'd0;
+                    rd_tx_beats <= first_burst_beats(rda_aligned[11:0],
+                                                     rda_req_beats);
+                    state <= S_RADDR;
+                end else if (cal_done && rdb_req) begin
+                    req_addr <= rdb_aligned;
+                    rd_byte_shift <= rdb_abs[3:0];
+                    rd_beats <= rdb_req_beats;
+                    rd_owner <= 1'b1;
+                    rd_beat <= 2'd0;
+                    rd_tx_beat <= 2'd0;
+                    rd_tx_beats <= first_burst_beats(rdb_aligned[11:0],
+                                                     rdb_req_beats);
+                    state <= S_RADDR;
+                end
+            end
+
+            S_RADDR: if (m_axi_arready) state <= S_RDATA;
+
+            S_RDATA: if (m_axi_rvalid) begin
+                if ((m_axi_rresp != 2'b00) ||
+                    (m_axi_rlast != (rd_tx_next_beat == {1'b0, rd_tx_beats})))
+                    fault <= 1'b1;
+                if (rd_next_beat == {1'b0, rd_beats}) begin
+                    if (rd_owner) begin
+                        rdb_data <= rd_result;
+                        rdb_valid <= 1'b1;
+                    end else begin
+                        rda_data <= rd_result;
+                        rda_valid <= 1'b1;
+                    end
+                    state <= S_IDLE;
+                end else begin
+                    if (rd_beat == 0)
+                        rd_buf[127:0] <= m_axi_rdata[127:0];
+                    else
+                        rd_buf[255:128] <= m_axi_rdata[127:0];
+                    rd_beat <= rd_beat + 1'b1;
+                    if (rd_tx_next_beat == {1'b0, rd_tx_beats}) begin
+                        req_addr <= req_addr + rd_tx_bytes;
+                        rd_tx_beats <= rd_beats - rd_next_beat;
+                        rd_tx_beat <= 2'd0;
+                        state <= S_RADDR;
+                    end else begin
+                        rd_tx_beat <= rd_tx_beat + 1'b1;
+                    end
+                end
+            end
+
+            S_WADDR: if (m_axi_awready) state <= S_WDATA;
+
+            S_WDATA: if (m_axi_wready) begin
+                wr_beat <= wr_beat + 1'b1;
+                if (m_axi_wlast)
+                    state <= S_WRESP;
+                else
+                    wr_tx_beat <= wr_tx_beat + 1'b1;
+            end
+
+            S_WRESP: if (m_axi_bvalid) begin
+                if (m_axi_bresp != 2'b00)
+                    fault <= 1'b1;
+                if (wr_beat == wr_beats) begin
+                    wr_done <= 1'b1;
+                    state <= S_IDLE;
+                end else begin
+                    req_addr <= req_addr + wr_tx_bytes;
+                    wr_tx_beats <= wr_beats - wr_beat;
+                    wr_tx_beat <= 2'd0;
+                    state <= S_WADDR;
+                end
+            end
+
+            default: state <= S_IDLE;
+            endcase
+        end
+    end
+endmodule
+
+`default_nettype wire

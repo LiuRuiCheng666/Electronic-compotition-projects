@@ -1,0 +1,158 @@
+//============================================================================
+//  mac_array.v -- fully parallel 3x3 convolution MAC array
+//----------------------------------------------------------------------------
+//  Computes, for one pixel, the dot product of a 3x3 window against the
+//  weights of P_CO output channels:
+//
+//      out_sum[co] = SUM over (ci, k) of  win[ci][k] * w[co][ci][k]
+//
+//  where ci indexes P_CI parallel input channels and k indexes the TAP (=9)
+//  window positions in row-major order.
+//
+//  Data layout (both buses little-endian, int8 lanes)
+//      win_data[(ci*TAP + k)*CH_W +: CH_W]
+//      w_data  [((co*P_CI + ci)*TAP + k)*CH_W +: CH_W]
+//      out_sum [ co*ACC_W +: ACC_W]                       (signed)
+//
+//  Physical size
+//      MACs per cycle = P_CO * P_CI * TAP
+//      With P_CO=8, P_CI=4, TAP=9 -> 288 MACs -> 144 DSP (Ti60 dual mode).
+//      P_CI is the time-multiplexing knob: the surrounding logic feeds
+//      CIN/P_CI input-channel groups sequentially and accumulates the
+//      partial sums in acc_bank.
+//
+//  Structure
+//      Stage 1 : P_CO * P_CI * TAP int8 x int8 multipliers (-> signed ACC_W)
+//      Stage 2 : per output channel, a BALANCED adder tree over all
+//                P_CI*TAP products (ceil-half reduction, depth = ceil(log2))
+//      Stage 3 : optional output register (PIPE = 0 or 1)
+//
+//  No overflow can occur for TAP=9, P_CI<=4: the largest partial sum is
+//  36 * 128 * 128 = 589,824 < 2^20, and ACC_W is 32.
+//
+//  Limitations
+//      * P_CI * TAP must be <= 64 (bounds the generated reduction to 6 levels)
+//============================================================================
+
+`default_nettype none
+
+module mac_array #(
+    parameter integer P_CO  = 8,        // output channels computed in parallel
+    parameter integer P_CI  = 4,        // input channels applied in parallel
+    parameter integer TAP   = 9,        // 3x3
+    parameter integer CH_W  = 8,        // operand width (int8)
+    parameter integer ACC_W = 32,       // accumulator width
+    parameter integer PIPE  = 1         // 1 = register the output
+)(
+    input  wire                          clk,
+    input  wire                          rst_n,
+    input  wire                          in_valid,
+
+    input  wire [P_CI*TAP*CH_W-1:0]      win_data,
+    input  wire [P_CO*P_CI*TAP*CH_W-1:0] w_data,
+
+    output reg                           out_valid,
+    output reg  [P_CO*ACC_W-1:0]         out_sum
+);
+
+    //------------------------------------------------------------------------
+    //  Reduction geometry
+    //------------------------------------------------------------------------
+    localparam integer N0 = P_CI * TAP;
+    localparam integer N1 = (N0 + 1) / 2;
+    localparam integer N2 = (N1 + 1) / 2;
+    localparam integer N3 = (N2 + 1) / 2;
+    localparam integer N4 = (N3 + 1) / 2;
+    localparam integer N5 = (N4 + 1) / 2;
+    localparam integer N6 = (N5 + 1) / 2;
+
+    //------------------------------------------------------------------------
+    //  Products + balanced adder tree, one replica per output channel
+    //------------------------------------------------------------------------
+    wire signed [ACC_W-1:0] dot [0:P_CO-1];
+
+    genvar gco, gn;
+    generate
+        for (gco = 0; gco < P_CO; gco = gco + 1) begin : G_CO
+
+            // ---- stage 1: the P_CI*TAP products -------------------------
+            wire signed [ACC_W-1:0] p [0:N0-1];
+            for (gn = 0; gn < N0; gn = gn + 1) begin : G_PROD
+                assign p[gn] =
+                    $signed(win_data[(gn)*CH_W +: CH_W])
+                  * $signed(w_data[(gco*N0 + gn)*CH_W +: CH_W]);
+            end
+
+            // ---- stage 2: balanced tree --------------------------------
+            wire signed [ACC_W-1:0] l1 [0:N1-1];
+            for (gn = 0; gn < N1; gn = gn + 1) begin : G_L1
+                if ((2*gn + 1) < N0) assign l1[gn] = p[2*gn] + p[2*gn+1];
+                else                 assign l1[gn] = p[2*gn];
+            end
+
+            wire signed [ACC_W-1:0] l2 [0:N2-1];
+            for (gn = 0; gn < N2; gn = gn + 1) begin : G_L2
+                if ((2*gn + 1) < N1) assign l2[gn] = l1[2*gn] + l1[2*gn+1];
+                else                 assign l2[gn] = l1[2*gn];
+            end
+
+            wire signed [ACC_W-1:0] l3 [0:N3-1];
+            for (gn = 0; gn < N3; gn = gn + 1) begin : G_L3
+                if ((2*gn + 1) < N2) assign l3[gn] = l2[2*gn] + l2[2*gn+1];
+                else                 assign l3[gn] = l2[2*gn];
+            end
+
+            wire signed [ACC_W-1:0] l4 [0:N4-1];
+            for (gn = 0; gn < N4; gn = gn + 1) begin : G_L4
+                if ((2*gn + 1) < N3) assign l4[gn] = l3[2*gn] + l3[2*gn+1];
+                else                 assign l4[gn] = l3[2*gn];
+            end
+
+            wire signed [ACC_W-1:0] l5 [0:N5-1];
+            for (gn = 0; gn < N5; gn = gn + 1) begin : G_L5
+                if ((2*gn + 1) < N4) assign l5[gn] = l4[2*gn] + l4[2*gn+1];
+                else                 assign l5[gn] = l4[2*gn];
+            end
+
+            wire signed [ACC_W-1:0] l6 [0:N6-1];
+            for (gn = 0; gn < N6; gn = gn + 1) begin : G_L6
+                if ((2*gn + 1) < N5) assign l6[gn] = l5[2*gn] + l5[2*gn+1];
+                else                 assign l6[gn] = l5[2*gn];
+            end
+
+            assign dot[gco] = l6[0];
+
+        end
+    endgenerate
+
+    //------------------------------------------------------------------------
+    //  Stage 3: optional output register
+    //------------------------------------------------------------------------
+    generate
+        if (PIPE != 0) begin : G_PIPE
+            integer k;
+            always @(posedge clk or negedge rst_n) begin
+                if (!rst_n) begin
+                    out_valid <= 1'b0;
+                    out_sum   <= {(P_CO*ACC_W){1'b0}};
+                end else begin
+                    out_valid <= in_valid;
+                    if (in_valid) begin
+                        for (k = 0; k < P_CO; k = k + 1)
+                            out_sum[k*ACC_W +: ACC_W] <= dot[k];
+                    end
+                end
+            end
+        end else begin : G_COMB
+            integer k;
+            always @* begin
+                out_valid = in_valid;
+                for (k = 0; k < P_CO; k = k + 1)
+                    out_sum[k*ACC_W +: ACC_W] = dot[k];
+            end
+        end
+    endgenerate
+
+endmodule
+
+`default_nettype wire

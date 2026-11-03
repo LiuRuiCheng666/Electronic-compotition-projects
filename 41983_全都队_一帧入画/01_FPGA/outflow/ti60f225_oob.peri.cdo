@@ -1,0 +1,117 @@
+CellDelayOverride {
+  Cell: "DDR3_PLL~PLL"
+  DelayOverride {
+    from: "CLKIN[3]"
+    to: "CLKOUT0"
+    Type: "CLK_TO_Q"
+    value_min: -854
+    value_max: -1513
+  }
+  DelayOverride {
+    from: "CLKIN[3]"
+    to: "CLKOUT1"
+    Type: "CLK_TO_Q"
+    value_min: -854
+    value_max: -1513
+  }
+  DelayOverride {
+    from: "CLKIN[3]"
+    to: "CLKOUT2"
+    Type: "CLK_TO_Q"
+    value_min: -854
+    value_max: -1513
+  }
+  DelayOverride {
+    from: "CLKIN[3]"
+    to: "CLKOUT3"
+    Type: "CLK_TO_Q"
+    value_min: -854
+    value_max: -1513
+  }
+  DelayOverride {
+    from: "CLKIN[3]"
+    to: "CLKOUT4"
+    Type: "CLK_TO_Q"
+    value_min: -854
+    value_max: -1513
+  }
+}
+CellDelayOverride {
+  Cell: "USER_PLL~PLL"
+  DelayOverride {
+    from: "CLKIN[3]"
+    to: "CLKOUT0"
+    Type: "CLK_TO_Q"
+    value_min: -1213
+    value_max: -2146
+  }
+  DelayOverride {
+    from: "CLKIN[3]"
+    to: "CLKOUT1"
+    Type: "CLK_TO_Q"
+    value_min: -1213
+    value_max: -2146
+  }
+  DelayOverride {
+    from: "CLKIN[3]"
+    to: "CLKOUT2"
+    Type: "CLK_TO_Q"
+    value_min: -1213
+    value_max: -2146
+  }
+  DelayOverride {
+    from: "CLKIN[3]"
+    to: "CLKOUT3"
+    Type: "CLK_TO_Q"
+    value_min: -1213
+    value_max: -2146
+  }
+}
+CellDelayOverride {
+  Cell: "MIPI_TX_PLL~PLL"
+  DelayOverride {
+    from: "CLKIN[3]"
+    to: "CLKOUT0"
+    Type: "CLK_TO_Q"
+    value_min: -1183
+    value_max: -2093
+  }
+  DelayOverride {
+    from: "CLKIN[3]"
+    to: "CLKOUT1"
+    Type: "CLK_TO_Q"
+    value_min: -1183
+    value_max: -2093
+  }
+  DelayOverride {
+    from: "CLKIN[3]"
+    to: "CLKOUT2"
+    Type: "CLK_TO_Q"
+    value_min: -1183
+    value_max: -2093
+  }
+}
+CellDelayOverride {
+  Cell: "hdmi_rx_pll~PLL"
+  DelayOverride {
+    from: "CLKIN[0]"
+    to: "CLKOUT0"
+    Type: "CLK_TO_Q"
+    value_min: -1191
+    value_max: -2107
+  }
+  DelayOverride {
+    from: "CLKIN[0]"
+    to: "CLKOUT1"
+    Type: "CLK_TO_Q"
+    value_min: -1191
+    value_max: -2107
+  }
+  DelayOverride {
+    from: "CLKIN[0]"
+    to: "CLKOUT3"
+    Type: "CLK_TO_Q"
+    value_min: -1191
+    value_max: -2107
+  }
+}

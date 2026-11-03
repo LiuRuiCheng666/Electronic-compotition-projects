@@ -1,0 +1,2 @@
+# Preserve byte-exact HDL, ROM initialization, FPGA HEX and dependency files.
+* -text

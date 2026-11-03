@@ -1,0 +1,276 @@
+//============================================================================
+//  norm_coeff.v -- InstanceNorm coefficients A', B' from the statistics
+//----------------------------------------------------------------------------
+//  Given one channel's statistics S1, S2 and the pixel count N, produces the
+//  two constants that postproc applies:
+//
+//      y = A' * acc_s + B'
+//
+//  Derivation (all integers, matching pc2fpga/stat_norm.py bit for bit)
+//
+//      x       = acc >> SH                       (per-pixel, in acc_reduce)
+//      T       = N*S2 - S1^2                     == N^2 * variance, exact
+//      rsqrt   = 1/sqrt(T) = (v / 2^R) * 2^(-sh)  (mantissa + exponent form)
+//
+//      A  = gamma / sigma = gamma * N / sqrt(T)  = (gamma*N*v) >> (R+sh)
+//      B  = beta - mu*A    = beta - (gamma*S1*v) >> (R+sh)
+//
+//  and the merged normalisation + requantisation constant folds in here as a
+//  single scaled input:
+//
+//      A' = (GAMMA_FP * N  * v) >> (R+sh)
+//      B' =  BETA_FP       - ((GAMMA_FP * S1 * v) >> (R+sh))
+//
+//  where GAMMA_FP = round(gamma_eff * 2^SA) and BETA_FP = round(beta_eff*2^SA)
+//  carry the requantisation scale already multiplied in.  So postproc still
+//  needs only ONE multiply-add per lane.
+//
+//  Why the shift is DYNAMIC
+//    T spans 2^0 .. 2^48, so 1/sqrt(T) spans 2^0 .. 2^-24.  A fixed-point
+//    reciprocal would underflow; the mantissa+exponent form makes the shift a
+//    runtime value (a barrel shifter in hardware).
+//
+//  Latency
+//    The two coefficient multiplications are separated by registers:
+//      GAMMA_FP * {N,S1} -> register -> * rsqrt mantissa -> register
+//    followed by the dynamic shift/saturation output stage.  This adds one
+//    cycle versus the original implementation, but removes the back-to-back
+//    DSP multiplier chain from the core_clk timing path.
+//============================================================================
+
+`default_nettype none
+
+module norm_coeff #(
+    parameter integer SA    = 24,       // fractional bits of GAMMA_FP / BETA_FP
+    parameter integer R     = 18,       // rsqrt mantissa fractional bits
+    parameter integer K     = 5,        // rsqrt LUT index bits
+    parameter integer FM    = 22,       // rsqrt internal mantissa bits
+    parameter integer T_W   = 48,       // width handed to rsqrt_unit
+    parameter integer S1_W  = 48,
+    parameter integer S2_W  = 56,
+    parameter integer NW    = 20,       // width of N
+    parameter integer A_W   = 32,       // multiplicative coefficient width
+    parameter integer B_W   = A_W,      // additive coefficient width
+    parameter integer T_MIN = 1         // divide-by-zero guard
+)(
+    input  wire                    clk,
+    input  wire                    rst_n,
+
+    // ---- one channel at a time ----
+    input  wire                    start,
+    input  wire [S1_W-1:0]         s1_in,      // signed
+    input  wire [S2_W-1:0]         s2_in,      // unsigned
+    input  wire [NW-1:0]           n_in,
+    input  wire signed [A_W-1:0]   gamma_fp,   // round(gamma_eff * 2^SA)
+    input  wire signed [A_W-1:0]   beta_fp,    // round(beta_eff  * 2^SA)
+
+    output reg                     out_valid,
+    output reg  signed [A_W-1:0]   a_out,
+    output reg  signed [B_W-1:0]   b_out,
+    output wire                    busy,
+
+    // ---- diagnostics (handy in simulation) ----
+    output reg  [T_W-1:0]          t_out,
+    output reg  [7:0]              sh_out
+);
+
+    //------------------------------------------------------------------------
+    //  Internal widths
+    //  T needs 2*log2(N) + 2*b + 1 bits analytically, and the final products
+    //  (GAMMA_FP*N*S1) * v reach ~80+19 bits, so every intermediate is given a
+    //  generous fixed width and then clamped/saturated.  (An earlier version
+    //  used 96 bits for the products, which silently TRUNCATED the high bits of
+    //  a 115-bit product and produced a fully saturated B'.)
+    //------------------------------------------------------------------------
+    localparam integer TW2 = 128;
+    localparam integer PW  = 128;        // product / shift width
+    localparam integer GN_W  = A_W + NW;
+    localparam integer GS1_W = A_W + S1_W;
+
+    localparam integer S_IDLE = 3'd0, S_CALC = 3'd1,
+                       S_TSUB = 3'd2, S_WAIT = 3'd3,
+                       S_MUL2 = 3'd4, S_FIN  = 3'd5;
+    reg [2:0] st;
+
+    reg signed [S1_W-1:0] s1_r;
+    reg        [S2_W-1:0] s2_r;
+    reg        [NW-1:0]   n_r;
+    reg signed [A_W-1:0]  gam_r, bet_r;
+
+    // ---- T = N*S2 - S1^2 ----
+    wire [TW2-1:0]  ns2   = $unsigned(n_r) * $unsigned(s2_r);
+    wire signed [TW2-1:0] s1sq = $signed(s1_r) * $signed(s1_r);
+
+    // First T pipeline boundary: terminate both wide DSP products before the
+    // subtraction and clamp logic.  Their mathematical ranges fit safely in
+    // TW2, and ns2's upper bit is always zero for the configured widths.
+    reg        [TW2-1:0] ns2_pipe;
+    reg signed [TW2-1:0] s1sq_pipe;
+    wire signed [TW2-1:0] t_full = $signed(ns2_pipe) - s1sq_pipe;
+
+    // NOTE: the compare uses the full-width constant, and only the SELECTED
+    // VALUE is narrowed.  Writing T_MIN[T_W-1:0] directly makes the part-select
+    // wider than the constant itself, which ModelSim flags as out of bounds.
+    localparam signed [TW2-1:0] TMIN_FULL = T_MIN;
+    wire [T_W-1:0] t_clamped =
+        (t_full < TMIN_FULL)           ? T_W'(T_MIN)  :
+        (t_full > {1'b0, {T_W{1'b1}}}) ? {T_W{1'b1}}  :
+        t_full[T_W-1:0];
+
+    // Register T before rsqrt.  Besides holding the request data stable, this
+    // terminates the S1^2 DSP/subtract/clamp path before the rsqrt leading-bit
+    // analysis, which otherwise formed one long core_clk timing path.
+    reg [T_W-1:0] t_pipe;
+
+    // ---- rsqrt unit ----
+    reg               rs_valid;
+    wire              rs_out_valid;
+    wire [R:0]        rs_v;
+    wire [7:0]        rs_sh;
+    wire              rs_odd;
+
+    rsqrt_unit #(.T_W(T_W), .K(K), .R(R), .FM(FM)) u_rsqrt (
+        .clk(clk), .rst_n(rst_n),
+        .in_valid(rs_valid), .t_data(t_pipe),
+        .out_valid(rs_out_valid), .v_out(rs_v), .sh_out(rs_sh), .odd_out(rs_odd)
+    );
+
+    // ---- pipelined coefficient multiply + dynamic shift ----
+    wire signed [PW-1:0] gn  = $signed(gam_r) * $signed({1'b0, n_r});   // GAMMA_FP * N
+    wire signed [PW-1:0] gs1 = $signed(gam_r) * $signed(s1_r);         // GAMMA_FP * S1
+
+    // Stage 1 is captured when rsqrt completes.  Keep only the exact useful
+    // widths so the following multiplier does not appear to be 128 bits wide.
+    reg signed [GN_W-1:0]  gn_pipe;
+    reg signed [GS1_W-1:0] gs1_pipe;
+    reg signed [R+1:0]     rv_pipe;   // leading zero keeps rs_v positive
+    reg        [7:0]        sh_pipe;
+    reg signed [A_W-1:0]   bet_pipe;
+
+    // NOTE: these MUST be declared `signed`.  With an unsigned declaration the
+    // multiply context becomes unsigned, a negative GAMMA_FP*S1 is reinterpreted
+    // as a huge positive, and `>>>` degrades to a LOGICAL shift -- which made B'
+    // saturate to the most negative value while A' (whose operands are positive)
+    // stayed correct.  Same trap as in acc_reduce.
+    reg signed [PW-1:0] gn_prod_pipe;
+    reg signed [PW-1:0] gs1_prod_pipe;
+
+    // arithmetic shift (products can be negative via S1)
+    wire signed [PW-1:0] a_full = gn_prod_pipe  >>> sh_pipe;
+    wire signed [PW-1:0] b_frac = gs1_prod_pipe >>> sh_pipe;
+    wire signed [PW-1:0] b_full = bet_pipe - b_frac;
+
+    // saturating narrow to A_W bits
+    localparam signed [PW-1:0] A_MAX =  (1 <<< (A_W-1)) - 1;
+    localparam signed [PW-1:0] A_MIN = -(1 <<< (A_W-1));
+    localparam signed [PW-1:0] B_MAX =
+        {{(PW-B_W){1'b0}}, 1'b0, {(B_W-1){1'b1}}};
+    localparam signed [PW-1:0] B_MIN =
+        {{(PW-B_W){1'b1}}, 1'b1, {(B_W-1){1'b0}}};
+
+    function signed [A_W-1:0] sat(input signed [PW-1:0] x);
+        begin
+            if (x > A_MAX)      sat = A_MAX[A_W-1:0];
+            else if (x < A_MIN) sat = A_MIN[A_W-1:0];
+            else                sat = x[A_W-1:0];
+        end
+    endfunction
+
+    function signed [B_W-1:0] sat_b(input signed [PW-1:0] x);
+        begin
+            if (x > B_MAX)      sat_b = B_MAX[B_W-1:0];
+            else if (x < B_MIN) sat_b = B_MIN[B_W-1:0];
+            else                sat_b = x[B_W-1:0];
+        end
+    endfunction
+
+    assign busy = (st != S_IDLE);
+
+    always @(posedge clk or negedge rst_n) begin
+        if (!rst_n) begin
+            st       <= S_IDLE;
+            rs_valid <= 1'b0;
+            out_valid<= 1'b0;
+            a_out    <= {A_W{1'b0}};
+            b_out    <= {B_W{1'b0}};
+            t_out    <= {T_W{1'b0}};
+            t_pipe   <= {T_W{1'b0}};
+            ns2_pipe <= {TW2{1'b0}};
+            s1sq_pipe<= {TW2{1'b0}};
+            sh_out   <= 8'd0;
+            s1_r <= 0; s2_r <= 0; n_r <= 0; gam_r <= 0; bet_r <= 0;
+            gn_pipe <= 0; gs1_pipe <= 0; rv_pipe <= 0;
+            sh_pipe <= 0; bet_pipe <= 0;
+            gn_prod_pipe <= 0; gs1_prod_pipe <= 0;
+        end else begin
+            rs_valid  <= 1'b0;
+            out_valid <= 1'b0;
+
+            case (st)
+                //------------------------------------------------------------
+                S_IDLE: if (start) begin
+                            s1_r <= s1_in;
+                            s2_r <= s2_in;
+                            n_r  <= n_in;
+                            gam_r<= gamma_fp;
+                            bet_r<= beta_fp;
+                            st   <= S_CALC;
+                        end
+
+                //------------------------------------------------------------
+                //  First T stage: capture the two wide products separately.
+                //------------------------------------------------------------
+                S_CALC: begin
+                            ns2_pipe  <= ns2;
+                            s1sq_pipe <= s1sq;
+                            st        <= S_TSUB;
+                        end
+
+                //------------------------------------------------------------
+                //  Second T stage: subtract, clamp and register the value that
+                //  rsqrt will sample on the following clock edge.
+                //------------------------------------------------------------
+                S_TSUB: begin
+                            t_pipe   <= t_clamped;
+                            rs_valid <= 1'b1;
+                            t_out    <= t_clamped;
+                            st       <= S_WAIT;
+                        end
+
+                //------------------------------------------------------------
+                S_WAIT: if (rs_out_valid) begin
+                            // Pipeline boundary 1: terminate GAMMA_FP*N/S1.
+                            gn_pipe  <= gn[GN_W-1:0];
+                            gs1_pipe <= gs1[GS1_W-1:0];
+                            rv_pipe  <= $signed({1'b0, rs_v});
+                            sh_pipe  <= R[7:0] + rs_sh;
+                            bet_pipe <= bet_r;
+                            sh_out   <= rs_sh;
+                            st       <= S_MUL2;
+                        end
+
+                //------------------------------------------------------------
+                S_MUL2: begin
+                            // Pipeline boundary 2: terminate the rsqrt
+                            // mantissa multiplication before shift/saturation.
+                            gn_prod_pipe  <= $signed(gn_pipe)  * $signed(rv_pipe);
+                            gs1_prod_pipe <= $signed(gs1_pipe) * $signed(rv_pipe);
+                            st            <= S_FIN;
+                        end
+
+                //------------------------------------------------------------
+                S_FIN: begin
+                            a_out     <= sat(a_full);
+                            b_out     <= sat_b(b_full);
+                            out_valid <= 1'b1;
+                            st        <= S_IDLE;
+                        end
+
+                default: st <= S_IDLE;
+            endcase
+        end
+    end
+
+endmodule
+
+`default_nettype wire

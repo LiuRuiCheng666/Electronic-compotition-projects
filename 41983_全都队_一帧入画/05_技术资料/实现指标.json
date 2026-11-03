@@ -1,0 +1,15 @@
+{
+  "core_hz": 160000000,
+  "ddr_hz": 400000000,
+  "processing_resolution": [
+    1280,
+    720
+  ],
+  "hdmi_output_resolution": [
+    1920,
+    1080
+  ],
+  "osd_text": "RES:1280X720  PROC FPS:000  DISP FPS:000",
+  "minimum_setup_slack_ns": 0.097,
+  "minimum_hold_slack_ns": 0.026
+}

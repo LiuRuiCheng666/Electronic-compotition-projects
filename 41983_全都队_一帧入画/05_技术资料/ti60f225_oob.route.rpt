@@ -1,0 +1,47 @@
+
+Elitestek FPGA Placement and Routing.
+Version: 2026.1.132 
+Date: Tue Nov  3 13:22:09 2026
+
+Copyright (C) 2013 - 2026 Efinix, Inc. All rights reserved.
+ 
+Family: Titanium 
+Device: Ti60F225
+Top-level Entity Name: ti60f225_oob
+Elapsed time for routing: 0 hours 10 minutes 50 seconds
+
+
+---------- GBUFCE Assignments (begin) ----------
+
+
++---------------------+----------+----------+
+|      Clock Net      | GBUFCE_X | GBUFCE_Y |
++---------------------+----------+----------+
+|       CLK_25M       |    1     |   164    |
+|       CLK_27M       |    1     |   159    |
+|      clk_100m       |   115    |    1     |
+|      core_clk       |   112    |   322    |
+|         fb          |   108    |    1     |
+|  hdmi_rx_fast_clk   |   107    |   322    |
+|     hdmi_rx_fb      |   218    |   162    |
+|  hdmi_rx_slow_clk   |   106    |   322    |
+|  hdmi_tx_fast_clk   |   107    |    1     |
+|  hdmi_tx_slow_clk   |   112    |    1     |
+|   i_cam_ck_CLKOUT   |   110    |   322    |
+|   i_mipi_rx_pclk    |    1     |   163    |
+|   jtag_inst2_TCK    |    1     |   158    |
+| mipi_tx_feedback100 |    1     |   162    |
+|  osc_inst1_CLKOUT   |   108    |   322    |
+|     rx_cal_clk      |   111    |    1     |
+|         rxc         |    1     |   160    |
+|      sdram_clk      |   218    |   164    |
+|     tx_cal_clk      |   218    |   159    |
+|  tx_cal_clk_90edge  |   110    |    1     |
+|    vid_clk_dvi2     |   109    |    1     |
++---------------------+----------+----------+
+
+
+----------- GBUFCE Assignments (end) ----------
+
+
+Elapsed time for Latest PnR Run: 0 hours 25 minutes 37 seconds

@@ -1,0 +1,408 @@
+`timescale 1ns/1ps
+`default_nettype none
+
+// Board-level end-to-end test:
+//   input ROM -> DDR bank 0 -> net_top -> DDR bank 0 -> CRC32 checker.
+// The module owns the controller AXI port during preload and verification and
+// gives it to net_top only while inference is running.
+module nn_ddr_selftest #(
+    parameter integer AXI_ID_WIDTH   = 4,
+    parameter integer AXI_ADDR_WIDTH = 32,
+    parameter integer AXI_DATA_WIDTH = 128,
+    parameter [AXI_ADDR_WIDTH-1:0] FRAME_BASE_ADDR = 32'h0100_0000,
+    parameter integer BANK_ADDR_SHIFT = 20,
+    parameter integer NETWORK_LAYERS = 20,
+    parameter integer OUTPUT_BANK = 0,
+    parameter integer INPUT_BEATS  = 192, // 32*24*4 / 16
+    parameter integer OUTPUT_BEATS = 144, // 32*24*3 / 16
+    parameter [31:0] INPUT_CRC32    = 32'hFD64_7557,
+    parameter [31:0] EXPECTED_CRC32 = 32'hC5B9_A402,
+    parameter INPUT_MEM_FILE = "net_in32.mem",
+    parameter integer TIMEOUT_WIDTH = 28
+)(
+    input  wire clk,
+    input  wire rst_n,
+    input  wire start,
+    input  wire ddr_cal_done,
+
+    output reg  busy,
+    output reg  done,
+    output reg  pass,
+    output reg  fail,
+    output reg  [31:0] error_count,
+    // 0:none, 1:timeout, 2:preload write response, 3:net fault,
+    // 4:verify read response/rlast, 5:output CRC mismatch,
+    // 6:preloaded input CRC mismatch.
+    output reg  [2:0] fault_code,
+
+    output wire [AXI_ID_WIDTH-1:0]   m_axi_awid,
+    output wire [AXI_ADDR_WIDTH-1:0] m_axi_awaddr,
+    output wire [7:0]                m_axi_awlen,
+    output wire [2:0]                m_axi_awsize,
+    output wire [1:0]                m_axi_awburst,
+    output wire                      m_axi_awlock,
+    output wire [3:0]                m_axi_awcache,
+    output wire [2:0]                m_axi_awprot,
+    output wire                      m_axi_awvalid,
+    input  wire                      m_axi_awready,
+    output wire [AXI_DATA_WIDTH-1:0]   m_axi_wdata,
+    output wire [AXI_DATA_WIDTH/8-1:0] m_axi_wstrb,
+    output wire                        m_axi_wlast,
+    output wire                        m_axi_wvalid,
+    input  wire                        m_axi_wready,
+    input  wire [AXI_ID_WIDTH-1:0] m_axi_bid,
+    input  wire [1:0]              m_axi_bresp,
+    input  wire                    m_axi_bvalid,
+    output wire                    m_axi_bready,
+    output wire [AXI_ID_WIDTH-1:0]   m_axi_arid,
+    output wire [AXI_ADDR_WIDTH-1:0] m_axi_araddr,
+    output wire [7:0]                m_axi_arlen,
+    output wire [2:0]                m_axi_arsize,
+    output wire [1:0]                m_axi_arburst,
+    output wire                      m_axi_arlock,
+    output wire [3:0]                m_axi_arcache,
+    output wire [2:0]                m_axi_arprot,
+    output wire                      m_axi_arvalid,
+    input  wire                      m_axi_arready,
+    input  wire [AXI_ID_WIDTH-1:0] m_axi_rid,
+    input  wire [AXI_DATA_WIDTH-1:0] m_axi_rdata,
+    input  wire [1:0]              m_axi_rresp,
+    input  wire                    m_axi_rlast,
+    input  wire                    m_axi_rvalid,
+    output wire                    m_axi_rready
+);
+    localparam integer AXI_BYTES = AXI_DATA_WIDTH / 8;
+    localparam integer AXI_SIZE_I = $clog2(AXI_BYTES);
+    localparam integer IDX_W = (INPUT_BEATS > OUTPUT_BEATS) ?
+                               $clog2(INPUT_BEATS) : $clog2(OUTPUT_BEATS);
+
+    localparam integer INPUT_WORDS = INPUT_BEATS * 4;
+    localparam integer ROM_AW = $clog2(INPUT_WORDS);
+
+    localparam [3:0] S_IDLE    = 4'd0,  S_P_PRIME = 4'd1,
+                     S_P_FILL  = 4'd2,  S_P_WA    = 4'd3,
+                     S_P_WD    = 4'd4,  S_P_WB    = 4'd5,
+                     S_NSTART  = 4'd6,  S_NWAIT   = 4'd7,
+                     S_V_RA    = 4'd8,  S_V_RD    = 4'd9,
+                     S_V_CRC   = 4'd10, S_DONE    = 4'd11;
+    reg [3:0] state;
+    reg [IDX_W-1:0] beat_index;
+    reg [31:0] crc_reg;
+    reg [127:0] verify_data;
+    reg [3:0] crc_byte_index;
+    reg verify_resp_bad;
+    reg verify_input;
+    reg [TIMEOUT_WIDTH-1:0] watchdog;
+    reg [ROM_AW-1:0] rom_addr;
+    reg [1:0] rom_word_index;
+
+    // Keep the preload image in a narrow ROM.  A 192x128 declaration wastes
+    // six physical RAM blocks on this device because of the wide read port;
+    // 768x32 stores the same 24 Kbit efficiently.  Four ROM words are
+    // assembled before issuing each 128-bit AXI write.
+    (* syn_ramstyle = "block_ram" *) reg [31:0] input_rom [0:INPUT_WORDS-1];
+    reg [31:0] rom_q;
+    reg [AXI_DATA_WIDTH-1:0] input_beat;
+    initial $readmemh(INPUT_MEM_FILE, input_rom);
+    always @(posedge clk)
+        rom_q <= input_rom[rom_addr];
+
+    function [31:0] crc32_byte;
+        input [31:0] crc_in;
+        input [7:0] data;
+        integer b;
+        reg [31:0] c;
+        begin
+            c = crc_in ^ data;
+            for (b = 0; b < 8; b = b + 1)
+                c = c[0] ? ((c >> 1) ^ 32'hEDB8_8320) : (c >> 1);
+            crc32_byte = c;
+        end
+    endfunction
+
+    // One byte per cycle keeps the CRC checker off the 100 MHz critical path.
+    wire [7:0] crc_data_byte = verify_data[crc_byte_index*8 +: 8];
+    wire [31:0] crc_after_byte = crc32_byte(crc_reg, crc_data_byte);
+    wire [AXI_ADDR_WIDTH-1:0] beat_ext =
+        {{(AXI_ADDR_WIDTH-IDX_W){1'b0}}, beat_index};
+    wire preload_owner = (state == S_P_PRIME) || (state == S_P_FILL) ||
+                         (state == S_P_WA) || (state == S_P_WD) ||
+                         (state == S_P_WB);
+    wire verify_owner  = (state == S_V_RA) || (state == S_V_RD) ||
+                         (state == S_V_CRC);
+    wire local_owner   = preload_owner || verify_owner;
+    wire [AXI_ADDR_WIDTH-1:0] output_bank_offset =
+        OUTPUT_BANK << BANK_ADDR_SHIFT;
+    wire [AXI_ADDR_WIDTH-1:0] local_bank_offset =
+        (verify_owner && !verify_input) ? output_bank_offset :
+                                          {AXI_ADDR_WIDTH{1'b0}};
+    wire [AXI_ADDR_WIDTH-1:0] local_addr =
+        FRAME_BASE_ADDR + local_bank_offset + (beat_ext << AXI_SIZE_I);
+
+    wire net_done, net_busy, net_fault;
+    wire net_start = (state == S_NSTART);
+    wire [AXI_ID_WIDTH-1:0] n_awid, n_arid;
+    wire [AXI_ADDR_WIDTH-1:0] n_awaddr, n_araddr;
+    wire [7:0] n_awlen, n_arlen;
+    wire [2:0] n_awsize, n_ar_size;
+    wire [1:0] n_awburst, n_arburst;
+    wire n_awlock, n_arlock;
+    wire [3:0] n_awcache, n_arcache;
+    wire [2:0] n_awprot, n_arprot;
+    wire [3:0] n_awqos, n_arqos;
+    wire n_awvalid, n_wlast, n_wvalid, n_bready;
+    wire [AXI_DATA_WIDTH-1:0] n_wdata;
+    wire [AXI_DATA_WIDTH/8-1:0] n_wstrb;
+    wire n_arvalid, n_rready;
+
+    net_top #(
+        .NL(NETWORK_LAYERS),
+        .USE_DDR(1),
+        .AXI_ID_WIDTH(AXI_ID_WIDTH),
+        .AXI_ADDR_WIDTH(AXI_ADDR_WIDTH),
+        .AXI_DATA_WIDTH(AXI_DATA_WIDTH),
+        .DDR_BASE_ADDR(FRAME_BASE_ADDR),
+        .DDR_BANK_ADDR_SHIFT(BANK_ADDR_SHIFT)
+    ) u_net_top (
+        .clk(clk), .rst_n(rst_n), .start(net_start),
+        .done(net_done), .busy(net_busy),
+        .dbg_bank(2'd0), .dbg_addr(15'd0), .dbg_data(),
+        .ddr_cal_done(ddr_cal_done), .ddr_fault(net_fault),
+        .m_axi_awid(n_awid), .m_axi_awaddr(n_awaddr),
+        .m_axi_awlen(n_awlen), .m_axi_awsize(n_awsize),
+        .m_axi_awburst(n_awburst), .m_axi_awlock(n_awlock),
+        .m_axi_awcache(n_awcache), .m_axi_awprot(n_awprot),
+        .m_axi_awqos(n_awqos), .m_axi_awvalid(n_awvalid),
+        .m_axi_awready(m_axi_awready), .m_axi_wdata(n_wdata),
+        .m_axi_wstrb(n_wstrb), .m_axi_wlast(n_wlast),
+        .m_axi_wvalid(n_wvalid), .m_axi_wready(m_axi_wready),
+        .m_axi_bid(m_axi_bid), .m_axi_bresp(m_axi_bresp),
+        .m_axi_bvalid(m_axi_bvalid), .m_axi_bready(n_bready),
+        .m_axi_arid(n_arid), .m_axi_araddr(n_araddr),
+        .m_axi_arlen(n_arlen), .m_axi_arsize(n_ar_size),
+        .m_axi_arburst(n_arburst), .m_axi_arlock(n_arlock),
+        .m_axi_arcache(n_arcache), .m_axi_arprot(n_arprot),
+        .m_axi_arqos(n_arqos), .m_axi_arvalid(n_arvalid),
+        .m_axi_arready(m_axi_arready), .m_axi_rid(m_axi_rid),
+        .m_axi_rdata(m_axi_rdata), .m_axi_rresp(m_axi_rresp),
+        .m_axi_rlast(m_axi_rlast), .m_axi_rvalid(m_axi_rvalid),
+        .m_axi_rready(n_rready)
+    );
+
+    assign m_axi_awid    = local_owner ? {AXI_ID_WIDTH{1'b0}} : n_awid;
+    assign m_axi_awaddr  = local_owner ? local_addr : n_awaddr;
+    assign m_axi_awlen   = local_owner ? 8'd0 : n_awlen;
+    assign m_axi_awsize  = local_owner ? AXI_SIZE_I[2:0] : n_awsize;
+    assign m_axi_awburst = local_owner ? 2'b01 : n_awburst;
+    assign m_axi_awlock  = local_owner ? 1'b0 : n_awlock;
+    assign m_axi_awcache = local_owner ? 4'd3 : n_awcache;
+    assign m_axi_awprot  = local_owner ? 3'd2 : n_awprot;
+    assign m_axi_awvalid = preload_owner && (state == S_P_WA) ? 1'b1 :
+                           (local_owner ? 1'b0 : n_awvalid);
+    assign m_axi_wdata   = local_owner ? input_beat : n_wdata;
+    assign m_axi_wstrb   = local_owner ? {AXI_BYTES{1'b1}} : n_wstrb;
+    assign m_axi_wlast   = local_owner ? 1'b1 : n_wlast;
+    assign m_axi_wvalid  = preload_owner && (state == S_P_WD) ? 1'b1 :
+                           (local_owner ? 1'b0 : n_wvalid);
+    assign m_axi_bready  = preload_owner && (state == S_P_WB) ? 1'b1 :
+                           (local_owner ? 1'b0 : n_bready);
+
+    assign m_axi_arid    = local_owner ? {AXI_ID_WIDTH{1'b0}} : n_arid;
+    assign m_axi_araddr  = local_owner ? local_addr : n_araddr;
+    assign m_axi_arlen   = local_owner ? 8'd0 : n_arlen;
+    assign m_axi_arsize  = local_owner ? AXI_SIZE_I[2:0] : n_ar_size;
+    assign m_axi_arburst = local_owner ? 2'b01 : n_arburst;
+    assign m_axi_arlock  = local_owner ? 1'b0 : n_arlock;
+    assign m_axi_arcache = local_owner ? 4'd3 : n_arcache;
+    assign m_axi_arprot  = local_owner ? 3'd2 : n_arprot;
+    assign m_axi_arvalid = verify_owner && (state == S_V_RA) ? 1'b1 :
+                           (local_owner ? 1'b0 : n_arvalid);
+    assign m_axi_rready  = verify_owner && (state == S_V_RD) ? 1'b1 :
+                           (local_owner ? 1'b0 : n_rready);
+
+    wire progress = (m_axi_awvalid && m_axi_awready) ||
+                    (m_axi_wvalid  && m_axi_wready)  ||
+                    (m_axi_bvalid  && m_axi_bready)  ||
+                    (m_axi_arvalid && m_axi_arready) ||
+                    (m_axi_rvalid  && m_axi_rready)  || net_done;
+
+    always @(posedge clk or negedge rst_n) begin
+        if (!rst_n) begin
+            state       <= S_IDLE;
+            beat_index  <= {IDX_W{1'b0}};
+            crc_reg     <= 32'hFFFF_FFFF;
+            verify_data <= 128'd0;
+            crc_byte_index <= 4'd0;
+            verify_resp_bad <= 1'b0;
+            verify_input <= 1'b0;
+            watchdog    <= {TIMEOUT_WIDTH{1'b0}};
+            rom_addr    <= {ROM_AW{1'b0}};
+            rom_word_index <= 2'd0;
+            input_beat  <= {AXI_DATA_WIDTH{1'b0}};
+            busy        <= 1'b0;
+            done        <= 1'b0;
+            pass        <= 1'b0;
+            fail        <= 1'b0;
+            error_count <= 32'd0;
+            fault_code  <= 3'd0;
+        end else begin
+            if (!busy || progress)
+                watchdog <= {TIMEOUT_WIDTH{1'b0}};
+            else
+                watchdog <= watchdog + 1'b1;
+
+            if (busy && (&watchdog)) begin
+                busy        <= 1'b0;
+                done        <= 1'b1;
+                pass        <= 1'b0;
+                fail        <= 1'b1;
+                error_count <= error_count + 1'b1;
+                if (fault_code == 3'd0)
+                    fault_code <= 3'd1;
+                state       <= S_DONE;
+            end else begin
+                case (state)
+                    S_IDLE: if (start && ddr_cal_done) begin
+                        beat_index  <= {IDX_W{1'b0}};
+                        busy        <= 1'b1;
+                        done        <= 1'b0;
+                        pass        <= 1'b0;
+                        fail        <= 1'b0;
+                        error_count <= 32'd0;
+                        fault_code  <= 3'd0;
+                        rom_addr    <= {ROM_AW{1'b0}};
+                        state       <= S_P_PRIME;
+                    end
+
+                    // Prime the synchronous ROM, then collect four 32-bit
+                    // words.  Word 0 occupies AXI bits [31:0].
+                    S_P_PRIME: begin
+                        rom_word_index <= 2'd0;
+                        rom_addr <= rom_addr + 1'b1;
+                        state <= S_P_FILL;
+                    end
+                    S_P_FILL: begin
+                        input_beat[rom_word_index*32 +: 32] <= rom_q;
+                        if (rom_word_index == 2'd3) begin
+                            state <= S_P_WA;
+                        end else begin
+                            rom_word_index <= rom_word_index + 1'b1;
+                            rom_addr <= rom_addr + 1'b1;
+                        end
+                    end
+
+                    S_P_WA: if (m_axi_awready) state <= S_P_WD;
+                    S_P_WD: if (m_axi_wready)  state <= S_P_WB;
+                    S_P_WB: if (m_axi_bvalid) begin
+                        if (m_axi_bresp != 2'b00) begin
+                            fail        <= 1'b1;
+                            error_count <= error_count + 1'b1;
+                            if (fault_code == 3'd0)
+                                fault_code <= 3'd2;
+                        end
+                        if (beat_index == INPUT_BEATS-1) begin
+                            beat_index <= {IDX_W{1'b0}};
+                            crc_reg    <= 32'hFFFF_FFFF;
+                            verify_input <= 1'b1;
+                            state      <= S_V_RA;
+                        end else begin
+                            beat_index <= beat_index + 1'b1;
+                            // rom_addr already points at the first word of
+                            // the next beat after the four-word fill above.
+                            state      <= S_P_PRIME;
+                        end
+                    end
+
+                    S_NSTART: state <= S_NWAIT;
+                    S_NWAIT: begin
+                        if (net_fault) begin
+                            busy        <= 1'b0;
+                            done        <= 1'b1;
+                            pass        <= 1'b0;
+                            fail        <= 1'b1;
+                            error_count <= error_count + 1'b1;
+                            if (fault_code == 3'd0)
+                                fault_code <= 3'd3;
+                            state       <= S_DONE;
+                        end else if (net_done) begin
+                            beat_index <= {IDX_W{1'b0}};
+                            crc_reg    <= 32'hFFFF_FFFF;
+                            verify_input <= 1'b0;
+                            state      <= S_V_RA;
+                        end
+                    end
+
+                    S_V_RA: if (m_axi_arready) state <= S_V_RD;
+                    S_V_RD: if (m_axi_rvalid) begin
+                        verify_data     <= m_axi_rdata;
+                        crc_byte_index  <= 4'd0;
+                        verify_resp_bad <= (m_axi_rresp != 2'b00) || !m_axi_rlast;
+                        if ((m_axi_rresp != 2'b00) || !m_axi_rlast) begin
+                            fail        <= 1'b1;
+                            error_count <= error_count + 1'b1;
+                            if (fault_code == 3'd0)
+                                fault_code <= 3'd4;
+                        end
+                        state <= S_V_CRC;
+                    end
+
+                    S_V_CRC: begin
+                        crc_reg <= crc_after_byte;
+                        if (crc_byte_index == 4'd15) begin
+                            if (beat_index == (verify_input ? INPUT_BEATS-1 :
+                                                              OUTPUT_BEATS-1)) begin
+                                if (verify_input) begin
+                                    if (!fail && (error_count == 0) &&
+                                        !verify_resp_bad &&
+                                        ((crc_after_byte ^ 32'hFFFF_FFFF) == INPUT_CRC32)) begin
+                                        beat_index   <= {IDX_W{1'b0}};
+                                        verify_input <= 1'b0;
+                                        state        <= S_NSTART;
+                                    end else begin
+                                        busy <= 1'b0;
+                                        done <= 1'b1;
+                                        pass <= 1'b0;
+                                        fail <= 1'b1;
+                                        if ((crc_after_byte ^ 32'hFFFF_FFFF) != INPUT_CRC32) begin
+                                            error_count <= error_count + 1'b1;
+                                            if (fault_code == 3'd0)
+                                                fault_code <= 3'd6;
+                                        end
+                                        state <= S_DONE;
+                                    end
+                                end else begin
+                                    busy <= 1'b0;
+                                    done <= 1'b1;
+                                    if (!fail && (error_count == 0) &&
+                                        !verify_resp_bad &&
+                                        ((crc_after_byte ^ 32'hFFFF_FFFF) == EXPECTED_CRC32)) begin
+                                        pass <= 1'b1;
+                                    end else begin
+                                        pass <= 1'b0;
+                                        fail <= 1'b1;
+                                        if ((crc_after_byte ^ 32'hFFFF_FFFF) != EXPECTED_CRC32) begin
+                                            error_count <= error_count + 1'b1;
+                                            if (fault_code == 3'd0)
+                                                fault_code <= 3'd5;
+                                        end
+                                    end
+                                    state <= S_DONE;
+                                end
+                            end else begin
+                                beat_index <= beat_index + 1'b1;
+                                state      <= S_V_RA;
+                            end
+                        end else begin
+                            crc_byte_index <= crc_byte_index + 1'b1;
+                        end
+                    end
+
+                    S_DONE: state <= S_DONE;
+                    default: state <= S_IDLE;
+                endcase
+            end
+        end
+    end
+endmodule
+
+`default_nettype wire

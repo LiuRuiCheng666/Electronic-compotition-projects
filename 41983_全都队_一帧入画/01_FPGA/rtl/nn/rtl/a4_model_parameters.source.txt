@@ -1,0 +1,69 @@
+`timescale 1ns/1ps
+`default_nettype none
+module a4_model_parameters #(
+ parameter [31:0] DDR_BASE=32'h01800000,
+ parameter integer TIMEOUT_BITS=24, MODEL_COUNT=2
+)(
+ input wire clk,rst_n,start,
+ input wire [1:0] model,
+ output reg busy,ready,failed,
+ output reg [1:0] active_model,
+ output reg cfg_we,cfg_tanh,
+ output reg [7:0] cfg_index,
+ output reg [63:0] cfg_data,
+ output wire [31:0] araddr,
+ output wire arvalid,input wire arready,
+ input wire [127:0] rdata,input wire [1:0] rresp,
+ input wire rlast,rvalid,output wire rready
+);
+ localparam IDLE=0,ADDR=1,READ=2,EMIT=3,FINISH=4,FAIL=5;
+ reg [2:0] state;
+ reg kind;
+ reg [5:0] beat;
+ reg [4:0] lane;
+ reg [127:0] hold_data;
+ reg [TIMEOUT_BITS-1:0] timeout_count;
+ assign araddr=DDR_BASE+{18'd0,active_model,12'd0}+(kind?32'ha00:32'h800)+({26'd0,beat}<<4);
+ assign arvalid=(state==ADDR);
+ assign rready=(state==READ);
+ always @(posedge clk or negedge rst_n)begin
+  if(!rst_n)begin
+   state<=IDLE;busy<=0;ready<=0;failed<=0;active_model<=1;
+   cfg_we<=0;cfg_tanh<=0;cfg_index<=0;cfg_data<=0;
+   kind<=0;beat<=0;lane<=0;hold_data<=0;timeout_count<=0;
+  end else begin
+   cfg_we<=0;
+   if(state==ADDR || state==READ)begin
+    timeout_count<=timeout_count+1'b1;
+    if(&timeout_count)begin failed<=1;ready<=0;busy<=0;state<=FAIL;end
+   end else timeout_count<=0;
+   if(!((state==ADDR || state==READ) && &timeout_count)) case(state)
+    IDLE:if(start && !failed)begin
+     if(model>=MODEL_COUNT)begin failed<=1;ready<=0;busy<=0;state<=FAIL;end
+     else begin active_model<=model;kind<=0;beat<=0;lane<=0;busy<=1;ready<=0;state<=ADDR;end
+    end
+    ADDR:if(arready)begin state<=READ;timeout_count<=0;end
+    READ:if(rvalid)begin
+     if(rresp!=0 || !rlast)begin failed<=1;ready<=0;busy<=0;state<=FAIL;end
+     else begin hold_data<=rdata;lane<=0;state<=EMIT;end
+    end
+    EMIT:begin
+     cfg_we<=1;cfg_tanh<=kind;
+     if(kind)begin cfg_index<={beat[3:0],4'd0}+lane[3:0];cfg_data<={56'd0,hold_data[7:0]};hold_data<=hold_data>>8;end
+     else begin cfg_index<={beat[4:0],1'b0}+lane[0];cfg_data<=hold_data[63:0];hold_data<=hold_data>>64;end
+     if(lane==(kind?15:1))begin
+      lane<=0;
+      if(beat==(kind?15:19))begin
+       if(!kind)begin kind<=1;beat<=0;state<=ADDR;end
+       else state<=FINISH;
+      end else begin beat<=beat+1'b1;state<=ADDR;end
+     end else lane<=lane+1'b1;
+    end
+    FINISH:begin ready<=1;busy<=0;state<=IDLE;end
+    FAIL:begin busy<=0;ready<=0;end
+    default:;
+   endcase
+  end
+ end
+endmodule
+`default_nettype wire

@@ -1,0 +1,14 @@
+[
+  {
+    "path": "a_image_transfer.py",
+    "source": "D:\\FPGA_C\\A_NET_VIDEO_STREAM_R4_20261102\\02_电脑工具\\host\\a_image_transfer.py",
+    "sha256": "d7ec93d4fe38a871bf481dac6e9d0904ef415999f11fa2b451fef56c55f43c29",
+    "original_sha256": "74fc2f098751a0c64db944487a90befa2aad7546cef48417d8f12911ee0dfb03",
+    "local_change": "2026-11-03: permit model slots 0..4 in descriptor validation and CLI; wire format unchanged"
+  },
+  {
+    "path": "a_net_wire.py",
+    "source": "D:\\FPGA_C\\A_NET_VIDEO_STREAM_R4_20261102\\02_电脑工具\\host\\a_net_wire.py",
+    "sha256": "206a95c93aa1cfdb109df722f38f8d62bbe95e6f6868efc4d688ce959527fa23"
+  }
+]
