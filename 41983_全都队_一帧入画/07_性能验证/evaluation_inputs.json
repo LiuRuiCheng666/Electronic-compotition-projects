@@ -1,0 +1,86 @@
+{
+  "case_count": 20,
+  "purpose": "Same held-out images used for the recorded matched-teacher benchmark; not the full training dataset.",
+  "cases": [
+    {
+      "file": "evaluation_inputs/case_00.jpg",
+      "sha256": "775c0d915b6a5261790eb99fc62afdec4664f9e3cbc2e2d5e724cc69afee3413"
+    },
+    {
+      "file": "evaluation_inputs/case_01.jpg",
+      "sha256": "0a20b477293947433784dd7e0acb42e05364ef2294d49c5480a574a87aafac04"
+    },
+    {
+      "file": "evaluation_inputs/case_02.jpg",
+      "sha256": "1f3f81c986fdca765d654d0ad05c6f7d68a0412ee4178bdfa0491558c03d6202"
+    },
+    {
+      "file": "evaluation_inputs/case_03.jpg",
+      "sha256": "0fcc3e2e5b34f47858dc58587897d6b849558a38a8b9454ebb54a78236b2d0af"
+    },
+    {
+      "file": "evaluation_inputs/case_04.jpg",
+      "sha256": "0246cf68cc5dba8185e0da2d5df04b90bee7b3f2ed85ab106913b929d115c139"
+    },
+    {
+      "file": "evaluation_inputs/case_05.jpg",
+      "sha256": "00c00ab0b495598981ff87740e0085d91d8ac4ae39d327ef9b1de774426161cf"
+    },
+    {
+      "file": "evaluation_inputs/case_06.jpg",
+      "sha256": "3ed19e58c2c7c2b67d8624ce7a1b1a929daec59e5fc7b4217f966f00853fa9b7"
+    },
+    {
+      "file": "evaluation_inputs/case_07.jpg",
+      "sha256": "b2698ff2e33f683f2666fdc786ad46eab070922df51c9026767744722ea06851"
+    },
+    {
+      "file": "evaluation_inputs/case_08.jpg",
+      "sha256": "d1a4b952de4b1b130f82675757f40fbe22fd71c4e4eb454ffa0b1d9f89bdec63"
+    },
+    {
+      "file": "evaluation_inputs/case_09.jpg",
+      "sha256": "510b533e488a6aff986d3b7560a368ffed4a3fa6fefb7aa010376ef4e06e79b3"
+    },
+    {
+      "file": "evaluation_inputs/case_10.jpg",
+      "sha256": "70c5e137c0b102852ae93c5ddf0e315e06297ed009dfe309d54c4cab02074457"
+    },
+    {
+      "file": "evaluation_inputs/case_11.jpg",
+      "sha256": "a2936a80c928a0efb8db070a2e46bd6ef4a2f22d33b59db6eb91ca6676faed52"
+    },
+    {
+      "file": "evaluation_inputs/case_12.jpg",
+      "sha256": "9e7248e4683233f8c8e61e5c4d342ef199d85ae0329116e46ca155de869d296b"
+    },
+    {
+      "file": "evaluation_inputs/case_13.jpg",
+      "sha256": "3ce26289f3f2dadd74052a81f4da2120ee825e8fdcf6014798cfb8a15343bad7"
+    },
+    {
+      "file": "evaluation_inputs/case_14.jpg",
+      "sha256": "d01d3266ddb456a47fb382c73862b8d48927e3f000be9587a0aba9aea66bc881"
+    },
+    {
+      "file": "evaluation_inputs/case_15.jpg",
+      "sha256": "62c16ed71f166b59340fac19748abca19c613b668296733854fbd8911f5bad4e"
+    },
+    {
+      "file": "evaluation_inputs/case_16.jpg",
+      "sha256": "1e3b80ec6631fa47a7357cb67d8e6235ca843839eff7f06e4c283ea7befcfb05"
+    },
+    {
+      "file": "evaluation_inputs/case_17.jpg",
+      "sha256": "6f5023c2d062b4078c174f703899cc36a29895608531e7d2d6e2d32997d39d4f"
+    },
+    {
+      "file": "evaluation_inputs/case_18.jpg",
+      "sha256": "d271c849ec0aca6a92845c0dff6f18c74e507dc93fc0703be0cb006058ca6458"
+    },
+    {
+      "file": "evaluation_inputs/case_19.jpg",
+      "sha256": "9601b534d81275e5e5844198567015105e5feb418e45a0cfa58545e2d472b955"
+    }
+  ]
+}

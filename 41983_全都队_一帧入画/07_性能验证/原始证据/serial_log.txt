@@ -1,0 +1,5203 @@
+
+[0.219s] >>> 
+
+C> 
+[0.250s] >>> version
+version
+firmware=C_systemDemo v0.26-fifofast backend=HW_PROBE
+C> 
+[0.265s] >>> probe
+probe
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+capabilities=0x00000007 cpu_hz=100000000
+ram_base=0xf9000000 ram_bytes=32768
+heartbeat=0x0f21fe0a scratch=0x00000000
+C> 
+[0.297s] >>> nnstatus
+nnstatus
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+NN_observer_id=0x41435206 id_check=PASS
+NN_observe=CONNECTED; CPU_start_ack=CONNECTED; completion_mode=IRQ
+nn_status=0x0000000b ddr_ready=1 boot_ready=1 boot_failed=0 busy=1 done_raw=0
+pass=0 fail=0 scheduler_fault=0 display_fault=0 idle=0
+boot_fault=0 compute_fault=0 active_model=1 requested_model=1
+input=0x02000000 output=0x06000000 displayed_frame=18102 core_hz=160000000
+start_count=18092 done_count=18091 snapshot_valid=1
+diagnostic_state=0x81002232 diagnostic_axi=0x2320c116
+C> 
+[0.359s] >>> source camera
+source camera
+source accepted; switch at frame boundary
+C> 
+[1.375s] >>> mode auto
+mode auto
+command=2 result=OK
+control_id=0x41434302 completion_mode=IRQ cpu_mode=0 queued=0 inflight=0 pending_ack=0
+accepted_valid=0 accepted_frame=0 done_frame=0 task_result=0 fault=0 can_queue=0 scheduler_idle=0
+C> 
+[1.406s] >>> roi full
+roi full
+roi_command=OK mode=0; applied per accepted frame
+C> 
+[1.422s] >>> ui on
+ui on
+ui_command=OK; C tag=3
+C> 
+[3.453s] >>> source status
+source status
+source_id=0x53524301 active=CAMERA requested=CAMERA switching=0 override=1 frame=18199 SW3=input SW2=style
+C> 
+[3.469s] >>> video
+video
+video_seq=2 uptime_ms=606627
+capture=18198 abort=0 stale=11
+nn=18186 new=18186 scans=36370 errors=0x00000000
+preprocessed=18198 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[13.515s] >>> video
+video
+video_seq=3 uptime_ms=616674
+capture=18500 abort=0 stale=11
+nn=18488 new=18487 scans=36973 errors=0x00000000
+preprocessed=18500 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[13.562s] >>> nnstatus
+nnstatus
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+NN_observer_id=0x41435206 id_check=PASS
+NN_observe=CONNECTED; CPU_start_ack=CONNECTED; completion_mode=IRQ
+nn_status=0x0000000b ddr_ready=1 boot_ready=1 boot_failed=0 busy=1 done_raw=0
+pass=0 fail=0 scheduler_fault=0 display_fault=0 idle=0
+boot_fault=0 compute_fault=0 active_model=1 requested_model=1
+input=0x02800000 output=0x06000000 displayed_frame=18500 core_hz=160000000
+start_count=18490 done_count=18489 snapshot_valid=1
+diagnostic_state=0x81802232 diagnostic_axi=0x54a10104
+C> 
+[13.625s] >>> style 0
+style 0
+style_command=OK; applied after inference
+C> 
+[13.640s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=0
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=18502 shown_frame=0
+C> 
+[13.703s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=0
+cycles=12113688 core_hz=160000000 elapsed_us=75710 request_frame=18502 shown_frame=18504
+C> 
+[14.000s] >>> video
+video
+video_seq=4 uptime_ms=617156
+capture=18514 abort=0 stale=11
+nn=18502 new=18502 scans=37002 errors=0x00000000
+preprocessed=18514 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[14.031s] >>> style 1
+style 1
+style_command=OK; applied after inference
+C> 
+[14.047s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=1
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=18514 shown_frame=0
+C> 
+[14.109s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=1
+cycles=9556175 core_hz=160000000 elapsed_us=59726 request_frame=18514 shown_frame=18516
+C> 
+[15.250s] >>> video
+video
+video_seq=5 uptime_ms=618399
+capture=18552 abort=0 stale=11
+nn=18540 new=18539 scans=37077 errors=0x00000000
+preprocessed=18552 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[15.281s] >>> nnstatus
+nnstatus
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+NN_observer_id=0x41435206 id_check=PASS
+NN_observe=CONNECTED; CPU_start_ack=CONNECTED; completion_mode=IRQ
+nn_status=0x0000000b ddr_ready=1 boot_ready=1 boot_failed=0 busy=1 done_raw=0
+pass=0 fail=0 scheduler_fault=0 display_fault=0 idle=0
+boot_fault=0 compute_fault=0 active_model=1 requested_model=1
+input=0x02000000 output=0x06000000 displayed_frame=18552 core_hz=160000000
+start_count=18542 done_count=18541 snapshot_valid=1
+diagnostic_state=0x81402232 diagnostic_axi=0x64a10104
+C> 
+[15.344s] >>> style 0
+style 0
+style_command=OK; applied after inference
+C> 
+[15.359s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=0
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=18554 shown_frame=0
+C> 
+[15.437s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=0
+cycles=7660068 core_hz=160000000 elapsed_us=47875 request_frame=18554 shown_frame=18555
+C> 
+[15.734s] >>> video
+video
+video_seq=6 uptime_ms=618881
+capture=18566 abort=0 stale=11
+nn=18554 new=18554 scans=37106 errors=0x00000000
+preprocessed=18566 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[15.765s] >>> style 2
+style 2
+style_command=OK; applied after inference
+C> 
+[15.781s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=2
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=18566 shown_frame=0
+C> 
+[15.859s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=2
+cycles=10455632 core_hz=160000000 elapsed_us=65347 request_frame=18566 shown_frame=18568
+C> 
+[16.969s] >>> video
+video
+video_seq=7 uptime_ms=620128
+capture=18603 abort=0 stale=11
+nn=18591 new=18591 scans=37180 errors=0x00000000
+preprocessed=18603 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[17.015s] >>> nnstatus
+nnstatus
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+NN_observer_id=0x41435206 id_check=PASS
+NN_observe=CONNECTED; CPU_start_ack=CONNECTED; completion_mode=IRQ
+nn_status=0x00000203 ddr_ready=1 boot_ready=1 boot_failed=0 busy=0 done_raw=0
+pass=0 fail=0 scheduler_fault=0 display_fault=0 idle=1
+boot_fault=0 compute_fault=0 active_model=2 requested_model=2
+input=0x02000000 output=0x06800000 displayed_frame=18604 core_hz=160000000
+start_count=18593 done_count=18593 snapshot_valid=1
+diagnostic_state=0xc0002220 diagnostic_axi=0x54a10124
+C> 
+[17.078s] >>> style 0
+style 0
+style_command=OK; applied after inference
+C> 
+[17.094s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=0
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=18605 shown_frame=0
+C> 
+[17.156s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=0
+cycles=8555406 core_hz=160000000 elapsed_us=53471 request_frame=18605 shown_frame=18607
+C> 
+[17.453s] >>> video
+video
+video_seq=8 uptime_ms=620607
+capture=18618 abort=0 stale=11
+nn=18606 new=18605 scans=37209 errors=0x00000000
+preprocessed=18618 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[17.484s] >>> style 3
+style 3
+style_command=OK; applied after inference
+C> 
+[17.500s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=3
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=18618 shown_frame=0
+C> 
+[17.578s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=3
+cycles=11318774 core_hz=160000000 elapsed_us=70742 request_frame=18618 shown_frame=18620
+C> 
+[18.687s] >>> video
+video
+video_seq=9 uptime_ms=621832
+capture=18655 abort=0 stale=11
+nn=18643 new=18642 scans=37283 errors=0x00000000
+preprocessed=18655 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[18.703s] >>> nnstatus
+nnstatus
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+NN_observer_id=0x41435206 id_check=PASS
+NN_observe=CONNECTED; CPU_start_ack=CONNECTED; completion_mode=IRQ
+nn_status=0x0000000b ddr_ready=1 boot_ready=1 boot_failed=0 busy=1 done_raw=0
+pass=0 fail=0 scheduler_fault=0 display_fault=0 idle=0
+boot_fault=0 compute_fault=0 active_model=3 requested_model=3
+input=0x02000000 output=0x06000000 displayed_frame=18654 core_hz=160000000
+start_count=18644 done_count=18643 snapshot_valid=1
+diagnostic_state=0x80c22232 diagnostic_axi=0x53081136
+C> 
+[18.765s] >>> style 0
+style 0
+style_command=OK; applied after inference
+C> 
+[18.781s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=0
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=18656 shown_frame=0
+C> 
+[18.844s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=0
+cycles=9178076 core_hz=160000000 elapsed_us=57362 request_frame=18656 shown_frame=18658
+C> 
+[19.140s] >>> video
+video
+video_seq=10 uptime_ms=622298
+capture=18668 abort=0 stale=11
+nn=18657 new=18656 scans=37311 errors=0x00000000
+preprocessed=18668 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[19.172s] >>> style 4
+style 4
+style_command=OK; applied after inference
+C> 
+[19.187s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=4
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=18668 shown_frame=0
+C> 
+[19.250s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=4
+cycles=9183342 core_hz=160000000 elapsed_us=57395 request_frame=18668 shown_frame=18670
+C> 
+[20.390s] >>> video
+video
+video_seq=11 uptime_ms=623535
+capture=18706 abort=0 stale=11
+nn=18694 new=18693 scans=37385 errors=0x00000000
+preprocessed=18706 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[20.422s] >>> nnstatus
+nnstatus
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+NN_observer_id=0x41435206 id_check=PASS
+NN_observe=CONNECTED; CPU_start_ack=CONNECTED; completion_mode=IRQ
+nn_status=0x0000000b ddr_ready=1 boot_ready=1 boot_failed=0 busy=1 done_raw=0
+pass=0 fail=0 scheduler_fault=0 display_fault=0 idle=0
+boot_fault=0 compute_fault=0 active_model=4 requested_model=4
+input=0x02400000 output=0x06000000 displayed_frame=18706 core_hz=160000000
+start_count=18696 done_count=18695 snapshot_valid=1
+diagnostic_state=0x80c22232 diagnostic_axi=0x21081136
+C> 
+[20.484s] >>> style 1
+style 1
+style_command=OK; applied after inference
+C> 
+[20.500s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=1
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=18708 shown_frame=0
+C> 
+[20.562s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=1
+cycles=12607290 core_hz=160000000 elapsed_us=78795 request_frame=18708 shown_frame=18710
+C> 
+[20.859s] >>> video
+video
+video_seq=12 uptime_ms=624017
+capture=18720 abort=0 stale=11
+nn=18708 new=18708 scans=37414 errors=0x00000000
+preprocessed=18720 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[20.890s] >>> style 0
+style 0
+style_command=OK; applied after inference
+C> 
+[20.906s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=0
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=18720 shown_frame=0
+C> 
+[20.984s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=0
+cycles=10073967 core_hz=160000000 elapsed_us=62962 request_frame=18720 shown_frame=18722
+C> 
+[22.094s] >>> video
+video
+video_seq=13 uptime_ms=625245
+capture=18757 abort=0 stale=11
+nn=18745 new=18744 scans=37487 errors=0x00000000
+preprocessed=18757 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[22.109s] >>> nnstatus
+nnstatus
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+NN_observer_id=0x41435206 id_check=PASS
+NN_observe=CONNECTED; CPU_start_ack=CONNECTED; completion_mode=IRQ
+nn_status=0x0000000b ddr_ready=1 boot_ready=1 boot_failed=0 busy=1 done_raw=0
+pass=0 fail=0 scheduler_fault=0 display_fault=0 idle=0
+boot_fault=0 compute_fault=0 active_model=0 requested_model=0
+input=0x02400000 output=0x06800000 displayed_frame=18757 core_hz=160000000
+start_count=18747 done_count=18746 snapshot_valid=1
+diagnostic_state=0x81002232 diagnostic_axi=0x62a08116
+C> 
+[22.172s] >>> style 1
+style 1
+style_command=OK; applied after inference
+C> 
+[22.187s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=1
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=18759 shown_frame=0
+C> 
+[22.265s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=1
+cycles=7962633 core_hz=160000000 elapsed_us=49766 request_frame=18759 shown_frame=18760
+C> 
+[22.562s] >>> video
+video
+video_seq=14 uptime_ms=625722
+capture=18771 abort=0 stale=11
+nn=18759 new=18759 scans=37516 errors=0x00000000
+preprocessed=18771 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[22.594s] >>> style 2
+style 2
+style_command=OK; applied after inference
+C> 
+[22.609s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=2
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=18771 shown_frame=0
+C> 
+[22.672s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=2
+cycles=10726104 core_hz=160000000 elapsed_us=67038 request_frame=18771 shown_frame=18773
+C> 
+[23.797s] >>> video
+video
+video_seq=15 uptime_ms=626950
+capture=18808 abort=0 stale=11
+nn=18796 new=18796 scans=37590 errors=0x00000000
+preprocessed=18808 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[23.828s] >>> nnstatus
+nnstatus
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+NN_observer_id=0x41435206 id_check=PASS
+NN_observe=CONNECTED; CPU_start_ack=CONNECTED; completion_mode=IRQ
+nn_status=0x0000000b ddr_ready=1 boot_ready=1 boot_failed=0 busy=1 done_raw=0
+pass=0 fail=0 scheduler_fault=0 display_fault=0 idle=0
+boot_fault=0 compute_fault=0 active_model=2 requested_model=2
+input=0x02400000 output=0x06000000 displayed_frame=18808 core_hz=160000000
+start_count=18798 done_count=18797 snapshot_valid=1
+diagnostic_state=0x81002232 diagnostic_axi=0x52208116
+C> 
+[23.890s] >>> style 1
+style 1
+style_command=OK; applied after inference
+C> 
+[23.906s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=1
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=18810 shown_frame=0
+C> 
+[23.969s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=1
+cycles=11392880 core_hz=160000000 elapsed_us=71205 request_frame=18810 shown_frame=18812
+C> 
+[24.265s] >>> video
+video
+video_seq=16 uptime_ms=627417
+capture=18822 abort=0 stale=11
+nn=18810 new=18810 scans=37618 errors=0x00000000
+preprocessed=18822 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[24.297s] >>> style 3
+style 3
+style_command=OK; applied after inference
+C> 
+[24.312s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=3
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=18822 shown_frame=0
+C> 
+[24.375s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=3
+cycles=11378619 core_hz=160000000 elapsed_us=71116 request_frame=18822 shown_frame=18824
+C> 
+[25.500s] >>> video
+video
+video_seq=17 uptime_ms=628659
+capture=18859 abort=0 stale=11
+nn=18847 new=18847 scans=37692 errors=0x00000000
+preprocessed=18859 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[25.547s] >>> nnstatus
+nnstatus
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+NN_observer_id=0x41435206 id_check=PASS
+NN_observe=CONNECTED; CPU_start_ack=CONNECTED; completion_mode=IRQ
+nn_status=0x0000000b ddr_ready=1 boot_ready=1 boot_failed=0 busy=1 done_raw=0
+pass=0 fail=0 scheduler_fault=0 display_fault=0 idle=0
+boot_fault=0 compute_fault=0 active_model=3 requested_model=3
+input=0x02400000 output=0x06800000 displayed_frame=18859 core_hz=160000000
+start_count=18849 done_count=18848 snapshot_valid=1
+diagnostic_state=0x81822232 diagnostic_axi=0x53880136
+C> 
+[25.594s] >>> style 1
+style 1
+style_command=OK; applied after inference
+C> 
+[25.625s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=1
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=18861 shown_frame=0
+C> 
+[25.687s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=1
+cycles=9459949 core_hz=160000000 elapsed_us=59124 request_frame=18861 shown_frame=18863
+C> 
+[25.984s] >>> video
+video
+video_seq=18 uptime_ms=629141
+capture=18874 abort=0 stale=11
+nn=18862 new=18861 scans=37721 errors=0x00000000
+preprocessed=18874 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[26.015s] >>> style 4
+style 4
+style_command=OK; applied after inference
+C> 
+[26.031s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=4
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=18874 shown_frame=0
+C> 
+[26.094s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=4
+cycles=12267498 core_hz=160000000 elapsed_us=76671 request_frame=18874 shown_frame=18876
+C> 
+[27.219s] >>> video
+video
+video_seq=19 uptime_ms=630373
+capture=18911 abort=0 stale=11
+nn=18899 new=18898 scans=37795 errors=0x00000000
+preprocessed=18911 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[27.250s] >>> nnstatus
+nnstatus
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+NN_observer_id=0x41435206 id_check=PASS
+NN_observe=CONNECTED; CPU_start_ack=CONNECTED; completion_mode=IRQ
+nn_status=0x0000000b ddr_ready=1 boot_ready=1 boot_failed=0 busy=1 done_raw=0
+pass=0 fail=0 scheduler_fault=0 display_fault=0 idle=0
+boot_fault=0 compute_fault=0 active_model=4 requested_model=4
+input=0x02800000 output=0x06800000 displayed_frame=18911 core_hz=160000000
+start_count=18901 done_count=18900 snapshot_valid=1
+diagnostic_state=0x81802232 diagnostic_axi=0x54a10104
+C> 
+[27.312s] >>> style 2
+style 2
+style_command=OK; applied after inference
+C> 
+[27.328s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=2
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=18913 shown_frame=0
+C> 
+[27.390s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=2
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=18913 shown_frame=0
+C> 
+[27.469s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=2
+cycles=12912296 core_hz=160000000 elapsed_us=80701 request_frame=18913 shown_frame=18915
+C> 
+[27.765s] >>> video
+video
+video_seq=20 uptime_ms=630916
+capture=18927 abort=0 stale=11
+nn=18915 new=18915 scans=37828 errors=0x00000000
+preprocessed=18927 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[27.797s] >>> style 0
+style 0
+style_command=OK; applied after inference
+C> 
+[27.812s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=0
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=18927 shown_frame=0
+C> 
+[27.875s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=0
+cycles=10783440 core_hz=160000000 elapsed_us=67396 request_frame=18927 shown_frame=18929
+C> 
+[29.000s] >>> video
+video
+video_seq=21 uptime_ms=632159
+capture=18964 abort=0 stale=11
+nn=18952 new=18952 scans=37902 errors=0x00000000
+preprocessed=18964 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[29.047s] >>> nnstatus
+nnstatus
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+NN_observer_id=0x41435206 id_check=PASS
+NN_observe=CONNECTED; CPU_start_ack=CONNECTED; completion_mode=IRQ
+nn_status=0x00000203 ddr_ready=1 boot_ready=1 boot_failed=0 busy=0 done_raw=0
+pass=0 fail=0 scheduler_fault=0 display_fault=0 idle=1
+boot_fault=0 compute_fault=0 active_model=0 requested_model=0
+input=0x02400000 output=0x06000000 displayed_frame=18965 core_hz=160000000
+start_count=18954 done_count=18954 snapshot_valid=1
+diagnostic_state=0xc0002210 diagnostic_axi=0x54a10124
+C> 
+[29.109s] >>> style 2
+style 2
+style_command=OK; applied after inference
+C> 
+[29.125s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=2
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=18966 shown_frame=0
+C> 
+[29.187s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=2
+cycles=8882473 core_hz=160000000 elapsed_us=55515 request_frame=18966 shown_frame=18968
+C> 
+[29.484s] >>> video
+video
+video_seq=22 uptime_ms=632643
+capture=18979 abort=0 stale=11
+nn=18967 new=18966 scans=37931 errors=0x00000000
+preprocessed=18979 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[29.515s] >>> style 1
+style 1
+style_command=OK; applied after inference
+C> 
+[29.531s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=1
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=18979 shown_frame=0
+C> 
+[29.594s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=1
+cycles=11663043 core_hz=160000000 elapsed_us=72894 request_frame=18979 shown_frame=18981
+C> 
+[30.734s] >>> video
+video
+video_seq=23 uptime_ms=633890
+capture=19016 abort=0 stale=11
+nn=19004 new=19004 scans=38006 errors=0x00000000
+preprocessed=19016 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[30.765s] >>> nnstatus
+nnstatus
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+NN_observer_id=0x41435206 id_check=PASS
+NN_observe=CONNECTED; CPU_start_ack=CONNECTED; completion_mode=IRQ
+nn_status=0x0000000b ddr_ready=1 boot_ready=1 boot_failed=0 busy=1 done_raw=0
+pass=0 fail=0 scheduler_fault=0 display_fault=0 idle=0
+boot_fault=0 compute_fault=0 active_model=1 requested_model=1
+input=0x02800000 output=0x06000000 displayed_frame=19016 core_hz=160000000
+start_count=19006 done_count=19005 snapshot_valid=1
+diagnostic_state=0x81822232 diagnostic_axi=0x53880136
+C> 
+[30.828s] >>> style 2
+style 2
+style_command=OK; applied after inference
+C> 
+[30.844s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=2
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=19018 shown_frame=0
+C> 
+[30.922s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=2
+cycles=9770471 core_hz=160000000 elapsed_us=61065 request_frame=19018 shown_frame=19020
+C> 
+[31.219s] >>> video
+video
+video_seq=24 uptime_ms=634370
+capture=19031 abort=0 stale=11
+nn=19019 new=19018 scans=38035 errors=0x00000000
+preprocessed=19031 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[31.250s] >>> style 3
+style 3
+style_command=OK; applied after inference
+C> 
+[31.265s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=3
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=19031 shown_frame=0
+C> 
+[31.328s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=3
+cycles=12547109 core_hz=160000000 elapsed_us=78419 request_frame=19031 shown_frame=19033
+C> 
+[32.469s] >>> video
+video
+video_seq=25 uptime_ms=635615
+capture=19068 abort=0 stale=11
+nn=19056 new=19056 scans=38110 errors=0x00000000
+preprocessed=19068 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[32.500s] >>> nnstatus
+nnstatus
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+NN_observer_id=0x41435206 id_check=PASS
+NN_observe=CONNECTED; CPU_start_ack=CONNECTED; completion_mode=IRQ
+nn_status=0x0000000b ddr_ready=1 boot_ready=1 boot_failed=0 busy=1 done_raw=0
+pass=0 fail=0 scheduler_fault=0 display_fault=0 idle=0
+boot_fault=0 compute_fault=0 active_model=3 requested_model=3
+input=0x02000000 output=0x06000000 displayed_frame=19068 core_hz=160000000
+start_count=19058 done_count=19057 snapshot_valid=1
+diagnostic_state=0x81802232 diagnostic_axi=0x54a10104
+C> 
+[32.562s] >>> style 2
+style 2
+style_command=OK; applied after inference
+C> 
+[32.578s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=2
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=19070 shown_frame=0
+C> 
+[32.640s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=2
+cycles=10623921 core_hz=160000000 elapsed_us=66399 request_frame=19070 shown_frame=19072
+C> 
+[32.937s] >>> video
+video
+video_seq=26 uptime_ms=636094
+capture=19082 abort=0 stale=11
+nn=19070 new=19070 scans=38138 errors=0x00000000
+preprocessed=19082 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[32.984s] >>> style 4
+style 4
+style_command=OK; applied after inference
+C> 
+[33.000s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=4
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=19082 shown_frame=0
+C> 
+[33.062s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=4
+cycles=8077405 core_hz=160000000 elapsed_us=50483 request_frame=19082 shown_frame=19084
+C> 
+[34.187s] >>> video
+video
+video_seq=27 uptime_ms=637335
+capture=19120 abort=0 stale=11
+nn=19108 new=19107 scans=38213 errors=0x00000000
+preprocessed=19120 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[34.219s] >>> nnstatus
+nnstatus
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+NN_observer_id=0x41435206 id_check=PASS
+NN_observe=CONNECTED; CPU_start_ack=CONNECTED; completion_mode=IRQ
+nn_status=0x0000000b ddr_ready=1 boot_ready=1 boot_failed=0 busy=1 done_raw=0
+pass=0 fail=0 scheduler_fault=0 display_fault=0 idle=0
+boot_fault=0 compute_fault=0 active_model=4 requested_model=4
+input=0x02400000 output=0x06000000 displayed_frame=19120 core_hz=160000000
+start_count=19110 done_count=19109 snapshot_valid=1
+diagnostic_state=0x81402232 diagnostic_axi=0x64a10104
+C> 
+[34.265s] >>> style 3
+style 3
+style_command=OK; applied after inference
+C> 
+[34.281s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=3
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=19121 shown_frame=0
+C> 
+[34.359s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=3
+cycles=8727252 core_hz=160000000 elapsed_us=54545 request_frame=19121 shown_frame=19123
+C> 
+[34.656s] >>> video
+video
+video_seq=28 uptime_ms=637801
+capture=19134 abort=0 stale=11
+nn=19122 new=19121 scans=38241 errors=0x00000000
+preprocessed=19134 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[34.672s] >>> style 0
+style 0
+style_command=OK; applied after inference
+C> 
+[34.687s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=0
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=19133 shown_frame=0
+C> 
+[34.765s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=0
+cycles=8723080 core_hz=160000000 elapsed_us=54519 request_frame=19133 shown_frame=19135
+C> 
+[35.890s] >>> video
+video
+video_seq=29 uptime_ms=639043
+capture=19171 abort=0 stale=11
+nn=19159 new=19158 scans=38315 errors=0x00000000
+preprocessed=19171 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[35.922s] >>> nnstatus
+nnstatus
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+NN_observer_id=0x41435206 id_check=PASS
+NN_observe=CONNECTED; CPU_start_ack=CONNECTED; completion_mode=IRQ
+nn_status=0x0000000b ddr_ready=1 boot_ready=1 boot_failed=0 busy=1 done_raw=0
+pass=0 fail=0 scheduler_fault=0 display_fault=0 idle=0
+boot_fault=0 compute_fault=0 active_model=0 requested_model=0
+input=0x02400000 output=0x06800000 displayed_frame=19171 core_hz=160000000
+start_count=19161 done_count=19160 snapshot_valid=1
+diagnostic_state=0x81422232 diagnostic_axi=0x61980136
+C> 
+[35.984s] >>> style 3
+style 3
+style_command=OK; applied after inference
+C> 
+[36.031s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=3
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=19174 shown_frame=0
+C> 
+[36.109s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=3
+cycles=11964776 core_hz=160000000 elapsed_us=74779 request_frame=19174 shown_frame=19176
+C> 
+[36.406s] >>> video
+video
+video_seq=30 uptime_ms=639555
+capture=19186 abort=0 stale=11
+nn=19174 new=19174 scans=38346 errors=0x00000000
+preprocessed=19186 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[36.437s] >>> style 1
+style 1
+style_command=OK; applied after inference
+C> 
+[36.453s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=1
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=19186 shown_frame=0
+C> 
+[36.515s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=1
+cycles=9798083 core_hz=160000000 elapsed_us=61238 request_frame=19186 shown_frame=19188
+C> 
+[37.640s] >>> video
+video
+video_seq=31 uptime_ms=640799
+capture=19224 abort=0 stale=11
+nn=19212 new=19211 scans=38421 errors=0x00000000
+preprocessed=19224 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[37.687s] >>> nnstatus
+nnstatus
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+NN_observer_id=0x41435206 id_check=PASS
+NN_observe=CONNECTED; CPU_start_ack=CONNECTED; completion_mode=IRQ
+nn_status=0x0000000b ddr_ready=1 boot_ready=1 boot_failed=0 busy=1 done_raw=0
+pass=0 fail=0 scheduler_fault=0 display_fault=0 idle=0
+boot_fault=0 compute_fault=0 active_model=1 requested_model=1
+input=0x02000000 output=0x06000000 displayed_frame=19224 core_hz=160000000
+start_count=19214 done_count=19213 snapshot_valid=1
+diagnostic_state=0x81802232 diagnostic_axi=0x54a10104
+C> 
+[37.750s] >>> style 3
+style 3
+style_command=OK; applied after inference
+C> 
+[37.765s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=3
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=19226 shown_frame=0
+C> 
+[37.828s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=3
+cycles=7900399 core_hz=160000000 elapsed_us=49377 request_frame=19226 shown_frame=19227
+C> 
+[38.125s] >>> video
+video
+video_seq=32 uptime_ms=641278
+capture=19238 abort=0 stale=11
+nn=19226 new=19225 scans=38449 errors=0x00000000
+preprocessed=19238 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[38.156s] >>> style 2
+style 2
+style_command=OK; applied after inference
+C> 
+[38.172s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=2
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=19238 shown_frame=0
+C> 
+[38.250s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=2
+cycles=10700582 core_hz=160000000 elapsed_us=66878 request_frame=19238 shown_frame=19240
+C> 
+[39.359s] >>> video
+video
+video_seq=33 uptime_ms=642510
+capture=19275 abort=0 stale=11
+nn=19263 new=19262 scans=38523 errors=0x00000000
+preprocessed=19275 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[39.390s] >>> nnstatus
+nnstatus
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+NN_observer_id=0x41435206 id_check=PASS
+NN_observe=CONNECTED; CPU_start_ack=CONNECTED; completion_mode=IRQ
+nn_status=0x0000000b ddr_ready=1 boot_ready=1 boot_failed=0 busy=1 done_raw=0
+pass=0 fail=0 scheduler_fault=0 display_fault=0 idle=0
+boot_fault=0 compute_fault=0 active_model=2 requested_model=2
+input=0x02000000 output=0x06800000 displayed_frame=19275 core_hz=160000000
+start_count=19265 done_count=19264 snapshot_valid=1
+diagnostic_state=0x81802232 diagnostic_axi=0x54a10104
+C> 
+[39.453s] >>> style 3
+style 3
+style_command=OK; applied after inference
+C> 
+[39.469s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=3
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=19277 shown_frame=0
+C> 
+[39.547s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=3
+cycles=11333356 core_hz=160000000 elapsed_us=70833 request_frame=19277 shown_frame=19279
+C> 
+[39.844s] >>> video
+video
+video_seq=34 uptime_ms=642990
+capture=19289 abort=0 stale=11
+nn=19277 new=19277 scans=38552 errors=0x00000000
+preprocessed=19289 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[39.875s] >>> style 4
+style 4
+style_command=OK; applied after inference
+C> 
+[39.890s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=4
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=19289 shown_frame=0
+C> 
+[39.969s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=4
+cycles=8788008 core_hz=160000000 elapsed_us=54925 request_frame=19289 shown_frame=19291
+C> 
+[41.078s] >>> video
+video
+video_seq=35 uptime_ms=644233
+capture=19327 abort=0 stale=11
+nn=19315 new=19314 scans=38627 errors=0x00000000
+preprocessed=19327 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[41.109s] >>> nnstatus
+nnstatus
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+NN_observer_id=0x41435206 id_check=PASS
+NN_observe=CONNECTED; CPU_start_ack=CONNECTED; completion_mode=IRQ
+nn_status=0x0000000b ddr_ready=1 boot_ready=1 boot_failed=0 busy=1 done_raw=0
+pass=0 fail=0 scheduler_fault=0 display_fault=0 idle=0
+boot_fault=0 compute_fault=0 active_model=4 requested_model=4
+input=0x02000000 output=0x06000000 displayed_frame=19326 core_hz=160000000
+start_count=19316 done_count=19315 snapshot_valid=1
+diagnostic_state=0x81802232 diagnostic_axi=0x54a10124
+C> 
+[41.422s] >>> video
+video
+video_seq=36 uptime_ms=644573
+capture=19337 abort=0 stale=11
+nn=19325 new=19324 scans=38647 errors=0x00000000
+preprocessed=19337 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[41.453s] >>> style 0
+style 0
+style_command=OK; applied after inference
+C> 
+[41.469s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=0
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=19337 shown_frame=0
+C> 
+[41.547s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=0
+cycles=11383889 core_hz=160000000 elapsed_us=71149 request_frame=19337 shown_frame=19339
+C> 
+[42.672s] >>> video
+video
+video_seq=37 uptime_ms=645818
+capture=19374 abort=0 stale=11
+nn=19362 new=19362 scans=38722 errors=0x00000000
+preprocessed=19374 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[42.687s] >>> nnstatus
+nnstatus
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+NN_observer_id=0x41435206 id_check=PASS
+NN_observe=CONNECTED; CPU_start_ack=CONNECTED; completion_mode=IRQ
+nn_status=0x0000000b ddr_ready=1 boot_ready=1 boot_failed=0 busy=1 done_raw=0
+pass=0 fail=0 scheduler_fault=0 display_fault=0 idle=0
+boot_fault=0 compute_fault=0 active_model=0 requested_model=0
+input=0x02000000 output=0x06000000 displayed_frame=19374 core_hz=160000000
+start_count=19364 done_count=19363 snapshot_valid=1
+diagnostic_state=0x81822232 diagnostic_axi=0x52300136
+C> 
+[42.750s] >>> style 4
+style 4
+style_command=OK; applied after inference
+C> 
+[42.765s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=4
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=19376 shown_frame=0
+C> 
+[42.844s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=4
+cycles=12014905 core_hz=160000000 elapsed_us=75093 request_frame=19376 shown_frame=19378
+C> 
+[43.140s] >>> video
+video
+video_seq=38 uptime_ms=646298
+capture=19388 abort=0 stale=11
+nn=19377 new=19376 scans=38751 errors=0x00000000
+preprocessed=19388 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[43.172s] >>> style 1
+style 1
+style_command=OK; applied after inference
+C> 
+[43.187s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=1
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=19388 shown_frame=0
+C> 
+[43.250s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=1
+cycles=9465871 core_hz=160000000 elapsed_us=59161 request_frame=19388 shown_frame=19390
+C> 
+[44.375s] >>> video
+video
+video_seq=39 uptime_ms=647524
+capture=19425 abort=0 stale=11
+nn=19413 new=19413 scans=38824 errors=0x00000000
+preprocessed=19425 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[44.406s] >>> nnstatus
+nnstatus
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+NN_observer_id=0x41435206 id_check=PASS
+NN_observe=CONNECTED; CPU_start_ack=CONNECTED; completion_mode=IRQ
+nn_status=0x0000000b ddr_ready=1 boot_ready=1 boot_failed=0 busy=1 done_raw=0
+pass=0 fail=0 scheduler_fault=0 display_fault=0 idle=0
+boot_fault=0 compute_fault=0 active_model=1 requested_model=1
+input=0x02000000 output=0x06800000 displayed_frame=19425 core_hz=160000000
+start_count=19415 done_count=19414 snapshot_valid=1
+diagnostic_state=0x81422232 diagnostic_axi=0x64a10124
+C> 
+[44.469s] >>> style 4
+style 4
+style_command=OK; applied after inference
+C> 
+[44.484s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=4
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=19427 shown_frame=0
+C> 
+[44.547s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=4
+cycles=10127401 core_hz=160000000 elapsed_us=63296 request_frame=19427 shown_frame=19429
+C> 
+[44.844s] >>> video
+video
+video_seq=40 uptime_ms=647992
+capture=19439 abort=0 stale=11
+nn=19427 new=19427 scans=38852 errors=0x00000000
+preprocessed=19439 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[44.859s] >>> style 2
+style 2
+style_command=OK; applied after inference
+C> 
+[44.875s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=2
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=19439 shown_frame=0
+C> 
+[44.953s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=2
+cycles=10123414 core_hz=160000000 elapsed_us=63271 request_frame=19439 shown_frame=19441
+C> 
+[46.062s] >>> video
+video
+video_seq=41 uptime_ms=649217
+capture=19476 abort=0 stale=11
+nn=19464 new=19464 scans=38926 errors=0x00000000
+preprocessed=19476 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[46.094s] >>> nnstatus
+nnstatus
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+NN_observer_id=0x41435206 id_check=PASS
+NN_observe=CONNECTED; CPU_start_ack=CONNECTED; completion_mode=IRQ
+nn_status=0x0000000b ddr_ready=1 boot_ready=1 boot_failed=0 busy=1 done_raw=0
+pass=0 fail=0 scheduler_fault=0 display_fault=0 idle=0
+boot_fault=0 compute_fault=0 active_model=2 requested_model=2
+input=0x02400000 output=0x06800000 displayed_frame=19477 core_hz=160000000
+start_count=19467 done_count=19466 snapshot_valid=1
+diagnostic_state=0x81002232 diagnostic_axi=0x52208116
+C> 
+[46.172s] >>> style 4
+style 4
+style_command=OK; applied after inference
+C> 
+[46.187s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=4
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=19478 shown_frame=0
+C> 
+[46.265s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=4
+cycles=8222216 core_hz=160000000 elapsed_us=51388 request_frame=19478 shown_frame=19480
+C> 
+[46.562s] >>> video
+video
+video_seq=42 uptime_ms=649713
+capture=19491 abort=0 stale=11
+nn=19479 new=19479 scans=38956 errors=0x00000000
+preprocessed=19491 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[46.594s] >>> style 3
+style 3
+style_command=OK; applied after inference
+C> 
+[46.609s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=3
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=19491 shown_frame=0
+C> 
+[46.672s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=3
+cycles=10978702 core_hz=160000000 elapsed_us=68616 request_frame=19491 shown_frame=19493
+C> 
+[47.812s] >>> video
+video
+video_seq=43 uptime_ms=650958
+capture=19528 abort=0 stale=11
+nn=19516 new=19516 scans=39030 errors=0x00000000
+preprocessed=19528 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[47.844s] >>> nnstatus
+nnstatus
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+NN_observer_id=0x41435206 id_check=PASS
+NN_observe=CONNECTED; CPU_start_ack=CONNECTED; completion_mode=IRQ
+nn_status=0x00000203 ddr_ready=1 boot_ready=1 boot_failed=0 busy=0 done_raw=0
+pass=0 fail=0 scheduler_fault=0 display_fault=0 idle=1
+boot_fault=0 compute_fault=0 active_model=3 requested_model=3
+input=0x02400000 output=0x06000000 displayed_frame=19529 core_hz=160000000
+start_count=19518 done_count=19518 snapshot_valid=1
+diagnostic_state=0xc0002210 diagnostic_axi=0x54a10124
+C> 
+[47.906s] >>> style 0
+style 0
+style_command=OK; applied after inference
+C> 
+[47.937s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=0
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=19531 shown_frame=0
+C> 
+[48.015s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=0
+cycles=12192155 core_hz=160000000 elapsed_us=76200 request_frame=19531 shown_frame=19533
+C> 
+[48.297s] >>> video
+video
+video_seq=44 uptime_ms=651470
+capture=19544 abort=0 stale=11
+nn=19532 new=19531 scans=39061 errors=0x00000000
+preprocessed=19544 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[48.359s] >>> style 1
+style 1
+style_command=OK; applied after inference
+C> 
+[48.375s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=1
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=19544 shown_frame=0
+C> 
+[48.437s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=1
+cycles=12063893 core_hz=160000000 elapsed_us=75399 request_frame=19544 shown_frame=19546
+C> 
+[49.562s] >>> video
+video
+video_seq=45 uptime_ms=652719
+capture=19581 abort=0 stale=11
+nn=19569 new=19569 scans=39136 errors=0x00000000
+preprocessed=19581 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[49.609s] >>> nnstatus
+nnstatus
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+NN_observer_id=0x41435206 id_check=PASS
+NN_observe=CONNECTED; CPU_start_ack=CONNECTED; completion_mode=IRQ
+nn_status=0x0000000b ddr_ready=1 boot_ready=1 boot_failed=0 busy=1 done_raw=0
+pass=0 fail=0 scheduler_fault=0 display_fault=0 idle=0
+boot_fault=0 compute_fault=0 active_model=1 requested_model=1
+input=0x02000000 output=0x06800000 displayed_frame=19581 core_hz=160000000
+start_count=19571 done_count=19570 snapshot_valid=1
+diagnostic_state=0x81022232 diagnostic_axi=0x52308116
+C> 
+[49.672s] >>> style 0
+style 0
+style_command=OK; applied after inference
+C> 
+[49.687s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=0
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=19583 shown_frame=0
+C> 
+[49.750s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=0
+cycles=10165778 core_hz=160000000 elapsed_us=63536 request_frame=19583 shown_frame=19585
+C> 
+[50.047s] >>> video
+video
+video_seq=46 uptime_ms=653201
+capture=19596 abort=0 stale=11
+nn=19584 new=19583 scans=39165 errors=0x00000000
+preprocessed=19596 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[50.078s] >>> style 2
+style 2
+style_command=OK; applied after inference
+C> 
+[50.094s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=2
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=19596 shown_frame=0
+C> 
+[50.172s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=2
+cycles=12955373 core_hz=160000000 elapsed_us=80971 request_frame=19596 shown_frame=19598
+C> 
+[51.297s] >>> video
+video
+video_seq=47 uptime_ms=654444
+capture=19633 abort=0 stale=11
+nn=19621 new=19620 scans=39239 errors=0x00000000
+preprocessed=19633 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[51.328s] >>> nnstatus
+nnstatus
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+NN_observer_id=0x41435206 id_check=PASS
+NN_observe=CONNECTED; CPU_start_ack=CONNECTED; completion_mode=IRQ
+nn_status=0x0000000b ddr_ready=1 boot_ready=1 boot_failed=0 busy=1 done_raw=0
+pass=0 fail=0 scheduler_fault=0 display_fault=0 idle=0
+boot_fault=0 compute_fault=0 active_model=2 requested_model=2
+input=0x02400000 output=0x06800000 displayed_frame=19633 core_hz=160000000
+start_count=19623 done_count=19622 snapshot_valid=1
+diagnostic_state=0x81002232 diagnostic_axi=0x52208116
+C> 
+[51.390s] >>> style 0
+style 0
+style_command=OK; applied after inference
+C> 
+[51.406s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=0
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=19635 shown_frame=0
+C> 
+[51.484s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=0
+cycles=11028213 core_hz=160000000 elapsed_us=68926 request_frame=19635 shown_frame=19637
+C> 
+[51.781s] >>> video
+video
+video_seq=48 uptime_ms=654926
+capture=19647 abort=0 stale=11
+nn=19635 new=19635 scans=39268 errors=0x00000000
+preprocessed=19647 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[51.812s] >>> style 3
+style 3
+style_command=OK; applied after inference
+C> 
+[51.828s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=3
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=19647 shown_frame=0
+C> 
+[51.890s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=3
+cycles=8488311 core_hz=160000000 elapsed_us=53051 request_frame=19647 shown_frame=19649
+C> 
+[53.015s] >>> video
+video
+video_seq=49 uptime_ms=656170
+capture=19685 abort=0 stale=11
+nn=19673 new=19672 scans=39343 errors=0x00000000
+preprocessed=19685 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[53.047s] >>> nnstatus
+nnstatus
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+NN_observer_id=0x41435206 id_check=PASS
+NN_observe=CONNECTED; CPU_start_ack=CONNECTED; completion_mode=IRQ
+nn_status=0x00000203 ddr_ready=1 boot_ready=1 boot_failed=0 busy=0 done_raw=0
+pass=0 fail=0 scheduler_fault=0 display_fault=0 idle=1
+boot_fault=0 compute_fault=0 active_model=3 requested_model=3
+input=0x02400000 output=0x06000000 displayed_frame=19685 core_hz=160000000
+start_count=19674 done_count=19674 snapshot_valid=1
+diagnostic_state=0xc0002210 diagnostic_axi=0x54a10124
+C> 
+[53.109s] >>> style 0
+style 0
+style_command=OK; applied after inference
+C> 
+[53.125s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=0
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=19686 shown_frame=0
+C> 
+[53.187s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=0
+cycles=9141530 core_hz=160000000 elapsed_us=57134 request_frame=19686 shown_frame=19688
+C> 
+[53.484s] >>> video
+video
+video_seq=50 uptime_ms=656638
+capture=19699 abort=0 stale=11
+nn=19687 new=19686 scans=39371 errors=0x00000000
+preprocessed=19699 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[53.531s] >>> style 4
+style 4
+style_command=OK; applied after inference
+C> 
+[53.547s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=4
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=19699 shown_frame=0
+C> 
+[53.625s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=4
+cycles=8909180 core_hz=160000000 elapsed_us=55682 request_frame=19699 shown_frame=19701
+C> 
+[54.734s] >>> video
+video
+video_seq=51 uptime_ms=657880
+capture=19736 abort=0 stale=11
+nn=19724 new=19723 scans=39445 errors=0x00000000
+preprocessed=19736 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[54.750s] >>> nnstatus
+nnstatus
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+NN_observer_id=0x41435206 id_check=PASS
+NN_observe=CONNECTED; CPU_start_ack=CONNECTED; completion_mode=IRQ
+nn_status=0x0000000b ddr_ready=1 boot_ready=1 boot_failed=0 busy=1 done_raw=0
+pass=0 fail=0 scheduler_fault=0 display_fault=0 idle=0
+boot_fault=0 compute_fault=0 active_model=4 requested_model=4
+input=0x02800000 output=0x06000000 displayed_frame=19736 core_hz=160000000
+start_count=19726 done_count=19725 snapshot_valid=1
+diagnostic_state=0x80c22232 diagnostic_axi=0x52301136
+C> 
+[54.812s] >>> style 1
+style 1
+style_command=OK; applied after inference
+C> 
+[54.828s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=1
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=19738 shown_frame=0
+C> 
+[54.906s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=1
+cycles=12552664 core_hz=160000000 elapsed_us=78454 request_frame=19738 shown_frame=19740
+C> 
+[55.203s] >>> video
+video
+video_seq=52 uptime_ms=658347
+capture=19750 abort=0 stale=11
+nn=19738 new=19738 scans=39474 errors=0x00000000
+preprocessed=19750 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[55.234s] >>> style 0
+style 0
+style_command=OK; applied after inference
+C> 
+[55.250s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=0
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=19750 shown_frame=0
+C> 
+[55.312s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=0
+cycles=9999051 core_hz=160000000 elapsed_us=62494 request_frame=19750 shown_frame=19752
+C> 
+[56.453s] >>> video
+video
+video_seq=53 uptime_ms=659600
+capture=19788 abort=0 stale=11
+nn=19776 new=19775 scans=39549 errors=0x00000000
+preprocessed=19788 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[56.484s] >>> nnstatus
+nnstatus
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+NN_observer_id=0x41435206 id_check=PASS
+NN_observe=CONNECTED; CPU_start_ack=CONNECTED; completion_mode=IRQ
+nn_status=0x0000000b ddr_ready=1 boot_ready=1 boot_failed=0 busy=1 done_raw=0
+pass=0 fail=0 scheduler_fault=0 display_fault=0 idle=0
+boot_fault=0 compute_fault=0 active_model=0 requested_model=0
+input=0x02000000 output=0x06000000 displayed_frame=19788 core_hz=160000000
+start_count=19778 done_count=19777 snapshot_valid=1
+diagnostic_state=0x81402232 diagnostic_axi=0x54a10104
+C> 
+[56.547s] >>> style 1
+style 1
+style_command=OK; applied after inference
+C> 
+[56.562s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=1
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=19790 shown_frame=0
+C> 
+[56.640s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=1
+cycles=12212004 core_hz=160000000 elapsed_us=76325 request_frame=19790 shown_frame=19792
+C> 
+[56.922s] >>> video
+video
+video_seq=54 uptime_ms=660080
+capture=19802 abort=0 stale=11
+nn=19790 new=19790 scans=39578 errors=0x00000000
+preprocessed=19802 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[56.953s] >>> style 2
+style 2
+style_command=OK; applied after inference
+C> 
+[56.969s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=2
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=19802 shown_frame=0
+C> 
+[57.031s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=2
+cycles=10893565 core_hz=160000000 elapsed_us=68084 request_frame=19802 shown_frame=19804
+C> 
+[58.156s] >>> video
+video
+video_seq=55 uptime_ms=661306
+capture=19839 abort=0 stale=11
+nn=19827 new=19826 scans=39651 errors=0x00000000
+preprocessed=19839 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[58.187s] >>> nnstatus
+nnstatus
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+NN_observer_id=0x41435206 id_check=PASS
+NN_observe=CONNECTED; CPU_start_ack=CONNECTED; completion_mode=IRQ
+nn_status=0x0000000b ddr_ready=1 boot_ready=1 boot_failed=0 busy=1 done_raw=0
+pass=0 fail=0 scheduler_fault=0 display_fault=0 idle=0
+boot_fault=0 compute_fault=0 active_model=2 requested_model=2
+input=0x02000000 output=0x06800000 displayed_frame=19839 core_hz=160000000
+start_count=19829 done_count=19828 snapshot_valid=1
+diagnostic_state=0x81002232 diagnostic_axi=0x52208116
+C> 
+[58.234s] >>> style 1
+style 1
+style_command=OK; applied after inference
+C> 
+[58.250s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=1
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=19840 shown_frame=0
+C> 
+[58.328s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=1
+cycles=8775784 core_hz=160000000 elapsed_us=54848 request_frame=19840 shown_frame=19842
+C> 
+[58.625s] >>> video
+video
+video_seq=56 uptime_ms=661774
+capture=19853 abort=0 stale=11
+nn=19841 new=19840 scans=39679 errors=0x00000000
+preprocessed=19853 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[58.656s] >>> style 3
+style 3
+style_command=OK; applied after inference
+C> 
+[58.672s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=3
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=19853 shown_frame=0
+C> 
+[58.750s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=3
+cycles=11549173 core_hz=160000000 elapsed_us=72182 request_frame=19853 shown_frame=19855
+C> 
+[59.875s] >>> video
+video
+video_seq=57 uptime_ms=663021
+capture=19890 abort=0 stale=11
+nn=19878 new=19878 scans=39754 errors=0x00000000
+preprocessed=19890 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[59.906s] >>> nnstatus
+nnstatus
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+NN_observer_id=0x41435206 id_check=PASS
+NN_observe=CONNECTED; CPU_start_ack=CONNECTED; completion_mode=IRQ
+nn_status=0x0000000b ddr_ready=1 boot_ready=1 boot_failed=0 busy=1 done_raw=0
+pass=0 fail=0 scheduler_fault=0 display_fault=0 idle=0
+boot_fault=0 compute_fault=0 active_model=3 requested_model=3
+input=0x02000000 output=0x06000000 displayed_frame=19890 core_hz=160000000
+start_count=19880 done_count=19879 snapshot_valid=1
+diagnostic_state=0x81422232 diagnostic_axi=0x21180136
+C> 
+[59.969s] >>> style 1
+style 1
+style_command=OK; applied after inference
+C> 
+[59.984s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=1
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=19892 shown_frame=0
+C> 
+[60.062s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=1
+cycles=9641840 core_hz=160000000 elapsed_us=60261 request_frame=19892 shown_frame=19894
+C> 
+[60.344s] >>> video
+video
+video_seq=58 uptime_ms=663508
+capture=19905 abort=0 stale=11
+nn=19893 new=19892 scans=39783 errors=0x00000000
+preprocessed=19905 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[60.390s] >>> style 4
+style 4
+style_command=OK; applied after inference
+C> 
+[60.406s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=4
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=19905 shown_frame=0
+C> 
+[60.469s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=4
+cycles=12418890 core_hz=160000000 elapsed_us=77618 request_frame=19905 shown_frame=19907
+C> 
+[61.594s] >>> video
+video
+video_seq=59 uptime_ms=664743
+capture=19942 abort=0 stale=11
+nn=19930 new=19929 scans=39857 errors=0x00000000
+preprocessed=19942 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[61.625s] >>> nnstatus
+nnstatus
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+NN_observer_id=0x41435206 id_check=PASS
+NN_observe=CONNECTED; CPU_start_ack=CONNECTED; completion_mode=IRQ
+nn_status=0x0000000b ddr_ready=1 boot_ready=1 boot_failed=0 busy=1 done_raw=0
+pass=0 fail=0 scheduler_fault=0 display_fault=0 idle=0
+boot_fault=0 compute_fault=0 active_model=4 requested_model=4
+input=0x02400000 output=0x06000000 displayed_frame=19942 core_hz=160000000
+start_count=19932 done_count=19931 snapshot_valid=1
+diagnostic_state=0x81422232 diagnostic_axi=0x61880136
+C> 
+[61.687s] >>> style 2
+style 2
+style_command=OK; applied after inference
+C> 
+[61.703s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=2
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=19944 shown_frame=0
+C> 
+[61.765s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=2
+cycles=7743482 core_hz=160000000 elapsed_us=48396 request_frame=19944 shown_frame=19945
+C> 
+[62.062s] >>> video
+video
+video_seq=60 uptime_ms=665207
+capture=19956 abort=0 stale=11
+nn=19944 new=19943 scans=39885 errors=0x00000000
+preprocessed=19956 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[62.078s] >>> style 0
+style 0
+style_command=OK; applied after inference
+C> 
+[62.094s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=0
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=19956 shown_frame=0
+C> 
+[62.172s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=0
+cycles=7751577 core_hz=160000000 elapsed_us=48447 request_frame=19956 shown_frame=19957
+C> 
+[63.297s] >>> video
+video
+video_seq=61 uptime_ms=666449
+capture=19993 abort=0 stale=11
+nn=19981 new=19981 scans=39960 errors=0x00000000
+preprocessed=19993 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[63.328s] >>> nnstatus
+nnstatus
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+NN_observer_id=0x41435206 id_check=PASS
+NN_observe=CONNECTED; CPU_start_ack=CONNECTED; completion_mode=IRQ
+nn_status=0x0000000b ddr_ready=1 boot_ready=1 boot_failed=0 busy=1 done_raw=0
+pass=0 fail=0 scheduler_fault=0 display_fault=0 idle=0
+boot_fault=0 compute_fault=0 active_model=0 requested_model=0
+input=0x02400000 output=0x06800000 displayed_frame=19993 core_hz=160000000
+start_count=19983 done_count=19982 snapshot_valid=1
+diagnostic_state=0x81402232 diagnostic_axi=0x52a08116
+C> 
+[63.390s] >>> style 2
+style 2
+style_command=OK; applied after inference
+C> 
+[63.406s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=2
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=19995 shown_frame=0
+C> 
+[63.484s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=2
+cycles=11170774 core_hz=160000000 elapsed_us=69817 request_frame=19995 shown_frame=19997
+C> 
+[63.812s] >>> video
+video
+video_seq=62 uptime_ms=666962
+capture=20008 abort=0 stale=11
+nn=19997 new=19996 scans=39990 errors=0x00000000
+preprocessed=20008 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[63.844s] >>> style 1
+style 1
+style_command=OK; applied after inference
+C> 
+[63.859s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=1
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=20008 shown_frame=0
+C> 
+[63.922s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=1
+cycles=8837539 core_hz=160000000 elapsed_us=55234 request_frame=20008 shown_frame=20010
+C> 
+[65.047s] >>> video
+video
+video_seq=63 uptime_ms=668203
+capture=20046 abort=0 stale=11
+nn=20034 new=20033 scans=40065 errors=0x00000000
+preprocessed=20046 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[65.094s] >>> nnstatus
+nnstatus
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+NN_observer_id=0x41435206 id_check=PASS
+NN_observe=CONNECTED; CPU_start_ack=CONNECTED; completion_mode=IRQ
+nn_status=0x0000000b ddr_ready=1 boot_ready=1 boot_failed=0 busy=1 done_raw=0
+pass=0 fail=0 scheduler_fault=0 display_fault=0 idle=0
+boot_fault=0 compute_fault=0 active_model=1 requested_model=1
+input=0x02000000 output=0x06000000 displayed_frame=20046 core_hz=160000000
+start_count=20036 done_count=20035 snapshot_valid=1
+diagnostic_state=0x81002232 diagnostic_axi=0x53a0c116
+C> 
+[65.156s] >>> style 2
+style 2
+style_command=OK; applied after inference
+C> 
+[65.172s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=2
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=20048 shown_frame=0
+C> 
+[65.234s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=2
+cycles=12234438 core_hz=160000000 elapsed_us=76465 request_frame=20048 shown_frame=20050
+C> 
+[65.531s] >>> video
+video
+video_seq=64 uptime_ms=668687
+capture=20060 abort=0 stale=11
+nn=20048 new=20048 scans=40094 errors=0x00000000
+preprocessed=20060 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[65.562s] >>> style 3
+style 3
+style_command=OK; applied after inference
+C> 
+[65.578s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=3
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=20060 shown_frame=0
+C> 
+[65.656s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=3
+cycles=9677461 core_hz=160000000 elapsed_us=60484 request_frame=20060 shown_frame=20062
+C> 
+[66.765s] >>> video
+video
+video_seq=65 uptime_ms=669918
+capture=20097 abort=0 stale=11
+nn=20085 new=20085 scans=40168 errors=0x00000000
+preprocessed=20097 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[66.812s] >>> nnstatus
+nnstatus
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+NN_observer_id=0x41435206 id_check=PASS
+NN_observe=CONNECTED; CPU_start_ack=CONNECTED; completion_mode=IRQ
+nn_status=0x0000000b ddr_ready=1 boot_ready=1 boot_failed=0 busy=1 done_raw=0
+pass=0 fail=0 scheduler_fault=0 display_fault=0 idle=0
+boot_fault=0 compute_fault=0 active_model=3 requested_model=3
+input=0x02000000 output=0x06800000 displayed_frame=20097 core_hz=160000000
+start_count=20087 done_count=20086 snapshot_valid=1
+diagnostic_state=0x81802232 diagnostic_axi=0x54a10124
+C> 
+[66.859s] >>> style 2
+style 2
+style_command=OK; applied after inference
+C> 
+[66.875s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=2
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=20099 shown_frame=0
+C> 
+[66.953s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=2
+cycles=10357245 core_hz=160000000 elapsed_us=64732 request_frame=20099 shown_frame=20101
+C> 
+[67.250s] >>> video
+video
+video_seq=66 uptime_ms=670398
+capture=20111 abort=0 stale=11
+nn=20100 new=20099 scans=40197 errors=0x00000000
+preprocessed=20111 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[67.281s] >>> style 4
+style 4
+style_command=OK; applied after inference
+C> 
+[67.297s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=4
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=20112 shown_frame=0
+C> 
+[67.375s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=4
+cycles=7771573 core_hz=160000000 elapsed_us=48572 request_frame=20112 shown_frame=20113
+C> 
+[68.484s] >>> video
+video
+video_seq=67 uptime_ms=671641
+capture=20149 abort=0 stale=11
+nn=20137 new=20136 scans=40271 errors=0x00000000
+preprocessed=20149 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[68.531s] >>> nnstatus
+nnstatus
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+NN_observer_id=0x41435206 id_check=PASS
+NN_observe=CONNECTED; CPU_start_ack=CONNECTED; completion_mode=IRQ
+nn_status=0x0000000b ddr_ready=1 boot_ready=1 boot_failed=0 busy=1 done_raw=0
+pass=0 fail=0 scheduler_fault=0 display_fault=0 idle=0
+boot_fault=0 compute_fault=0 active_model=4 requested_model=4
+input=0x02400000 output=0x06800000 displayed_frame=20149 core_hz=160000000
+start_count=20139 done_count=20138 snapshot_valid=1
+diagnostic_state=0x81002232 diagnostic_axi=0x63a0c116
+C> 
+[68.594s] >>> style 3
+style 3
+style_command=OK; applied after inference
+C> 
+[68.609s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=3
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=20151 shown_frame=0
+C> 
+[68.672s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=3
+cycles=11207193 core_hz=160000000 elapsed_us=70044 request_frame=20151 shown_frame=20153
+C> 
+[68.969s] >>> video
+video
+video_seq=68 uptime_ms=672124
+capture=20163 abort=0 stale=11
+nn=20151 new=20151 scans=40300 errors=0x00000000
+preprocessed=20163 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[69.000s] >>> style 0
+style 0
+style_command=OK; applied after inference
+C> 
+[69.047s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=0
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=20164 shown_frame=0
+C> 
+[69.109s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=0
+cycles=12226188 core_hz=160000000 elapsed_us=76413 request_frame=20164 shown_frame=20166
+C> 
+[70.203s] >>> video
+video
+video_seq=69 uptime_ms=673350
+capture=20200 abort=0 stale=11
+nn=20188 new=20188 scans=40374 errors=0x00000000
+preprocessed=20200 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[70.234s] >>> nnstatus
+nnstatus
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+NN_observer_id=0x41435206 id_check=PASS
+NN_observe=CONNECTED; CPU_start_ack=CONNECTED; completion_mode=IRQ
+nn_status=0x0000000b ddr_ready=1 boot_ready=1 boot_failed=0 busy=1 done_raw=0
+pass=0 fail=0 scheduler_fault=0 display_fault=0 idle=0
+boot_fault=0 compute_fault=0 active_model=0 requested_model=0
+input=0x02400000 output=0x06000000 displayed_frame=20200 core_hz=160000000
+start_count=20190 done_count=20189 snapshot_valid=1
+diagnostic_state=0x81802232 diagnostic_axi=0x54a10104
+C> 
+[70.281s] >>> style 3
+style 3
+style_command=OK; applied after inference
+C> 
+[70.297s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=3
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=20202 shown_frame=0
+C> 
+[70.375s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=3
+cycles=11882735 core_hz=160000000 elapsed_us=74267 request_frame=20202 shown_frame=20204
+C> 
+[70.656s] >>> video
+video
+video_seq=70 uptime_ms=673801
+capture=20214 abort=0 stale=11
+nn=20202 new=20201 scans=40401 errors=0x00000000
+preprocessed=20214 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[70.672s] >>> style 1
+style 1
+style_command=OK; applied after inference
+C> 
+[70.687s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=1
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=20213 shown_frame=0
+C> 
+[70.765s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=1
+cycles=9122226 core_hz=160000000 elapsed_us=57013 request_frame=20213 shown_frame=20215
+C> 
+[71.875s] >>> video
+video
+video_seq=71 uptime_ms=675033
+capture=20251 abort=0 stale=11
+nn=20239 new=20238 scans=40475 errors=0x00000000
+preprocessed=20251 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[71.906s] >>> nnstatus
+nnstatus
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+NN_observer_id=0x41435206 id_check=PASS
+NN_observe=CONNECTED; CPU_start_ack=CONNECTED; completion_mode=IRQ
+nn_status=0x0000000b ddr_ready=1 boot_ready=1 boot_failed=0 busy=1 done_raw=0
+pass=0 fail=0 scheduler_fault=0 display_fault=0 idle=0
+boot_fault=0 compute_fault=0 active_model=1 requested_model=1
+input=0x02000000 output=0x06000000 displayed_frame=20250 core_hz=160000000
+start_count=20240 done_count=20239 snapshot_valid=1
+diagnostic_state=0x81822232 diagnostic_axi=0x53080136
+C> 
+[71.969s] >>> style 3
+style 3
+style_command=OK; applied after inference
+C> 
+[71.984s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=3
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=20252 shown_frame=0
+C> 
+[72.047s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=3
+cycles=9761778 core_hz=160000000 elapsed_us=61011 request_frame=20252 shown_frame=20254
+C> 
+[72.344s] >>> video
+video
+video_seq=72 uptime_ms=675498
+capture=20265 abort=0 stale=11
+nn=20253 new=20252 scans=40503 errors=0x00000000
+preprocessed=20265 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[72.390s] >>> style 2
+style 2
+style_command=OK; applied after inference
+C> 
+[72.406s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=2
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=20265 shown_frame=0
+C> 
+[72.469s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=2
+cycles=12563120 core_hz=160000000 elapsed_us=78519 request_frame=20265 shown_frame=20267
+C> 
+[73.594s] >>> video
+video
+video_seq=73 uptime_ms=676740
+capture=20302 abort=0 stale=11
+nn=20290 new=20289 scans=40577 errors=0x00000000
+preprocessed=20302 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[73.625s] >>> nnstatus
+nnstatus
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+NN_observer_id=0x41435206 id_check=PASS
+NN_observe=CONNECTED; CPU_start_ack=CONNECTED; completion_mode=IRQ
+nn_status=0x0000000b ddr_ready=1 boot_ready=1 boot_failed=0 busy=1 done_raw=0
+pass=0 fail=0 scheduler_fault=0 display_fault=0 idle=0
+boot_fault=0 compute_fault=0 active_model=2 requested_model=2
+input=0x02400000 output=0x06000000 displayed_frame=20302 core_hz=160000000
+start_count=20292 done_count=20291 snapshot_valid=1
+diagnostic_state=0x81022232 diagnostic_axi=0x52308116
+C> 
+[73.687s] >>> style 3
+style 3
+style_command=OK; applied after inference
+C> 
+[73.703s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=3
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=20304 shown_frame=0
+C> 
+[73.765s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=3
+cycles=7850563 core_hz=160000000 elapsed_us=49066 request_frame=20304 shown_frame=20305
+C> 
+[74.062s] >>> video
+video
+video_seq=74 uptime_ms=677206
+capture=20316 abort=0 stale=11
+nn=20304 new=20303 scans=40605 errors=0x00000000
+preprocessed=20316 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[74.078s] >>> style 4
+style 4
+style_command=OK; applied after inference
+C> 
+[74.094s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=4
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=20316 shown_frame=0
+C> 
+[74.172s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=4
+cycles=7872566 core_hz=160000000 elapsed_us=49203 request_frame=20316 shown_frame=20317
+C> 
+[75.281s] >>> video
+video
+video_seq=75 uptime_ms=678434
+capture=20353 abort=0 stale=11
+nn=20341 new=20340 scans=40679 errors=0x00000000
+preprocessed=20353 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[75.312s] >>> nnstatus
+nnstatus
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+NN_observer_id=0x41435206 id_check=PASS
+NN_observe=CONNECTED; CPU_start_ack=CONNECTED; completion_mode=IRQ
+nn_status=0x0000000b ddr_ready=1 boot_ready=1 boot_failed=0 busy=1 done_raw=0
+pass=0 fail=0 scheduler_fault=0 display_fault=0 idle=0
+boot_fault=0 compute_fault=0 active_model=4 requested_model=4
+input=0x02400000 output=0x06800000 displayed_frame=20353 core_hz=160000000
+start_count=20343 done_count=20342 snapshot_valid=1
+diagnostic_state=0x81802232 diagnostic_axi=0x64a10104
+C> 
+[75.625s] >>> video
+video
+video_seq=76 uptime_ms=678777
+capture=20363 abort=0 stale=11
+nn=20351 new=20350 scans=40699 errors=0x00000000
+preprocessed=20363 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[75.640s] >>> style 0
+style 0
+style_command=OK; applied after inference
+C> 
+[75.656s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=0
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=20363 shown_frame=0
+C> 
+[75.734s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=0
+cycles=13001416 core_hz=160000000 elapsed_us=81258 request_frame=20363 shown_frame=20365
+C> 
+[76.844s] >>> video
+video
+video_seq=77 uptime_ms=679989
+capture=20399 abort=0 stale=11
+nn=20387 new=20387 scans=40772 errors=0x00000000
+preprocessed=20399 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[76.875s] >>> nnstatus
+nnstatus
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+NN_observer_id=0x41435206 id_check=PASS
+NN_observe=CONNECTED; CPU_start_ack=CONNECTED; completion_mode=IRQ
+nn_status=0x0000000b ddr_ready=1 boot_ready=1 boot_failed=0 busy=1 done_raw=0
+pass=0 fail=0 scheduler_fault=0 display_fault=0 idle=0
+boot_fault=0 compute_fault=0 active_model=0 requested_model=0
+input=0x02800000 output=0x06800000 displayed_frame=20399 core_hz=160000000
+start_count=20389 done_count=20388 snapshot_valid=1
+diagnostic_state=0x81802232 diagnostic_axi=0x54a10104
+C> 
+[76.922s] >>> style 4
+style 4
+style_command=OK; applied after inference
+C> 
+[76.937s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=4
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=20401 shown_frame=0
+C> 
+[77.015s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=4
+cycles=10890810 core_hz=160000000 elapsed_us=68067 request_frame=20401 shown_frame=20403
+C> 
+[77.297s] >>> video
+video
+video_seq=78 uptime_ms=680440
+capture=20413 abort=0 stale=11
+nn=20401 new=20400 scans=40799 errors=0x00000000
+preprocessed=20413 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[77.312s] >>> style 1
+style 1
+style_command=OK; applied after inference
+C> 
+[77.328s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=1
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=20412 shown_frame=0
+C> 
+[77.390s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=1
+cycles=8128941 core_hz=160000000 elapsed_us=50805 request_frame=20412 shown_frame=20414
+C> 
+[78.531s] >>> video
+video
+video_seq=79 uptime_ms=681678
+capture=20450 abort=0 stale=11
+nn=20438 new=20437 scans=40873 errors=0x00000000
+preprocessed=20450 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[78.578s] >>> nnstatus
+nnstatus
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+NN_observer_id=0x41435206 id_check=PASS
+NN_observe=CONNECTED; CPU_start_ack=CONNECTED; completion_mode=IRQ
+nn_status=0x0000000b ddr_ready=1 boot_ready=1 boot_failed=0 busy=1 done_raw=0
+pass=0 fail=0 scheduler_fault=0 display_fault=0 idle=0
+boot_fault=0 compute_fault=0 active_model=1 requested_model=1
+input=0x02800000 output=0x06000000 displayed_frame=20450 core_hz=160000000
+start_count=20440 done_count=20439 snapshot_valid=1
+diagnostic_state=0x81402232 diagnostic_axi=0x64a10104
+C> 
+[78.625s] >>> style 4
+style 4
+style_command=OK; applied after inference
+C> 
+[78.640s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=4
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=20452 shown_frame=0
+C> 
+[78.719s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=4
+cycles=11535166 core_hz=160000000 elapsed_us=72094 request_frame=20452 shown_frame=20454
+C> 
+[79.015s] >>> video
+video
+video_seq=80 uptime_ms=682162
+capture=20464 abort=0 stale=11
+nn=20453 new=20452 scans=40902 errors=0x00000000
+preprocessed=20464 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[79.047s] >>> style 2
+style 2
+style_command=OK; applied after inference
+C> 
+[79.062s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=2
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=20464 shown_frame=0
+C> 
+[79.125s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=2
+cycles=8999105 core_hz=160000000 elapsed_us=56244 request_frame=20464 shown_frame=20466
+C> 
+[80.250s] >>> video
+video
+video_seq=81 uptime_ms=683406
+capture=20502 abort=0 stale=11
+nn=20490 new=20489 scans=40977 errors=0x00000000
+preprocessed=20502 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[80.297s] >>> nnstatus
+nnstatus
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+NN_observer_id=0x41435206 id_check=PASS
+NN_observe=CONNECTED; CPU_start_ack=CONNECTED; completion_mode=IRQ
+nn_status=0x0000000b ddr_ready=1 boot_ready=1 boot_failed=0 busy=1 done_raw=0
+pass=0 fail=0 scheduler_fault=0 display_fault=0 idle=0
+boot_fault=0 compute_fault=0 active_model=2 requested_model=2
+input=0x02000000 output=0x06000000 displayed_frame=20502 core_hz=160000000
+start_count=20492 done_count=20491 snapshot_valid=1
+diagnostic_state=0x81002232 diagnostic_axi=0x63a0c116
+C> 
+[80.344s] >>> style 4
+style 4
+style_command=OK; applied after inference
+C> 
+[80.359s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=4
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=20504 shown_frame=0
+C> 
+[80.437s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=4
+cycles=12408971 core_hz=160000000 elapsed_us=77556 request_frame=20504 shown_frame=20506
+C> 
+[80.734s] >>> video
+video
+video_seq=82 uptime_ms=683890
+capture=20516 abort=0 stale=11
+nn=20504 new=20504 scans=41006 errors=0x00000000
+preprocessed=20516 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[80.765s] >>> style 3
+style 3
+style_command=OK; applied after inference
+C> 
+[80.781s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=3
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=20516 shown_frame=0
+C> 
+[80.844s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=3
+cycles=9841332 core_hz=160000000 elapsed_us=61508 request_frame=20516 shown_frame=20518
+C> 
+[81.984s] >>> video
+video
+video_seq=83 uptime_ms=685127
+capture=20553 abort=0 stale=11
+nn=20541 new=20541 scans=41080 errors=0x00000000
+preprocessed=20553 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[82.000s] >>> nnstatus
+nnstatus
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+NN_observer_id=0x41435206 id_check=PASS
+NN_observe=CONNECTED; CPU_start_ack=CONNECTED; completion_mode=IRQ
+nn_status=0x0000000b ddr_ready=1 boot_ready=1 boot_failed=0 busy=1 done_raw=0
+pass=0 fail=0 scheduler_fault=0 display_fault=0 idle=0
+boot_fault=0 compute_fault=0 active_model=3 requested_model=3
+input=0x02000000 output=0x06800000 displayed_frame=20553 core_hz=160000000
+start_count=20543 done_count=20542 snapshot_valid=1
+diagnostic_state=0x81422232 diagnostic_axi=0x2330c116
+C> 
+[82.062s] >>> style 0
+style 0
+style_command=OK; applied after inference
+C> 
+[82.078s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=0
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=20555 shown_frame=0
+C> 
+[82.140s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=0
+cycles=10520749 core_hz=160000000 elapsed_us=65754 request_frame=20555 shown_frame=20557
+C> 
+[82.422s] >>> video
+video
+video_seq=84 uptime_ms=685576
+capture=20567 abort=0 stale=11
+nn=20555 new=20554 scans=41107 errors=0x00000000
+preprocessed=20567 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[82.453s] >>> style 1
+style 1
+style_command=OK; applied after inference
+C> 
+[82.469s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=1
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=20567 shown_frame=0
+C> 
+[82.531s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=1
+cycles=13031363 core_hz=160000000 elapsed_us=81446 request_frame=20567 shown_frame=20569
+C> 
+[83.656s] >>> video
+video
+video_seq=85 uptime_ms=686804
+capture=20604 abort=0 stale=11
+nn=20592 new=20591 scans=41181 errors=0x00000000
+preprocessed=20604 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[83.687s] >>> nnstatus
+nnstatus
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+NN_observer_id=0x41435206 id_check=PASS
+NN_observe=CONNECTED; CPU_start_ack=CONNECTED; completion_mode=IRQ
+nn_status=0x0000000b ddr_ready=1 boot_ready=1 boot_failed=0 busy=1 done_raw=0
+pass=0 fail=0 scheduler_fault=0 display_fault=0 idle=0
+boot_fault=0 compute_fault=0 active_model=1 requested_model=1
+input=0x02000000 output=0x06000000 displayed_frame=20604 core_hz=160000000
+start_count=20594 done_count=20593 snapshot_valid=1
+diagnostic_state=0x81802232 diagnostic_axi=0x54a10104
+C> 
+[83.734s] >>> style 0
+style 0
+style_command=OK; applied after inference
+C> 
+[83.765s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=0
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=20605 shown_frame=0
+C> 
+[83.828s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=0
+cycles=8398185 core_hz=160000000 elapsed_us=52488 request_frame=20605 shown_frame=20607
+C> 
+[84.109s] >>> video
+video
+video_seq=86 uptime_ms=687257
+capture=20617 abort=0 stale=11
+nn=20605 new=20605 scans=41208 errors=0x00000000
+preprocessed=20617 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[84.140s] >>> style 2
+style 2
+style_command=OK; applied after inference
+C> 
+[84.156s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=2
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=20617 shown_frame=0
+C> 
+[84.234s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=2
+cycles=8425485 core_hz=160000000 elapsed_us=52659 request_frame=20617 shown_frame=20619
+C> 
+[85.344s] >>> video
+video
+video_seq=87 uptime_ms=688497
+capture=20654 abort=0 stale=11
+nn=20643 new=20642 scans=41283 errors=0x00000000
+preprocessed=20654 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[85.375s] >>> nnstatus
+nnstatus
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+NN_observer_id=0x41435206 id_check=PASS
+NN_observe=CONNECTED; CPU_start_ack=CONNECTED; completion_mode=IRQ
+nn_status=0x0000000b ddr_ready=1 boot_ready=1 boot_failed=0 busy=1 done_raw=0
+pass=0 fail=0 scheduler_fault=0 display_fault=0 idle=0
+boot_fault=0 compute_fault=0 active_model=2 requested_model=2
+input=0x02000000 output=0x06800000 displayed_frame=20655 core_hz=160000000
+start_count=20645 done_count=20644 snapshot_valid=1
+diagnostic_state=0x81002232 diagnostic_axi=0x56a18116
+C> 
+[85.437s] >>> style 0
+style 0
+style_command=OK; applied after inference
+C> 
+[85.453s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=0
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=20656 shown_frame=0
+C> 
+[85.515s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=0
+cycles=9058607 core_hz=160000000 elapsed_us=56616 request_frame=20656 shown_frame=20658
+C> 
+[85.812s] >>> video
+video
+video_seq=88 uptime_ms=688963
+capture=20668 abort=0 stale=11
+nn=20657 new=20656 scans=41311 errors=0x00000000
+preprocessed=20668 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[85.844s] >>> style 3
+style 3
+style_command=OK; applied after inference
+C> 
+[85.859s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=3
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=20668 shown_frame=0
+C> 
+[85.922s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=3
+cycles=9069508 core_hz=160000000 elapsed_us=56684 request_frame=20668 shown_frame=20670
+C> 
+[87.062s] >>> video
+video
+video_seq=89 uptime_ms=690207
+capture=20706 abort=0 stale=11
+nn=20694 new=20693 scans=41385 errors=0x00000000
+preprocessed=20706 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[87.094s] >>> nnstatus
+nnstatus
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+NN_observer_id=0x41435206 id_check=PASS
+NN_observe=CONNECTED; CPU_start_ack=CONNECTED; completion_mode=IRQ
+nn_status=0x0000000b ddr_ready=1 boot_ready=1 boot_failed=0 busy=1 done_raw=0
+pass=0 fail=0 scheduler_fault=0 display_fault=0 idle=0
+boot_fault=0 compute_fault=0 active_model=3 requested_model=3
+input=0x02000000 output=0x06000000 displayed_frame=20706 core_hz=160000000
+start_count=20696 done_count=20695 snapshot_valid=1
+diagnostic_state=0x81802232 diagnostic_axi=0x54a10104
+C> 
+[87.156s] >>> style 0
+style 0
+style_command=OK; applied after inference
+C> 
+[87.172s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=0
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=20708 shown_frame=0
+C> 
+[87.234s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=0
+cycles=12472372 core_hz=160000000 elapsed_us=77952 request_frame=20708 shown_frame=20710
+C> 
+[87.531s] >>> video
+video
+video_seq=90 uptime_ms=690688
+capture=20720 abort=0 stale=11
+nn=20708 new=20708 scans=41414 errors=0x00000000
+preprocessed=20720 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[87.562s] >>> style 4
+style 4
+style_command=OK; applied after inference
+C> 
+[87.578s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=4
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=20720 shown_frame=0
+C> 
+[87.640s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=4
+cycles=9915673 core_hz=160000000 elapsed_us=61972 request_frame=20720 shown_frame=20722
+C> 
+[88.765s] >>> video
+video
+video_seq=91 uptime_ms=691920
+capture=20757 abort=0 stale=11
+nn=20745 new=20745 scans=41488 errors=0x00000000
+preprocessed=20757 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[88.812s] >>> nnstatus
+nnstatus
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+NN_observer_id=0x41435206 id_check=PASS
+NN_observe=CONNECTED; CPU_start_ack=CONNECTED; completion_mode=IRQ
+nn_status=0x0000000b ddr_ready=1 boot_ready=1 boot_failed=0 busy=1 done_raw=0
+pass=0 fail=0 scheduler_fault=0 display_fault=0 idle=0
+boot_fault=0 compute_fault=0 active_model=4 requested_model=4
+input=0x02000000 output=0x06800000 displayed_frame=20757 core_hz=160000000
+start_count=20747 done_count=20746 snapshot_valid=1
+diagnostic_state=0x81002232 diagnostic_axi=0x5320c116
+C> 
+[88.859s] >>> style 1
+style 1
+style_command=OK; applied after inference
+C> 
+[88.875s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=1
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=20759 shown_frame=0
+C> 
+[88.953s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=1
+cycles=10593530 core_hz=160000000 elapsed_us=66209 request_frame=20759 shown_frame=20761
+C> 
+[89.250s] >>> video
+video
+video_seq=92 uptime_ms=692401
+capture=20772 abort=0 stale=11
+nn=20760 new=20759 scans=41517 errors=0x00000000
+preprocessed=20772 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[89.281s] >>> style 0
+style 0
+style_command=OK; applied after inference
+C> 
+[89.297s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=0
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=20771 shown_frame=0
+C> 
+[89.359s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=0
+cycles=8033362 core_hz=160000000 elapsed_us=50208 request_frame=20771 shown_frame=20773
+C> 
+[90.500s] >>> video
+video
+video_seq=93 uptime_ms=693646
+capture=20809 abort=0 stale=11
+nn=20797 new=20796 scans=41591 errors=0x00000000
+preprocessed=20809 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[90.531s] >>> nnstatus
+nnstatus
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+NN_observer_id=0x41435206 id_check=PASS
+NN_observe=CONNECTED; CPU_start_ack=CONNECTED; completion_mode=IRQ
+nn_status=0x0000000b ddr_ready=1 boot_ready=1 boot_failed=0 busy=1 done_raw=0
+pass=0 fail=0 scheduler_fault=0 display_fault=0 idle=0
+boot_fault=0 compute_fault=0 active_model=0 requested_model=0
+input=0x02400000 output=0x06800000 displayed_frame=20809 core_hz=160000000
+start_count=20799 done_count=20798 snapshot_valid=1
+diagnostic_state=0x81802232 diagnostic_axi=0x54a10104
+C> 
+[90.594s] >>> style 1
+style 1
+style_command=OK; applied after inference
+C> 
+[90.609s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=1
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=20811 shown_frame=0
+C> 
+[90.687s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=1
+cycles=11445016 core_hz=160000000 elapsed_us=71531 request_frame=20811 shown_frame=20813
+C> 
+[90.984s] >>> video
+video
+video_seq=94 uptime_ms=694131
+capture=20823 abort=0 stale=11
+nn=20812 new=20811 scans=41621 errors=0x00000000
+preprocessed=20823 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[91.000s] >>> style 2
+style 2
+style_command=OK; applied after inference
+C> 
+[91.015s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=2
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=20823 shown_frame=0
+C> 
+[91.094s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=2
+cycles=8918341 core_hz=160000000 elapsed_us=55739 request_frame=20823 shown_frame=20825
+C> 
+[92.203s] >>> video
+video
+video_seq=95 uptime_ms=695351
+capture=20860 abort=0 stale=11
+nn=20848 new=20848 scans=41694 errors=0x00000000
+preprocessed=20860 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[92.234s] >>> nnstatus
+nnstatus
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+NN_observer_id=0x41435206 id_check=PASS
+NN_observe=CONNECTED; CPU_start_ack=CONNECTED; completion_mode=IRQ
+nn_status=0x0000000b ddr_ready=1 boot_ready=1 boot_failed=0 busy=1 done_raw=0
+pass=0 fail=0 scheduler_fault=0 display_fault=0 idle=0
+boot_fault=0 compute_fault=0 active_model=2 requested_model=2
+input=0x02400000 output=0x06000000 displayed_frame=20860 core_hz=160000000
+start_count=20850 done_count=20849 snapshot_valid=1
+diagnostic_state=0x81402232 diagnostic_axi=0x62a08116
+C> 
+[92.281s] >>> style 1
+style 1
+style_command=OK; applied after inference
+C> 
+[92.297s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=1
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=20862 shown_frame=0
+C> 
+[92.375s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=1
+cycles=12122012 core_hz=160000000 elapsed_us=75762 request_frame=20862 shown_frame=20864
+C> 
+[92.672s] >>> video
+video
+video_seq=96 uptime_ms=695817
+capture=20874 abort=0 stale=11
+nn=20862 new=20862 scans=41722 errors=0x00000000
+preprocessed=20874 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[92.703s] >>> style 3
+style 3
+style_command=OK; applied after inference
+C> 
+[92.719s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=3
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=20874 shown_frame=0
+C> 
+[92.797s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=3
+cycles=9566928 core_hz=160000000 elapsed_us=59793 request_frame=20874 shown_frame=20876
+C> 
+[93.906s] >>> video
+video
+video_seq=97 uptime_ms=697064
+capture=20911 abort=0 stale=11
+nn=20900 new=20899 scans=41797 errors=0x00000000
+preprocessed=20911 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[93.953s] >>> nnstatus
+nnstatus
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+NN_observer_id=0x41435206 id_check=PASS
+NN_observe=CONNECTED; CPU_start_ack=CONNECTED; completion_mode=IRQ
+nn_status=0x0000000b ddr_ready=1 boot_ready=1 boot_failed=0 busy=1 done_raw=0
+pass=0 fail=0 scheduler_fault=0 display_fault=0 idle=0
+boot_fault=0 compute_fault=0 active_model=3 requested_model=3
+input=0x02800000 output=0x06000000 displayed_frame=20912 core_hz=160000000
+start_count=20902 done_count=20901 snapshot_valid=1
+diagnostic_state=0x81402232 diagnostic_axi=0x2320c116
+C> 
+[94.015s] >>> style 1
+style 1
+style_command=OK; applied after inference
+C> 
+[94.031s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=1
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=20914 shown_frame=0
+C> 
+[94.094s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=1
+cycles=12975112 core_hz=160000000 elapsed_us=81094 request_frame=20914 shown_frame=20916
+C> 
+[94.406s] >>> video
+video
+video_seq=98 uptime_ms=697559
+capture=20926 abort=0 stale=11
+nn=20914 new=20914 scans=41826 errors=0x00000000
+preprocessed=20926 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[94.437s] >>> style 4
+style 4
+style_command=OK; applied after inference
+C> 
+[94.453s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=4
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=20926 shown_frame=0
+C> 
+[94.515s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=4
+cycles=10437810 core_hz=160000000 elapsed_us=65236 request_frame=20926 shown_frame=20928
+C> 
+[95.640s] >>> video
+video
+video_seq=99 uptime_ms=698785
+capture=20963 abort=0 stale=11
+nn=20951 new=20951 scans=41900 errors=0x00000000
+preprocessed=20963 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[95.672s] >>> nnstatus
+nnstatus
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+NN_observer_id=0x41435206 id_check=PASS
+NN_observe=CONNECTED; CPU_start_ack=CONNECTED; completion_mode=IRQ
+nn_status=0x0000000b ddr_ready=1 boot_ready=1 boot_failed=0 busy=1 done_raw=0
+pass=0 fail=0 scheduler_fault=0 display_fault=0 idle=0
+boot_fault=0 compute_fault=0 active_model=4 requested_model=4
+input=0x02800000 output=0x06800000 displayed_frame=20963 core_hz=160000000
+start_count=20953 done_count=20952 snapshot_valid=1
+diagnostic_state=0x81002232 diagnostic_axi=0x52208116
+C> 
+[95.734s] >>> style 2
+style 2
+style_command=OK; applied after inference
+C> 
+[95.734s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=2
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=20965 shown_frame=0
+C> 
+[95.812s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=2
+cycles=11096297 core_hz=160000000 elapsed_us=69351 request_frame=20965 shown_frame=20967
+C> 
+[96.094s] >>> video
+video
+video_seq=100 uptime_ms=699251
+capture=20977 abort=0 stale=11
+nn=20965 new=20965 scans=41928 errors=0x00000000
+preprocessed=20977 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[96.125s] >>> style 0
+style 0
+style_command=OK; applied after inference
+C> 
+[96.140s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=0
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=20977 shown_frame=0
+C> 
+[96.203s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=0
+cycles=11088633 core_hz=160000000 elapsed_us=69303 request_frame=20977 shown_frame=20979
+C> 
+[97.328s] >>> video
+video
+video_seq=101 uptime_ms=700482
+capture=21014 abort=0 stale=11
+nn=21002 new=21002 scans=42002 errors=0x00000000
+preprocessed=21014 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[97.375s] >>> nnstatus
+nnstatus
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+NN_observer_id=0x41435206 id_check=PASS
+NN_observe=CONNECTED; CPU_start_ack=CONNECTED; completion_mode=IRQ
+nn_status=0x0000000b ddr_ready=1 boot_ready=1 boot_failed=0 busy=1 done_raw=0
+pass=0 fail=0 scheduler_fault=0 display_fault=0 idle=0
+boot_fault=0 compute_fault=0 active_model=0 requested_model=0
+input=0x02800000 output=0x06000000 displayed_frame=21014 core_hz=160000000
+start_count=21004 done_count=21003 snapshot_valid=1
+diagnostic_state=0x81402232 diagnostic_axi=0x64a10104
+C> 
+[97.422s] >>> style 2
+style 2
+style_command=OK; applied after inference
+C> 
+[97.437s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=2
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=21016 shown_frame=0
+C> 
+[97.500s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=2
+cycles=11710186 core_hz=160000000 elapsed_us=73188 request_frame=21016 shown_frame=21018
+C> 
+[97.797s] >>> video
+video
+video_seq=102 uptime_ms=700948
+capture=21028 abort=0 stale=11
+nn=21016 new=21016 scans=42030 errors=0x00000000
+preprocessed=21028 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[97.828s] >>> style 1
+style 1
+style_command=OK; applied after inference
+C> 
+[97.844s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=1
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=21028 shown_frame=0
+C> 
+[97.906s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=1
+cycles=11726759 core_hz=160000000 elapsed_us=73292 request_frame=21028 shown_frame=21030
+C> 
+[99.031s] >>> video
+video
+video_seq=103 uptime_ms=702189
+capture=21065 abort=0 stale=11
+nn=21053 new=21053 scans=42104 errors=0x00000000
+preprocessed=21065 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[99.078s] >>> nnstatus
+nnstatus
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+NN_observer_id=0x41435206 id_check=PASS
+NN_observe=CONNECTED; CPU_start_ack=CONNECTED; completion_mode=IRQ
+nn_status=0x00000203 ddr_ready=1 boot_ready=1 boot_failed=0 busy=0 done_raw=0
+pass=0 fail=0 scheduler_fault=0 display_fault=0 idle=1
+boot_fault=0 compute_fault=0 active_model=1 requested_model=1
+input=0x02800000 output=0x06800000 displayed_frame=21066 core_hz=160000000
+start_count=21055 done_count=21055 snapshot_valid=1
+diagnostic_state=0xc0022220 diagnostic_axi=0x51880136
+C> 
+[99.140s] >>> style 2
+style 2
+style_command=OK; applied after inference
+C> 
+[99.156s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=2
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=21067 shown_frame=0
+C> 
+[99.219s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=2
+cycles=9850696 core_hz=160000000 elapsed_us=61566 request_frame=21067 shown_frame=21069
+C> 
+[99.515s] >>> video
+video
+video_seq=104 uptime_ms=702672
+capture=21080 abort=0 stale=11
+nn=21068 new=21067 scans=42133 errors=0x00000000
+preprocessed=21080 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[99.547s] >>> style 3
+style 3
+style_command=OK; applied after inference
+C> 
+[99.562s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=3
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=21080 shown_frame=0
+C> 
+[99.625s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=3
+cycles=12606479 core_hz=160000000 elapsed_us=78790 request_frame=21080 shown_frame=21082
+C> 
+[100.765s] >>> video
+video
+video_seq=105 uptime_ms=703917
+capture=21117 abort=0 stale=11
+nn=21105 new=21105 scans=42208 errors=0x00000000
+preprocessed=21117 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[100.812s] >>> nnstatus
+nnstatus
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+NN_observer_id=0x41435206 id_check=PASS
+NN_observe=CONNECTED; CPU_start_ack=CONNECTED; completion_mode=IRQ
+nn_status=0x0000000b ddr_ready=1 boot_ready=1 boot_failed=0 busy=1 done_raw=0
+pass=0 fail=0 scheduler_fault=0 display_fault=0 idle=0
+boot_fault=0 compute_fault=0 active_model=3 requested_model=3
+input=0x02000000 output=0x06800000 displayed_frame=21117 core_hz=160000000
+start_count=21107 done_count=21106 snapshot_valid=1
+diagnostic_state=0x81822232 diagnostic_axi=0x52b00136
+C> 
+[100.859s] >>> style 2
+style 2
+style_command=OK; applied after inference
+C> 
+[100.875s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=2
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=21119 shown_frame=0
+C> 
+[100.953s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=2
+cycles=10718840 core_hz=160000000 elapsed_us=66992 request_frame=21119 shown_frame=21121
+C> 
+[101.250s] >>> video
+video
+video_seq=106 uptime_ms=704401
+capture=21132 abort=0 stale=11
+nn=21120 new=21119 scans=42237 errors=0x00000000
+preprocessed=21132 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[101.281s] >>> style 4
+style 4
+style_command=OK; applied after inference
+C> 
+[101.297s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=4
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=21131 shown_frame=0
+C> 
+[101.359s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=4
+cycles=8157232 core_hz=160000000 elapsed_us=50982 request_frame=21131 shown_frame=21133
+C> 
+[102.500s] >>> video
+video
+video_seq=107 uptime_ms=705644
+capture=21169 abort=0 stale=11
+nn=21157 new=21156 scans=42311 errors=0x00000000
+preprocessed=21169 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[102.547s] >>> nnstatus
+nnstatus
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+NN_observer_id=0x41435206 id_check=PASS
+NN_observe=CONNECTED; CPU_start_ack=CONNECTED; completion_mode=IRQ
+nn_status=0x0000000b ddr_ready=1 boot_ready=1 boot_failed=0 busy=1 done_raw=0
+pass=0 fail=0 scheduler_fault=0 display_fault=0 idle=0
+boot_fault=0 compute_fault=0 active_model=4 requested_model=4
+input=0x02400000 output=0x06800000 displayed_frame=21169 core_hz=160000000
+start_count=21159 done_count=21158 snapshot_valid=1
+diagnostic_state=0x81802232 diagnostic_axi=0x54a10124
+C> 
+[102.625s] >>> style 3
+style 3
+style_command=OK; applied after inference
+C> 
+[102.640s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=3
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=21172 shown_frame=0
+C> 
+[102.719s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=3
+cycles=12330360 core_hz=160000000 elapsed_us=77064 request_frame=21172 shown_frame=21174
+C> 
+[103.015s] >>> video
+video
+video_seq=108 uptime_ms=706158
+capture=21184 abort=0 stale=11
+nn=21172 new=21172 scans=42342 errors=0x00000000
+preprocessed=21184 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[103.031s] >>> style 0
+style 0
+style_command=OK; applied after inference
+C> 
+[103.047s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=0
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=21184 shown_frame=0
+C> 
+[103.125s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=0
+cycles=9250124 core_hz=160000000 elapsed_us=57813 request_frame=21184 shown_frame=21186
+C> 
+[104.234s] >>> video
+video
+video_seq=109 uptime_ms=707387
+capture=21221 abort=0 stale=11
+nn=21209 new=21209 scans=42416 errors=0x00000000
+preprocessed=21221 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[104.281s] >>> nnstatus
+nnstatus
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+NN_observer_id=0x41435206 id_check=PASS
+NN_observe=CONNECTED; CPU_start_ack=CONNECTED; completion_mode=IRQ
+nn_status=0x00000203 ddr_ready=1 boot_ready=1 boot_failed=0 busy=0 done_raw=0
+pass=0 fail=0 scheduler_fault=0 display_fault=0 idle=1
+boot_fault=0 compute_fault=0 active_model=0 requested_model=0
+input=0x02800000 output=0x06800000 displayed_frame=21222 core_hz=160000000
+start_count=21211 done_count=21211 snapshot_valid=1
+diagnostic_state=0xc0002220 diagnostic_axi=0x54a10124
+C> 
+[104.328s] >>> style 3
+style 3
+style_command=OK; applied after inference
+C> 
+[104.344s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=3
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=21223 shown_frame=0
+C> 
+[104.422s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=3
+cycles=9897414 core_hz=160000000 elapsed_us=61858 request_frame=21223 shown_frame=21225
+C> 
+[104.719s] >>> video
+video
+video_seq=110 uptime_ms=707870
+capture=21236 abort=0 stale=11
+nn=21224 new=21223 scans=42445 errors=0x00000000
+preprocessed=21236 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[104.750s] >>> style 1
+style 1
+style_command=OK; applied after inference
+C> 
+[104.765s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=1
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=21236 shown_frame=0
+C> 
+[104.828s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=1
+cycles=12553598 core_hz=160000000 elapsed_us=78459 request_frame=21236 shown_frame=21238
+C> 
+[105.969s] >>> video
+video
+video_seq=111 uptime_ms=709114
+capture=21273 abort=0 stale=11
+nn=21261 new=21261 scans=42520 errors=0x00000000
+preprocessed=21273 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[106.000s] >>> nnstatus
+nnstatus
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+NN_observer_id=0x41435206 id_check=PASS
+NN_observe=CONNECTED; CPU_start_ack=CONNECTED; completion_mode=IRQ
+nn_status=0x0000000b ddr_ready=1 boot_ready=1 boot_failed=0 busy=1 done_raw=0
+pass=0 fail=0 scheduler_fault=0 display_fault=0 idle=0
+boot_fault=0 compute_fault=0 active_model=1 requested_model=1
+input=0x02000000 output=0x06800000 displayed_frame=21273 core_hz=160000000
+start_count=21263 done_count=21262 snapshot_valid=1
+diagnostic_state=0x81822232 diagnostic_axi=0x52100136
+C> 
+[106.062s] >>> style 3
+style 3
+style_command=OK; applied after inference
+C> 
+[106.078s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=3
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=21275 shown_frame=0
+C> 
+[106.156s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=3
+cycles=10778643 core_hz=160000000 elapsed_us=67366 request_frame=21275 shown_frame=21277
+C> 
+[106.453s] >>> video
+video
+video_seq=112 uptime_ms=709597
+capture=21287 abort=0 stale=11
+nn=21276 new=21275 scans=42549 errors=0x00000000
+preprocessed=21287 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[106.484s] >>> style 2
+style 2
+style_command=OK; applied after inference
+C> 
+[106.500s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=2
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=21287 shown_frame=0
+C> 
+[106.578s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=2
+cycles=8218704 core_hz=160000000 elapsed_us=51366 request_frame=21287 shown_frame=21289
+C> 
+[107.687s] >>> video
+video
+video_seq=113 uptime_ms=710844
+capture=21325 abort=0 stale=11
+nn=21313 new=21312 scans=42623 errors=0x00000000
+preprocessed=21325 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[107.734s] >>> nnstatus
+nnstatus
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+NN_observer_id=0x41435206 id_check=PASS
+NN_observe=CONNECTED; CPU_start_ack=CONNECTED; completion_mode=IRQ
+nn_status=0x0000000b ddr_ready=1 boot_ready=1 boot_failed=0 busy=1 done_raw=0
+pass=0 fail=0 scheduler_fault=0 display_fault=0 idle=0
+boot_fault=0 compute_fault=0 active_model=2 requested_model=2
+input=0x02400000 output=0x06800000 displayed_frame=21325 core_hz=160000000
+start_count=21315 done_count=21314 snapshot_valid=1
+diagnostic_state=0x81002232 diagnostic_axi=0x2320c116
+C> 
+[107.797s] >>> style 3
+style 3
+style_command=OK; applied after inference
+C> 
+[107.812s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=3
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=21327 shown_frame=0
+C> 
+[107.875s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=3
+cycles=11643196 core_hz=160000000 elapsed_us=72769 request_frame=21327 shown_frame=21329
+C> 
+[108.172s] >>> video
+video
+video_seq=114 uptime_ms=711325
+capture=21339 abort=0 stale=11
+nn=21327 new=21327 scans=42652 errors=0x00000000
+preprocessed=21339 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[108.203s] >>> style 4
+style 4
+style_command=OK; applied after inference
+C> 
+[108.219s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=4
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=21339 shown_frame=0
+C> 
+[108.297s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=4
+cycles=9073941 core_hz=160000000 elapsed_us=56712 request_frame=21339 shown_frame=21341
+C> 
+[109.422s] >>> video
+video
+video_seq=115 uptime_ms=712572
+capture=21377 abort=0 stale=11
+nn=21365 new=21364 scans=42727 errors=0x00000000
+preprocessed=21377 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[109.469s] >>> nnstatus
+nnstatus
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+NN_observer_id=0x41435206 id_check=PASS
+NN_observe=CONNECTED; CPU_start_ack=CONNECTED; completion_mode=IRQ
+nn_status=0x0000000b ddr_ready=1 boot_ready=1 boot_failed=0 busy=1 done_raw=0
+pass=0 fail=0 scheduler_fault=0 display_fault=0 idle=0
+boot_fault=0 compute_fault=0 active_model=4 requested_model=4
+input=0x02800000 output=0x06800000 displayed_frame=21377 core_hz=160000000
+start_count=21367 done_count=21366 snapshot_valid=1
+diagnostic_state=0x81002232 diagnostic_axi=0x52208116
+C> 
+[109.781s] >>> video
+video
+video_seq=116 uptime_ms=712929
+capture=21387 abort=0 stale=11
+nn=21376 new=21375 scans=42748 errors=0x00000000
+preprocessed=21387 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[109.812s] >>> style 0
+style 0
+style_command=OK; applied after inference
+C> 
+[109.828s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=0
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=21387 shown_frame=0
+C> 
+[109.890s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=0
+cycles=9116371 core_hz=160000000 elapsed_us=56977 request_frame=21387 shown_frame=21389
+C> 
+[111.015s] >>> video
+video
+video_seq=117 uptime_ms=714161
+capture=21424 abort=0 stale=11
+nn=21412 new=21412 scans=42822 errors=0x00000000
+preprocessed=21424 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[111.047s] >>> nnstatus
+nnstatus
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+NN_observer_id=0x41435206 id_check=PASS
+NN_observe=CONNECTED; CPU_start_ack=CONNECTED; completion_mode=IRQ
+nn_status=0x0000000b ddr_ready=1 boot_ready=1 boot_failed=0 busy=1 done_raw=0
+pass=0 fail=0 scheduler_fault=0 display_fault=0 idle=0
+boot_fault=0 compute_fault=0 active_model=0 requested_model=0
+input=0x02800000 output=0x06800000 displayed_frame=21425 core_hz=160000000
+start_count=21415 done_count=21414 snapshot_valid=1
+diagnostic_state=0x81002232 diagnostic_axi=0x52a08116
+C> 
+[111.125s] >>> style 4
+style 4
+style_command=OK; applied after inference
+C> 
+[111.140s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=4
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=21427 shown_frame=0
+C> 
+[111.219s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=4
+cycles=12532268 core_hz=160000000 elapsed_us=78326 request_frame=21427 shown_frame=21429
+C> 
+[111.500s] >>> video
+video
+video_seq=118 uptime_ms=714647
+capture=21439 abort=0 stale=11
+nn=21427 new=21427 scans=42852 errors=0x00000000
+preprocessed=21439 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[111.515s] >>> style 1
+style 1
+style_command=OK; applied after inference
+C> 
+[111.531s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=1
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=21439 shown_frame=0
+C> 
+[111.625s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=1
+cycles=12524511 core_hz=160000000 elapsed_us=78278 request_frame=21439 shown_frame=21441
+C> 
+[112.719s] >>> video
+video
+video_seq=119 uptime_ms=715874
+capture=21476 abort=0 stale=11
+nn=21464 new=21463 scans=42925 errors=0x00000000
+preprocessed=21476 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[112.765s] >>> nnstatus
+nnstatus
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+NN_observer_id=0x41435206 id_check=PASS
+NN_observe=CONNECTED; CPU_start_ack=CONNECTED; completion_mode=IRQ
+nn_status=0x0000000b ddr_ready=1 boot_ready=1 boot_failed=0 busy=1 done_raw=0
+pass=0 fail=0 scheduler_fault=0 display_fault=0 idle=0
+boot_fault=0 compute_fault=0 active_model=1 requested_model=1
+input=0x02800000 output=0x06000000 displayed_frame=21476 core_hz=160000000
+start_count=21466 done_count=21465 snapshot_valid=1
+diagnostic_state=0x81802232 diagnostic_axi=0x54a10104
+C> 
+[112.828s] >>> style 4
+style 4
+style_command=OK; applied after inference
+C> 
+[112.844s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=4
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=21478 shown_frame=0
+C> 
+[112.906s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=4
+cycles=10618551 core_hz=160000000 elapsed_us=66365 request_frame=21478 shown_frame=21480
+C> 
+[113.203s] >>> video
+video
+video_seq=120 uptime_ms=716356
+capture=21490 abort=0 stale=11
+nn=21478 new=21478 scans=42954 errors=0x00000000
+preprocessed=21490 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[113.234s] >>> style 2
+style 2
+style_command=OK; applied after inference
+C> 
+[113.250s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=2
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=21490 shown_frame=0
+C> 
+[113.312s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=2
+cycles=10640417 core_hz=160000000 elapsed_us=66502 request_frame=21490 shown_frame=21492
+C> 
+[114.437s] >>> video
+video
+video_seq=121 uptime_ms=717584
+capture=21527 abort=0 stale=11
+nn=21515 new=21515 scans=43028 errors=0x00000000
+preprocessed=21527 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[114.469s] >>> nnstatus
+nnstatus
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+NN_observer_id=0x41435206 id_check=PASS
+NN_observe=CONNECTED; CPU_start_ack=CONNECTED; completion_mode=IRQ
+nn_status=0x0000000b ddr_ready=1 boot_ready=1 boot_failed=0 busy=1 done_raw=0
+pass=0 fail=0 scheduler_fault=0 display_fault=0 idle=0
+boot_fault=0 compute_fault=0 active_model=2 requested_model=2
+input=0x02800000 output=0x06800000 displayed_frame=21527 core_hz=160000000
+start_count=21517 done_count=21516 snapshot_valid=1
+diagnostic_state=0x81402232 diagnostic_axi=0x54a10104
+C> 
+[114.531s] >>> style 4
+style 4
+style_command=OK; applied after inference
+C> 
+[114.547s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=4
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=21529 shown_frame=0
+C> 
+[114.609s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=4
+cycles=11276820 core_hz=160000000 elapsed_us=70480 request_frame=21529 shown_frame=21531
+C> 
+[114.906s] >>> video
+video
+video_seq=122 uptime_ms=718050
+capture=21541 abort=0 stale=11
+nn=21529 new=21529 scans=43056 errors=0x00000000
+preprocessed=21541 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[114.922s] >>> style 3
+style 3
+style_command=OK; applied after inference
+C> 
+[114.937s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=3
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=21541 shown_frame=0
+C> 
+[115.015s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=3
+cycles=11306381 core_hz=160000000 elapsed_us=70664 request_frame=21541 shown_frame=21543
+C> 
+[116.125s] >>> video
+video
+video_seq=123 uptime_ms=719280
+capture=21578 abort=0 stale=11
+nn=21566 new=21566 scans=43130 errors=0x00000000
+preprocessed=21578 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[116.172s] >>> video
+video
+video_seq=124 uptime_ms=719318
+capture=21579 abort=0 stale=11
+nn=21567 new=21567 scans=43132 errors=0x00000000
+preprocessed=21579 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[117.203s] >>> video
+video
+video_seq=125 uptime_ms=720352
+capture=21610 abort=0 stale=11
+nn=21598 new=21598 scans=43194 errors=0x00000000
+preprocessed=21610 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[118.250s] >>> video
+video
+video_seq=126 uptime_ms=721394
+capture=21641 abort=0 stale=11
+nn=21629 new=21629 scans=43256 errors=0x00000000
+preprocessed=21641 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[119.281s] >>> video
+video
+video_seq=127 uptime_ms=722435
+capture=21673 abort=0 stale=11
+nn=21661 new=21660 scans=43319 errors=0x00000000
+preprocessed=21673 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[120.328s] >>> video
+video
+video_seq=128 uptime_ms=723479
+capture=21704 abort=0 stale=11
+nn=21692 new=21691 scans=43381 errors=0x00000000
+preprocessed=21704 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[121.390s] >>> video
+video
+video_seq=129 uptime_ms=724539
+capture=21736 abort=0 stale=11
+nn=21724 new=21723 scans=43445 errors=0x00000000
+preprocessed=21736 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[122.437s] >>> video
+video
+video_seq=130 uptime_ms=725586
+capture=21767 abort=0 stale=11
+nn=21755 new=21755 scans=43508 errors=0x00000000
+preprocessed=21767 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[123.469s] >>> video
+video
+video_seq=131 uptime_ms=726625
+capture=21798 abort=0 stale=11
+nn=21786 new=21786 scans=43570 errors=0x00000000
+preprocessed=21798 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[124.515s] >>> video
+video
+video_seq=132 uptime_ms=727668
+capture=21830 abort=0 stale=11
+nn=21818 new=21817 scans=43633 errors=0x00000000
+preprocessed=21830 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[125.562s] >>> video
+video
+video_seq=133 uptime_ms=728709
+capture=21861 abort=0 stale=11
+nn=21849 new=21848 scans=43695 errors=0x00000000
+preprocessed=21861 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[126.609s] >>> video
+video
+video_seq=134 uptime_ms=729752
+capture=21892 abort=0 stale=11
+nn=21880 new=21880 scans=43758 errors=0x00000000
+preprocessed=21892 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[127.656s] >>> video
+video
+video_seq=135 uptime_ms=730807
+capture=21924 abort=0 stale=11
+nn=21912 new=21911 scans=43821 errors=0x00000000
+preprocessed=21924 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[128.719s] >>> video
+video
+video_seq=136 uptime_ms=731864
+capture=21955 abort=0 stale=11
+nn=21944 new=21943 scans=43885 errors=0x00000000
+preprocessed=21955 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[129.765s] >>> video
+video
+video_seq=137 uptime_ms=732917
+capture=21987 abort=0 stale=11
+nn=21975 new=21975 scans=43948 errors=0x00000000
+preprocessed=21987 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[130.812s] >>> video
+video
+video_seq=138 uptime_ms=733961
+capture=22018 abort=0 stale=11
+nn=22006 new=22006 scans=44010 errors=0x00000000
+preprocessed=22018 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[131.875s] >>> video
+video
+video_seq=139 uptime_ms=735020
+capture=22050 abort=0 stale=11
+nn=22038 new=22038 scans=44074 errors=0x00000000
+preprocessed=22050 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[132.922s] >>> video
+video
+video_seq=140 uptime_ms=736065
+capture=22082 abort=0 stale=11
+nn=22070 new=22069 scans=44137 errors=0x00000000
+preprocessed=22082 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[133.953s] >>> video
+video
+video_seq=141 uptime_ms=737109
+capture=22113 abort=0 stale=11
+nn=22101 new=22100 scans=44199 errors=0x00000000
+preprocessed=22113 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[135.000s] >>> video
+video
+video_seq=142 uptime_ms=738150
+capture=22144 abort=0 stale=11
+nn=22132 new=22132 scans=44262 errors=0x00000000
+preprocessed=22144 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[136.062s] >>> video
+video
+video_seq=143 uptime_ms=739208
+capture=22176 abort=0 stale=11
+nn=22164 new=22163 scans=44325 errors=0x00000000
+preprocessed=22176 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[137.109s] >>> video
+video
+video_seq=144 uptime_ms=740262
+capture=22207 abort=0 stale=11
+nn=22196 new=22195 scans=44388 errors=0x00000000
+preprocessed=22207 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[138.172s] >>> video
+video
+video_seq=145 uptime_ms=741316
+capture=22239 abort=0 stale=11
+nn=22227 new=22227 scans=44452 errors=0x00000000
+preprocessed=22239 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[139.203s] >>> video
+video
+video_seq=146 uptime_ms=742358
+capture=22270 abort=0 stale=11
+nn=22258 new=22258 scans=44514 errors=0x00000000
+preprocessed=22270 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[140.250s] >>> video
+video
+video_seq=147 uptime_ms=743398
+capture=22301 abort=0 stale=11
+nn=22290 new=22289 scans=44577 errors=0x00000000
+preprocessed=22301 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[141.312s] >>> video
+video
+video_seq=148 uptime_ms=744456
+capture=22333 abort=0 stale=11
+nn=22321 new=22321 scans=44640 errors=0x00000000
+preprocessed=22333 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[142.359s] >>> video
+video
+video_seq=149 uptime_ms=745514
+capture=22365 abort=0 stale=11
+nn=22353 new=22353 scans=44704 errors=0x00000000
+preprocessed=22365 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[143.422s] >>> video
+video
+video_seq=150 uptime_ms=746574
+capture=22397 abort=0 stale=11
+nn=22385 new=22384 scans=44767 errors=0x00000000
+preprocessed=22397 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[144.469s] >>> video
+video
+video_seq=151 uptime_ms=747615
+capture=22428 abort=0 stale=11
+nn=22416 new=22416 scans=44830 errors=0x00000000
+preprocessed=22428 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[145.515s] >>> video
+video
+video_seq=152 uptime_ms=748658
+capture=22459 abort=0 stale=11
+nn=22447 new=22447 scans=44892 errors=0x00000000
+preprocessed=22459 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[146.547s] >>> video
+video
+video_seq=153 uptime_ms=749697
+capture=22490 abort=0 stale=11
+nn=22479 new=22478 scans=44955 errors=0x00000000
+preprocessed=22490 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[147.594s] >>> video
+video
+video_seq=154 uptime_ms=750745
+capture=22522 abort=0 stale=11
+nn=22510 new=22509 scans=45017 errors=0x00000000
+preprocessed=22522 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[148.656s] >>> video
+video
+video_seq=155 uptime_ms=751800
+capture=22554 abort=0 stale=11
+nn=22542 new=22541 scans=45081 errors=0x00000000
+preprocessed=22554 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[149.703s] >>> video
+video
+video_seq=156 uptime_ms=752859
+capture=22585 abort=0 stale=11
+nn=22573 new=22573 scans=45144 errors=0x00000000
+preprocessed=22585 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[150.765s] >>> video
+video
+video_seq=157 uptime_ms=753915
+capture=22617 abort=0 stale=11
+nn=22605 new=22605 scans=45208 errors=0x00000000
+preprocessed=22617 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[151.828s] >>> video
+video
+video_seq=158 uptime_ms=754972
+capture=22649 abort=0 stale=11
+nn=22637 new=22636 scans=45271 errors=0x00000000
+preprocessed=22649 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[152.875s] >>> video
+video
+video_seq=159 uptime_ms=756026
+capture=22680 abort=0 stale=11
+nn=22668 new=22668 scans=45334 errors=0x00000000
+preprocessed=22680 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[153.937s] >>> video
+video
+video_seq=160 uptime_ms=757081
+capture=22712 abort=0 stale=11
+nn=22700 new=22700 scans=45398 errors=0x00000000
+preprocessed=22712 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[154.984s] >>> video
+video
+video_seq=161 uptime_ms=758135
+capture=22744 abort=0 stale=11
+nn=22732 new=22731 scans=45461 errors=0x00000000
+preprocessed=22744 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[156.047s] >>> video
+video
+video_seq=162 uptime_ms=759191
+capture=22775 abort=0 stale=11
+nn=22763 new=22763 scans=45524 errors=0x00000000
+preprocessed=22775 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[157.094s] >>> video
+video
+video_seq=163 uptime_ms=760247
+capture=22807 abort=0 stale=11
+nn=22795 new=22795 scans=45588 errors=0x00000000
+preprocessed=22807 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[158.156s] >>> video
+video
+video_seq=164 uptime_ms=761299
+capture=22839 abort=0 stale=11
+nn=22827 new=22826 scans=45651 errors=0x00000000
+preprocessed=22839 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[159.187s] >>> video
+video
+video_seq=165 uptime_ms=762340
+capture=22870 abort=0 stale=11
+nn=22858 new=22857 scans=45713 errors=0x00000000
+preprocessed=22870 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[160.234s] >>> video
+video
+video_seq=166 uptime_ms=763380
+capture=22901 abort=0 stale=11
+nn=22889 new=22888 scans=45775 errors=0x00000000
+preprocessed=22901 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[161.265s] >>> video
+video
+video_seq=167 uptime_ms=764418
+capture=22932 abort=0 stale=11
+nn=22920 new=22920 scans=45838 errors=0x00000000
+preprocessed=22932 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[162.312s] >>> video
+video
+video_seq=168 uptime_ms=765461
+capture=22963 abort=0 stale=11
+nn=22951 new=22951 scans=45900 errors=0x00000000
+preprocessed=22963 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[163.359s] >>> video
+video
+video_seq=169 uptime_ms=766515
+capture=22995 abort=0 stale=11
+nn=22983 new=22983 scans=45964 errors=0x00000000
+preprocessed=22995 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[164.406s] >>> video
+video
+video_seq=170 uptime_ms=767556
+capture=23026 abort=0 stale=11
+nn=23014 new=23014 scans=46026 errors=0x00000000
+preprocessed=23026 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[165.469s] >>> video
+video
+video_seq=171 uptime_ms=768611
+capture=23058 abort=0 stale=11
+nn=23046 new=23045 scans=46089 errors=0x00000000
+preprocessed=23058 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[166.500s] >>> video
+video
+video_seq=172 uptime_ms=769649
+capture=23089 abort=0 stale=11
+nn=23077 new=23077 scans=46152 errors=0x00000000
+preprocessed=23089 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[167.547s] >>> video
+video
+video_seq=173 uptime_ms=770699
+capture=23121 abort=0 stale=11
+nn=23109 new=23108 scans=46215 errors=0x00000000
+preprocessed=23121 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[168.609s] >>> video
+video
+video_seq=174 uptime_ms=771750
+capture=23152 abort=0 stale=11
+nn=23140 new=23140 scans=46278 errors=0x00000000
+preprocessed=23152 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[169.656s] >>> video
+video
+video_seq=175 uptime_ms=772812
+capture=23184 abort=0 stale=11
+nn=23172 new=23171 scans=46341 errors=0x00000000
+preprocessed=23184 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[170.719s] >>> video
+video
+video_seq=176 uptime_ms=773866
+capture=23216 abort=0 stale=11
+nn=23204 new=23203 scans=46405 errors=0x00000000
+preprocessed=23216 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[171.781s] >>> video
+video
+video_seq=177 uptime_ms=774926
+capture=23247 abort=0 stale=11
+nn=23235 new=23235 scans=46468 errors=0x00000000
+preprocessed=23247 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[172.828s] >>> video
+video
+video_seq=178 uptime_ms=775976
+capture=23279 abort=0 stale=11
+nn=23267 new=23266 scans=46531 errors=0x00000000
+preprocessed=23279 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[173.890s] >>> video
+video
+video_seq=179 uptime_ms=777034
+capture=23311 abort=0 stale=11
+nn=23299 new=23298 scans=46595 errors=0x00000000
+preprocessed=23311 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[174.937s] >>> video
+video
+video_seq=180 uptime_ms=778093
+capture=23342 abort=0 stale=11
+nn=23330 new=23330 scans=46658 errors=0x00000000
+preprocessed=23342 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[175.984s] >>> video
+video
+video_seq=181 uptime_ms=779132
+capture=23374 abort=0 stale=11
+nn=23362 new=23361 scans=46721 errors=0x00000000
+preprocessed=23374 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=30 HDMI=60
+C> 
+[177.031s] >>> nnstatus
+nnstatus
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+NN_observer_id=0x41435206 id_check=PASS
+NN_observe=CONNECTED; CPU_start_ack=CONNECTED; completion_mode=IRQ
+nn_status=0x0000000b ddr_ready=1 boot_ready=1 boot_failed=0 busy=1 done_raw=0
+pass=0 fail=0 scheduler_fault=0 display_fault=0 idle=0
+boot_fault=0 compute_fault=0 active_model=3 requested_model=3
+input=0x02400000 output=0x06000000 displayed_frame=23404 core_hz=160000000
+start_count=23394 done_count=23393 snapshot_valid=1
+diagnostic_state=0x80c22232 diagnostic_axi=0x51881136
+C> 
+[177.078s] >>> irq on
+irq on
+completion_mode=IRQ; PLIC16 armed per task
+C> 
+[177.094s] >>> nnstatus
+nnstatus
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+NN_observer_id=0x41435206 id_check=PASS
+NN_observe=CONNECTED; CPU_start_ack=CONNECTED; completion_mode=IRQ
+nn_status=0x0000000b ddr_ready=1 boot_ready=1 boot_failed=0 busy=1 done_raw=0
+pass=0 fail=0 scheduler_fault=0 display_fault=0 idle=0
+boot_fault=0 compute_fault=0 active_model=3 requested_model=3
+input=0x02000000 output=0x06000000 displayed_frame=23406 core_hz=160000000
+start_count=23396 done_count=23395 snapshot_valid=1
+diagnostic_state=0x81002232 diagnostic_axi=0x52208116
+C> 
+[177.156s] >>> style 0
+style 0
+style_command=OK; applied after inference
+C> 
+[177.172s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=0
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=23408 shown_frame=0
+C> 
+[177.250s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=0
+cycles=10887788 core_hz=160000000 elapsed_us=68048 request_frame=23408 shown_frame=23410
+C> 
+[177.281s] >>> run 30
+run 30
+task=1 accepted=23413 done=23413 result=PASS elapsed_ms=37
+task=2 accepted=23414 done=23414 result=PASS elapsed_ms=34
+task=3 accepted=23415 done=23415 result=PASS elapsed_ms=33
+task=4 accepted=23416 done=23416 result=PASS elapsed_ms=33
+task=5 accepted=23417 done=23417 result=PASS elapsed_ms=33
+task=6 accepted=23418 done=23418 result=PASS elapsed_ms=33
+task=7 accepted=23419 done=23419 result=PASS elapsed_ms=33
+task=8 accepted=23420 done=23420 result=PASS elapsed_ms=34
+task=9 accepted=23421 done=23421 result=PASS elapsed_ms=33
+task=10 accepted=23422 done=23422 result=PASS elapsed_ms=33
+task=11 accepted=23423 done=23423 result=PASS elapsed_ms=33
+task=12 accepted=23424 done=23424 result=PASS elapsed_ms=33
+task=13 accepted=23425 done=23425 result=PASS elapsed_ms=34
+task=14 accepted=23426 done=23426 result=PASS elapsed_ms=33
+task=15 accepted=23427 done=23427 result=PASS elapsed_ms=33
+task=16 accepted=23428 done=23428 result=PASS elapsed_ms=33
+task=17 accepted=23429 done=23429 result=PASS elapsed_ms=33
+task=18 accepted=23430 done=23430 result=PASS elapsed_ms=34
+task=19 accepted=23431 done=23431 result=PASS elapsed_ms=33
+task=20 accepted=23432 done=23432 result=PASS elapsed_ms=33
+task=21 accepted=23433 done=23433 result=PASS elapsed_ms=33
+task=22 accepted=23434 done=23434 result=PASS elapsed_ms=33
+task=23 accepted=23435 done=23435 result=PASS elapsed_ms=33
+task=24 accepted=23436 done=23436 result=PASS elapsed_ms=34
+task=25 accepted=23437 done=23437 result=PASS elapsed_ms=33
+task=26 accepted=23438 done=23438 result=PASS elapsed_ms=33
+task=27 accepted=23439 done=23439 result=PASS elapsed_ms=33
+task=28 accepted=23440 done=23440 result=PASS elapsed_ms=33
+task=29 accepted=23441 done=23441 result=PASS elapsed_ms=34
+task=30 accepted=23442 done=23442 result=PASS elapsed_ms=33
+run_complete=30; CPU mode retained; use mode auto for continuous video
+C> 
+[178.312s] >>> mode auto
+mode auto
+command=2 result=OK
+control_id=0x41434302 completion_mode=IRQ cpu_mode=0 queued=0 inflight=0 pending_ack=0
+accepted_valid=1 accepted_frame=23442 done_frame=23442 task_result=1 fault=0 can_queue=0 scheduler_idle=0
+C> 
+[178.656s] >>> nnstatus
+nnstatus
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+NN_observer_id=0x41435206 id_check=PASS
+NN_observe=CONNECTED; CPU_start_ack=CONNECTED; completion_mode=IRQ
+nn_status=0x0000000b ddr_ready=1 boot_ready=1 boot_failed=0 busy=1 done_raw=0
+pass=0 fail=0 scheduler_fault=0 display_fault=0 idle=0
+boot_fault=0 compute_fault=0 active_model=0 requested_model=0
+input=0x02000000 output=0x06000000 displayed_frame=23453 core_hz=160000000
+start_count=23442 done_count=23441 snapshot_valid=1
+diagnostic_state=0x81402232 diagnostic_axi=0x64a10104
+C> 
+[178.719s] >>> style 1
+style 1
+style_command=OK; applied after inference
+C> 
+[178.734s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=1
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=23455 shown_frame=0
+C> 
+[178.797s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=1
+cycles=7905113 core_hz=160000000 elapsed_us=49406 request_frame=23455 shown_frame=23456
+C> 
+[178.828s] >>> run 30
+run 30
+task=1 accepted=23460 done=23460 result=PASS elapsed_ms=52
+task=2 accepted=23461 done=23461 result=PASS elapsed_ms=33
+task=3 accepted=23462 done=23462 result=PASS elapsed_ms=33
+task=4 accepted=23463 done=23463 result=PASS elapsed_ms=33
+task=5 accepted=23464 done=23464 result=PASS elapsed_ms=34
+task=6 accepted=23465 done=23465 result=PASS elapsed_ms=33
+task=7 accepted=23466 done=23466 result=PASS elapsed_ms=33
+task=8 accepted=23467 done=23467 result=PASS elapsed_ms=33
+task=9 accepted=23468 done=23468 result=PASS elapsed_ms=33
+task=10 accepted=23469 done=23469 result=PASS elapsed_ms=34
+task=11 accepted=23470 done=23470 result=PASS elapsed_ms=33
+task=12 accepted=23471 done=23471 result=PASS elapsed_ms=33
+task=13 accepted=23472 done=23472 result=PASS elapsed_ms=33
+task=14 accepted=23473 done=23473 result=PASS elapsed_ms=33
+task=15 accepted=23474 done=23474 result=PASS elapsed_ms=33
+task=16 accepted=23475 done=23475 result=PASS elapsed_ms=34
+task=17 accepted=23476 done=23476 result=PASS elapsed_ms=33
+task=18 accepted=23477 done=23477 result=PASS elapsed_ms=33
+task=19 accepted=23478 done=23478 result=PASS elapsed_ms=33
+task=20 accepted=23479 done=23479 result=PASS elapsed_ms=33
+task=21 accepted=23480 done=23480 result=PASS elapsed_ms=34
+task=22 accepted=23481 done=23481 result=PASS elapsed_ms=33
+task=23 accepted=23482 done=23482 result=PASS elapsed_ms=33
+task=24 accepted=23483 done=23483 result=PASS elapsed_ms=33
+task=25 accepted=23484 done=23484 result=PASS elapsed_ms=33
+task=26 accepted=23485 done=23485 result=PASS elapsed_ms=34
+task=27 accepted=23486 done=23486 result=PASS elapsed_ms=33
+task=28 accepted=23487 done=23487 result=PASS elapsed_ms=33
+task=29 accepted=23488 done=23488 result=PASS elapsed_ms=33
+task=30 accepted=23489 done=23489 result=PASS elapsed_ms=33
+run_complete=30; CPU mode retained; use mode auto for continuous video
+C> 
+[179.875s] >>> mode auto
+mode auto
+command=2 result=OK
+control_id=0x41434302 completion_mode=IRQ cpu_mode=0 queued=0 inflight=0 pending_ack=0
+accepted_valid=1 accepted_frame=23489 done_frame=23489 task_result=1 fault=0 can_queue=0 scheduler_idle=0
+C> 
+[180.219s] >>> nnstatus
+nnstatus
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+NN_observer_id=0x41435206 id_check=PASS
+NN_observe=CONNECTED; CPU_start_ack=CONNECTED; completion_mode=IRQ
+nn_status=0x0000000b ddr_ready=1 boot_ready=1 boot_failed=0 busy=1 done_raw=0
+pass=0 fail=0 scheduler_fault=0 display_fault=0 idle=0
+boot_fault=0 compute_fault=0 active_model=1 requested_model=1
+input=0x02000000 output=0x06000000 displayed_frame=23500 core_hz=160000000
+start_count=23488 done_count=23487 snapshot_valid=1
+diagnostic_state=0x81802232 diagnostic_axi=0x54a10104
+C> 
+[180.281s] >>> style 2
+style 2
+style_command=OK; applied after inference
+C> 
+[180.328s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=2
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=23502 shown_frame=0
+C> 
+[180.406s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=2
+cycles=13078236 core_hz=160000000 elapsed_us=81738 request_frame=23502 shown_frame=23504
+C> 
+[180.437s] >>> run 30
+run 30
+task=1 accepted=23508 done=23508 result=PASS elapsed_ms=36
+task=2 accepted=23509 done=23509 result=PASS elapsed_ms=33
+task=3 accepted=23510 done=23510 result=PASS elapsed_ms=34
+task=4 accepted=23511 done=23511 result=PASS elapsed_ms=33
+task=5 accepted=23512 done=23512 result=PASS elapsed_ms=33
+task=6 accepted=23513 done=23513 result=PASS elapsed_ms=33
+task=7 accepted=23514 done=23514 result=PASS elapsed_ms=33
+task=8 accepted=23515 done=23515 result=PASS elapsed_ms=33
+task=9 accepted=23516 done=23516 result=PASS elapsed_ms=34
+task=10 accepted=23517 done=23517 result=PASS elapsed_ms=33
+task=11 accepted=23518 done=23518 result=PASS elapsed_ms=33
+task=12 accepted=23519 done=23519 result=PASS elapsed_ms=33
+task=13 accepted=23520 done=23520 result=PASS elapsed_ms=33
+task=14 accepted=23521 done=23521 result=PASS elapsed_ms=34
+task=15 accepted=23522 done=23522 result=PASS elapsed_ms=33
+task=16 accepted=23523 done=23523 result=PASS elapsed_ms=33
+task=17 accepted=23524 done=23524 result=PASS elapsed_ms=33
+task=18 accepted=23525 done=23525 result=PASS elapsed_ms=33
+task=19 accepted=23526 done=23526 result=PASS elapsed_ms=34
+task=20 accepted=23527 done=23527 result=PASS elapsed_ms=33
+task=21 accepted=23528 done=23528 result=PASS elapsed_ms=33
+task=22 accepted=23529 done=23529 result=PASS elapsed_ms=33
+task=23 accepted=23530 done=23530 result=PASS elapsed_ms=33
+task=24 accepted=23531 done=23531 result=PASS elapsed_ms=33
+task=25 accepted=23532 done=23532 result=PASS elapsed_ms=34
+task=26 accepted=23533 done=23533 result=PASS elapsed_ms=33
+task=27 accepted=23534 done=23534 result=PASS elapsed_ms=33
+task=28 accepted=23535 done=23535 result=PASS elapsed_ms=33
+task=29 accepted=23536 done=23536 result=PASS elapsed_ms=33
+task=30 accepted=23537 done=23537 result=PASS elapsed_ms=34
+run_complete=30; CPU mode retained; use mode auto for continuous video
+C> 
+[181.484s] >>> mode auto
+mode auto
+command=2 result=OK
+control_id=0x41434302 completion_mode=IRQ cpu_mode=0 queued=0 inflight=0 pending_ack=0
+accepted_valid=1 accepted_frame=23537 done_frame=23537 task_result=1 fault=0 can_queue=0 scheduler_idle=0
+C> 
+[181.828s] >>> nnstatus
+nnstatus
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+NN_observer_id=0x41435206 id_check=PASS
+NN_observe=CONNECTED; CPU_start_ack=CONNECTED; completion_mode=IRQ
+nn_status=0x0000000b ddr_ready=1 boot_ready=1 boot_failed=0 busy=1 done_raw=0
+pass=0 fail=0 scheduler_fault=0 display_fault=0 idle=0
+boot_fault=0 compute_fault=0 active_model=2 requested_model=2
+input=0x02400000 output=0x06800000 displayed_frame=23548 core_hz=160000000
+start_count=23535 done_count=23534 snapshot_valid=1
+diagnostic_state=0x80c22232 diagnostic_axi=0x52301136
+C> 
+[181.890s] >>> style 3
+style 3
+style_command=OK; applied after inference
+C> 
+[181.906s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=3
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=23550 shown_frame=0
+C> 
+[181.969s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=3
+cycles=13059634 core_hz=160000000 elapsed_us=81622 request_frame=23550 shown_frame=23552
+C> 
+[182.015s] >>> run 30
+run 30
+task=1 accepted=23555 done=23555 result=PASS elapsed_ms=35
+task=2 accepted=23556 done=23556 result=PASS elapsed_ms=33
+task=3 accepted=23557 done=23557 result=PASS elapsed_ms=33
+task=4 accepted=23558 done=23558 result=PASS elapsed_ms=34
+task=5 accepted=23559 done=23559 result=PASS elapsed_ms=33
+task=6 accepted=23560 done=23560 result=PASS elapsed_ms=33
+task=7 accepted=23561 done=23561 result=PASS elapsed_ms=33
+task=8 accepted=23562 done=23562 result=PASS elapsed_ms=33
+task=9 accepted=23563 done=23563 result=PASS elapsed_ms=34
+task=10 accepted=23564 done=23564 result=PASS elapsed_ms=33
+task=11 accepted=23565 done=23565 result=PASS elapsed_ms=33
+task=12 accepted=23566 done=23566 result=PASS elapsed_ms=33
+task=13 accepted=23567 done=23567 result=PASS elapsed_ms=33
+task=14 accepted=23568 done=23568 result=PASS elapsed_ms=33
+task=15 accepted=23569 done=23569 result=PASS elapsed_ms=34
+task=16 accepted=23570 done=23570 result=PASS elapsed_ms=33
+task=17 accepted=23571 done=23571 result=PASS elapsed_ms=33
+task=18 accepted=23572 done=23572 result=PASS elapsed_ms=33
+task=19 accepted=23573 done=23573 result=PASS elapsed_ms=33
+task=20 accepted=23574 done=23574 result=PASS elapsed_ms=34
+task=21 accepted=23575 done=23575 result=PASS elapsed_ms=33
+task=22 accepted=23576 done=23576 result=PASS elapsed_ms=33
+task=23 accepted=23577 done=23577 result=PASS elapsed_ms=33
+task=24 accepted=23578 done=23578 result=PASS elapsed_ms=33
+task=25 accepted=23579 done=23579 result=PASS elapsed_ms=33
+task=26 accepted=23580 done=23580 result=PASS elapsed_ms=34
+task=27 accepted=23581 done=23581 result=PASS elapsed_ms=33
+task=28 accepted=23582 done=23582 result=PASS elapsed_ms=33
+task=29 accepted=23583 done=23583 result=PASS elapsed_ms=33
+task=30 accepted=23584 done=23584 result=PASS elapsed_ms=33
+run_complete=30; CPU mode retained; use mode auto for continuous video
+C> 
+[183.047s] >>> mode auto
+mode auto
+command=2 result=OK
+control_id=0x41434302 completion_mode=IRQ cpu_mode=0 queued=0 inflight=0 pending_ack=0
+accepted_valid=1 accepted_frame=23584 done_frame=23584 task_result=1 fault=0 can_queue=0 scheduler_idle=0
+C> 
+[183.390s] >>> nnstatus
+nnstatus
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+NN_observer_id=0x41435206 id_check=PASS
+NN_observe=CONNECTED; CPU_start_ack=CONNECTED; completion_mode=IRQ
+nn_status=0x0000000b ddr_ready=1 boot_ready=1 boot_failed=0 busy=1 done_raw=0
+pass=0 fail=0 scheduler_fault=0 display_fault=0 idle=0
+boot_fault=0 compute_fault=0 active_model=3 requested_model=3
+input=0x02c00000 output=0x07000000 displayed_frame=23594 core_hz=160000000
+start_count=23581 done_count=23580 snapshot_valid=1
+diagnostic_state=0x81802262 diagnostic_axi=0x54a10104
+C> 
+[183.453s] >>> style 4
+style 4
+style_command=OK; applied after inference
+C> 
+[183.469s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=0 pending=1 superseded=0 timeout=0 fault=0 below_100ms=0 target=4
+cycles=0 core_hz=160000000 elapsed_us=0 request_frame=23596 shown_frame=0
+C> 
+[183.531s] >>> switch
+switch
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+switch_endpoint=FULL_VISIBLE_FRAME_END; command_transport_excluded
+valid=1 pending=0 superseded=0 timeout=0 fault=0 below_100ms=1 target=4
+cycles=10221220 core_hz=160000000 elapsed_us=63882 request_frame=23596 shown_frame=23598
+C> 
+[183.562s] >>> run 30
+run 30
+task=1 accepted=23602 done=23602 result=PASS elapsed_ms=50
+task=2 accepted=23603 done=23603 result=PASS elapsed_ms=33
+task=3 accepted=23604 done=23604 result=PASS elapsed_ms=33
+task=4 accepted=23605 done=23605 result=PASS elapsed_ms=33
+task=5 accepted=23606 done=23606 result=PASS elapsed_ms=33
+task=6 accepted=23607 done=23607 result=PASS elapsed_ms=34
+task=7 accepted=23608 done=23608 result=PASS elapsed_ms=33
+task=8 accepted=23609 done=23609 result=PASS elapsed_ms=33
+task=9 accepted=23610 done=23610 result=PASS elapsed_ms=33
+task=10 accepted=23611 done=23611 result=PASS elapsed_ms=33
+task=11 accepted=23612 done=23612 result=PASS elapsed_ms=34
+task=12 accepted=23613 done=23613 result=PASS elapsed_ms=33
+task=13 accepted=23614 done=23614 result=PASS elapsed_ms=33
+task=14 accepted=23615 done=23615 result=PASS elapsed_ms=33
+task=15 accepted=23616 done=23616 result=PASS elapsed_ms=33
+task=16 accepted=23617 done=23617 result=PASS elapsed_ms=34
+task=17 accepted=23618 done=23618 result=PASS elapsed_ms=33
+task=18 accepted=23619 done=23619 result=PASS elapsed_ms=33
+task=19 accepted=23620 done=23620 result=PASS elapsed_ms=33
+task=20 accepted=23621 done=23621 result=PASS elapsed_ms=33
+task=21 accepted=23622 done=23622 result=PASS elapsed_ms=33
+task=22 accepted=23623 done=23623 result=PASS elapsed_ms=34
+task=23 accepted=23624 done=23624 result=PASS elapsed_ms=33
+task=24 accepted=23625 done=23625 result=PASS elapsed_ms=33
+task=25 accepted=23626 done=23626 result=PASS elapsed_ms=33
+task=26 accepted=23627 done=23627 result=PASS elapsed_ms=33
+task=27 accepted=23628 done=23628 result=PASS elapsed_ms=34
+task=28 accepted=23629 done=23629 result=PASS elapsed_ms=33
+task=29 accepted=23630 done=23630 result=PASS elapsed_ms=33
+task=30 accepted=23631 done=23631 result=PASS elapsed_ms=33
+run_complete=30; CPU mode retained; use mode auto for continuous video
+C> 
+[184.625s] >>> mode auto
+mode auto
+command=2 result=OK
+control_id=0x41434302 completion_mode=IRQ cpu_mode=0 queued=0 inflight=0 pending_ack=0
+accepted_valid=1 accepted_frame=23631 done_frame=23631 task_result=1 fault=0 can_queue=0 scheduler_idle=0
+C> 
+[184.969s] >>> video
+video
+video_seq=182 uptime_ms=788112
+capture=23643 abort=0 stale=15
+nn=23627 new=23626 scans=47259 errors=0x00000000
+preprocessed=23643 skipped=0 underflows=0 bad_row=0
+blank_frames=0 partial_frames=0
+CAP=30 NEW=29 HDMI=60
+C> 
+[184.984s] >>> nnstatus
+nnstatus
+backend=HW_PROBE; NN_control=CONNECTED
+peripheral_id=0x434d0001 id_check=PASS
+NN_observer_id=0x41435206 id_check=PASS
+NN_observe=CONNECTED; CPU_start_ack=CONNECTED; completion_mode=IRQ
+nn_status=0x0000000b ddr_ready=1 boot_ready=1 boot_failed=0 busy=1 done_raw=0
+pass=0 fail=0 scheduler_fault=0 display_fault=0 idle=0
+boot_fault=0 compute_fault=0 active_model=4 requested_model=4
+input=0x02800000 output=0x06800000 displayed_frame=23643 core_hz=160000000
+start_count=23629 done_count=23628 snapshot_valid=1
+diagnostic_state=0x81002232 diagnostic_axi=0x52208116
+C> 

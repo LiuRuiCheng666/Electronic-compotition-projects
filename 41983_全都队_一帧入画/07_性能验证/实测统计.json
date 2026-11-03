@@ -1,0 +1,139 @@
+{
+  "switch": {
+    "count": 60,
+    "min_ms": 48.44735625,
+    "mean_ms": 64.0338371875,
+    "median_ms": 62.72818125,
+    "p95_nearest_rank_ms": 78.79049375,
+    "max_ms": 81.44601875000001
+  },
+  "switch_interval": {
+    "uptime_ms": 102124,
+    "capture": 3064,
+    "nn": 3064,
+    "new": 3064,
+    "scans": 6128,
+    "abort": 0,
+    "skipped": 0,
+    "stale": 0,
+    "underflows": 0,
+    "blank_frames": 0,
+    "partial_frames": 0
+  },
+  "steady_sample_count": 58,
+  "steady_interval": {
+    "uptime_ms": 59814,
+    "capture": 1795,
+    "nn": 1795,
+    "new": 1794,
+    "scans": 3589,
+    "preprocessed": 1795,
+    "skipped": 0,
+    "stale": 0,
+    "abort": 0,
+    "underflows": 0,
+    "blank_frames": 0,
+    "partial_frames": 0,
+    "capture_per_second": 30.009696726518875,
+    "nn_per_second": 30.009696726518875,
+    "new_per_second": 29.992978232520816,
+    "scans_per_second": 60.00267495903969,
+    "errors_before": 0,
+    "errors_after": 0
+  },
+  "tasks": [
+    {
+      "slot": 0,
+      "style": "复古建筑版画（诺贝尔）",
+      "count": 30,
+      "mean_ms": 33.333333333333336,
+      "median_ms": 33.0,
+      "p95_ms": 34,
+      "max_ms": 37
+    },
+    {
+      "slot": 1,
+      "style": "工程线稿",
+      "count": 30,
+      "mean_ms": 33.8,
+      "median_ms": 33.0,
+      "p95_ms": 34,
+      "max_ms": 52
+    },
+    {
+      "slot": 2,
+      "style": "浮雕",
+      "count": 30,
+      "mean_ms": 33.3,
+      "median_ms": 33.0,
+      "p95_ms": 34,
+      "max_ms": 36
+    },
+    {
+      "slot": 3,
+      "style": "首版细像素",
+      "count": 30,
+      "mean_ms": 33.233333333333334,
+      "median_ms": 33.0,
+      "p95_ms": 34,
+      "max_ms": 35
+    },
+    {
+      "slot": 4,
+      "style": "故障艺术",
+      "count": 30,
+      "mean_ms": 33.733333333333334,
+      "median_ms": 33.0,
+      "p95_ms": 34,
+      "max_ms": 50
+    }
+  ],
+  "task_count": 150,
+  "task_overall_mean_ms": 33.48,
+  "checks": {
+    "all_60_switches_under100ms": true,
+    "20_directed_pairs_three_repetitions": true,
+    "no_additional_capture_or_inference_or_display_drop_in_switch_interval": true,
+    "no_extra_corrupt_blank_partial_or_underflow_in_switch_interval": true,
+    "all_task_accepted_done_frame_ids_match": true
+  },
+  "scope": {
+    "switch": "160MHz hardware counter, request-model change through complete visible frame end; UART transport excluded",
+    "task": "Firmware CLINT end-to-end task service timing with scheduling/IRQ,1ms granularity; not a pure CNN-layer timer",
+    "continuity": "3064/3064/3064 matched capture/inference/new-display increments across102.124s switch interval; no unconditional claim beyond measured window",
+    "steady": "58 snapshots, first-to-last59.814s; display backlog0..1frame at snapshot boundaries",
+    "manual_task_mode": "Later CPU-controlled task phase is distinct from continuous-video no-drop evaluation; final stale increment is not attributed to style switching"
+  },
+  "evidence": [
+    {
+      "file": "原始证据/result.json",
+      "bytes": 170629,
+      "sha256": "1067285f813be90c9ccab7cdc6d913f70a68a2ef790916c7a5a73718ea9e06a3"
+    },
+    {
+      "file": "原始证据/switches.csv",
+      "bytes": 3324,
+      "sha256": "d00a8cf8ea4fa9cb7a10dfabfb26b1bf59ff8245fcb6ac9bce1888fde3d607a2"
+    },
+    {
+      "file": "原始证据/tasks.csv",
+      "bytes": 3157,
+      "sha256": "6f62ecb95b4dc9eaca33b96628b41b04581ff74cef28097fcf8ff31582b63dc2"
+    },
+    {
+      "file": "原始证据/serial_log.txt",
+      "bytes": 196434,
+      "sha256": "0cecf67475d48247901e4b593d4590de114113a6da2f00b12e9fefef374c72da"
+    },
+    {
+      "file": "原始证据/现场录像.mp4",
+      "bytes": 4755867,
+      "sha256": "fa2448db153a7497c02c702918c5a7cf81f18552ee78917d23eec44e38bfec23"
+    },
+    {
+      "file": "原始证据/稳态显示照片.jpg",
+      "bytes": 133525,
+      "sha256": "bc6acb13d80b4adcf7e26fde0d39457972caff09c2b216b36c681370e1476ba0"
+    }
+  ]
+}

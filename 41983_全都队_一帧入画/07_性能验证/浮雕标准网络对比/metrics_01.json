@@ -1,0 +1,38 @@
+{
+  "case": 1,
+  "input_source": "D:\\FPGA_C\\ABC_SELECTED4_COMPLETE_SOURCE_20261027\\quality_assets\\dataset\\val\\216081.jpg",
+  "input_sha256": "0a20b477293947433784dd7e0acb42e05364ef2294d49c5480a574a87aafac04",
+  "integer_vs_matched_teacher": {
+    "mse_normalized": 0.017465211313624034,
+    "psnr_db": 17.57826155415073,
+    "psnr_identical": false,
+    "ssim_rgb_mean": 0.6006870764303387,
+    "ssim_per_channel": [
+      0.606297512261096,
+      0.6435724071677136,
+      0.5521913098622251
+    ]
+  },
+  "integer_vs_matched_qat_pytorch": {
+    "mse_normalized": 0.0,
+    "psnr_db": null,
+    "psnr_identical": true,
+    "ssim_rgb_mean": 1.0,
+    "ssim_per_channel": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  "integer_vs_official_mosaic": {
+    "mse_normalized": 0.03464143041271519,
+    "psnr_db": 14.604041834121054,
+    "psnr_identical": false,
+    "ssim_rgb_mean": 0.41015989380126994,
+    "ssim_per_channel": [
+      0.4106530391940338,
+      0.4535982624316032,
+      0.36622837977817047
+    ]
+  }
+}

@@ -27,3 +27,5 @@ __pycache__/
 01_FPGA/tests/__pycache__/
 06_模型训练与分析/runs_new/
 06_模型训练与分析/validation/
+07_性能验证/replay_*/
+07_性能验证/measurements_new/

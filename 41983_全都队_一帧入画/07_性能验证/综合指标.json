@@ -1,0 +1,279 @@
+{
+  "hardware": {
+    "switch": {
+      "count": 60,
+      "min_ms": 48.44735625,
+      "mean_ms": 64.0338371875,
+      "median_ms": 62.72818125,
+      "p95_nearest_rank_ms": 78.79049375,
+      "max_ms": 81.44601875000001
+    },
+    "switch_interval": {
+      "uptime_ms": 102124,
+      "capture": 3064,
+      "nn": 3064,
+      "new": 3064,
+      "scans": 6128,
+      "abort": 0,
+      "skipped": 0,
+      "stale": 0,
+      "underflows": 0,
+      "blank_frames": 0,
+      "partial_frames": 0
+    },
+    "steady_sample_count": 58,
+    "steady_interval": {
+      "uptime_ms": 59814,
+      "capture": 1795,
+      "nn": 1795,
+      "new": 1794,
+      "scans": 3589,
+      "preprocessed": 1795,
+      "skipped": 0,
+      "stale": 0,
+      "abort": 0,
+      "underflows": 0,
+      "blank_frames": 0,
+      "partial_frames": 0,
+      "capture_per_second": 30.009696726518875,
+      "nn_per_second": 30.009696726518875,
+      "new_per_second": 29.992978232520816,
+      "scans_per_second": 60.00267495903969,
+      "errors_before": 0,
+      "errors_after": 0
+    },
+    "tasks": [
+      {
+        "slot": 0,
+        "style": "复古建筑版画（诺贝尔）",
+        "count": 30,
+        "mean_ms": 33.333333333333336,
+        "median_ms": 33.0,
+        "p95_ms": 34,
+        "max_ms": 37
+      },
+      {
+        "slot": 1,
+        "style": "工程线稿",
+        "count": 30,
+        "mean_ms": 33.8,
+        "median_ms": 33.0,
+        "p95_ms": 34,
+        "max_ms": 52
+      },
+      {
+        "slot": 2,
+        "style": "浮雕",
+        "count": 30,
+        "mean_ms": 33.3,
+        "median_ms": 33.0,
+        "p95_ms": 34,
+        "max_ms": 36
+      },
+      {
+        "slot": 3,
+        "style": "首版细像素",
+        "count": 30,
+        "mean_ms": 33.233333333333334,
+        "median_ms": 33.0,
+        "p95_ms": 34,
+        "max_ms": 35
+      },
+      {
+        "slot": 4,
+        "style": "故障艺术",
+        "count": 30,
+        "mean_ms": 33.733333333333334,
+        "median_ms": 33.0,
+        "p95_ms": 34,
+        "max_ms": 50
+      }
+    ],
+    "task_count": 150,
+    "task_overall_mean_ms": 33.48,
+    "checks": {
+      "all_60_switches_under100ms": true,
+      "20_directed_pairs_three_repetitions": true,
+      "no_additional_capture_or_inference_or_display_drop_in_switch_interval": true,
+      "no_extra_corrupt_blank_partial_or_underflow_in_switch_interval": true,
+      "all_task_accepted_done_frame_ids_match": true
+    },
+    "scope": {
+      "switch": "160MHz hardware counter, request-model change through complete visible frame end; UART transport excluded",
+      "task": "Firmware CLINT end-to-end task service timing with scheduling/IRQ,1ms granularity; not a pure CNN-layer timer",
+      "continuity": "3064/3064/3064 matched capture/inference/new-display increments across102.124s switch interval; no unconditional claim beyond measured window",
+      "steady": "58 snapshots, first-to-last59.814s; display backlog0..1frame at snapshot boundaries",
+      "manual_task_mode": "Later CPU-controlled task phase is distinct from continuous-video no-drop evaluation; final stale increment is not attributed to style switching"
+    },
+    "evidence": [
+      {
+        "file": "原始证据/result.json",
+        "bytes": 170629,
+        "sha256": "1067285f813be90c9ccab7cdc6d913f70a68a2ef790916c7a5a73718ea9e06a3"
+      },
+      {
+        "file": "原始证据/switches.csv",
+        "bytes": 3324,
+        "sha256": "d00a8cf8ea4fa9cb7a10dfabfb26b1bf59ff8245fcb6ac9bce1888fde3d607a2"
+      },
+      {
+        "file": "原始证据/tasks.csv",
+        "bytes": 3157,
+        "sha256": "6f62ecb95b4dc9eaca33b96628b41b04581ff74cef28097fcf8ff31582b63dc2"
+      },
+      {
+        "file": "原始证据/serial_log.txt",
+        "bytes": 196434,
+        "sha256": "0cecf67475d48247901e4b593d4590de114113a6da2f00b12e9fefef374c72da"
+      },
+      {
+        "file": "原始证据/现场录像.mp4",
+        "bytes": 4755867,
+        "sha256": "fa2448db153a7497c02c702918c5a7cf81f18552ee78917d23eec44e38bfec23"
+      },
+      {
+        "file": "原始证据/稳态显示照片.jpg",
+        "bytes": 133525,
+        "sha256": "bc6acb13d80b4adcf7e26fde0d39457972caff09c2b216b36c681370e1476ba0"
+      }
+    ]
+  },
+  "matched_teacher": {
+    "current_slot": 2,
+    "case_count": 20,
+    "parameters": {
+      "student": 1551,
+      "standard": 1679235
+    },
+    "parameter_ratio": 1082.678916827853,
+    "summary": {
+      "integer_vs_matched_teacher": {
+        "psnr_db_mean": 16.91335154416904,
+        "exact_cases": 0,
+        "ssim_mean": 0.5576356894011206
+      },
+      "integer_vs_matched_qat_pytorch": {
+        "psnr_db_mean": null,
+        "exact_cases": 20,
+        "ssim_mean": 0.999999999999998
+      },
+      "integer_vs_official_mosaic": {
+        "psnr_db_mean": 13.894054975668851,
+        "exact_cases": 0,
+        "ssim_mean": 0.3482497490857434
+      }
+    },
+    "timings": {
+      "student_qat_pytorch": {
+        "latency_ms": [
+          9.435168266296387,
+          11.467967987060547,
+          8.211872100830078,
+          9.193504333496094,
+          10.585023880004883,
+          8.110688209533691,
+          11.846752166748047,
+          13.41919994354248,
+          11.45628833770752,
+          11.856767654418945,
+          12.72544002532959,
+          10.742303848266602,
+          13.020480155944824,
+          10.513440132141113,
+          10.776512145996094,
+          8.967743873596191,
+          9.133472442626953,
+          11.960479736328125,
+          9.93667221069336,
+          8.911840438842773,
+          11.017536163330078,
+          11.62723159790039,
+          12.1843843460083,
+          10.273823738098145,
+          10.731840133666992,
+          10.429311752319336,
+          9.35536003112793,
+          11.283072471618652,
+          9.969280242919922,
+          8.488287925720215
+        ],
+        "median_ms": 10.658432006835938,
+        "p95_ms": 12.887712097167968
+      },
+      "matched_standard_teacher": {
+        "latency_ms": [
+          25.185087203979492,
+          25.63257598876953,
+          25.361408233642578,
+          25.302656173706055,
+          25.417856216430664,
+          25.50044822692871,
+          25.426719665527344,
+          25.42767906188965,
+          25.475488662719727,
+          25.31007957458496,
+          25.411903381347656,
+          25.30191993713379,
+          25.533920288085938,
+          25.347808837890625,
+          25.321216583251953,
+          25.30291175842285,
+          25.28473663330078,
+          25.407167434692383,
+          25.4467830657959,
+          25.46067237854004,
+          25.44259262084961,
+          25.368480682373047,
+          25.52288055419922,
+          25.494592666625977,
+          25.548095703125,
+          25.557119369506836,
+          25.703264236450195,
+          25.616416931152344,
+          25.79929542541504,
+          26.705184936523438
+        ],
+        "median_ms": 25.43513584136963,
+        "p95_ms": 25.75608139038086
+      },
+      "official_mosaic": {
+        "latency_ms": [
+          26.50092887878418,
+          26.600479125976562,
+          26.346176147460938,
+          26.25436782836914,
+          26.466367721557617,
+          26.274208068847656,
+          26.298656463623047,
+          26.29408073425293,
+          26.206335067749023,
+          26.329023361206055,
+          26.454591751098633,
+          26.344608306884766,
+          26.190048217773438,
+          26.343936920166016,
+          26.343135833740234,
+          26.207008361816406,
+          26.384191513061523,
+          26.367168426513672,
+          26.29417610168457,
+          26.191680908203125,
+          26.2391357421875,
+          26.188512802124023,
+          26.16169548034668,
+          26.133792877197266,
+          26.140928268432617,
+          26.1265926361084,
+          26.15705680847168,
+          26.156736373901367,
+          26.15318489074707,
+          26.149343490600586
+        ],
+        "median_ms": 26.2642879486084,
+        "p95_ms": 26.485376358032227
+      }
+    },
+    "device": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "report_sha256": "dc3f84ce9234925c41173cb4e66f24e585609b7f3676d65e29550a6cf6097178"
+  }
+}

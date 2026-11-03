@@ -1,0 +1,16 @@
+{
+  "status": "PASS_OFFLINE_NOT_BOARD",
+  "tests_run": 14,
+  "failures": [],
+  "errors": [],
+  "elapsed_seconds": 13.469,
+  "board_connected": false,
+  "scope": "Loopback UDP identity fixture, UART reply fixture, HTTP/API, persistence. No style model or physical board.",
+  "sources": {
+    "server.py": "154b07b87476b72033c5f57e86324a444d60091d528f275c75d55fb4b70b816a",
+    "adapters.py": "a297460e33c6202d51d6073e2ce5c795587ebed9e67e96d8d88ec202db182472",
+    "compare_results.py": "c781bcf00590976174f77fadf6e0d8090a44d62af8b60fe8b715e96a003807cf",
+    "web\\app.js": "0539a4da0a0ce13f4074fc750373e7d99abd5d29fa51964ff2f866f05ed6674e",
+    "tests\\test_app.py": "1285a2fdcfebb82dd71b3bd28316d38ef477ee2fae0cd0fbc2967a282adbdab8"
+  }
+}

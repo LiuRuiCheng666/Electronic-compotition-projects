@@ -21,6 +21,9 @@ assert weights[:4]==b'NNW1' and len(weights)==20512
 version,length,crc=struct.unpack_from('<III',weights,4)
 assert version==1 and length==20480 and zlib.crc32(weights[32:])==crc
 slots=json.loads((F/'flash_assets/dual_model_manifest.json').read_text('utf-8'))['slots']
+model_manifest=json.loads((F/'flash_assets/dual_model_manifest.json').read_text('utf-8'))
+assert weights[32:]==(F/'flash_assets/a4_dual_models_payload.bin').read_bytes()
+assert hashlib.sha256(weights[32:]).hexdigest()==model_manifest['payload_sha256']
 assert len(slots)==5
 for i,s in enumerate(slots):assert hashlib.sha256(weights[32+i*4096:32+(i+1)*4096]).hexdigest()==s['sha256']
 assert len(set(s['sha256'] for s in slots))==5
@@ -42,4 +45,12 @@ for i in range(4):
     assert len(tokens)==8192
     rom[i::4]=bytes(int(v,2) for v in tokens)
 assert bytes(rom)==binary+bytes(32768-len(binary))
-print('PASS: manifest, Efinity dependencies, full Flash, five-slot sources/checkpoints, CRC and 32KiB CPU ROM')
+for rel in ['05_技术资料/赛题提交总览.md','06_模型训练与分析/network.svg',
+            '06_模型训练与分析/network_layers.csv','06_模型训练与分析/网络与参数统计.md',
+            '07_性能验证/README.md','07_性能验证/原始证据/result.json',
+            '07_性能验证/原始证据/现场录像.mp4','07_性能验证/浮雕标准网络对比/REPORT.json',
+            '07_性能验证/tools/benchmark_matched_teacher.py','07_性能验证/evaluation_inputs.json']:
+    assert (P/rel).is_file(),rel
+print('PASS: manifest, Efinity dependencies, full Flash, five-slot sources/checkpoints/payload, CRC and 32KiB CPU ROM')
+import runpy
+runpy.run_path(str(P/'07_性能验证/tools/verify_evidence.py'),run_name='__main__')

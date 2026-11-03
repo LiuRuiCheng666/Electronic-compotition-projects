@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "rtl_cases": [
+    "five_style_slots",
+    "simple_metrics_osd"
+  ],
+  "web_offline_tests": 14,
+  "weight_regeneration_all_five_byte_exact": true,
+  "full_flash_merge_byte_exact": true,
+  "portable_quality_replay_cases": 20,
+  "per_image_metrics_equal_original": true,
+  "hardware_programming_performed": false,
+  "design_note": "Final RTL, IP, firmware, NNW1 and full Flash are unchanged. Auxiliary raw payload and payload SHA256 are synchronized with the deployed five-slot NNW1."
+}

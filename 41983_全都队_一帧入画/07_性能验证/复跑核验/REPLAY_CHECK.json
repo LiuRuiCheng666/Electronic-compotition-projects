@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "quality_cases_replayed": 20,
+  "all_per_image_metrics_equal_recorded": true,
+  "current_slot2_checkpoint_export_byte_exact": true,
+  "five_model_rebuild_byte_exact": true,
+  "full_flash_merge_byte_exact": true,
+  "full_flash_sha256": "e4fe7f382bbab662d173cb95b17cb2590693d1962abf62bedc5f370b8a7ae4ba",
+  "timing_note": "PORTABLE_REPLAY.json contains a separate inference replay; GPU timings vary between runs. Report headline values use the original recorded benchmark."
+}
