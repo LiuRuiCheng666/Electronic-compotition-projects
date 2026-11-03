@@ -39,6 +39,8 @@ python train_local.py --style blueprint --warm 1200 --qat 24000
 python train_local.py --style emboss --warm 800 --qat 1600
 ```
 
+准备完成后，可在提交项目根目录执行`python 06_模型训练与分析/tools/verify_training_copy.py --prepared E:/nn5_training`，检查模块导入、最终显示色调表、教师检查点加载、学生网络前向/反向与QAT前向。该检查不执行优化器更新。准备工具会将当前最终RTL中的色调表和配套读取代码复制到独立训练目录。
+
 准备工具只复制代码并迁移路径，数据仍从外部目录读取。它不自动开始训练。随机训练与GPU库版本可能影响新训练结果；精确恢复既有最终字节应使用已归档检查点和上面的权重重建入口。
 
 ## 结构、统计及对比分析

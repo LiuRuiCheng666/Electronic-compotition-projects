@@ -51,6 +51,11 @@ for rel in ['05_技术资料/赛题提交总览.md','06_模型训练与分析/ne
             '07_性能验证/原始证据/现场录像.mp4','07_性能验证/浮雕标准网络对比/REPORT.json',
             '07_性能验证/tools/benchmark_matched_teacher.py','07_性能验证/evaluation_inputs.json']:
     assert (P/rel).is_file(),rel
+for rel in ['01_FPGA/tools/rebuild.py','01_FPGA/tools/build_light_merge_firmware.py',
+            '06_模型训练与分析/tools/prepare_training.py','06_模型训练与分析/tools/training_tone_reference.py',
+            '06_模型训练与分析/tools/verify_training_copy.py',
+            '07_性能验证/源码完整性终审/SOURCE_AUDIT.json']:
+    assert (P/rel).is_file(),rel
 print('PASS: manifest, Efinity dependencies, full Flash, five-slot sources/checkpoints/payload, CRC and 32KiB CPU ROM')
 import runpy
 runpy.run_path(str(P/'07_性能验证/tools/verify_evidence.py'),run_name='__main__')

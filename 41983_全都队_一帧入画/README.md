@@ -30,6 +30,8 @@
 
 嵌入式C源码位于 `01_FPGA/embedded_sw/soc/software/standalone/uart/nnObserverDemo/src/`。配置 `RISCV_PREFIX` 为RISC-V编译器前缀后，在01_FPGA中运行 `python tools/build_light_merge_firmware.py --install` 更新固件与四路ROM初始化。
 
+固件构建在临时目录完成GCC/LTO编译，再复制产物回工程，支持本提交的中文目录名。若系统临时路径本身包含非ASCII字符，可加`--temp-dir D:/build_temp`指定已存在的英文目录。工程综合后的约束绑定会将工具生成网表的本地编码副本转换为UTF-8供绑定脚本读取。
+
 `python tools/rebuild.py --stage plan --efinity-home <Efinity安装目录>` 检查本地化构建命令。`--stage all` 依次执行综合、映射端点约束绑定和布局布线；`--stage pgm` 生成配置，再用 `tools/build_flash_image.py` 合并当前权重。每轮新构建以实际时序结果为准。已提供最终烧录文件可直接用于部署，整理过程不重新配置开发板。
 
 `python 02_网页应用/run_checks.py` 运行本地离线测试。`python verify_submission.py` 检查交付文件哈希和完整Flash模型区。离线测试只验证应用和协议，不替代实板推理。

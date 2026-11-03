@@ -3,12 +3,18 @@ Install the 32 KiB ROM lanes only with explicit --install. Uses RV32IM/ILP32;
 preserves the baseline NN PLIC ISR and control protocol.
 """
 from pathlib import Path
-import os,subprocess,shutil,argparse,hashlib,json
+import os,subprocess,shutil,argparse,hashlib,json,tempfile
 P=Path(__file__).resolve().parents[1]
-parser=argparse.ArgumentParser();parser.add_argument('--install',action='store_true');a=parser.parse_args()
+parser=argparse.ArgumentParser();parser.add_argument('--install',action='store_true');parser.add_argument('--temp-dir',type=Path,help='Optional ASCII-only parent for temporary GCC/LTO object files');a=parser.parse_args()
 prefix=os.environ.get('RISCV_PREFIX','D:/Efinity/efinity-riscv-ide-2026.1/toolchain/bin/riscv-none-elf-')
 S=P/'embedded_sw/soc/software/standalone';B=P/'embedded_sw/soc/bsp/efinix/EfxSapphireSoc'
-A=S/'uart/nnObserverDemo';O=A/'build';O.mkdir(exist_ok=True)
+A=S/'uart/nnObserverDemo';BUILD=A/'build';BUILD.mkdir(exist_ok=True)
+# Windows GCC's LTO subprocess cannot reliably reopen object paths containing
+# non-ASCII characters. Keep objects and linker outputs in an isolated scratch
+# directory, then copy finished artifacts to the named submission project.
+scratch=tempfile.TemporaryDirectory(prefix='yizhen_c_',dir=a.temp_dir)
+O=Path(scratch.name)
+if not str(O).isascii():raise SystemExit('Choose an ASCII-only --temp-dir for the Windows RISC-V LTO toolchain')
 flags=['-Os','-msave-restore','-flto','-g','-specs=nano.specs','-march=rv32im_zicsr_zifencei','-mabi=ilp32','-DUSE_GP','-DDUAL_INPUT_PROFILE','-fcommon','-ffunction-sections','-fdata-sections',
  '-DSYSTEM_UART_A_APB=SYSTEM_UART_0_IO_APB','-DSYSTEM_GPIO_A_APB=SYSTEM_GPIO_0_IO_APB','-DSYSTEM_I2C_A_APB=SYSTEM_I2C_0_IO_APB',
  '-DA_NET_DIRECT_RX_BASE=0xf8101800u','-DA_NET_HW_CRC','-DA_NET_DIRECT_TX_FIFO=0xf8101054u']
@@ -34,6 +40,8 @@ symbol_dir=P/'integration_tests/c_system_software';symbol_dir.mkdir(parents=True
 (symbol_dir/'symbols.json').write_text(json.dumps(symbols,indent=2))
 data=(O/'nnObserverDemo.bin').read_bytes()
 if len(data)>30720:raise SystemExit('ROM leaves less than 2KiB stack space')
+for suffix in ['elf','map','bin','hex']:
+ shutil.copy2(O/('nnObserverDemo.'+suffix),BUILD/('nnObserverDemo.'+suffix))
 if a.install:
  backup=P/'merge_baseline/firmware';backup.mkdir(parents=True,exist_ok=True)
  targets=[P/'firmware/nnObserverDemo.hex']+[P/f'ip/soc/EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol{i}.bin' for i in range(4)]
@@ -46,3 +54,4 @@ if a.install:
   (P/f'ip/soc/EfxSapphireSoc.v_toplevel_system_ramA_logic_ram_symbol{i}.bin').write_text(''.join(f'{b:08b}\n' for b in padded[i::4]),encoding='ascii')
  (P/'MERGED_LIGHT_FIRMWARE.json').write_text(json.dumps({'bytes':len(data),'sha256':hashlib.sha256(data).hexdigest(),'isa':'RV32IM','installed':True,'nn_protocol_preserved':True,'lto':True},indent=2))
 print('firmware bytes:',len(data),'installed:',a.install)
+scratch.cleanup()

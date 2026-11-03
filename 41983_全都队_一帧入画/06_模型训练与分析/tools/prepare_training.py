@@ -10,6 +10,11 @@ def main():
  if out.exists() or out.is_relative_to(ROOT):raise SystemExit('Choose a new directory outside this package')
  if not (data/'train').is_dir() or not (data/'val').is_dir():raise SystemExit('Dataset needs train/ and val/')
  shutil.copytree(ROOT/'training',out)
+ reference=out/'board_reference'
+ (reference/'tools').mkdir(parents=True,exist_ok=True)
+ tone=reference/'rtl/nn/rtl/camera_tone_mapper.v';tone.parent.mkdir(parents=True,exist_ok=True)
+ shutil.copy2(ROOT.parent/'01_FPGA/rtl/nn/rtl/camera_tone_mapper.v',tone)
+ shutil.copy2(ROOT/'tools/training_tone_reference.py',reference/'tools/board_exact_infer.py')
  teacher=out/'architecture_experiments/glass_mosaic_rgb_v1/model_best.pth';teacher.parent.mkdir(parents=True)
  shutil.copy2(out/'teacher/glass.pth',teacher)
  remaps={'D:/FPGA_C/ABC_best_current_20261022':str(out/'board_reference'),

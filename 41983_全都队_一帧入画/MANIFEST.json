@@ -4670,8 +4670,8 @@
     },
     {
       "path": "01_FPGA/tools/build_light_merge_firmware.py",
-      "bytes": 3582,
-      "sha256": "4b3fd87e8a29c8f68c77fd601952295a55902efa2d7042cab620af2f27ea941f"
+      "bytes": 4294,
+      "sha256": "a4c996f1bc5def98ce9793fdc7e14baef2586cbf94def38e214c4383142f7124"
     },
     {
       "path": "01_FPGA/tools/check_hdmi_lbf.py",
@@ -4680,8 +4680,8 @@
     },
     {
       "path": "01_FPGA/tools/rebuild.py",
-      "bytes": 3398,
-      "sha256": "fcdf74f3e5f29c693c97751c87a7a0a80841da9140e8fc3c5de892cb7bba3473"
+      "bytes": 3726,
+      "sha256": "0cb263000fd250008ee1380dbb524f64fb98d3ae3f3212b3bb832680638bdfd0"
     },
     {
       "path": "01_FPGA/tools/run_efinity.py",
@@ -5750,8 +5750,8 @@
     },
     {
       "path": "05_技术资料/赛题提交总览.md",
-      "bytes": 5618,
-      "sha256": "8d369f8210696000077a69f6628c9c2365343a428f3c3bc64030008c628a3bbe"
+      "bytes": 5895,
+      "sha256": "d6e5d20f71047b3a6de36a72725c9d7ab79ab96a0691d599f16d9eed90840f35"
     },
     {
       "path": "06_模型训练与分析/FINAL_WEIGHTS_REBUILD_CHECK.json",
@@ -5810,8 +5810,8 @@
     },
     {
       "path": "06_模型训练与分析/README.md",
-      "bytes": 4838,
-      "sha256": "d363cd2512f903dad06a6e62449fd4b357235a6c84e247c2632e8d41fdd017a9"
+      "bytes": 5230,
+      "sha256": "78c52eb3c70b2fb70ccb2f5df1fb4b8d06165d60c0447e08d8556df7799b2a26"
     },
     {
       "path": "06_模型训练与分析/requirements.txt",
@@ -7120,13 +7120,23 @@
     },
     {
       "path": "06_模型训练与分析/tools/prepare_training.py",
-      "bytes": 2809,
-      "sha256": "99b9a13c6faa5d3c21995a4ceb30cc513ff4c86a098681881540af0d8328596b"
+      "bytes": 3161,
+      "sha256": "dd56a239169cd277f5cb52160b99fd8e1d7123fd156e8ab6fdc2712e9e9322fe"
     },
     {
       "path": "06_模型训练与分析/tools/rebuild_weights.py",
       "bytes": 3821,
       "sha256": "bed3a265d8ec505ad4e8cf47f9ed1ad2d118ead57ba04cc36f123e066cb95299"
+    },
+    {
+      "path": "06_模型训练与分析/tools/training_tone_reference.py",
+      "bytes": 800,
+      "sha256": "edd25731c464232fea67bf51104c8b47423efa6726675977cf26d695c662547e"
+    },
+    {
+      "path": "06_模型训练与分析/tools/verify_training_copy.py",
+      "bytes": 2655,
+      "sha256": "4ac429b8212cfb04572c6efd126d711e4bf98d13a77a2cea704ce35fb2279f29"
     },
     {
       "path": "06_模型训练与分析/training/art_models.py",
@@ -7749,6 +7759,56 @@
       "sha256": "5b09b9ab8c19f5f41b54f47e7caeddb3e59ab4595152555636efaac65e6ae4d3"
     },
     {
+      "path": "07_性能验证/源码完整性终审/map.log",
+      "bytes": 359347,
+      "sha256": "24f0127c52af287a83cf108e82fe539ae8fa6f1aa9ec131aebbf5aa2c7af4cf0"
+    },
+    {
+      "path": "07_性能验证/源码完整性终审/prepare_eth_cdc.log",
+      "bytes": 143,
+      "sha256": "22e5c78467ab28034a2932b27f77bb6660d0cdd03b537f0ba17a008677dddc1a"
+    },
+    {
+      "path": "07_性能验证/源码完整性终审/prepare_image_cdc.log",
+      "bytes": 58,
+      "sha256": "38b3688a1c86e3e6d3689f6614b8db7de08ff75d231bbd5a3b44f7d2778c64d9"
+    },
+    {
+      "path": "07_性能验证/源码完整性终审/prepare_image_route_margin.log",
+      "bytes": 84,
+      "sha256": "2aa8a33a7c9af2cfb421186227410c5bbebffef2bb33a9799890e150bd3f39d9"
+    },
+    {
+      "path": "07_性能验证/源码完整性终审/prepare_v69_payload_audit.log",
+      "bytes": 324,
+      "sha256": "0123d006b3eb111dffd88fb01b8561b1492177d56277ee40d60da7b3c36229c0"
+    },
+    {
+      "path": "07_性能验证/源码完整性终审/prepare_v69_reset_audit.log",
+      "bytes": 48,
+      "sha256": "cb9e7d07a58061ea0de5b451e68d60084b9100ed7ebe5645209051a3cd84d8fa"
+    },
+    {
+      "path": "07_性能验证/源码完整性终审/prove_replicas.log",
+      "bytes": 96,
+      "sha256": "e351d5e05d2d0624192b9dd734ba8b86e508bf636c3008b3cc44e89c46462612"
+    },
+    {
+      "path": "07_性能验证/源码完整性终审/README.md",
+      "bytes": 1709,
+      "sha256": "48d350c372bc80c3e4fe57083b180453b98cbaf6df8736149f0ef20a2b4050f2"
+    },
+    {
+      "path": "07_性能验证/源码完整性终审/SOURCE_AUDIT.json",
+      "bytes": 26961,
+      "sha256": "499301be8894943b0de942500098048ed6e469854dc35f61fb74126aeaf47291"
+    },
+    {
+      "path": "07_性能验证/源码完整性终审/TRAINING_COPY_CHECK.json",
+      "bytes": 428,
+      "sha256": "ab279243276422c7993835e8253ddcdb371aee8ba09eb7f420a4d4fd784e9190"
+    },
+    {
       "path": "07_性能验证/综合指标.json",
       "bytes": 8460,
       "sha256": "16ad8b03eb8f904afbc64e2272d5204b85f70152c1e1e2f617df77e715e42b98"
@@ -7760,13 +7820,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 6105,
-      "sha256": "25e27321588b7b7d6252f1d0c514c19d5b7a90ce5f4dfa9b017499cbcfca1499"
+      "bytes": 6449,
+      "sha256": "c9adb2eabc55008a2ba8aa258f375d767d26febad885161e688ce3635a86682a"
     },
     {
       "path": "verify_submission.py",
-      "bytes": 3776,
-      "sha256": "955c50e0cfede719fba6c4a4d6e7b32af71c4b87b1284dbb94d931fe4b67474f"
+      "bytes": 4163,
+      "sha256": "0135000aebf1498ecf4cf7a11c0b016e8dbac4d4424ee621a1bda65833876805"
     },
     {
       "path": "启动一帧入画.cmd",

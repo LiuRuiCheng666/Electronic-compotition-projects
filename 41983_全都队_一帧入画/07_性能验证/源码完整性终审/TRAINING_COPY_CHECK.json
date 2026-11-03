@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "prepared_modules_import": true,
+  "current_final_tone_reference": true,
+  "matched_teacher_state_loaded_strict": true,
+  "student_forward_backward": true,
+  "qat_forward": true,
+  "optimizer_steps": 0,
+  "original_weights_changed": false,
+  "external_train_jpegs": 200,
+  "external_val_jpegs": 100,
+  "tone_source_sha256": "787b2a6b7e53896d2dfe9aa7304dd90c20697d858e86021212d732250f56f981"
+}

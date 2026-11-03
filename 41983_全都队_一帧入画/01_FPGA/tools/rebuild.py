@@ -18,7 +18,12 @@ for path in [P/'outflow',P/'work_syn',P/'work_pnr',A/'outflow']:path.mkdir(paren
 if a.stage in ['map','all']:run('map',command('map'))
 if a.stage in ['bind','all']:
     shutil.copytree(P/'rtl',A/'rtl',dirs_exist_ok=True)
-    shutil.copy2(P/'outflow/ti60f225_oob.map.v',A/'outflow/ti60f225_oob.map.v')
+    # Efinity on Windows can put local-codepage paths into generated comments.
+    # Binding helpers run in UTF-8 mode, so normalize their private netlist copy.
+    mapped=(P/'outflow/ti60f225_oob.map.v').read_bytes()
+    try: mapped_text=mapped.decode('utf-8')
+    except UnicodeDecodeError: mapped_text=mapped.decode('gb18030')
+    (A/'outflow/ti60f225_oob.map.v').write_text(mapped_text,encoding='utf-8')
     shutil.copy2(P/'ti60f225_oob.sdc',A/'ti60f225_oob.sdc')
     for name in ['prepare_v69_reset_audit','prepare_v69_payload_audit','prepare_eth_cdc','prepare_image_cdc','prepare_image_route_margin']:
         run(name,[sys.executable,'-X','utf8',str(A/'tools'/(name+'.py'))])
