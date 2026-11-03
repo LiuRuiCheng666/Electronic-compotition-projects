@@ -1,9 +1,25 @@
 """Portable wrapper for the selected final Efinity map/bind/pnr flow. No board I/O."""
 from pathlib import Path
-import argparse,json,os,shutil,subprocess,sys,re
+import argparse,json,os,shutil,subprocess,sys,re,tempfile
 P=Path(__file__).resolve().parents[1];B=P/'build_support';A=B/'cdc'
-ap=argparse.ArgumentParser();ap.add_argument('--stage',choices=['plan','map','bind','pnr','pgm','reference-pgm','all'],default='plan');ap.add_argument('--efinity-home',type=Path,default=Path(os.environ.get('EFINITY_HOME','D:/Efinity/2026.1')));a=ap.parse_args()
+ap=argparse.ArgumentParser();ap.add_argument('--stage',choices=['plan','map','bind','pnr','pgm','reference-pgm','all'],default='plan');ap.add_argument('--efinity-home',type=Path,default=Path(os.environ.get('EFINITY_HOME','D:/Efinity/2026.1')));ap.add_argument('--temp-dir',type=Path,help='Optional ASCII-only parent for isolated native Efinity work');a=ap.parse_args()
 E=a.efinity_home.resolve();env=os.environ.copy();env['EFINITY_HOME']=str(E);env['PATH']=str(E/'bin')+os.pathsep+env['PATH']
+
+# Efinity's native bitstream and filesystem libraries reject some non-ASCII
+# paths even when parsing/synthesis succeeds. Run native stages in an isolated
+# ASCII workspace, carrying only generated work/results back to this project.
+if a.stage in ['map','pnr','pgm','reference-pgm','all'] and not str(P).isascii():
+    with tempfile.TemporaryDirectory(prefix='yizhen_fpga_',dir=a.temp_dir) as td:
+        work=Path(td)/'project'
+        if not str(work).isascii():raise SystemExit('Choose an ASCII-only --temp-dir for native Efinity tools')
+        shutil.copytree(P,work,ignore=shutil.ignore_patterns('__pycache__','*.pyc','build_logs'))
+        cmd=[sys.executable,'-X','utf8',str(work/'tools/rebuild.py'),'--stage',a.stage,'--efinity-home',str(E)]
+        try:
+            result=subprocess.run(cmd,cwd=work,env=env)
+        finally:
+            for rel in ['outflow','work_syn','work_pnr','build_support/cdc','build_logs']:
+                if (work/rel).is_dir():shutil.copytree(work/rel,P/rel,dirs_exist_ok=True)
+        raise SystemExit(result.returncode)
 def command(name):
     args=json.loads((B/(name+'_command.json')).read_text('utf-8'))
     return [str(E/'bin'/Path(x).name) if i==0 else str((P/x).resolve()) if x.startswith(('./','outflow/','work_syn','work_pnr','build_support/','ip/')) or x=='ti60f225_oob.xml' else x for i,x in enumerate(args)]

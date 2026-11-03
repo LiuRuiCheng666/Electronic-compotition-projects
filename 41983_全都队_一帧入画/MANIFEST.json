@@ -4680,8 +4680,8 @@
     },
     {
       "path": "01_FPGA/tools/rebuild.py",
-      "bytes": 3726,
-      "sha256": "0cb263000fd250008ee1380dbb524f64fb98d3ae3f3212b3bb832680638bdfd0"
+      "bytes": 4905,
+      "sha256": "66017a570d7048f71a99af12d946711b7051ab296a384c2be02f483afd5896f0"
     },
     {
       "path": "01_FPGA/tools/run_efinity.py",
@@ -5750,8 +5750,8 @@
     },
     {
       "path": "05_技术资料/赛题提交总览.md",
-      "bytes": 5895,
-      "sha256": "d6e5d20f71047b3a6de36a72725c9d7ab79ab96a0691d599f16d9eed90840f35"
+      "bytes": 6136,
+      "sha256": "07d9d7b4f509b5341c0d6a37d874d485cf89135c930d668dcf80322c2bed8a65"
     },
     {
       "path": "06_模型训练与分析/FINAL_WEIGHTS_REBUILD_CHECK.json",
@@ -7800,13 +7800,38 @@
     },
     {
       "path": "07_性能验证/源码完整性终审/SOURCE_AUDIT.json",
-      "bytes": 26961,
-      "sha256": "499301be8894943b0de942500098048ed6e469854dc35f61fb74126aeaf47291"
+      "bytes": 27121,
+      "sha256": "fdab6604b07e57fa6afdb8094653fb5f5eb5c481c50f6809d815a9a2964cdd48"
     },
     {
       "path": "07_性能验证/源码完整性终审/TRAINING_COPY_CHECK.json",
       "bytes": 428,
       "sha256": "ab279243276422c7993835e8253ddcdb371aee8ba09eb7f420a4d4fd784e9190"
+    },
+    {
+      "path": "07_性能验证/烧录重建复查/native_pgm.out",
+      "bytes": 1956,
+      "sha256": "b845cd60641241513f4fe9dbfef6519f2ac33aca25bce97f113d9596211e4113"
+    },
+    {
+      "path": "07_性能验证/烧录重建复查/pgm.log",
+      "bytes": 442,
+      "sha256": "293ef87fb849ad6a509c5130bd08b9356095239bc1084e60bd781abb93c52daa"
+    },
+    {
+      "path": "07_性能验证/烧录重建复查/README.md",
+      "bytes": 1619,
+      "sha256": "ab7e717fd05a9f1f07b0323afb0b40fd9c463933ef95f69f3d229e983154c698"
+    },
+    {
+      "path": "07_性能验证/烧录重建复查/RECONSTRUCTION_CHECK.json",
+      "bytes": 779,
+      "sha256": "ebc485a54bb069ef6fab30164cf9876e0a0d4925f1f47c4f061710cfe01c232a"
+    },
+    {
+      "path": "07_性能验证/烧录重建复查/WEIGHT_REBUILD.json",
+      "bytes": 1413,
+      "sha256": "48abdb998b5deb3907c303b034cb2015cc1a86518541ae9ffe5fe713d88de38a"
     },
     {
       "path": "07_性能验证/综合指标.json",
@@ -7820,13 +7845,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 6449,
-      "sha256": "c9adb2eabc55008a2ba8aa258f375d767d26febad885161e688ce3635a86682a"
+      "bytes": 6849,
+      "sha256": "93005bb66a71f7beff0d6f848ce55191943bc9c2c65b3beb671f309722797ccc"
     },
     {
       "path": "verify_submission.py",
-      "bytes": 4163,
-      "sha256": "0135000aebf1498ecf4cf7a11c0b016e8dbac4d4424ee621a1bda65833876805"
+      "bytes": 4239,
+      "sha256": "d9ddbd37fb4773d1913f271edfff8ec4ef1bd5dce0052e40dd8b497655ef688c"
     },
     {
       "path": "启动一帧入画.cmd",

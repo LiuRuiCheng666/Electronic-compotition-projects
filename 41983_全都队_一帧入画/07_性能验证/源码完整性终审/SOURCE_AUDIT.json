@@ -757,5 +757,7 @@
     "Five deployed model slots",
     "Full Flash image"
   ],
-  "scope": "Source and dependency completeness; synthesis and source compilation completed. No new place/route run or board programming; delivered native implementation and measured hardware evidence remain the submission baseline."
+  "scope": "Source and dependency completeness; synthesis and source compilation completed. No new place/route run or board programming; delivered native implementation and measured hardware evidence remain the submission baseline.",
+  "native_configuration_regeneration": "PASS",
+  "full_flash_payload_reconstruction": "PASS; all bytes after generated 256-byte header equal deployed image"
 }

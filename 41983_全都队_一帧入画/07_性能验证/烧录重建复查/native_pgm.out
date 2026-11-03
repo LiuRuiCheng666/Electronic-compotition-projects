@@ -1,0 +1,26 @@
+INFO     : Elitestek FPGA Bitstream Generator.
+INFO     : Version: 2026.1.132 
+INFO     : Copyright (C) 2013 - 2026 Efinix, Inc. All rights reserved.
+INFO     : Compiled: May 29 2026.
+INFO     : Using source file "C:\Users\ASUS\AppData\Local\Temp\yizhen_fpga_2yfipqzr\project\work_pnr\ti60f225_oob.lbf"
+INFO     : Generating HEX programming file for device "Ti60F225", family "Titanium"
+INFO     : Using periphery source file "outflow\ti60f225_oob.lpf"
+INFO     : Generating bit file: "outflow\ti60f225_oob.bit"
+INFO     : HEX Generation Options Summary:
+INFO     : 	Listing options specified to bitstream generation:
+INFO     : 	enable_crc_check                         = on
+INFO     : 	bitstream_compression                    = on
+INFO     : 	oscillator_clock_divider                 = DIV8
+INFO     : 	enable_external_master_clock             = off
+INFO     : 	spi_low_power_mode                       = on
+INFO     : 	active_capture_clk_edge                  = posedge
+INFO     : 	release_tri_then_reset                   = on
+INFO     : 	jtag_usercode                            = 0xFFFFFFFF
+INFO     : 	io_weak_pullup                           = on
+INFO     : Finished generating "outflow\ti60f225_oob.hex"
+INFO     : Elitestek Bitstream Generator took 2.7533375 seconds [FlowMsg::StageDuration]
+INFO     :     Elitestek Bitstream Generator took 2.25 seconds (approximately) in total CPU time [FlowMsg::StageDuration::CPUTime]
+INFO     : Elitestek Bitstream Generator virtual memory usage: begin = 2.676 MB, end = 11.364 MB, delta = 8.688 MB [FlowMsg::VMUsage]
+INFO     :     Elitestek Bitstream Generator peak virtual memory usage = 153.2 MB [FlowMsg::VMUsage::Peak]
+INFO     : Elitestek Bitstream Generator resident set memory usage: begin = 9.388 MB, end = 21.66 MB, delta = 12.272 MB [FlowMsg::RSSUsage]
+INFO     :     Elitestek Bitstream Generator peak resident set memory usage = 158.908 MB [FlowMsg::RSSUsage::Peak]

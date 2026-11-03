@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "native_reference_configuration_generation": true,
+  "unicode_named_project_supported": true,
+  "configuration_decoded_bytes": 1102538,
+  "full_flash_bytes": 4214816,
+  "configuration_and_full_flash_match_after_generated_header": true,
+  "header_bytes_excluded": 256,
+  "generated_header_note": "The native tool regenerates header metadata; byte comparison covers every byte after the fixed 256-byte header.",
+  "weights_byte_exact": true,
+  "deployed_full_flash_sha256": "e4fe7f382bbab662d173cb95b17cb2590693d1962abf62bedc5f370b8a7ae4ba",
+  "reconstructed_full_flash_sha256": "137d2ec72e212ad6b2ed083d4ab139e2d7d423dc2778c32cd1e060d23854a4f4",
+  "board_programmed": false,
+  "cpu_compile_bytes": 28586,
+  "weights_rebuild_all_five": true
+}
