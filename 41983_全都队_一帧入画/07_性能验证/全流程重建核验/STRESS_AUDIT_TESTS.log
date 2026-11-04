@@ -1,0 +1,15 @@
+test_changed_output_detected (test_stress_audit.Tests) ... ok
+test_current_five_style_log (test_stress_audit.Tests) ... ok
+test_failed_recovery_detected (test_stress_audit.Tests) ... ok
+test_lost_generation_detected (test_stress_audit.Tests) ... ok
+test_malformed_data_never_passes (test_stress_audit.Tests) ... ok
+test_reboot_detected (test_stress_audit.Tests) ... ok
+test_recorded_stress_is_consistent (test_stress_audit.Tests) ... ok
+test_reset_masking_is_not_accepted (test_stress_audit.Tests) ... ok
+test_running_is_never_pass (test_stress_audit.Tests) ... ok
+test_short_run_cannot_be_hour_pass (test_stress_audit.Tests) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.030s
+
+OK

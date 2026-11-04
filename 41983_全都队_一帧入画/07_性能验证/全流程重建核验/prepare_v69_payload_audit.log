@@ -1,0 +1,1 @@
+PASS mapped payload capture endpoints [('u_frame_snapshot/u_apb/s_command[', 49), ('u_frame_snapshot/u_apb/d_response[', 32), ('u_camera_frontend/u_gains/held[', 14), ('u_camera_frontend/u_statistics/held[', 35), ('u_source_snapshot/held[', 32), ('u_c_camera_bridge/payload[', 12), ('held observer/video APB reports', 32)]

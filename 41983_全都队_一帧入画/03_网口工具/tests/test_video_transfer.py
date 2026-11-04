@@ -26,19 +26,33 @@ class VideoTests(unittest.TestCase):
         frame=np.zeros((10,10,3),dtype=np.uint8);frame[:]=(11,22,33)
         raw,d=prepare(frame,2);self.assertEqual(d.total,2764800)
         self.assertEqual(raw[:3],b'\xff\xff\xff');self.assertEqual(raw[(360*1280+640)*3:][:3],bytes((33,22,11)))
-    def execute(self,factory=FakeClient):
-        root=Path(self.tmp.name);source=root/'input.avi'
+    def execute(self,factory=FakeClient,unicode_paths=False,style=3,preview_port=None):
+        root=Path(self.tmp.name)/'中文目录' if unicode_paths else Path(self.tmp.name)
+        root.mkdir(exist_ok=True);source=root/'输入.avi' if unicode_paths else root/'input.avi'
         import numpy as np
         writer=cv2.VideoWriter(str(source),cv2.VideoWriter_fourcc(*'MJPG'),10,(64,48))
         self.assertTrue(writer.isOpened())
         for n in range(10):writer.write(np.full((48,64,3),n*20,dtype=np.uint8))
         writer.release()
-        a=argparse.Namespace(input=str(source),out=str(root/'out'),mode='sample',sample_seconds=.2,max_frames=3,style=3,ip='unused',bind_ip='unused',interface_index=None)
+        self.assertTrue(source.is_file())
+        a=argparse.Namespace(input=str(source),out=str(root/'out'),mode='sample',sample_seconds=.2,max_frames=3,style=style,preview_port=preview_port,ip='unused',bind_ip='unused',interface_index=None)
         return run(a,client_factory=factory)
     def setUp(self):self.tmp=tempfile.TemporaryDirectory()
     def tearDown(self):self.tmp.cleanup()
     def test_sample_end_to_end_local_fixture(self):
         r=self.execute();self.assertEqual(r['status'],'PASS');self.assertEqual([f['source_frame']for f in r['frames']],[0,2,4]);self.assertEqual(r['storyboard_frames'],3);self.assertTrue(FakeClient.instances[-1].closed)
+    def test_unicode_paths_slot4_and_live_preview(self):
+        r=self.execute(unicode_paths=True,style=4,preview_port=0)
+        self.assertEqual(r['status'],'PASS');self.assertEqual(r['storyboard_frames'],3)
+        self.assertTrue(all(f['result']['style']==4 for f in r['frames']))
+        self.assertTrue((Path(self.tmp.name)/'中文目录/out/storyboard_1fps.avi').is_file())
+    def test_unicode_png_keeps_bgr_channels(self):
+        f=Path(self.tmp.name)/'中文帧.png';Image.new('RGB',(16,16),(12,34,56)).save(f)
+        self.assertEqual(read_frame_image(f)[0,0].tolist(),[56,34,12])
+    def test_five_style_descriptor_boundary(self):
+        d=ImageDesc(1,1,1,4,3,3,0)
+        self.assertEqual(ImageDesc.unpack(d.pack()),d)
+        with self.assertRaises(ValueError):ImageDesc(1,1,1,5,3,3,0).validate()
     def test_failure_report_and_close(self):
         with self.assertRaisesRegex(RuntimeError,'injected failure'):self.execute(BrokenClient)
         r=json.loads((Path(self.tmp.name)/'out/video_report.json').read_text());self.assertEqual(r['status'],'FAIL');self.assertTrue(BrokenClient.instances[-1].closed)

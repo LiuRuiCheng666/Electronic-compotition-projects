@@ -2550,13 +2550,13 @@
     },
     {
       "path": "01_FPGA/host/a_net_analyze.py",
-      "bytes": 6773,
-      "sha256": "549ff0522cf022da3a42fe356a34fa342d05bb757814fd302a2538ba8b162862"
+      "bytes": 6910,
+      "sha256": "48f21daffbe6c70a14a8db76dfad52189b2d185fc1ca8a94c2918c1a68eca0ce"
     },
     {
       "path": "01_FPGA/host/a_net_stress.py",
-      "bytes": 4551,
-      "sha256": "444a929b9442073025a6699947e6ca6b6514c8ca1d2bd41df82f5ecd5b2fe1b3"
+      "bytes": 4565,
+      "sha256": "ded29aeaf538e316b9501d19d7440cff8653d047d340b937c8229f3514888a08"
     },
     {
       "path": "01_FPGA/host/a_net_wire.py",
@@ -2570,8 +2570,8 @@
     },
     {
       "path": "01_FPGA/host/a_video_transfer.py",
-      "bytes": 9722,
-      "sha256": "2609174acfd10c1cd37063bc25a3dd0c07f71c58d24f88e70d17130e697c6c5f"
+      "bytes": 10046,
+      "sha256": "5da5694a81decdd48ab80c0c94c5716154fae06d746dca5cf9ee56827abf5661"
     },
     {
       "path": "01_FPGA/host/board_net_acceptance.py",
@@ -4625,8 +4625,8 @@
     },
     {
       "path": "01_FPGA/tests/test_stress_audit.py",
-      "bytes": 1794,
-      "sha256": "763313ad771ca013e4718e4440d37da4a192e07991dff66f9f6378fb2c4f3a83"
+      "bytes": 2248,
+      "sha256": "b27067198d92af5074b8987e6ec2d39c763408a7092695461a1763247a973358"
     },
     {
       "path": "01_FPGA/tests/test_video_preview.py",
@@ -4665,8 +4665,8 @@
     },
     {
       "path": "01_FPGA/tools/build_flash_image.py",
-      "bytes": 5697,
-      "sha256": "7a5fcc1a052dd2fc254ecfaeebd55889030e960ac40b1d200a6ee47c3fd930ca"
+      "bytes": 5331,
+      "sha256": "8bedeaa48d548e10f2dc5f4f6b41db684d4efb4b235476f3593dcdc833622242"
     },
     {
       "path": "01_FPGA/tools/build_light_merge_firmware.py",
@@ -4680,8 +4680,8 @@
     },
     {
       "path": "01_FPGA/tools/rebuild.py",
-      "bytes": 4905,
-      "sha256": "66017a570d7048f71a99af12d946711b7051ab296a384c2be02f483afd5896f0"
+      "bytes": 5285,
+      "sha256": "9797dbe307dab735b2226ff2063de1bef9c6b47c10d788fcbbb93e1b1265f201"
     },
     {
       "path": "01_FPGA/tools/run_efinity.py",
@@ -5635,23 +5635,23 @@
     },
     {
       "path": "03_网口工具/host/a_image_batch.py",
-      "bytes": 7135,
-      "sha256": "e17f334951a0f60cceafb980bab548ee6a9b3f2832d8e0f46cbb8062e1782cd6"
+      "bytes": 7053,
+      "sha256": "7c7f0f9f884757feb77ba37a580042038787fc8f505db0efc92c644931ee4e60"
     },
     {
       "path": "03_网口工具/host/a_image_transfer.py",
-      "bytes": 15536,
-      "sha256": "74fc2f098751a0c64db944487a90befa2aad7546cef48417d8f12911ee0dfb03"
+      "bytes": 15299,
+      "sha256": "88d9169c40a92cb047ee99790696e67efce9de1a65b1d5116977c34a5f3a6948"
     },
     {
       "path": "03_网口工具/host/a_net_analyze.py",
-      "bytes": 6773,
-      "sha256": "549ff0522cf022da3a42fe356a34fa342d05bb757814fd302a2538ba8b162862"
+      "bytes": 6910,
+      "sha256": "48f21daffbe6c70a14a8db76dfad52189b2d185fc1ca8a94c2918c1a68eca0ce"
     },
     {
       "path": "03_网口工具/host/a_net_stress.py",
-      "bytes": 4551,
-      "sha256": "444a929b9442073025a6699947e6ca6b6514c8ca1d2bd41df82f5ecd5b2fe1b3"
+      "bytes": 4565,
+      "sha256": "ded29aeaf538e316b9501d19d7440cff8653d047d340b937c8229f3514888a08"
     },
     {
       "path": "03_网口工具/host/a_net_wire.py",
@@ -5665,13 +5665,18 @@
     },
     {
       "path": "03_网口工具/host/a_video_transfer.py",
-      "bytes": 9866,
-      "sha256": "65afba4f3dc7c4f9b7effe69ce46f9fb206d1869595c258665923c6c49f47de3"
+      "bytes": 10046,
+      "sha256": "5da5694a81decdd48ab80c0c94c5716154fae06d746dca5cf9ee56827abf5661"
     },
     {
       "path": "03_网口工具/host/board_net_acceptance.py",
       "bytes": 4655,
       "sha256": "3a6b8d539cada6f211e647c2f7d80ab7d2671d5ae40504fef6306812e7365367"
+    },
+    {
+      "path": "03_网口工具/README.md",
+      "bytes": 1506,
+      "sha256": "2141134bcca18c631d533c0c8e7ca7c83bddc667e4cab0bdab17182eb9f95bba"
     },
     {
       "path": "03_网口工具/requirements.txt",
@@ -5690,8 +5695,8 @@
     },
     {
       "path": "03_网口工具/tests/test_video_transfer.py",
-      "bytes": 2801,
-      "sha256": "c234920b197dfdd3508ce0170aa38f1e28d4618d80d56dbd5a578cd2d5f5fa46"
+      "bytes": 3864,
+      "sha256": "cd9d8e4ee9b9390851379a737f0061ce07f768b28e2df4254046a7f8a8309403"
     },
     {
       "path": "04_烧录文件/OSD_SIMPLE_SELECTED5_CONFIG_ONLY.bit",
@@ -5740,8 +5745,8 @@
     },
     {
       "path": "05_技术资料/实现指标.json",
-      "bytes": 296,
-      "sha256": "710e6497f0a17e15a324e04a3d3b42c775838712826949dd089b3c0e7590d3b4"
+      "bytes": 388,
+      "sha256": "aaa8a2e309dc8013ad8c9ab5aedcf3cbadede2465bba7c58ed3f2b843f50f2d0"
     },
     {
       "path": "05_技术资料/赛题与代码对应.md",
@@ -5750,8 +5755,8 @@
     },
     {
       "path": "05_技术资料/赛题提交总览.md",
-      "bytes": 6136,
-      "sha256": "07d9d7b4f509b5341c0d6a37d874d485cf89135c930d668dcf80322c2bed8a65"
+      "bytes": 6479,
+      "sha256": "d77b6856972fdc6b95b8f7966a1e67ca603bf185b2fc36f8c3855914574bae18"
     },
     {
       "path": "06_模型训练与分析/FINAL_WEIGHTS_REBUILD_CHECK.json",
@@ -7379,6 +7384,106 @@
       "sha256": "0f6825e552f54e22a3a7c1ef9582884d7a952fef5702c0978be9bdab9a80510e"
     },
     {
+      "path": "07_性能验证/全流程重建核验/FRESH_FLASH_MERGE.json",
+      "bytes": 1365,
+      "sha256": "25a4eea426965fe2feaa2844a7a072d09365b48d1ee0a9b384d1bc5d493a71e1"
+    },
+    {
+      "path": "07_性能验证/全流程重建核验/fresh_source.place.rpt",
+      "bytes": 1940,
+      "sha256": "5bb8909d803bdad99b5080e39e83f169f735984ec57ae84eee6b4eae2522aece"
+    },
+    {
+      "path": "07_性能验证/全流程重建核验/fresh_source.route.rpt",
+      "bytes": 1645,
+      "sha256": "247b4ac05d7164cd827e6c405c2b10b1bc5fb9955fc13074fc2e0da5e5940cff"
+    },
+    {
+      "path": "07_性能验证/全流程重建核验/fresh_source.timing.rpt",
+      "bytes": 3233048,
+      "sha256": "fe1c02ec6c096d4fae4c071be0da745d9ffe2713cd611b819586684fa196324d"
+    },
+    {
+      "path": "07_性能验证/全流程重建核验/FULL_SOURCE_BUILD_CHECK.json",
+      "bytes": 13368,
+      "sha256": "aeb5390a2bd08fbdbc4ea8862833df069f6eec982414b49f27e9efa2ea2407d3"
+    },
+    {
+      "path": "07_性能验证/全流程重建核验/HOST_TOOL_TESTS.json",
+      "bytes": 228,
+      "sha256": "e8fcf316620368c4a1a45ca7f2cb6ffa289df9fe5fdb7b383b6eb48cf74f9d31"
+    },
+    {
+      "path": "07_性能验证/全流程重建核验/HOST_TOOL_TESTS.log",
+      "bytes": 4998,
+      "sha256": "453ad78f46836c9dbf57919b70d180a36f423db426eafd1f7de29e25b3ed8b68"
+    },
+    {
+      "path": "07_性能验证/全流程重建核验/map.log",
+      "bytes": 304421,
+      "sha256": "90ad45a2011aeb8aae560791989f79d59ec4dd0cd7e5fc7c0d02e4450d7488e4"
+    },
+    {
+      "path": "07_性能验证/全流程重建核验/pgm.log",
+      "bytes": 442,
+      "sha256": "293ef87fb849ad6a509c5130bd08b9356095239bc1084e60bd781abb93c52daa"
+    },
+    {
+      "path": "07_性能验证/全流程重建核验/pnr.log",
+      "bytes": 116173,
+      "sha256": "46966aa7c67896fd1e80e3c9e0817024bf2b2df7756be924a86af78c5c359756"
+    },
+    {
+      "path": "07_性能验证/全流程重建核验/prepare_eth_cdc.log",
+      "bytes": 143,
+      "sha256": "22e5c78467ab28034a2932b27f77bb6660d0cdd03b537f0ba17a008677dddc1a"
+    },
+    {
+      "path": "07_性能验证/全流程重建核验/prepare_image_cdc.log",
+      "bytes": 58,
+      "sha256": "38b3688a1c86e3e6d3689f6614b8db7de08ff75d231bbd5a3b44f7d2778c64d9"
+    },
+    {
+      "path": "07_性能验证/全流程重建核验/prepare_image_route_margin.log",
+      "bytes": 84,
+      "sha256": "2aa8a33a7c9af2cfb421186227410c5bbebffef2bb33a9799890e150bd3f39d9"
+    },
+    {
+      "path": "07_性能验证/全流程重建核验/prepare_v69_payload_audit.log",
+      "bytes": 324,
+      "sha256": "0123d006b3eb111dffd88fb01b8561b1492177d56277ee40d60da7b3c36229c0"
+    },
+    {
+      "path": "07_性能验证/全流程重建核验/prepare_v69_reset_audit.log",
+      "bytes": 48,
+      "sha256": "cb9e7d07a58061ea0de5b451e68d60084b9100ed7ebe5645209051a3cd84d8fa"
+    },
+    {
+      "path": "07_性能验证/全流程重建核验/prove_replicas.log",
+      "bytes": 96,
+      "sha256": "e351d5e05d2d0624192b9dd734ba8b86e508bf636c3008b3cc44e89c46462612"
+    },
+    {
+      "path": "07_性能验证/全流程重建核验/README.md",
+      "bytes": 2081,
+      "sha256": "6add02e581fe1555efb5cc12398327c4130608965d84fe78e23ccaa3d93ff5bd"
+    },
+    {
+      "path": "07_性能验证/全流程重建核验/STATIC_ENTRYPOINT_CHECK.json",
+      "bytes": 3450,
+      "sha256": "1c3eeb0b304e4093c32b7bb03a6e9d96a0c6069cb4cd85dd5241a2a723dc362a"
+    },
+    {
+      "path": "07_性能验证/全流程重建核验/STRESS_AUDIT_TESTS.json",
+      "bytes": 109,
+      "sha256": "ad640eccb5975cb52db9af30de79f616f0a16c084b7f67c824bd6b0bc0937048"
+    },
+    {
+      "path": "07_性能验证/全流程重建核验/STRESS_AUDIT_TESTS.log",
+      "bytes": 747,
+      "sha256": "76936f899e35bc8653a1b847b76c0874443eee3a2531e84ab58ec91e80d9242a"
+    },
+    {
       "path": "07_性能验证/原始证据/result.json",
       "bytes": 170629,
       "sha256": "1067285f813be90c9ccab7cdc6d913f70a68a2ef790916c7a5a73718ea9e06a3"
@@ -7795,13 +7900,13 @@
     },
     {
       "path": "07_性能验证/源码完整性终审/README.md",
-      "bytes": 1709,
-      "sha256": "48d350c372bc80c3e4fe57083b180453b98cbaf6df8736149f0ef20a2b4050f2"
+      "bytes": 1759,
+      "sha256": "501c09061db6f87589dee15acd9da3b8672976077fb80854ac3025f47142e5a1"
     },
     {
       "path": "07_性能验证/源码完整性终审/SOURCE_AUDIT.json",
-      "bytes": 27121,
-      "sha256": "fdab6604b07e57fa6afdb8094653fb5f5eb5c481c50f6809d815a9a2964cdd48"
+      "bytes": 27227,
+      "sha256": "a2ad955f11db38a1bfe8db8b3432fe24d0d1a2d5298bd051f003d220070c9807"
     },
     {
       "path": "07_性能验证/源码完整性终审/TRAINING_COPY_CHECK.json",
@@ -7845,13 +7950,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 6849,
-      "sha256": "93005bb66a71f7beff0d6f848ce55191943bc9c2c65b3beb671f309722797ccc"
+      "bytes": 7202,
+      "sha256": "61fae073143f1dc25447fcd01098c0d54d391fa9659dff66ec1e4b49673d6eb0"
     },
     {
       "path": "verify_submission.py",
-      "bytes": 4239,
-      "sha256": "d9ddbd37fb4773d1913f271edfff8ec4ef1bd5dce0052e40dd8b497655ef688c"
+      "bytes": 5565,
+      "sha256": "cf1bfd2692906b0c6621151e9c9c5d6cea9aab278dd4e6a71c773945ebc6ac11"
     },
     {
       "path": "启动一帧入画.cmd",

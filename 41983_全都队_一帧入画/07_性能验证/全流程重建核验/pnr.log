@@ -1,0 +1,1203 @@
+INFO     : Reading project database "C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/ti60f225_oob.xml" [FlowMsg::ProjectDatabaseReading]
+INFO     : Maximum concurrency has been set to 8 [FlowMsg::MaxThreads]
+           
+           Elitestek FPGA Placement and Routing.
+           Version: 2026.1.132 
+           Compiled: May 29 2026.
+           
+           Copyright (C) 2013 - 2026 Efinix, Inc. All rights reserved.
+
+           
+           The Tool Is Based on VPR of University of Toronto,
+           a free open source code under MIT license.
+           
+WARNING  : Found 12 warnings in the post-synthesis netlist.
+INFO     : Reading core interface constraints file "C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/outflow/ti60f225_oob.interface.csv" [DBMsg::CoreInterfaceConstraintsFileReading]
+INFO     : Successfully read core interface constraints file "C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/outflow/ti60f225_oob.interface.csv" [DBMsg::CoreInterfaceConstraintsFileLoadSuccess]
+INFO     : Creating interface clock pin CLK_27M [DBMsg::NetlistInterfaceClockPinCreated]
+INFO     : Creating interface clock pin clk_100m [DBMsg::NetlistInterfaceClockPinCreated]
+INFO     : Creating interface clock pin fb [DBMsg::NetlistInterfaceClockPinCreated]
+INFO     : Creating interface clock pin hdmi_rx_fast_clk [DBMsg::NetlistInterfaceClockPinCreated]
+INFO     : Creating interface clock pin hdmi_rx_fb [DBMsg::NetlistInterfaceClockPinCreated]
+INFO     : Creating interface clock pin hdmi_tx_fast_clk [DBMsg::NetlistInterfaceClockPinCreated]
+WARNING  : logical_block live_display_publication_window~FF #41561 has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+WARNING  : logical_block u_hdmi_frontend/u_hdmi_frames_cdc/destination_rst_n~FF #54458 has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+WARNING  : logical_block u_hdmi_frontend/u_hdmi_frames_cdc/source_rst_n~FF #54459 has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+WARNING  : logical_block u_hdmi_frontend/u_hdmi_skipped_cdc/destination_rst_n~FF #54626 has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+WARNING  : logical_block u_hdmi_frontend/u_hdmi_skipped_cdc/source_rst_n~FF #54627 has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+WARNING  : logical_block u_nn_fps_osd/cpu_ui_sync[0]~FF #72145 has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+WARNING  : logical_block u_nn_fps_osd/cpu_ui_sync[1]~FF #72146 has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+WARNING  : logical_block u_nn_fps_osd/cpu_ui_sync[2]~FF #72147 has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+WARNING  : logical_block live_display_publication_window~FF #41561 has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+WARNING  : logical_block u_hdmi_frontend/u_hdmi_frames_cdc/destination_rst_n~FF #54458 has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+WARNING  : logical_block u_hdmi_frontend/u_hdmi_frames_cdc/source_rst_n~FF #54459 has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+WARNING  : logical_block u_hdmi_frontend/u_hdmi_skipped_cdc/destination_rst_n~FF #54626 has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+WARNING  : logical_block u_hdmi_frontend/u_hdmi_skipped_cdc/source_rst_n~FF #54627 has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+WARNING  : logical_block u_nn_fps_osd/cpu_ui_sync[0]~FF #72145 has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+WARNING  : logical_block u_nn_fps_osd/cpu_ui_sync[1]~FF #72146 has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+WARNING  : logical_block u_nn_fps_osd/cpu_ui_sync[2]~FF #72147 has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Reading core interface constraints file "C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/outflow/ti60f225_oob.interface.csv" [DBMsg::CoreInterfaceConstraintsFileReading]
+INFO     : Successfully read core interface constraints file "C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/outflow/ti60f225_oob.interface.csv" [DBMsg::CoreInterfaceConstraintsFileLoadSuccess]
+WARNING  : Clock source "jtag_inst2_TCK" does not use a dedicated clock pad, extra clock insertion delay will been added
+INFO     : Counting 1 clocks that are not assigned to clock resources as global clocks.
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:53] No clocks matched 'jtag_inst2_TCK'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:53] set_output_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:53] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:54] No clocks matched 'jtag_inst2_TCK'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:54] set_output_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:54] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:55] No clocks matched 'jtag_inst2_TCK'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:55] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:55] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:56] No clocks matched 'jtag_inst2_TCK'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:56] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:56] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'jtag_inst2_RESET'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:57] No clocks matched 'jtag_inst2_TCK'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:57] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:57] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'jtag_inst2_RESET'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:58] No clocks matched 'jtag_inst2_TCK'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:58] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:58] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:59] No clocks matched 'jtag_inst2_TCK'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:59] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:59] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:60] No clocks matched 'jtag_inst2_TCK'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:60] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:60] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'jtag_inst2_UPDATE'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:61] No clocks matched 'jtag_inst2_TCK'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:61] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:61] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'jtag_inst2_UPDATE'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:62] No clocks matched 'jtag_inst2_TCK'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:62] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:62] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:63] No clocks matched 'jtag_inst2_TCK'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:63] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:63] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:64] No clocks matched 'jtag_inst2_TCK'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:64] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:64] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'ddr_addr[14]'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:103] set_output_delay: No valid output port(s) found
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:103] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING  : No ports matched 'ddr_addr[14]'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:104] set_output_delay: No valid output port(s) found
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:104] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING  : No ports matched 'ddr_addr[15]'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:105] set_output_delay: No valid output port(s) found
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:105] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING  : No ports matched 'ddr_addr[15]'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:106] set_output_delay: No valid output port(s) found
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:106] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING  : No pins matched 'camera_source_fps*~FF|D'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:377] set_max_delay: Object(s) specified for -to option contains no vaild endpoints
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:377] Unable to run 'set_max_delay' constraint due to warnings found
+WARNING  : No pins matched 'camera_source_fps*~FF|D'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:378] set_min_delay: Object(s) specified for -to option contains no vaild endpoints
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:378] Unable to run 'set_min_delay' constraint due to warnings found
+WARNING  : No pins matched 'u_nn_fps_osd/status_meta*~FF|D'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:385] set_false_path: Object(s) specified for -to option contains no vaild endpoints
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:385] Unable to run 'set_false_path' constraint due to warnings found
+WARNING  : No pins matched 'u_video_diag/cpu_reset*~FF|SR'
+WARNING  : No pins matched 'u_video_diag/core_reset*~FF|SR'
+INFO     : SDC file 'C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc' parsed successfully.
+INFO     : Running Physical Packing [FlowMsg::RunningFlowStage]
+            ----------     -------  --------------     -------
+             Iteration       WHPWL Worst Slack (ps) Convergence
+            ----------     -------  --------------     -------
+           Worst_slack: -353
+            Slack ratio CDF:
+           1.0	0.9	0.8	0.7	0.6	0.5	0.4	0.3	0.2	0.1	0.0	
+           0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	
+           Worst_slack: -39
+            Slack ratio CDF:
+           1.0	0.9	0.8	0.7	0.6	0.5	0.4	0.3	0.2	0.1	0.0	
+           0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	
+           Worst_slack: 62
+            Slack ratio CDF:
+           1.0	0.9	0.8	0.7	0.6	0.5	0.4	0.3	0.2	0.1	0.0	
+           0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	
+           Worst_slack: 232
+            Slack ratio CDF:
+           1.0	0.9	0.8	0.7	0.6	0.5	0.4	0.3	0.2	0.1	0.0	
+           0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	
+           Worst_slack: 325
+            Slack ratio CDF:
+           1.0	0.9	0.8	0.7	0.6	0.5	0.4	0.3	0.2	0.1	0.0	
+           0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	
+           Worst_slack: 337
+            Slack ratio CDF:
+           1.0	0.9	0.8	0.7	0.6	0.5	0.4	0.3	0.2	0.1	0.0	
+           0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	
+INFO     :           1    15175352             337         1.5%
+           Worst_slack: 338
+            Slack ratio CDF:
+           1.0	0.9	0.8	0.7	0.6	0.5	0.4	0.3	0.2	0.1	0.0	
+           0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	
+INFO     :           2    12338207             338         2.1%
+           Worst_slack: 45
+            Slack ratio CDF:
+           1.0	0.9	0.8	0.7	0.6	0.5	0.4	0.3	0.2	0.1	0.0	
+           0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	
+INFO     :           3    10669928              45         3.2%
+           Worst_slack: 50
+            Slack ratio CDF:
+           1.0	0.9	0.8	0.7	0.6	0.5	0.4	0.3	0.2	0.1	0.0	
+           0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	
+INFO     :           4     8377201              50         6.2%
+           Worst_slack: 152
+            Slack ratio CDF:
+           1.0	0.9	0.8	0.7	0.6	0.5	0.4	0.3	0.2	0.1	0.0	
+           0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	
+INFO     :           5     6185217             152        11.5%
+           Worst_slack: -57
+            Slack ratio CDF:
+           1.0	0.9	0.8	0.7	0.6	0.5	0.4	0.3	0.2	0.1	0.0	
+           0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	
+INFO     :           6     4815695             -57        18.6%
+           Worst_slack: -590
+            Slack ratio CDF:
+           1.0	0.9	0.8	0.7	0.6	0.5	0.4	0.3	0.2	0.1	0.0	
+           0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	
+INFO     :           7     4281146            -590        23.6%
+           Worst_slack: -533
+            Slack ratio CDF:
+           1.0	0.9	0.8	0.7	0.6	0.5	0.4	0.3	0.2	0.1	0.0	
+           0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	
+INFO     :           8     4098038            -533        26.1%
+           Worst_slack: -626
+            Slack ratio CDF:
+           1.0	0.9	0.8	0.7	0.6	0.5	0.4	0.3	0.2	0.1	0.0	
+           0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	
+INFO     :           9     3935978            -626        29.1%
+           Worst_slack: -573
+            Slack ratio CDF:
+           1.0	0.9	0.8	0.7	0.6	0.5	0.4	0.3	0.2	0.1	0.0	
+           0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	
+INFO     :          10     3780368            -573        32.9%
+           Worst_slack: -462
+            Slack ratio CDF:
+           1.0	0.9	0.8	0.7	0.6	0.5	0.4	0.3	0.2	0.1	0.0	
+           0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	
+INFO     :          11     3601932            -462        38.0%
+           Worst_slack: -503
+            Slack ratio CDF:
+           1.0	0.9	0.8	0.7	0.6	0.5	0.4	0.3	0.2	0.1	0.0	
+           0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	
+INFO     :          12     3535426            -503        40.7%
+           Worst_slack: -510
+            Slack ratio CDF:
+           1.0	0.9	0.8	0.7	0.6	0.5	0.4	0.3	0.2	0.1	0.0	
+           0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	
+INFO     :          13     3436785            -510        43.8%
+           Worst_slack: -584
+            Slack ratio CDF:
+           1.0	0.9	0.8	0.7	0.6	0.5	0.4	0.3	0.2	0.1	0.0	
+           0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	
+INFO     :          14     3423926            -584        44.8%
+           Worst_slack: -548
+            Slack ratio CDF:
+           1.0	0.9	0.8	0.7	0.6	0.5	0.4	0.3	0.2	0.1	0.0	
+           0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	
+INFO     :          15     3416853            -548        45.6%
+           Worst_slack: -595
+            Slack ratio CDF:
+           1.0	0.9	0.8	0.7	0.6	0.5	0.4	0.3	0.2	0.1	0.0	
+           0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	
+INFO     :          16     3373123            -595        47.2%
+           Worst_slack: -560
+            Slack ratio CDF:
+           1.0	0.9	0.8	0.7	0.6	0.5	0.4	0.3	0.2	0.1	0.0	
+           0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	
+INFO     :          17     3331516            -560        48.8%
+           Worst_slack: -479
+            Slack ratio CDF:
+           1.0	0.9	0.8	0.7	0.6	0.5	0.4	0.3	0.2	0.1	0.0	
+           0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	
+INFO     :          18     3281359            -479        51.3%
+           Worst_slack: -432
+            Slack ratio CDF:
+           1.0	0.9	0.8	0.7	0.6	0.5	0.4	0.3	0.2	0.1	0.0	
+           0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	
+INFO     :          19     3264564            -432        53.6%
+           Worst_slack: -461
+            Slack ratio CDF:
+           1.0	0.9	0.8	0.7	0.6	0.5	0.4	0.3	0.2	0.1	0.0	
+           0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	
+INFO     :          20     3231205            -461        56.0%
+           Worst_slack: -354
+            Slack ratio CDF:
+           1.0	0.9	0.8	0.7	0.6	0.5	0.4	0.3	0.2	0.1	0.0	
+           0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	
+INFO     :          21     3221185            -354        57.2%
+           Worst_slack: -468
+            Slack ratio CDF:
+           1.0	0.9	0.8	0.7	0.6	0.5	0.4	0.3	0.2	0.1	0.0	
+           0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	
+INFO     :          22     3179492            -468        59.9%
+           Worst_slack: -542
+            Slack ratio CDF:
+           1.0	0.9	0.8	0.7	0.6	0.5	0.4	0.3	0.2	0.1	0.0	
+           0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	
+INFO     :          23     3163120            -542        61.5%
+           Worst_slack: -427
+            Slack ratio CDF:
+           1.0	0.9	0.8	0.7	0.6	0.5	0.4	0.3	0.2	0.1	0.0	
+           0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	
+INFO     :          24     3147209            -427        63.9%
+           Worst_slack: -521
+            Slack ratio CDF:
+           1.0	0.9	0.8	0.7	0.6	0.5	0.4	0.3	0.2	0.1	0.0	
+           0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	
+INFO     :          25     3150957            -521        64.0%
+           Worst_slack: -488
+            Slack ratio CDF:
+           1.0	0.9	0.8	0.7	0.6	0.5	0.4	0.3	0.2	0.1	0.0	
+           0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	
+INFO     :          26     3155479            -488        64.5%
+           Worst_slack: -320
+            Slack ratio CDF:
+           1.0	0.9	0.8	0.7	0.6	0.5	0.4	0.3	0.2	0.1	0.0	
+           0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	
+INFO     :          27     3116828            -320        67.1%
+           Worst_slack: -332
+            Slack ratio CDF:
+           1.0	0.9	0.8	0.7	0.6	0.5	0.4	0.3	0.2	0.1	0.0	
+           0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	
+INFO     :          28     3123842            -332        68.0%
+           Worst_slack: -425
+            Slack ratio CDF:
+           1.0	0.9	0.8	0.7	0.6	0.5	0.4	0.3	0.2	0.1	0.0	
+           0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	
+INFO     :          29     3105573            -425        69.5%
+           Worst_slack: -517
+            Slack ratio CDF:
+           1.0	0.9	0.8	0.7	0.6	0.5	0.4	0.3	0.2	0.1	0.0	
+           0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	
+INFO     :          30     3100259            -517        71.3%
+           Worst_slack: -412
+            Slack ratio CDF:
+           1.0	0.9	0.8	0.7	0.6	0.5	0.4	0.3	0.2	0.1	0.0	
+           0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	
+INFO     :          31     3092536            -412        71.6%
+           Worst_slack: -540
+            Slack ratio CDF:
+           1.0	0.9	0.8	0.7	0.6	0.5	0.4	0.3	0.2	0.1	0.0	
+           0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	
+INFO     :          32     3090552            -540        72.4%
+           Worst_slack: -495
+            Slack ratio CDF:
+           1.0	0.9	0.8	0.7	0.6	0.5	0.4	0.3	0.2	0.1	0.0	
+           0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	
+INFO     :          33     3087557            -495        73.2%
+           Worst_slack: -516
+            Slack ratio CDF:
+           1.0	0.9	0.8	0.7	0.6	0.5	0.4	0.3	0.2	0.1	0.0	
+           0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	
+INFO     :          34     3096950            -516        73.6%
+           Worst_slack: -516
+            Slack ratio CDF:
+           1.0	0.9	0.8	0.7	0.6	0.5	0.4	0.3	0.2	0.1	0.0	
+           0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	
+INFO     :          35     3102028            -516        74.4%
+           Worst_slack: -379
+            Slack ratio CDF:
+           1.0	0.9	0.8	0.7	0.6	0.5	0.4	0.3	0.2	0.1	0.0	
+           0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	
+INFO     :          36     3102760            -379        75.3%
+           Worst_slack: -559
+            Slack ratio CDF:
+           1.0	0.9	0.8	0.7	0.6	0.5	0.4	0.3	0.2	0.1	0.0	
+           0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	
+INFO     :          37     3128100            -559        77.3%
+           Worst_slack: -601
+            Slack ratio CDF:
+           1.0	0.9	0.8	0.7	0.6	0.5	0.4	0.3	0.2	0.1	0.0	
+           0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	
+INFO     :          38     3124709            -601        78.0%
+           Worst_slack: -832
+            Slack ratio CDF:
+           1.0	0.9	0.8	0.7	0.6	0.5	0.4	0.3	0.2	0.1	0.0	
+           0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	
+INFO     :          39     3109598            -832        79.5%
+           Worst_slack: -722
+            Slack ratio CDF:
+           1.0	0.9	0.8	0.7	0.6	0.5	0.4	0.3	0.2	0.1	0.0	
+           0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	
+INFO     :          40     3098151            -722        81.1%
+           Worst_slack: -847
+            Slack ratio CDF:
+           1.0	0.9	0.8	0.7	0.6	0.5	0.4	0.3	0.2	0.1	0.0	
+           0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	
+INFO     :          41     3088919            -847        82.2%
+           Worst_slack: -729
+            Slack ratio CDF:
+           1.0	0.9	0.8	0.7	0.6	0.5	0.4	0.3	0.2	0.1	0.0	
+           0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	
+INFO     :          42     3083430            -729        82.9%
+           Worst_slack: -827
+            Slack ratio CDF:
+           1.0	0.9	0.8	0.7	0.6	0.5	0.4	0.3	0.2	0.1	0.0	
+           0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	
+INFO     :          43     3085639            -827        82.9%
+           Worst_slack: -784
+            Slack ratio CDF:
+           1.0	0.9	0.8	0.7	0.6	0.5	0.4	0.3	0.2	0.1	0.0	
+           0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	
+INFO     :          44     3078670            -784        83.4%
+           Worst_slack: -629
+            Slack ratio CDF:
+           1.0	0.9	0.8	0.7	0.6	0.5	0.4	0.3	0.2	0.1	0.0	
+           0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	
+INFO     :          45     3071738            -629        84.4%
+           Worst_slack: -615
+            Slack ratio CDF:
+           1.0	0.9	0.8	0.7	0.6	0.5	0.4	0.3	0.2	0.1	0.0	
+           0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	
+INFO     :          46     3070499            -615        85.1%
+           Worst_slack: -700
+            Slack ratio CDF:
+           1.0	0.9	0.8	0.7	0.6	0.5	0.4	0.3	0.2	0.1	0.0	
+           0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	
+INFO     :          47     3074294            -700        86.3%
+           Worst_slack: -824
+            Slack ratio CDF:
+           1.0	0.9	0.8	0.7	0.6	0.5	0.4	0.3	0.2	0.1	0.0	
+           0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	
+INFO     :          48     3076495            -824        87.2%
+           Worst_slack: -925
+            Slack ratio CDF:
+           1.0	0.9	0.8	0.7	0.6	0.5	0.4	0.3	0.2	0.1	0.0	
+           0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	
+INFO     :          49     3082284            -925        88.6%
+           Worst_slack: -977
+            Slack ratio CDF:
+           1.0	0.9	0.8	0.7	0.6	0.5	0.4	0.3	0.2	0.1	0.0	
+           0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	
+INFO     :          50     3083931            -977        89.4%
+           Worst_slack: -862
+            Slack ratio CDF:
+           1.0	0.9	0.8	0.7	0.6	0.5	0.4	0.3	0.2	0.1	0.0	
+           0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	
+INFO     :          51     3085542            -862        90.0%
+           Worst_slack: -1180
+            Slack ratio CDF:
+           1.0	0.9	0.8	0.7	0.6	0.5	0.4	0.3	0.2	0.1	0.0	
+           0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	
+INFO     :          52     3078969           -1180        91.0%
+           Worst_slack: -1260
+            Slack ratio CDF:
+           1.0	0.9	0.8	0.7	0.6	0.5	0.4	0.3	0.2	0.1	0.0	
+           0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	
+INFO     :          53     3092616           -1260        91.1%
+           Worst_slack: -991
+            Slack ratio CDF:
+           1.0	0.9	0.8	0.7	0.6	0.5	0.4	0.3	0.2	0.1	0.0	
+           0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	
+INFO     :          54     3093854            -991        91.9%
+           Worst_slack: -1581
+            Slack ratio CDF:
+           1.0	0.9	0.8	0.7	0.6	0.5	0.4	0.3	0.2	0.1	0.0	
+           0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	
+INFO     :          55     3100110           -1581        92.6%
+           Worst_slack: -1219
+            Slack ratio CDF:
+           1.0	0.9	0.8	0.7	0.6	0.5	0.4	0.3	0.2	0.1	0.0	
+           0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	
+INFO     :          56     3106889           -1219        93.1%
+           Worst_slack: -1539
+            Slack ratio CDF:
+           1.0	0.9	0.8	0.7	0.6	0.5	0.4	0.3	0.2	0.1	0.0	
+           0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	
+INFO     :          57     3112807           -1539        94.1%
+           Worst_slack: -1594
+            Slack ratio CDF:
+           1.0	0.9	0.8	0.7	0.6	0.5	0.4	0.3	0.2	0.1	0.0	
+           0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	0.00%	
+INFO     :          58     3135092           -1594        94.1%
+INFO     : WHPWL per net of 3.79348e+33using hpwl-dominant global placement tactics
+INFO     : Physical Packing took 125.785225 seconds [FlowMsg::StageDuration]
+INFO     :     Physical Packing took 259.046875 seconds (approximately) in total CPU time [FlowMsg::StageDuration::CPUTime]
+INFO     : Physical Packing virtual memory usage: begin = 334.02 MB, end = 539.984 MB, delta = 205.964 MB [FlowMsg::VMUsage]
+INFO     :     Physical Packing peak virtual memory usage = 540.984 MB [FlowMsg::VMUsage::Peak]
+INFO     : Physical Packing resident set memory usage: begin = 335.012 MB, end = 541.728 MB, delta = 206.716 MB [FlowMsg::RSSUsage]
+INFO     :     Physical Packing peak resident set memory usage = 542.464 MB [FlowMsg::RSSUsage::Peak]
+INFO     : XLR count after merging: 58676
+INFO     : Netlist has 37351 luts, 27764 ffs and 6757 adders [PackerMsg::NetlistStatistics]
+INFO     : Packed into 58676 clusters with 2.5735564(1.0463903) inputs(outputs) per cluster for a total of 151006(61398) inputs(outputs) [PackerMsg::ClusterPackingStatistics]
+INFO     : Packed into 58676 xlrs with 2.5735564(1.0463903) inputs(outputs) per xlr for a total of 151006(61398) inputs(outputs) [PackerMsg::XLRPackingStatistics]
+INFO     : Packed 0 fracturable DSPs into 0 clusters [PackerMsg::DSPPackingStatistics]
+INFO     : Packing took 156.4424608 seconds [FlowMsg::StageDuration]
+INFO     :     Packing took 384.140625 seconds (approximately) in total CPU time [FlowMsg::StageDuration::CPUTime]
+INFO     : Packing virtual memory usage: begin = 59.592 MB, end = 595.792 MB, delta = 536.2 MB [FlowMsg::VMUsage]
+INFO     :     Packing peak virtual memory usage = 596.04 MB [FlowMsg::VMUsage::Peak]
+INFO     : Packing resident set memory usage: begin = 63.716 MB, end = 572.896 MB, delta = 509.18 MB [FlowMsg::RSSUsage]
+INFO     :     Packing peak resident set memory usage = 572.896 MB [FlowMsg::RSSUsage::Peak]
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:53] No clocks matched 'jtag_inst2_TCK'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:53] set_output_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:53] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:54] No clocks matched 'jtag_inst2_TCK'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:54] set_output_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:54] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:55] No clocks matched 'jtag_inst2_TCK'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:55] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:55] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:56] No clocks matched 'jtag_inst2_TCK'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:56] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:56] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'jtag_inst2_RESET'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:57] No clocks matched 'jtag_inst2_TCK'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:57] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:57] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'jtag_inst2_RESET'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:58] No clocks matched 'jtag_inst2_TCK'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:58] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:58] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:59] No clocks matched 'jtag_inst2_TCK'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:59] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:59] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:60] No clocks matched 'jtag_inst2_TCK'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:60] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:60] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'jtag_inst2_UPDATE'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:61] No clocks matched 'jtag_inst2_TCK'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:61] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:61] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'jtag_inst2_UPDATE'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:62] No clocks matched 'jtag_inst2_TCK'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:62] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:62] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:63] No clocks matched 'jtag_inst2_TCK'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:63] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:63] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:64] No clocks matched 'jtag_inst2_TCK'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:64] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:64] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'ddr_addr[14]'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:103] set_output_delay: No valid output port(s) found
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:103] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING  : No ports matched 'ddr_addr[14]'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:104] set_output_delay: No valid output port(s) found
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:104] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING  : No ports matched 'ddr_addr[15]'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:105] set_output_delay: No valid output port(s) found
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:105] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING  : No ports matched 'ddr_addr[15]'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:106] set_output_delay: No valid output port(s) found
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:106] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING  : No pins matched 'camera_source_fps*~FF|D'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:377] set_max_delay: Object(s) specified for -to option contains no vaild endpoints
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:377] Unable to run 'set_max_delay' constraint due to warnings found
+WARNING  : No pins matched 'camera_source_fps*~FF|D'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:378] set_min_delay: Object(s) specified for -to option contains no vaild endpoints
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:378] Unable to run 'set_min_delay' constraint due to warnings found
+WARNING  : No pins matched 'u_nn_fps_osd/status_meta*~FF|D'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:385] set_false_path: Object(s) specified for -to option contains no vaild endpoints
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:385] Unable to run 'set_false_path' constraint due to warnings found
+WARNING  : No pins matched 'u_video_diag/core_reset*~FF|SR'
+WARNING  : No pins matched 'u_video_diag/cpu_reset*~FF|SR'
+INFO     : SDC file 'C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc' parsed successfully.
+INFO     : Reading core interface constraints file "C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/outflow/ti60f225_oob.interface.csv" [DBMsg::CoreInterfaceConstraintsFileReading]
+INFO     : Successfully read core interface constraints file "C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/outflow/ti60f225_oob.interface.csv" [DBMsg::CoreInterfaceConstraintsFileLoadSuccess]
+INFO     : Counting 1 clocks that are not assigned to clock resources as global clocks.
+WARNING  : Synchronizer chain starting at cell u_camera_frontend/u_sensor_release/release_sync[0]~FF is driven by a non-sequential source VCC:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_hdmi_stream/u_source_release/release_sync[0]~FF is driven by a non-sequential source VCC:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_c_soc/u_EfxSapphireSoc/system_hardJtag_debug_logic_jtagBridge/system_rsp_payload_data[2]~FF is driven by a non-sequential source LUT__178427:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_live_nn_display/pixel_fault_meta~FF is driven by a non-sequential source GND:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell inst_efx_csi2_rx/u_efx_csi2_rx/csi2_rx_top_inst/genblk2.lane_aligner_inst/genblk1[1].u1_inst/genblk2.efx_resetsync_a_rst/active_high.efx_resetsync_active_high/async_reg[0][0]~FF is driven by a non-sequential source GND:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_c_soc/u_EfxSapphireSoc/system_uart_0_io_logic/uartCtrl_1/rx/io_rxd_buffercc/buffers_0~FF is driven by a non-sequential source system_uart_0_io_rxd:inpad [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_hdmi_frontend/u_hdmi_frames_cdc/u_destination_release/release_sync[0]~FF is driven by a non-sequential source VCC:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_net_endpoint/cpu_release[0]~FF is driven by a non-sequential source VCC:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_camera_release/release_sync[0]~FF is driven by a non-sequential source VCC:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_image_service/mailbox/cpu_release/release_sync[0]~FF is driven by a non-sequential source VCC:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell inst_efx_csi2_rx/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/u1_inst/genblk2.genblk1.efx_resetsync_wr_rst/active_high.efx_resetsync_active_high/async_reg[0][0]~FF is driven by a non-sequential source GND:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_camera_frontend/u_statistics/u_destination_release/release_sync[0]~FF is driven by a non-sequential source VCC:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_ddr3_top/u_phy_top/u_ddr_phy_if/ddr_wren_r3~FF is driven by a non-sequential source u_ddr3_top/u_phy_top/u_ddr_phy_if/i189_2:Q [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_ddr3_top/u_phy_top/u_ddr_phy_if/u2_ctl_fifo/u_efx_fifo_top/genblk2.wr_rst[0]~FF is driven by a non-sequential source GND:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_camera_frontend/u_gains/u_source_release/release_sync[0]~FF is driven by a non-sequential source VCC:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_rx_release/release_sync[0]~FF is driven by a non-sequential source VCC:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_hdmi_frontend/u_hdmi_diag/u_snapshot/u_source_release/release_sync[0]~FF is driven by a non-sequential source VCC:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_hdmi_frontend/u_hdmi_sink/u_edid/scl_sync[0]~FF is driven by a non-sequential source FPGA_HDMI_SCL_IN:inpad [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_video_diag/pixel_reset[0]~FF is driven by a non-sequential source GND:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_c_soc/u_EfxSapphireSoc/system_hardJtag_debug_logic_jtagBridge/system_rsp_payload_error~FF is driven by a non-sequential source GND:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_hdmi_stream/u_dest_release/release_sync[0]~FF is driven by a non-sequential source VCC:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_c_soc/u_EfxSapphireSoc/system_hardJtag_debug_logic_jtagBridge/system_rsp_payload_data[1]~FF is driven by a non-sequential source LUT__178428:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_ddr3_top/lb2_axi_clk.u_lb2_axi_clk/u1_cmd_fifo/u_efx_fifo_top/genblk2.rd_rst[0]~FF is driven by a non-sequential source GND:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_frame_snapshot/u_apb/d_reset[0]~FF is driven by a non-sequential source GND:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell inst_efx_csi2_rx/u_efx_csi2_rx/csi2_rx_top_inst/genblk2.lane_aligner_inst/genblk1[2].u1_inst/genblk2.efx_resetsync_a_rst/active_high.efx_resetsync_active_high/async_reg[0][0]~FF is driven by a non-sequential source GND:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_c_soc/u_EfxSapphireSoc/system_cores_0_debugReset_asyncAssertSyncDeassert_buffercc/buffers_0~FF is driven by a non-sequential source GND:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_ddr3_top/u_phy_top/u_ddr_phy_if/u1_cmd_fifo/u_efx_fifo_top/genblk2.rd_rst[0]~FF is driven by a non-sequential source GND:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_hdmi_frontend/u_hdmi_adapter/link_sync[0]~FF is driven by a non-sequential source hdmi_rx_pll_LOCKED:inpad [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_ddr3_top/u_phy_top/u_ddr_phy_if/u3_dout_fifo/u_efx_fifo_top/genblk2.rd_rst[0]~FF is driven by a non-sequential source GND:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_ddr3_top/u_phy_top/u_ddr_phy_if/u4_din_fifo/u_efx_fifo_top/genblk2.rd_rst[0]~FF is driven by a non-sequential source GND:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_camera_fps_monitor/u_capture_fps_cdc/u_source_release/release_sync[0]~FF is driven by a non-sequential source VCC:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_display_view_control/button_meta~FF is driven by a non-sequential source display_sw1_n:inpad [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_image_service/mailbox/cpu_reset_sync[0]~FF is driven by a non-sequential source GND:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_camera_frontend/u_lines/u_source_release/release_sync[0]~FF is driven by a non-sequential source VCC:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_net_physical/run_pipe[0]~FF is driven by a non-sequential source VCC:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_camera_frontend/u_pixel_release/release_sync[0]~FF is driven by a non-sequential source VCC:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_net_endpoint/u_mailbox/nr[0]~FF is driven by a non-sequential source VCC:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_source_control/button_sync[0]~FF is driven by a non-sequential source fisheye_sw3_n:inpad [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell g_rgbx_ddr.u_capture/ready_sync[0]~FF is driven by a non-sequential source LUT__185832:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_c_soc/u_EfxSapphireSoc/system_hardJtag_debug_logic_jtagBridge/system_rsp_payload_data[0]~FF is driven by a non-sequential source LUT__178430:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_ddr3_top/lb2_axi_clk.u_lb2_axi_clk/u3_dout_fifo/u_efx_fifo_top/genblk2.rd_rst[0]~FF is driven by a non-sequential source GND:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_source_control/u_release/release_sync[0]~FF is driven by a non-sequential source VCC:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_source_snapshot/u_source_release/release_sync[0]~FF is driven by a non-sequential source VCC:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell inst_efx_csi2_rx/u_efx_csi2_rx/csi2_rx_top_inst/genblk2.lane_aligner_inst/genblk1[3].u1_inst/genblk2.efx_resetsync_a_rst/active_high.efx_resetsync_active_high/async_reg[0][0]~FF is driven by a non-sequential source GND:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_c_nn_bridge/dst_reset[0]~FF is driven by a non-sequential source GND:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_c_soc/u_EfxSapphireSoc/io_asyncReset_asyncAssertSyncDeassert_buffercc/buffers_0~FF is driven by a non-sequential source GND:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_ddr3_top/lb2_axi_clk.u_lb2_axi_clk/u1_cmd_fifo/u_efx_fifo_top/genblk2.wr_rst[0]~FF is driven by a non-sequential source GND:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_c_soc/u_EfxSapphireSoc/system_hardJtag_debug_logic_jtagBridge/system_rsp_payload_data[4]~FF is driven by a non-sequential source LUT__178422:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_ddr3_top/lb2_axi_clk.u_lb2_axi_clk/u2_din_fifo/u_efx_fifo_top/genblk2.rd_rst[0]~FF is driven by a non-sequential source GND:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_ddr3_top/u_phy_top/u_ddr_phy_if/u1_cmd_fifo/u_efx_fifo_top/genblk2.wr_rst[0]~FF is driven by a non-sequential source GND:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell g_rgbx_ddr.u_capture/u_stream_fifo/u_writer_release/release_sync[0]~FF is driven by a non-sequential source VCC:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell inst_efx_csi2_rx/u_efx_csi2_rx/csi2_rx_top_inst/genblk3.byte2pixel_inst/u1_inst/genblk2.genblk1.efx_resetsync_rd_rst/active_high.efx_resetsync_active_high/async_reg[0][0]~FF is driven by a non-sequential source GND:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_hdmi_frontend/u_hdmi_skipped_cdc/u_source_release/release_sync[0]~FF is driven by a non-sequential source VCC:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_hdmi_stream/u_fifo/u_writer_release/release_sync[0]~FF is driven by a non-sequential source VCC:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_camera_frontend/u_gains/u_destination_release/release_sync[0]~FF is driven by a non-sequential source VCC:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_ddr3_top/u_phy_top/u_ddr_phy_if/u3_dout_fifo/u_efx_fifo_top/genblk2.wr_rst[0]~FF is driven by a non-sequential source GND:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_ddr3_top/u_phy_top/u_ddr_phy_if/u4_din_fifo/u_efx_fifo_top/genblk2.wr_rst[0]~FF is driven by a non-sequential source GND:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_live_nn_display/swap_meta~FF is driven by a non-sequential source LUT__180700:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_hdmi_frontend/u_hdmi_diag/u_snapshot/u_destination_release/release_sync[0]~FF is driven by a non-sequential source VCC:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_image_service/mailbox/core_release/release_sync[0]~FF is driven by a non-sequential source VCC:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell g_rgbx_ddr.u_capture/hold_pixel_sync[0]~FF is driven by a non-sequential source LUT__183719:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_ddr3_top/u_phy_top/u_ddr_phy_if/i538_2 is driven by a non-sequential source LUT__168954:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_hdmi_frontend/u_hdmi_sink/lock_sync[0]~FF is driven by a non-sequential source hdmi_rx_pll_LOCKED:inpad [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_hdmi_frontend/u_hdmi_frames_cdc/u_source_release/release_sync[0]~FF is driven by a non-sequential source VCC:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_hdmi_frontend/u_hdmi_sink/u_edid/sda_sync[0]~FF is driven by a non-sequential source FPGA_HDMI_SDA_IN:inpad [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_c_nn_bridge/src_reset[0]~FF is driven by a non-sequential source GND:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_ddr3_top/lb2_axi_clk.u_lb2_axi_clk/u3_dout_fifo/u_efx_fifo_top/genblk2.wr_rst[0]~FF is driven by a non-sequential source GND:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_c_camera_bridge/cr[0]~FF is driven by a non-sequential source GND:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell style_sw2_sync[0]~FF is driven by a non-sequential source style_sw2_n:inpad [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_c_nn_bridge/irq_sync[0]~FF is driven by a non-sequential source LUT__188639:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_net_endpoint/u_mailbox/cr[0]~FF is driven by a non-sequential source VCC:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_camera_fps_monitor/u_capture_fps_cdc/u_destination_release/release_sync[0]~FF is driven by a non-sequential source VCC:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_ddr3_top/lb2_axi_clk.u_lb2_axi_clk/u2_din_fifo/u_efx_fifo_top/genblk2.wr_rst[0]~FF is driven by a non-sequential source GND:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_camera_frontend/u_lines/u_pair_release/release_sync[0]~FF is driven by a non-sequential source VCC:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_tx_release/release_sync[0]~FF is driven by a non-sequential source VCC:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_c_soc/u_EfxSapphireSoc/debugCd_logic_outputReset_asyncAssertSyncDeassert_buffercc/buffers_0~FF is driven by a non-sequential source GND:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_camera_frontend/u_statistics/u_source_release/release_sync[0]~FF is driven by a non-sequential source VCC:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_ddr3_top/u_phy_top/u_ddr_phy_if/dq_check_en_r3~FF is driven by a non-sequential source u_ddr3_top/u_phy_top/u_ddr_phy_if/i364_2:Q [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_net_endpoint/net_release[0]~FF is driven by a non-sequential source VCC:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_camera_frontend/u_pair_release/release_sync[0]~FF is driven by a non-sequential source VCC:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_ddr3_top/u_phy_top/u_ddr_phy_if/i189_2 is driven by a non-sequential source LUT__168898:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_net_physical/osc_release[0]~FF is driven by a non-sequential source VCC:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_c_soc/u_EfxSapphireSoc/system_hardJtag_debug_logic_jtagBridge/system_rsp_valid~FF is driven by a non-sequential source GND:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell inst_efx_csi2_rx/u_efx_csi2_rx/csi2_rx_top_inst/genblk2.lane_aligner_inst/genblk1[0].u1_inst/genblk2.efx_resetsync_a_rst/active_high.efx_resetsync_active_high/async_reg[0][0]~FF is driven by a non-sequential source GND:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_camera_frontend/u_ctrl_release/release_sync[0]~FF is driven by a non-sequential source VCC:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_source_snapshot/u_destination_release/release_sync[0]~FF is driven by a non-sequential source VCC:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_frame_snapshot/u_apb/s_reset[0]~FF is driven by a non-sequential source GND:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_c_soc/u_EfxSapphireSoc/system_hardJtag_debug_logic_jtagBridge/system_rsp_payload_data[3]~FF is driven by a non-sequential source LUT__178426:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_hdmi_frontend/u_hdmi_sink/power_sync[0]~FF is driven by a non-sequential source HDMI_5V_N:inpad [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_hdmi_frontend/u_hdmi_skipped_cdc/u_destination_release/release_sync[0]~FF is driven by a non-sequential source VCC:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_nn_core_release/release_sync[0]~FF is driven by a non-sequential source VCC:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_ddr3_top/u_phy_top/u_ddr_phy_if/ddr_rden_r3~FF is driven by a non-sequential source u_ddr3_top/u_phy_top/u_ddr_phy_if/i538_2:Q [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_ddr3_top/u_phy_top/u_ddr_phy_if/u2_ctl_fifo/u_efx_fifo_top/genblk2.rd_rst[0]~FF is driven by a non-sequential source GND:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell g_rgbx_ddr.u_capture/u_stream_fifo/u_reader_release/release_sync[0]~FF is driven by a non-sequential source VCC:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_hdmi_frontend/u_hdmi_diag/lock_sync[0]~FF is driven by a non-sequential source hdmi_rx_pll_LOCKED:inpad [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_hdmi_stream/u_fifo/u_reader_release/release_sync[0]~FF is driven by a non-sequential source VCC:O [FlowMsg::SyncHeadDrivenByNonSeq]
+WARNING  : Synchronizer chain starting at cell u_source_mux/request_sync[0]~FF is driven by a non-sequential source LUT__180220:O [FlowMsg::SyncHeadDrivenByNonSeq]
+INFO     : Starting Global Placer with 8 threads ...
+            ----------     -------  --------------     -------
+             Iteration       WHPWL Worst Slack (ps) Convergence
+            ----------     -------  --------------     -------
+INFO     :           1    66006252              94         1.8%
+INFO     :           2    52189704              45         2.2%
+INFO     :           3    40381324             -59         3.2%
+INFO     :           4    29399840             -74         6.2%
+INFO     :           5    19258758              47        11.6%
+INFO     :           6    13405508            -196        21.4%
+INFO     :           7     9890570            -302        31.6%
+INFO     :           8     8833422            -413        36.0%
+INFO     :           9     7841133            -548        44.7%
+INFO     :          10     7136093            -658        50.9%
+INFO     :          11     6617875            -487        56.7%
+INFO     :          12     6481630            -701        58.5%
+INFO     :          13     6313477            -373        60.5%
+INFO     :          14     6334840            -421        60.5%
+INFO     :          15     6069967            -509        64.0%
+INFO     :          16     5768644            -803        66.4%
+INFO     :          17     5677991            -821        67.4%
+INFO     :          18     5642922            -619        68.3%
+INFO     :          19     5657300            -886        68.9%
+INFO     :          20     5547744            -631        70.8%
+INFO     :          21     5541042            -402        72.0%
+INFO     :          22     5590955            -567        72.0%
+INFO     :          23     5398759            -596        75.5%
+INFO     :          24     5253051            -588        78.9%
+INFO     :          25     5179252            -484        80.0%
+INFO     :          26     5162841            -686        81.1%
+INFO     :          27     5132018            -581        82.3%
+INFO     :          28     5101132            -586        83.7%
+INFO     :          29     5083868            -813        84.9%
+INFO     :          30     5060182           -1043        86.0%
+INFO     :          31     5040316           -1113        87.2%
+INFO     :          32     5028315           -1105        88.4%
+INFO     :          33     5034472            -986        89.5%
+INFO     :          34     5054019           -1042        90.5%
+INFO     :          35     5083343            -963        91.4%
+INFO     :          36     5131310           -1083        92.4%
+INFO     :          37     5159261           -1068        93.2%
+INFO     :          38     5440423           -1106        93.2%
+INFO     :          39     5306550           -1340        94.6%
+INFO     :          40     5304088           -1193        95.9%
+INFO     :          41     5177926           -1389        95.9%
+INFO     :          42     5184567           -1150        98.3%
+INFO     :          43     5205996           -1077        98.8%
+INFO     :          44     5211274           -1318        99.1%
+INFO     :          45     5222599           -1431        99.1%
+INFO     :          46     5237463           -1440        99.2%
+INFO     :          47     5255783           -1510        99.3%
+INFO     : GP: best_placement: wpd: 7856.93
+INFO     : Starting Annealer
+            ----------     -------  --------------     -------
+             Iteration       WHPWL  Delay Max (ps)     R Limit
+            ----------     -------  --------------     -------
+INFO     :           0     5346818            9196        30.0
+INFO     :           1    18788127            7127        90.0
+INFO     :           2    17479899            6985        90.0
+INFO     :           3    16165793            2490        27.3
+INFO     :           4    14140626            2487        26.4
+INFO     :           5    13633838            2508        25.6
+INFO     :           6    12145444            2350        24.7
+INFO     :           7    12134964            7930        23.8
+INFO     :           8    11553015            7933        23.0
+INFO     :           9    11700701            2232        22.2
+INFO     :          10    11348495            7886        21.4
+INFO     :          11    11500529            2191        20.7
+INFO     :          12    10609506            2191        19.9
+INFO     :          13    10133641            2221        19.2
+INFO     :          14     9830516            2143        18.4
+INFO     :          15     9033897            2243        17.7
+INFO     :          16     8693695            2157        17.0
+INFO     :          17     8451339            2163        16.3
+INFO     :          18     8290249            2162        15.6
+INFO     :          19     8222201            2147        15.0
+INFO     :          20     7767735            2191        14.4
+INFO     :          21     7629391            2203        13.8
+INFO     :          22     7296634            2191        13.2
+INFO     :          23     7270343            2091        12.6
+INFO     :          24     7090738            2118        12.1
+INFO     :          25     7063468            2091        11.6
+INFO     :          26     6678525            2091        11.1
+INFO     :          27     6639548            2091        10.6
+INFO     :          28     6473108            2186        10.1
+INFO     :          29     6419510            2139         9.7
+INFO     :          30     6228418            2186         9.2
+INFO     :          31     6129195            2170         8.8
+INFO     :          32     5974775            2122         8.4
+INFO     :          33     5947601            2091         8.0
+INFO     :          34     5782327            2091         7.7
+INFO     :          35     5664407            2091         7.3
+INFO     :          36     5535471            2091         6.9
+INFO     :          37     5417627            2091         6.6
+INFO     :          38     5323988            2091         6.2
+INFO     :          39     5258923            2091         5.9
+INFO     :          40     5176800            2091         5.6
+INFO     :          41     5130489            2091         5.3
+INFO     :          42     5058287            2091         5.0
+INFO     :          43     4996308            2091         4.7
+INFO     :          44     4932337            2091         4.4
+INFO     :          45     4867598            2091         4.2
+INFO     :          46     4819631            2091         4.0
+INFO     :          47     4771433            2091         3.7
+INFO     :          48     4738372            2091         3.5
+INFO     :          49     4682444            2091         3.3
+INFO     :          50     4644158            2091         3.1
+INFO     :          51     4608918            2091         2.9
+INFO     :          52     4573092            2091         2.7
+INFO     :          53     4538501            2091         2.5
+INFO     :          54     4511373            2091         2.3
+INFO     :          55     4475462            2091         2.2
+INFO     :          56     4449531            2091         2.0
+INFO     :          57     4418430            2091         1.9
+INFO     :          58     4405162            2091         1.8
+INFO     :          59     4377553            2091         1.6
+INFO     :          60     4356364            2091         1.5
+INFO     :          61     4334371            2091         1.4
+INFO     :          62     4310627            2091         1.3
+INFO     :          63     4293767            2091         1.2
+INFO     :          64     4274811            2091         1.1
+INFO     :          65     4258945            2091         1.0
+INFO     :          66     4246480            2091         1.0
+INFO     :          67     4237183            2091         1.0
+INFO     :          68     4226492            2091         1.0
+INFO     :          69     4217000            2091         1.0
+INFO     :          70     4211295            2091         1.0
+INFO     :          71     4201949            2091         1.0
+INFO     :          72     4191158            2091         1.0
+INFO     : DP: best_placement: wpd: 18.1019
+INFO     : Placement successful: 59074 cells are placed
+INFO     : Peak congestion smeared over 4x4 of the chip is 2.13239 at 7,121
+INFO     : Peak congestion smeared over 1/16 of the chip is 1.56207 at 164,59
+INFO     : Peak congestion smeared over 1/4 of the chip is 1.2476 at 123,165
+INFO     : Congestion-weighted HPWL per net: 54.2803
+INFO     : Post-placement cluster-level checks is successful
+INFO     : Post-placement primitive-level checks is successful
+INFO     : Placement took 436.8193973 seconds [FlowMsg::StageDuration]
+INFO     :     Placement took 1904.71875 seconds (approximately) in total CPU time [FlowMsg::StageDuration::CPUTime]
+INFO     : Placement virtual memory usage: begin = 148.464 MB, end = 359.772 MB, delta = 211.308 MB [FlowMsg::VMUsage]
+INFO     :     Placement peak virtual memory usage = 596.04 MB [FlowMsg::VMUsage::Peak]
+INFO     : Placement resident set memory usage: begin = 167.66 MB, end = 380.304 MB, delta = 212.644 MB [FlowMsg::RSSUsage]
+INFO     :     Placement peak resident set memory usage = 572.916 MB [FlowMsg::RSSUsage::Peak]
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:53] No clocks matched 'jtag_inst2_TCK'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:53] set_output_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:53] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:54] No clocks matched 'jtag_inst2_TCK'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:54] set_output_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:54] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:55] No clocks matched 'jtag_inst2_TCK'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:55] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:55] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:56] No clocks matched 'jtag_inst2_TCK'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:56] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:56] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'jtag_inst2_RESET'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:57] No clocks matched 'jtag_inst2_TCK'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:57] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:57] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'jtag_inst2_RESET'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:58] No clocks matched 'jtag_inst2_TCK'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:58] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:58] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:59] No clocks matched 'jtag_inst2_TCK'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:59] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:59] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:60] No clocks matched 'jtag_inst2_TCK'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:60] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:60] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'jtag_inst2_UPDATE'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:61] No clocks matched 'jtag_inst2_TCK'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:61] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:61] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'jtag_inst2_UPDATE'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:62] No clocks matched 'jtag_inst2_TCK'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:62] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:62] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:63] No clocks matched 'jtag_inst2_TCK'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:63] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:63] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:64] No clocks matched 'jtag_inst2_TCK'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:64] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:64] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'ddr_addr[14]'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:103] set_output_delay: No valid output port(s) found
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:103] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING  : No ports matched 'ddr_addr[14]'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:104] set_output_delay: No valid output port(s) found
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:104] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING  : No ports matched 'ddr_addr[15]'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:105] set_output_delay: No valid output port(s) found
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:105] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING  : No ports matched 'ddr_addr[15]'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:106] set_output_delay: No valid output port(s) found
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:106] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING  : No pins matched 'camera_source_fps*~FF|D'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:377] set_max_delay: Object(s) specified for -to option contains no vaild endpoints
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:377] Unable to run 'set_max_delay' constraint due to warnings found
+WARNING  : No pins matched 'camera_source_fps*~FF|D'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:378] set_min_delay: Object(s) specified for -to option contains no vaild endpoints
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:378] Unable to run 'set_min_delay' constraint due to warnings found
+WARNING  : No pins matched 'u_nn_fps_osd/status_meta*~FF|D'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:385] set_false_path: Object(s) specified for -to option contains no vaild endpoints
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:385] Unable to run 'set_false_path' constraint due to warnings found
+WARNING  : No pins matched 'u_video_diag/core_reset*~FF|SR'
+WARNING  : No pins matched 'u_video_diag/cpu_reset*~FF|SR'
+INFO     : SDC file 'C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc' parsed successfully.
+Maximum possible analyzed clocks frequency
+    Clock Name      Period (ns)  Frequency (MHz)     Edge
+tx_cal_clk_90edge      2.045        488.998         (R-R)
+sdram_clk              1.834        545.256         (R-R)
+rx_cal_clk             2.111        473.709         (R-R)
+tx_cal_clk             2.217        451.060         (R-R)
+hdmi_tx_slow_clk       5.305        188.501         (R-R)
+mipi_tx_feedback100    6.454        154.943         (R-R)
+core_clk               5.329        187.652         (R-R)
+hdmi_rx_slow_clk       3.792        263.713         (R-R)
+jtag_inst2_TCK         2.539        393.856         (R-R)
+i_mipi_rx_pclk         3.851        259.673         (R-R)
+vid_clk_dvi2           4.348        229.991         (R-R)
+i_cam_ck_CLKOUT        4.139        241.604         (R-R)
+rxc                    7.031        142.227         (R-R)
+osc_inst1_CLKOUT       3.444        290.360         (R-R)
+
+Geomean max period: 3.556
+
+Setup (Max) Clock Relationship
+   Launch Clock        Capture Clock    Constraint (ns)     Slack (ns)          Edge
+tx_cal_clk_90edge   tx_cal_clk_90edge         2.500            0.455           (R-R)
+tx_cal_clk_90edge   tx_cal_clk                2.500            1.156           (R-R)
+tx_cal_clk_90edge   mipi_tx_feedback100       2.500            2.094           (R-R)
+sdram_clk           tx_cal_clk_90edge         2.500            1.081           (R-R)
+sdram_clk           sdram_clk                 2.500            0.666           (R-R)
+rx_cal_clk          rx_cal_clk                2.500            0.389           (R-R)
+tx_cal_clk          tx_cal_clk                2.500            0.283           (R-R)
+hdmi_tx_slow_clk    hdmi_tx_slow_clk          6.734            1.429           (R-R)
+hdmi_tx_slow_clk    mipi_tx_feedback100       0.002            7.079           (R-R)
+hdmi_tx_slow_clk    core_clk                  0.002            6.253           (R-R)
+hdmi_tx_slow_clk    hdmi_rx_slow_clk          6.734            6.250           (R-R)
+mipi_tx_feedback100 tx_cal_clk_90edge         2.500            1.362           (R-R)
+mipi_tx_feedback100 mipi_tx_feedback100      10.000            3.546           (R-R)
+mipi_tx_feedback100 core_clk                  1.250            1.692           (R-R)
+mipi_tx_feedback100 vid_clk_dvi2              0.004           12.579           (R-R)
+mipi_tx_feedback100 i_cam_ck_CLKOUT          10.000            9.097           (R-R)
+mipi_tx_feedback100 rxc                       2.000            7.154           (R-R)
+core_clk            hdmi_tx_slow_clk          0.002            5.766           (R-R)
+core_clk            mipi_tx_feedback100       1.250            5.445           (R-R)
+core_clk            core_clk                  6.250            0.921           (R-R)
+hdmi_rx_slow_clk    hdmi_tx_slow_clk          6.734           12.984           (R-R)
+hdmi_rx_slow_clk    mipi_tx_feedback100       0.004            8.939           (R-R)
+hdmi_rx_slow_clk    hdmi_rx_slow_clk         13.468            9.676           (R-R)
+jtag_inst2_TCK      jtag_inst2_TCK          100.000           97.461           (R-R)
+i_mipi_rx_pclk      i_mipi_rx_pclk           20.000           16.149           (R-R)
+i_mipi_rx_pclk      vid_clk_dvi2              0.004           12.748           (R-R)
+i_mipi_rx_pclk      i_cam_ck_CLKOUT          10.000            8.684           (R-R)
+vid_clk_dvi2        hdmi_tx_slow_clk          6.734            4.092           (R-R)
+vid_clk_dvi2        vid_clk_dvi2             13.468            9.120           (R-R)
+i_cam_ck_CLKOUT     i_mipi_rx_pclk           10.000            9.057           (R-R)
+i_cam_ck_CLKOUT     i_cam_ck_CLKOUT          10.000            5.861           (R-R)
+rxc                 mipi_tx_feedback100       2.000            5.011           (R-R)
+rxc                 rxc                       8.000            0.969           (R-R)
+osc_inst1_CLKOUT    osc_inst1_CLKOUT        100.000           96.556           (R-R)
+
+Hold (Min) Clock Relationship
+   Launch Clock        Capture Clock    Constraint (ns)     Slack (ns)          Edge
+tx_cal_clk_90edge   tx_cal_clk_90edge        0.000            -0.321           (R-R)
+tx_cal_clk_90edge   tx_cal_clk               0.000             0.959           (R-R)
+tx_cal_clk_90edge   mipi_tx_feedback100      0.000             0.149           (R-R)
+sdram_clk           tx_cal_clk_90edge        0.000             0.659           (R-R)
+sdram_clk           sdram_clk                0.000            -0.528           (R-R)
+rx_cal_clk          rx_cal_clk               0.000            -0.529           (R-R)
+tx_cal_clk          tx_cal_clk               0.000            -0.526           (R-R)
+hdmi_tx_slow_clk    hdmi_tx_slow_clk         0.000             0.098           (R-R)
+hdmi_tx_slow_clk    mipi_tx_feedback100      0.000             0.196           (R-R)
+hdmi_tx_slow_clk    core_clk                 0.000             0.195           (R-R)
+hdmi_tx_slow_clk    hdmi_rx_slow_clk         0.000             0.196           (R-R)
+mipi_tx_feedback100 tx_cal_clk_90edge        0.000             0.149           (R-R)
+mipi_tx_feedback100 mipi_tx_feedback100      0.000            -0.651           (R-R)
+mipi_tx_feedback100 core_clk                 0.000             0.149           (R-R)
+mipi_tx_feedback100 vid_clk_dvi2             0.000             0.241           (R-R)
+mipi_tx_feedback100 i_cam_ck_CLKOUT          0.000             0.195           (R-R)
+mipi_tx_feedback100 rxc                      0.000             0.228           (R-R)
+core_clk            hdmi_tx_slow_clk         0.000             0.195           (R-R)
+core_clk            mipi_tx_feedback100      0.000             0.149           (R-R)
+core_clk            core_clk                 0.000            -0.759           (R-R)
+hdmi_rx_slow_clk    hdmi_tx_slow_clk         0.000             0.195           (R-R)
+hdmi_rx_slow_clk    mipi_tx_feedback100      0.000             0.195           (R-R)
+hdmi_rx_slow_clk    hdmi_rx_slow_clk         0.000             0.179           (R-R)
+jtag_inst2_TCK      jtag_inst2_TCK           0.000             0.179           (R-R)
+i_mipi_rx_pclk      i_mipi_rx_pclk           0.000             0.179           (R-R)
+i_mipi_rx_pclk      vid_clk_dvi2             0.000             0.219           (R-R)
+i_mipi_rx_pclk      i_cam_ck_CLKOUT          0.000             0.195           (R-R)
+vid_clk_dvi2        hdmi_tx_slow_clk         0.000             0.229           (R-R)
+vid_clk_dvi2        vid_clk_dvi2             0.000             0.179           (R-R)
+i_cam_ck_CLKOUT     i_mipi_rx_pclk           0.000             0.195           (R-R)
+i_cam_ck_CLKOUT     i_cam_ck_CLKOUT          0.000             0.179           (R-R)
+rxc                 mipi_tx_feedback100      0.000             0.195           (R-R)
+rxc                 rxc                      0.000            -0.604           (R-R)
+osc_inst1_CLKOUT    osc_inst1_CLKOUT         0.000             0.179           (R-R)
+
+WARNING  : Clock domain between tx_cal_clk_90edge (rising) and tx_cal_clk_90edge (rising) may not meet (slack: -0.321 ns) the hold (min) timing requirement
+WARNING  : Clock domain between sdram_clk (rising) and sdram_clk (rising) may not meet (slack: -0.528 ns) the hold (min) timing requirement
+WARNING  : Clock domain between rx_cal_clk (rising) and rx_cal_clk (rising) may not meet (slack: -0.529 ns) the hold (min) timing requirement
+WARNING  : Clock domain between tx_cal_clk (rising) and tx_cal_clk (rising) may not meet (slack: -0.526 ns) the hold (min) timing requirement
+WARNING  : Clock domain between mipi_tx_feedback100 (rising) and mipi_tx_feedback100 (rising) may not meet (slack: -0.651 ns) the hold (min) timing requirement
+WARNING  : Clock domain between core_clk (rising) and core_clk (rising) may not meet (slack: -0.759 ns) the hold (min) timing requirement
+WARNING  : Clock domain between rxc (rising) and rxc (rising) may not meet (slack: -0.604 ns) the hold (min) timing requirement
+INFO     : Write Timing Report to "outflow/ti60f225_oob.place.timing.rpt" ...
+INFO     : ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+INFO     : Router Setup
+INFO     : ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+INFO     : High utilization design detected; tuning for routability.
+INFO     : [Setup Parallel Routing Scheduler]
+INFO     : ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+INFO     : Route Circuit with 8 threads
+INFO     : ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+INFO     : Beneficial skew enabled! Optimizing clock skews ... 
+INFO     : Non-legalized beneficial skew improved geomean CPD by 1.24% (from 3547ps to 3503ps)
+INFO     : CSS improved CPD of clock tx_cal_clk_90edge by 2.38% (from 2105ps to 2055ps)
+INFO     : CSS improved CPD of clock sdram_clk by 0.00% (from 1927ps to 1927ps)
+INFO     : CSS improved CPD of clock rx_cal_clk by 14.32% (from 2382ps to 2041ps)
+INFO     : CSS improved CPD of clock tx_cal_clk by 0.00% (from 2131ps to 2131ps)
+INFO     : CSS improved CPD of clock hdmi_tx_slow_clk by 0.00% (from 5010ps to 5010ps)
+INFO     : CSS improved CPD of clock mipi_tx_feedback100 by 0.00% (from 6411ps to 6411ps)
+INFO     : CSS improved CPD of clock core_clk by 0.00% (from 5547ps to 5547ps)
+INFO     : CSS improved CPD of clock hdmi_rx_slow_clk by 0.00% (from 3694ps to 3694ps)
+INFO     : CSS improved CPD of clock jtag_inst2_TCK by 0.00% (from 2412ps to 2412ps)
+INFO     : CSS improved CPD of clock i_mipi_rx_pclk by 0.00% (from 3737ps to 3737ps)
+INFO     : CSS improved CPD of clock vid_clk_dvi2 by 0.00% (from 4539ps to 4539ps)
+INFO     : CSS improved CPD of clock i_cam_ck_CLKOUT by 0.00% (from 4041ps to 4041ps)
+INFO     : CSS improved CPD of clock rxc by 0.00% (from 7182ps to 7182ps)
+INFO     : CSS improved CPD of clock osc_inst1_CLKOUT by 0.00% (from 3106ps to 3106ps)
+INFO     : Discretized beneficial skew improved geomean CPD by 1.27% (from 3547ps to 3502ps in 7 iterations and 5.5 sec)
+INFO     : ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+INFO     : Overridding delay budgets for 570 synchronizer-related pins
+INFO     : Iter  1: overlap=206118  heapops=16347305   (0%) cpd=2041  frr=1.00  msec=18474
+INFO     : [Setup Delay Budgets | 5764.5 ms]
+INFO     : ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+INFO     : Hold Fixing
+INFO     : ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+INFO     : Total min wire delay:  23210699
+INFO     : Hold fix wire delay:        828
+INFO     : Hold fix delay ratio:     0.00%
+INFO     : Pins requiring hold fix:  0.01%
+INFO     : ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+INFO     : Iter  2: overlap=120640  heapops=16251987   (7%) cpd=2055  frr=1.01  msec=5604
+INFO     : Iter  3: overlap=80913   heapops=19302677   (4%) cpd=2060  frr=1.01  msec=6423
+INFO     : Iter  4: overlap=55154   heapops=24362148   (6%) cpd=2055  frr=1.01  msec=8601
+INFO     : Iter  5: overlap=37152   heapops=30162462   (12%) cpd=2055  frr=1.01  msec=11617
+INFO     : Iter  6: overlap=25501   heapops=35392802   (22%) cpd=2055  frr=1.01  msec=14851
+INFO     : Iter  7: overlap=18597   heapops=39750288   (34%) cpd=2055  frr=1.01  msec=18267
+INFO     : Iter  8: overlap=14248   heapops=39469458   (44%) cpd=2055  frr=1.01  msec=19526
+INFO     : Iter  9: overlap=11088   heapops=39292294   (53%) cpd=2135  frr=1.05  msec=20388
+INFO     : [Rebuild Parallel Routing Scheduler]
+INFO     : Iter 10: overlap=8712    heapops=41075712   (60%) cpd=2055  frr=1.01  msec=23252
+INFO     : Iter 11: overlap=6859    heapops=41051990   (64%) cpd=2146  frr=1.05  msec=26958
+INFO     : Iter 12: overlap=5430    heapops=38215881   (68%) cpd=2151  frr=1.05  msec=25884
+INFO     : Iter 13: overlap=4260    heapops=39633502   (73%) cpd=2277  frr=1.12  msec=27534
+INFO     : Iter 14: overlap=3290    heapops=37725299   (75%) cpd=2222  frr=1.09  msec=28155
+INFO     : Iter 15: overlap=2575    heapops=35770041   (78%) cpd=2277  frr=1.12  msec=27505
+INFO     : Iter 16: overlap=2081    heapops=33926795   (80%) cpd=2183  frr=1.07  msec=26333
+INFO     : [Rebuild Parallel Routing Scheduler]
+INFO     : Iter 17: overlap=1584    heapops=31258074   (82%) cpd=2222  frr=1.09  msec=25419
+INFO     : Iter 18: overlap=1094    heapops=30569972   (83%) cpd=2277  frr=1.12  msec=25590
+INFO     : Iter 19: overlap=789     heapops=24095943   (84%) cpd=2146  frr=1.05  msec=20372
+INFO     : Iter 20: overlap=585     heapops=21520708   (85%) cpd=2312  frr=1.13  msec=19567
+INFO     : Iter 21: overlap=490     heapops=18997405   (86%) cpd=2185  frr=1.07  msec=16881
+INFO     : Iter 22: overlap=342     heapops=15252000   (87%) cpd=2351  frr=1.15  msec=13968
+INFO     : Iter 23: overlap=228     heapops=12066449   (87%) cpd=2195  frr=1.08  msec=10956
+INFO     : [Rebuild Parallel Routing Scheduler]
+INFO     : Iter 24: overlap=180     heapops=8784587    (87%) cpd=2277  frr=1.12  msec=8729
+INFO     : Iter 25: overlap=124     heapops=10435145   (87%) cpd=2166  frr=1.06  msec=9977
+INFO     : Iter 26: overlap=86      heapops=8917189    (87%) cpd=2166  frr=1.06  msec=8643
+INFO     : Iter 27: overlap=61      heapops=5259840    (88%) cpd=2166  frr=1.06  msec=5271
+INFO     : Iter 28: overlap=29      heapops=4428748    (88%) cpd=2166  frr=1.06  msec=4694
+INFO     : Iter 29: overlap=13      heapops=2692224    (88%) cpd=2166  frr=1.06  msec=2990
+INFO     : Iter 30: overlap=6       heapops=2169741    (88%) cpd=2166  frr=1.06  msec=2622
+INFO     : Iter 31: overlap=7       heapops=1948202    (88%) cpd=2166  frr=1.06  msec=2428
+INFO     : Iter 32: overlap=4       heapops=1579394    (88%) cpd=2166  frr=1.06  msec=1984
+INFO     : Iter 33: overlap=4       heapops=1419546    (88%) cpd=2166  frr=1.06  msec=1906
+INFO     : Iter 34: overlap=1       heapops=1621906    (88%) cpd=2166  frr=1.06  msec=2034
+INFO     : Iter 35: overlap=1       heapops=1436065    (88%) cpd=2166  frr=1.06  msec=1910
+INFO     : ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+INFO     : Beneficial skew enabled! Optimizing clock skews ... 
+INFO     : Non-legalized beneficial skew improved geomean CPD by 0.00% (from 4245ps to 4245ps)
+INFO     : CSS improved CPD of clock tx_cal_clk_90edge by 2.30% (from 2170ps to 2120ps)
+INFO     : CSS improved CPD of clock sdram_clk by 0.00% (from 2000ps to 2000ps)
+INFO     : CSS improved CPD of clock rx_cal_clk by 0.00% (from 2166ps to 2166ps)
+INFO     : CSS improved CPD of clock tx_cal_clk by 0.00% (from 2277ps to 2277ps)
+INFO     : CSS improved CPD of clock hdmi_tx_slow_clk by 0.00% (from 5379ps to 5379ps)
+INFO     : CSS improved CPD of clock mipi_tx_feedback100 by 0.00% (from 7546ps to 7546ps)
+INFO     : CSS improved CPD of clock core_clk by 5.50% (from 6195ps to 5854ps)
+INFO     : CSS improved CPD of clock hdmi_rx_slow_clk by 0.00% (from 5198ps to 5198ps)
+INFO     : CSS improved CPD of clock jtag_inst2_TCK by 0.00% (from 4300ps to 4300ps)
+INFO     : CSS improved CPD of clock i_mipi_rx_pclk by 0.00% (from 6451ps to 6451ps)
+INFO     : CSS improved CPD of clock vid_clk_dvi2 by 0.00% (from 5256ps to 5256ps)
+INFO     : CSS improved CPD of clock i_cam_ck_CLKOUT by -0.49% (from 4913ps to 4937ps)
+INFO     : CSS improved CPD of clock rxc by 0.00% (from 7401ps to 7401ps)
+INFO     : CSS improved CPD of clock osc_inst1_CLKOUT by 0.00% (from 4164ps to 4164ps)
+INFO     : Discretized beneficial skew improved geomean CPD by 0.54% (from 4245ps to 4222ps in 1 iterations and 4.5 sec)
+INFO     : ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+INFO     : Iter 36: overlap=0       heapops=1403996    (88%) cpd=2166  frr=1.06  msec=6391
+INFO     : ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+INFO     : Routing Result
+INFO     : ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+INFO     : Routing Succeeded in 507.48 seconds taking 36 iterations! 
+INFO     : 
+INFO     : First iteration critical path delay = 2.041 ns 
+INFO     : Last iteration critical path delay  = 2.166 ns (ratio = 1.06)
+INFO     : Max Routing Heap Size = 100,008
+INFO     : Routing trace written to file 'C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/outflow/ti60f225_oob.troutingtraces' 
+INFO     : ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+INFO     : Routing took 577.5202316 seconds [FlowMsg::StageDuration]
+INFO     :     Routing took 884.296875 seconds (approximately) in total CPU time [FlowMsg::StageDuration::CPUTime]
+INFO     : Routing virtual memory usage: begin = 195.7 MB, end = 661.336 MB, delta = 465.636 MB [FlowMsg::VMUsage]
+INFO     :     Routing peak virtual memory usage = 682.064 MB [FlowMsg::VMUsage::Peak]
+INFO     : Routing resident set memory usage: begin = 217.604 MB, end = 668.512 MB, delta = 450.908 MB [FlowMsg::RSSUsage]
+INFO     :     Routing peak resident set memory usage = 675.332 MB [FlowMsg::RSSUsage::Peak]
+           ***** Beginning stage final timing analysis ... *****
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:53] No clocks matched 'jtag_inst2_TCK'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:53] set_output_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:53] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:54] No clocks matched 'jtag_inst2_TCK'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:54] set_output_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:54] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:55] No clocks matched 'jtag_inst2_TCK'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:55] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:55] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:56] No clocks matched 'jtag_inst2_TCK'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:56] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:56] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'jtag_inst2_RESET'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:57] No clocks matched 'jtag_inst2_TCK'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:57] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:57] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'jtag_inst2_RESET'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:58] No clocks matched 'jtag_inst2_TCK'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:58] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:58] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:59] No clocks matched 'jtag_inst2_TCK'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:59] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:59] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:60] No clocks matched 'jtag_inst2_TCK'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:60] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:60] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'jtag_inst2_UPDATE'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:61] No clocks matched 'jtag_inst2_TCK'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:61] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:61] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'jtag_inst2_UPDATE'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:62] No clocks matched 'jtag_inst2_TCK'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:62] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:62] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:63] No clocks matched 'jtag_inst2_TCK'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:63] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:63] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:64] No clocks matched 'jtag_inst2_TCK'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:64] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:64] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'ddr_addr[14]'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:103] set_output_delay: No valid output port(s) found
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:103] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING  : No ports matched 'ddr_addr[14]'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:104] set_output_delay: No valid output port(s) found
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:104] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING  : No ports matched 'ddr_addr[15]'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:105] set_output_delay: No valid output port(s) found
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:105] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING  : No ports matched 'ddr_addr[15]'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:106] set_output_delay: No valid output port(s) found
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:106] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING  : No pins matched 'camera_source_fps*~FF|D'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:377] set_max_delay: Object(s) specified for -to option contains no vaild endpoints
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:377] Unable to run 'set_max_delay' constraint due to warnings found
+WARNING  : No pins matched 'camera_source_fps*~FF|D'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:378] set_min_delay: Object(s) specified for -to option contains no vaild endpoints
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:378] Unable to run 'set_min_delay' constraint due to warnings found
+WARNING  : No pins matched 'u_nn_fps_osd/status_meta*~FF|D'
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:385] set_false_path: Object(s) specified for -to option contains no vaild endpoints
+WARNING  : [SDC C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc:385] Unable to run 'set_false_path' constraint due to warnings found
+WARNING  : No pins matched 'u_video_diag/cpu_reset*~FF|SR'
+WARNING  : No pins matched 'u_video_diag/core_reset*~FF|SR'
+INFO     : SDC file 'C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/build_support/cdc/ti60f225_oob.sdc' parsed successfully.
+Maximum possible analyzed clocks frequency
+    Clock Name      Period (ns)  Frequency (MHz)     Edge
+tx_cal_clk_90edge      2.246        445.236         (R-R)
+sdram_clk              2.126        470.367         (R-R)
+rx_cal_clk             2.442        409.500         (R-R)
+tx_cal_clk             2.403        416.146         (R-R)
+hdmi_tx_slow_clk       5.505        181.653         (R-R)
+mipi_tx_feedback100    7.672        130.344         (R-R)
+core_clk               5.980        167.224         (R-R)
+hdmi_rx_slow_clk       5.324        187.829         (R-R)
+jtag_inst2_TCK         4.426        225.938         (R-R)
+i_mipi_rx_pclk         6.577        152.045         (R-R)
+vid_clk_dvi2           5.382        185.805         (R-R)
+i_cam_ck_CLKOUT        5.063        197.511         (R-R)
+rxc                    7.527        132.855         (R-R)
+osc_inst1_CLKOUT       4.290        233.100         (R-R)
+
+Geomean max period: 4.383
+
+Setup (Max) Clock Relationship
+   Launch Clock        Capture Clock    Constraint (ns)     Slack (ns)          Edge
+tx_cal_clk_90edge   tx_cal_clk_90edge         2.500            0.254           (R-R)
+tx_cal_clk_90edge   tx_cal_clk                2.500            0.736           (R-R)
+tx_cal_clk_90edge   mipi_tx_feedback100       2.500            2.066           (R-R)
+sdram_clk           tx_cal_clk_90edge         2.500            0.709           (R-R)
+sdram_clk           sdram_clk                 2.500            0.374           (R-R)
+rx_cal_clk          rx_cal_clk                2.500            0.058           (R-R)
+tx_cal_clk          tx_cal_clk                2.500            0.097           (R-R)
+hdmi_tx_slow_clk    hdmi_tx_slow_clk          6.734            1.229           (R-R)
+hdmi_tx_slow_clk    mipi_tx_feedback100       0.002            5.895           (R-R)
+hdmi_tx_slow_clk    core_clk                  0.002            6.201           (R-R)
+hdmi_tx_slow_clk    hdmi_rx_slow_clk          6.734            6.224           (R-R)
+mipi_tx_feedback100 tx_cal_clk_90edge         2.500            0.794           (R-R)
+mipi_tx_feedback100 mipi_tx_feedback100      10.000            2.328           (R-R)
+mipi_tx_feedback100 core_clk                  1.250            1.202           (R-R)
+mipi_tx_feedback100 vid_clk_dvi2              0.004           11.606           (R-R)
+mipi_tx_feedback100 i_cam_ck_CLKOUT          10.000            9.010           (R-R)
+mipi_tx_feedback100 rxc                       2.000            6.026           (R-R)
+core_clk            hdmi_tx_slow_clk          0.002            5.803           (R-R)
+core_clk            mipi_tx_feedback100       1.250            4.341           (R-R)
+core_clk            core_clk                  6.250            0.270           (R-R)
+hdmi_rx_slow_clk    hdmi_tx_slow_clk          6.734           13.020           (R-R)
+hdmi_rx_slow_clk    mipi_tx_feedback100       0.004            8.548           (R-R)
+hdmi_rx_slow_clk    hdmi_rx_slow_clk         13.468            8.144           (R-R)
+jtag_inst2_TCK      jtag_inst2_TCK          100.000           95.574           (R-R)
+i_mipi_rx_pclk      i_mipi_rx_pclk           20.000           13.423           (R-R)
+i_mipi_rx_pclk      vid_clk_dvi2              0.004           12.786           (R-R)
+i_mipi_rx_pclk      i_cam_ck_CLKOUT          10.000            8.057           (R-R)
+vid_clk_dvi2        hdmi_tx_slow_clk          6.734            3.392           (R-R)
+vid_clk_dvi2        vid_clk_dvi2             13.468            8.086           (R-R)
+i_cam_ck_CLKOUT     i_mipi_rx_pclk           10.000            8.327           (R-R)
+i_cam_ck_CLKOUT     i_cam_ck_CLKOUT          10.000            4.937           (R-R)
+rxc                 mipi_tx_feedback100       2.000            3.535           (R-R)
+rxc                 rxc                       8.000            0.473           (R-R)
+osc_inst1_CLKOUT    osc_inst1_CLKOUT        100.000           95.710           (R-R)
+
+Hold (Min) Clock Relationship
+   Launch Clock        Capture Clock    Constraint (ns)     Slack (ns)          Edge
+tx_cal_clk_90edge   tx_cal_clk_90edge        0.000            0.072            (R-R)
+tx_cal_clk_90edge   tx_cal_clk               0.000            0.802            (R-R)
+tx_cal_clk_90edge   mipi_tx_feedback100      0.000            0.101            (R-R)
+sdram_clk           tx_cal_clk_90edge        0.000            0.368            (R-R)
+sdram_clk           sdram_clk                0.000            0.078            (R-R)
+rx_cal_clk          rx_cal_clk               0.000            0.026            (R-R)
+tx_cal_clk          tx_cal_clk               0.000            0.098            (R-R)
+hdmi_tx_slow_clk    hdmi_tx_slow_clk         0.000            0.027            (R-R)
+hdmi_tx_slow_clk    mipi_tx_feedback100      0.000            0.108            (R-R)
+hdmi_tx_slow_clk    core_clk                 0.000            0.146            (R-R)
+hdmi_tx_slow_clk    hdmi_rx_slow_clk         0.000            0.126            (R-R)
+mipi_tx_feedback100 tx_cal_clk_90edge        0.000            0.091            (R-R)
+mipi_tx_feedback100 mipi_tx_feedback100      0.000            0.035            (R-R)
+mipi_tx_feedback100 core_clk                 0.000            0.113            (R-R)
+mipi_tx_feedback100 vid_clk_dvi2             0.000            0.107            (R-R)
+mipi_tx_feedback100 i_cam_ck_CLKOUT          0.000            0.133            (R-R)
+mipi_tx_feedback100 rxc                      0.000            0.065            (R-R)
+core_clk            hdmi_tx_slow_clk         0.000            0.067            (R-R)
+core_clk            mipi_tx_feedback100      0.000            0.069            (R-R)
+core_clk            core_clk                 0.000            0.026            (R-R)
+hdmi_rx_slow_clk    hdmi_tx_slow_clk         0.000            0.100            (R-R)
+hdmi_rx_slow_clk    mipi_tx_feedback100      0.000            0.081            (R-R)
+hdmi_rx_slow_clk    hdmi_rx_slow_clk         0.000            0.027            (R-R)
+jtag_inst2_TCK      jtag_inst2_TCK           0.000            0.097            (R-R)
+i_mipi_rx_pclk      i_mipi_rx_pclk           0.000            0.082            (R-R)
+i_mipi_rx_pclk      vid_clk_dvi2             0.000            0.038            (R-R)
+i_mipi_rx_pclk      i_cam_ck_CLKOUT          0.000            0.125            (R-R)
+vid_clk_dvi2        hdmi_tx_slow_clk         0.000            0.128            (R-R)
+vid_clk_dvi2        vid_clk_dvi2             0.000            0.095            (R-R)
+i_cam_ck_CLKOUT     i_mipi_rx_pclk           0.000            0.109            (R-R)
+i_cam_ck_CLKOUT     i_cam_ck_CLKOUT          0.000            0.031            (R-R)
+rxc                 mipi_tx_feedback100      0.000            0.124            (R-R)
+rxc                 rxc                      0.000            0.089            (R-R)
+osc_inst1_CLKOUT    osc_inst1_CLKOUT         0.000            0.091            (R-R)
+
+INFO     : Write Timing Report to "outflow\ti60f225_oob.timing.rpt" ...
+INFO     : final timing analysis took 91.3823851 seconds [FlowMsg::StageDuration]
+INFO     :     final timing analysis took 179.71875 seconds (approximately) in total CPU time [FlowMsg::StageDuration::CPUTime]
+INFO     : final timing analysis virtual memory usage: begin = 551.176 MB, end = 840.98 MB, delta = 289.804 MB [FlowMsg::VMUsage]
+INFO     :     final timing analysis peak virtual memory usage = 845.02 MB [FlowMsg::VMUsage::Peak]
+INFO     : final timing analysis resident set memory usage: begin = 556.092 MB, end = 848.304 MB, delta = 292.212 MB [FlowMsg::RSSUsage]
+INFO     :     final timing analysis peak resident set memory usage = 851.912 MB [FlowMsg::RSSUsage::Peak]
+           ***** Ending stage final timing analysis *****
+           
+           ***** Beginning stage bitstream generation ... *****
+INFO     : Reading core interface constraints file "C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/outflow/ti60f225_oob.interface.csv" [DBMsg::CoreInterfaceConstraintsFileReading]
+INFO     : Successfully read core interface constraints file "C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/outflow/ti60f225_oob.interface.csv" [DBMsg::CoreInterfaceConstraintsFileLoadSuccess]
+INFO     : Finished writing bitstream file C:/Users/ASUS/AppData/Local/Temp/yizhen_fpga_l1klynpu/project/work_pnr\ti60f225_oob.lbf.
+INFO     : Bitstream generation took 4.8949449 seconds [FlowMsg::StageDuration]
+INFO     :     Bitstream generation took 4.296875 seconds (approximately) in total CPU time [FlowMsg::StageDuration::CPUTime]
+INFO     : Bitstream generation virtual memory usage: begin = 466.508 MB, end = 681.884 MB, delta = 215.376 MB [FlowMsg::VMUsage]
+INFO     :     Bitstream generation peak virtual memory usage = 845.02 MB [FlowMsg::VMUsage::Peak]
+INFO     : Bitstream generation resident set memory usage: begin = 478.216 MB, end = 694.492 MB, delta = 216.276 MB [FlowMsg::RSSUsage]
+INFO     :     Bitstream generation peak resident set memory usage = 851.912 MB [FlowMsg::RSSUsage::Peak]
+INFO     : The entire flow of EFX_PNR took 1361.2204129 seconds [FlowMsg::StageDuration]
+INFO     :     The entire flow of EFX_PNR took 3536.5 seconds (approximately) in total CPU time [FlowMsg::StageDuration::CPUTime]
+INFO     : The entire flow of EFX_PNR virtual memory usage: begin = 20.112 MB, end = 681.884 MB, delta = 661.772 MB [FlowMsg::VMUsage]
+INFO     :     The entire flow of EFX_PNR peak virtual memory usage = 845.02 MB [FlowMsg::VMUsage::Peak]
+INFO     : The entire flow of EFX_PNR resident set memory usage: begin = 22.556 MB, end = 694.532 MB, delta = 671.976 MB [FlowMsg::RSSUsage]
+INFO     :     The entire flow of EFX_PNR peak resident set memory usage = 851.912 MB [FlowMsg::RSSUsage::Peak]

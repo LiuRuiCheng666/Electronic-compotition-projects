@@ -3,7 +3,12 @@ from pathlib import Path
 import argparse,json,os,shutil,subprocess,sys,re,tempfile
 P=Path(__file__).resolve().parents[1];B=P/'build_support';A=B/'cdc'
 ap=argparse.ArgumentParser();ap.add_argument('--stage',choices=['plan','map','bind','pnr','pgm','reference-pgm','all'],default='plan');ap.add_argument('--efinity-home',type=Path,default=Path(os.environ.get('EFINITY_HOME','D:/Efinity/2026.1')));ap.add_argument('--temp-dir',type=Path,help='Optional ASCII-only parent for isolated native Efinity work');a=ap.parse_args()
-E=a.efinity_home.resolve();env=os.environ.copy();env['EFINITY_HOME']=str(E);env['PATH']=str(E/'bin')+os.pathsep+env['PATH']
+E=a.efinity_home.resolve();env=os.environ.copy()
+# Native timing uses these paths inside Tcl strings. Forward slashes prevent
+# Windows sequences such as \202 from being interpreted as Tcl escapes.
+for key,rel in {'EFINITY_HOME':'','EFXPT_HOME':'pt','EFXPGM_HOME':'pgm','EFXDBG_HOME':'debugger','EFXIPM_HOME':'ipm','EFXSVF_HOME':'debugger/svf_player','EFXSERDESDBG_HOME':'debugger/serdes_debug_tool'}.items():
+    env[key]=(E/rel).as_posix()
+env['PATH']=str(E/'bin')+os.pathsep+env['PATH']
 
 # Efinity's native bitstream and filesystem libraries reject some non-ASCII
 # paths even when parsing/synthesis succeeds. Run native stages in an isolated
@@ -22,7 +27,7 @@ if a.stage in ['map','pnr','pgm','reference-pgm','all'] and not str(P).isascii()
         raise SystemExit(result.returncode)
 def command(name):
     args=json.loads((B/(name+'_command.json')).read_text('utf-8'))
-    return [str(E/'bin'/Path(x).name) if i==0 else str((P/x).resolve()) if x.startswith(('./','outflow/','work_syn','work_pnr','build_support/','ip/')) or x=='ti60f225_oob.xml' else x for i,x in enumerate(args)]
+    return [(E/'bin'/Path(x).name).as_posix() if i==0 else (P/x).resolve().as_posix() if x.startswith(('./','outflow/','work_syn','work_pnr','build_support/','ip/')) or x=='ti60f225_oob.xml' else x for i,x in enumerate(args)]
 def run(name,args):
     (P/'build_logs').mkdir(exist_ok=True)
     print(name,flush=True)

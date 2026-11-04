@@ -9,11 +9,13 @@ def percentile(values,p):
 def _audit(data,min_seconds=0):
  rows=data.get('rounds',[]);issues=[];known={};previous=None;values=[];slots={};replay_known=True;control=packets=retrans=0
  if not isinstance(rows,list):raise ValueError('rounds must be a list')
+ model_count=data.get('model_count',4)
+ if model_count not in (4,5):raise ValueError('model_count must be 4 or 5')
  for i,row in enumerate(rows,1):
   def check(condition,message):
    if not condition:issues.append(f'round {i}: {message}')
   check(row.get('round')==i,'missing/reordered round')
-  slot=row.get('slot');check(slot in range(4)and slot==(i-1)%4,'slot order/bounds')
+  slot=row.get('slot');check(slot in range(model_count)and slot==(i-1)%model_count,'slot order/bounds')
   stats=row.get('stats',{});digest=row.get('pixel_sha256');crc=stats.get('output_crc32')
   check(isinstance(digest,str)and len(digest)==64 and all(c in '0123456789abcdef'for c in digest),'invalid raw pixel SHA256')
   check(isinstance(crc,str)and len(crc)==8 and all(c in '0123456789abcdef'for c in crc),'invalid frame CRC')

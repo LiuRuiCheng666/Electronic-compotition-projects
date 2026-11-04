@@ -46,7 +46,6 @@ def main():
     p.add_argument('--output',type=Path,default=Path('flash_assets/camera_nn_dual_model_combined'))
     p.add_argument('--weights',type=Path,help='Optional isolated candidate NNW1 weights; default is active project weights')
     p.add_argument('--manifest',type=Path,help='Manifest for selected weights; default is beside weights')
-    p.add_argument('--include-test-pictures',action='store_true',help='Also retain the supplied picture assets at 0x500000/0x640000')
     a=p.parse_args();root=Path(__file__).resolve().parents[1]
     active_sources=list((root/'rtl').rglob('*.v'))+[root/'ti60f225_oob.sdc',root/'ti60f225_oob.peri.xml']
     newest=max(f.stat().st_mtime for f in active_sources)
@@ -59,11 +58,7 @@ def main():
     validate_camera_weight_length(root,w)
     manifest=json.loads(manifest_file.read_text(encoding='utf-8'))
     if hashlib.sha256(w[32:]).hexdigest()!=manifest['payload_sha256']:raise ValueError('Weights differ from delivered model')
-    extra=[]
-    if a.include_test_pictures:
-        for i,addr in [(0,0x500000),(1,0x640000)]:
-            f=root/f'slideshow_assets/nn_picture{i}_flash.bin';extra.append((addr,f.read_bytes(),f'legacy test picture{i}'))
-    image,regions=build(config,w,extra);a.output.parent.mkdir(parents=True,exist_ok=True)
+    image,regions=build(config,w);a.output.parent.mkdir(parents=True,exist_ok=True)
     a.output.with_suffix('.bin').write_bytes(image)
     with a.output.with_suffix('.hex').open('w',encoding='ascii',newline='\n')as f:
         for v in image:f.write(f'{v:02X}\n')

@@ -15,7 +15,7 @@ class ImageDesc:
  width:int;height:int;format:int;style:int;stride:int;total:int;crc32:int
  def validate(self):
   bpp={1:3,2:4,3:4}.get(self.format,0)
-  if not (bpp and 1<=self.width<=1280 and 1<=self.height<=720 and 0<=self.style<4 and
+  if not (bpp and 1<=self.width<=1280 and 1<=self.height<=720 and 0<=self.style<5 and
     self.width*bpp<=self.stride and self.total==self.stride*self.height and 0<self.total<=4*1024*1024 and 0<=self.crc32<=0xffffffff):raise ValueError('image descriptor bounds/format')
   return self
  def pack(self):
@@ -199,7 +199,7 @@ def save_image(path,raw,desc,overwrite=False):
 def main():
  a=argparse.ArgumentParser(description=__doc__)
  a.add_argument('input');a.add_argument('output');a.add_argument('--ip',required=True);a.add_argument('--port',type=int,default=40000)
- a.add_argument('--bind-ip',default='0.0.0.0');a.add_argument('--interface-index',type=int);a.add_argument('--style',type=int,choices=range(4),default=3)
+ a.add_argument('--bind-ip',default='0.0.0.0');a.add_argument('--interface-index',type=int);a.add_argument('--style',type=int,choices=range(5),default=3)
  a.add_argument('--size',nargs=2,type=int,metavar=('WIDTH','HEIGHT'),default=(1280,720),help='Pad/resize input to the board NN dimensions (default:1280 720)');a.add_argument('--timeout',type=float,default=0.25)
  a.add_argument('--attempts',type=int,default=5);a.add_argument('--job-timeout',type=float,default=30);a.add_argument('--transfer-timeout',type=float,default=180,help='Whole image deadline; bounded cancellation gets up to 3 extra seconds');a.add_argument('--overwrite',action='store_true');a.add_argument('--report')
  a.add_argument('--packed-rgbx7',action='store_true',help='Requires v0.23 packed capability; host performs exact RGBX7 input conversion')

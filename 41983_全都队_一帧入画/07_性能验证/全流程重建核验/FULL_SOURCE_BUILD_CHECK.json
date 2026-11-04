@@ -1,0 +1,460 @@
+{
+  "status": "PASS",
+  "input_archive_sha256": "7da031e021d5015eae9d0fcd3f4f788bc1d881f01b616d9014eb5f3fea7918b3",
+  "input_design_sources": 140,
+  "fresh_source_map": true,
+  "mapped_constraint_binding": true,
+  "fresh_physical_pack_place_route": true,
+  "prior_placement_route_vdb_raminfo_isolated": true,
+  "fresh_native_bitstream_generation": true,
+  "fresh_full_flash_merge": true,
+  "fresh_timing": {
+    "setup": {
+      "minimum_slack_ns": 0.058,
+      "relationships": [
+        {
+          "launch": "tx_cal_clk_90edge",
+          "capture": "tx_cal_clk_90edge",
+          "constraint_ns": 2.5,
+          "slack_ns": 0.254
+        },
+        {
+          "launch": "tx_cal_clk_90edge",
+          "capture": "tx_cal_clk",
+          "constraint_ns": 2.5,
+          "slack_ns": 0.736
+        },
+        {
+          "launch": "tx_cal_clk_90edge",
+          "capture": "mipi_tx_feedback100",
+          "constraint_ns": 2.5,
+          "slack_ns": 2.066
+        },
+        {
+          "launch": "sdram_clk",
+          "capture": "tx_cal_clk_90edge",
+          "constraint_ns": 2.5,
+          "slack_ns": 0.709
+        },
+        {
+          "launch": "sdram_clk",
+          "capture": "sdram_clk",
+          "constraint_ns": 2.5,
+          "slack_ns": 0.374
+        },
+        {
+          "launch": "rx_cal_clk",
+          "capture": "rx_cal_clk",
+          "constraint_ns": 2.5,
+          "slack_ns": 0.058
+        },
+        {
+          "launch": "tx_cal_clk",
+          "capture": "tx_cal_clk",
+          "constraint_ns": 2.5,
+          "slack_ns": 0.097
+        },
+        {
+          "launch": "hdmi_tx_slow_clk",
+          "capture": "hdmi_tx_slow_clk",
+          "constraint_ns": 6.734,
+          "slack_ns": 1.229
+        },
+        {
+          "launch": "hdmi_tx_slow_clk",
+          "capture": "mipi_tx_feedback100",
+          "constraint_ns": 0.002,
+          "slack_ns": 5.895
+        },
+        {
+          "launch": "hdmi_tx_slow_clk",
+          "capture": "core_clk",
+          "constraint_ns": 0.002,
+          "slack_ns": 6.201
+        },
+        {
+          "launch": "hdmi_tx_slow_clk",
+          "capture": "hdmi_rx_slow_clk",
+          "constraint_ns": 6.734,
+          "slack_ns": 6.224
+        },
+        {
+          "launch": "mipi_tx_feedback100",
+          "capture": "tx_cal_clk_90edge",
+          "constraint_ns": 2.5,
+          "slack_ns": 0.794
+        },
+        {
+          "launch": "mipi_tx_feedback100",
+          "capture": "mipi_tx_feedback100",
+          "constraint_ns": 10.0,
+          "slack_ns": 2.328
+        },
+        {
+          "launch": "mipi_tx_feedback100",
+          "capture": "core_clk",
+          "constraint_ns": 1.25,
+          "slack_ns": 1.202
+        },
+        {
+          "launch": "mipi_tx_feedback100",
+          "capture": "vid_clk_dvi2",
+          "constraint_ns": 0.004,
+          "slack_ns": 11.606
+        },
+        {
+          "launch": "mipi_tx_feedback100",
+          "capture": "i_cam_ck_CLKOUT",
+          "constraint_ns": 10.0,
+          "slack_ns": 9.01
+        },
+        {
+          "launch": "mipi_tx_feedback100",
+          "capture": "rxc",
+          "constraint_ns": 2.0,
+          "slack_ns": 6.026
+        },
+        {
+          "launch": "core_clk",
+          "capture": "hdmi_tx_slow_clk",
+          "constraint_ns": 0.002,
+          "slack_ns": 5.803
+        },
+        {
+          "launch": "core_clk",
+          "capture": "mipi_tx_feedback100",
+          "constraint_ns": 1.25,
+          "slack_ns": 4.341
+        },
+        {
+          "launch": "core_clk",
+          "capture": "core_clk",
+          "constraint_ns": 6.25,
+          "slack_ns": 0.27
+        },
+        {
+          "launch": "hdmi_rx_slow_clk",
+          "capture": "hdmi_tx_slow_clk",
+          "constraint_ns": 6.734,
+          "slack_ns": 13.02
+        },
+        {
+          "launch": "hdmi_rx_slow_clk",
+          "capture": "mipi_tx_feedback100",
+          "constraint_ns": 0.004,
+          "slack_ns": 8.548
+        },
+        {
+          "launch": "hdmi_rx_slow_clk",
+          "capture": "hdmi_rx_slow_clk",
+          "constraint_ns": 13.468,
+          "slack_ns": 8.144
+        },
+        {
+          "launch": "jtag_inst2_TCK",
+          "capture": "jtag_inst2_TCK",
+          "constraint_ns": 100.0,
+          "slack_ns": 95.574
+        },
+        {
+          "launch": "i_mipi_rx_pclk",
+          "capture": "i_mipi_rx_pclk",
+          "constraint_ns": 20.0,
+          "slack_ns": 13.423
+        },
+        {
+          "launch": "i_mipi_rx_pclk",
+          "capture": "vid_clk_dvi2",
+          "constraint_ns": 0.004,
+          "slack_ns": 12.786
+        },
+        {
+          "launch": "i_mipi_rx_pclk",
+          "capture": "i_cam_ck_CLKOUT",
+          "constraint_ns": 10.0,
+          "slack_ns": 8.057
+        },
+        {
+          "launch": "vid_clk_dvi2",
+          "capture": "hdmi_tx_slow_clk",
+          "constraint_ns": 6.734,
+          "slack_ns": 3.392
+        },
+        {
+          "launch": "vid_clk_dvi2",
+          "capture": "vid_clk_dvi2",
+          "constraint_ns": 13.468,
+          "slack_ns": 8.086
+        },
+        {
+          "launch": "i_cam_ck_CLKOUT",
+          "capture": "i_mipi_rx_pclk",
+          "constraint_ns": 10.0,
+          "slack_ns": 8.327
+        },
+        {
+          "launch": "i_cam_ck_CLKOUT",
+          "capture": "i_cam_ck_CLKOUT",
+          "constraint_ns": 10.0,
+          "slack_ns": 4.937
+        },
+        {
+          "launch": "rxc",
+          "capture": "mipi_tx_feedback100",
+          "constraint_ns": 2.0,
+          "slack_ns": 3.535
+        },
+        {
+          "launch": "rxc",
+          "capture": "rxc",
+          "constraint_ns": 8.0,
+          "slack_ns": 0.473
+        },
+        {
+          "launch": "osc_inst1_CLKOUT",
+          "capture": "osc_inst1_CLKOUT",
+          "constraint_ns": 100.0,
+          "slack_ns": 95.71
+        }
+      ]
+    },
+    "hold": {
+      "minimum_slack_ns": 0.026,
+      "relationships": [
+        {
+          "launch": "tx_cal_clk_90edge",
+          "capture": "tx_cal_clk_90edge",
+          "constraint_ns": 0.0,
+          "slack_ns": 0.072
+        },
+        {
+          "launch": "tx_cal_clk_90edge",
+          "capture": "tx_cal_clk",
+          "constraint_ns": 0.0,
+          "slack_ns": 0.802
+        },
+        {
+          "launch": "tx_cal_clk_90edge",
+          "capture": "mipi_tx_feedback100",
+          "constraint_ns": 0.0,
+          "slack_ns": 0.101
+        },
+        {
+          "launch": "sdram_clk",
+          "capture": "tx_cal_clk_90edge",
+          "constraint_ns": 0.0,
+          "slack_ns": 0.368
+        },
+        {
+          "launch": "sdram_clk",
+          "capture": "sdram_clk",
+          "constraint_ns": 0.0,
+          "slack_ns": 0.078
+        },
+        {
+          "launch": "rx_cal_clk",
+          "capture": "rx_cal_clk",
+          "constraint_ns": 0.0,
+          "slack_ns": 0.026
+        },
+        {
+          "launch": "tx_cal_clk",
+          "capture": "tx_cal_clk",
+          "constraint_ns": 0.0,
+          "slack_ns": 0.098
+        },
+        {
+          "launch": "hdmi_tx_slow_clk",
+          "capture": "hdmi_tx_slow_clk",
+          "constraint_ns": 0.0,
+          "slack_ns": 0.027
+        },
+        {
+          "launch": "hdmi_tx_slow_clk",
+          "capture": "mipi_tx_feedback100",
+          "constraint_ns": 0.0,
+          "slack_ns": 0.108
+        },
+        {
+          "launch": "hdmi_tx_slow_clk",
+          "capture": "core_clk",
+          "constraint_ns": 0.0,
+          "slack_ns": 0.146
+        },
+        {
+          "launch": "hdmi_tx_slow_clk",
+          "capture": "hdmi_rx_slow_clk",
+          "constraint_ns": 0.0,
+          "slack_ns": 0.126
+        },
+        {
+          "launch": "mipi_tx_feedback100",
+          "capture": "tx_cal_clk_90edge",
+          "constraint_ns": 0.0,
+          "slack_ns": 0.091
+        },
+        {
+          "launch": "mipi_tx_feedback100",
+          "capture": "mipi_tx_feedback100",
+          "constraint_ns": 0.0,
+          "slack_ns": 0.035
+        },
+        {
+          "launch": "mipi_tx_feedback100",
+          "capture": "core_clk",
+          "constraint_ns": 0.0,
+          "slack_ns": 0.113
+        },
+        {
+          "launch": "mipi_tx_feedback100",
+          "capture": "vid_clk_dvi2",
+          "constraint_ns": 0.0,
+          "slack_ns": 0.107
+        },
+        {
+          "launch": "mipi_tx_feedback100",
+          "capture": "i_cam_ck_CLKOUT",
+          "constraint_ns": 0.0,
+          "slack_ns": 0.133
+        },
+        {
+          "launch": "mipi_tx_feedback100",
+          "capture": "rxc",
+          "constraint_ns": 0.0,
+          "slack_ns": 0.065
+        },
+        {
+          "launch": "core_clk",
+          "capture": "hdmi_tx_slow_clk",
+          "constraint_ns": 0.0,
+          "slack_ns": 0.067
+        },
+        {
+          "launch": "core_clk",
+          "capture": "mipi_tx_feedback100",
+          "constraint_ns": 0.0,
+          "slack_ns": 0.069
+        },
+        {
+          "launch": "core_clk",
+          "capture": "core_clk",
+          "constraint_ns": 0.0,
+          "slack_ns": 0.026
+        },
+        {
+          "launch": "hdmi_rx_slow_clk",
+          "capture": "hdmi_tx_slow_clk",
+          "constraint_ns": 0.0,
+          "slack_ns": 0.1
+        },
+        {
+          "launch": "hdmi_rx_slow_clk",
+          "capture": "mipi_tx_feedback100",
+          "constraint_ns": 0.0,
+          "slack_ns": 0.081
+        },
+        {
+          "launch": "hdmi_rx_slow_clk",
+          "capture": "hdmi_rx_slow_clk",
+          "constraint_ns": 0.0,
+          "slack_ns": 0.027
+        },
+        {
+          "launch": "jtag_inst2_TCK",
+          "capture": "jtag_inst2_TCK",
+          "constraint_ns": 0.0,
+          "slack_ns": 0.097
+        },
+        {
+          "launch": "i_mipi_rx_pclk",
+          "capture": "i_mipi_rx_pclk",
+          "constraint_ns": 0.0,
+          "slack_ns": 0.082
+        },
+        {
+          "launch": "i_mipi_rx_pclk",
+          "capture": "vid_clk_dvi2",
+          "constraint_ns": 0.0,
+          "slack_ns": 0.038
+        },
+        {
+          "launch": "i_mipi_rx_pclk",
+          "capture": "i_cam_ck_CLKOUT",
+          "constraint_ns": 0.0,
+          "slack_ns": 0.125
+        },
+        {
+          "launch": "vid_clk_dvi2",
+          "capture": "hdmi_tx_slow_clk",
+          "constraint_ns": 0.0,
+          "slack_ns": 0.128
+        },
+        {
+          "launch": "vid_clk_dvi2",
+          "capture": "vid_clk_dvi2",
+          "constraint_ns": 0.0,
+          "slack_ns": 0.095
+        },
+        {
+          "launch": "i_cam_ck_CLKOUT",
+          "capture": "i_mipi_rx_pclk",
+          "constraint_ns": 0.0,
+          "slack_ns": 0.109
+        },
+        {
+          "launch": "i_cam_ck_CLKOUT",
+          "capture": "i_cam_ck_CLKOUT",
+          "constraint_ns": 0.0,
+          "slack_ns": 0.031
+        },
+        {
+          "launch": "rxc",
+          "capture": "mipi_tx_feedback100",
+          "constraint_ns": 0.0,
+          "slack_ns": 0.124
+        },
+        {
+          "launch": "rxc",
+          "capture": "rxc",
+          "constraint_ns": 0.0,
+          "slack_ns": 0.089
+        },
+        {
+          "launch": "osc_inst1_CLKOUT",
+          "capture": "osc_inst1_CLKOUT",
+          "constraint_ns": 0.0,
+          "slack_ns": 0.091
+        }
+      ]
+    }
+  },
+  "archived_timing_minimum_setup_ns": 0.058,
+  "archived_timing_minimum_hold_ns": 0.026,
+  "fresh_configuration_bytes": 1102538,
+  "fresh_full_flash_bytes": 4214816,
+  "fresh_configuration_sha256": "67623839f2acca036a895d6db21f2120e9bf24f536fb0912ec8fa36346d100f9",
+  "fresh_full_flash_sha256": "bb74053fff476a9e31d4578dcff564e1929749a5fe1232ec18f905a46b1dc931",
+  "model_region_byte_exact": true,
+  "cpu_rom_inputs_unchanged": true,
+  "fresh_git_checkout_manifest_and_evidence_verification": "PASS with core.autocrlf=true",
+  "active_python_syntax_files": 40,
+  "local_markdown_links": 11,
+  "static_html_references": 15,
+  "deployed_full_flash_sha256": "e4fe7f382bbab662d173cb95b17cb2590693d1962abf62bedc5f370b8a7ae4ba",
+  "deployed_burn_images_replaced": false,
+  "board_programmed": false,
+  "notes": [
+    "Fresh implementation artifacts prove the complete source build; the submitted burn images remain the measured final deployment.",
+    "Efinity environment and native path arguments use forward slashes for Tcl compatibility.",
+    "Archived minimum setup slack is corrected from a single-clock 0.097ns value to the global 0.058ns minimum.",
+    "Final-only Flash CLI no longer advertises legacy test-picture assets that are outside this project."
+  ],
+  "fresh_full_flash_payload_equals_deployed_after_header": true,
+  "generated_header_bytes_excluded": 256,
+  "fresh_placement_byte_exact": true,
+  "fresh_routing_byte_exact": true,
+  "host_tool_tests": 15,
+  "stress_audit_tests": 10,
+  "javascript_syntax_files": 2,
+  "training_provenance_files": 283
+}

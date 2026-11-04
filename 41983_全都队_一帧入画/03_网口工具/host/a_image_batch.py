@@ -28,8 +28,8 @@ def render_report(root,report):
     body+=f'<h1>FPGA batch: {esc(report["status"])}</h1><p>Outputs are returned by the FPGA. Slot names depend on weights already in Flash; this report does not infer model identity or artistic quality. Network jobs pause camera inference until release. Input previews show the exact padded RGB image sent.</p><table>'+''.join(rows)+'</table>'
     path=root/'comparison.html';tmp=root/'comparison.html.tmp';tmp.write_text(body,encoding='utf-8');os.replace(tmp,path)
 
-def batch(inputs,out,styles=(0,1,2,3),size=(1280,720),ip='192.168.0.2',port=40000,bind_ip='192.168.0.3',interface_index=3,timeout=.25,attempts=5,job_timeout=60,job_retries=1,retry_wait=4,client_factory=ImageClient):
-    if not inputs or not styles or len(set(styles))!=len(styles) or any(x not in range(4) for x in styles):raise ValueError('unique styles 0..3 and at least one input required')
+def batch(inputs,out,styles=(0,1,2,3,4),size=(1280,720),ip='192.168.0.2',port=40000,bind_ip='192.168.0.3',interface_index=3,timeout=.25,attempts=5,job_timeout=60,job_retries=1,retry_wait=4,client_factory=ImageClient):
+    if not inputs or not styles or len(set(styles))!=len(styles) or any(x not in range(5) for x in styles):raise ValueError('unique styles 0..4 and at least one input required')
     if not 0<=job_retries<=3 or not 3<=retry_wait<=60:raise ValueError('job retries 0..3; retry wait 3..60s')
     sources=[Path(x).resolve(strict=True)for x in inputs]
     # Validate every file before sending to the board.
@@ -76,7 +76,7 @@ def batch(inputs,out,styles=(0,1,2,3),size=(1280,720),ip='192.168.0.2',port=4000
     return root,report
 
 def main():
-    ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('inputs',nargs='+');ap.add_argument('--out',required=True);ap.add_argument('--styles',nargs='+',type=int,choices=range(4),default=[0,1,2,3]);ap.add_argument('--size',nargs=2,type=int,default=[1280,720]);ap.add_argument('--ip',default='192.168.0.2');ap.add_argument('--port',type=int,default=40000);ap.add_argument('--bind-ip',default='192.168.0.3');ap.add_argument('--interface-index',type=int,default=3);ap.add_argument('--job-retries',type=int,default=1);a=ap.parse_args()
+    ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('inputs',nargs='+');ap.add_argument('--out',required=True);ap.add_argument('--styles',nargs='+',type=int,choices=range(5),default=[0,1,2,3,4]);ap.add_argument('--size',nargs=2,type=int,default=[1280,720]);ap.add_argument('--ip',default='192.168.0.2');ap.add_argument('--port',type=int,default=40000);ap.add_argument('--bind-ip',default='192.168.0.3');ap.add_argument('--interface-index',type=int,default=3);ap.add_argument('--job-retries',type=int,default=1);a=ap.parse_args()
     files=[]
     for arg in a.inputs:
         p=Path(arg)

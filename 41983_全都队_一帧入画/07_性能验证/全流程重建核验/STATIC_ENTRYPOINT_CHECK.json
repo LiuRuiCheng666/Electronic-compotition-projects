@@ -1,0 +1,90 @@
+{
+  "python_syntax": [
+    "02_网页应用/adapters.py",
+    "02_网页应用/compare_results.py",
+    "02_网页应用/run_checks.py",
+    "02_网页应用/server.py",
+    "02_网页应用/protocol/a_image_transfer.py",
+    "02_网页应用/protocol/a_net_wire.py",
+    "02_网页应用/tests/preview_offline_fixture.py",
+    "02_网页应用/tests/test_app.py",
+    "03_网口工具/host/a_image_batch.py",
+    "03_网口工具/host/a_image_transfer.py",
+    "03_网口工具/host/a_net_analyze.py",
+    "03_网口工具/host/a_net_stress.py",
+    "03_网口工具/host/a_net_wire.py",
+    "03_网口工具/host/a_video_preview.py",
+    "03_网口工具/host/a_video_transfer.py",
+    "03_网口工具/host/board_net_acceptance.py",
+    "06_模型训练与分析/tools/evaluate.py",
+    "06_模型训练与分析/tools/prepare_training.py",
+    "06_模型训练与分析/tools/rebuild_weights.py",
+    "06_模型训练与分析/tools/training_tone_reference.py",
+    "06_模型训练与分析/tools/verify_training_copy.py",
+    "06_模型训练与分析/training/art_models.py",
+    "06_模型训练与分析/training/batch10_styles.py",
+    "06_模型训练与分析/training/train_batch10_styles.py",
+    "06_模型训练与分析/training/train_hdmi_distinct_styles.py",
+    "06_模型训练与分析/training/train_portable_candidates.py",
+    "06_模型训练与分析/training/train_students.py",
+    "06_模型训练与分析/training/board_reference/tools/board_exact_infer.py",
+    "06_模型训练与分析/training/teacher/transformer_net.py",
+    "07_性能验证/tools/benchmark_matched_teacher.py",
+    "07_性能验证/tools/board_exact_infer.py",
+    "07_性能验证/tools/collect_board_metrics.py",
+    "07_性能验证/tools/quality_metrics.py",
+    "07_性能验证/tools/verify_evidence.py",
+    "01_FPGA/tools/build_flash_image.py",
+    "01_FPGA/tools/build_light_merge_firmware.py",
+    "01_FPGA/tools/check_hdmi_lbf.py",
+    "01_FPGA/tools/rebuild.py",
+    "01_FPGA/tools/run_efinity.py",
+    "01_FPGA/tools/verify_rtl.py"
+  ],
+  "markdown_links": [
+    {
+      "document": "README.md",
+      "target": "06_模型训练与分析/README.md"
+    },
+    {
+      "document": "README.md",
+      "target": "07_性能验证/README.md"
+    },
+    {
+      "document": "README.md",
+      "target": "05_技术资料/赛题与代码对应.md"
+    },
+    {
+      "document": "05_技术资料/赛题提交总览.md",
+      "target": "../07_性能验证/源码完整性终审/README.md"
+    },
+    {
+      "document": "05_技术资料/赛题提交总览.md",
+      "target": "../07_性能验证/烧录重建复查/README.md"
+    },
+    {
+      "document": "05_技术资料/赛题与代码对应.md",
+      "target": "赛题提交总览.md"
+    },
+    {
+      "document": "06_模型训练与分析/README.md",
+      "target": "../07_性能验证/README.md"
+    },
+    {
+      "document": "07_性能验证/README.md",
+      "target": "性能实测与标准网络对比.md"
+    },
+    {
+      "document": "07_性能验证/README.md",
+      "target": "原始证据/稳态显示照片.jpg"
+    },
+    {
+      "document": "07_性能验证/README.md",
+      "target": "原始证据/现场录像.mp4"
+    },
+    {
+      "document": "07_性能验证/源码完整性终审/README.md",
+      "target": "../../05_技术资料/赛题提交总览.md"
+    }
+  ]
+}

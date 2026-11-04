@@ -1,0 +1,24 @@
+{
+  "regions": [
+    {
+      "name": "FPGA configuration",
+      "start": "0x00000000",
+      "bytes": 1102538,
+      "end": "0x0010D2C9"
+    },
+    {
+      "name": "A4 kernels, coefficients and tanh",
+      "start": "0x00400000",
+      "bytes": 20512,
+      "end": "0x0040501F"
+    }
+  ],
+  "weights_file": "C:\\Users\\ASUS\\Documents\\ChatGPT\\FPGA\u5d4c\u8d5b\\\u63d0\u4ea4\u6574\u7406_41983\\\u5f7b\u5e95\u72ec\u7acb\u6838\u9a8c_41983\\extracted\\41983_\u5168\u90fd\u961f_\u4e00\u5e27\u5165\u753b\\01_FPGA\\flash_assets\\a4_dual_models_flash.bin",
+  "weights_payload_sha256": "38ad8f64cb886ae3009550a58a6e83c8f5532d5171e60fa4c514e26b6955a83f",
+  "configuration_mode": "SPI active",
+  "configuration_source_file_sha256": "3a5e2cc3f53eb10e4b9ea160f44e2bfb7edee891b1b6d71e3c44c28c0cc354d9",
+  "configuration_file": "C:\\Users\\ASUS\\Documents\\ChatGPT\\FPGA\u5d4c\u8d5b\\\u63d0\u4ea4\u6574\u7406_41983\\\u5f7b\u5e95\u72ec\u7acb\u6838\u9a8c_41983\\extracted\\41983_\u5168\u90fd\u961f_\u4e00\u5e27\u5165\u753b\\01_FPGA\\outflow\\ti60f225_oob.hex",
+  "configuration_sha256": "67623839f2acca036a895d6db21f2120e9bf24f536fb0912ec8fa36346d100f9",
+  "combined_sha256": "bb74053fff476a9e31d4578dcff564e1929749a5fe1232ec18f905a46b1dc931",
+  "note": "Use SPI programmer at address0; includes configuration and weights. Compile current project first."
+}

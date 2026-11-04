@@ -19,6 +19,13 @@ class Tests(unittest.TestCase):
   d=copy.deepcopy(self.original);d['rounds'][4]['video']['uptime_ms']=1;self.assertEqual(audit(d)['status'],'FAIL')
  def test_reset_masking_is_not_accepted(self):
   d=copy.deepcopy(self.original);d['reset_or_mode_commands_sent']=True;self.assertEqual(audit(d)['status'],'FAIL')
+ def test_current_five_style_log(self):
+  d=copy.deepcopy(self.original);d['model_count']=5
+  templates=copy.deepcopy(d['rounds'][:4])
+  for i,row in enumerate(d['rounds']):
+   slot=i%5;template=templates[slot%4];row['slot']=slot
+   row['pixel_sha256']=template['pixel_sha256'];row['stats']['output_crc32']=template['stats']['output_crc32']
+  result=audit(d);self.assertEqual(result['status'],'PASS');self.assertEqual(result['slots'],[0,1,2,3,4])
  def test_malformed_data_never_passes(self):
   for obj in [None,[],{'status':'PASS','rounds':'wrong'},dict(self.original,rounds=[None]),dict(self.original,elapsed_seconds='bad')]:
    with self.subTest(obj=type(obj).__name__):self.assertEqual(audit(obj)['status'],'FAIL')

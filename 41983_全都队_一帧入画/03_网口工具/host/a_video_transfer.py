@@ -5,9 +5,16 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "deps"))
 import argparse, hashlib, json, math, threading, time, zlib
 from dataclasses import asdict
 import cv2
+import numpy as np
 from PIL import Image, ImageOps
 from a_image_transfer import ImageClient, ImageDesc, save_image, pack_rgbx7
 from a_image_batch import atomic_json
+
+def read_frame_image(path):
+    """Use Python's Unicode file handling before OpenCV decodes the bytes."""
+    image=cv2.imdecode(np.frombuffer(Path(path).read_bytes(),dtype=np.uint8),cv2.IMREAD_COLOR)
+    if image is None:raise ValueError('could not decode frame image: '+str(path))
+    return image
 
 class LatestFrame:
     """One bounded slot. Producer overwrites stale frames; never queues a video."""
@@ -96,7 +103,7 @@ def run(args, client_factory=ImageClient):
             row=dict(number=number,source_frame=index,source_seconds=pts,age_at_result_seconds=time.perf_counter()-available,generation=generation,input_crc32=f"{desc.crc32:08x}",output_crc32=f"{result.crc32:08x}",pixel_sha256=hashlib.sha256(output).hexdigest(),input_png=filename+"_input.png",output_png=filename+"_result.png",result=asdict(result),timing={k:client.stats[k]for k in ("upload_ms","task_wait_ms","download_ms","total_ms")},counters=counters)
             report["frames"].append(row); flush(); print(json.dumps(row),flush=True)
             if preview is not None:
-                left=cv2.imread(str(root/row["input_png"]));right=cv2.imread(str(root/row["output_png"]))
+                left=read_frame_image(root/row["input_png"]);right=read_frame_image(root/row["output_png"])
                 canvas=cv2.hconcat([cv2.resize(left,(640,360)),cv2.resize(right,(640,360))])
                 cv2.putText(canvas,f'Source {pts:.3f}s | actual FPGA result | low-rate stream',(10,25),cv2.FONT_HERSHEY_SIMPLEX,.6,(0,0,255),2)
                 ok,jpeg=cv2.imencode('.jpg',canvas,[cv2.IMWRITE_JPEG_QUALITY,90])
@@ -108,7 +115,7 @@ def run(args, client_factory=ImageClient):
         if not storyboard_writer.isOpened(): raise RuntimeError("preview encoder unavailable")
         try:
             for row in report["frames"]:
-                left=cv2.imread(str(root/row["input_png"])); right=cv2.imread(str(root/row["output_png"]))
+                left=read_frame_image(root/row["input_png"]); right=read_frame_image(root/row["output_png"])
                 canvas=cv2.hconcat([cv2.resize(left,(640,360)),cv2.resize(right,(640,360))])
                 cv2.putText(canvas,f'Source {row["source_seconds"]:.3f}s | FPGA result | preview 1fps',(12,26),cv2.FONT_HERSHEY_SIMPLEX,.6,(0,0,255),2)
                 storyboard_writer.write(canvas)
@@ -139,6 +146,6 @@ def run(args, client_factory=ImageClient):
     return report
 
 def main():
-    ap=argparse.ArgumentParser(description=__doc__);ap.add_argument("input");ap.add_argument("--out",required=True);ap.add_argument("--mode",choices=["sample","latest"],default="sample");ap.add_argument("--sample-seconds",type=float,default=1);ap.add_argument("--max-frames",type=int,default=4);ap.add_argument("--style",type=int,choices=range(4),default=3);ap.add_argument("--ip",default="192.168.0.2");ap.add_argument("--bind-ip",default="192.168.0.3");ap.add_argument("--interface-index",type=int,default=3)
+    ap=argparse.ArgumentParser(description=__doc__);ap.add_argument("input");ap.add_argument("--out",required=True);ap.add_argument("--mode",choices=["sample","latest"],default="sample");ap.add_argument("--sample-seconds",type=float,default=1);ap.add_argument("--max-frames",type=int,default=4);ap.add_argument("--style",type=int,choices=range(5),default=3);ap.add_argument("--ip",default="192.168.0.2");ap.add_argument("--bind-ip",default="192.168.0.3");ap.add_argument("--interface-index",type=int,default=3)
     ap.add_argument("--transport",choices=["packed","rgb888"],default="packed"); ap.add_argument("--preview-port",type=int,default=None); args=ap.parse_args();print(json.dumps(run(args),indent=2))
 if __name__=="__main__": main()

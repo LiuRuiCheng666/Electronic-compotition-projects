@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "tests_run": 15,
+  "failures": [],
+  "errors": [],
+  "board_connected": false,
+  "scope": "Local protocol and video fixtures; includes slot4, Unicode input/output images/video and MJPEG preview."
+}

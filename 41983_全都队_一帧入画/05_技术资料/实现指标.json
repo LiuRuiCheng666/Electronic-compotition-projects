@@ -10,6 +10,7 @@
     1080
   ],
   "osd_text": "RES:1280X720  PROC FPS:000  DISP FPS:000",
-  "minimum_setup_slack_ns": 0.097,
-  "minimum_hold_slack_ns": 0.026
+  "minimum_setup_slack_ns": 0.058,
+  "minimum_hold_slack_ns": 0.026,
+  "timing_source": "ti60f225_oob.timing.rpt: Setup/Hold Clock Relationship minimum slack"
 }

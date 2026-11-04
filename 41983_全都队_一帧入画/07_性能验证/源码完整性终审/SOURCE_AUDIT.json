@@ -757,7 +757,9 @@
     "Five deployed model slots",
     "Full Flash image"
   ],
-  "scope": "Source and dependency completeness; synthesis and source compilation completed. No new place/route run or board programming; delivered native implementation and measured hardware evidence remain the submission baseline.",
+  "scope": "Complete FPGA source synthesis, constraint binding, fresh physical pack/place/route, native bitstream generation and five-model Flash merge passed in an isolated copy. Delivered measured deployment artifacts are unchanged.",
   "native_configuration_regeneration": "PASS",
-  "full_flash_payload_reconstruction": "PASS; all bytes after generated 256-byte header equal deployed image"
+  "full_flash_payload_reconstruction": "PASS; all bytes after generated 256-byte header equal deployed image",
+  "fresh_source_place_route": "PASS",
+  "full_source_rebuilt_flash_payload_equals_deployment": true
 }

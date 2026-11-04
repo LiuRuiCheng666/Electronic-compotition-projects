@@ -1,0 +1,27 @@
+test_all_byte_values_and_zero_x (test_packed_transport.PackedTests) ... ok
+test_bad_source_crc_rejected (test_packed_transport.PackedTests) ... ok
+test_old_firmware_fails_before_begin (test_packed_transport.PackedTests) ... ok
+test_packed_preview_is_quantized_rgb8 (test_packed_transport.PackedTests) ... ok
+test_no_file_serving (test_video_preview.PreviewTests) ... ok
+test_status_and_loopback_binding (test_video_preview.PreviewTests) ... ok
+test_stream_latest_only (test_video_preview.PreviewTests) ... ok
+test_bgr_conversion_and_padding (test_video_transfer.VideoTests) ... ok
+test_failure_report_and_close (test_video_transfer.VideoTests) ... ok
+test_five_style_descriptor_boundary (test_video_transfer.VideoTests) ... ok
+test_latest_slot_is_bounded (test_video_transfer.VideoTests) ... ok
+test_producer_error (test_video_transfer.VideoTests) ... ok
+test_sample_end_to_end_local_fixture (test_video_transfer.VideoTests) ... {"number": 0, "source_frame": 0, "source_seconds": 0.0, "age_at_result_seconds": 0.06265870000061113, "generation": 1, "input_crc32": "60691b81", "output_crc32": "60691b81", "pixel_sha256": "ec92415cb991c3f01397fc47a9e93fd914b43e39bc9c31f43c71d748d5548be3", "input_png": "frame_0000_input.png", "output_png": "frame_0000_result.png", "result": {"width": 1280, "height": 720, "format": 1, "style": 3, "stride": 3840, "total": 2764800, "crc32": 1617501057}, "timing": {"upload_ms": 1, "task_wait_ms": 1, "download_ms": 1, "total_ms": 1}, "counters": {"sent": 3, "retransmissions": 0, "bad_datagrams": 0, "foreign_datagrams": 0}}
+{"number": 1, "source_frame": 2, "source_seconds": 0.2, "age_at_result_seconds": 0.06268889999773819, "generation": 2, "input_crc32": "5c0ef76f", "output_crc32": "5c0ef76f", "pixel_sha256": "372d2551c22b99f8e8cde2b89328fb69ab5bffdeed137e5407a399b0c61c8654", "input_png": "frame_0001_input.png", "output_png": "frame_0001_result.png", "result": {"width": 1280, "height": 720, "format": 1, "style": 3, "stride": 3840, "total": 2764800, "crc32": 1544484719}, "timing": {"upload_ms": 1, "task_wait_ms": 1, "download_ms": 1, "total_ms": 1}, "counters": {"sent": 3, "retransmissions": 0, "bad_datagrams": 0, "foreign_datagrams": 0}}
+{"number": 2, "source_frame": 4, "source_seconds": 0.4, "age_at_result_seconds": 0.0603897999972105, "generation": 3, "input_crc32": "18a6c25d", "output_crc32": "18a6c25d", "pixel_sha256": "d7f3a84853dfddb73759d7ccd3cb3a3b2d1b2a984bc774cdf431232d373f4a47", "input_png": "frame_0002_input.png", "output_png": "frame_0002_result.png", "result": {"width": 1280, "height": 720, "format": 1, "style": 3, "stride": 3840, "total": 2764800, "crc32": 413581917}, "timing": {"upload_ms": 1, "task_wait_ms": 1, "download_ms": 1, "total_ms": 1}, "counters": {"sent": 3, "retransmissions": 0, "bad_datagrams": 0, "foreign_datagrams": 0}}
+ok
+test_unicode_paths_slot4_and_live_preview (test_video_transfer.VideoTests) ... http://127.0.0.1:50056/
+{"number": 0, "source_frame": 0, "source_seconds": 0.0, "age_at_result_seconds": 0.06224559999827761, "generation": 1, "input_crc32": "60691b81", "output_crc32": "60691b81", "pixel_sha256": "ec92415cb991c3f01397fc47a9e93fd914b43e39bc9c31f43c71d748d5548be3", "input_png": "frame_0000_input.png", "output_png": "frame_0000_result.png", "result": {"width": 1280, "height": 720, "format": 1, "style": 4, "stride": 3840, "total": 2764800, "crc32": 1617501057}, "timing": {"upload_ms": 1, "task_wait_ms": 1, "download_ms": 1, "total_ms": 1}, "counters": {"sent": 3, "retransmissions": 0, "bad_datagrams": 0, "foreign_datagrams": 0}}
+{"number": 1, "source_frame": 2, "source_seconds": 0.2, "age_at_result_seconds": 0.05979970000043977, "generation": 2, "input_crc32": "5c0ef76f", "output_crc32": "5c0ef76f", "pixel_sha256": "372d2551c22b99f8e8cde2b89328fb69ab5bffdeed137e5407a399b0c61c8654", "input_png": "frame_0001_input.png", "output_png": "frame_0001_result.png", "result": {"width": 1280, "height": 720, "format": 1, "style": 4, "stride": 3840, "total": 2764800, "crc32": 1544484719}, "timing": {"upload_ms": 1, "task_wait_ms": 1, "download_ms": 1, "total_ms": 1}, "counters": {"sent": 3, "retransmissions": 0, "bad_datagrams": 0, "foreign_datagrams": 0}}
+{"number": 2, "source_frame": 4, "source_seconds": 0.4, "age_at_result_seconds": 0.0601576000044588, "generation": 3, "input_crc32": "18a6c25d", "output_crc32": "18a6c25d", "pixel_sha256": "d7f3a84853dfddb73759d7ccd3cb3a3b2d1b2a984bc774cdf431232d373f4a47", "input_png": "frame_0002_input.png", "output_png": "frame_0002_result.png", "result": {"width": 1280, "height": 720, "format": 1, "style": 4, "stride": 3840, "total": 2764800, "crc32": 413581917}, "timing": {"upload_ms": 1, "task_wait_ms": 1, "download_ms": 1, "total_ms": 1}, "counters": {"sent": 3, "retransmissions": 0, "bad_datagrams": 0, "foreign_datagrams": 0}}
+ok
+test_unicode_png_keeps_bgr_channels (test_video_transfer.VideoTests) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 2.922s
+
+OK

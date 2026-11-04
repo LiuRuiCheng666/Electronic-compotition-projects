@@ -13,8 +13,8 @@ def main():
  root=Path(a.out).resolve();root.mkdir(parents=True,exist_ok=False);raw,base=load_image(a.input,0,(1280,720));references={};observed=set();rows=[];start=time.monotonic();last=None
  if a.reference_dir:
   from PIL import Image
-  for slot in range(4):references[slot]=Image.open(Path(a.reference_dir)/f'001_slot{slot}.png').convert('RGB').tobytes()
- report=dict(status='RUNNING',scope='Real image transactions, deterministic results, and optional UART recovery checks; physical cable unplug and artistic quality not covered.',started=datetime.datetime.now().astimezone().isoformat(),input_sha256=hashlib.sha256(Path(a.input).read_bytes()).hexdigest(),rounds=rows,serial_verified=bool(a.serial),reset_or_mode_commands_sent=False)
+  for slot in range(5):references[slot]=Image.open(Path(a.reference_dir)/f'001_slot{slot}.png').convert('RGB').tobytes()
+ report=dict(status='RUNNING',model_count=5,scope='Real image transactions, deterministic results, and optional UART recovery checks; physical cable unplug and artistic quality not covered.',started=datetime.datetime.now().astimezone().isoformat(),input_sha256=hashlib.sha256(Path(a.input).read_bytes()).hexdigest(),rounds=rows,serial_verified=bool(a.serial),reset_or_mode_commands_sent=False)
  def flush():report['elapsed_seconds']=time.monotonic()-start;atomic_json(root/'stress.json',report)
  def snapshot(label):
   q=subprocess.run([sys.executable,'-X','utf8',a.uart_tool,'--port',a.serial,'--commands','version;video;nnstatus;ctrl','--initial','.2','--wait','.3','--log',str(root/(label+'.txt'))],capture_output=True,text=True,errors='replace');assert q.returncode==0,q.stderr
@@ -29,7 +29,7 @@ def main():
    if a.duration_seconds is not None:
     if number and time.monotonic()-start>=a.duration_seconds:break
    elif number>=(a.rounds or 20):break
-   slot=number%4;c=ImageClient(a.ip,bind_ip=a.bind_ip,interface_index=a.interface_index,job_timeout=60)
+   slot=number%5;c=ImageClient(a.ip,bind_ip=a.bind_ip,interface_index=a.interface_index,job_timeout=60)
    try:
     output,d=c.transfer(raw,replace(base,style=slot));stats=dict(c.stats)
    finally:c.close()
@@ -39,7 +39,7 @@ def main():
    else:references[slot]=output
    if last is not None:assert stats['generation']==last+1,('generation mismatch',last,stats['generation'])
    last=stats['generation'];observed.add(slot);number+=1
-   if number<=4:save_image(root/f'reference_slot{slot}.png',output,d)
+   if number<=5:save_image(root/f'reference_slot{slot}.png',output,d)
    row=dict(round=number,slot=slot,stats=stats,pixel_sha256=hashlib.sha256(output).hexdigest())
    if a.serial:
     time.sleep(2.5);f=snapshot(f'round{number:04d}_recovery');row['video']=f
